@@ -1,5 +1,7 @@
 # My Ubuntu dotfiles
 
+![Cover](./images/cover.png)
+
 ## Contents
 
 - vim (NeoVim) config
@@ -8,9 +10,32 @@
 - powerlevel10k config
 - yarn config
 
+## Vim (NeoVim) Setup
+
+Requires Neovim (>= 0.5)
+
+- [vim-plug](https://github.com/junegunn/vim-plug) - A minimalist Vim plugin manager
+- [nerdtree](https://github.com/preservim/nerdtree) - A file explorer
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - A highly extendable fuzzy finder over lists
+- [vim-airline](https://github.com/vim-airline/vim-airline) - Lean & mean status/tabline for vim that's light as air.
+- [vim-commentary](https://github.com/tpope/vim-commentary) - A minimalist commenting system for vim.
+- [vim-css-color](https://github.com/ap/vim-css-color) - A very fast, multi-syntax context-sensitive color name highlighter
+- [awesome-vim-colorschemes](https://github.com/rafi/awesome-vim-colorschemes) - Collection of awesome color schemes for Vim, merged for quick use.
+- [coc.nvim](https://github.com/neoclide/coc.nvim) - Make your Vim/Neovim as smart as VSCode.
+- [vim-devicons](https://github.com/ryanoasis/vim-devicons) - Adds colorful icons to your vim plugins.
+
+## Terminal Setup
+
+- [Zsh shell](https://ohmyz.sh/)
+- [Nerd Font](https://www.nerdfonts.com/) - - Powerline-patched fonts. I use Fira Code NF Retina.
+- [z zsh plugin](https://github.com/agkozak/zsh-z) - Directory jumping
+- [Exa](https://the.exa.website/) - `ls` replacement
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Fish-like fast/unobtrusive autosuggestions for zsh.
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Fish shell-like syntax highlighting for zsh.
+
 ## Steps to installations it on Ubuntu:
 
-````Note run all these commands in the home directory
+> **_NOTE:_** Run all these commands from the home directory.
 
 1. Clone this repository to your home directory
 
@@ -20,7 +45,7 @@ gh repo clone AshAll-Rounder/.dotfiles ~/.dotfiles
 
 # ...or use HTTPS and switch remotes later.
 git clone https://github.com/AshAll-Rounder/.dotfiles.git ~/.dotfiles
-````
+```
 
 2. Create symlinks in the Home directory to the real files in the repo.
 
