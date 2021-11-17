@@ -9,6 +9,7 @@
 :set mouse=a
 " ---- Basic Config End ----
 
+" ---- Plugins ----
 call plug#begin()
 
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
@@ -29,10 +30,13 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
+Plug 'morhetz/gruvbox'
 
 set encoding=UTF-8
 
 call plug#end()
+
+" ---- Plugins End ----
 
 nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -53,8 +57,22 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 
 :set completeopt=preview " For No Preview
 
-:colorscheme gruvbox
+" ---- Theme ----
+:colorscheme OceanicNext
 
+if exists("&termguicolors") && exists("&winblend")
+  syntax enable
+  set termguicolors
+  set winblend=0
+  set wildoptions=pum
+  set pumblend=5
+  set background=dark
+  " Use NeoSolarized
+  let g:neosolarized_termtrans=1
+  " runtime ./colors/NeoSolarized.vim
+  " colorscheme NeoSolarized
+endif
+" ---- Theme End ----
 
 " ---- NERDTree Config ----
 " sync open file with NERDTree

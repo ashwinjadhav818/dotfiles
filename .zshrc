@@ -112,6 +112,8 @@ alias cls="clear"
 alias bat="batcat"
 alias vim="nvim"
 alias vi="nvim"
+alias l="exa --long --header --git --icons -a"
+alias ls="exa --icons"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
