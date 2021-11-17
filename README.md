@@ -27,7 +27,7 @@ Requires Neovim (>= 0.5)
 ## Terminal Setup
 
 - [Zsh shell](https://ohmyz.sh/)
-- [Nerd Font](https://www.nerdfonts.com/) - - Powerline-patched fonts. I use Fira Code NF Retina.
+- [Nerd Font](https://www.nerdfonts.com/) - Powerline-patched fonts. I use Fira Code NF Retina.
 - [z zsh plugin](https://github.com/agkozak/zsh-z) - Directory jumping
 - [Exa](https://the.exa.website/) - `ls` replacement
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Fish-like fast/unobtrusive autosuggestions for zsh.
@@ -41,10 +41,10 @@ Requires Neovim (>= 0.5)
 
 ```zsh
 # Using gh
-gh repo clone AshAll-Rounder/.dotfiles ~/.dotfiles
+gh repo clone AshAll-Rounder/My-Ubuntu-dotfiles ~/.dotfiles
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/AshAll-Rounder/.dotfiles.git ~/.dotfiles
+https://github.com/AshAll-Rounder/My-Ubuntu-dotfiles.git ~/.dotfiles
 ```
 
 2. Create symlinks in the Home directory to the real files in the repo.
