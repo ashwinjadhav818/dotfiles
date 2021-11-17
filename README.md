@@ -1,4 +1,4 @@
-# My dotfiles
+# My Ubuntu dotfiles
 
 ## Contents
 
