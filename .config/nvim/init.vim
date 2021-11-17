@@ -1,12 +1,15 @@
 " ---- Basic Config ----
-:set number
-:set relativenumber
-:set autoindent
-:set tabstop=4
-:set shiftwidth=4
-:set smarttab
-:set softtabstop=4
-:set mouse=a
+set number
+" set relativenumber
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set softtabstop=4
+set mouse=a
+set cursorline
+set swapfile
+set dir=~/tmp
 " ---- Basic Config End ----
 
 " ---- Plugins ----
@@ -33,14 +36,15 @@ Plug 'https://github.com/morhetz/gruvbox'
 set encoding=UTF-8
 
 call plug#end()
-
 " ---- Plugins End ----
 
+" ---- Custom Keybord Shortcuts ----
 nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-e> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <C-p> :Telescope find_files<cr>
+nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 
 nmap <C-t> :TagbarToggle<CR>
 nmap <C-z> :undo<CR>
@@ -51,12 +55,12 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 
-:set completeopt=preview " For No Preview
+inoremap jj <esc>
+" ---- Custom Keybord Shortcuts End ----
 
-" ---- Theme ----
-:colorscheme OceanicNext
+" ---- Theme Config ----
+colorscheme challenger_deep
 
 if exists("&termguicolors") && exists("&winblend")
   syntax enable
