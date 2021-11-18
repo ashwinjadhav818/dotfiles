@@ -1,5 +1,5 @@
 {
- "suggest.noselect": false,
+  "suggest.noselect": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "typescript",
@@ -9,4 +9,4 @@
     "typescript.tsx",
     "graphql"
   ]
-} 
+}
