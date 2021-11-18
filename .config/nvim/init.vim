@@ -42,7 +42,7 @@ nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-e> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
-nnoremap <C-p> :Telescope find_files<CR>
+nnoremap <C-p> :Telescope file_browser<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 
 nmap <C-t> :TagbarToggle<CR>

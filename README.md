@@ -62,5 +62,4 @@ mkdir .config .config/nvim
 ln -s ~/.dofiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/.dotfiles/.config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -s ~/.dotfiles/.config/nvim/colors/NeoSolarized.vim ~/.config/nvim/colors/NeoSolarized.vim
-
 ```
