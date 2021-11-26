@@ -4,13 +4,13 @@
 
 ## Contents
 
-- vim (NeoVim) config
+- vim (NeoVim & LunarVim) config
   - Plugins are managed with [vim-plug](https://github.com/junegunn/vim-plug)
 - zsh config
 - powerlevel10k config
 - yarn config
 
-## Vim (NeoVim) Setup
+## Vim (NeoVim & LunarVim) Setup
 
 Requires Neovim (>= 0.5)
 
@@ -53,13 +53,19 @@ https://github.com/AshAll-Rounder/My-Ubuntu-dotfiles.git ~/.dotfiles
 # There are better and less manual ways to do this;
 # investigate install scripts and bootstrapping tools.
 
+ln -s ~/.dotfiles/.bashrc .bashrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -s ~/.dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 
 # Create a .config directory and inside it create nvim directory.
-mkdir .config .config/nvim
+# NeoVim
+mkdir ~/.config ~/.config/nvim
 ln -s ~/.dofiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/.dotfiles/.config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -s ~/.dotfiles/.config/nvim/colors/NeoSolarized.vim ~/.config/nvim/colors/NeoSolarized.vim
+
+# LunarVim
+mkdir ~/.config ~/.config/lvim
+ln -s ~/.dofiles/.config/lvim/config.lua ~/.config/lvim/config.lua
 ```

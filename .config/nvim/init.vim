@@ -17,6 +17,8 @@ set wildignore="node_modules, .git"
 call plug#begin()
 
 Plug 'https://github.com/preservim/nerdtree' " NERDTree a file manager
+Plug 'https://github.com/kyazdani42/nvim-tree.lua'
+Plug 'https://github.com/kyazdani42/nvim-web-devicons' " for file icons
 Plug 'https://github.com/tpope/vim-commentary' " For commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/ap/vim-css-color' " CSS color preview
@@ -38,18 +40,17 @@ call plug#end()
 " ---- Plugins End ----
 
 " ---- Custom Keybord Shortcuts ----
-nnoremap <C-b> :NERDTreeToggle<CR>
-nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-b> :NERDTree<CR>
 nnoremap <C-e> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <C-p> :Telescope file_browser<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 
 nmap <C-t> :TagbarToggle<CR>
-nmap <C-z> :undo<CR>
-nmap <C-y> :redo<CR>
-nmap <C-s> :w<CR>
+nmap <C-w> :w<CR>
 nmap <C-q> :q<CR>
+nmap <silent> s :<C-u>split<CR>
+nmap <silent> t :<C-u>terminal<CR>
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -69,9 +70,10 @@ if exists("&termguicolors") && exists("&winblend")
 
   let g:neosolarized_termtrans=1
 
-  colorscheme OceanicNext
+  " colorscheme OceanicNext
   " colorscheme challenger_deep
   " colorscheme NeoSolarized
+  colorscheme gruvbox
 endif
 " ---- Theme End ----
 
