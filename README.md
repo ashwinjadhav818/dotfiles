@@ -1,4 +1,4 @@
-# My Ubuntu dotfiles
+# Ashwin's dotfiles
 
 ![Cover](./images/cover.png)
 
@@ -41,10 +41,10 @@ Requires Neovim (>= 0.5)
 
 ```zsh
 # Using gh
-gh repo clone AshAll-Rounder/My-Ubuntu-dotfiles ~/.dotfiles
+gh repo clone AshwinJadhav818/My-dotfiles ~/.dotfiles
 
 # ...or use HTTPS and switch remotes later.
-https://github.com/AshAll-Rounder/My-Ubuntu-dotfiles.git ~/.dotfiles
+git clone https://github.com/AshwinJadhav818/My-dotfiles.git ~/.dotfiles
 ```
 
 2. Create symlinks in the Home directory to the real files in the repo.
