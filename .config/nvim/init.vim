@@ -16,9 +16,8 @@ set wildignore="node_modules, .git"
 " ---- Plugins ----
 call plug#begin()
 
-Plug 'https://github.com/preservim/nerdtree' " NERDTree a file manager
-Plug 'https://github.com/kyazdani42/nvim-tree.lua'
-Plug 'https://github.com/kyazdani42/nvim-web-devicons' " for file icons
+Plug 'https://github.com/kyazdani42/nvim-tree.lua' " NvimTree file manager
+Plug 'https://github.com/kyazdani42/nvim-web-devicons' " File icons for NvimTree
 Plug 'https://github.com/tpope/vim-commentary' " For commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/ap/vim-css-color' " CSS color preview
@@ -33,15 +32,20 @@ Plug 'https://github.com/HerringtonDarkholme/yats.vim' " TypeScript syntax
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin' " Git status to NERDTree
 Plug 'https://github.com/tiagofumo/vim-nerdtree-syntax-highlight' " Colors for the icons in NERDTree
 Plug 'https://github.com/airblade/vim-gitgutter' " Git gutter
+Plug 'mhinz/vim-startify' " Start up page for NeoVim
 
 set encoding=UTF-8
 
 call plug#end()
 " ---- Plugins End ----
 
+" ---- Loading Lua Plugins ----
+lua require'nvim-tree'.setup()
+" ---- Loading Lua Plugins End ----
+
 " ---- Custom Keybord Shortcuts ----
-nnoremap <C-b> :NERDTree<CR>
-nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <C-b> :NvimTreeToggle<CR>
+nnoremap <C-e> :NvimTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <C-p> :Telescope file_browser<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>

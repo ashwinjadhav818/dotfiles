@@ -12,14 +12,16 @@ an executable
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "onedarker"
+lvim.transparent_window = 1
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-w>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
-lvim.keys.normal_mode["<C-p>"] = ":Telescope find_files<cr>"
+lvim.keys.normal_mode["<C-p>"] = ":Telescope file_browser<cr>"
 lvim.keys.normal_mode["<C-e>"] = ":NvimTreeToggle<cr>"
+lvim.keys.normal_mode["<C-b>"] = ":NvimTreeFocus<cr>"
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
 -- edit a default keymapping
@@ -151,10 +153,9 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- }
 
 -- Additional Plugins
--- lvim.plugins = {
-  -- use {'neoclide/coc.nvim', branch = 'release'},
-  -- use {'tpope/vim-commentary'}
--- }
+lvim.plugins = {
+  {'rafi/awesome-vim-colorschemes'}
+}
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {
