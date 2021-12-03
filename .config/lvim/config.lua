@@ -13,6 +13,7 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "onedarker"
 lvim.transparent_window = 1
+lvim.line_wrap_cursor_movement = true
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -154,10 +155,28 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- Additional Plugins
 lvim.plugins = {
-  {'rafi/awesome-vim-colorschemes'}
+  {'rafi/awesome-vim-colorschemes'},
+  {'terryma/vim-multiple-cursors'},
+  {
+      "iamcco/markdown-preview.nvim",
+      run = "cd app && npm install",
+      ft = "markdown",
+  },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {
 --   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 -- }
+
+-- LuaLine
+lvim.builtin.lualine.options = {
+  theme = 'auto',
+  component_separators = {left = '', right = ''},
+  section_separators = {left = '', right = ''},
+  disabled_filetypes = {},  -- filetypes to diable lualine on
+  always_divide_middle = true, -- When true left_sections (a,b,c) can't
+                               -- take over entiee statusline even
+                               -- when none of section x, y, z is present.
+}
+

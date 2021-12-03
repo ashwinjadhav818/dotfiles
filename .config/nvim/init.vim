@@ -11,6 +11,7 @@ set cursorline
 set swapfile
 set dir=~/tmp
 set wildignore="node_modules, .git"
+set wrap
 " ---- Basic Config End ----
 
 " ---- Plugins ----
@@ -33,6 +34,7 @@ Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin' " Git status to NERDTree
 Plug 'https://github.com/tiagofumo/vim-nerdtree-syntax-highlight' " Colors for the icons in NERDTree
 Plug 'https://github.com/airblade/vim-gitgutter' " Git gutter
 Plug 'mhinz/vim-startify' " Start up page for NeoVim
+Plug 'https://github.com/akinsho/bufferline.nvim' " A snazzy 💅 buffer line
 
 set encoding=UTF-8
 
