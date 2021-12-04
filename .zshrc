@@ -111,7 +111,7 @@ alias powerlevel10k="source ~/.p10k.zsh"
 alias cls="clear"
 alias bat="batcat"
 # alias vi="nvim"
-alias vi="/home/ashwin/.local/bin/lvim"
+# alias vi="/home/ashwin/.local/bin/lvim"
 alias l="exa --long --header --git --icons -a"
 alias ls="exa --icons"
 
