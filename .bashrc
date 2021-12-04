@@ -93,8 +93,6 @@ fi
 # alias l='ls -CF'
 alias cls="clear"
 alias bat="batcat"
-alias vim="nvim"
-alias vi="nvim"
 alias l="exa --long --header --git --icons -a"
 alias ls="exa --icons"
 
