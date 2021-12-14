@@ -8,6 +8,7 @@
   - Plugins are managed with [Packer](https://github.com/wbthomason/packer.nvim)
 - zsh config
 - powerlevel10k config
+- tmux config
 - yarn config
 
 ## Vim (LunarVim & NvChad) Setup
@@ -15,7 +16,7 @@
 Requires Neovim (>= 0.5)
 
 - [LunarVim](https://www.lunarvim.org/) - Fast IDE layer for Neovim with awesome plugins already installed.
-- [NvChad](https://nvchad.github.io/) - Awesome config for NeoVim
+- [NvChad](https://nvchad.github.io/) - Awesome config for NeoVim.
 - [awesome-vim-colorschemes](https://github.com/rafi/awesome-vim-colorschemes) - Collection of awesome color schemes for Vim, merged for quick use.
 - [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - Minimal plugin for multi-cursors.
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim) - Preview markdown on your modern browser with synchronised scrolling and flexible configuration.
@@ -61,11 +62,13 @@ ln -s ~/.dotfiles/.config/nvim/lua/custom/plugins ~/.config/nvim/lua/custom/plug
 # LunarVim
 mkdir ~/.config ~/.config/lvim
 ln -s ~/.dofiles/.config/lvim/config.lua ~/.config/lvim/config.lua
-```
 
-3. Add commands accessible as lvim, vi and vim using symlinks
-```zsh
+# Add commands accessible as lvim, vi and vim using symlinks
 sudo ln -s ~/.local/bin/lvim /usr/local/bin/lvim
 sudo ln -s /usr/bin/nvim  /usr/local/bin/vi
 sudo ln -s /usr/bin/nvim  /usr/local/bin/vim
+
+# Tmux
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/.tmux.powerline.conf ~/.tmux.powerline.conf
 ```

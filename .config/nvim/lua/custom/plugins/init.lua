@@ -7,5 +7,11 @@ hooks.add("install_plugins", function(use)
     'iamcco/markdown-preview.nvim',
     ft   = 'markdown',
     run = 'cd app && yarn install'
-  } 
+  }
+  use {
+    'prettier/vim-prettier',
+    run = 'yarn install --frozen-lockfile --production',
+    branch = 'release/0.x'
+  }
 end)
+

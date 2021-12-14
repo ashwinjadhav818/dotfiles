@@ -17,6 +17,8 @@ local hooks = require "core.hooks"
 --   return current;
 -- end)
 
+require "custom.plugins.config.lspconfig"
+
 -- To add new mappings, use the "setup_mappings" hook,
 -- you can set one or many mappings
 -- example below:
