@@ -1,0 +1,4 @@
+*.ini
+.DS_Store
+*.local
+thumbs.db

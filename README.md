@@ -8,6 +8,7 @@
   - Plugins are managed with [Packer](https://github.com/wbthomason/packer.nvim)
 - zsh config
 - powerlevel10k config
+- powershell config
 - tmux config
 - yarn config
 
@@ -21,7 +22,7 @@ Requires Neovim (>= 0.5)
 - [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - Minimal plugin for multi-cursors.
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim) - Preview markdown on your modern browser with synchronised scrolling and flexible configuration.
 
-## Terminal Setup
+## Zsh Setup
 
 - [Zsh shell](https://ohmyz.sh/)
 - [Nerd Font](https://www.nerdfonts.com/) - Powerline-patched fonts. I use Fira Code NF Retina and JetBrainsMono Nerd Font.
@@ -30,9 +31,18 @@ Requires Neovim (>= 0.5)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Fish-like fast/unobtrusive autosuggestions for zsh.
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Fish shell-like syntax highlighting for zsh.
 
-## Steps to installations it on Ubuntu:
+## PowerShell setup
 
-> **_NOTE:_** Run all these commands from the home directory.
+- [Scoop](https://scoop.sh/) - A command-line installer
+- [Git for Windows](https://gitforwindows.org/)
+- [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
+- [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
+- [PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/) - Cmdlets for customizing the editing environment, used for autocompletion
+- [z](https://www.powershellgallery.com/packages/z) - Directory jumper
+
+## Steps to install
+
+### Ubuntu
 
 1. Clone this repository to your home directory.
 
@@ -71,4 +81,21 @@ sudo ln -s /usr/bin/nvim  /usr/local/bin/vim
 # Tmux
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/.tmux.powerline.conf ~/.tmux.powerline.conf
+```
+
+### Windows 
+1. Clone this repository to your home directory.
+
+```zsh
+# Using gh
+gh repo clone AshwinJadhav818/My-dotfiles C:\Users\<UserName>\.dotfiles
+
+# ...or use HTTPS and switch remotes later.
+git clone https://github.com/AshwinJadhav818/My-dotfiles.git C:\Users\<UserName>\.dotfiles
+```
+
+2. Create symlinks in the Home directory to the real files in the repo.
+
+```zsh
+sudo New-Item -Path C:\Users\<UserName>\.config\powershell -ItemType SymbolicLink -Value C:\Users\<UserName>\.dotfiles\.config\powershell\
 ```
