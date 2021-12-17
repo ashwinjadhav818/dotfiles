@@ -111,6 +111,7 @@ alias p10kconfig="vi ~/.p10k.zsh"
 alias powerlevel10k="source ~/.p10k.zsh"
 alias l="exa --long --header --git --icons -a"
 alias ls="exa --icons"
+alias g="git"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

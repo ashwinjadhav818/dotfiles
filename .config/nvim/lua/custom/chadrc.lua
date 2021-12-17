@@ -15,9 +15,10 @@ M.options = {
    relativenumber = true,
 }
 
--- M.ui = {
---   theme = "nord"
--- }
+M.ui = {
+  -- theme = "solarized",
+  -- transparency = true,
+}
 
 -- NvChad included plugin options & overrides
 M.plugins = {
@@ -42,8 +43,10 @@ M.plugins = {
 }
 
 M.mappings = {
-  close_buffer = "<C-q>",
-  save_file = "<C-w>", -- save file using :w
+  misc = {
+    close_buffer = "<C-q>",
+    save_file = "<C-w>", -- save file using :w
+  }
 }
 
 M.mappings.plugins = {

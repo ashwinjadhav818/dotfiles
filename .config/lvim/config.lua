@@ -12,7 +12,7 @@ an executable
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "onedarker"
--- lvim.transparent_window = 1
+lvim.transparent_window = 1
 lvim.line_wrap_cursor_movement = true
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
@@ -79,8 +79,6 @@ lvim.builtin.nvimtree.show_icons.git = 0
 --    "java",
 --    "yaml",
 -- }
-lvim.builtin.treesitter.ensure_installed = "all"
-
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
@@ -163,8 +161,8 @@ lvim.plugins = {
       run = "cd app && npm install",
       ft = "markdown",
   },
-  {'lukas-reineke/indent-blankline.nvim'},
-  {'p00f/nvim-ts-rainbow'}
+  {'p00f/nvim-ts-rainbow'},
+  {'glepnir/dashboard-nvim'}
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
@@ -246,27 +244,27 @@ lvim.builtin.telescope.extensions = {
   },
 }
 
--- lvim.builtin.nvimtree.icons = {
---   default = "",
---    symlink = "",
---    git = {
---       deleted = "",
---       ignored = "◌",
---       renamed = "➜",
---       staged = "✓",
---       unmerged = "",
---       unstaged = "✗",
---       untracked = "★",
---    },
---    folder = {
---       default = "",
---       empty = "",
---       empty_open = "",
---       open = "",
---       symlink = "",
---       symlink_open = "",
---    },
--- }
+lvim.builtin.nvimtree.icons = {
+  default = "",
+   symlink = "",
+   git = {
+      deleted = "",
+      ignored = "◌",
+      renamed = "➜",
+      staged = "✓",
+      unmerged = "",
+      unstaged = "✗",
+      untracked = "★",
+   },
+   folder = {
+      default = "",
+      empty = "",
+      empty_open = "",
+      open = "",
+      symlink = "",
+      symlink_open = "",
+   },
+}
 
 -- lvim.builtin.nvimtree.setup = {
 --   filters = {
@@ -288,7 +286,7 @@ lvim.builtin.telescope.extensions = {
 --       side = "left",
 --       width = 25,
 --    },
-
+-- 
 --    git = {
 --       ignore = false,
 --    },

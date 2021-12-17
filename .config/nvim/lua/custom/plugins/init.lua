@@ -13,5 +13,7 @@ hooks.add("install_plugins", function(use)
     run = 'yarn install --frozen-lockfile --production',
     branch = 'release/0.x'
   }
+  use 'overcache/NeoSolarized'
+  use 'folke/lsp-colors.nvim'
 end)
 
