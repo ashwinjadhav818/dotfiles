@@ -12,12 +12,18 @@ M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
 -- examples of setting relative number & changing theme:
 
 M.options = {
-   relativenumber = true,
+  -- custom = {}
+  -- general nvim/vim options , check :h optionname to know more about an option
+
+
+  -- relativenumber = true,
 }
 
+---- UI -----
+
 M.ui = {
-  -- theme = "solarized",
-  -- transparency = true,
+  theme = "onedark-deep",
+  transparency = true,
 }
 
 -- NvChad included plugin options & overrides
@@ -44,9 +50,18 @@ M.plugins = {
 
 M.mappings = {
   misc = {
-    close_buffer = "<C-q>",
-    save_file = "<C-w>", -- save file using :w
-  }
+    close_buffer = "<leader>q",
+    save_file = "<leader>w", -- save file using :w
+  },
+
+  -- terminal related mappings
+   terminal = {
+      -- multiple mappings can be given for esc_termmode, esc_hide_termmode
+
+      -- spawn terminals
+      new_window = "<leader>t",
+   },
+
 }
 
 M.mappings.plugins = {

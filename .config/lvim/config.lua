@@ -1,28 +1,13 @@
---[[
-lvim is the global options object
-
-Linters should be
-filled in as strings with either
-a global executable or a path to
-an executable
-]]
--- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
-
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "onedarker"
 lvim.transparent_window = 1
-lvim.line_wrap_cursor_movement = true
+vim.opt.wrap = true -- Wrap lines
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
-lvim.keys.normal_mode["<C-w>"] = ":w<cr>"
-lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
-lvim.keys.normal_mode["<C-p>"] = ":Telescope<cr>"
-lvim.keys.normal_mode["<C-e>"] = ":NvimTreeToggle<cr>"
-lvim.keys.normal_mode["<C-b>"] = ":NvimTreeFocus<cr>"
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
 -- edit a default keymapping
@@ -48,15 +33,11 @@ lvim.keys.normal_mode["<C-b>"] = ":NvimTreeFocus<cr>"
 
 -- Use which-key to add extra bindings with the leader-key prefix
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
--- lvim.builtin.which_key.mappings["t"] = {
---   name = "+Trouble",
---   r = { "<cmd>Trouble lsp_references<cr>", "References" },
---   f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
---   d = { "<cmd>Trouble lsp_document_diagnostics<cr>", "Diagnostics" },
---   q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
---   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
---   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
--- }
+lvim.builtin.which_key.mappings["e"] = {
+  name = "+Explorer",
+  e = { "<cmd>NvimTreeToggle<cr>", "Toggle Explorer" },
+  f = { "<cmd>NvimTreeFocus<cr>", "Focus Explorer" },
+}
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -162,7 +143,8 @@ lvim.plugins = {
       ft = "markdown",
   },
   {'p00f/nvim-ts-rainbow'},
-  {'glepnir/dashboard-nvim'}
+  {'evanleck/vim-svelte'},
+  {'LunarVim/darkplus.nvim'}
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
@@ -272,7 +254,7 @@ lvim.builtin.nvimtree.icons = {
 --    },
 --    disable_netrw = true,
 --    hijack_netrw = true,
---    ignore_ft_on_setup = { "dashboard" },
+--    -- ignore_ft_on_setup = { "dashboard" },
 --    auto_close = false,
 --    open_on_tab = false,
 --    hijack_cursor = true,
@@ -286,7 +268,7 @@ lvim.builtin.nvimtree.icons = {
 --       side = "left",
 --       width = 25,
 --    },
--- 
+
 --    git = {
 --       ignore = false,
 --    },
