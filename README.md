@@ -57,30 +57,7 @@ git clone https://github.com/AshwinJadhav818/My-dotfiles.git ~/.dotfiles
 2. Create symlinks in the Home directory to the real files in the repo.
 
 ```zsh
-# There are better and less manual ways to do this;
-# investigate install scripts and bootstrapping tools.
-
-ln -s ~/.dotfiles/.bashrc .bashrc
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
-
-# NeoVim (NvChad)
-ln -s ~/.dotfiles/.config/nvim/lua/custom/init.lua ~/.config/nvim/lua/custom/init.lua
-ln -s ~/.dotfiles/.config/nvim/lua/custom/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua
-ln -s ~/.dotfiles/.config/nvim/lua/custom/plugins ~/.config/nvim/lua/custom/plugins
-
-# LunarVim
-mkdir ~/.config ~/.config/lvim
-ln -s ~/.dofiles/.config/lvim/config.lua ~/.config/lvim/config.lua
-
-# Add commands accessible as lvim, vi and vim using symlinks
-sudo ln -s ~/.local/bin/lvim /usr/local/bin/lvim
-sudo ln -s /usr/bin/nvim  /usr/local/bin/vi
-sudo ln -s /usr/bin/nvim  /usr/local/bin/vim
-
-# Tmux
-ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/.tmux.powerline.conf ~/.tmux.powerline.conf
+stow bash fish zsh nvim lvim tmux 
 ```
 
 ### Windows 
