@@ -10,21 +10,27 @@ return packer.startup(function()
    local plugin_settings = require("core.utils").load_config().plugins
    local override_req = require("core.utils").override_req
 
-   -- this is arranged on the basis of when a plugin starts
-
-   -- this is the nvchad core repo containing utilities for some features like theme swticher, no need to lazy load
+   -- My Plugins 
    use "Nvchad/extensions"
+
    use "nvim-lua/plenary.nvim"
+
    use "rafi/awesome-vim-colorschemes"
+
    use "overcache/NeoSolarized"
+
    use "mg979/vim-visual-multi"
+
    use "github/copilot.vim"
+
    use "preservim/tagbar"
 
    use {
       "pineapplegiant/spaceduck",
       branch = "main"
    }
+
+   use "sbdchd/neoformat"
 
    use {
       "prettier/vim-prettier",
@@ -36,6 +42,7 @@ return packer.startup(function()
       event = "VimEnter",
    }
 
+   -- UI
    use {
       "NvChad/nvim-base16.lua",
       after = "packer.nvim",
@@ -293,8 +300,6 @@ return packer.startup(function()
    }
 
    use "junegunn/fzf.vim"
-
-   use "liuchengxu/vim-clap"
 
    -- load user defined plugins
    require("core.hooks").run("install_plugins", use)
