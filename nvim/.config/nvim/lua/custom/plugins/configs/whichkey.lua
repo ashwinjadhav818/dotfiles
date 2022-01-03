@@ -79,7 +79,6 @@ local opts = {
 }
 
 local mappings = {
-  ["d"] = { "<cmd>Dashboard<cr>", "Dashboard" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
@@ -155,6 +154,7 @@ local mappings = {
       "Workspace Symbols",
     },
   },
+  
   f = {
     name = "Find",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
@@ -180,6 +180,12 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
+
+  e = {
+    name = "Explorer",
+    e = {"<cmd>NvimTreeToggle<cr>", "Toggle"},
+    f = {"<cmd>NvimTreeFocus<cr>", "Focus"},
+  }
 }
 
 which_key.setup(setup)
