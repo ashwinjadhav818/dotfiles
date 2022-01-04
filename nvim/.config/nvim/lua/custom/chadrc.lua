@@ -7,23 +7,33 @@ local M = {}
 -- example of changing theme:
 
 ---- UI -----
---
+
 M.ui = {
   italic_comments = true,
 
   -- Change terminal bg to nvim theme's bg color so it'll match well
   -- For Ex : if you have onedark set in nvchad, set onedark's bg color on your terminal
-  transparency = true,
+  transparency = true
 }
 
 
 ---- PLUGIN OPTIONS ----
 
 M.plugins = {
-     -- enable/disable plugins (false for disable)
+  -- enable/disable plugins (false for disable)
   status = {
     colorizer = true, -- color RGB, HEX, CSS, NAME color codes
     dashboard = true,
+  },
+}
+
+
+---- PLUGIN MAPPINGS ----
+
+M.mappings.plugins = { 
+  nvimtree = {
+      toggle = "<leader>ee",
+      focus = "<leader>ef",
   },
 }
 

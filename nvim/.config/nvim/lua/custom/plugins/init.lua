@@ -12,11 +12,6 @@ hooks.add("install_plugins", function(use)
   use "sbdchd/neoformat"
    
   use {
-    "prettier/vim-prettier",
-    run = "yarn install --frozen-lockfile --production"
-  }
-
-  use {
     "iamcco/markdown-preview.nvim",
     ft   = "markdown",
     run = "cd app && yarn install"
@@ -31,6 +26,21 @@ hooks.add("install_plugins", function(use)
     "akinsho/toggleterm.nvim",
     config = override_req("toggleterm", "custom.plugins.configs.toggleterm")
   }
+
+  -- LSP plugins
+  use {
+    "williamboman/nvim-lsp-installer",
+    config = function()
+       local lsp_installer = require "nvim-lsp-installer"
+
+       lsp_installer.on_server_ready(function(server)
+          local opts = {}
+
+          server:setup(opts)
+          vim.cmd [[ do User LspAttachBuffers ]]
+       end)
+    end,
+   }
 
   -- Fuzzy Finders
   use {
