@@ -30,11 +30,11 @@ M.plugins = {
 
 ---- PLUGIN MAPPINGS ----
 
-M.mappings.plugins = { 
-  nvimtree = {
-      toggle = "<leader>ee",
-      focus = "<leader>ef",
-  },
-}
+-- M.mappings.plugins = { 
+--   nvimtree = {
+--       toggle = "<leader>ee",
+--       focus = "<leader>ef",
+--   },
+-- }
 
 return M
