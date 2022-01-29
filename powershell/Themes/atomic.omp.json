@@ -16,7 +16,8 @@
 					"foreground": "#ffffff",
 					"background": "#0077c2",
 					"properties": {
-						"postfix": " "
+						"postfix": " ",
+						"windows": ""
 					}
 				},
 				{
@@ -41,7 +42,7 @@
 						"home_icon": "",
 						"folder_icon": " \uf413 ",
 						"style": "folder",
-						"prefix": " \ufc6e\uf553",
+						"prefix": " \ufc6e\uf553 ",
 						"enable_hyperlink": true
 					}
 				},
@@ -65,17 +66,16 @@
 					}
 				},
 				{
-					"type": "executiontime",
+					"type": "exit",
 					"style": "diamond",
 					"leading_diamond": "",
 					"trailing_diamond": "\uE0B4",
-					"foreground": "#ffffff",
-					"background": "#83769c",
+					"foreground": "#d3d7cf",
+					"background": "#000000",
+					"background_templates": ["{{ if gt .Code 0 }}#cc2222{{ end }}"],
 					"properties": {
-						"prefix": "羽",
-						"postfix": "\u2800",
-						"threshold": 0,
-						"style": "roundrock"
+						"always_enabled": true,
+						"template": "{{ if gt .Code 0 }}{{ .Text }}{{ else }}✔{{ end }}"
 					}
 				}
 			]
@@ -88,7 +88,7 @@
 					"type": "node",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#3C873A",
 					"background": "#303030",
 					"properties": {
@@ -103,7 +103,7 @@
 					"type": "python",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#FFE873",
 					"background": "#306998",
 					"properties": {
@@ -115,8 +115,8 @@
 					"type": "java",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
-					"foreground": "#ec2729",
+					"trailing_diamond": "\uE0B4 ",
+					"foreground": "#ffffff",
 					"background": "#0e8ac8",
 					"properties": {
 						"prefix": "\uE738 ",
@@ -127,7 +127,7 @@
 					"type": "dotnet",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#0d6da8",
 					"background": "#0e0e0e",
 					"properties": {
@@ -139,7 +139,7 @@
 					"type": "go",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#06aad5",
 					"background": "#ffffff",
 					"properties": {
@@ -151,7 +151,7 @@
 					"type": "rust",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#925837",
 					"background": "#f3f0ec",
 					"properties": {
@@ -163,7 +163,7 @@
 					"type": "dart",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#055b9c",
 					"background": "#e1e8e9",
 					"properties": {
@@ -175,7 +175,7 @@
 					"type": "angular",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#ce092f",
 					"background": "#ffffff",
 					"properties": {
@@ -187,7 +187,7 @@
 					"type": "julia",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#359a25",
 					"background": "#945bb3",
 					"properties": {
@@ -199,7 +199,7 @@
 					"type": "ruby",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#9c1006",
 					"background": "#ffffff",
 					"properties": {
@@ -211,7 +211,7 @@
 					"type": "azfunc",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#5398c2",
 					"background": "#ffffff",
 					"properties": {
@@ -223,7 +223,7 @@
 					"type": "aws",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#faa029",
 					"background": "#565656",
 					"properties": {
@@ -236,7 +236,7 @@
 					"type": "kubectl",
 					"style": "diamond",
 					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "\uE0B4",
+					"trailing_diamond": "\uE0B4 ",
 					"foreground": "#ffffff",
 					"background": "#316ce4",
 					"properties": {
@@ -246,50 +246,50 @@
 					}
 				},
 				{
+					"type": "executiontime",
+					"style": "diamond",
+					"leading_diamond": " \uE0B6",
+					"trailing_diamond": "",
+					"foreground": "#ffffff",
+					"background": "#83769c",
+					"properties": {
+						"prefix": "  ",
+						"postfix": " <#262626>\uE0B2</>",
+						"threshold": 0,
+						"style": "roundrock"
+					}
+				},
+				{
 					"type": "battery",
 					"style": "diamond",
 					"invert_powerline": true,
-					"leading_diamond": "\uE0B2",
+					"leading_diamond": "",
 					"trailing_diamond": "",
-					"foreground": "#ffffff",
-					"background": "#f36943",
+					"foreground": "#242424",
+					"background": "#3dafe2",
 					"properties": {
 						"battery_icon": "",
-						"discharging_icon": " ",
-						"charging_icon": " ",
-						"charged_icon": " ",
+						"discharging_icon": " ",
+						"charging_icon": " ",
+						"charged_icon": " ",
 						"color_background": true,
 						"charged_color": "#33DD2D",
 						"charging_color": "lightYellow",
 						"discharging_color": "#ff5722",
-						"postfix": " <#262626>\uE0B2</>"
+						"postfix": "% <#262626>\uE0B2</>"
 					}
 				},
-
-				{
-					"type": "shell",
-					"style": "diamond",
-					"leading_diamond": " \uE0B6",
-					"trailing_diamond": "",
-					"foreground": "#222222",
-					"background": "#b2bec3",
-					"properties": {
-						"prefix": " ",
-						"postfix": " <#262626>\uE0B2</>"
-					}
-				},
-
 				{
 					"type": "time",
 					"style": "diamond",
 					"invert_powerline": true,
 					"leading_diamond": "\uE0B2",
-					"trailing_diamond": "\uE0B4",
-					"background": "#40c4ff",
+					"trailing_diamond": "\uE0B4─╮",
+					"background": "#599dd5",
 					"foreground": "#ffffff",
 					"properties": {
 						"postfix": " ",
-						"time_format": "3:04:05 PM"
+						"time_format": "3:04:05 PM  "
 					}
 				}
 			]
@@ -302,22 +302,26 @@
 				{
 					"type": "text",
 					"style": "plain",
-					"foreground": "#21c7c7",
+					"foreground": "#d3d7cf",
 					"properties": {
 						"prefix": "",
 						"postfix": "",
-						"text": "╰─"
+						"text": "╰─ﬀ "
 					}
-				},
+				}
+			]
+		},
+		{
+			"type": "rprompt",
+			"segments": [
 				{
-					"type": "exit",
+					"type": "text",
 					"style": "plain",
-					"foreground": "#e0f8ff",
+					"foreground": "#d3d7cf",
 					"properties": {
-						"prefix": "\ue285ﬀ",
-						"display_exit_code": false,
-						"always_enabled": true,
-						"error_color": "#ef5350"
+						"text": "─╯",
+						"prefix": "",
+						"postfix": ""
 					}
 				}
 			]
