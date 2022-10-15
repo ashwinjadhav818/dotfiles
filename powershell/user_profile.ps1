@@ -1,6 +1,6 @@
 # Oh My Posh Themes
-# oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\craftzdog.omp.json | Invoke-Expression
-oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\atomic.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\craftzdog.omp.json | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\atomic.omp.json | Invoke-Expression
 
 # Modules
 Import-Module -Name Terminal-Icons
