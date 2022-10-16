@@ -95,6 +95,8 @@ alias cls="clear"
 alias bat="batcat"
 alias l="exa --long --header --git --icons -a"
 alias ls="exa --icons"
+alias vi=lvim
+alias vim=lvim
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

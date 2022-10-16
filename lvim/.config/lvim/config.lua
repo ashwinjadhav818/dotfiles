@@ -11,8 +11,9 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "tokyonight"
+lvim.colorscheme = "gruvbox"
 lvim.transparent_window = "true"
+
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -64,7 +65,7 @@ lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "right"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -164,8 +165,12 @@ lvim.builtin.treesitter.highlight.enabled = true
 lvim.plugins = {
   -- Themes
   { "folke/tokyonight.nvim" },
+  { "rafi/awesome-vim-colorschemes" },
+  { "morhetz/gruvbox" },
+  { "LunarVim/synthwave84.nvim" },
 
   -- Plugins
+  { "mg979/vim-visual-multi" },
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
@@ -181,7 +186,14 @@ lvim.plugins = {
   {
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
-  }
+  },
+  {
+    "windwp/nvim-spectre",
+    event = "BufRead",
+    config = function()
+      require("spectre").setup()
+    end,
+  },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
