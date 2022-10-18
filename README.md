@@ -48,10 +48,10 @@ Requires Neovim (>= 0.5)
 
 ```zsh
 # Using gh
-gh repo clone AshwinJadhav818/My-dotfiles ~/.dotfiles
+gh repo clone AshwinJadhav818/dotfiles ~/.dotfiles
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/AshwinJadhav818/My-dotfiles.git ~/.dotfiles
+git clone https://github.com/AshwinJadhav818/dotfiles.git ~/.dotfiles
 ```
 
 2. Create symlinks in the Home directory to the real files in the repo.
@@ -65,10 +65,10 @@ stow bash fish zsh nvim lvim tmux
 
 ```zsh
 # Using gh
-gh repo clone AshwinJadhav818/My-dotfiles C:\Users\<UserName>\.dotfiles
+gh repo clone AshwinJadhav818/dotfiles C:\Users\<UserName>\.dotfiles
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/AshwinJadhav818/My-dotfiles.git C:\Users\<UserName>\.dotfiles
+git clone https://github.com/AshwinJadhav818/dotfiles.git C:\Users\<UserName>\.dotfiles
 ```
 
 2. Create symlinks in the Home directory to the real files in the repo.

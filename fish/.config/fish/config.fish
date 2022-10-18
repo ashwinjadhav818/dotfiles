@@ -13,9 +13,10 @@ set -g theme_hostname always
 alias ls "exa --icons"
 alias l "exa --long --header --git --icons -a"
 alias g git
-command -qv nvim && alias vim nvim
+alias vim lvim
+alias vi lvim
 
-set -gx EDITOR nvim
+set -gx EDITOR lvim
 
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
