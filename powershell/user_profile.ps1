@@ -1,6 +1,7 @@
 # Oh My Posh Themes
-oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\craftzdog.omp.json | Invoke-Expression
-# oh-my-posh --init --shell pwsh --config "$env:POSH_THEMES_PATH\easy_term.omp.json" | Invoke-Expression
+# oh-my-posh init pwsh --config 'C:\Users\Ashwin\AppData\Local\Programs\oh-my-posh\themes\stelbent.minimal.omp.json' | Invoke-Expression
+oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\aura.omp.json | Invoke-Expression
+
 
 # Modules
 Import-Module -Name Terminal-Icons
