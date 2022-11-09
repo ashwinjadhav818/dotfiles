@@ -132,6 +132,11 @@ _G.packer_plugins = {
     path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["darkplus.nvim"] = {
+    loaded = true,
+    path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/darkplus.nvim",
+    url = "https://github.com/lunarvim/darkplus.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/friendly-snippets",
@@ -150,6 +155,11 @@ _G.packer_plugins = {
     path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
   },
+  ["horizon.nvim"] = {
+    loaded = true,
+    path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/horizon.nvim",
+    url = "https://github.com/lunarvim/horizon.nvim"
+  },
   ["lua-dev.nvim"] = {
     loaded = false,
     needs_bufread = false,
@@ -164,8 +174,10 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["markdown-preview.nvim"] = {
-    loaded = true,
-    path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/markdown-preview.nvim",
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/opt/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
@@ -249,6 +261,11 @@ _G.packer_plugins = {
     path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["peek.nvim"] = {
+    loaded = true,
+    path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/peek.nvim",
+    url = "https://github.com/toppair/peek.nvim"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/plenary.nvim",
@@ -274,6 +291,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/structlog.nvim",
     url = "https://github.com/Tastyep/structlog.nvim"
+  },
+  ["synthwave84.nvim"] = {
+    loaded = true,
+    path = "/home/ashwin/.local/share/lunarvim/site/pack/packer/start/synthwave84.nvim",
+    url = "https://github.com/LunarVim/synthwave84.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
@@ -351,6 +373,10 @@ if not vim.g.packer_custom_loader_enabled then
   vim.g.packer_custom_loader_enabled = true
 end
 
+-- Setup for: markdown-preview.nvim
+time([[Setup for markdown-preview.nvim]], true)
+try_loadstring("\27LJ\2\2=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
+time([[Setup for markdown-preview.nvim]], false)
 -- Config for: mason.nvim
 time([[Config for mason.nvim]], true)
 try_loadstring("\27LJ\2\2=\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\20lvim.core.mason\frequire\0", "config", "mason.nvim")
@@ -403,10 +429,14 @@ time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
 vim.cmd [[au BufReadPost * ++once lua require("packer.load")({'nvim-ts-context-commentstring'}, { event = "BufReadPost *" }, _G.packer_plugins)]]
-vim.cmd [[au BufWinEnter * ++once lua require("packer.load")({'toggleterm.nvim', 'bufferline.nvim', 'which-key.nvim'}, { event = "BufWinEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufWinEnter * ++once lua require("packer.load")({'toggleterm.nvim', 'which-key.nvim', 'bufferline.nvim'}, { event = "BufWinEnter *" }, _G.packer_plugins)]]
 vim.cmd [[au BufRead * ++once lua require("packer.load")({'gitsigns.nvim', 'nvim-spectre', 'Comment.nvim'}, { event = "BufRead *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")

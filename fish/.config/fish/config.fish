@@ -15,6 +15,7 @@ alias l "exa --long --header --git --icons -a"
 alias g git
 alias vim lvim
 alias vi lvim
+# alias nvim lvim
 
 set -gx EDITOR lvim
 
