@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "gruvbox"
+lvim.colorscheme = "solarized8_flat"
 lvim.transparent_window = "true"
 
 -- to disable icons and use a minimalist setup, uncomment the following
@@ -200,7 +200,12 @@ lvim.plugins = {
   {
     "toppair/peek.nvim",
     run = "deno task --quiet build:fast"
-  }
+  },
+  -- {
+  -- "tzachar/cmp-tabnine",
+  -- run = "./install.sh",
+  -- requires = "hrsh7th/nvim-cmp"
+  -- }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)

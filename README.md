@@ -28,8 +28,10 @@ Requires Neovim (>= 0.8)
 
 ## Fish config
 - [fish shell](https://fishshell.com/)
-- [fisher](https://github.com/jorgebucaran/fisher/) A plugin manager for Fish
-- 
+- [fisher](https://github.com/jorgebucaran/fisher/) - a plugin manager for Fish
+- [tide](https://github.com/IlanCosman/tide/) - the ultimate fish prompt
+- [nvm](https://github.com/jorgebucaran/nvm.fish/) - node package manager for fish
+- [z](https://github.com/jethrokuan/z/) - directory jumper
 
 ## Zsh config
 - [zsh shell](https://ohmyz.sh/)
@@ -45,7 +47,7 @@ Requires Neovim (>= 0.8)
 - [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
 - [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
 - [PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/) - Cmdlets for customizing the editing environment, used for autocompletion
-- [z](https://www.powershellgallery.com/packages/z) - Directory jumper
+- [z](https://www.powershellgallery.com/packages/z) - directory jumper
 
 ## Steps to install
 
