@@ -8,6 +8,7 @@ set -g fish_prompt_pwd_dir_length 1
 set -g theme_display_user yes
 set -g theme_hide_hostname no
 set -g theme_hostname always
+oh-my-posh init fish --config ~/.dotfiles/powershell/Themes/aura.omp.json | source
 
 # aliases
 alias ls "exa --icons"
