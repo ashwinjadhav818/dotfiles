@@ -64,23 +64,23 @@ A set of awesome programming fonts I love.
 
 ## Dank Mono
 
-![Dank Mono](./Assets/Dank%20Mono.png)
+![Dank Mono](./assets/Dank%20Mono.png)
 
 ## Victor Mono
 
-![Victor Mono](./Assets/Victor%20Mono.png)
+![Victor Mono](./assets/Victor%20Mono.png)
 
 ## Operator Mono
 
-![Operator Mono](./Assets/Operator%20Mono.png)
+![Operator Mono](./assets/Operator%20Mono.png)
 
 ## MonoLisa
 
-![MonoLisa](./Assets/MonoLisa.png)
+![MonoLisa](./assets/MonoLisa.png)
 
 ## Fira Code
 
-![Fira Code](./Assets/Fira%20Code.png)
+![Fira Code](./assets/Fira%20Code.png)
 
 > The theme used in the screenshots is Synthwave 84 on Visual Studio Code
 
