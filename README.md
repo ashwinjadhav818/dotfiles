@@ -19,6 +19,7 @@
 -  [NeoVim](https://neovim.io)
 -  [LunarVim](http://lunarvim.org)
 -  [fish shell](https://fishshell.com)
+-  powershell
 
 ## Vim (LunarVim & NvChad) config
 
@@ -33,6 +34,7 @@ Requires Neovim (>= 0.8)
 ## Fish config
 
 -  [fish shell](https://fishshell.com/)
+-  [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
 -  [fisher](https://github.com/jorgebucaran/fisher/) - a plugin manager for Fish
 -  [tide](https://github.com/IlanCosman/tide/) - the ultimate fish prompt
 -  [nvm](https://github.com/jorgebucaran/nvm.fish/) - node package manager for fish
