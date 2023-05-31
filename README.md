@@ -125,5 +125,9 @@ git clone https://github.com/ashwinjadhav818/dotfiles.git C:\Users\<UserName>\.d
 2. Create symlinks in the Home directory to the real files in the repo.
 
 ```bash
-sudo New-Item -Path C:\Users\<UserName>\.config\powershell -ItemType SymbolicLink -Value C:\Users\<UserName>\.dotfiles\.config\powershell\
+sudo New-Item -Path $HOME\.config\powershell -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\powershell\
+
+sudo New-Item -Path $HOME\.config\starship.toml -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\starhsip\starship.toml
+
+sudo New-Item -Path $HOME\.bashrc -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\bash\.bashrc
 ```

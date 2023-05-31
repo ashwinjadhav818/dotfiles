@@ -88,15 +88,15 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-# alias ll='ls -alF'
-# alias la='ls -A'
-# alias l='ls -CF'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 alias cls="clear"
 alias bat="batcat"
-alias l="exa --long --header --git --icons -a"
-alias ls="exa --icons"
-alias vi=lvim
-alias vim=lvim
+# alias l="exa --long --header --git --icons -a"
+# alias ls="exa --icons"
+alias vi=nvim
+alias vim=nvim
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -123,4 +123,4 @@ if ! shopt -oq posix; then
 fi
 
 # StarShip prompt
-# eval "$(starship init bash)"
+eval "$(starship init bash)"
