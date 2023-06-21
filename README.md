@@ -5,7 +5,7 @@
 ## Contents
 
 -  vim (NeoVim & LunarVim) config
-   -  Plugins are managed with [Packer](https://github.com/wbthomason/packer.nvim)
+   -  Plugins are managed with [Lazy](https://github.com/folke/lazy.nvim.git")
 -  fish config
 -  zsh config
 -  powerlevel10k config
@@ -23,13 +23,9 @@
 
 ## Vim (LunarVim & NvChad) config
 
-Requires Neovim (>= 0.8)
+Requires Neovim (>= 0.9)
 
 -  [LunarVim](https://www.lunarvim.org/) - Fast IDE layer for Neovim with awesome plugins already installed.
--  [NvChad](https://nvchad.github.io/) - Awesome config for NeoVim.
--  [awesome-vim-colorschemes](https://github.com/rafi/awesome-vim-colorschemes) - Collection of awesome color schemes for Vim, merged for quick use.
--  [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - Minimal plugin for multi-cursors.
--  [markdown-preview](https://github.com/iamcco/markdown-preview.nvim) - Preview markdown on your modern browser with synchronised scrolling and flexible configuration.
 
 ## Fish config
 
@@ -101,7 +97,7 @@ git clone https://github.com/ashwinjadhav818/dotfiles.git ~/.dotfiles
 2. Create symlinks in the Home directory to the real files in the repo.
 
 ```bash
-stow bash fish zsh nvim lvim tmux
+stow bash fish zsh nvim lvim tmux starship
 ```
 
 3. Install LunarVim
@@ -126,6 +122,8 @@ git clone https://github.com/ashwinjadhav818/dotfiles.git C:\Users\<UserName>\.d
 
 ```bash
 sudo New-Item -Path $HOME\.config\powershell -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\powershell\
+
+sudo New-Item -Path $HOME\AppData\Local\nvim -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\nvim\
 
 sudo New-Item -Path $HOME\.config\starship.toml -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\starhsip\starship.toml
 

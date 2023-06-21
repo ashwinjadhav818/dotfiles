@@ -19,15 +19,15 @@ format = "[$symbol($version )]($style)"
 symbol = " "
 
 [directory]
-style = "purple"
+style = "blue"
 read_only = " "
 truncation_length = 4
 truncate_to_repo = false
 
 [character]
-success_symbol = "[❯](green)"
-error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](blue)"
+success_symbol = "[⚡](cyan)"
+error_symbol = "[⚡](red)"
+vicmd_symbol = "[⚡](green)"
 
 [git_branch]
 symbol = " "
@@ -42,7 +42,7 @@ format = "[$symbol]($style)"
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
-style = "cyan"
+style = "purple"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '

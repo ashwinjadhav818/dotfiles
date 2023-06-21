@@ -19,7 +19,7 @@ Set-PSReadLineOption -EditMode Vi
 Set-PSReadLineOption -BellStyle None
 Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSReadLineOption -PredictionSource History
-Set-PsReadLineOption -PredictionViewStyle ListView
+# Set-PsReadLineOption -PredictionViewStyle ListView
 
 # FZF
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
