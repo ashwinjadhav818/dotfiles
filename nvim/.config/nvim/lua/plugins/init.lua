@@ -30,7 +30,7 @@ require("lazy").setup({
       priority = 1000,
       config = function()
          require("plugins.config.gruvbox")
-         -- vim.cmd([[colorscheme gruvbox]])
+         vim.cmd([[colorscheme gruvbox]])
       end,
    },
    {
@@ -41,7 +41,7 @@ require("lazy").setup({
       },
       config = function()
          require("plugins.config.neosolarized")
-         vim.cmd([[colorscheme neosolarized]])
+         -- vim.cmd([[colorscheme neosolarized]])
       end,
    },
 
