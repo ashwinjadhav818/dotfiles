@@ -22,7 +22,7 @@ require("lazy").setup({
       priority = 1000,
       config = function()
          require("plugins.config.catppuccin")
-         -- vim.cmd([[colorscheme catppuccin-mocha]])
+         vim.cmd([[colorscheme catppuccin-mocha]])
       end,
    },
    {
@@ -30,7 +30,7 @@ require("lazy").setup({
       priority = 1000,
       config = function()
          require("plugins.config.gruvbox")
-         vim.cmd([[colorscheme gruvbox]])
+         -- vim.cmd([[colorscheme gruvbox]])
       end,
    },
    {
@@ -140,7 +140,7 @@ require("lazy").setup({
       "mfussenegger/nvim-jdtls",
       config = function()
          require("jdtls").start_or_attach({
-            cmd = { 'C:/Program Files/Common Files/Oracle/Java/javapath/java.exe' },
+            cmd = { 'java' },
             root_dir = vim.fs.dirname(vim.fs.find({ 'gradlew', '.git', 'mvnw', 'src' }, { upward = true })[1]),
          })
       end
