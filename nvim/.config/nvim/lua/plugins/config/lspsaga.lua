@@ -3,7 +3,9 @@ if (not status) then return end
 
 saga.setup {
   server_filetype_map = {
-    typescript = 'typescript'
+    typescript = 'typescript',
+    javascript = 'javascript',
+    java = 'java',
   }
 }
 

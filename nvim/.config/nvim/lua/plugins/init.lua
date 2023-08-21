@@ -185,5 +185,8 @@ require("lazy").setup({
       config = function()
          require("plugins.config.project")
       end,
+   },
+   {
+      "mg979/vim-visual-multi",
    }
 })

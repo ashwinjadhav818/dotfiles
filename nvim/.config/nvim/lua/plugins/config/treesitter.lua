@@ -25,6 +25,7 @@ ts.setup {
     "regex",
     "typescript",
     "javascript",
+    "java",
   },
   --- Automatically install missing parsers when entering buffer
   auto_install = true,

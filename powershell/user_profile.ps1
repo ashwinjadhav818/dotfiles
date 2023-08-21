@@ -1,7 +1,7 @@
 # Oh My Posh Themes
 # oh-my-posh init pwsh --config 'C:\Users\Ashwin\AppData\Local\Programs\oh-my-posh\themes\stelbent.minimal.omp.json' | Invoke-Expression
-# oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\aura.omp.json | Invoke-Expression
-Invoke-Expression (&starship init powershell)
+oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\wolf.omp.json | Invoke-Expression
+# Invoke-Expression (&starship init powershell)
 $ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
 
 # Modules
