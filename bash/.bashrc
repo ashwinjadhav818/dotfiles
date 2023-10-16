@@ -122,5 +122,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Adding Doom command in pathname
+export PATH=”$HOME/.emacs.d/bin:$PATH”
 # StarShip prompt
 eval "$(starship init bash)"
