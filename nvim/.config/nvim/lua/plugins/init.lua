@@ -33,17 +33,6 @@ require("lazy").setup({
          -- vim.cmd([[colorscheme gruvbox]])
       end,
    },
-   {
-      "svrana/neosolarized.nvim",
-      priority = 1000,
-      dependencies = {
-         "tjdevries/colorbuddy.nvim"
-      },
-      config = function()
-         require("plugins.config.neosolarized")
-         -- vim.cmd([[colorscheme neosolarized]])
-      end,
-   },
 
    -- UI Elemets
    {

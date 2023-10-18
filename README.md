@@ -123,9 +123,11 @@ git clone https://github.com/ashwinjadhav818/dotfiles.git C:\Users\<UserName>\.d
 ```bash
 sudo New-Item -Path $HOME\.config\powershell -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\powershell\
 
-sudo New-Item -Path $HOME\AppData\Local\nvim -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\nvim\
+sudo New-Item -Path $HOME\AppData\Local\nvim -ItemType SymbolicLink -Value $HOME\.dotfiles\nvim\.config\nvim\
 
 sudo New-Item -Path $HOME\.config\starship.toml -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\starhsip\starship.toml
 
 sudo New-Item -Path $HOME\.bashrc -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\bash\.bashrc
+
+sudo New-Item -Path $HOME\.glaze-wm\config.yaml -ItemType SymbolicLink -Value $HOME\.dotfiles\glaze-wm\config.yaml
 ```
