@@ -31,7 +31,7 @@ extendedClientCapabilities.resolveAdditionalTextEditsSupport = true
 
 local config = {
    cmd = {
-      "java", 
+      "java.exe", 
       workspace_dir,
    },
 
