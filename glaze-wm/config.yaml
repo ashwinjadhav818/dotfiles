@@ -10,7 +10,7 @@ general:
   toggle_workspace_on_refocus: true
 
   # Whether to show floating windows as always on top.
-  show_floating_on_top: false
+  show_floating_on_top: true
 
   # Amount to move floating windows by (eg. when using `alt+<hjkl>` on a floating window)
   floating_window_move_amount: "5%"
@@ -22,10 +22,10 @@ general:
 
 gaps:
   # Gap between adjacent windows.
-  inner_gap: "20px"
+  inner_gap: "15px"
 
   # Gap between windows and the screen edge.
-  outer_gap: "20px"
+  outer_gap: "15px"
 
 # Highlight active/inactive windows with a colored border.
 # ** Exclusive to Windows 11 due to API limitations.
@@ -39,15 +39,15 @@ focus_borders:
     color: "#ff0000"
 
 bar:
-  offset_x: 12
-  offset_y: 12
+  offset_x: 10
+  offset_y: 10
   font_family: "Mononoki Nerd Font Mono"
   height: 30 
   border_radius: 6
   position: "top"
-  background: "#1c2128"
+  background: "#1c212866"
   foreground: "#f0f6fc"
-  font_size: "16px"
+  font_size: "18px"
   border_color: "#89b2e4"
   border_width: 1
   vertical: "v"
@@ -106,9 +106,9 @@ bar:
       padding: "4px 6px"
       foreground: "#89B2E4"
     - type: "network"
-      foreground: "#7ce48b"
+      foreground: "#89b2e4"
       padding: "0 8px"
-      font_family: "JetBrainsMono Nerd Font Mono"
+      font_family: "Mononoki Nerd Font Mono"
       label_no_internet: ""
       label_ethernet: "󰈁"
       label_wifi_strength_0: "󰤯"
@@ -117,21 +117,22 @@ bar:
       label_wifi_strength_75: "󰤥"
       label_wifi_strength_100: "󰤨"
     - type: "volume"
-      label: "<attr fs='25' fg='#89B2E4'></attr>{volume_level}%"
+      label: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
       padding: "0 8px"
-      label_low: "<attr fs='25' fg='#89B2E4'></attr>{volume_level}%"
-      label_medium: "<attr fs='25' fg='#89B2E4'></attr>{volume_level}%"
-      label_high: "<attr fs='25' fg='#89B2E4'></attr>{volume_level}%"
-      label_mute: "<attr fs='25' fg='#89B2E4'></attr>{volume_level}%"
-    # - type: "battery"
-    #   label_draining: "{battery_level}% remaining"
-    #   label_power_saver: "{battery_level}%"
-    #   label_charging: "{battery_level}%"
+      label_low: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
+      label_medium: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
+      label_high: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
+      label_mute: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
+    - type: "battery"
+      padding: "0 8px"
+      label_draining: "<attr fs='25' fg='#89B2E4'></attr> {battery_level}% remaining"
+      label_power_saver: "<attr fs='25' fg='#89B2E4'>󱃍</attr> {battery_level}%"
+      label_charging: "<attr fs='25' fg='#89B2E4'>󰂇</attr> {battery_level}%"
     - type: "tiling direction"
       label_horizontal: "⮂"
       label_vertical: "⮁"
       foreground: "#89B2E4"
-      background: "#ffffff33"
+      background: "#21262d"
       margin: "0 4px"
       padding: "0 8px"
     - type: "binding mode"
@@ -160,6 +161,9 @@ window_rules:
   - command: "ignore"
     match_process_name: "/Taskmgr|ScreenClippingHost/"
 
+  - command: "ignore"
+    match_process_name: "/Flow.Launcher/"
+
   # Launches system dialogs as floating by default (eg. File Explorer save/open dialog).
   - command: "set floating"
     match_class_name: "#32770"
@@ -167,6 +171,8 @@ window_rules:
   # Some applications (eg. Steam) have borders that extend past the normal border size.
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "steam"
+  - command: "resize borders 0px -5px -5px -5px"
+    match_process_name: "vivaldi"
 
 binding_modes:
   - name: "resize"
@@ -226,11 +232,11 @@ keybindings:
 
   # Change focus between floating / tiling windows.
   - command: "focus mode toggle"
-    binding: "Alt+Space"
+    binding: "Alt+Shift+T"
 
   # Change the focused window to be floating / tiling.
   - command: "toggle floating"
-    binding: "Alt+Shift+Space"
+    binding: "Alt+T"
 
   # Change the focused window to be maximized / unmaximized.
   - command: "toggle maximized"
@@ -263,9 +269,9 @@ keybindings:
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - command: "focus workspace next"
-    binding: "Ctrl+Alt+Left"
+    binding: "Ctrl+Alt+H"
   - command: "focus workspace prev"
-    binding: "Ctrl+Alt+Right"
+    binding: "Ctrl+Alt+L"
 
   # Change focus to a workspace defined in `workspaces` config.
   - command: "focus workspace 1"
