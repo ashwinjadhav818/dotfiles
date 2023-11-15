@@ -8,17 +8,17 @@ set -g fish_prompt_pwd_dir_length 1
 set -g theme_display_user yes
 set -g theme_hide_hostname no
 set -g theme_hostname always
-oh-my-posh init fish --config ~/.dotfiles/powershell/Themes/aura.omp.json | source
+# oh-my-posh init fish --config ~/.dotfiles/powershell/Themes/aura.omp.json | source
 
 # aliases
 alias ls "exa --icons"
 alias l "exa --long --header --git --icons -a"
 alias g git
-alias vim lvim
-alias vi lvim
+alias vim nvim
+alias vi nvim
 # alias nvim lvim
 
-set -gx EDITOR lvim
+set -gx EDITOR nvim
 
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
