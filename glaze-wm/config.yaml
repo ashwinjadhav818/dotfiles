@@ -125,7 +125,7 @@ bar:
       label_mute: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
     - type: "battery"
       padding: "0 8px"
-      label_draining: "<attr fs='25' fg='#89B2E4'></attr> {battery_level}% remaining"
+      label_draining: "<attr fs='25' fg='#89B2E4'></attr> {battery_level}%"
       label_power_saver: "<attr fs='25' fg='#89B2E4'>󱃍</attr> {battery_level}%"
       label_charging: "<attr fs='25' fg='#89B2E4'>󰂇</attr> {battery_level}%"
     - type: "tiling direction"
@@ -141,7 +141,7 @@ bar:
       padding: "0 8px"
     - type: "clock"
       foreground: "#89B2E4"
-      time_formatting: "hh:mm:ss tt  ddd MMM d  "
+      time_formatting: "ddd MMM d hh:mm:ss tt  "
       margin: "0 0 0 10px"
 
 workspaces:
@@ -260,8 +260,8 @@ keybindings:
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
   # to start Windows Terminal and Git Bash respectively.
-  - command: "exec pwsh"
-    binding: "Alt+Enter"
+  # - command: "exec pwsh"
+    #  binding: "Alt+Enter"
 
   # Focus the workspace that last had focus.
   - command: "focus workspace recent"
@@ -269,9 +269,9 @@ keybindings:
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - command: "focus workspace next"
-    binding: "Ctrl+Alt+H"
-  - command: "focus workspace prev"
     binding: "Ctrl+Alt+L"
+  - command: "focus workspace prev"
+    binding: "Ctrl+Alt+H"
 
   # Change focus to a workspace defined in `workspaces` config.
   - command: "focus workspace 1"

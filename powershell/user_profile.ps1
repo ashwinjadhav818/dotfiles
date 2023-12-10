@@ -1,6 +1,6 @@
-# Oh My Posh Themes
-# oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\aura.omp.json | Invoke-Expression
-Invoke-Expression (&starship init powershell)
+# PowerShell Customizing software
+oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\aura.omp.json | Invoke-Expression
+# Invoke-Expression (&starship init powershell)
 $ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
 
 # Modules
@@ -23,3 +23,6 @@ Set-PSReadLineOption -PredictionSource History
 
 # FZF
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+
+# Komorebi
+$Env:KOMOREBI_CONFIG_HOME = 'C:\Users\Ashwin\.config\komorebi'
