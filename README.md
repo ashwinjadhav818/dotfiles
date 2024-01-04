@@ -121,9 +121,11 @@ git clone https://github.com/ashwinjadhav818/dotfiles.git C:\Users\<UserName>\.d
 2. Create symlinks in the Home directory to the real files in the repo.
 
 ```bash
-sudo New-Item -Path $HOME\.config\powershell -ItemType SymbolicLink -Value $HOME\.dotfiles\powershell\.config\powershell\
+sudo New-Item -Path $HOME\.config\powershell -ItemType SymbolicLink -Value $HOME\.dotfiles\powershell\
 
-sudo New-Item -Path $HOME\.config\komorebi -ItemType SymbolicLink -Value $HOME\.dotfiles\komorebi\.config\komorebi\
+sudo New-Item -Path $HOME\.config\komorebi -ItemType SymbolicLink -Value $HOME\.dotfiles\komorebi\
+
+sudo New-Item -Path $HOME\.config\whkdrc -ItemType SymbolicLink -Value $HOME\.dotfiles\komorebi\whkdrc
 
 sudo New-Item -Path $HOME\.yasb -ItemType SymbolicLink -Value $HOME\.dotfiles\yasb\
 

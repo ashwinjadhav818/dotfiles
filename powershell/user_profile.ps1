@@ -25,4 +25,4 @@ Set-PSReadLineOption -PredictionSource History
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Komorebi
-$Env:KOMOREBI_CONFIG_HOME = 'C:\Users\Ashwin\.config\komorebi'
+# $Env:KOMOREBI_CONFIG_HOME = 'C:\Users\Ashwin\.config\komorebi'

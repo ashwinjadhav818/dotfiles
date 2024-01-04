@@ -21,10 +21,10 @@
 !+Enter::Promote()
 
 ; Stack windows
-!Left::Stack("left")
-!Right::Stack("right")
-!Up::Stack("up")
-!Down::Stack("down")
+!+Left::Stack("left")
+!+Right::Stack("right")
+!+Up::Stack("up")
+!+Down::Stack("down")
 !;::Unstack()
 ![::CycleStack("previous")
 !]::CycleStack("next")
@@ -41,7 +41,7 @@
 
 ; Window manager options
 !+r::Retile()
-!p::TogglePause()
+#^p::TogglePause()
 
 ; Layouts
 !x::FlipLayout("horizontal")

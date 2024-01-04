@@ -114,8 +114,18 @@ require("lazy").setup({
       build = ":MasonUpdate"              -- :MasonUpdate updates registry contents
    },
    { 'onsails/lspkind-nvim' },            -- vscode-like pictograms
-   { 'jose-elias-alvarez/null-ls.nvim' }, -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
-   { 'MunifTanjim/prettier.nvim' },       -- Prettier plugin for Neovim's built-in LSP client
+   { 
+      "jose-elias-alvarez/null-ls.nvim",
+      config = function()
+         require("plugins.config.null-ls")
+      end,
+   }, -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
+   { 
+      "MunifTanjim/prettier.nvim",
+      config = function()
+         require("plugins.config.prettier")
+      end,
+   },       -- Prettier plugin for Neovim's built-in LSP client
    { 'williamboman/mason-lspconfig.nvim' },
    { 'princejoogie/tailwind-highlight.nvim' },
    {
@@ -125,15 +135,39 @@ require("lazy").setup({
       end,
    }, -- LSP UIs
    { 'L3MON4D3/LuaSnip' },
-   {
-      "mfussenegger/nvim-jdtls",
-      config = function()
-         require("jdtls").start_or_attach({
-            cmd = { 'java' },
-            root_dir = vim.fs.dirname(vim.fs.find({ 'gradlew', '.git', 'mvnw', 'src' }, { upward = true })[1]),
-         })
-      end
-   },
+   -- {
+   --    "mfussenegger/nvim-jdtls",
+   --    config = function()
+   --       require("jdtls").start_or_attach({
+   --          cmd = { 'java' },
+   --          root_dir = vim.fs.dirname(vim.fs.find({ 'gradlew', '.git', 'mvnw', 'src' }, { upward = true })[1]),
+   --       })
+   --    end
+   -- },
+   
+
+   -- Java
+{
+  'nvim-java/nvim-java',
+  dependencies = {
+    'nvim-java/lua-async-await',
+    'nvim-java/nvim-java-core',
+    'nvim-java/nvim-java-test',
+    'nvim-java/nvim-java-dap',
+    'MunifTanjim/nui.nvim',
+    'neovim/nvim-lspconfig',
+    'mfussenegger/nvim-dap',
+    {
+      'williamboman/mason.nvim',
+      opts = {
+        registries = {
+          'github:nvim-java/mason-registry',
+          'github:mason-org/mason-registry',
+        },
+      },
+    }
+  },
+},
 
    -- Completions
    {
