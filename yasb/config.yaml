@@ -4,7 +4,7 @@ watch_stylesheet: true
 watch_config: true
 
 bars:
-  yasb-bar:
+  status-bar:
     enabled: true
     screens: ['1']
     class_name: "yasb-bar"
@@ -13,10 +13,10 @@ bars:
       center: true
     blur_effect:
       enabled: true
-      acrylic: false
+      acrylic: true 
       dark: false 
     window_flags:
-      always_on_top: true
+      always_on_top: false
       windows_app_bar: true
     dimensions:
       width: "100%"
@@ -27,9 +27,12 @@ bars:
       bottom: 0
       right: 0
     widgets:
-      left:   ["komorebi_workspaces", "komorebi_active_layout"]
-      center: ["active_window"]
-      right:  ["cpu", "memory", "battery", "clock"]
+      # left:   ["komorebi_workspaces", "komorebi_active_layout"]
+      # center: ["active_window"]
+      # right:  ["cpu", "memory", "wifi", "battery", "clock"]
+      left:   ["start_button", "komorebi_workspaces", "komorebi_active_layout", "active_window"]
+      center: ["clock"]
+      right:  ["weather", "cpu", "memory", "wifi", "battery"]
 
 widgets:
   active_window:
@@ -37,7 +40,7 @@ widgets:
     options:
       label: "{win[title]}"
       label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
-      label_no_window: "No Active Windows"
+      label_no_window: "No Active Window"
       max_length: 48
       max_length_ellipsis: ".."
       monitor_exclusive: false
@@ -45,15 +48,15 @@ widgets:
   battery:
     type: "yasb.battery.BatteryWidget"
     options:
-      label: "{icon} {percent}%"
-      label_alt: "{icon} {percent}% | time: {time_remaining}"
-      time_remaining_natural: true
+      label: "{icon}  {percent}%"
+      label_alt: "{icon}  {percent}% | time: {time_remaining}"
+      time_remaining_natural: false
 
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-        label: "{%d %b  %I:%M %p}"
-        label_alt: "{%A %d %B %Y %I:%M %p}"
+        label: "\uf455  {%a %d %b %I:%M %p}"
+        label_alt: "\uf455  {%A %d %B %Y %I:%M %p}"
         timezones: ["Asia/Kolkata"]
         callbacks:
           on_middle: "exec explorer.exe shell:Appsfolder\\Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"
@@ -64,7 +67,7 @@ widgets:
     options:
       label: "\udb80\udf5b {info[percent][total]}%"
       label_alt: "\udb80\udf5b {info[histograms][cpu_percent]}"
-      update_interval: 500
+      update_interval: 2000
       histogram_icons:
         - '\u2581' # 0%
         - '\u2581' # 10%
@@ -75,14 +78,39 @@ widgets:
         - '\u2586' # 60%
         - '\u2587' # 70%
         - '\u2588' # 80%+
-      histogram_num_columns: 8 
+      histogram_num_columns: 8
+      callbacks:
+          on_right: "exec cmd /c Taskmgr"
 
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
-        label: "\uf200 {virtual_mem_percent}%"
-        label_alt: "\uf200 {virtual_mem_free}"
+        label: "\uf200  {virtual_mem_percent}%"
+        label_alt: "\uf200  {virtual_mem_free}"
+        update_interval: 2000
+        callbacks:
+          on_right: "exec cmd /c Taskmgr"
+  wifi:
+    type: "yasb.wifi.WifiWidget"
+    options:
+        label: "{wifi_icon}"
+        label_alt: "{wifi_icon}  {wifi_name}"
         update_interval: 5000
+        wifi_icons:
+          - "\udb82\udd2e"  # 0% strength (no wifi)
+          - "\udb82\udd1f"  # 1-25% strength
+          - "\udb82\udd22"  # 26-50% strength
+          - "\udb82\udd25"  # 51-75% strength
+          - "\udb82\udd28"  # 76-100% strength. Alternate theming: \uf1eb
+        callbacks:
+          on_middle: "do_nothing"
+          on_right: "exec cmd.exe /c start ms-settings:network"
+  traffic:
+    type: "yasb.traffic.TrafficWidget"
+    options:
+        label: "\ueb01 \ueab4 {download_speed} | \ueab7 {upload_speed}"
+        label_alt: "\ueb01 \ueab4 {upload_speed} | \ueab7 {download_speed}"
+        update_interval: 1000 # Update interval should be a multiple of 1000
         callbacks:
           on_right: "exec cmd /c Taskmgr"
 
@@ -90,8 +118,8 @@ widgets:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
         label_offline: "Komorebi Offline"
-        label_workspace_btn: "{name}"
-        label_default_name: "{index}"
+        label_workspace_btn: "{name}" # default: {name}
+        label_default_name: "{index}" # default: {index}
         label_zero_index: false
         hide_empty_workspaces: false
 
@@ -148,15 +176,14 @@ widgets:
   weather:
     type: "yasb.custom.CustomWidget"
     options:
-      label: "\uf0c2 {data[temperature_2m][10]}\u00b0c"
-      label_alt: "\uf0c2 {data[weather][0][description]}"
+      label: "\uf0c2  {data[current_condition][0][temp_C]}\u00b0c"
+      label_alt: "\uf0c2  {data[current_condition][0][weatherDesc][0][value]}"
       class_name: "weather-widget"
       exec_options:
-        run_cmd: "curl.exe https://api.open-meteo.com/v1/forecast?latitude=19.9973&longitude=73.791&hourly=temperature_2m&timezone=auto&forecast_days=1"
+        run_cmd: "curl.exe  wttr.in/Nashik?format=j1"
         # run every hour
         run_interval: 3600000
         return_format: "json"
-
   lang:
     type: "yasb.custom.CustomWidget"
     options:
@@ -180,3 +207,15 @@ widgets:
         # run every 2 sec
         run_interval: 5000
         return_format: "string"
+
+  start_button:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "\ue62a"
+      label_alt: "\ue62a Start"
+      class_name: "start-widget"
+      exec_options:
+        run_once: true
+      callbacks:
+        on_left: "exec SearchHost.exe"
+        on_right: "toggle_label"

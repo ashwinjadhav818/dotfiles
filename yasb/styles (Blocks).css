@@ -9,12 +9,12 @@
 .bar {
     /* background: #191724;  */
     border-bottom: none;
-    padding: 4px 5px;
+    padding: 4px 4px;
 }
 
 .container-right {
-      margin-right: 8px;
-      background: none;
+  margin-right: 8px;
+ 
 }
 
 .container-left {
@@ -22,10 +22,12 @@
 }
 
 .widget {
-    padding: 0px 5px;
-    border-radius: 7px;
-    /* background: #191724; */
-    margin: 2px 3px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  /* background: #191724; */ 
+  background: rgba(25, 23, 36, 0.8);
+  backdrop-filter: blur(100px);
+  margin: 2px 3px;
 }
 
 .widget .label {
@@ -41,10 +43,6 @@
       background: none;
 }
 
-.container-right .widget{
-    /* margin: 4px; */
-    padding: 5px 7px;
-}
 .komorebi-workspaces {
   margin-left: 0;
 }
@@ -86,8 +84,11 @@
       background: none;
 }
 
+
 .active-window-widget .label {
   padding: 5px 7px;
+  background-color: #FFF;
+  color: #191724;
   /* margin: 2px 1px; */
   /* color: #242424; */
     /* background: #191724; */

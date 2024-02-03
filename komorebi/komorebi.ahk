@@ -6,28 +6,28 @@
 #Include komorebi.generated.ahk
 
 ; Focus windows
-!h::Focus("left")
-!j::Focus("down")
-!k::Focus("up")
-!l::Focus("right")
-!+[::CycleFocus("previous")
-!+]::CycleFocus("next")
+#left::Focus("left")
+#down::Focus("down")
+#up::Focus("up")
+#right::Focus("right")
+#+[::CycleFocus("previous")
+#+]::CycleFocus("next")
 
 ; Move windows
-!+h::Move("left")
-!+j::Move("down")
-!+k::Move("up")
-!+l::Move("right")
-!+Enter::Promote()
+#+h::Move("left")
+#+j::Move("down")
+#+k::Move("up")
+#+l::Move("right")
+#+Enter::Promote()
 
 ; Stack windows
-!+Left::Stack("left")
-!+Right::Stack("right")
-!+Up::Stack("up")
-!+Down::Stack("down")
-!;::Unstack()
-![::CycleStack("previous")
-!]::CycleStack("next")
+#+Left::Stack("left")
+#+Right::Stack("right")
+#+Up::Stack("up")
+#+Down::Stack("down")
+#;::Unstack()
+#[::CycleStack("previous")
+#]::CycleStack("next")
 
 ; Resize
 !=::ResizeAxis("horizontal", "increase")
@@ -48,15 +48,15 @@
 !y::FlipLayout("vertical")
 
 ; Workspaces
-!1::FocusWorkspace(0)
-!2::FocusWorkspace(1)
-!3::FocusWorkspace(2)
-!4::FocusWorkspace(3)
+#1::FocusWorkspace(0)
+#2::FocusWorkspace(1)
+#3::FocusWorkspace(2)
+#4::FocusWorkspace(3)
 ^!l::CycleWorkspace("previous")
 ^!h::CycleWorkspace("next")
 
 ; Move windows across workspaces
-!+1::MoveToWorkspace(0)
-!+2::MoveToWorkspace(1)
-!+3::MoveToWorkspace(2)
-!+4::MoveToWorkspace(3)
+#+1::MoveToWorkspace(0)
+#+2::MoveToWorkspace(1)
+#+3::MoveToWorkspace(2)
+#+4::MoveToWorkspace(3)
