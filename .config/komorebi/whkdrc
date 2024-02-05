@@ -1,0 +1,67 @@
+.shell pwsh
+
+# Reload whkd configuration
+# ctrl+alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
+ctrl+alt + o                 : taskkill /f /im whkd.exe && Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+ctrl+alt + shift + o         : komorebic reload-configuration
+
+# App shortcuts - these require shell to be pwsh / powershell
+# The apps will be focused if open, or launched if not open
+# ctrl+alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
+# ctrl+alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
+
+# Focus windows
+ctrl+alt + a                 : komorebic focus left
+ctrl+alt + b                 : komorebic focus down
+ctrl+alt + c                 : komorebic focus up
+ctrl+alt + d                 : komorebic focus right
+ctrl+alt + shift + oem_4     : komorebic cycle-focus previous # oem_4 is [
+ctrl+alt + shift + oem_6     : komorebic cycle-focus next # oem_6 is ]
+
+# Move windows
+ctrl+alt + shift + a         : komorebic move left
+ctrl+alt + shift + b         : komorebic move down
+ctrl+alt + shift + c         : komorebic move up
+ctrl+alt + shift + d         : komorebic move right
+ctrl+alt + shift + return    : komorebic promote
+
+# Stack windows
+ctrl+alt + shift + left              : komorebic stack left
+ctrl+alt + shift + down              : komorebic stack down
+ctrl+alt + shift + up                : komorebic stack up
+ctrl+alt + shift + right             : komorebic stack right
+ctrl+alt + oem_1             : komorebic unstack # oem_1 is ;
+ctrl+alt + oem_4             : komorebic cycle-stack previous # oem_4 is [
+ctrl+alt + oem_6             : komorebic cycle-stack next # oem_6 is ]
+
+# Resize
+ctrl+alt + oem_plus          : komorebic resize-axis horizontal increase
+ctrl+alt + oem_minus         : komorebic resize-axis horizontal decrease
+ctrl+alt + shift + oem_plus  : komorebic resize-axis vertical increase
+ctrl+alt + shift + oem_minus : komorebic resize-axis vertical decrease
+
+# Manipulate windows
+ctrl+alt + t                 : komorebic toggle-float
+ctrl+alt + shift + f         : komorebic toggle-monocle
+
+# Window manager options
+ctrl+alt + shift + r         : komorebic retile
+ctrl+alt + p                 : komorebic toggle-pause
+
+# Layouts
+ctrl+alt + x                 : komorebic flip-layout horizontal
+ctrl+alt + y                 : komorebic flip-layout vertical
+
+# Workspaces
+ctrl+alt + shift + n         : komorebic cycle-workspace previous
+ctrl+alt + shift + m         : komorebic cycle-workspace next
+ctrl+alt + 1                 : komorebic focus-workspace 0
+ctrl+alt + 2                 : komorebic focus-workspace 1
+ctrl+alt + 3                 : komorebic focus-workspace 2
+ctrl+alt + 4                 : komorebic focus-workspace 3
+
+# Move windows across workspaces
+ctrl+alt + shift + 1         : komorebic move-to-workspace 0
+ctrl+alt + shift + 2         : komorebic move-to-workspace 1
+ctrl+alt + shift + 3         : komorebic move-to-workspace 2
+ctrl+alt + shift + 4         : komorebic move-to-workspace 3

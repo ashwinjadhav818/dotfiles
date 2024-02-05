@@ -2,32 +2,26 @@
 
 ![Cover](./assets/cover.png)
 
-## Contents
+## Configurations
 
--  vim (NeoVim & LunarVim) config
+-  vim (NeoVim & LunarVim)
    -  Plugins are managed with [Lazy](https://github.com/folke/lazy.nvim.git")
--  fish config
--  zsh config
--  powerlevel10k config
--  powershell config
--  tmux config
--  yarn config
--  programming fonts
+-  fish
+-  zsh
+-  powerlevel10k
+-  powershel
+-  tmux
+-  glaze-wm
+-  komorebi
+-  yasb
 
-## Apps/utilites I use
-
--  [NeoVim](https://neovim.io)
--  [LunarVim](http://lunarvim.org)
--  [fish shell](https://fishshell.com)
--  powershell
-
-## Vim (LunarVim & NvChad) config
+### Vim (LunarVim & NeoVim) config
 
 Requires Neovim (>= 0.9)
 
 -  [LunarVim](https://www.lunarvim.org/) - Fast IDE layer for Neovim with awesome plugins already installed.
 
-## Fish config
+### Fish config
 
 -  [fish shell](https://fishshell.com/)
 -  [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
@@ -36,7 +30,7 @@ Requires Neovim (>= 0.9)
 -  [nvm](https://github.com/jorgebucaran/nvm.fish/) - node package manager for fish
 -  [z](https://github.com/jethrokuan/z/) - directory jumper
 
-## Zsh config
+### Zsh config
 
 -  [zsh shell](https://ohmyz.sh/)
 -  [nerd font](https://www.nerdfonts.com/) - Powerline-patched fonts. I use Fira Code NF Retina and JetBrainsMono Nerd Font.
@@ -45,7 +39,7 @@ Requires Neovim (>= 0.9)
 -  [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Fish-like fast/unobtrusive autosuggestions for zsh.
 -  [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Fish shell-like syntax highlighting for zsh.
 
-## PowerShell config
+### PowerShell config
 
 -  [scoop](https://scoop.sh/) - A command-line installer
 -  [git for windows](https://gitforwindows.org/)
@@ -54,31 +48,14 @@ Requires Neovim (>= 0.9)
 -  [PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/) - Cmdlets for customizing the editing environment, used for autocompletion
 -  [z](https://www.powershellgallery.com/packages/z) - directory jumper
 
-## Programming fonts
 
-A set of awesome programming fonts I love.
+## Apps/utilites I use
 
-## Dank Mono
+-  [NeoVim](https://neovim.io)
+-  [LunarVim](http://lunarvim.org)
+-  [fish shell](https://fishshell.com)
+-  powershell
 
-![Dank Mono](./assets/Dank%20Mono.png)
-
-## Victor Mono
-
-![Victor Mono](./assets/Victor%20Mono.png)
-
-## Operator Mono
-
-![Operator Mono](./assets/Operator%20Mono.png)
-
-## MonoLisa
-
-![MonoLisa](./assets/MonoLisa.png)
-
-## Fira Code
-
-![Fira Code](./assets/Fira%20Code.png)
-
-> The theme used in the screenshots is Synthwave 84 on Visual Studio Code
 
 ## Steps to install
 
@@ -97,7 +74,7 @@ git clone https://github.com/ashwinjadhav818/dotfiles.git ~/.dotfiles
 2. Create symlinks in the Home directory to the real files in the repo.
 
 ```bash
-stow bash fish zsh nvim lvim tmux starship
+stow .
 ```
 
 3. Install LunarVim
@@ -121,19 +98,19 @@ git clone https://github.com/ashwinjadhav818/dotfiles.git C:\Users\<UserName>\.d
 2. Create symlinks in the Home directory to the real files in the repo.
 
 ```bash
-sudo New-Item -Path $HOME\.config\powershell -ItemType SymbolicLink -Value $HOME\.dotfiles\powershell\
+sudo New-Item -Path $HOME\.config\powershell -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\powershell\
 
-sudo New-Item -Path $HOME\.config\komorebi -ItemType SymbolicLink -Value $HOME\.dotfiles\komorebi\
+sudo New-Item -Path $HOME\.config\komorebi -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\komorebi\
 
-sudo New-Item -Path $HOME\.config\whkdrc -ItemType SymbolicLink -Value $HOME\.dotfiles\komorebi\whkdrc
+sudo New-Item -Path $HOME\.config\whkdrc -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\komorebi\whkdrc
 
-sudo New-Item -Path $HOME\.yasb -ItemType SymbolicLink -Value $HOME\.dotfiles\yasb\
+sudo New-Item -Path $HOME\.config\yasb -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\yasb\
 
-sudo New-Item -Path $HOME\AppData\Local\nvim -ItemType SymbolicLink -Value $HOME\.dotfiles\nvim\.config\nvim\
+sudo New-Item -Path $HOME\AppData\Local\nvim -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\nvim\
 
-sudo New-Item -Path $HOME\.config\starship.toml -ItemType SymbolicLink -Value $HOME\.dotfiles\starship\.config\starhsip\starship.toml
+sudo New-Item -Path $HOME\.config\starship.toml -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\starhsip\starship.toml
 
-sudo New-Item -Path $HOME\.bashrc -ItemType SymbolicLink -Value $HOME\.dotfiles\bash\.config\bash\.bashrc
+sudo New-Item -Path $HOME\.bashrc -ItemType SymbolicLink -Value $HOME\.dotfiles\.bashrc
 
 sudo New-Item -Path $HOME\.glaze-wm\config.yaml -ItemType SymbolicLink -Value $HOME\.dotfiles\glaze-wm\config.yaml
 ```
