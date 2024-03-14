@@ -32,7 +32,7 @@ bars:
       # right:  ["cpu", "memory", "wifi", "battery", "clock"]
       left:   ["start_button", "komorebi_workspaces", "komorebi_active_layout", "active_window"]
       center: ["clock"]
-      right:  ["cpu", "memory", "wifi", "battery", "notification"]
+      right:  ["weather", "cpu", "memory", "wifi", "battery", "search_button", "notification"]
 
 widgets:
   active_window:
@@ -113,7 +113,6 @@ widgets:
         update_interval: 1000 # Update interval should be a multiple of 1000
         callbacks:
           on_right: "exec cmd /c Taskmgr"
-
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
@@ -203,7 +202,7 @@ widgets:
       label_alt: "\uf49a"
       class_name: "notification-widget"
       callbacks:
-        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/yasb/functions/notification-widget.ahk"
+        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/notification-widget.ahk"
         on_right: "toggle_label"
 
   start_button:
@@ -215,5 +214,17 @@ widgets:
       exec_options:
         run_once: true
       callbacks:
-        on_left: "exec SearchHost.exe"
+        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/start-widget.ahk"
+        on_right: "toggle_label"
+
+  search_button:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "\uf422"
+      label_alt: "\uf422 Search"
+      class_name: "search-widget"
+      exec_options:
+        run_once: true
+      callbacks:
+        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/search-widget.ahk"
         on_right: "toggle_label"

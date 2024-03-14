@@ -103,14 +103,9 @@ local mappings = {
       o = { "<cmd>lua require'jdtls'.organize_imports()<cr>", "Organize Imports" },
       v = { "<cmd>lua require('jdtls').extract_variable()<cr>", "Extract Variable" },
       c = { "<cmd>lua require('jdtls').extract_constant()<cr>", "Extract Constant" },
+      m = { "<cmd>lua require('jdtls').extract_method(true)<cr>", "Extract Method" },
       t = { "<cmd>lua require('jdtls').test_class()<cr>", "Test Class" },
       n = { "<cmd>lua require('jdtls').test_nearest_method()<cr>", "Test Nearest Method" },
-   },
-   C = {
-      name = "Code",
-      v = { "<cmd>lua require('jdtls').extract_variable(true)<cr>", "Extract Variable" },
-      c = { "<cmd>lua require('jdtls').extract_constant(true)<cr>", "Extract Constant" },
-      m = { "<cmd>lua require('jdtls').extract_method(true)<cr>", "Extract Method" },
    },
    g = {
       name = "Git",
@@ -168,7 +163,6 @@ local mappings = {
    },
    s = {
       name = "Search",
-      b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
       c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
       h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
       M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },

@@ -13,6 +13,7 @@ Set-Alias g git
 Set-Alias vi nvim
 Set-Alias vim nvim
 Set-Alias cmake make
+Set-Alias autohotkey autohotkey64
 
 # PSReadLine
 Set-PSReadLineOption -EditMode Vi

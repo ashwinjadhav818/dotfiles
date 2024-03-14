@@ -9,7 +9,7 @@ local JDTLS_LOCATION = vim.fn.stdpath "data" .. "/lsp_servers/jdtls"
 
 -- Data directory - change it to your liking
 local HOME = os.getenv "HOME"
-local WORKSPACE_PATH = HOME .. "/workspace/java/"
+local WORKSPACE_PATH = HOME
 
 -- Only for Linux and Mac
 local SYSTEM = "linux"
@@ -20,7 +20,7 @@ end
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 local workspace_dir = WORKSPACE_PATH .. project_name
 
-local root_markers = { ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" }
+local root_markers = { ".git", "mvnw", "gradlew", "pom.xml", "build.gradle", "src" }
 local root_dir = require("jdtls.setup").find_root(root_markers)
 if root_dir == "" then
    return

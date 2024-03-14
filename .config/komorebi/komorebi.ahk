@@ -52,8 +52,8 @@
 #2::FocusWorkspace(1)
 #3::FocusWorkspace(2)
 #4::FocusWorkspace(3)
-^!l::CycleWorkspace("previous")
-^!h::CycleWorkspace("next")
+#^Left::CycleWorkspace("previous")
+#^Right::CycleWorkspace("next")
 
 ; Move windows across workspaces
 #+1::MoveToWorkspace(0)
