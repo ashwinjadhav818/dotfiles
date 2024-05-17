@@ -1,25 +1,49 @@
-2024-03-14 18:17:06 INFO log.py: Yasb - Yet Another Status Bar
-2024-03-14 18:17:20 INFO bar_manager.py: Starting KomorebiEventListener...
-2024-03-14 18:17:21 INFO bar_manager.py: Starting SystemEventListener...
-2024-03-14 18:17:21 INFO event_listener.py: Created named pipe yasb-ff876461-e200-11ee-a5cd-dac0a6fc4ed5
-2024-03-14 18:17:21 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-ff876461-e200-11ee-a5cd-dac0a6fc4ed5
-2024-03-14 18:17:21 INFO watcher.py: Created file watcher for path C:\Users\Ashwin\.config\yasb
-2024-03-14 18:17:21 INFO event_listener.py: Komorebi connected to named pipe: yasb-ff876461-e200-11ee-a5cd-dac0a6fc4ed5
-2024-03-14 18:27:24 INFO bar_manager.py: Stopping KomorebiEventListener...
-2024-03-14 18:27:24 INFO bar_manager.py: Stopping SystemEventListener...
-2024-03-14 18:27:25 INFO bar_manager.py: Starting KomorebiEventListener...
-2024-03-14 18:27:25 INFO bar_manager.py: Starting SystemEventListener...
-2024-03-14 18:27:25 INFO bar_manager.py: Successfully loaded updated config and re-initialised all bars.
-2024-03-14 18:27:25 INFO event_listener.py: Created named pipe yasb-67f703d2-e202-11ee-a7b0-dac0a6fc4ed5
-2024-03-14 18:27:25 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-67f703d2-e202-11ee-a7b0-dac0a6fc4ed5
-2024-03-14 18:27:26 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
-2024-03-14 18:27:26 INFO event_listener.py: Komorebi connected to named pipe: yasb-67f703d2-e202-11ee-a7b0-dac0a6fc4ed5
-2024-03-14 18:29:26 INFO bar_manager.py: Stopping KomorebiEventListener...
-2024-03-14 18:29:26 INFO bar_manager.py: Stopping SystemEventListener...
-2024-03-14 18:29:28 INFO bar_manager.py: Starting KomorebiEventListener...
-2024-03-14 18:29:28 INFO bar_manager.py: Starting SystemEventListener...
-2024-03-14 18:29:28 INFO bar_manager.py: Successfully loaded updated config and re-initialised all bars.
-2024-03-14 18:29:28 INFO event_listener.py: Created named pipe yasb-b11b412f-e202-11ee-9ced-dac0a6fc4ed5
-2024-03-14 18:29:28 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-b11b412f-e202-11ee-9ced-dac0a6fc4ed5
-2024-03-14 18:29:28 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
-2024-03-14 18:29:28 INFO event_listener.py: Komorebi connected to named pipe: yasb-b11b412f-e202-11ee-9ced-dac0a6fc4ed5
+2024-05-17 09:46:03 INFO log.py: Yasb - Yet Another Status Bar
+2024-05-17 09:46:04 ERROR errorhandler.py: Property: Invalid value for "CSS Level 2.1" property: "darkgray" [37:5: color]
+2024-05-17 09:46:04 ERROR errorhandler.py: Property: Invalid value for "CSS Level 2.1" property: "darkgray" [94:5: color]
+2024-05-17 09:46:28 INFO bar_manager.py: Starting SystemEventListener...
+2024-05-17 09:46:28 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-05-17 09:46:28 INFO event_listener.py: Created named pipe yasb-3bc6e50b-1404-11ef-b3e3-d8c0a6fc4ed4
+2024-05-17 09:46:28 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-3bc6e50b-1404-11ef-b3e3-d8c0a6fc4ed4
+2024-05-17 09:46:28 INFO watcher.py: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-05-17 09:46:29 INFO event_listener.py: Komorebi connected to named pipe: yasb-3bc6e50b-1404-11ef-b3e3-d8c0a6fc4ed4
+2024-05-17 14:18:01 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "D:\Projects\Desktop\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "D:\Projects\Desktop\yasb\src\core\widgets\yasb\wifi.py", line 58, in _update_label
+    wifi_icon, _ = self._get_wifi_icon()
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Desktop\yasb\src\core\widgets\yasb\wifi.py", line 105, in _get_wifi_icon
+    strength = self._get_wifi_strength()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Desktop\yasb\src\core\widgets\yasb\wifi.py", line 80, in _get_wifi_strength
+    result = os.popen("netsh wlan show interfaces").read()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 993, in popen
+  File "C:\Users\Ashwin\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Ashwin\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 1455] The paging file is too small for this operation to complete
+2024-05-17 16:20:58 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "D:\Projects\Desktop\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "D:\Projects\Desktop\yasb\src\core\widgets\yasb\wifi.py", line 58, in _update_label
+    wifi_icon, _ = self._get_wifi_icon()
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Desktop\yasb\src\core\widgets\yasb\wifi.py", line 105, in _get_wifi_icon
+    strength = self._get_wifi_strength()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Desktop\yasb\src\core\widgets\yasb\wifi.py", line 80, in _get_wifi_strength
+    result = os.popen("netsh wlan show interfaces").read()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 993, in popen
+  File "C:\Users\Ashwin\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Ashwin\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 1455] The paging file is too small for this operation to complete

@@ -22,10 +22,10 @@ general:
 
 gaps:
   # Gap between adjacent windows.
-  inner_gap: "15px"
+  inner_gap: "7px"
 
   # Gap between windows and the screen edge.
-  outer_gap: "15px"
+  outer_gap: "7px"
 
 # Highlight active/inactive windows with a colored border.
 # ** Exclusive to Windows 11 due to API limitations.
@@ -39,15 +39,15 @@ focus_borders:
     color: "#ff0000"
 
 bar:
-  offset_x: 10
-  offset_y: 10
-  font_family: "Mononoki Nerd Font Mono"
+  offset_x: 5
+  offset_y: 5
+  font_family: "JetBrainsMono NF"
   height: 30 
   border_radius: 6
   position: "top"
   background: "#1c212866"
   foreground: "#f0f6fc"
-  font_size: "18px"
+  font_size: "12px"
   border_color: "#89b2e4"
   border_width: 1
   vertical: "v"
@@ -63,31 +63,31 @@ bar:
       default_workspace_background: "transparent"
       margin: "0px 10px 0px 0px"
     - type: "cpu"
-      label: "<attr fs='20' fg='#89B2E4'></attr> {percent_usage}%"
+      label: "<attr fg='#89B2E4'></attr>  {percent_usage}%"
       margin: "0px 10px 0px 0px"
       refresh_interval_ms: 1000
     - type: "gpu"
-      label: "<attr fs='20' fg='#89B2E4'>󱝊</attr> {percent_usage}%"
+      label: "<attr fg='#89B2E4'>󱝊</attr>  {percent_usage}%"
       margin: "0px 10px 0px 0px"
       refresh_interval_ms: 1000
     - type: "memory"
-      label: "<attr fs='20' fg='#89B2E4'></attr> {percent_usage}%"
+      label: "<attr fg='#89B2E4'></attr>  {percent_usage}%"
       margin: "0px 10px 0px 0px"
       refresh_interval_ms: 1000
     - type: "weather"
       latitude: 19.997454
       longitude: 73.7898
-      label: "<attr fs='20' fg='#89B2E4'></attr> {temperature_celsius}"
-      label_sun: "<attr fs='20' fg='#89B2E4'>󰖙</attr> {temperature_celsius}"
-      label_moon: "<attr fs='20' fg='#89B2E4'>󰖔</attr> {temperature_celsius}"
-      label_cloud_moon: "<attr fs='20' fg='#89B2E4'>󰼱</attr> {temperature_celsius}"
-      label_cloud_sun: "<attr fs='20' fg='#89B2E4'>󰖕</attr> {temperature_celsius}"
-      label_cloud_moon_rain: "<attr fs='20' fg='#89B2E4'>󰖖</attr> {temperature_celsius}"
-      label_cloud_sun_rain: "<attr fs='20' fg='#89B2E4'>󰼳</attr> {temperature_celsius}"
-      label_cloud_rain: "<attr fs='20' fg='#89B2E4'>󰖖</attr> {temperature_celsius}"
-      label_snow_flake: "<attr fs='20' fg='#89B2E4'>󰖘</attr> {temperature_celsius}"
-      label_thunderstorm: "<attr fs='20' fg='#89B2E4'>󰖓</attr> {temperature_celsius}"
-      label_cloud: "<attr fs='20' fg='#89B2E4'></attr> {temperature_celsius}"
+      label: "<attr fg='#89B2E4'></attr> {temperature_celsius}"
+      label_sun: "<attr fg='#89B2E4'>󰖙</attr> {temperature_celsius}"
+      label_moon: "<attr fg='#89B2E4'>󰖔</attr> {temperature_celsius}"
+      label_cloud_moon: "<attr fg='#89B2E4'>󰼱</attr> {temperature_celsius}"
+      label_cloud_sun: "<attr fg='#89B2E4'>󰖕</attr> {temperature_celsius}"
+      label_cloud_moon_rain: "<attr fg='#89B2E4'>󰖖</attr> {temperature_celsius}"
+      label_cloud_sun_rain: "<attr fg='#89B2E4'>󰼳</attr> {temperature_celsius}"
+      label_cloud_rain: "<attr fg='#89B2E4'>󰖖</attr> {temperature_celsius}"
+      label_snow_flake: "<attr fg='#89B2E4'>󰖘</attr> {temperature_celsius}"
+      label_thunderstorm: "<attr fg='#89B2E4'>󰖓</attr> {temperature_celsius}"
+      label_cloud: "<attr fg='#89B2E4'></attr> {temperature_celsius}"
       margin: "0px 10px 0px 0px"
     # - type: "system stats"
     # - type: "text"
@@ -98,7 +98,6 @@ bar:
     #   timezone: "EST"
     #   latitude: 40.0084
     #   longitude: -79.0786
-    # - type: "media"
   components_center:
     - type: "window title"
   components_right:
@@ -117,17 +116,17 @@ bar:
       label_wifi_strength_75: "󰤥"
       label_wifi_strength_100: "󰤨"
     - type: "volume"
-      label: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
+      label: "<attr fg='#89B2E4'></attr> {volume_level}%"
       padding: "0 8px"
-      label_low: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
-      label_medium: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
-      label_high: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
-      label_mute: "<attr fs='25' fg='#89B2E4'></attr> {volume_level}%"
+      label_low: "<attr fg='#89B2E4'></attr> {volume_level}%"
+      label_medium: "<attr fg='#89B2E4'></attr> {volume_level}%"
+      label_high: "<attr fg='#89B2E4'></attr> {volume_level}%"
+      label_mute: "<attr fg='#89B2E4'></attr> {volume_level}%"
     - type: "battery"
       padding: "0 8px"
-      label_draining: "<attr fs='25' fg='#89B2E4'></attr> {battery_level}%"
-      label_power_saver: "<attr fs='25' fg='#89B2E4'>󱃍</attr> {battery_level}%"
-      label_charging: "<attr fs='25' fg='#89B2E4'>󰂇</attr> {battery_level}%"
+      label_draining: "<attr fg='#89B2E4'></attr> {battery_level}%"
+      label_power_saver: "<attr fg='#89B2E4'>󱃍</attr> {battery_level}%"
+      label_charging: "<attr fg='#89B2E4'>󰂇</attr> {battery_level}%"
     - type: "tiling direction"
       label_horizontal: "⮂"
       label_vertical: "⮁"
@@ -141,7 +140,7 @@ bar:
       padding: "0 8px"
     - type: "clock"
       foreground: "#89B2E4"
-      time_formatting: "ddd MMM d hh:mm:ss tt  "
+      time_formatting: "ddd MMM d hh:mm tt  "
       margin: "0 0 0 10px"
 
 workspaces:
@@ -193,70 +192,70 @@ binding_modes:
 keybindings:
   # Shift focus in a given direction.
   - command: "focus left"
-    bindings: ["Alt+H"]
+    bindings: ["Ctrl+Alt+H"]
   - command: "focus right"
-    bindings: ["Alt+L"]
+    bindings: ["Ctrl+Alt+L"]
   - command: "focus up"
-    bindings: ["Alt+K"]
+    bindings: ["Ctrl+Alt+K"]
   - command: "focus down"
-    bindings: ["Alt+J"]
+    bindings: ["Ctrl+Alt+J"]
 
   # Move focused window in a given direction.
   - command: "move left"
-    bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
+    bindings: ["Ctrl+Alt+Shift+H", "Ctrl+Alt+Shift+Left"]
   - command: "move right"
-    bindings: ["Alt+Shift+L", "Alt+Shift+Right"]
+    bindings: ["Ctrl+Alt+Shift+L", "Ctrl+Alt+Shift+Right"]
   - command: "move up"
-    bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
+    bindings: ["Ctrl+Alt+Shift+K", "Ctrl+Alt+Shift+Up"]
   - command: "move down"
-    bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
+    bindings: ["Ctrl+Alt+Shift+J", "Ctrl+Alt+Shift+Down"]
 
   # Resize focused window by a percentage or pixel amount.
   - command: "resize width -2%"
-    binding: "Alt+U"
+    binding: "Ctrl+Alt+U"
   - command: "resize width +2%"
-    binding: "Alt+P"
+    binding: "Ctrl+Alt+P"
   - command: "resize height +2%"
-    binding: "Alt+O"
+    binding: "Ctrl+Alt+O"
   - command: "resize height -2%"
-    binding: "Alt+I"
+    binding: "Ctrl+Alt+I"
 
   # As an alternative to the resize keybindings above, resize mode enables resizing via
   # HJKL or arrow keys. The binding mode is defined above with the name "resize".
   - command: "binding mode resize"
-    binding: "Alt+R"
+    binding: "Ctrl+Alt+R"
 
   # Change tiling direction. This determines where new tiling windows will be inserted.
   - command: "tiling direction toggle"
-    binding: "Alt+V"
+    binding: "Ctrl+Alt+V"
 
   # Change focus between floating / tiling windows.
   - command: "focus mode toggle"
-    binding: "Alt+Shift+T"
+    binding: "Ctrl+Alt+Shift+T"
 
   # Change the focused window to be floating / tiling.
   - command: "toggle floating"
-    binding: "Alt+T"
+    binding: "Ctrl+Alt+T"
 
   # Change the focused window to be maximized / unmaximized.
   - command: "toggle maximized"
-    binding: "Alt+X"
+    binding: "Ctrl+Alt+X"
 
   # Minimize focused window.
   - command: "set minimized"
-    binding: "Alt+M"
+    binding: "Ctrl+Alt+M"
 
   # Close focused window.
   - command: "close"
-    binding: "Alt+Shift+Q"
+    binding: "Ctrl+Alt+Shift+Q"
 
   # Kill GlazeWM process safely.
   - command: "exit wm"
-    binding: "Alt+Shift+E"
+    binding: "Ctrl+Alt+Shift+E"
 
   # Re-evaluate configuration file.
   - command: "reload config"
-    binding: "Alt+Shift+R"
+    binding: "Ctrl+Alt+Shift+R"
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
   # to start Windows Terminal and Git Bash respectively.
@@ -265,60 +264,60 @@ keybindings:
 
   # Focus the workspace that last had focus.
   - command: "focus workspace recent"
-    binding: "Alt+Y"
+    binding: "Ctrl+Alt+Y"
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - command: "focus workspace next"
-    binding: "Ctrl+Alt+L"
+    binding: "Ctrl+Alt+Shift+M"
   - command: "focus workspace prev"
-    binding: "Ctrl+Alt+H"
+    binding: "Ctrl+Alt+Shift+N"
 
   # Change focus to a workspace defined in `workspaces` config.
   - command: "focus workspace 1"
-    binding: "Alt+1"
+    binding: "Ctrl+Alt+1"
   - command: "focus workspace 2"
-    binding: "Alt+2"
+    binding: "Ctrl+Alt+2"
   - command: "focus workspace 3"
-    binding: "Alt+3"
+    binding: "Ctrl+Alt+3"
   - command: "focus workspace 4"
-    binding: "Alt+4"
+    binding: "Ctrl+Alt+4"
   - command: "focus workspace 5"
-    binding: "Alt+5"
+    binding: "Ctrl+Alt+5"
   - command: "focus workspace 6"
-    binding: "Alt+6"
+    binding: "Ctrl+Alt+6"
   - command: "focus workspace 7"
-    binding: "Alt+7"
+    binding: "Ctrl+Alt+7"
   - command: "focus workspace 8"
-    binding: "Alt+8"
+    binding: "Ctrl+Alt+8"
   - command: "focus workspace 9"
-    binding: "Alt+9"
+    binding: "Ctrl+Alt+9"
 
   # Move focused workspace to a monitor in a given direction.
   - command: "move workspace left"
-    binding: "Alt+A"
+    binding: "Ctrl+Alt+A"
   - command: "move workspace right"
-    binding: "Alt+F"
+    binding: "Ctrl+Alt+F"
   - command: "move workspace up"
-    binding: "Alt+D"
+    binding: "Ctrl+Alt+D"
   - command: "move workspace down"
-    binding: "Alt+S"
+    binding: "Ctrl+Alt+S"
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ["move to workspace 1", "focus workspace 1"]
-    binding: "Alt+Shift+1"
+    binding: "Ctrl+Alt+Shift+1"
   - commands: ["move to workspace 2", "focus workspace 2"]
-    binding: "Alt+Shift+2"
+    binding: "Ctrl+Alt+Shift+2"
   - commands: ["move to workspace 3", "focus workspace 3"]
-    binding: "Alt+Shift+3"
+    binding: "Ctrl+Alt+Shift+3"
   - commands: ["move to workspace 4", "focus workspace 4"]
-    binding: "Alt+Shift+4"
+    binding: "Ctrl+Alt+Shift+4"
   - commands: ["move to workspace 5", "focus workspace 5"]
-    binding: "Alt+Shift+5"
+    binding: "Ctrl+Alt+Shift+5"
   - commands: ["move to workspace 6", "focus workspace 6"]
-    binding: "Alt+Shift+6"
+    binding: "Ctrl+Alt+Shift+6"
   - commands: ["move to workspace 7", "focus workspace 7"]
-    binding: "Alt+Shift+7"
+    binding: "Ctrl+Alt+Shift+7"
   - commands: ["move to workspace 8", "focus workspace 8"]
-    binding: "Alt+Shift+8"
+    binding: "Ctrl+Alt+Shift+8"
   - commands: ["move to workspace 9", "focus workspace 9"]
-    bindings: ["Alt+Shift+9"]
+    bindings: ["Ctrl+Alt+Shift+9"]

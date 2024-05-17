@@ -1,0 +1,19 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.lang.java",
+    "lazyvim.plugins.extras.lang.json",
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.python",
+    "lazyvim.plugins.extras.lang.tailwind",
+    "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.ui.edgy",
+    "lazyvim.plugins.extras.util.gitui",
+    "lazyvim.plugins.extras.util.project",
+    "lazyvim.plugins.extras.vscode"
+  ],
+  "news": {
+    "NEWS.md": "3415"
+  },
+  "version": 3
+}

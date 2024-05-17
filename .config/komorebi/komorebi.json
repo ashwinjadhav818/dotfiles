@@ -1,27 +1,61 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
-  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.yaml",
-  "window_hiding_behaviour": "Cloak",
-  "cross_monitor_move_behaviour": "Insert",
-  "alt_focus_hack": false,
-  "mouse_follows_focus": false,
-  "default_workspace_padding": 7,
-  "default_container_padding": 7,
-  "active_window_border": true,
-  "border_width": 3,
-  "active_window_border_colours": {
-    "single": { "r": 22, "g": 23, "b": 25 }, 
-    "stack": { "r": 32, "g": 57, "b": 123 },
-    "monocle": { "r": 255, "g": 51, "b": 153 }
-  },
-  "monitors": [
-    {
-      "workspaces": [
-        { "name": "1", "layout": "BSP" },
-        { "name": "2", "layout": "BSP" },
-        { "name": "3", "layout": "BSP" },
-        { "name": "4", "layout": "BSP" }
-      ]
+    "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
+    "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.yaml",
+    "window_hiding_behaviour": "Cloak",
+    "cross_monitor_move_behaviour": "Insert",
+    "alt_focus_hack": false,
+    "mouse_follows_focus": false,
+    "default_workspace_padding": 5,
+    "default_container_padding": 5,
+    "active_window_border": true,
+    "border_width": 3,
+    "active_window_border_colours": {
+        "single": {
+            "r": 22,
+            "g": 23,
+            "b": 25
+        },
+        "stack": {
+            "r": 32,
+            "g": 57,
+            "b": 123
+        },
+        "monocle": {
+            "r": 255,
+            "g": 51,
+            "b": 153
+        }
+    },
+    "monitors": [
+        {
+            "workspaces": [
+                {
+                    "name": "browser",
+                    "layout": "BSP"
+                },
+                {
+                    "name": "work",
+                    "layout": "VerticalStack"
+                },
+                {
+                    "name": "controls",
+                    "layout": "HorizontalStack"
+                },
+                {
+                    "name": "socials",
+                    "layout": "Rows"
+                }
+            ]
+        }
+    ],
+    "stackbar": {
+        "height": 15,
+        "mode": "OnStack",
+        "tabs": {
+            "width": 300,
+            "focused_text": "#00a542",
+            "unfocused_text": "#b3b3b3",
+            "background": "#141414"
+        }
     }
-  ]
 }

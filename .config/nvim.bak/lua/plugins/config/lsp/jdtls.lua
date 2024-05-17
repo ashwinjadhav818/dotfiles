@@ -1,6 +1,6 @@
-jdtls = require("nvim-jdtls")
+local jdtls = require("nvim-jdtls")
 
-jdtls.opts = {
+local config = {
 -- How to find the root dir for a given filename. The default comes from
         -- lspconfig which provides a function specifically for java projects.
         root_dir = require("lspconfig.server_configurations.jdtls").default_config.root_dir,
@@ -155,6 +155,6 @@ jdtls.opts = {
       })
 
       -- Avoid race condition by calling attach the first time, since the autocmd won't fire.
-      attach_jdtls()
-    end,
 }
+
+jdtls.attach_jdtls(config)

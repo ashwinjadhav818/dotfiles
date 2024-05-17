@@ -2,6 +2,7 @@
 oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\aura.omp.json | Invoke-Expression
 # Invoke-Expression (&starship init powershell)
 $ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
 # Modules
 Import-Module -Name Terminal-Icons
@@ -10,8 +11,8 @@ Import-Module -Name Terminal-Icons
 Set-Alias np C:\Windows\notepad.exe
 Set-Alias ll ls
 Set-Alias g git
-Set-Alias vi nvim
-Set-Alias vim nvim
+Set-Alias vi lvim
+Set-Alias vim lvim
 Set-Alias cmake make
 Set-Alias autohotkey autohotkey64
 

@@ -6,33 +6,63 @@ watch_config: true
 bars:
   status-bar:
     enabled: true
-    screens: ['1']
+    screens: ["1"]
     class_name: "yasb-bar"
     alignment:
       position: "top"
       center: true
     blur_effect:
-      enabled: true
-      acrylic: true 
-      dark: false 
+      enabled: false
+      acrylic: true
+      dark: false
     window_flags:
       always_on_top: false
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 40 
+      height: 30
     padding:
       top: 0
       left: 0
       bottom: 0
       right: 0
     widgets:
-      # left:   ["komorebi_workspaces", "komorebi_active_layout"]
-      # center: ["active_window"]
-      # right:  ["cpu", "memory", "wifi", "battery", "clock"]
-      left:   ["start_button", "komorebi_workspaces", "komorebi_active_layout", "active_window"]
-      center: ["clock"]
-      right:  ["weather", "cpu", "memory", "wifi", "battery", "search_button", "notification"]
+      # left:
+      #   [
+      #     "start_button",
+      #     "komorebi_workspaces", 
+      #     "komorebi_active_layout",
+      #     "active_window",
+      #   ]
+      # center: ["clock"]
+      # right:
+      #   [
+      #     "tray_button",
+      #     "cpu",
+      #     "memory",
+      #     "wifi",
+      #     "battery",
+      #     "search_button",
+      #     "notification",
+      #   ]
+      left:
+        [
+          "start_button",
+          "search_button",
+          "komorebi_workspaces", 
+          "komorebi_active_layout",
+        ]
+      center: ["active_window"]
+      right:
+        [
+          "tray_button",
+          "cpu",
+          "memory",
+          "wifi",
+          "battery",
+          "notification",
+          "clock"
+        ]
 
 widgets:
   active_window:
@@ -40,8 +70,8 @@ widgets:
     options:
       label: "{win[title]}"
       label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
-      label_no_window: "No Active Window"
-      max_length: 48
+      label_no_window: "Desktop"
+      max_length: 56
       max_length_ellipsis: ".."
       monitor_exclusive: false
 
@@ -55,12 +85,12 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-        label: "\uf455  {%a %d %b %I:%M %p}"
-        label_alt: "\uf455  {%A %d %B %Y %I:%M %p}"
-        timezones: ["Asia/Kolkata"]
-        callbacks:
-          on_middle: "exec explorer.exe shell:Appsfolder\\Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"
-          on_right: "next_timezone"
+      label: "\udb82\udd54  {%I:%M %p}"
+      label_alt: "\udb82\udd54  {%A %d %B %Y %I:%M %p}"
+      timezones: ["Asia/Kolkata"]
+      callbacks:
+        on_middle: "exec explorer.exe shell:Appsfolder\\Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"
+        on_right: "next_timezone"
 
   cpu:
     type: "yasb.cpu.CpuWidget"
@@ -80,47 +110,49 @@ widgets:
         - '\u2588' # 80%+
       histogram_num_columns: 8
       callbacks:
-          on_right: "exec cmd /c Taskmgr"
+        on_right: "exec cmd /c Taskmgr"
 
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
-        label: "\uf200  {virtual_mem_percent}%"
-        label_alt: "\uf200  {virtual_mem_free}"
-        update_interval: 2000
-        callbacks:
-          on_right: "exec cmd /c Taskmgr"
+      label: "\uf200  {virtual_mem_percent}%"
+      label_alt: "\uf200  {virtual_mem_free}"
+      update_interval: 2000
+      callbacks:
+        on_right: "exec cmd /c Taskmgr"
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
-        label: "{wifi_icon}"
-        label_alt: "{wifi_icon}  {wifi_name}"
-        update_interval: 5000
-        wifi_icons:
-          - "\udb82\udd2e"  # 0% strength (no wifi)
-          - "\udb82\udd1f"  # 1-25% strength
-          - "\udb82\udd22"  # 26-50% strength
-          - "\udb82\udd25"  # 51-75% strength
-          - "\udb82\udd28"  # 76-100% strength. Alternate theming: \uf1eb
-        callbacks:
-          on_middle: "do_nothing"
-          on_right: "exec cmd.exe /c start ms-settings:network"
+      label: "{wifi_icon}"
+      label_alt: "{wifi_icon}  {wifi_name}"
+      update_interval: 5000
+      wifi_icons:
+        - "\udb82\udd2e" # 0% strength (no wifi)
+        - "\udb82\udd1f" # 1-25% strength
+        - "\udb82\udd22" # 26-50% strength
+        - "\udb82\udd25" # 51-75% strength
+        - "\udb82\udd28" # 76-100% strength. Alternate theming: \uf1eb
+      callbacks:
+        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/action-widget.ahk"
+        on_middle: "do_nothing"
+        on_right: "exec cmd.exe /c start ms-settings:network"
   traffic:
     type: "yasb.traffic.TrafficWidget"
     options:
-        label: "\ueb01 \ueab4 {download_speed} | \ueab7 {upload_speed}"
-        label_alt: "\ueb01 \ueab4 {upload_speed} | \ueab7 {download_speed}"
-        update_interval: 1000 # Update interval should be a multiple of 1000
-        callbacks:
-          on_right: "exec cmd /c Taskmgr"
+      label: "\ueb01 \ueab4 {download_speed} | \ueab7 {upload_speed}"
+      label_alt: "\ueb01 \ueab4 {upload_speed} | \ueab7 {download_speed}"
+      update_interval: 1000 # Update interval should be a multiple of 1000
+      callbacks:
+        on_right: "exec cmd /c Taskmgr"
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
-        label_offline: "Komorebi Offline"
-        label_workspace_btn: "{name}" # default: {name}
-        label_default_name: "{index}" # default: {index}
-        label_zero_index: false
-        hide_empty_workspaces: false
+      label_offline: "Komorebi Offline"
+      label_workspace_btn: "{name}" # default: {name}
+      label_default_name: "{index}" # default: {index}
+      label_zero_index: false
+      hide_empty_workspaces: false
+      preview_workspace: true
 
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
@@ -139,9 +171,9 @@ widgets:
         floating: "><>"
         paused: "[P]"
       callbacks:
-        on_left: 'next_layout'
-        on_middle: 'toggle_monocle'
-        on_right: 'prev_layout'
+        on_left: "next_layout"
+        on_middle: "toggle_monocle"
+        on_right: "prev_layout"
 
   # Some custom widgets
 
@@ -165,11 +197,11 @@ widgets:
       class_name: "ip-info-widget"
       exec_options:
         run_cmd: "curl.exe https://ipinfo.io"
-        run_interval: 120000                                        # every 5 minutes
+        run_interval: 120000 # every 5 minutes
         return_format: "json"
       callbacks:
         on_left: "toggle_label"
-        on_middle: "exec cmd /c ncpa.cpl"                           # open network settings
+        on_middle: "exec cmd /c ncpa.cpl" # open network settings
         on_right: "exec cmd /c start https://ipinfo.io/{data[ip]} " # open ipinfo in browser
 
   weather:
@@ -227,4 +259,16 @@ widgets:
         run_once: true
       callbacks:
         on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/search-widget.ahk"
+        on_right: "toggle_label"
+
+  tray_button:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "\uf107"
+      label_alt: "\uf107"
+      class_name: "tray-widget"
+      exec_options:
+        run_once: true
+      callbacks:
+        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/tray-widget.ahk"
         on_right: "toggle_label"
