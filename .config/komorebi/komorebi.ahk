@@ -14,10 +14,10 @@
 #+]::CycleFocus("next")
 
 ; Move windows
-#+h::Move("left")
-#+j::Move("down")
-#+k::Move("up")
-#+l::Move("right")
+#!left::Move("left")
+#!down::Move("down")
+#!up::Move("up")
+#!right::Move("right")
 #+Enter::Promote()
 
 ; Stack windows
@@ -30,17 +30,19 @@
 #]::CycleStack("next")
 
 ; Resize
-!=::ResizeAxis("horizontal", "increase")
-!-::ResizeAxis("horizontal", "decrease")
-!+=::ResizeAxis("vertical", "increase")
-!+-::ResizeAxis("vertical", "decrease")
+#=::ResizeAxis("horizontal", "increase")
+#-::ResizeAxis("horizontal", "decrease")
+#+=::ResizeAxis("vertical", "increase")
+#+-::ResizeAxis("vertical", "decrease")
 
 ; Manipulate windows
-#z::ToggleFloat()
-!+f::ToggleMonocle()
+#f::ToggleFloat()
+#+f::ToggleMonocle()
+^!f::ToggleFloat()
+^!+f::ToggleMonocle()
 
 ; Window manager options
-!+r::Retile()
+#+r::Retile()
 #^p::TogglePause()
 
 ; Layouts
@@ -54,6 +56,8 @@
 #4::FocusWorkspace(3)
 #^Left::CycleWorkspace("previous")
 #^Right::CycleWorkspace("next")
+^!+n::CycleWorkspace("previous")
+^!+m::CycleWorkspace("next")
 
 ; Move windows across workspaces
 #+1::MoveToWorkspace(0)

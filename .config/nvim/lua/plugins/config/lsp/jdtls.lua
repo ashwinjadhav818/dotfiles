@@ -41,6 +41,7 @@ local config = {
         dap = { hotcodereplace = "auto", config_overrides = {} },
         dap_main = {},
         test = true,
+}
    config = function()
       local opts = Util.opts("nvim-jdtls") or {}
 

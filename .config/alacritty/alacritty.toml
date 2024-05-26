@@ -1,0 +1,27 @@
+shell = "C:\\Users\\Ashwin\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+import = [
+  "C:\\Users\\Ashwin\\AppData\\Local\\npm-cache\\_npx\\808b709e6234a442\\node_modules\\alacritty-themes\\themes\\Tokyonight_Night.toml"
+]
+
+[window]
+dynamic_title = false
+decorations = "none"
+opacity = 0.8
+blur = true
+  [window.padding]
+  x = 7
+  y = 7
+
+[font]
+size = 16
+  [font.normal]
+  family = "JetBrainsMono NF"
+  style = "Regular"
+
+  [font.bold]
+  family = "JetBrainsMono NF"
+  style = "Bold"
+
+  [font.italic]
+  family = "JetBrainsMono NF"
+  style = "Italic"

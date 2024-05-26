@@ -113,4 +113,6 @@ sudo New-Item -Path $HOME\.config\starship.toml -ItemType SymbolicLink -Value $H
 sudo New-Item -Path $HOME\.bashrc -ItemType SymbolicLink -Value $HOME\.dotfiles\.bashrc
 
 sudo New-Item -Path $HOME\.glaze-wm\config.yaml -ItemType SymbolicLink -Value $HOME\.dotfiles\glaze-wm\config.yaml
+
+sudo New-Item -Path $Env:AppData\alacritty\alacritty.toml -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\alacritty\alacritty.toml
 ```

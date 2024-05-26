@@ -7,9 +7,9 @@
     "mouse_follows_focus": false,
     "default_workspace_padding": 5,
     "default_container_padding": 5,
-    "active_window_border": true,
-    "border_width": 3,
-    "active_window_border_colours": {
+    "border": true,
+    "border_width": 5,
+    "border_colours": {
         "single": {
             "r": 22,
             "g": 23,
@@ -30,16 +30,16 @@
         {
             "workspaces": [
                 {
-                    "name": "browser",
+                    "name": "second brain",
                     "layout": "BSP"
                 },
                 {
-                    "name": "work",
+                    "name": "browser",
                     "layout": "VerticalStack"
                 },
                 {
-                    "name": "controls",
-                    "layout": "HorizontalStack"
+                    "name": "work",
+                    "layout": "Columns"
                 },
                 {
                     "name": "socials",
@@ -49,7 +49,7 @@
         }
     ],
     "stackbar": {
-        "height": 15,
+        "height": 30,
         "mode": "OnStack",
         "tabs": {
             "width": 300,

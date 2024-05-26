@@ -1,6 +1,6 @@
 # PowerShell Customizing software
-oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\aura.omp.json | Invoke-Expression
-# Invoke-Expression (&starship init powershell)
+# oh-my-posh --init --shell pwsh --config ~\.config\powershell\Themes\aura.omp.json | Invoke-Expression
+Invoke-Expression (&starship init powershell)
 $ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
@@ -14,7 +14,6 @@ Set-Alias g git
 Set-Alias vi lvim
 Set-Alias vim lvim
 Set-Alias cmake make
-Set-Alias autohotkey autohotkey64
 
 # PSReadLine
 Set-PSReadLineOption -EditMode Vi
