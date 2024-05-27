@@ -77,9 +77,7 @@ require("lazy").setup({
     {
         "akinsho/toggleterm.nvim",
         version = "*",
-        config = function ()
-            require("plugins.config.toggleterm")
-        end,
+        config = true,
         opts = {
             shell = "pwsh.exe"
         }
