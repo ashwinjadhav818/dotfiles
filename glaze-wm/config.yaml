@@ -1,9 +1,39 @@
+# Themes
+## Catppuccin Mocha
+rosewater: &rosewater "#f5e0dc"
+flamingo: &flamingo "#f2cdcd"
+pink: &pink "#f5c2e7"
+mauve: &mauve "#cba6f7"
+red: &red "#f38ba8"
+maroon: &maroon "#eba0ac"
+peach: &peach "#fab387"
+yellow: &yellow "#f9e2af"
+green: &green "#a6e3a1"
+teal: &teal "#94e2d5"
+sky: &sky "#89dceb"
+sapphire: &sapphire "#74c7ec"
+blue: &blue "#89b4fa"
+lavender: &lavender "#b4befe"
+text: &text "#cdd6f4"
+subtext1: &subtext1 "#bac2de"
+subtext0: &subtext0 "#a6adc8"
+overlay2: &overlay2 "#9399b2"
+overlay1: &overlay1 "#7f849c"
+overlay0: &overlay0 "#6c7086"
+surface2: &surface2 "#585b70"
+surface1: &surface1 "#45475a"
+surface0: &surface0 "#313244"
+base: &base "#1e1e2e"
+mantle: &mantle "#181825"
+crust: &crust "#11111b"
+crust_translucent: &crust_translucent "#11111b90"
+
 general:
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: false
 
   # Whether to jump the cursor between windows focused by the WM.
-  cursor_follow_focus: false
+  cursor_follow_focus: true
 
   # Whether to switch back and forth between the previously focused workspace
   # when focusing the current workspace.
@@ -32,82 +62,99 @@ gaps:
 focus_borders:
   active:
     enabled: true
-    color: "#0000ff"
+    color: *mauve
 
   inactive:
     enabled: false
-    color: "#ff0000"
+    color: *lavender
 
+# Floating
+# bar:
+#   offset_x: 7
+#   offset_y: 7
+#   font_family: "JetBrainsMono NF"
+#   height: 30 
+#   border_radius: 6
+#   position: "top"
+#   background: *crust_translucent
+#   foreground: *text
+#   font_size: "12px"
+#   border_color: *mauve
+#   border_width: 1
+#   vertical: "v"
+#   horizontal: "b"
+
+# On Top
 bar:
-  offset_x: 5
-  offset_y: 5
-  font_family: "JetBrainsMono NF"
-  height: 30 
-  border_radius: 6
+  height: "30px"
   position: "top"
-  background: "#1c212866"
-  foreground: "#f0f6fc"
+  opacity: 1.0
+  background: *crust_translucent
+  foreground: *mauve
+  font_family: "JetBrainsMono NF"
   font_size: "12px"
-  border_color: "#89b2e4"
-  border_width: 1
-  vertical: "v"
-  horizontal: "b"
+  padding: "4px 6px"
+  offset_x: "0"
+  offset_y: "0"
+  border_radius: "0"
   components_left:
     - type: "text"
       text: " ashwin "
-      foreground: "#89b2e4"
+      foreground: *mauve
     - type: "workspaces"
-      focused_workspace_background: "#21262d"
-      focused_workspace_foreground: "#89b2e4"
-      displayed_workspace_background: "#21262d"
-      default_workspace_background: "transparent"
-      margin: "0px 10px 0px 0px"
+      focused_workspace_background: *mauve
+      focused_workspace_foreground: *crust
+      displayed_workspace_background: *surface0
+      default_workspace_background: *crust_translucent
+    - type: "tiling direction"
+      label_horizontal: "⮂"
+      label_vertical: "⮁"
+      background: *surface0
+      foreground: *mauve
+      margin: "0 8px"
+      padding: "0 8px"
     - type: "cpu"
-      label: "<attr fg='#89B2E4'></attr>  {percent_usage}%"
+      label: "<attr fg='#cba6f7'></attr>  {percent_usage}%"
       margin: "0px 10px 0px 0px"
       refresh_interval_ms: 1000
     - type: "gpu"
-      label: "<attr fg='#89B2E4'>󱝊</attr>  {percent_usage}%"
+      label: "<attr fg='#cba6f7'>󱝊</attr>  {percent_usage}%"
       margin: "0px 10px 0px 0px"
       refresh_interval_ms: 1000
     - type: "memory"
-      label: "<attr fg='#89B2E4'></attr>  {percent_usage}%"
+      label: "<attr fg='#cba6f7'></attr>  {percent_usage}%"
       margin: "0px 10px 0px 0px"
       refresh_interval_ms: 1000
     - type: "weather"
       latitude: 19.997454
       longitude: 73.7898
-      label: "<attr fg='#89B2E4'></attr> {temperature_celsius}"
-      label_sun: "<attr fg='#89B2E4'>󰖙</attr> {temperature_celsius}"
-      label_moon: "<attr fg='#89B2E4'>󰖔</attr> {temperature_celsius}"
-      label_cloud_moon: "<attr fg='#89B2E4'>󰼱</attr> {temperature_celsius}"
-      label_cloud_sun: "<attr fg='#89B2E4'>󰖕</attr> {temperature_celsius}"
-      label_cloud_moon_rain: "<attr fg='#89B2E4'>󰖖</attr> {temperature_celsius}"
-      label_cloud_sun_rain: "<attr fg='#89B2E4'>󰼳</attr> {temperature_celsius}"
-      label_cloud_rain: "<attr fg='#89B2E4'>󰖖</attr> {temperature_celsius}"
-      label_snow_flake: "<attr fg='#89B2E4'>󰖘</attr> {temperature_celsius}"
-      label_thunderstorm: "<attr fg='#89B2E4'>󰖓</attr> {temperature_celsius}"
-      label_cloud: "<attr fg='#89B2E4'></attr> {temperature_celsius}"
+      label: "<attr fg='#cba6f7'></attr>  {temperature_celsius}"
+      label_sun: "<attr fg='#cba6f7'>󰖙</attr>  {temperature_celsius}"
+      label_moon: "<attr fg='#cba6f7'>󰖔</attr>  {temperature_celsius}"
+      label_cloud_moon: "<attr fg='#cba6f7'>󰼱</attr>  {temperature_celsius}"
+      label_cloud_sun: "<attr fg='#cba6f7'>󰖕</attr>  {temperature_celsius}"
+      label_cloud_moon_rain: "<attr fg='#cba6f7'>󰖖</attr>  {temperature_celsius}"
+      label_cloud_sun_rain: "<attr fg='#cba6f7'>󰼳</attr>  {temperature_celsius}"
+      label_cloud_rain: "<attr fg='#cba6f7'>󰖖</attr>  {temperature_celsius}"
+      label_snow_flake: "<attr fg='#cba6f7'>󰖘</attr>  {temperature_celsius}"
+      label_thunderstorm: "<attr fg='#cba6f7'>󰖓</attr>  {temperature_celsius}"
+      label_cloud: "<attr fg='#cba6f7'></attr>  {temperature_celsius}"
       margin: "0px 10px 0px 0px"
-    # - type: "system stats"
-    # - type: "text"
-    #   text: "  "
-    # # - type: "music"
-    # - type: "weather"
-    #   temperature_unit: "celsius"
-    #   timezone: "EST"
-    #   latitude: 40.0084
-    #   longitude: -79.0786
   components_center:
     - type: "window title"
   components_right:
     - type: "system tray"
       padding: "4px 6px"
-      foreground: "#89B2E4"
+      foreground: *mauve
+    - type: "music"
+      label_not_playing: ""
+      label_paused: "{song_title} - {artist_name}"
+      label_playing: "{song_title} - {artist_name} ▶"
+      max_title_length: 20
+      max_artist_length: 20
     - type: "network"
-      foreground: "#89b2e4"
+      foreground: *mauve
       padding: "0 8px"
-      font_family: "Mononoki Nerd Font Mono"
       label_no_internet: ""
       label_ethernet: "󰈁"
       label_wifi_strength_0: "󰤯"
@@ -116,30 +163,22 @@ bar:
       label_wifi_strength_75: "󰤥"
       label_wifi_strength_100: "󰤨"
     - type: "volume"
-      label: "<attr fg='#89B2E4'></attr> {volume_level}%"
+      label: "<attr fg='#cba6f7'></attr> {volume_level}%"
       padding: "0 8px"
-      label_low: "<attr fg='#89B2E4'></attr> {volume_level}%"
-      label_medium: "<attr fg='#89B2E4'></attr> {volume_level}%"
-      label_high: "<attr fg='#89B2E4'></attr> {volume_level}%"
-      label_mute: "<attr fg='#89B2E4'></attr> {volume_level}%"
+      label_low: "<attr fg='#cba6f7'></attr> {volume_level}%"
+      label_medium: "<attr fg='#cba6f7'></attr> {volume_level}%"
+      label_high: "<attr fg='#cba6f7'></attr> {volume_level}%"
+      label_mute: "<attr fg='#cba6f7'></attr> {volume_level}%"
     - type: "battery"
       padding: "0 8px"
-      label_draining: "<attr fg='#89B2E4'></attr> {battery_level}%"
-      label_power_saver: "<attr fg='#89B2E4'>󱃍</attr> {battery_level}%"
-      label_charging: "<attr fg='#89B2E4'>󰂇</attr> {battery_level}%"
-    - type: "tiling direction"
-      label_horizontal: "⮂"
-      label_vertical: "⮁"
-      foreground: "#89B2E4"
-      background: "#21262d"
-      margin: "0 4px"
-      padding: "0 8px"
+      label_draining: "<attr fg='#cba6f7'></attr>  {battery_level}%"
+      label_power_saver: "<attr fg='#cba6f7'>󱃍</attr>  {battery_level}%"
+      label_charging: "<attr fg='#cba6f7'>󰂇</attr>  {battery_level}%"
     - type: "binding mode"
-      background: "#ffffff33"
       margin: "0 4px 0 0"
       padding: "0 8px"
     - type: "clock"
-      foreground: "#89B2E4"
+      foreground: *mauve
       time_formatting: "ddd MMM d hh:mm tt  "
       margin: "0 0 0 10px"
 
@@ -173,6 +212,12 @@ window_rules:
   - command: "resize borders 0px -5px -5px -5px"
     match_process_name: "vivaldi"
 
+  - command: "ignore"
+    match_process_name: "/RoundedTB/"
+
+  - command: "ignore"
+    match_title: "Picture in picture"
+
 binding_modes:
   - name: "resize"
     keybindings:
@@ -192,70 +237,70 @@ binding_modes:
 keybindings:
   # Shift focus in a given direction.
   - command: "focus left"
-    bindings: ["Ctrl+Alt+H"]
+    bindings: ["Alt+H"]
   - command: "focus right"
-    bindings: ["Ctrl+Alt+L"]
+    bindings: ["Alt+L"]
   - command: "focus up"
-    bindings: ["Ctrl+Alt+K"]
+    bindings: ["Alt+K"]
   - command: "focus down"
-    bindings: ["Ctrl+Alt+J"]
+    bindings: ["Alt+J"]
 
   # Move focused window in a given direction.
   - command: "move left"
-    bindings: ["Ctrl+Alt+Shift+H", "Ctrl+Alt+Shift+Left"]
+    bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
   - command: "move right"
-    bindings: ["Ctrl+Alt+Shift+L", "Ctrl+Alt+Shift+Right"]
+    bindings: ["Alt+Shift+L", "Alt+Shift+Right"]
   - command: "move up"
-    bindings: ["Ctrl+Alt+Shift+K", "Ctrl+Alt+Shift+Up"]
+    bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
   - command: "move down"
-    bindings: ["Ctrl+Alt+Shift+J", "Ctrl+Alt+Shift+Down"]
+    bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
 
   # Resize focused window by a percentage or pixel amount.
   - command: "resize width -2%"
-    binding: "Ctrl+Alt+U"
+    binding: "Alt+U"
   - command: "resize width +2%"
-    binding: "Ctrl+Alt+P"
+    binding: "Alt+P"
   - command: "resize height +2%"
-    binding: "Ctrl+Alt+O"
+    binding: "Alt+O"
   - command: "resize height -2%"
-    binding: "Ctrl+Alt+I"
+    binding: "Alt+I"
 
   # As an alternative to the resize keybindings above, resize mode enables resizing via
   # HJKL or arrow keys. The binding mode is defined above with the name "resize".
   - command: "binding mode resize"
-    binding: "Ctrl+Alt+R"
+    binding: "Alt+R"
 
   # Change tiling direction. This determines where new tiling windows will be inserted.
   - command: "tiling direction toggle"
-    binding: "Ctrl+Alt+V"
+    binding: "Alt+V"
 
   # Change focus between floating / tiling windows.
   - command: "focus mode toggle"
-    binding: "Ctrl+Alt+Shift+T"
+    binding: "Alt+Shift+T"
 
   # Change the focused window to be floating / tiling.
   - command: "toggle floating"
-    binding: "Ctrl+Alt+T"
+    binding: "Alt+T"
 
   # Change the focused window to be maximized / unmaximized.
   - command: "toggle maximized"
-    binding: "Ctrl+Alt+X"
+    binding: "Alt+X"
 
   # Minimize focused window.
   - command: "set minimized"
-    binding: "Ctrl+Alt+M"
+    binding: "Alt+M"
 
   # Close focused window.
   - command: "close"
-    binding: "Ctrl+Alt+Shift+Q"
+    binding: "Alt+Shift+Q"
 
   # Kill GlazeWM process safely.
   - command: "exit wm"
-    binding: "Ctrl+Alt+Shift+E"
+    binding: "Alt+Shift+E"
 
   # Re-evaluate configuration file.
   - command: "reload config"
-    binding: "Ctrl+Alt+Shift+R"
+    binding: "Alt+Shift+R"
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
   # to start Windows Terminal and Git Bash respectively.
@@ -264,33 +309,33 @@ keybindings:
 
   # Focus the workspace that last had focus.
   - command: "focus workspace recent"
-    binding: "Ctrl+Alt+Y"
+    binding: "Alt+Y"
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - command: "focus workspace next"
-    binding: "Ctrl+Alt+Shift+M"
+    binding: "Ctrl+Alt+Right"
   - command: "focus workspace prev"
-    binding: "Ctrl+Alt+Shift+N"
+    binding: "Ctrl+Alt+Left"
 
   # Change focus to a workspace defined in `workspaces` config.
   - command: "focus workspace 1"
-    binding: "Ctrl+Alt+1"
+    binding: "Alt+1"
   - command: "focus workspace 2"
-    binding: "Ctrl+Alt+2"
+    binding: "Alt+2"
   - command: "focus workspace 3"
-    binding: "Ctrl+Alt+3"
+    binding: "Alt+3"
   - command: "focus workspace 4"
-    binding: "Ctrl+Alt+4"
+    binding: "Alt+4"
   - command: "focus workspace 5"
-    binding: "Ctrl+Alt+5"
+    binding: "Alt+5"
   - command: "focus workspace 6"
-    binding: "Ctrl+Alt+6"
+    binding: "Alt+6"
   - command: "focus workspace 7"
-    binding: "Ctrl+Alt+7"
+    binding: "Alt+7"
   - command: "focus workspace 8"
-    binding: "Ctrl+Alt+8"
+    binding: "Alt+8"
   - command: "focus workspace 9"
-    binding: "Ctrl+Alt+9"
+    binding: "Alt+9"
 
   # Move focused workspace to a monitor in a given direction.
   - command: "move workspace left"
@@ -304,20 +349,20 @@ keybindings:
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ["move to workspace 1", "focus workspace 1"]
-    binding: "Ctrl+Alt+Shift+1"
+    binding: "Alt+Shift+1"
   - commands: ["move to workspace 2", "focus workspace 2"]
-    binding: "Ctrl+Alt+Shift+2"
+    binding: "Alt+Shift+2"
   - commands: ["move to workspace 3", "focus workspace 3"]
-    binding: "Ctrl+Alt+Shift+3"
+    binding: "Alt+Shift+3"
   - commands: ["move to workspace 4", "focus workspace 4"]
-    binding: "Ctrl+Alt+Shift+4"
+    binding: "Alt+Shift+4"
   - commands: ["move to workspace 5", "focus workspace 5"]
-    binding: "Ctrl+Alt+Shift+5"
+    binding: "Alt+Shift+5"
   - commands: ["move to workspace 6", "focus workspace 6"]
-    binding: "Ctrl+Alt+Shift+6"
+    binding: "Alt+Shift+6"
   - commands: ["move to workspace 7", "focus workspace 7"]
-    binding: "Ctrl+Alt+Shift+7"
+    binding: "Alt+Shift+7"
   - commands: ["move to workspace 8", "focus workspace 8"]
-    binding: "Ctrl+Alt+Shift+8"
+    binding: "Alt+Shift+8"
   - commands: ["move to workspace 9", "focus workspace 9"]
-    bindings: ["Ctrl+Alt+Shift+9"]
+    binding: "Alt+Shift+9"

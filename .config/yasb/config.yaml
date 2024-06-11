@@ -96,9 +96,10 @@ bars:
     widgets:
       left:
         [
-          "power_button",
+          # "power_button",
           "komorebi_workspaces", 
           "komorebi_active_layout",
+          # "media_player",
         ]
       center: ["active_window"]
       right:
@@ -397,7 +398,7 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "\udb82\udd54  {%I:%M %p}"
+      label: "\udb82\udd54  {%a %d %b %I:%M %p}"
       label_alt: "\udb82\udd54  {%A %d %B %Y %I:%M %p}"
       timezones: ["Asia/Kolkata"]
       callbacks:
@@ -490,11 +491,30 @@ widgets:
         on_middle: 'toggle_monocle'
         on_right: 'prev_layout'
 
-  power_button:
-    type: "yasb.power_button.PowerButtonWidget"
-    options:
-      label: "\ue62a"
-      layout: ["lock", "restart", "shutDown"]
+  media_player:
+      type: "yasb.media_player.MediaPlayerWidget"
+      options:
+        label: "{media[title]} - {media[artist]}"
+        label_alt: "{media[title]} - {media[artist]}"
+        update_interval: 1000
+        keep_thumbnail_aspect_ratio: false
+        layout: ["thumbnail", "label"]
+        icons:
+          shuffle: "\uf074"
+          play: "\uf04b"
+          pause: "\uf04c"
+          next: "\uf051"
+          prev: "\uf048"
+          close: "\uf00d"
+          repeat_off: "\uf2f9"
+          repeat_track: "\uf2f9 (T)"
+          repeat_list: "\uf2f9 (L)"
+
+  # power_button:
+  #   type: "yasb.power_button.PowerButtonWidget"
+  #   options:
+  #     label: "\ue62a"
+  #     layout: ["lock", "restart", "shutDown"]
 
   # Some custom widgets
 

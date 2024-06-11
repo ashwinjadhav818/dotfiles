@@ -1,3 +1,3 @@
-require("core.options")
-require("core.autocommands")
-require("plugins.init")
+require("options")
+require("autocommands")
+require("lazy_init")

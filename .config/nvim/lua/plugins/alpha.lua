@@ -1,4 +1,11 @@
-local status_ok, alpha = pcall(require, "alpha")
+return {
+    {
+        'goolord/alpha-nvim',
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+        },
+        config = function()
+            local status_ok, alpha = pcall(require, "alpha")
 if not status_ok then
 	return
 end
@@ -40,3 +47,7 @@ dashboard.section.buttons.opts.hl = "Keyword"
 dashboard.opts.opts.noautocmd = true
 -- vim.cmd([[autocmd User AlphaReady echo 'ready']])
 alpha.setup(dashboard.opts)
+
+        end,
+    },
+}

@@ -8,7 +8,7 @@
     "default_workspace_padding": 5,
     "default_container_padding": 5,
     "border": true,
-    "border_width": 5,
+    "border_width": 3,
     "border_colours": {
         "single": {
             "r": 22,
@@ -30,15 +30,15 @@
         {
             "workspaces": [
                 {
-                    "name": "second brain",
+                    "name": "browser",
                     "layout": "BSP"
                 },
                 {
-                    "name": "browser",
+                    "name": "work",
                     "layout": "VerticalStack"
                 },
                 {
-                    "name": "work",
+                    "name": "essentials",
                     "layout": "Columns"
                 },
                 {
@@ -49,6 +49,7 @@
         }
     ],
     "stackbar": {
+        "label": "Title",
         "height": 30,
         "mode": "OnStack",
         "tabs": {

@@ -15,7 +15,7 @@
 -  komorebi
 -  yasb
 
-### Vim (LunarVim & NeoVim) config
+### Vim (NeoVim & LunarVim) config
 
 Requires Neovim (>= 0.9)
 

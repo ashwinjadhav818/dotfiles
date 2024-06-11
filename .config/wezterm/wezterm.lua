@@ -1,4 +1,4 @@
-local wezterm = require 'wezterm'
+local wezterm = require "wezterm"
 local act = wezterm.action
 
 local pwsh_path =
@@ -8,21 +8,24 @@ local config = {}
 if wezterm.config_builder then config = wezterm.config_builder() end
 
 -- Settings
-config.default_prog = { pwsh_path }
+config.default_prog = { pwsh_path, "-NoProfileLoadTime",  "-NoLogo" }
 
 -- UI
 config.window_decorations = "RESIZE"
 config.color_scheme = "Tokyo Night"
 config.window_background_opacity = 0.5
 config.win32_system_backdrop = "Acrylic"
-config.inactive_pane_hsb = { -- Dim inactive panes
-    saturation = 0.24,
-    brightness = 0.5
+config.colors = {
+    background = "#000",
 }
+-- config.inactive_pane_hsb = { -- Dim inactive panes
+--     saturation = 0.8,
+--     brightness = 0.6
+-- }
 
 -- Font
 config.font = wezterm.font "JetBrainsMono NF"
-config.font_size = 14
+config.font_size = 12
 
 -- Keybindings
 Leader = "CTRL"
@@ -33,13 +36,13 @@ config.keys = {
 
     -- Pane keybindings
     { key = "x", mods = Leader,      action = act.SplitVertical { domain = "CurrentPaneDomain" } },
-    { key = "v", mods = Leader,      action = act.SplitHorizontal { domain = "CurrentPaneDomain" } },
+    { key = "z", mods = Leader,      action = act.SplitHorizontal { domain = "CurrentPaneDomain" } },
     { key = "h", mods = Leader,      action = act.ActivatePaneDirection("Left") },
     { key = "j", mods = Leader,      action = act.ActivatePaneDirection("Down") },
     { key = "k", mods = Leader,      action = act.ActivatePaneDirection("Up") },
     { key = "l", mods = Leader,      action = act.ActivatePaneDirection("Right") },
     { key = "q", mods = Leader,      action = act.CloseCurrentPane { confirm = true } },
-    { key = "z", mods = Leader,      action = act.TogglePaneZoomState },
+    -- { key = "z", mods = Leader,      action = act.TogglePaneZoomState },
     { key = "o", mods = Leader,      action = act.RotatePanes "Clockwise" },
     -- We can make separate keybindings for resizing panes
     -- But Wezterm offers custom "mode" in the name of "KeyTable"
@@ -73,7 +76,7 @@ config.keys = {
     { key = "}", mods = LeaderShift, action = act.MoveTabRelative(1) },
 
     -- Lastly, workspace
-    { key = "w", mods = Leader,      action = act.ShowLauncherArgs { flags = "FUZZY|WORKSPACES" } },
+    { key = "w", mods = LeaderShift,      action = act.ShowLauncherArgs { flags = "FUZZY|WORKSPACES" } },
     -- I can use the tab navigator (LDR t), but I also want to quickly navigate tabs with index
 }
 for i = 1, 9 do
@@ -101,8 +104,31 @@ config.key_tables = {
         { key = "Enter",  action = "PopKeyTable" },
     }
 }
+wezterm.on('format-window-title', function()
+  local title = 'WezTerm'
+  -- some logic here
+  return title
+end)
+wezterm.on('augment-command-palette', function()
+  return {
+    {
+      brief = 'Rename tab',
+      icon = 'md_rename_box',
+
+      action = act.PromptInputLine {
+        description = 'Enter new name for tab',
+        action = wezterm.action_callback(function(window, line)
+          if line then
+            window:active_tab():set_title(line)
+          end
+        end),
+      },
+    },
+  }
+end)
 
 -- Tab bar
+-- Retro
 config.use_fancy_tab_bar = false
 config.status_update_interval = 1000
 config.tab_bar_at_bottom = false
@@ -165,15 +191,13 @@ wezterm.on("update-status", function(window, pane)
         { Text = " | " },
     }))
 end)
-
--- -- Appearance setting for when I need to take pretty screenshots
--- config.enable_tab_bar = false
--- config.window_padding = {
---   left = '0.5cell',
---   right = '0.5cell',
---   top = '0.5cell',
---   bottom = '0cell',
---
--- }
+-- Appearance setting for when I need to take pretty screenshots
+config.enable_tab_bar = false
+config.window_padding = {
+  left = '0.5cell',
+  right = '0.5cell',
+  top = '0.5cell',
+  bottom = '0cell',
+}
 
 return config
