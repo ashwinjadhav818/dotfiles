@@ -86,11 +86,6 @@
     matching_strategy: Equals
   options:
   - tray_and_multi_window
-- name: Arc
-  identifier:
-    kind: Title
-    id: Arc extension popup
-    matching_strategy: Equals
 - name: ArmCord
   identifier:
     kind: Exe

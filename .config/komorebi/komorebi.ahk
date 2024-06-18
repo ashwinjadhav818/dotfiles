@@ -6,25 +6,25 @@
 #Include komorebi.generated.ahk
 
 ; Focus windows
-#left::Focus("left")
-#down::Focus("down")
-#up::Focus("up")
-#right::Focus("right")
+#Left::Focus("left")
+#Down::Focus("down")
+#Up::Focus("up")
+#Right::Focus("right")
 #+[::CycleFocus("previous")
 #+]::CycleFocus("next")
 
 ; Move windows
-#!left::Move("left")
-#!down::Move("down")
-#!up::Move("up")
-#!right::Move("right")
+#+h::Move("left")
+#+j::Move("down")
+#+k::Move("up")
+#+l::Move("right")
 #+Enter::Promote()
-
+    
 ; Stack windows
-#+Left::Stack("left")
-#+Right::Stack("right")
-#+Up::Stack("up")
-#+Down::Stack("down")
+#!h::Stack("left")
+#!j::Stack("down")
+#!k::Stack("up")
+#!l::Stack("right")
 #;::Unstack()
 #[::CycleStack("previous")
 #]::CycleStack("next")
@@ -36,6 +36,7 @@
 #+-::ResizeAxis("vertical", "decrease")
 
 ; Manipulate windows
+#q::Close()
 #f::ToggleFloat()
 #+f::ToggleMonocle()
 ^!f::ToggleFloat()
@@ -54,6 +55,12 @@
 #2::FocusWorkspace(1)
 #3::FocusWorkspace(2)
 #4::FocusWorkspace(3)
+#5::FocusWorkspace(4)
+#6::FocusWorkspace(5)
+#7::FocusWorkspace(6)
+#8::FocusWorkspace(7)
+#9::FocusWorkspace(8)
+
 #^Left::CycleWorkspace("previous")
 #^Right::CycleWorkspace("next")
 ^!+n::CycleWorkspace("previous")
@@ -64,3 +71,8 @@
 #+2::MoveToWorkspace(1)
 #+3::MoveToWorkspace(2)
 #+4::MoveToWorkspace(3)
+#+5::MoveToWorkspace(4)
+#+6::MoveToWorkspace(5)
+#+7::MoveToWorkspace(6)
+#+8::MoveToWorkspace(7)
+#+9::MoveToWorkspace(8)

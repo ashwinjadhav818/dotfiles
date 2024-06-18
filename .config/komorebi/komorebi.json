@@ -30,20 +30,20 @@
         {
             "workspaces": [
                 {
-                    "name": "browser",
+                    "name": "1",
                     "layout": "BSP"
                 },
                 {
-                    "name": "work",
+                    "name": "2",
                     "layout": "VerticalStack"
                 },
                 {
-                    "name": "essentials",
+                    "name": "3",
                     "layout": "Columns"
                 },
                 {
-                    "name": "socials",
-                    "layout": "Rows"
+                    "name": "4",
+                    "layout": "Grid"
                 }
             ]
         }
@@ -58,5 +58,12 @@
             "unfocused_text": "#b3b3b3",
             "background": "#141414"
         }
-    }
+    },
+    "float_rules": [
+        {
+            "kind": "Title",
+            "id": "Arc extension popup",
+            "matching_strategy": "Equals"
+        }
+    ]
 }
