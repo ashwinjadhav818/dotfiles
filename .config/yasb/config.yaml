@@ -85,6 +85,7 @@ bars:
     window_flags:
       always_on_top: false
       windows_app_bar: true
+      hide_taskbar: true
     dimensions:
       width: "100%"
       height: 35
@@ -96,6 +97,7 @@ bars:
     widgets:
       left:
         [
+          "current_user",
           # "power_button",
           "komorebi_workspaces", 
           "komorebi_active_layout",
@@ -104,11 +106,13 @@ bars:
       center: ["active_window"]
       right:
         [
+          "tray_button",
           "cpu",
           "memory",
           "wifi",
           "battery",
-          "clock"
+          "clock",
+          "notification_button"
         ]
 # widgets:
   # my-clock-widget:
@@ -441,7 +445,8 @@ widgets:
         label_workspace_btn: "{name}"
         label_default_name: "{index}"
         label_zero_index: false
-        hide_empty_workspaces: false
+        preview_workspace: true
+        hide_empty_workspaces: true
       
   wifi:
     type: "yasb.wifi.WifiWidget"
@@ -492,7 +497,7 @@ widgets:
         on_right: 'prev_layout'
 
   media_player:
-      type: "yasb.media_player.MediaPlayerWidget"
+      type: "yasb.media_player.mediaplayerwidget"
       options:
         label: "{media[title]} - {media[artist]}"
         label_alt: "{media[title]} - {media[artist]}"
@@ -507,16 +512,27 @@ widgets:
           prev: "\uf048"
           close: "\uf00d"
           repeat_off: "\uf2f9"
-          repeat_track: "\uf2f9 (T)"
-          repeat_list: "\uf2f9 (L)"
+          repeat_track: "\uf2f9 (t)"
+          repeat_list: "\uf2f9 (l)"
 
-  # power_button:
-  #   type: "yasb.power_button.PowerButtonWidget"
-  #   options:
-  #     label: "\ue62a"
-  #     layout: ["lock", "restart", "shutDown"]
+  power_button:
+    type: "yasb.power_button.PowerButtonWidget"
+    options:
+      label: "\ue62a"
+      layout: ["lock", "restart", "shutDown"]
 
   # Some custom widgets
+  current_user:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "{data}"
+      label_alt: "{data}"
+      class_name: "current-user-widget"
+      exec_options:
+        run_cmd: "echo %username%"
+        return_format: "string"
+      callbacks:
+        on_right: "toggle_label"
 
   explorer_button:
     type: "yasb.custom.CustomWidget"
@@ -568,3 +584,49 @@ widgets:
         # run every 3 sec
         run_interval: 3000
         return_format: "string"
+
+  notification_button:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "\uf0f3"
+      label_alt: "\uf49a"
+      class_name: "notification-widget"
+      callbacks:
+        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/notification-widget.ahk"
+        on_right: "toggle_label"
+
+  start_button:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "\ue62a"
+      label_alt: "\ue62a Start"
+      class_name: "start-widget"
+      exec_options:
+        run_once: true
+      callbacks:
+        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/start-widget.ahk"
+        on_right: "toggle_label"
+
+  search_button:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "\uf422"
+      label_alt: "\uf422 Search"
+      class_name: "search-widget"
+      exec_options:
+        run_once: true
+      callbacks:
+        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/search-widget.ahk"
+        on_right: "toggle_label"
+
+  tray_button:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "\uf107"
+      label_alt: "\uf107"
+      class_name: "tray-widget"
+      exec_options:
+        run_once: true
+      callbacks:
+        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/tray-widget.ahk"
+        on_right: "toggle_label" 
