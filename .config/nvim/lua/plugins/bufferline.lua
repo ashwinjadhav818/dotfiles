@@ -35,8 +35,8 @@ return { {
             max_name_length = 30,
             max_prefix_length = 30, -- prefix used when a buffer is de-duplicated
             tab_size = 21,
-            diagnostics = false, -- | "nvim_lsp" | "coc",
-            diagnostics_update_in_insert = false,
+            diagnostics = true, -- | "nvim_lsp" | "coc",
+            diagnostics_update_in_insert = true,
             -- diagnostics_indicator = function(count, level, diagnostics_dict, context)
             --   return "("..count..")"
             -- end,

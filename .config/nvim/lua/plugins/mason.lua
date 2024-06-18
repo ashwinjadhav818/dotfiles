@@ -33,8 +33,8 @@ return {{
 
         for _, server in pairs(servers) do
             opts = {
-                on_attach = require("plugins.lsp.init").on_attach,
-                capabilities = require("plugins.lsp.init").capabilities
+                on_attach = require("plugins.lsp").on_attach,
+                capabilities = require("plugins.lsp").capabilities
             }
 
             server = vim.split(server, "@")[1]
