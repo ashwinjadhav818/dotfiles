@@ -12,19 +12,19 @@ config.default_prog = { pwsh_path, "-NoProfileLoadTime",  "-NoLogo" }
 
 -- UI
 config.window_decorations = "RESIZE"
-config.color_scheme = "Tokyo Night"
+config.color_scheme = "Catppuccin Mocha"
 config.window_background_opacity = 0.5
 config.win32_system_backdrop = "Acrylic"
 config.colors = {
     background = "#000",
 }
--- config.inactive_pane_hsb = { -- Dim inactive panes
---     saturation = 0.8,
---     brightness = 0.6
--- }
+config.inactive_pane_hsb = { -- Dim inactive panes
+    saturation = 0.8,
+    brightness = 0.6
+}
 
 -- Font
-config.font = wezterm.font "JetBrainsMono NF"
+config.font = wezterm.font "RecMonoLinear Nerd Font"
 config.font_size = 12
 
 -- Keybindings
