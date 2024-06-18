@@ -72,7 +72,7 @@ focus_borders:
 # bar:
 #   offset_x: 7
 #   offset_y: 7
-#   font_family: "JetBrainsMono NF"
+#   font_family: "RecMonoLinear Nerd Font"
 #   height: 30 
 #   border_radius: 6
 #   position: "top"
@@ -91,7 +91,7 @@ bar:
   opacity: 1.0
   background: *crust_translucent
   foreground: *mauve
-  font_family: "JetBrainsMono NF"
+  font_family: "RecMonoLinear Nerd Font"
   font_size: "12px"
   padding: "4px 6px"
   offset_x: "0"
@@ -112,6 +112,8 @@ bar:
       background: *surface0
       foreground: *mauve
       margin: "0 8px"
+      padding: "0 8px"
+    - type: "binding mode"
       padding: "0 8px"
     - type: "cpu"
       label: "<attr fg='#cba6f7'></attr>  {percent_usage}%"
@@ -146,12 +148,6 @@ bar:
     - type: "system tray"
       padding: "4px 6px"
       foreground: *mauve
-    - type: "music"
-      label_not_playing: ""
-      label_paused: "{song_title} - {artist_name}"
-      label_playing: "{song_title} - {artist_name} ▶"
-      max_title_length: 20
-      max_artist_length: 20
     - type: "network"
       foreground: *mauve
       padding: "0 8px"
@@ -174,9 +170,6 @@ bar:
       label_draining: "<attr fg='#cba6f7'></attr>  {battery_level}%"
       label_power_saver: "<attr fg='#cba6f7'>󱃍</attr>  {battery_level}%"
       label_charging: "<attr fg='#cba6f7'>󰂇</attr>  {battery_level}%"
-    - type: "binding mode"
-      margin: "0 4px 0 0"
-      padding: "0 8px"
     - type: "clock"
       foreground: *mauve
       time_formatting: "ddd MMM d hh:mm tt  "
