@@ -9,6 +9,7 @@
     "default_container_padding": 5,
     "border": true,
     "border_width": 3,
+    "transparency": true,
     "border_colours": {
         "single": {
             "r": 22,
@@ -63,6 +64,11 @@
         {
             "kind": "Title",
             "id": "Arc extension popup",
+            "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Exe",
+            "id": "Zebar.exe",
             "matching_strategy": "Equals"
         }
     ]
