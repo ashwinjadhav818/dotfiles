@@ -34,7 +34,7 @@ Requires Neovim (>= 0.9)
 
 -  [zsh shell](https://ohmyz.sh/)
 -  [nerd font](https://www.nerdfonts.com/) - Powerline-patched fonts. I use Fira Code NF Retina and JetBrainsMono Nerd Font.
--  [z zsh plugin](https://github.com/agkozak/zsh-z) - Directory jumping
+-  [zoxide](https://github.com/ajeetdsouza/zoxide) - Directory jumping
 -  [exa](https://the.exa.website/) - `ls` replacement
 -  [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Fish-like fast/unobtrusive autosuggestions for zsh.
 -  [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Fish shell-like syntax highlighting for zsh.
@@ -46,7 +46,7 @@ Requires Neovim (>= 0.9)
 -  [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
 -  [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
 -  [PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/) - Cmdlets for customizing the editing environment, used for autocompletion
--  [z](https://www.powershellgallery.com/packages/z) - directory jumper
+-  [zoxide](https://github.com/ajeetdsouza/zoxide) - directory jumper
 
 
 ## Apps/utilites I use
