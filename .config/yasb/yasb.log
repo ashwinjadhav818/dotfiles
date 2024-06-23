@@ -1,15 +1,74 @@
-2024-06-18 15:05:28 INFO log.py: Yasb - Yet Another Status Bar
-2024-06-18 15:05:39 INFO bar_manager.py: Starting KomorebiEventListener...
-2024-06-18 15:05:39 INFO bar_manager.py: Starting SystemEventListener...
-2024-06-18 15:05:39 INFO event_listener.py: Created named pipe yasb-1f9358fd-2d56-11ef-84d7-d8c0a6fc4ed4
-2024-06-18 15:05:39 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-1f9358fd-2d56-11ef-84d7-d8c0a6fc4ed4
-2024-06-18 15:05:39 INFO watcher.py: Created file watcher for path C:\Users\Ashwin\.config\yasb
-2024-06-18 15:05:39 INFO event_listener.py: Komorebi connected to named pipe: yasb-1f9358fd-2d56-11ef-84d7-d8c0a6fc4ed4
-2024-06-18 15:06:20 INFO bar_manager.py: Stopping KomorebiEventListener...
-2024-06-18 15:06:20 INFO bar_manager.py: Stopping SystemEventListener...
-2024-06-18 15:06:23 INFO bar_manager.py: Starting KomorebiEventListener...
-2024-06-18 15:06:23 INFO bar_manager.py: Starting SystemEventListener...
-2024-06-18 15:06:23 INFO bar_manager.py: Successfully loaded updated config and re-initialised all bars.
-2024-06-18 15:06:23 INFO event_listener.py: Created named pipe yasb-39d13cf5-2d56-11ef-aa87-d8c0a6fc4ed4
-2024-06-18 15:06:23 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-39d13cf5-2d56-11ef-aa87-d8c0a6fc4ed4
-2024-06-18 15:06:25 INFO event_listener.py: Komorebi connected to named pipe: yasb-39d13cf5-2d56-11ef-aa87-d8c0a6fc4ed4
+2024-06-23 11:48:31 INFO log.py: Yasb - Yet Another Status Bar
+2024-06-23 11:48:31 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:48:46 INFO bar_manager.py: Starting SystemEventListener...
+2024-06-23 11:48:46 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-06-23 11:48:46 INFO event_listener.py: Created named pipe yasb-72ee09a3-3128-11ef-a4c5-d8c0a6fc4ed4
+2024-06-23 11:48:46 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-72ee09a3-3128-11ef-a4c5-d8c0a6fc4ed4
+2024-06-23 11:48:46 INFO watcher.py: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-06-23 11:48:47 INFO event_listener.py: Komorebi connected to named pipe: yasb-72ee09a3-3128-11ef-a4c5-d8c0a6fc4ed4
+2024-06-23 11:50:05 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:05 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:50:05 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:08 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:08 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:50:15 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:15 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:50:15 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:19 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:19 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:50:19 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:32 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:32 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:35 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:35 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:50:35 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:44 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:45 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:50:45 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:58 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:50:58 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:50:58 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:51:07 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:51:07 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:51:07 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:51:14 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:51:15 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:51:15 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:51:55 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:51:55 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:51:55 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:06 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:06 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:52:06 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:11 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:11 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:52:11 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:11 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:15 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:15 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:52:15 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:16 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:17 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:52:17 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:33 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:33 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:52:33 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:35 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:35 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:52:35 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:48 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:52:48 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:52:48 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:53:04 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:53:04 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:53:04 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:53:11 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:53:11 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:53:11 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:53:18 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:53:18 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:53:18 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:53:18 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:53:31 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;
+2024-06-23 11:53:31 INFO bar_manager.py: Successfully loaded updated stylesheet and applied to all bars.
+2024-06-23 11:53:31 INFO errorhandler.py: CSSStyleDeclaration: Stripped standalone semicolon: ;

@@ -1,0 +1,98 @@
+/* Bar measurement icons: https://github.com/and3rson/graph-bars-font */
+/* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
+* {
+    font-family: "JetbrainsMono NF", "Mononoki Nerd Font Propo", 'Hack Nerd Font Mono', 'Font Awesome 5 Free Solid', 'Bars';
+    font-size: 12px;
+    color: #FFF;
+}
+
+.bar {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    border: 1px solid rgb(186, 167, 202);
+    margin: 5px 10px 0px 10px;
+}
+
+.container-left,
+.container-left {
+    margin: 0 8px;
+}
+
+.widget {
+    padding: 0px 5px;
+    margin: 0px 3px;
+}
+
+.widget .label {
+    padding: 0px 4px;
+}
+
+.widget:hover {
+    background: rgba(88, 93, 97, 0.8);
+}
+
+.komorebi-workspaces:hover {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.ws-btn {
+    height: auto;
+    width: 12px;
+    margin: 0px 2px;
+    padding: 0 3px;
+    border-radius: 0px;
+}
+
+.ws-btn:hover {
+    background: rgba(88, 93, 97, 0.8);
+}
+
+.ws-btn.active {
+    background: rgba(88, 93, 97, 0.8);
+    font-weight: bold;
+}
+
+.explorer-widget .label {
+    font-weight: bold;
+}
+
+.clock-widget .label {
+    padding: 0px 4px;
+    border-radius: 3px;
+    background: none;
+}
+
+.komorebi-active-layout {
+    color: rgb(255, 255, 255);
+}
+
+.power-button {
+    background: transparent;
+    margin-left: 8px;
+}
+.power-button-menu {
+    background: rgba(13, 17, 26, 0.8);
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+    text-align: center;
+    padding: 8px;
+}
+.power-button-menu::item {
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+.power-button-menu:item::selected {
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.current-user-widget {
+    margin: 0;
+    padding: 0;
+}

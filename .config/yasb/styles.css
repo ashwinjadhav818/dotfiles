@@ -1,27 +1,22 @@
 /* Bar measurement icons: https://github.com/and3rson/graph-bars-font */
 /* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
 * {
-    font-family: "RecMonoLinear Nerd Font", "JetbrainsMono NF", "Mononoki Nerd Font Propo", 'Hack Nerd Font Mono', 'Font Awesome 5 Free Solid', 'Bars';
+    font-family: "JetbrainsMono NF", "Mononoki Nerd Font Propo", 'Hack Nerd Font Mono', 'Font Awesome 5 Free Solid', 'Bars';
     font-size: 12px;
     color: #FFF;
 }
 
 .bar {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 7px;
-    border: 1px solid rgb(186, 167, 202);
+    border-bottom: none;
     margin: 5px 10px 0px 10px;
-    padding: 0px 0px 0px 0px;
-}
-
-.container-left,
-.container-left {
-    margin: 0 8px;
 }
 
 .widget {
     padding: 0px 5px;
-    margin: 0px 3px;
+    padding-top: 1px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 3px 3px 0 3px;
 }
 
 .widget .label {
@@ -32,31 +27,28 @@
     background: rgba(0, 0, 0, 0.8);
 }
 
-.komorebi-workspaces:hover {
-    background: transparent;
-    margin: 0;
-    padding: 0;
-}
-
 .ws-btn {
-    height: 30px;
-    width: 12px;
-    margin: 0px 2px;
-    padding: 0 3px;
-    border-radius: 0px;
+    background: rgb(168, 167, 167);
+    color: rgb(168, 167, 167);;
+    margin: 5px 3px;
+    padding: 3px;
+    border-radius: 3px;
 }
 
 .ws-btn:hover {
-    background: rgba(186, 167, 202, 0.8);
+    background: rgb(194, 192, 214);
+    color: rgb(194, 192, 214);
 }
 
 .ws-btn.active {
-    background: rgba(186, 167, 202, 0.8);
+    background: rgb(224, 222, 244);
+    color: rgb(224, 222, 244);
     font-weight: bold;
 }
 
 .explorer-widget .label {
     font-weight: bold;
+    border-radius: 7px;
 }
 
 .clock-widget .label {
@@ -65,35 +57,23 @@
     background: none;
 }
 
+.active-window-widget {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
+}
+
+.active-window-widget:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.active-window-widget .label {
+    color: rgb(0, 0, 0);
+}
+
 .komorebi-active-layout {
     color: rgb(255, 255, 255);
 }
 
 .power-button {
     background: transparent;
-    margin-left: 8px;
-}
-.power-button-menu {
-    background: rgba(13, 17, 26, 0.8);
-    border-radius: 8px;
-    margin-top: 8px;
-    margin-right: 8px;
-    text-align: center;
-    padding: 8px;
-}
-.power-button-menu::item {
-    color: white;
-    font-size: 12px;
-    padding: 8px;
-    margin-right: 6px;
-    margin-top: 6px;
-}
-.power-button-menu:item::selected {
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.09);
-}
-
-.current-user-widget {
-    margin: 0;
-    padding: 0;
 }

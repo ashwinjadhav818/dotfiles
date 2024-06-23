@@ -402,12 +402,11 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "\udb82\udd54  {%a %d %b %I:%M %p}"
+      label: "\udb82\udd54  {%a %I:%M %p}"
       label_alt: "\udb82\udd54  {%A %d %B %Y %I:%M %p}"
       timezones: ["Asia/Kolkata"]
       callbacks:
-        on_middle: "exec explorer.exe shell:Appsfolder\\Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"
-        on_right: "next_timezone"
+        on_right: "exec explorer.exe shell:Appsfolder\\Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"
 
   cpu:
     type: "yasb.cpu.CpuWidget"
@@ -446,7 +445,7 @@ widgets:
         label_default_name: "{index}"
         label_zero_index: false
         preview_workspace: true
-        hide_empty_workspaces: true
+        hide_empty_workspaces: false
       
   wifi:
     type: "yasb.wifi.WifiWidget"
