@@ -1,2 +1,3 @@
+--ignore="assets/"
 --ignore="aura.png"
 --ignore="README.md"
