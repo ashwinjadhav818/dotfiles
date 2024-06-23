@@ -24,7 +24,7 @@ config.inactive_pane_hsb = { -- Dim inactive panes
 }
 
 -- Font
-config.font = wezterm.font "RecMonoLinear Nerd Font"
+config.font = wezterm.font "JetBrainsMono Nerd Font"
 config.font_size = 12
 
 -- Keybindings
