@@ -142,6 +142,7 @@ return { {
             },
             f = {
                 name = "Find",
+                b = { "<cmd>Telescope buffers<cr>", "Colorscheme" },
                 c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
                 f = { "<cmd> Telescope find_files<cr>", "Files" },
                 h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
