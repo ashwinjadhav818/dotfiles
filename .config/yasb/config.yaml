@@ -101,17 +101,21 @@ bars:
           # "power_button",
           "komorebi_workspaces", 
           "komorebi_active_layout",
+          "active_window",
           # "media_player",
         ]
-      center: ["active_window"]
+      center: ["clock"]
       right:
         [
-          "tray_button",
+          # "tray_button",
+          "weather",
           "cpu",
           "memory",
+          # "disk",
+          "volume",
           "wifi",
           "battery",
-          "clock",
+          "search_button",
           "notification_button"
         ]
 # widgets:
@@ -464,6 +468,36 @@ widgets:
         on_middle: "do_nothing"
         on_right: "exec cmd.exe /c start ms-settings:network"
 
+  disk:
+    type: "yasb.disk.DiskWidget"
+    options:
+      label: "\udb80\udeca {volume_label}{space[used][percent]:.1f}%"
+      label_alt: "\udb80\udeca {volume_label}{space[used][gb]:.1f}GB / {space[total][gb]:.1f}GB"
+      volume_label: "C:"
+      update_interval: 60000
+      callbacks:
+        on_left: "toggle_label"
+        on_middle: "do_nothing"
+        on_right: "exec cmd.exe /c start ms-settings:disksandvolumes"
+  
+  volume:
+    type: "yasb.volume.VolumeWidget"
+    options:
+      label: "{volume_icon}  {volume_level}"
+      label_alt: "{volume_icon}  {volume_level}"
+      update_interval: 100
+      volume_icons: 
+        - "\ueee8"  # Icon for muted
+        - "\uf026"  # Icon for 0% volume
+        - "\uf027"  # Icon for 1-25% volume
+        - "\uf027"  # Icon for 26-50% volume
+        - "\uf028"  # Icon for 51-75% volume
+        - "\uf028"  # Icon for 76-100% volume
+      callbacks:
+        on_left: "toggle_label"
+        on_middle: "do_nothing"
+        on_right: "exec cmd.exe /c start ms-settings:sound"
+
   traffic:
     type: "yasb.traffic.TrafficWidget"
     options:
@@ -496,13 +530,13 @@ widgets:
         on_right: 'prev_layout'
 
   media_player:
-      type: "yasb.media_player.mediaplayerwidget"
+      type: "yasb.media_player.MediaPlayerWidget"
       options:
         label: "{media[title]} - {media[artist]}"
         label_alt: "{media[title]} - {media[artist]}"
-        update_interval: 1000
+        update_interval: 500
         keep_thumbnail_aspect_ratio: false
-        layout: ["thumbnail", "label"]
+        layout: ["thumbnail", "label", "prev", "play_pause", "next"]
         icons:
           shuffle: "\uf074"
           play: "\uf04b"
@@ -511,8 +545,8 @@ widgets:
           prev: "\uf048"
           close: "\uf00d"
           repeat_off: "\uf2f9"
-          repeat_track: "\uf2f9 (t)"
-          repeat_list: "\uf2f9 (l)"
+          repeat_track: "\uf2f9 (T)"
+          repeat_list: "\uf2f9 (L)"
 
   power_button:
     type: "yasb.power_button.PowerButtonWidget"
@@ -567,7 +601,7 @@ widgets:
       label_alt: "\uf0c2  {data[current_condition][0][weatherDesc][0][value]}"
       class_name: "weather-widget"
       exec_options:
-        run_cmd: "curl.exe  wttr.in/Nashik?format=j1"
+        run_cmd: "curl.exe wttr.in/Nashik?format=j1"
         # run every hour
         run_interval: 3600000
         return_format: "json"

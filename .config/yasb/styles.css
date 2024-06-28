@@ -1,53 +1,70 @@
-/* Bar measurement icons: https://github.com/and3rson/graph-bars-font */
-/* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
 * {
-    font-family: "JetbrainsMono NF", "Mononoki Nerd Font Propo", 'Hack Nerd Font Mono', 'Font Awesome 5 Free Solid', 'Bars';
+    /* Bar measurement icons: https://github.com/and3rson/graph-bars-font */
+    /* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
+    font-family: "JetBrainsMono NF", "CaskaydiaCove Nerd Font", 'Hack Nerd Font Mono', 'Font Awesome 5 Free Solid', 'Bars';
     font-size: 12px;
     color: #FFF;
 }
 
 .bar {
-    border-bottom: none;
-    margin: 5px 10px 0px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 0px solid #A9B1D6;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container-right {
+    margin-right: 8px;
+    background: none;
+}
+
+.container-left {
+    margin-left: 8px;
 }
 
 .widget {
     padding: 0px 5px;
-    padding-top: 1px;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.6);
-    margin: 3px 3px 0 3px;
+    border-radius: 7px;
 }
 
 .widget .label {
+    border-radius: 7px;
     padding: 0px 4px;
 }
 
-.widget:hover {
-    background: rgba(0, 0, 0, 0.8);
+.widget .label:hover {
+    color: rgb(169, 169, 169);
+}
+
+.komorebi-workspaces {
+    margin-left: 0;
 }
 
 .ws-btn {
     background: rgb(168, 167, 167);
-    color: rgb(168, 167, 167);;
-    margin: 5px 3px;
-    padding: 3px;
-    border-radius: 3px;
+    color: rgb(168, 167, 167);
+    margin: 0px 3px;
+    padding: 0 3px;
+    height: 10px;
+    width: 5px;
+    border-radius: 5px;
 }
 
-.ws-btn:hover {
-    background: rgb(194, 192, 214);
-    color: rgb(194, 192, 214);
+.ws-btn .label:hover {
+    border: none;
 }
 
 .ws-btn.active {
     background: rgb(224, 222, 244);
     color: rgb(224, 222, 244);
+    height: 10px;
+    width: 20px;
     font-weight: bold;
 }
 
 .explorer-widget .label {
     font-weight: bold;
+    font-size: 18px;
     border-radius: 7px;
 }
 
@@ -57,23 +74,27 @@
     background: none;
 }
 
-.active-window-widget {
-    background-color: rgba(255, 255, 255, 1);
-    color: rgb(0, 0, 0);
-}
-
-.active-window-widget:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
 .active-window-widget .label {
-    color: rgb(0, 0, 0);
+    margin: 2px 0px;
 }
 
-.komorebi-active-layout {
-    color: rgb(255, 255, 255);
+.komorebi-active-layout .label {
+    color: #FFF;
+    padding-left: 8px;
+    padding-right: 0;
+    border-radius: 7px;
 }
 
-.power-button {
-    background: transparent;
+.komorebi-active-layout .label:hover {
+    color: rgb(169, 169, 169);
+
+}
+
+.media-widget .media-btn {
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+.media-btn {
+  background: transparent;
 }

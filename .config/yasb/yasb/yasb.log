@@ -1,8 +1,0 @@
-2024-05-29 11:54:17 INFO log.py: Yasb - Yet Another Status Bar
-2024-05-29 11:54:18 ERROR errorhandler.py: Property: Invalid value for "CSS Level 2.1" property: rgb(0, 0 0) [36:5: color]
-2024-05-29 11:54:26 INFO bar_manager.py: Starting KomorebiEventListener...
-2024-05-29 11:54:26 INFO bar_manager.py: Starting SystemEventListener...
-2024-05-29 11:54:26 INFO event_listener.py: Created named pipe yasb-18c2660e-1d84-11ef-b364-d8c0a6fc4ed4
-2024-05-29 11:54:26 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-18c2660e-1d84-11ef-b364-d8c0a6fc4ed4
-2024-05-29 11:54:26 INFO watcher.py: Created file watcher for path C:\Users\Ashwin\.config\yasb
-2024-05-29 11:54:26 INFO event_listener.py: Komorebi connected to named pipe: yasb-18c2660e-1d84-11ef-b364-d8c0a6fc4ed4
