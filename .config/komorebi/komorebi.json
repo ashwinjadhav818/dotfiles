@@ -36,7 +36,7 @@
                 },
                 {
                     "name": "2",
-                    "layout": "VerticalStack"
+                    "layout": "UltrawideVerticalStack"
                 },
                 {
                     "name": "3",
@@ -44,7 +44,7 @@
                 },
                 {
                     "name": "4",
-                    "layout": "Grid"
+                    "layout": "VerticalStack"
                 }
             ]
         }
@@ -64,6 +64,11 @@
         {
             "kind": "Title",
             "id": "Arc extension popup",
+            "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Title",
+            "id": "Picture-in-Picture",
             "matching_strategy": "Equals"
         },
         {
