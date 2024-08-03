@@ -9,7 +9,7 @@
     "default_container_padding": 5,
     "border": true,
     "border_width": 3,
-    "transparency": true,
+    "border_implementation": "Windows",
     "border_colours": {
         "single": {
             "r": 22,
@@ -57,8 +57,18 @@
             "width": 300,
             "focused_text": "#00a542",
             "unfocused_text": "#b3b3b3",
-            "background": "#141414"
+            "background": "#141414",
+            "font_family": "JetBrainsMonoNL NFP",
+            "font_size": 18
         }
+    },
+    "transparency": true,
+    "transparency_alpha": 215,
+    "animation": {
+        "enabled": true,
+        "duration": 250,
+        "style": "EaseOutExpo",
+        "fps": 120
     },
     "float_rules": [
         {
