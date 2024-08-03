@@ -28,19 +28,24 @@ local options = {
   number = true,                           -- set numbered lines
   relativenumber = true,                   -- set relative numbered lines
   numberwidth = 4,                         -- set number column width to 2 {default 4}
-
+  guifont = "IosevkaCode Nerd Font:h12",   -- the font used in graphical neovim applications
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = true,                             -- display lines as one long line
   linebreak = true,                        -- companion to wrap, don't split words
   scrolloff = 8,                           -- minimal number of screen lines to keep above and below the cursor
   sidescrolloff = 8,                       -- minimal number of screen columns either side of cursor if wrap is `false`
-  guifont = "Mononoki Nerd Font Mono:h17",               -- the font used in graphical neovim applications
-  whichwrap = "bs<>[]hl",                  -- which "horizontal" keys are allowed to travel to prev/next line
+  whichwrap = "s<>[]hl",                  -- which "horizontal" keys are allowed to travel to prev/next line
 }
 
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+
+-- Neovide Config
+vim.g.neovide_window_blurred = true
+vim.g.neovide_transparency = 0.8
+vim.g.neovide_floating_blur_amount_x = 2.0
+vim.g.neovide_floating_blur_amount_y = 2.0
 
 -- vim.opt.shortmess = "ilmnrx"                        -- flags to shorten vim messages, see :help 'shortmess'
 vim.opt.shortmess:append "c"                           -- don't give |ins-completion-menu| messages
