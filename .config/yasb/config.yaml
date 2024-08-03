@@ -1,3 +1,14 @@
+# Configuration for Yasb (Yet Another Status Bar)
+# Author: @denBot & @ashwinjadhav818
+# Last updated: 22/05/2024
+
+# To check the options supported by any widget 
+## 1. Open this url - https://github.com/ashwinjadhav818/yasb/tree/main/src/core/validation
+## 2. Browse for the widget name and check for the options supported
+#
+## Note - All the komorebi related widgets are under the komorebi folder and other widgets are under yasb folder.
+# The bar.py contains the options for the yasb bar.
+
 watch_stylesheet: true
 watch_config: true
 
@@ -16,37 +27,33 @@ bars:
     window_flags:
       always_on_top: false
       windows_app_bar: true
-      hide_taskbar: true
+      # hide_taskbar: false 
     dimensions:
       width: "100%"
       height: 35
     padding:
-      top: 0
+      top: 7
       left: 0
       bottom: 0
       right: 0
     widgets:
       left:
         [
-          "current_user",
-          # "power_button",
+          "power_menu",
           "komorebi_workspaces", 
           "komorebi_active_layout",
           "active_window",
-          # "media_player",
         ]
-      center: ["clock"]
+      center: ["clock", "search_button"]
       right:
         [
-          # "tray_button",
+          "media_player",
           "weather",
-          "cpu",
-          "memory",
-          # "disk",
+          # "cpu",
+          # "memory",
           "volume",
           "wifi",
           "battery",
-          "search_button",
           "notification_button"
         ]
 
@@ -58,69 +65,119 @@ widgets:
       label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
       label_no_window: "Desktop"
       max_length: 56
+      label_icon: true
+      label_icon_size: 16
       max_length_ellipsis: ".."
       monitor_exclusive: false
+
+  flashing_windows:
+    type: "yasb.flashing_windows.FlashingWindowsWidget"
+    options:
+      label: "{win[title]}"
+      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
+      max_length: 48
+      max_length_ellipsis: "..."
+      callbacks:
+          on_left: "activate_window"
+          on_middle: "toggle_label"
+          on_right: "remove_window"
 
   battery:
     type: "yasb.battery.BatteryWidget"
     options:
-      label: "{icon}  {percent}%"
-      label_alt: "{icon}  {percent}% | time: {time_remaining}"
-      time_remaining_natural: false
+      label: "<span>{icon}</span>{percent}%"
+      label_alt: "<span>{icon}</span> {percent}% | time: {time_remaining}"
+      charging_options:
+        icon_format: "{charging_icon}"
+      status_icons:
+        icon_charging: "\ue83e"
+        icon_critical: "\ue851"
+        icon_low: "\ue852"
+        icon_medium: "\ue855"
+        icon_high: "\ue858"
+        icon_full: "\ue83f"
 
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "\udb82\udd54  {%a %I:%M %p}"
-      label_alt: "\udb82\udd54  {%A %d %B %Y %I:%M %p}"
-      timezones: ["Asia/Kolkata"]
+      label: "{%a %I:%M %p}"
+      label_alt: "{%A %d %B %Y %I:%M %p}"
+      #timezones: ["Europe/London", "America/New_York"]
+      timezones: []
       callbacks:
-        on_right: "exec explorer.exe shell:Appsfolder\\Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"
+        on_middle: "exec explorer.exe shell:Appsfolder\\Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"
+        on_right: "next_timezone"
 
   cpu:
     type: "yasb.cpu.CpuWidget"
     options:
-      label: "\udb80\udf5b {info[percent][total]}%"
-      label_alt: "\udb80\udf5b {info[histograms][cpu_percent]}"
-      update_interval: 2000
+      label: "<span>\uf4bc</span> {info[percent][total]}%"
+      label_alt: "<span>\uf437</span> {info[histograms][cpu_percent]}"
+      update_interval: 500
       histogram_icons:
-        - '\u2581' # 0%
-        - '\u2581' # 10%
-        - '\u2582' # 20%
-        - '\u2583' # 30%
-        - '\u2584' # 40%
-        - '\u2585' # 50%
-        - '\u2586' # 60%
-        - '\u2587' # 70%
-        - '\u2588' # 80%+
-      histogram_num_columns: 8
+        - "\u2581" # 0%
+        - "\u2581" # 10%
+        - "\u2582" # 20%
+        - "\u2583" # 30%
+        - "\u2584" # 40%
+        - "\u2585" # 50%
+        - "\u2586" # 60%
+        - "\u2587" # 70%
+        - "\u2588" # 80%+
+      histogram_num_columns: 10
       callbacks:
         on_right: "exec cmd /c Taskmgr"
 
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
-      label: "\uf200  {virtual_mem_percent}%"
-      label_alt: "\uf200  {virtual_mem_free}"
-      update_interval: 2000
+      label: "<span>\uf200</span> {virtual_mem_free}"
+      label_alt: "<span>\uf4bc</span> {virtual_mem_percent}%"
+      update_interval: 5000
       callbacks:
         on_right: "exec cmd /c Taskmgr"
 
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
-        label_offline: "Komorebi Offline"
-        label_workspace_btn: "{name}"
-        label_default_name: "{index}"
-        label_zero_index: false
-        preview_workspace: true
-        hide_empty_workspaces: false
-      
+      label_offline: "Komorebi Offline"
+      label_workspace_btn: "\uf4c3"
+      label_default_name: "{index}"
+      label_zero_index: false
+      hide_empty_workspaces: false
+      # callbacks:
+      #   on_left: "activate"
+      #   on_middle: "rename_temporary"
+      #   on_right: "rename_permanent"
+
+  komorebi_active_layout:
+    type: "komorebi.active_layout.ActiveLayoutWidget"
+    options:
+      hide_if_offline: false
+      label: "{icon}"
+      layouts: ['bsp', 'columns', 'rows', 'grid', 'vertical_stack', 'horizontal_stack', 'ultrawide_vertical_stack']
+      layout_icons:
+        bsp: "[\\\\]"
+        columns: "[||]"
+        rows: "[==]"
+        grid: "[G]"
+        vertical_stack: "[V]="
+        horizontal_stack: "[H]="
+        ultrawide_vertical_stack: "||="
+        monocle: "[M]"
+        maximised: "[X]"
+        floating: "><>"
+        paused: "[P]"
+      callbacks:
+        on_left: "next_layout"
+        on_middle: "toggle_monocle"
+        on_right: "prev_layout"
+
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
       label: "{wifi_icon}"
-      label_alt: "{wifi_icon}  {wifi_name}"
+      label_alt: "{wifi_icon} {wifi_name}"
       update_interval: 5000
       wifi_icons:
         - "\udb82\udd2e" # 0% strength (no wifi)
@@ -129,7 +186,7 @@ widgets:
         - "\udb82\udd25" # 51-75% strength
         - "\udb82\udd28" # 76-100% strength. Alternate theming: \uf1eb
       callbacks:
-        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/action-widget.ahk"
+        on_left: "toggle_label"
         on_middle: "do_nothing"
         on_right: "exec cmd.exe /c start ms-settings:network"
 
@@ -144,93 +201,97 @@ widgets:
         on_left: "toggle_label"
         on_middle: "do_nothing"
         on_right: "exec cmd.exe /c start ms-settings:disksandvolumes"
-  
+
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
-      label: "{volume_icon}  {volume_level}"
-      label_alt: "{volume_icon}  {volume_level}"
-      update_interval: 100
-      volume_icons: 
-        - "\ueee8"  # Icon for muted
-        - "\uf026"  # Icon for 0% volume
-        - "\uf027"  # Icon for 1-25% volume
-        - "\uf027"  # Icon for 26-50% volume
-        - "\uf028"  # Icon for 51-75% volume
-        - "\uf028"  # Icon for 76-100% volume
+      label: "<span>{icon}</span> {level}"
+      label_alt: "{volume}"
+      volume_icons:
+        - "\uea85"  # Icon for muted
+        - "\ue992"  # Icon for 0-10% volume
+        - "\ue993"  # Icon for 11-30% volume
+        - "\ue994"  # Icon for 31-60% volume
+        - "\ue995"  # Icon for 61-100% volume
       callbacks:
-        on_left: "toggle_label"
+        # on_left: "exec quick_settings"
         on_middle: "do_nothing"
         on_right: "exec cmd.exe /c start ms-settings:sound"
+
+  media_player:
+      type: "yasb.media.MediaWidget"
+      options:
+        label: "{title} - {artist}"
+        label_alt: "{title}"
+        update_interval: 1000
+        max_field_size:
+          label: 15
+          label_alt: 30
+        show_thumbnail: true
+        controls_only: false
+        controls_left: true
+        thumbnail_alpha: 255
+        thumbnail_padding: 4
+        icons:
+          prev_track: "\ue622"
+          next_track: "\ue623"
+          play: "\uf5b0"
+          pause: "\ue62e"
 
   traffic:
     type: "yasb.traffic.TrafficWidget"
     options:
-      label: "\ueb01 \ueab4 {download_speed} | \ueab7 {upload_speed}"
-      label_alt: "\ueb01 \ueab4 {upload_speed} | \ueab7 {download_speed}"
+      # can be: download_speed, download_justified, download_category, and same for upload
+      label: "\ueb01 \ueab4 {download_justified} | \ueab7 {upload_justified}"
+      label_alt: "\ueb01 \ueab4 {download_category} | \ueab7 {upload_category}"
       update_interval: 1000 # Update interval should be a multiple of 1000
       callbacks:
         on_right: "exec cmd /c Taskmgr"
 
-  komorebi_active_layout:
-    type: "komorebi.active_layout.ActiveLayoutWidget"
-    options:
-      hide_if_offline: false
-      label: "{icon}"
-      layout_icons:
-        bsp: "[\\\\]"
-        columns: "[||]"
-        rows: "[==]"
-        grid: "[G]"
-        vertical_stack: "[V]="
-        horizontal_stack: "[H]="
-        ultrawide_vertical_stack: "||="
-        monocle: "[M]"
-        maximised: "[X]"
-        floating: "><>"
-        paused: "[P]"
-      callbacks:
-        on_left: 'next_layout'
-        on_middle: 'toggle_monocle'
-        on_right: 'prev_layout'
-
-  media_player:
-      type: "yasb.media_player.MediaPlayerWidget"
-      options:
-        label: "{media[title]} - {media[artist]}"
-        label_alt: "{media[title]} - {media[artist]}"
-        update_interval: 500
-        keep_thumbnail_aspect_ratio: false
-        layout: ["thumbnail", "label", "prev", "play_pause", "next"]
-        icons:
-          shuffle: "\uf074"
-          play: "\uf04b"
-          pause: "\uf04c"
-          next: "\uf051"
-          prev: "\uf048"
-          close: "\uf00d"
-          repeat_off: "\uf2f9"
-          repeat_track: "\uf2f9 (T)"
-          repeat_list: "\uf2f9 (L)"
-
-  power_button:
-    type: "yasb.power_button.PowerButtonWidget"
+  power_menu:
+    type: "yasb.power_menu.PowerMenuWidget"
     options:
       label: "\ue62a"
-      layout: ["lock", "restart", "shutDown"]
+      blur_background: true
+      animation_duration: 200 # Milisecond 
+      button_row: 3 # Number of buttons in row, min 1 max 5
+      buttons:
+        lock: ["\ue72e","Lock"]
+        # signout: ["\udb80\udf43","Sign out"]
+        sleep: ["\uf1db","Sleep"]
+        shutdown: ["\ue7e8","Shut Down"]
+        restart: ["\ue777","Restart"]
+        hibernate: ["\ue823","Hibernate"]
+        cancel: ["\ue711","Cancel"]
+        #force_shutdown: ["\uf011","Force Shut Down"]
+        #force_restart: ["\uead2","Force Restart"]
+
+  weather:
+    type: "yasb.weather.WeatherWidget"
+    options:
+      label: "<span>{icon}</span> {temp_c}"
+      label_alt: "Min {min_temp_c}, Max {max_temp_c}, Humidity {humidity}"
+      api_key: '3bf4cf9a7c3f40d6b31174128242807'
+      update_interval: 600 #Update interval in seconds, Min 600
+      hide_decimal: true
+      location: 'London UK' # You can use "USA Los Angeles 90006" {COUNTRY CITY ZIP_CODE}, or just city.
+      callbacks:
+        on_left: "toggle_label"
+      icons: 
+        sunnyDay: "\ue30d"
+        clearNight: "\ue32b"
+        cloudyDay: "\udb81\udd99"
+        cloudyNight: "\ue311"
+        rainyDay: "\udb81\ude7e"
+        rainyNight: "\udb81\ude7e"
+        snowyIcyDay: "\udb81\udd98"
+        snowyIcyNight: "\udb81\udd98"
+        blizzard: "\uebaa"
+        default: "\uebaa"
+        # https://www.weatherapi.com/docs/
+        # Usage {temp_c}, {min_temp_c}, {max_temp_c}, {temp_f}, {min_temp_f}, {max_temp_f}, {location}, {humidity}, {icon}, {conditions}
 
   # Some custom widgets
-  current_user:
-    type: "yasb.custom.CustomWidget"
-    options:
-      label: "{data}"
-      label_alt: "{data}"
-      class_name: "current-user-widget"
-      exec_options:
-        run_cmd: "echo %username%"
-        return_format: "string"
-      callbacks:
-        on_right: "toggle_label"
 
   explorer_button:
     type: "yasb.custom.CustomWidget"
@@ -258,18 +319,6 @@ widgets:
         on_left: "toggle_label"
         on_middle: "exec cmd /c ncpa.cpl"                           # open network settings
         on_right: "exec cmd /c start https://ipinfo.io/{data[ip]} " # open ipinfo in browser
-
-  weather:
-    type: "yasb.custom.CustomWidget"
-    options:
-      label: "\uf0c2  {data[current_condition][0][temp_C]}\u00b0c"
-      label_alt: "\uf0c2  {data[current_condition][0][weatherDesc][0][value]}"
-      class_name: "weather-widget"
-      exec_options:
-        run_cmd: "curl.exe wttr.in/Nashik?format=j1"
-        # run every hour
-        run_interval: 3600000
-        return_format: "json"
   
   lang:
     type: "yasb.custom.CustomWidget"
@@ -290,19 +339,7 @@ widgets:
       label_alt: "\uf49a"
       class_name: "notification-widget"
       callbacks:
-        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/notification-widget.ahk"
-        on_right: "toggle_label"
-
-  start_button:
-    type: "yasb.custom.CustomWidget"
-    options:
-      label: "\ue62a"
-      label_alt: "\ue62a Start"
-      class_name: "start-widget"
-      exec_options:
-        run_once: true
-      callbacks:
-        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/start-widget.ahk"
+        on_left: "exec notification_center"
         on_right: "toggle_label"
 
   search_button:
@@ -314,17 +351,5 @@ widgets:
       exec_options:
         run_once: true
       callbacks:
-        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/search-widget.ahk"
+        on_left: "exec search"
         on_right: "toggle_label"
-
-  tray_button:
-    type: "yasb.custom.CustomWidget"
-    options:
-      label: "\uf107"
-      label_alt: "\uf107"
-      class_name: "tray-widget"
-      exec_options:
-        run_once: true
-      callbacks:
-        on_left: "exec autohotkey64 C:/Users/Ashwin/.dotfiles/.config/yasb/functions/tray-widget.ahk"
-        on_right: "toggle_label" 
