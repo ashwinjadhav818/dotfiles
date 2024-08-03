@@ -11,8 +11,8 @@ Import-Module -Name Terminal-Icons
 Set-Alias np C:\Windows\notepad.exe
 Set-Alias ll ls
 Set-Alias g git
-Set-Alias vi nvim
-Set-Alias vim nvim
+Set-Alias vi neovide
+Set-Alias vim neovide
 Set-Alias cmake make
 
 # PSReadLine
