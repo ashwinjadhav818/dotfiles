@@ -3,12 +3,11 @@
     "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.yaml",
     "window_hiding_behaviour": "Cloak",
     "cross_monitor_move_behaviour": "Insert",
-    "alt_focus_hack": false,
     "mouse_follows_focus": false,
-    "default_workspace_padding": 5,
-    "default_container_padding": 5,
+    "default_workspace_padding": 2,
+    "default_container_padding": 2,
     "border": true,
-    "border_width": 3,
+    "border_width": 7,
     "border_implementation": "Windows",
     "border_colours": {
         "single": {
@@ -58,7 +57,7 @@
             "focused_text": "#00a542",
             "unfocused_text": "#b3b3b3",
             "background": "#141414",
-            "font_family": "JetBrainsMonoNL NFP",
+            "font_family": "Segoe UI",
             "font_size": 18
         }
     },
@@ -66,14 +65,18 @@
     "transparency_alpha": 215,
     "animation": {
         "enabled": true,
-        "duration": 250,
-        "style": "EaseOutExpo",
-        "fps": 120
+        "duration": 200,
+        "fps": 60
     },
     "float_rules": [
         {
             "kind": "Title",
             "id": "Arc extension popup",
+            "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Title",
+            "id": "Arc picture in picture",
             "matching_strategy": "Equals"
         },
         {
