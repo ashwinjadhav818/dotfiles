@@ -6,25 +6,25 @@
 #Include komorebi.generated.ahk
 
 ; Focus windows
-#Left::Focus("left")
-#Down::Focus("down")
-#Up::Focus("up")
-#Right::Focus("right")
+#w::Focus("up")
+#a::Focus("left")
+#s::Focus("down")
+#d::Focus("right")
 #+[::CycleFocus("previous")
 #+]::CycleFocus("next")
 
 ; Move windows
-#+h::Move("left")
-#+j::Move("down")
-#+k::Move("up")
-#+l::Move("right")
+#+w::Move("up")
+#+a::Move("left")
+#+s::Move("down")
+#+d::Move("right")
 #+Enter::Promote()
     
 ; Stack windows
-#!h::Stack("left")
-#!j::Stack("down")
-#!k::Stack("up")
-#!l::Stack("right")
+#!w::Stack("up")
+#!a::Stack("left")
+#!s::Stack("down")
+#!d::Stack("right")
 #;::Unstack()
 #[::CycleStack("previous")
 #]::CycleStack("next")
