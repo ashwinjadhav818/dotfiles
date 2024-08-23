@@ -3,3 +3,4 @@
 *.local
 thumbs.db
 yasb.log
+tmp-*/
