@@ -5,10 +5,10 @@
     "cross_monitor_move_behaviour": "Insert",
     "mouse_follows_focus": false,
     "default_workspace_padding": 2,
-    "default_container_padding": 2,
+    "default_container_padding": 2, 
     "border": true,
-    "border_width": 7,
     "border_implementation": "Windows",
+    "border_style": "Square",
     "border_colours": {
         "single": {
             "r": 22,
