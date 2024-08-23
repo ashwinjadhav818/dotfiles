@@ -1,0 +1,21 @@
+[2m2024-07-29T09:32:36.809281Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute '%userprofile%/.glzr/zebar/start.bat'.\n\nError: Program path is not valid for command '%userprofile%/.glzr/zebar/start.bat'."
+[2m2024-08-05T11:09:31.464914Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: unexpected argument found
+ at line 4 column 21
+[2m2024-08-05T11:09:38.756345Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: unexpected argument found
+ at line 4 column 21
+[2m2024-08-11T07:05:01.726197Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2024-08-11T07:05:11.497013Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2024-08-11T07:05:13.174669Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2024-08-11T07:05:14.056978Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2024-08-12T15:44:32.202220Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[20].commands: unexpected argument found
+ at line 197 column 15
+[2m2024-08-12T15:45:18.263049Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[20].commands: unexpected argument found
+ at line 197 column 15
+[2m2024-08-12T15:45:51.487196Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[20].commands: unrecognized subcommand
+ at line 197 column 15
+[2m2024-08-12T15:47:15.248993Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[20].commands: unexpected argument found
+ at line 197 column 15
+[2m2024-08-13T05:44:07.517629Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-08-15T06:33:32.106781Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2024-08-15T14:38:10.300350Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute './glazewm-extra.exe'.\n\nError: Program path is not valid for command './glazewm-extra.exe'."
+[2m2024-08-16T14:01:48.761377Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute './glazewm-extra.exe'.\n\nError: Program path is not valid for command './glazewm-extra.exe'."
