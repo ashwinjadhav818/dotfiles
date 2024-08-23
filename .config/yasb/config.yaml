@@ -1,16 +1,10 @@
-# Configuration for Yasb (Yet Another Status Bar)
-# Author: @denBot & @ashwinjadhav818
-# Last updated: 22/05/2024
-
-# To check the options supported by any widget 
-## 1. Open this url - https://github.com/ashwinjadhav818/yasb/tree/main/src/core/validation
-## 2. Browse for the widget name and check for the options supported
-#
-## Note - All the komorebi related widgets are under the komorebi folder and other widgets are under yasb folder.
-# The bar.py contains the options for the yasb bar.
-
 watch_stylesheet: true
 watch_config: true
+
+komorebi:
+  start_command: "pwsh -Command komorebic start --ahk"
+  stop_command: "komorebic stop"
+  reload_command: "komorebic reload-configuration"
 
 bars:
   status-bar:
@@ -21,18 +15,17 @@ bars:
       position: "top"
       center: true
     blur_effect:
-      enabled: false
+      enabled: true
       acrylic: true
       dark: false
     window_flags:
       always_on_top: false
       windows_app_bar: true
-      # hide_taskbar: false 
     dimensions:
       width: "100%"
-      height: 35
+      height: 40
     padding:
-      top: 7
+      top: 0
       left: 0
       bottom: 0
       right: 0
@@ -63,24 +56,12 @@ widgets:
     options:
       label: "{win[title]}"
       label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
-      label_no_window: "Desktop"
+      label_no_window: ""
       max_length: 56
       label_icon: true
       label_icon_size: 16
       max_length_ellipsis: ".."
       monitor_exclusive: false
-
-  flashing_windows:
-    type: "yasb.flashing_windows.FlashingWindowsWidget"
-    options:
-      label: "{win[title]}"
-      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
-      max_length: 48
-      max_length_ellipsis: "..."
-      callbacks:
-          on_left: "activate_window"
-          on_middle: "toggle_label"
-          on_right: "remove_window"
 
   battery:
     type: "yasb.battery.BatteryWidget"
@@ -176,8 +157,8 @@ widgets:
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
-      label: "{wifi_icon}"
-      label_alt: "{wifi_icon} {wifi_name}"
+      label: "<span>{wifi_icon}</span>"
+      label_alt: "<span>{wifi_icon}</span> {wifi_name}"
       update_interval: 5000
       wifi_icons:
         - "\udb82\udd2e" # 0% strength (no wifi)
@@ -186,7 +167,7 @@ widgets:
         - "\udb82\udd25" # 51-75% strength
         - "\udb82\udd28" # 76-100% strength. Alternate theming: \uf1eb
       callbacks:
-        on_left: "toggle_label"
+        on_left: "exec quick_settings"
         on_middle: "do_nothing"
         on_right: "exec cmd.exe /c start ms-settings:network"
 
@@ -223,15 +204,16 @@ widgets:
       options:
         label: "{title} - {artist}"
         label_alt: "{title}"
-        update_interval: 1000
         max_field_size:
-          label: 15
+          label: 20
           label_alt: 30
         show_thumbnail: true
         controls_only: false
         controls_left: true
-        thumbnail_alpha: 255
-        thumbnail_padding: 4
+        hide_empty: true
+        thumbnail_alpha: 80
+        thumbnail_padding: 8
+        thumbnail_corner_radius: 7 # Set to 0 for square corners
         icons:
           prev_track: "\ue622"
           next_track: "\ue623"
@@ -251,7 +233,7 @@ widgets:
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
-      label: "\ue62a"
+      label: "<span>\ue62a</span>"
       blur_background: true
       animation_duration: 200 # Milisecond 
       button_row: 3 # Number of buttons in row, min 1 max 5
@@ -274,7 +256,7 @@ widgets:
       api_key: '3bf4cf9a7c3f40d6b31174128242807'
       update_interval: 600 #Update interval in seconds, Min 600
       hide_decimal: true
-      location: 'London UK' # You can use "USA Los Angeles 90006" {COUNTRY CITY ZIP_CODE}, or just city.
+      location: 'Nashik India' # You can use "USA Los Angeles 90006" {COUNTRY CITY ZIP_CODE}, or just city.
       callbacks:
         on_left: "toggle_label"
       icons: 

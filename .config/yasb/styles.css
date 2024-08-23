@@ -29,7 +29,6 @@
 	margin: 0 0px;
 }
 .widget {
-	background-color: #1e1e2e;
 	padding: 0 8px;
 	margin: 0 0px;
 }
@@ -68,24 +67,13 @@
 	width: 26px;
 }
 .komorebi-active-layout {
-	border-top-right-radius: 16px;
-	border-bottom-right-radius: 16px;
-	padding: 0 4px 0 0;
+	padding: 0;
 }
-.active-window-widget {
-	border-radius: 16px;
-	margin-left: 8px
-}
-.clock-widget {
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    padding: 0 15px;
+.komorebi-active-layout .label {
+    font-family: "JetBrainsMono Nerd Font";
 }
 .search-widget {
     padding: 0 2px;
-    border-top-right-radius: 16px;
-	border-bottom-right-radius: 16px;
-    background-color: #313244;
 }
 .search-widget .label {
 	padding: 0 7px 0 5px;
@@ -101,8 +89,8 @@
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .power-menu-widget .label {
-	color: #f38ba8;
 	font-size: 13px;
+    margin-left: 7px;
 }
 .power-menu-popup {
 	background-color: rgba(24, 24, 37, 0.9);
@@ -152,6 +140,7 @@
 /* ICONS */
 .icon {
 	font-family: "Segoe Fluent Icons";
+    color: #829fc1;
 	padding: 3px;
     font-size: 16px;
 }
@@ -182,6 +171,11 @@
 .weather-widget .icon {
     font-family: "JetBrainsMono NFP"
 }
+.icon,
+.media-widget .btn,
+.power-menu-widget .label {
+    color: #829fc1;
+}
 
 /* WEATHER WIDGET */
 .weather-widget .icon {
@@ -211,14 +205,11 @@
 /* NEW MEDIA WIDGET */
 .media-widget {
     padding-right: 0;
-    border-top-left-radius: 16px;
-	border-bottom-left-radius: 16px;
 }
 .media-widget .label {
 	color: #bac2db;
 }
 .media-widget .btn {
-	color: #acb2c9;
 	padding: 0 5px;
 	margin: 4px 2px;
 }
@@ -226,8 +217,7 @@
 	color: #babfd3;
 }
 .media-widget .btn.play {
-	background-color: #313244;
-    border-radius: 14px;
+    border-radius: 12px;
 	font-size: 12px;
 }
 .media-widget .btn.disabled:hover,
