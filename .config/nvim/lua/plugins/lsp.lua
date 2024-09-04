@@ -1,152 +1,7 @@
 return {
-    {
-        "neovim/nvim-lspconfig",
-        -- config = function()
-        --     local M = {}
-        --
-        --     local status_cmp_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-        --     if not status_cmp_ok then
-        --         return
-        --     end
-        --
-        --     M.capabilities = vim.lsp.protocol.make_client_capabilities()
-        --     M.capabilities.textDocument.completion.completionItem.snippetSupport = true
-        --     M.capabilities = cmp_nvim_lsp.default_capabilities(M.capabilities)
-        --
-        --     M.setup = function()
-        --         local signs = { {
-        --             name = "DiagnosticSignError",
-        --             text = ""
-        --         }, {
-        --             name = "DiagnosticSignWarn",
-        --             text = ""
-        --         }, {
-        --             name = "DiagnosticSignHint",
-        --             text = ""
-        --         }, {
-        --             name = "DiagnosticSignInfo",
-        --             text = ""
-        --         } }
-        --
-        --         for _, sign in ipairs(signs) do
-        --             vim.fn.sign_define(sign.name, {
-        --                 texthl = sign.name,
-        --                 text = sign.text,
-        --                 numhl = ""
-        --             })
-        --         end
-        --
-        --         local config = {
-        --             virtual_text = true, -- disable virtual text
-        --             signs = {
-        --                 active = "signs",    -- show signs
-        --             },
-        --             update_in_insert = true,
-        --             underline = true,
-        --             severity_sort = true,
-        --             float = {
-        --                 focusable = true,
-        --                 style = "minimal",
-        --                 border = "rounded",
-        --                 source = "always",
-        --                 header = "",
-        --                 prefix = ""
-        --             }
-        --         }
-        --
-        --         vim.diagnostic.config(config)
-        --
-        --         vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-        --             border = "rounded"
-        --         })
-        --
-        --         vim.lsp.handlers["textDocument/signatureHelp"] =
-        --             vim.lsp.with(vim.lsp.handlers.signature_help, {
-        --                 border = "rounded"
-        --             })
-        --     end
-        --
-        --     local function lsp_keymaps(bufnr)
-        --         local opts = {
-        --             noremap = true,
-        --             silent = true
-        --         }
-        --         local keymap = vim.api.nvim_buf_set_keymap
-        --         keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-        --         keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
-        --         keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
-        --         keymap(bufnr, "n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-        --         keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-        --         keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
-        --         keymap(bufnr, "n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
-        --         keymap(bufnr, "n", "<leader>li", "<cmd>LspInfo<cr>", opts)
-        --         keymap(bufnr, "n", "<leader>lI", "<cmd>LspInstallInfo<cr>", opts)
-        --         keymap(bufnr, "n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
-        --         keymap(bufnr, "n", "<leader>lj", "<cmd>lua vim.diagnostic.goto_next({buffer=0})<cr>", opts)
-        --         keymap(bufnr, "n", "<leader>lk", "<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>", opts)
-        --         keymap(bufnr, "n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
-        --         keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
-        --         keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
-        --     end
-        --
-        --     M.on_attach = function(client, bufnr)
-        --         if client.name == "tsserver" then
-        --             client.server_capabilities.documentFormattingProvider = false
-        --         end
-        --
-        --         if client.name == "sumneko_lua" then
-        --             client.server_capabilities.documentFormattingProvider = false
-        --         end
-        --
-        --         lsp_keymaps(bufnr)
-        --         local status_ok, illuminate = pcall(require, "illuminate")
-        --         if not status_ok then
-        --             return
-        --         end
-        --         illuminate.on_attach(client)
-        --     end
-        --
-        --     return M
-        -- end
-    },
-    {
-        "onsails/lspkind-nvim",
-        config = function()
-            require('lspkind').init({
-                mode = 'symbol_text',
+    { "neovim/nvim-lspconfig" },
 
-                preset = 'codicons',
-
-                symbol_map = {
-                    Text = "󰉿",
-                    Method = "󰆧",
-                    Function = "󰊕",
-                    Constructor = "",
-                    Field = "󰜢",
-                    Variable = "󰀫",
-                    Class = "󰠱",
-                    Interface = "",
-                    Module = "",
-                    Property = "󰜢",
-                    Unit = "󰑭",
-                    Value = "󰎠",
-                    Enum = "",
-                    Keyword = "󰌋",
-                    Snippet = "",
-                    Color = "󰏘",
-                    File = "󰈙",
-                    Reference = "󰈇",
-                    Folder = "󰉋",
-                    EnumMember = "",
-                    Constant = "󰏿",
-                    Struct = "󰙅",
-                    Event = "",
-                    Operator = "󰆕",
-                    TypeParameter = "",
-                },
-            })
-        end
-    },
+    -- Mason
     {
         "williamboman/mason.nvim",
         config = function()
@@ -171,6 +26,60 @@ return {
         end,
         build = ":MasonUpdate" -- :MasonUpdate updates registry contents
     },
+    { "williamboman/mason-lspconfig.nvim" },
+
+    -- CMP
+    {
+        "hrsh7th/cmp-nvim-lsp",
+        config = function()
+            local cmp = require 'cmp'
+
+            cmp.setup({
+                snippet = {
+                    -- REQUIRED - you must specify a snippet engine
+                    expand = function(args)
+                        -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+                        require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+                        -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
+                        -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+                        -- vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
+                    end,
+                
+                }
+            })
+
+            -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+            cmp.setup.cmdline({ '/', '?' }, {
+                mapping = cmp.mapping.preset.cmdline(),
+                sources = {
+                    { name = 'buffer' }
+                }
+            })
+
+            -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+            cmp.setup.cmdline(':', {
+                mapping = cmp.mapping.preset.cmdline(),
+                sources = cmp.config.sources({
+                    { name = 'path' }
+                }, {
+                    { name = 'cmdline' }
+                }),
+                matching = { disallow_symbol_nonprefix_matching = false }
+            })
+
+            -- Set up lspconfig.
+            local capabilities = require('cmp_nvim_lsp').default_capabilities()
+            -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+            -- require('lspconfig').setup({
+            --     capabilities = capabilities
+            -- })
+        end
+    },
     { 'williamboman/mason-lspconfig.nvim' },
-    { 'L3MON4D3/LuaSnip' },
+    { "hrsh7th/cmp-buffer" },
+    { "hrsh7th/cmp-path" },
+    { "hrsh7th/cmp-cmdline" },
+    { "hrsh7th/nvim-cmp" },
+    { "L3MON4D3/LuaSnip" },
+    { "saadparwaiz1/cmp_luasnip" },
 }
