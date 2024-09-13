@@ -4,11 +4,10 @@
     "window_hiding_behaviour": "Cloak",
     "cross_monitor_move_behaviour": "Insert",
     "mouse_follows_focus": false,
-    "default_workspace_padding": 2,
-    "default_container_padding": 2, 
+    "default_workspace_padding": 5,
+    "default_container_padding": 5, 
     "border": true,
     "border_implementation": "Windows",
-    "border_style": "Square",
     "border_colours": {
         "single": {
             "r": 22,
@@ -85,8 +84,13 @@
             "matching_strategy": "Equals"
         },
         {
+            "kind": "Title",
+            "id": "ShareX",
+            "matching_strategy": "Equals"
+        },
+        {
             "kind": "Exe",
-            "id": "Zebar.exe",
+            "id": "zebar.exe",
             "matching_strategy": "Equals"
         }
     ]

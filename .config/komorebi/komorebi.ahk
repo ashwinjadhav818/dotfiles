@@ -63,8 +63,8 @@
 
 #^Left::CycleWorkspace("previous")
 #^Right::CycleWorkspace("next")
-^!+n::CycleWorkspace("previous")
-^!+m::CycleWorkspace("next")
+^!+a::CycleWorkspace("previous")
+^!+d::CycleWorkspace("next")
 
 ; Move windows across workspaces
 #+1::MoveToWorkspace(0)
