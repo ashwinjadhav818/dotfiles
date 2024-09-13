@@ -1,85 +1,86 @@
 return {
-    { "neovim/nvim-lspconfig" },
-
-    -- Mason
-    {
-        "williamboman/mason.nvim",
-        config = function()
-            local settings = {
-                ui = {
-                    border = "none",
-                    icons = {
-                        package_installed = "✓",
-                        package_pending = "➜",
-                        package_uninstalled = "✗"
-                    }
-                },
-                log_level = vim.log.levels.INFO,
-                max_concurrent_installers = 4
-            }
-
-            require("mason").setup(settings)
-            require("mason-lspconfig").setup({
-                ensure_installed = servers,
-                automatic_installation = true
-            })
-        end,
-        build = ":MasonUpdate" -- :MasonUpdate updates registry contents
+  {
+    "williamboman/mason.nvim",
+    lazy = false,
+    config = function()
+      require("mason").setup()
+    end,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    lazy = false,
+    opts = {
+      auto_install = true,
     },
-    { "williamboman/mason-lspconfig.nvim" },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    lazy = false,
+    config = function()
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-    -- CMP
-    {
-        "hrsh7th/cmp-nvim-lsp",
-        config = function()
-            local cmp = require 'cmp'
+      local lspconfig = require("lspconfig")
+      lspconfig.tsserver.setup({
+        capabilities = capabilities
+      })
+      lspconfig.solargraph.setup({
+        capabilities = capabilities
+      })
+      lspconfig.html.setup({
+        capabilities = capabilities
+      })
+      lspconfig.lua_ls.setup({
+        capabilities = capabilities
+      })
 
-            cmp.setup({
-                snippet = {
-                    -- REQUIRED - you must specify a snippet engine
-                    expand = function(args)
-                        -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
-                        require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
-                        -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
-                        -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
-                        -- vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
-                    end,
-                
-                }
-            })
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
+      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
+      vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+    end,
+  },
 
-            -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
-            cmp.setup.cmdline({ '/', '?' }, {
-                mapping = cmp.mapping.preset.cmdline(),
-                sources = {
-                    { name = 'buffer' }
-                }
-            })
-
-            -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-            cmp.setup.cmdline(':', {
-                mapping = cmp.mapping.preset.cmdline(),
-                sources = cmp.config.sources({
-                    { name = 'path' }
-                }, {
-                    { name = 'cmdline' }
-                }),
-                matching = { disallow_symbol_nonprefix_matching = false }
-            })
-
-            -- Set up lspconfig.
-            local capabilities = require('cmp_nvim_lsp').default_capabilities()
-            -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-            -- require('lspconfig').setup({
-            --     capabilities = capabilities
-            -- })
-        end
+  -- completions
+  {
+    "hrsh7th/cmp-nvim-lsp"
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "saadparwaiz1/cmp_luasnip",
+      "rafamadriz/friendly-snippets",
     },
-    { 'williamboman/mason-lspconfig.nvim' },
-    { "hrsh7th/cmp-buffer" },
-    { "hrsh7th/cmp-path" },
-    { "hrsh7th/cmp-cmdline" },
-    { "hrsh7th/nvim-cmp" },
-    { "L3MON4D3/LuaSnip" },
-    { "saadparwaiz1/cmp_luasnip" },
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    config = function()
+      local cmp = require("cmp")
+      require("luasnip.loaders.from_vscode").lazy_load()
+
+      cmp.setup({
+        snippet = {
+          expand = function(args)
+            require("luasnip").lsp_expand(args.body)
+          end,
+        },
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
+        mapping = cmp.mapping.preset.insert({
+          ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+          ["<C-f>"] = cmp.mapping.scroll_docs(4),
+          ["<C-Space>"] = cmp.mapping.complete(),
+          ["<C-e>"] = cmp.mapping.abort(),
+          ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "luasnip" }, -- For luasnip users.
+        }, {
+          { name = "buffer" },
+        }),
+      })
+    end,
+  },
 }
