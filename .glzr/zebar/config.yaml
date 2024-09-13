@@ -27,6 +27,7 @@ window/bar:
   # for a cheatsheet of available Nerdfonts icons.
   global_styles: |
     @import "https://www.nerdfonts.com/assets/css/webfont.css";
+    @import "https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css";
 
   # CSS styles to apply to the root element within the window. Using CSS
   # nesting, we can also target nested elements (e.g. below we set the
@@ -83,16 +84,16 @@ window/bar:
         }
       providers: ['glazewm']
       events:
-        - type: 'click'
-          fn_path: 'script.js#focusWorkspace'
-          selector: '.workspace'
+        - type: "click"
+          fn_path: "scripts/glazewm.js#focusWorkspace"
+          selector: ".workspace"
       template: |
         @for (workspace of glazewm.currentWorkspaces) {
-          <button
+          <button 
             class="workspace {{ workspace.hasFocus ? 'focused' : '' }} {{ workspace.isDisplayed ? 'displayed' : '' }}"
             id="{{ workspace.name }}"
           >
-            {{ workspace.displayName ?? workspace.name }}
+            {{ workspace.name }}    
           </button>
         }
 
@@ -101,7 +102,7 @@ window/bar:
       styles: |
         .binding-mode,
         .tiling-direction {
-          background: rgb(255 255 255 / 15%);
+          background: rgb(255 255 255 / 10%);
           color: rgb(255 255 255 / 90%);
           border-radius: 2px;
           padding: 4px 6px;
@@ -178,17 +179,17 @@ window/bar:
     template/focused-process:
       providers: ["glazewm"]
       styles: |
-
         color: var(--focused-process)
+      events:
+        - type: "click"
+          fn_path: "scripts/glazewm.js#focusWorkspace"
+          selector: ".workspace"
       template: |
-
         @for (child of glazewm.focusedWorkspace.children) {
           @if (child?.hasFocus) {
-            <i class="ti ti-focus-2"></i>
-            {{ child.title }}
+            {{ child.title.substring(0, 50) }}
           }
         }
-    
 
   group/right:
     styles: |

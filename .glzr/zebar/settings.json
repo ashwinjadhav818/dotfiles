@@ -1,0 +1,6 @@
+{
+  "$schema": "TODO",
+  "startupConfigs": [
+    "custom\\default.zebar.json"
+  ]
+}
