@@ -89,26 +89,16 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
 
 ```bash
 # Using gh
-gh repo clone ashwinjadhav818/dotfiles C:\Users\<UserName>\.dotfiles
+gh repo clone ashwinjadhav818/dotfiles $HOME\.dotfiles
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/ashwinjadhav818/dotfiles.git C:\Users\<UserName>\.dotfiles
+git clone https://github.com/ashwinjadhav818/dotfiles.git $HOME\.dotfiles
 ```
 
 2. Create symlinks in the Home directory to the real files in the repo.
 
 ```bash
-sudo New-Item -Path $HOME\.config\powershell -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\powershell\
-
-sudo New-Item -Path $HOME\.config\komorebi -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\komorebi\
-
-sudo New-Item -Path $HOME\.config\whkdrc -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\komorebi\whkdrc
-
-sudo New-Item -Path $HOME\.config\yasb -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\yasb\
-
-sudo New-Item -Path $HOME\AppData\Local\nvim -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\nvim\
-
-sudo New-Item -Path $HOME\.config\starship.toml -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\starhsip\starship.toml
+sudo New-Item -Path $HOME\.config\ -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\
 
 sudo New-Item -Path $HOME\.bashrc -ItemType SymbolicLink -Value $HOME\.dotfiles\.bashrc
 
