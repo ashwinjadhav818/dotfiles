@@ -35,7 +35,7 @@ config.keys = {
     { key = "p", mods = Leader,      action = act.ActivateCommandPalette },
 
     -- Pane keybindings
-    { key = "x", mods = Leader,      action = act.SplitVertical { domain = "CurrentPaneDomain" } },
+    { key = "z", mods = LeaderShift,      action = act.SplitVertical { domain = "CurrentPaneDomain" } },
     { key = "z", mods = Leader,      action = act.SplitHorizontal { domain = "CurrentPaneDomain" } },
     { key = "h", mods = Leader,      action = act.ActivatePaneDirection("Left") },
     { key = "j", mods = Leader,      action = act.ActivatePaneDirection("Down") },
