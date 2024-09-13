@@ -4,7 +4,7 @@ watch_config: true
 komorebi:
   start_command: "pwsh -Command komorebic start --ahk"
   stop_command: "komorebic stop"
-  reload_command: "komorebic reload-configuration"
+  reload_command: "komorebic stop && pwsh -Command komorebic start --ahk"
 
 bars:
   status-bar:
@@ -15,20 +15,22 @@ bars:
       position: "top"
       center: true
     blur_effect:
-      enabled: true
-      acrylic: true
-      dark: false
+      enabled: true 
+      acrylic: false 
+      dark_mode: false
+      round_corners: true
+      border_color: None
     window_flags:
       always_on_top: false
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 40
+      height: 35
     padding:
-      top: 0
+      top: 10
       left: 0
       bottom: 0
-      right: 0
+      right: 30
     widgets:
       left:
         [
@@ -42,8 +44,6 @@ bars:
         [
           "media_player",
           "weather",
-          # "cpu",
-          # "memory",
           "volume",
           "wifi",
           "battery",
@@ -122,14 +122,12 @@ widgets:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
       label_offline: "Komorebi Offline"
-      label_workspace_btn: "\uf4c3"
+      # label_workspace_btn: "\udb81\udc3d"
+      # label_workspace_active_btn: "\udb81\udc3e"
       label_default_name: "{index}"
       label_zero_index: false
       hide_empty_workspaces: false
-      # callbacks:
-      #   on_left: "activate"
-      #   on_middle: "rename_temporary"
-      #   on_right: "rename_permanent"
+      hide_if_offline: false
 
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
@@ -174,14 +172,13 @@ widgets:
   disk:
     type: "yasb.disk.DiskWidget"
     options:
-      label: "\udb80\udeca {volume_label}{space[used][percent]:.1f}%"
-      label_alt: "\udb80\udeca {volume_label}{space[used][gb]:.1f}GB / {space[total][gb]:.1f}GB"
-      volume_label: "C:"
-      update_interval: 60000
-      callbacks:
-        on_left: "toggle_label"
-        on_middle: "do_nothing"
-        on_right: "exec cmd.exe /c start ms-settings:disksandvolumes"
+        label: "<span>\udb80\udeca</span>{volume_label} {space[used][percent]}"
+        label_alt: "<span>\udb80\udeca</span>{volume_label} {space[used][gb]} / {space[total][gb]}"
+        volume_label: "C"
+        update_interval: 60 # Update interval in seconds
+        callbacks:
+          on_middle: "do_nothing"
+          on_right: "exec explorer C:\\" # Open disk C in file explorer
 
   volume:
     type: "yasb.volume.VolumeWidget"
@@ -233,7 +230,7 @@ widgets:
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
-      label: "<span>\ue62a</span>"
+      label: "<span>\ue8a9</span>"
       blur_background: true
       animation_duration: 200 # Milisecond 
       button_row: 3 # Number of buttons in row, min 1 max 5
@@ -317,8 +314,8 @@ widgets:
   notification_button:
     type: "yasb.custom.CustomWidget"
     options:
-      label: "\uf0f3"
-      label_alt: "\uf49a"
+      label: "<span>\uf0f3</span>"
+      label_alt: "<span>\uf49a</span>"
       class_name: "notification-widget"
       callbacks:
         on_left: "exec notification_center"
@@ -327,8 +324,8 @@ widgets:
   search_button:
     type: "yasb.custom.CustomWidget"
     options:
-      label: "\uf422"
-      label_alt: "\uf422 Search"
+      label: "<span>\uf422</span>"
+      label_alt: "<span>\uf422</span> Search"
       class_name: "search-widget"
       exec_options:
         run_once: true

@@ -25,6 +25,7 @@
 	padding: 0;
 }
 .yasb-bar {
+    background-color: rgba(0, 0, 0, 0.5);
 	padding: 0;
 	margin: 0 0px;
 }
@@ -44,33 +45,26 @@
 	margin: 0;
 	padding: 0;
 }
-
 .komorebi-workspaces .ws-btn {
-	border-radius: 5px;
-	font-size: 10px;
-	width: 10px;
-	height: 10px;
-	margin: 0 4px 0 4px;
-	color: rgba(255, 255, 255, 0);
-	background-color: #9399b2;
-}
-.komorebi-workspaces .ws-btn:hover,
-.komorebi-workspaces .ws-btn.populated:hover {
-	background-color: #fff;
+    background-color: transparent;
+    height: 100%;
+    width: 15px;
+    margin: 0 2px 0 4px;
+    color: #95a0ad;
+    border: 0px;
 }
 .komorebi-workspaces .ws-btn.populated {
-	background-color: #89b4fa;
+    border-bottom: 3px solid #a0c3ee;
+    margin-top: 3px;
 }
+.komorebi-workspaces .ws-btn:hover {
+    border-bottom: 3px solid #c2daf7;
+    margin-top: 3px;
+}
+.komorebi-workspaces .ws-btn.populated:hover,
 .komorebi-workspaces .ws-btn.active {
-	background-color: #89b4fa;
-	color: rgba(0, 0, 0, 0);
-	width: 26px;
-}
-.komorebi-active-layout {
-	padding: 0;
-}
-.komorebi-active-layout .label {
-    font-family: "JetBrainsMono Nerd Font";
+    border-bottom: 4px solid #829fc1;
+    margin-top: 4px;
 }
 .search-widget {
     padding: 0 2px;
@@ -91,6 +85,7 @@
 .power-menu-widget .label {
 	font-size: 13px;
     margin-left: 7px;
+    margin-top: 2px;
 }
 .power-menu-popup {
 	background-color: rgba(24, 24, 37, 0.9);
@@ -138,11 +133,13 @@
 }
 
 /* ICONS */
-.icon {
+.icon,
+.media-widget .btn,
+.power-menu-widget .label {
 	font-family: "Segoe Fluent Icons";
     color: #829fc1;
 	padding: 3px;
-    font-size: 16px;
+    font-size: 12px;
 }
 .media-widget .btn {
 	font-family: "Segoe Fluent Icons";
@@ -151,8 +148,9 @@
     font-size: 18px;
     margin-bottom: 1px;
 }
-.volume-widget .icon {
-	color: #89b4fa;
+.volume-widget .icon,
+.wifi-widget .icon {
+    font-size: 18px;
 }
 .cpu-widget .icon,
 .memory-widget .icon {
@@ -163,18 +161,16 @@
 .memory-widget .icon {
 	color: #a6c9f7;
 }
-.wifi-widget .icon {
-	color: #43d8d8;
-	padding: 0 6px;
-	margin: 0;
-}
 .weather-widget .icon {
     font-family: "JetBrainsMono NFP"
 }
-.icon,
-.media-widget .btn,
-.power-menu-widget .label {
-    color: #829fc1;
+.search-widget .icon {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.notification-widget .icon {
+    font-size: 20px;
+    margin-right: 7px; 
 }
 
 /* WEATHER WIDGET */
