@@ -19,11 +19,11 @@ html,
 body,
 #root {
   height: 100%;
+  background: rgba(0, 0, 0, 0.54);
 }
 
 #root {
   border-bottom: 1px solid rgb(255 255 255 / 5%);
-  background: rgb(0 0 0 / 90%);
 }
 
 .app {
@@ -67,9 +67,10 @@ body,
 .workspace {
   background: rgb(255 255 255 / 5%);
   margin-right: 4px;
-  padding: 11px;
+  padding: 4px 8px;
   color: rgb(255 255 255 / 90%);
   border: none;
+  border-radius: 2px;
   cursor: pointer;
 
   &.displayed {
