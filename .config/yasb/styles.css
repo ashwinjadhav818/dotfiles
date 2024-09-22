@@ -64,6 +64,7 @@
 .komorebi-workspaces .ws-btn.populated:hover,
 .komorebi-workspaces .ws-btn.active {
     border-bottom: 4px solid #829fc1;
+    width: 20px;
     margin-top: 4px;
 }
 .search-widget {

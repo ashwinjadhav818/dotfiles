@@ -15,10 +15,10 @@ bars:
       position: "top"
       center: true
     blur_effect:
-      enabled: true 
+      enabled: false 
       acrylic: false 
       dark_mode: false
-      round_corners: true
+      round_corners: false
       border_color: None
     window_flags:
       always_on_top: false
@@ -27,10 +27,10 @@ bars:
       width: "100%"
       height: 35
     padding:
-      top: 10
+      top: 0
       left: 0
       bottom: 0
-      right: 30
+      right: 0
     widgets:
       left:
         [
@@ -128,6 +128,7 @@ widgets:
       label_zero_index: false
       hide_empty_workspaces: false
       hide_if_offline: false
+      animation: true
 
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
@@ -231,9 +232,11 @@ widgets:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
       label: "<span>\ue8a9</span>"
+      uptime: true
+      blur: false
       blur_background: true
-      animation_duration: 200 # Milisecond 
-      button_row: 3 # Number of buttons in row, min 1 max 5
+      animation_duration: 300 # Milisecond 
+      button_row: 3 # Number of buttons in row, min 1 max 5      button_row: 3 # Number of buttons in row, min 1 max 5
       buttons:
         lock: ["\ue72e","Lock"]
         # signout: ["\udb80\udf43","Sign out"]
@@ -269,6 +272,44 @@ widgets:
         default: "\uebaa"
         # https://www.weatherapi.com/docs/
         # Usage {temp_c}, {min_temp_c}, {max_temp_c}, {temp_f}, {min_temp_f}, {max_temp_f}, {location}, {humidity}, {icon}, {conditions}
+        
+  github:
+    type: "yasb.github.GithubWidget"
+    options:
+      label: "<span>\ueba1</span>"
+      label_alt: "Notifications {data}" # {data} return number of unread notification
+      token: ghp_xxxxxxxxxxx # GitHub Personal access tokens (classic) https://github.com/settings/tokens
+      # You can set token: env, this means you have to set YASB_GITHUB_TOKEN in environment variable
+      max_notification: 20 # Max number of notification displaying in menu max: 50
+      only_unread: false # Show only unread or all notifications; 
+      max_field_size: 54 # Max characters in title before truncation.
+      menu_width: 400 
+      menu_height: 400 
+      menu_offset: 240 
+      update_interval: 300 # Check for new notification in seconds
+
+  wallpapers:
+    type: "yasb.wallpapers.WallpapersWidget"
+    options:
+      label: "<span>\uef1f</span>"
+      image_path: "D:\\Areas\\Wallpapers" # Path to folder with images
+      change_automatically: false # Automatically change wallpaper
+      update_interval: 60 # If change_automatically is true, update interval in seconds
+
+  taskbar:
+    type: "yasb.taskbar.TaskbarWidget"
+    options:
+      animation: true
+      icon_size: 16
+      ignore_apps:
+        processes: []
+        titles: []
+        classes: []
+      container_padding:
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
 
   # Some custom widgets
 
