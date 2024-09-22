@@ -3,7 +3,7 @@
 Launch_Media::^!+S ; Launches Spotify
 Launch_App2::^!+p ; Launches Notion
 
-#Enter::Run "C:\Program Files\Alacritty\alacritty.exe"
+#Enter::Run "wezterm-gui"
 
 Pause::
 {
