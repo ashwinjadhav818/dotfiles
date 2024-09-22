@@ -9,11 +9,15 @@
 -  fish
 -  zsh
 -  powerlevel10k
--  powershel
+-  powershell
 -  tmux
 -  glaze-wm
+-  zebar
 -  komorebi
 -  yasb
+-  alacritty
+-  wezterm
+-  hyper
 
 ### Vim (NeoVim & LunarVim) config
 
@@ -28,12 +32,12 @@ Requires Neovim (>= 0.9)
 -  [fisher](https://github.com/jorgebucaran/fisher/) - a plugin manager for Fish
 -  [tide](https://github.com/IlanCosman/tide/) - the ultimate fish prompt
 -  [nvm](https://github.com/jorgebucaran/nvm.fish/) - node package manager for fish
--  [z](https://github.com/jethrokuan/z/) - directory jumper
+-  [zoxide](https://github.com/ajeetdsouza/zoxide) - directory jumper
 
 ### Zsh config
 
 -  [zsh shell](https://ohmyz.sh/)
--  [nerd font](https://www.nerdfonts.com/) - Powerline-patched fonts. I use Fira Code NF Retina and JetBrainsMono Nerd Font.
+-  [nerd font](https://www.nerdfonts.com/) - Powerline-patched fonts.
 -  [zoxide](https://github.com/ajeetdsouza/zoxide) - Directory jumping
 -  [exa](https://the.exa.website/) - `ls` replacement
 -  [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Fish-like fast/unobtrusive autosuggestions for zsh.
@@ -49,17 +53,9 @@ Requires Neovim (>= 0.9)
 -  [zoxide](https://github.com/ajeetdsouza/zoxide) - directory jumper
 
 
-## Apps/utilites I use
-
--  [NeoVim](https://neovim.io)
--  [LunarVim](http://lunarvim.org)
--  [fish shell](https://fishshell.com)
--  powershell
-
-
 ## Steps to install
 
-### Ubuntu
+### Linux
 
 1. Clone this repository to your home directory.
 
@@ -75,12 +71,6 @@ git clone https://github.com/ashwinjadhav818/dotfiles.git ~/.dotfiles
 
 ```bash
 stow .
-```
-
-3. Install LunarVim
-
-```bash
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 ```
 
 ### Windows
