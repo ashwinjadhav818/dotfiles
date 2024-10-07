@@ -122,7 +122,8 @@ return { {
                 c = { "<cmd>lua require('jdtls').extract_constant()<cr>", "Extract Constant" },
                 m = { "<cmd>lua require('jdtls').extract_method(true)<cr>", "Extract Method" },
                 t = { "<cmd>lua require('jdtls').test_class()<cr>", "Test Class" },
-                n = { "<cmd>lua require('jdtls').test_nearest_method()<cr>", "Test Nearest Method" }
+                n = { "<cmd>lua require('jdtls').test_nearest_method()<cr>", "Test Nearest Method" },
+                z = { "<cmd>ZenMode<cr>", "Toggle Zen Mode" }
             },
             g = {
                 name = "Git",
