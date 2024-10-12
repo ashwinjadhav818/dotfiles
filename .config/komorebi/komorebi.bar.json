@@ -1,10 +1,7 @@
 {
-  // this is the bit that gets you autocompletions!
-  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/feature/komorebi-status-bar/schema.bar.json",
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.29/schema.bar.json",
   "monitor": {
-    // the bar only targets a single monitor
     "index": 0,
-    // you can automatically apply a work area offset for the monitor when the bar is launched
     "work_area_offset": {
       "left": 0,
       "top": 40,
@@ -12,15 +9,12 @@
       "bottom": 40
     }
   },
-  // run komorebi-bar --fonts to list fonts installed on your system
-  // remember to only use the family here, not the weight (bold, light etc)
   "font_family": "Segoe UI",
-  // we have some pre-bundled themes!
   "theme": {
     "palette": "Base16",
-    "name": "TokyoNightDark"
+    "name": "TokyoNightDark",
+    "accent": "Base0D"
   },
-  // laid out left to right
   "left_widgets": [
     {
       "Komorebi": {
@@ -29,16 +23,20 @@
           "hide_empty_workspaces": false
         },
         "layout": {
-          "enable": true
+          "enable": false
         },
         "focused_window": {
           "enable": true,
           "show_icon": true
         }
       }
+    },
+    {
+      "Memory": {
+        "enable": false
+      }
     }
   ],
-  // laid out left to right
   "right_widgets": [
     {
       "Media": {
@@ -52,7 +50,7 @@
     },
     {
       "Memory": {
-        "enable": true
+        "enable": false
       }
     },
     {
@@ -63,22 +61,20 @@
       }
     },
     {
+      "Battery": {
+        "enable": true
+      }
+    },
+    {
       "Date": {
         "enable": true,
-        // you can also use a custom chrono format string here
-        "format": "DayDateMonthYear"
+        "format": "DateMonthYear"
       }
     },
     {
       "Time": {
         "enable": true,
-        // you can also use a custom chrono format string here
         "format": "TwentyFourHour"
-      }
-    },
-    {
-      "Battery": {
-        "enable": true
       }
     }
   ]
