@@ -15,7 +15,7 @@ bars:
       position: "top"
       center: true
     blur_effect:
-      enabled: false 
+      enabled: true 
       acrylic: false 
       dark_mode: false
       round_corners: false
@@ -161,10 +161,10 @@ widgets:
       update_interval: 5000
       wifi_icons:
         - "\udb82\udd2e" # 0% strength (no wifi)
-        - "\udb82\udd1f" # 1-25% strength
-        - "\udb82\udd22" # 26-50% strength
-        - "\udb82\udd25" # 51-75% strength
-        - "\udb82\udd28" # 76-100% strength. Alternate theming: \uf1eb
+        - "\ue872" # 1-25% strength
+        - "\ue873" # 26-50% strength
+        - "\ue874" # 51-75% strength
+        - "\ue701" # 76-100% strength. Alternate theming: \uf1eb
       callbacks:
         on_left: "exec quick_settings"
         on_middle: "do_nothing"
