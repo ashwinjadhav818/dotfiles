@@ -11,8 +11,9 @@ set -g theme_hostname always
 # oh-my-posh init fish --config ~/.dotfiles/powershell/Themes/aura.omp.json | source
 
 # aliases
-alias ls "exa --icons"
-alias l "exa --long --header --git --icons -a"
+alias ls "eza --icons"
+alias ll "eza --long --header --git --icons -a"
+alias l "eza --long --header --git --icons -a"
 alias g git
 alias vim nvim
 alias vi nvim
@@ -27,19 +28,8 @@ set -gx PATH ~/.local/bin $PATH
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
 
-# Go
-set -g GOPATH $HOME/go
-set -gx PATH $GOPATH/bin $PATH
-
 # NVM
-function __check_rvm --on-variable PWD --description 'Do nvm stuff'
-  status --is-command-substitution; and return
-
-  if test -f .nvmrc; and test -r .nvmrc;
-    nvm use
-  else
-  end
-end
+nvm use lts
 
 switch (uname)
   case Darwin
