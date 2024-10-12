@@ -16,13 +16,13 @@ opacity = 0.5
 [font]
 size = 12
   [font.normal]
-  family = "JetBrainsMono NFP"
+  family = "Liga SFMono Nerd Font"
   style = "Regular"
 
   [font.bold]
-  family = "JetBrainsMono NFP"
+  family = "Liga SFMono Nerd Font"
   style = "Bold"
 
   [font.italic]
-  family = "JetBrainsMono NFP"
+  family = "Liga SFMono Nerd Font"
   style = "Italic"
