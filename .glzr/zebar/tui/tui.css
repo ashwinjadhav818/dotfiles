@@ -1,0 +1,242 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+i {
+  color: rgb(255 255 255 / 90%);
+}
+* {
+  border-radius: 0 !important;
+}
+body {
+  color: rgb(255 255 255 / 90%);
+  font-family: 'Liga SFMono Nerd Font';
+  font-size: 12px;
+  padding-bottom: 1px;
+  padding-right: 2px;
+  overflow: hidden;
+}
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden !important;
+}
+#root {
+  background: #12121280;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  border-radius: 8px;
+  border: solid 2px;
+  border-color: #303030;
+  transition: border-color 0.2s ease;
+  &:hover {
+    border: solid 2px;
+    border-color: rgb(182, 158, 255);
+  }
+}
+#now-playing,
+.window-name{
+  margin-top: -1px;
+}
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 3px 1.2vw;
+}
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+}
+.center {
+  justify-self: center;
+}
+.right {
+  justify-self: end;
+}
+.nf-fa-windows:before {
+    content: "\e62a" !important;
+    font-size: medium !important;
+}
+.workspace.false.false > .nf, .nerd-font, .nerd-fonts {
+  margin: 0;
+}
+.logo,
+.binding-mode,
+.tiling-direction,
+.memory,
+.battery {
+  margin-right: 20px;
+}
+.network {
+  margin-left: 12.5px;
+  margin-right: -14.5px;
+  margin-top: -2px;
+}
+.weather {
+  margin-right: 12.5px;
+  display: inline-flex;
+  margin-top: 1px;
+}
+.weather > .nf, .nerd-font, .nerd-fonts {
+  line-height: 15px;
+  font-size: 19px;
+  font-weight: 100 !important;
+  color: rgb(255 255 255 / 90%);
+}
+.memory, .cpu {
+  display: flex;
+  align-items: center;
+}
+.fixed-container {
+  display: flex;
+  justify-content: space-between;
+  width: 52px; /* Set a fixed width to avoid shifting */
+}
+.label {
+  width: 40px; /* Fixed width for the label (CPU, MEM) */
+}
+.value {
+  width: 60px; /* Fixed width for the value (percentage) */
+  text-align: right; /* Align the percentage to the right */
+}
+.weather > i {
+    margin-right: 6px;
+}
+.window-icon {
+  display: inline-flex;
+  margin-bottom: 1px;
+}
+.icons,
+.memory,
+.cpu,
+i.nf.nf-oct-cpu,
+i.nf.nf-fae-chip,
+.logo,
+.binding-mode,
+.tiling-direction,
+.network,
+.battery {
+  display: none !important;
+}
+/* Windows 11 Logo CSS */
+.windows-logo {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  display: inline-block;
+  margin-right: 12.5px;
+  margin-left: -9px;
+}
+
+.window {
+  transition: background-color 0.2s ease;
+  width: 46%;
+  height: 47%;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+}
+.window:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.window:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+.window:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+.window:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+.windows-logo{
+  &:hover {
+    .window {
+      /*border-color: var(--border-hover-color);*/
+      transition: background-color 0.2s ease;
+      background-color: rgb(255 255 255 / 90%);
+    }
+  }
+}
+.workspaces {
+  display: flex;
+  align-items: center;
+}
+button.workspace.false.false{
+  padding: 3px 7px;
+  background: #D2D2D200;
+}
+.workspace {
+  --border-transition: 0.2s ease;
+  --border-hover-color: #B69EFF;
+  transition: background 0.2s ease, padding 0.2s ease, margin 0.2s ease, width 0.2s ease, border-color var(--border-transition);
+
+  background: rgb(255 255 255 / 0%);
+  margin-right: 12px;
+  padding: 3px 7px;
+  color: #535353;
+  border: solid 0px;
+  border-color: #535353;
+
+  &.displayed {
+    background: #00000000;
+  }
+
+  &:hover {
+    border-color: #B69EFF;
+  }
+
+  &.focused {
+    color: rgb(255 255 255 / 90%);
+    border-color: #B69EFF;
+    background: #30303080;
+    padding: 3px 8px;
+  }
+
+  &.focused:hover {
+    background: #303030; /* Simplified the rgba syntax */
+    /*border-color: #B69EFF;*/
+    /*color: rgb(208, 199, 255);*/
+  }
+
+  &:hover {
+    /*border-color: var(--border-hover-color);*/
+    background: #303030;
+  }
+}
+button.workspace.false.false {
+  transition: padding 0.2s ease, background 0.2s ease, margin 0.2s ease, width 0.2s ease, border-color var(--border-transition);
+  &:hover {
+    /*border-color: var(--border-hover-color);*/
+    background: #30303050;
+  }
+}
+.cpu .high-usage {
+  color: #B69EFF;
+}
+*:has([class="disconnected"]) .right{
+  transition: color 0.2s ease;
+  color: #838383;
+}
+*:has([class="disconnected"]) i.nf.nf-weather-night_clear{
+  transition: color 0.2s ease;
+  color: #838383;
+}
+*:has([class="value high-usage"]) .center{
+  transition: color 0.2s ease;
+  color: rgba(236, 95, 102, 0.9);
+}
+.right,
+.center {
+  transition: color 0.2s ease;
+}

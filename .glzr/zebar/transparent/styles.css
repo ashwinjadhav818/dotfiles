@@ -1,0 +1,156 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+i {
+  color: rgb(255 255 255 / 90%);
+  margin-right: 7px;
+}
+
+body {
+  color: rgb(255 255 255 / 90%);
+  font-family: 'Segoe UI';
+  font-size: 12px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  background: linear-gradient(#000000a0, #1B1E22a0);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  border-radius: 8px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 4px 10px;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  justify-self: center;
+}
+
+.right {
+  justify-self: end;
+}
+
+.logo,
+.binding-mode,
+.tiling-direction,
+.memory,
+.battery,
+.weather {
+  margin-right: 20px;
+}
+
+.network {
+  margin-right: 15px;
+}
+
+.weather {
+  display: flex;
+  margin-top: 3px;
+}
+.weather > .nf, .nerd-font, .nerd-fonts {
+  line-height: 16.4px;
+  font-size: 18px;
+  font-weight: 100 !important;
+  color: rgb(255 255 255 / 90%);
+}
+.memory, .cpu {
+  display: flex;
+  align-items: center;
+}
+
+.fixed-container {
+  display: flex;
+  justify-content: space-between;
+  width: 52px; /* Set a fixed width to avoid shifting */
+}
+
+.label {
+  width: 40px; /* Fixed width for the label (CPU, MEM) */
+}
+
+.value {
+  width: 60px; /* Fixed width for the value (percentage) */
+  text-align: right; /* Align the percentage to the right */
+}
+
+
+.weather > i {
+    margin-right: 6px;
+}
+
+.workspaces {
+  display: flex;
+  align-items: center;
+  margin-top: -1px;
+}
+
+.workspace {
+  background: rgb(255 255 255 / 5%);
+  margin-right: 4px;
+  padding: 3px 6px;
+  padding-right: 6.4px;
+  color: rgb(208 199 255);
+  border: inset 1.7px;
+  border-color: rgb(208 199 255 / 30%);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &.displayed {
+    background: rgb(255 255 255 / 15%);
+  }
+
+  &.focused {
+    background: rgb(208 199 255 / 50%);
+    color: rgb(255 255 255);
+  }
+  &.focused:hover {
+    background: rgb(181 167 230 / 40%);
+    color: rgb(208 199 255);
+  }
+  &:hover {
+    background: rgb(208 199 255 / 85%);
+  }
+}
+
+.binding-mode,
+.tiling-direction {
+  background: rgb(255 255 255 / 15%);
+  color: rgb(255 255 255 / 90%);
+  border-radius: 2px;
+  line-height: 1;
+  padding: 4px 8px;
+  margin-left: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.binding-mode {
+  margin-right: 4px;
+}
+
+.cpu .high-usage {
+  color: #B69EFF;
+}

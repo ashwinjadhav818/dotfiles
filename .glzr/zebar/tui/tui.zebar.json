@@ -1,6 +1,6 @@
 {
-  "$schema": "https://github.com/glzr-io/zebar/raw/v2.1.0/resources/widget-schema.json",
-  "htmlPath": "./default.html",
+  "$schema": "https://github.com/glzr-io/zebar/raw/v2.3.0/resources/widget-schema.json",
+  "htmlPath": "./tui.html",
   "zOrder": "normal",
   "shownInTaskbar": false,
   "focused": false,
@@ -9,10 +9,10 @@
   "defaultPlacements": [
     {
       "anchor": "top_left",
-      "offsetX": "0px",
-      "offsetY": "0px",
-      "width": "100%",
-      "height": "40px",
+      "offsetX": "7px",
+      "offsetY": "7px",
+      "width": "1906",
+      "height": "39px",
       "monitorSelection": {
         "type": "all"
       }

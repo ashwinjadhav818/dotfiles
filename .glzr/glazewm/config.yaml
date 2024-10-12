@@ -1,10 +1,9 @@
 general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
-  startup_commands: [
-    'shell-exec "C:\Program Files\glzr.io\Zebar\zebar.exe"', 
-    'shell-exec %Home%\.glzr\glazewm\glazewm-extra.exe'
-  ]
+  startup_commands: ['shell-exec zebar', 'shell-exec %HOME%\.dotfiles\.glzr\glazewm\glazewm-extra.exe']
+
+  shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F', 'shell-exec taskkill /IM glazewm-extra.exe']
 
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: false
@@ -29,9 +28,9 @@ gaps:
   # Gap between windows and the screen edge.
   outer_gap:
     top: '50px'
-    right: '10px'
-    bottom: '10px'
-    left: '10px'
+    right: '7px'
+    bottom: '7px'
+    left: '7px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -39,13 +38,25 @@ window_effects:
     # Highlight the window with a colored border.
     # ** Exclusive to Windows 11 due to API limitations.
     border:
+      enabled: true
+      color: '#797A9E'
+
+    # Remove the title bar from the window's frame.
+    # ** Exclusive to Windows 11 due to API limitations.
+    hide_title_bar:
       enabled: false
-      color: '#0000ff'
+
+    # Change the corner style of the window's frame.
+    # ** Exclusive to Windows 11 due to API limitations.
+    corner_style:
+      enabled: false
+      # Allowed values: 'square', 'rounded', 'small_rounded'.
+      style: 'square'
 
   # Visual effects to apply to non-focused windows.
   other_windows:
     border:
-      enabled: false
+      enabled: true
 
 window_behavior:
   # New windows are created in this state whenever possible.
@@ -164,7 +175,7 @@ keybindings:
 
   # Change focus from tiling windows -> floating -> fullscreen.
   - commands: ['wm-cycle-focus']
-    bindings: ['lwin+space']
+    bindings: ['lwin+shift+g']
 
   # Change the focused window to be floating.
   - commands: ['toggle-floating --centered']
@@ -203,10 +214,6 @@ keybindings:
     bindings: ['lwin+ctrl+right']
   - commands: ['focus --prev-workspace']
     bindings: ['lwin+ctrl+left']
-  - commands: ['focus --next-workspace']
-    bindings: ['ctrl+alt+shift+d']
-  - commands: ['focus --prev-workspace']
-    bindings: ['ctrl+alt+shift+a']
 
   # Focus the workspace that last had focus.
   - commands: ['focus --recent-workspace']

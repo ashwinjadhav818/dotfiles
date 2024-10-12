@@ -1,0 +1,471 @@
+window/bar:
+  providers: ['self']
+  width: '384'
+  height: '{{ self.args.MONITOR_HEIGHT }}'
+  position_x: '{{ self.args.MONITOR_X }}'
+  position_y: '{{ self.args.MONITOR_Y }}'
+  z_order: 'normal'
+  shown_in_taskbar: false
+  resizable: false
+  global_styles: |
+    @import "https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css";
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  styles: |
+    --scaling-factor: calc(100/115);
+
+    --dark-1: #121212;
+    --dark-2: #161616;
+    --dark-3: #262626;
+    --dark-4: #393939;
+
+    --light-1: #ffffff;
+    --light-2: #dde1e6;
+    --light-3: #d0d0d0;
+    --light-4: #525252;
+
+    --red: #ee5396;
+    --green: #42be65;
+    --yellow: #ffe97b;
+    --blue: #33b1ff;
+    --magenta: #ff7eb6;
+    --cyan: #3ddbd9;
+    --white: #dde1e6;
+
+    --accent: var(--magenta);
+
+    --background-primary: var(--dark-1);
+    --foreground-primary: var(--light-1);
+    --background-secondary: var(--dark-2);
+    --foreground-secondary: var(--light-2);
+    --background-tertiary: color-mix(in oklab, var(--dark-2), var(--dark-3) 30%);
+    --background-bright: var(--dark-3);
+    --foreground-dim: var(--light-3);
+    --background-highlight: var(--dark-4);
+    --foreground-muted: var(--light-4);
+
+    --radius-xs: calc(4px * var(--scaling-factor));
+    --radius-sm: calc(6px * var(--scaling-factor));
+    --radius-m: calc(8px * var(--scaling-factor));
+    --radius-l: calc(12px * var(--scaling-factor));
+    --radius-xl: calc(16px * var(--scaling-factor));
+
+    --padding-xxs: calc(3px * var(--scaling-factor));
+    --padding-xs: calc(4px * var(--scaling-factor));
+    --padding-sm: calc(6px * var(--scaling-factor));
+    --padding-m: calc(8px * var(--scaling-factor));
+    --padding-l: calc(14px * var(--scaling-factor));
+    --padding-xl: calc(18px * var(--scaling-factor));
+    --padding-xxl: calc(24px * var(--scaling-factor));
+
+    --font-size-m: calc(14px * var(--scaling-factor));
+    --font-size-l: calc(18px * var(--scaling-factor));
+    --font-size-xl: calc(22px * var(--scaling-factor));
+    --font-size-xxl: calc(26px * var(--scaling-factor));
+
+    --transition-duration: 200ms;
+
+    --font-monospace: "Maple Mono NF";
+
+    --bar-width: calc(48px * var(--scaling-factor));
+
+    height: 100%;
+    width: 100%;
+
+    * {
+      transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+  group/bar-bar:
+    styles: |
+      height: 100%;
+      width: var(--bar-width);
+      background: var(--background-primary);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      padding: var(--padding-sm);
+      font-family: var(--font-monospace);
+      font-size: var(--font-size-m);
+      color: var(--foreground-primary);
+      .template {
+        --component-background: var(--background-tertiary);
+        background: var(--component-background);
+        border-radius: var(--radius-sm);
+      }
+
+
+    group/top:
+      styles: |
+        display: flex;
+        flex-direction: column;
+        gap: var(--padding-sm);
+
+      template/menu_icon:
+        styles: |
+          --component-background: var(--background-bright) !important;
+          display: grid;
+          place-content: center;
+          aspect-ratio: 1 / 1;
+          font-size: var(--font-size-xl);
+          color: var(--accent);
+        template: <i class="ph-fill ph-puzzle-piece"></i>
+
+      template/apps:
+        providers: ['glazewm']
+        styles: |
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: var(--padding-sm);
+          background: transparent !important;
+          .app {
+            background-color: var(--component-background);
+            font-size: var(--font-size-xl);
+            aspect-ratio: 1 / 1;
+            border-radius: var(--radius-sm);
+            display: grid;
+            place-content: center;
+            font-family: "Phosphor-Fill", "Maple Mono NF";
+            border: var(--padding-xxs) solid transparent;
+            transition: border var(--transition-duration);
+            &.focused {
+              border-color: var(--background-bright);
+            }
+          }
+        template: |
+          {{(()=>{
+            const icons = {
+              wezterm: ["\uE47E", "var(--foreground-dim)"],
+              firefox: ["\uE28C", "var(--foreground-dim)"],
+              vesktop: ["\uE16C", "var(--foreground-dim)"],
+              default: ["\uE0F4", "var(--foreground-dim)"]
+            }
+            function findIcon(process) {
+              const processName = process.toLowerCase();
+              for (const iconName in icons)
+                if (processName.indexOf(iconName) > -1) return icons[iconName];
+              return icons.default;
+            }
+
+            function getWindows(workspace) {
+              const windows = [];
+              for (const child of workspace.children) {
+                if (child.type === "window") windows.push(child);
+                else if (child.type === "split") windows.push(...getWindows(child));
+              }
+              return windows;
+            }
+
+            let out = "";
+
+            const workspace = glazewm.currentWorkspaces.find((w) => w.hasFocus);
+            if (!workspace) return out;
+
+            for (const child of getWindows(workspace)) {
+              const icon = findIcon(child.processName);
+              out += `
+                <div
+                  class="app ${child.hasFocus ? "focused" : ""}"
+                  style="color: ${icon[1]}"
+                  id="${child.id}"
+                >${icon[0]}</div>
+              `
+            }
+            return out;
+          })()}}
+
+    group/center:
+      styles: |
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 100%;
+        padding: var(--padding-sm);
+
+      template/glazewm_workspaces:
+        styles: |
+          --component-background: var(--background-secondary) !important;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: var(--padding-l);
+          padding: var(--padding-l);
+          .workspace {
+            display: block;
+            width: 100%;
+            height: calc(2ch + 1ch * var(--children-count));
+            background-color: var(--foreground-dim);
+            border-radius: var(--radius-sm);
+            transition: background-color var(--transition-duration), height var(--transition-duration);
+
+            &.empty {
+              background-color: var(--foreground-muted);
+            }
+            &.focused,
+            &:hover {
+              background-color: var(--accent);
+              &.empty {
+                --children-count: 1 !important;
+              }
+            }
+          }
+        providers: ['glazewm']
+        events:
+          - type: 'click'
+            fn_path: 'workspaces.js#focusWorkspace'
+            selector: '.workspace'
+        template: |
+          {{(()=>{
+            let out = "";
+
+            const workspaceMap = {};
+            let highestId = 5;
+
+            for (const workspace of (window.gwm = glazewm).currentWorkspaces) {
+              const id = +workspace.name;
+              workspaceMap[id] = workspace;
+              if (id > highestId) highestId = id;
+            }
+
+            for (let i = 1; i < highestId + 1; i++) {
+              const workspace = workspaceMap[i] ?? { hasFocus: 0, children: [], name: i };
+              out += `
+                <div
+                  class="workspace ${workspace.hasFocus ? 'focused' : ''} ${workspace.children.length < 1 ? 'empty' : ''}"
+                  style="--children-count: ${workspace.children.length}"
+                  id="${ workspace.name}"
+                ></div>
+              `
+            }
+
+            return out;
+          })()}}
+
+
+    group/bottom:
+      styles: |
+        display: flex;
+        flex-direction: column;
+        gap: var(--padding-sm);
+
+      template/control:
+        providers: ['glazewm', 'network']
+        styles: |
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: var(--font-size-l);
+          padding: var(--padding-m);
+          gap: var(--padding-m);
+
+          .volume {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .volume-icon-container {
+            position: relative;
+          }
+
+          #volume-icon {
+            transition: rotate var(--transition-duration);
+            display: block;
+            cursor: pointer;
+          }
+
+          #volume-display::before {
+            content: var(--value-string) "%";
+            font-family: var(--font-monospace);
+            font-size: var(--font-size-m);
+            position: absolute;
+            bottom: 0;
+            left: calc(var(--bar-width) - var(--padding-m) - var(--padding-sm));
+            background: var(--component-background);
+            padding: var(--padding-xs);
+            border-radius: var(--radius-xs);
+            translate: var(--padding-xs) 0;
+            opacity: 0;
+            transition: opacity var(--transition-duration);
+          }
+
+          #volume-slider {
+            --value-percent: calc(var(--value) * 1%);
+            writing-mode: vertical-lr;
+            direction: rtl;
+            vertical-align: middle;
+            width: calc(10px * var(--scaling-factor));
+            border-radius: var(--radius-l);
+            background: linear-gradient(to top, var(--foreground-primary) var(--value-percent), var(--foreground-muted) var(--value-percent));
+            appearance: none;
+            height: 0;
+            opacity: 0;
+            transition: height var(--transition-duration), opacity var(--transition-duration), margin var(--transition-duration);
+            cursor: pointer;
+            &::-webkit-slider-thumb { visibility: hidden }
+          }
+          .volume:hover:not(:has(#volume-display:hover)) {
+            #volume-slider {
+              height: calc(100px * var(--scaling-factor));
+              opacity: 1;
+              margin-bottom: var(--padding-sm);
+              /*transition: height var(--transition-duration);*/
+            }
+            #volume-icon {
+              rotate: -90deg;
+            }
+            #volume-display::before {
+              opacity: 1;
+            }
+          }
+        events:
+          - type: 'input'
+            fn_path: 'control.js#handleVolumeSlider'
+            selector: '#volume-slider'
+        template: |
+          <div class="volume" style="--value: {{ window.VOLUME ??= 10 }}; --value-string: '{{ window.VOLUME }}'">
+            <input type="range" id="volume-slider"></input>
+            <div class="volume-icon-container">
+              <i id="volume-icon" class="ph-fill ph-speaker-simple-low"></i>
+              <div id="volume-display"></div>
+            </div>
+          </div>
+          <i class="ph-fill ph-cell-signal-{{ ["none", "low", "medium", "high", "full"][Math.round(network.defaultGateway?.signalStrength/100 * 4)] }}"></i>
+          <i class="ph-fill ph-square-split-{{ glazewm.tilingDirection }}"></i>
+
+      template/battery:
+        providers: ['battery']
+        styles: |
+          --battery-fill-string: "{{ Math.round(battery.chargePercent) }}";
+          --battery-fill-percent: calc({{ battery.chargePercent }}/100);
+          --battery-fill-inverse-percent: calc(1 - var(--battery-fill-percent));
+          --battery-height: calc(48px * var(--scaling-factor));
+          --battery-padding: var(--padding-xs);
+          --battery-inner-height: calc(var(--battery-height) - 2 * var(--battery-padding));
+          --battery-border-radius: var(--radius-xs);
+          --battery-fill-color: color-mix(in oklab, color-mix(in oklab, var(--green), var(--yellow) calc(pow(var(--battery-fill-inverse-percent), 2) * 100%)), var(--red) calc(pow(var(--battery-fill-inverse-percent), 3) * 100%));
+
+          padding: var(--battery-padding);
+          height: var(--battery-height);
+          position: relative;
+
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 40%;
+            height: var(--battery-padding);
+            background: var(--component-background);
+            border-top-left-radius: var(--battery-border-radius);
+            border-top-right-radius: var(--battery-border-radius);
+            top: 1px;
+            left: 50%;
+            translate: -50% -100%;
+          }
+
+          .battery-icon {
+            color: var(--foreground-primary);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: 1;
+            font-size: var(--font-size-l);
+            &::before {
+              transition: opacity var(--transition-duration);
+            }
+            &::after {
+              content: var(--battery-fill-string);
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              translate: -50% -50%;
+              font-size: var(--font-size-m);
+              font-family: var(--font-monospace);
+              opacity: 0;
+              transition: opacity var(--transition-duration);
+            }
+          }
+          .battery-overlay:hover .battery-icon {
+            &::before {
+              opacity: 0;
+            }
+            &::after {
+              opacity: 1;
+            }
+          }
+
+          .battery-overlay {
+            display: block;
+            height: 100%;
+            width: 100%;
+            border-radius: var(--battery-border-radius);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+          }
+
+          .battery-fill {
+            display: block;
+            height: calc(var(--battery-inner-height) * var(--battery-fill-percent));
+            width: 100%;
+            background-color: color-mix(in oklab, var(--battery-fill-color) 65%, var(--background-secondary));
+            position: relative;
+          }
+
+          .battery-fill::before {
+            content: "";
+            width: calc(1.5 * var(--battery-height));
+            height: calc(1.5 * var(--battery-height));
+            background-color: color-mix(in oklab, var(--battery-fill-color) 35%, var(--background-secondary));
+            position: absolute;
+            top: 2px;
+            left: 50%;
+            translate: -50% -100%;
+            border-radius: 30%;
+            animation: rotate 16s linear infinite;
+            animation-delay: 0.727s;
+          }
+          .battery-fill::after {
+            content: "";
+            width: calc(1.5 * var(--battery-height));
+            height: calc(1.5 * var(--battery-height));
+            background-color: color-mix(in oklab, var(--battery-fill-color) 15%, var(--background-secondary));
+            position: absolute;
+            top: 0;
+            left: 50%;
+            translate: -50% -100%;
+            border-radius: 30%;
+            animation: rotate 16s linear infinite;
+          }
+        events:
+          - type: "load"
+            fn_path: "battery.js#noop"
+            selector: "none"
+        template: |
+          {{ void (window.bat = battery) }}
+          <div class="battery-overlay">
+            <i class="battery-icon ph-fill ph-lightning"></i>
+            <div class="battery-fill"></div>
+          </div>
+
+      template/clock:
+        providers: ['date']
+        styles: |
+          padding: var(--padding-sm);
+          text-align: center;
+        template: |
+          <span>{{ date.toFormat(date.now, "HH") }}</span>
+          <span>{{ date.toFormat(date.now, "mm") }}</span>

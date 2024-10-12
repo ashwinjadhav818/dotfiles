@@ -19,11 +19,7 @@ html,
 body,
 #root {
   height: 100%;
-  background: rgba(0, 0, 0, 0.54);
-}
-
-#root {
-  border-bottom: 1px solid rgb(255 255 255 / 5%);
+  background: rgba(0, 0, 0, 0);
 }
 
 .app {
@@ -106,3 +102,5 @@ body,
   position: absolute;
   font-size: 11px;
 }
+
+
