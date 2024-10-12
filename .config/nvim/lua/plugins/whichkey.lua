@@ -1,4 +1,4 @@
-return { {
+return {{
     "folke/which-key.nvim",
     event = "VeryLazy",
     init = function()
@@ -12,176 +12,346 @@ return { {
         end
 
         local Terminal = require('toggleterm.terminal').Terminal
-        local lazygit  = Terminal:new({ cmd = "lazygit", hidden = true, direction = "float", })
+        local lazygit = Terminal:new({
+            cmd = "lazygit",
+            hidden = true,
+            direction = "float"
+        })
 
         function _lazygit_toggle()
             lazygit:toggle()
         end
 
         local setup = {
-            plugins = {
-                marks = true,        -- shows a list of your marks on ' and `
-                registers = true,    -- shows your registers on " in NORMAL or <C-r> in INSERT mode
-                spelling = {
-                    enabled = true,  -- enabling this will show WhichKey when pressing z= to select spelling suggestions
-                    suggestions = 20 -- how many suggestions should be shown in the list?
-                },
-                -- the presets plugin, adds help for a bunch of default keybindings in Neovim
-                -- No actual key bindings are created
-                presets = {
-                    operators = false,   -- adds help for operators like d, y, ... and registers them for motion / text object completion
-                    motions = true,      -- adds help for motions
-                    text_objects = true, -- help for text objects triggered after entering an operator
-                    windows = true,      -- default bindings on <c-w>
-                    nav = true,          -- misc bindings to work with windows
-                    z = true,            -- bindings for folds, spelling and others prefixed with z
-                    g = true             -- bindings for prefixed with g
-                }
-            },
-            -- add operators that will trigger motion and text object completion
-            -- to enable all native operators, set the preset / operators plugin above
-            -- operators = { gc = "Comments" },
-            key_labels = {
-                -- override the label used to display some keys. It doesn't effect WK in any other way.
-                -- For example:
-                -- ["<space>"] = "SPC",
-                -- ["<cr>"] = "RET",
-                -- ["<tab>"] = "TAB",
-            },
-            icons = {
-                breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
-                separator = "➜", -- symbol used between a key and it's label
-                group = "+" -- symbol prepended to a group
-            },
-            popup_mappings = {
-                scroll_down = "<c-d>", -- binding to scroll down inside the popup
-                scroll_up = "<c-u>"    -- binding to scroll up inside the popup
-            },
-            window = {
-                border = "rounded",       -- none, single, double, shadow
-                position = "bottom",      -- bottom, top
-                margin = { 1, 1, 1, 1 },  -- extra window margin [top, right, bottom, left]
-                padding = { 2, 2, 2, 2 }, -- extra window padding [top, right, bottom, left]
-                winblend = 0
-            },
-            layout = {
-                height = {
-                    min = 4,
-                    max = 25
-                }, -- min and max height of the columns
-                width = {
-                    min = 20,
-                    max = 50
-                },                                                                        -- min and max width of the columns
-                spacing = 3,                                                              -- spacing between columns
-                align =
-                "left"                                                                    -- align columns left, center or right
-            },
-            ignore_missing = true,                                                        -- enable this to hide mappings for which you didn't specify a label
-            hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
-            show_help = true,                                                             -- show help message on the command line when the popup is visible
-            triggers = "auto",                                                            -- automatically setup triggers
-            -- triggers = {"<leader>"} -- or specify a list manually
-            triggers_blacklist = {
-                -- list of mode / prefixes that should never be hooked by WhichKey
-                -- this is mostly relevant for key maps that start with a native binding
-                -- most people should not need to change this
-                i = { "j", "k" },
-                v = { "j", "k" }
-            }
-        }
+            preset = "modern",
 
-        local opts = {
-            mode = "n",     -- NORMAL mode
-            prefix = "<leader>",
-            buffer = nil,   -- Global mappings. Specify a buffer number for buffer local mappings
-            silent = true,  -- use `silent` when creating keymaps
-            noremap = true, -- use `noremap` when creating keymaps
-            nowait = true   -- use `nowait` when creating keymaps
         }
 
         local mappings = {
-            ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-            ["b"] = {
-                "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-                "Buffers" },
-            ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-            ["w"] = { "<cmd>w<CR>", "Save" },
-            ["q"] = { "<cmd>q<CR>", "Quit" },
-            ["S"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
-            ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-            ["u"] = { "<cmd>undo<CR>", "Undo" },
-            ["r"] = { "<cmd>redo<CR>", "Redo" },
-            ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-            ["L"] = { "<cmd>Lazy<CR>", "Lazy" },
+            {
+                "<leader>a",
+                "<cmd>Alpha<cr>",
+                desc = "Alpha"
+            },
+            {
+                "<leader>e",
+                "<cmd>NvimTreeToggle<cr>",
+                desc = "Explorer"
+            },
+            {
+                "<leader>w",
+                "<cmd>w<CR>",
+                desc = "Save"
+            },
+            {
+                "<leader>q",
+                "<cmd>q<CR>",
+                desc = "Quit"
+            },
+            {
+                "<leader>d",
+                "<cmd>Bdelete!<CR>",
+                desc = "Close Buffer"
+            },
+            {
+                "<leader>h",
+                "<cmd>nohlsearch<CR>",
+                desc = "No Highlight"
+            },
+            {
+                "<leader>u",
+                "<cmd>undo<CR>",
+                desc = "Undo"
+            },
+            {
+                "<leader>r",
+                "<cmd>redo<CR>",
+                desc = "Redo"
+            },
+            {
+                "<leader>L",
+                "<cmd>Lazy<CR>",
+                desc = "Lazy"
+            },
 
-            c = {
-                name = "Code",
-                o = { "<cmd>lua require'jdtls'.organize_imports()<cr>", "Organize Imports" },
-                v = { "<cmd>lua require('jdtls').extract_variable()<cr>", "Extract Variable" },
-                c = { "<cmd>lua require('jdtls').extract_constant()<cr>", "Extract Constant" },
-                m = { "<cmd>lua require('jdtls').extract_method(true)<cr>", "Extract Method" },
-                t = { "<cmd>lua require('jdtls').test_class()<cr>", "Test Class" },
-                n = { "<cmd>lua require('jdtls').test_nearest_method()<cr>", "Test Nearest Method" }
+            -- CODE
+            {
+                "<leader>c",
+                group = "Code"
             },
-            g = {
-                name = "Git",
-                g = { "<cmd>lua _lazygit_toggle()<CR>", "Lazygit" },
-                j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
-                k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
-                l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
-                p = { "<cmd>lua require 'gitsigns'.preview_hunk()<cr>", "Preview Hunk" },
-                r = { "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk" },
-                R = { "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer" },
-                s = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" },
-                u = { "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>", "Undo Stage Hunk" },
-                o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
-                b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-                c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
-                d = { "<cmd>Gitsigns diffthis HEAD<cr>", "Diff" }
+            {
+                "<leader>co",
+                "<cmd>lua require'jdtls'.organize_imports()<cr>",
+                desc = "Organize Imports"
             },
-            f = {
-                name = "Find",
-                b = { "<cmd>Telescope buffers<cr>", "Colorscheme" },
-                c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
-                f = { "<cmd> Telescope find_files<cr>", "Files" },
-                h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
-                M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
-                p = { "<cmd>Telescope projects<cr>", "Projects" },
-                r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
-                R = { "<cmd>Telescope registers<cr>", "Registers" },
-                k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
-                C = { "<cmd>Telescope commands<cr>", "Commands" }
+            {
+                "<leader>cv",
+                "<cmd>lua require('jdtls').extract_variable()<cr>",
+                desc = "Extract Variable"
             },
-            l = {
-                name = "LSP",
-                a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-                d = { "<cmd>Telescope diagnostics bufnr=0<cr>", "Document Diagnostics" },
-                w = { "<cmd>Telescope diagnostics<cr>", "Workspace Diagnostics" },
-                f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
-                i = { "<cmd>LspInfo<cr>", "Info" },
-                I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
-                j = { "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", "Next Diagnostic" },
-                k = { "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>", "Prev Diagnostic" },
-                l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
-                q = { "<cmd>lua vim.diagnostic.setloclist()<cr>", "Quickfix" },
-                r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
-                s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
-                S = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Workspace Symbols" }
+            {
+                "<leader>cc",
+                "<cmd>lua require('jdtls').extract_constant()<cr>",
+                desc = "Extract Constant"
             },
-            t = {
-                name = "Terminal",
-                n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
-                u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
-                t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
-                p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
-                f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-                h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
-                v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" }
+            {
+                "<leader>cm",
+                "<cmd>lua require('jdtls').extract_method(true)<cr>",
+                desc = "Extract Method"
+            },
+            {
+                "<leader>ct",
+                "<cmd>lua require('jdtls').test_class()<cr>",
+                desc = "Test Class"
+            },
+            {
+                "<leader>cn",
+                "<cmd>lua require('jdtls').test_nearest_method()<cr>",
+                desc = "Test Nearest Method"
+            },
+
+            -- GIT
+            {
+                "<leader>g",
+                group = "Git"
+            },
+            {
+                "<leader>gg",
+                "<cmd>lua _lazygit_toggle()<CR>",
+                desc = "Lazygit"
+            },
+            {
+                "<leader>gj",
+                "<cmd>lua require 'gitsigns'.next_hunk()<cr>",
+                desc = "Next Hunk"
+            },
+            {
+                "<leader>gk",
+                "<cmd>lua require 'gitsigns'.prev_hunk()<cr>",
+                desc = "Prev Hunk"
+            },
+            {
+                "<leader>gl",
+                "<cmd>lua require 'gitsigns'.blame_line()<cr>",
+                desc = "Blame"
+            },
+            {
+                "<leader>gp",
+                "<cmd>lua require 'gitsigns'.preview_hunk()<cr>",
+                desc = "Preview Hunk"
+            },
+            {
+                "<leader>gr",
+                "<cmd>lua require 'gitsigns'.reset_hunk()<cr>",
+                desc = "Reset Hunk"
+            },
+            {
+                "<leader>gR",
+                "<cmd>lua require 'gitsigns'.reset_buffer()<cr>",
+                desc = "Reset Buffer"
+            },
+            {
+                "<leader>gs",
+                "<cmd>lua require 'gitsigns'.stage_hunk()<cr>",
+                desc = "Stage Hunk"
+            },
+            {
+                "<leader>gu",
+                "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
+                desc = "Undo Stage Hunk"
+            },
+            {
+                "<leader>go",
+                "<cmd>Telescope git_status<cr>",
+                desc = "Open changed file"
+            },
+            {
+                "<leader>gb",
+                "<cmd>Telescope git_branches<cr>",
+                desc = "Checkout branch"
+            },
+            {
+                "<leader>gc",
+                "<cmd>Telescope git_commits<cr>",
+                desc = "Checkout commit"
+            },
+            {
+                "<leader>gd",
+                "<cmd>Gitsigns diffthis HEAD<cr>",
+                desc = "Diff"
+            },
+
+            -- FIND
+            {
+                "<leader>f",
+                group = "Find"
+            },
+            {
+                "<leader>fb",
+                "<cmd>Telescope buffers<cr>",
+                desc = "Buffers"
+            },
+            {
+                "<leader>fc",
+                "<cmd>Telescope colorscheme<cr>",
+                desc = "Colorscheme"
+            },
+            {
+                "<leader>ff",
+                "<cmd> Telescope find_files<cr>",
+                desc = "Files"
+            },
+            {
+                "<leader>fh",
+                "<cmd>Telescope help_tags<cr>",
+                desc = "Find Help"
+            },
+            {
+                "<leader>fM",
+                "<cmd>Telescope man_pages<cr>",
+                desc = "Man Pages"
+            },
+            {
+                "<leader>fp",
+                "<cmd>Telescope projects<cr>",
+                desc = "Projects"
+            },
+            {
+                "<leader>fr",
+                "<cmd>Telescope oldfiles<cr>",
+                desc = "Open Recent File"
+            },
+            {
+                "<leader>fR",
+                "<cmd>Telescope registers<cr>",
+                desc = "Registers"
+            },
+            {
+                "<leader>fk",
+                "<cmd>Telescope keymaps<cr>",
+                desc = "Keymaps"
+            },
+            {
+                "<leader>fC",
+                "<cmd>Telescope commands<cr>",
+                desc = "Commands"
+            },
+
+            -- LSP
+            {
+                "<leader>l",
+                group = "LSP"
+            },
+            {
+                "<leader>la",
+                "<cmd>lua vim.lsp.buf.code_action()<cr>",
+                desc = "Code Action"
+            },
+            {
+                "<leader>ld",
+                "<cmd>Telescope diagnostics bufnr=0<cr>",
+                desc = "Document Diagnostics"
+            },
+            {
+                "<leader>lw",
+                "<cmd>Telescope diagnostics<cr>",
+                desc = "Workspace Diagnostics"
+            },
+            {
+                "<leader>lf",
+                "<cmd>lua vim.lsp.buf.format{async=true}<cr>",
+                desc = "Format"
+            },
+            {
+                "<leader>li",
+                "<cmd>LspInfo<cr>",
+                desc = "Info"
+            },
+            {
+                "<leader>lI",
+                "<cmd>LspInstallInfo<cr>",
+                desc = "Installer Info"
+            },
+            {
+                "<leader>lj",
+                "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
+                desc = "Next Diagnostic"
+            },
+            {
+                "<leader>lk",
+                "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",
+                desc = "Prev Diagnostic"
+            },
+            {
+                "<leader>ll",
+                "<cmd>lua vim.lsp.codelens.run()<cr>",
+                desc = "CodeLens Action"
+            },
+            {
+                "<leader>lq",
+                "<cmd>lua vim.diagnostic.setloclist()<cr>",
+                desc = "Quickfix"
+            },
+            {
+                "<leader>lr",
+                "<cmd>lua vim.lsp.buf.rename()<cr>",
+                desc = "Rename"
+            },
+            {
+                "<leader>ls",
+                "<cmd>Telescope lsp_document_symbols<cr>",
+                desc = "Document Symbols"
+            },
+            {
+                "<leader>lS",
+                "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
+                desc = "Workspace Symbols"
+            },
+
+            -- TERMINAL
+            {
+                "<leader>t",
+                group = "Terminal"
+            },
+            name = "Terminal",
+            {
+                "<leader>tn",
+                "<cmd>lua _NODE_TOGGLE()<cr>",
+                desc = "Node"
+            },
+            {
+                "<leader>tu",
+                "<cmd>lua _NCDU_TOGGLE()<cr>",
+                desc = "NCDU"
+            },
+            {
+                "<leader>tt",
+                "<cmd>lua _HTOP_TOGGLE()<cr>",
+                desc = "Htop"
+            },
+            {
+                "<leader>tp",
+                "<cmd>lua _PYTHON_TOGGLE()<cr>",
+                desc = "Python"
+            },
+            {
+                "<leader>tf",
+                "<cmd>ToggleTerm direction=float<cr>",
+                desc = "Float"
+            },
+            {
+                "<leader>th",
+                "<cmd>ToggleTerm size=10 direction=horizontal<cr>",
+                desc = "Horizontal"
+            },
+            {
+                "<leader>tv",
+                "<cmd>ToggleTerm size=80 direction=vertical<cr>",
+                desc = "Vertical"
             }
         }
 
         which_key.setup(setup)
-        which_key.register(mappings, opts)
+        which_key.add(mappings)
     end
-} }
+}}

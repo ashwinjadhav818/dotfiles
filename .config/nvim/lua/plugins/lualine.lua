@@ -76,8 +76,14 @@ return {{
         lualine.setup({
             opts = {
                 icons_enabled = true,
-                theme = "auto",
-                disabled_filetypes = {"alpha", "dashboard", "NvimTree", "Outline"},
+                theme = "tokyonight",            
+                disabled_filetypes = {
+					statusline = {
+						"alpha",
+						"NvimTree",
+					},
+				},
+
                 always_divide_middle = true
             },
             sections = {
