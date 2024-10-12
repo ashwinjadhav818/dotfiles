@@ -4,3 +4,4 @@
 thumbs.db
 *.log
 tmp-*/
+lazy-lock.json
