@@ -1,4 +1,4 @@
-return {{
+return { {
     "folke/which-key.nvim",
     event = "VeryLazy",
     init = function()
@@ -27,7 +27,17 @@ return {{
 
         }
 
-        local mappings = {
+        local mappings = {{ "<leader><leader>", hidden = true },
+  { "<leader>1",        hidden = true },
+  { "<leader>2",        hidden = true },
+  { "<leader>3",        hidden = true },
+  { "<leader>4",        hidden = true },
+  { "<leader>5",        hidden = true },
+  { "<leader>6",        hidden = true },
+  { "<leader>7",        hidden = true },
+  { "<leader>8",        hidden = true },
+  { "<leader>9",        hidden = true },
+
             {
                 "<leader>a",
                 "<cmd>Alpha<cr>",
@@ -72,7 +82,11 @@ return {{
                 "<leader>L",
                 "<cmd>Lazy<CR>",
                 desc = "Lazy"
-            },
+            },  { "<leader>=", "<cmd>vertical resize +5<CR>", desc = "resize +5" },
+  { "<leader>-", "<cmd>vertical resize -5<CR>", desc = "resize -5" },
+  { "<leader>v", "<C-W>v",                      desc = "split right" },
+  { "<leader>V", "<C-W>s",                      desc = "split below" },
+  { "<leader>q", desc = "quicklist" },
 
             -- CODE
             {
@@ -197,6 +211,11 @@ return {{
                 desc = "Colorscheme"
             },
             {
+                "<leader>fg",
+                "<cmd>Telescope live_grep<cr>",
+                desc = "Live Grep"
+            },
+            {
                 "<leader>ff",
                 "<cmd> Telescope find_files<cr>",
                 desc = "Files"
@@ -288,6 +307,11 @@ return {{
                 desc = "CodeLens Action"
             },
             {
+                "<leader>lm",
+                "<cmd>Mason<cr>",
+                desc = "Mason"
+            },
+            {
                 "<leader>lq",
                 "<cmd>lua vim.diagnostic.setloclist()<cr>",
                 desc = "Quickfix"
@@ -354,4 +378,4 @@ return {{
         which_key.setup(setup)
         which_key.add(mappings)
     end
-}}
+} }
