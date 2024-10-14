@@ -17,6 +17,8 @@ alias l "eza --long --header --git --icons -a"
 alias g git
 alias vim nvim
 alias vi nvim
+alias cls clear
+alias lg lazygit
 # alias nvim lvim
 
 set -gx EDITOR nvim
