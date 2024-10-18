@@ -2185,3 +2185,66 @@ ColorValue has invalid rgba() parameters: NNN (N=Number, P=Percentage)
 2024-10-12 10:37:47 DEBUG _windows.py:218: Stopping worker thread...
 2024-10-12 10:37:47 DEBUG _windows.py:201: Exiting thread
 2024-10-12 10:37:47 DEBUG _windows.py:75: Closing
+2024-10-15 20:56:52 INFO log.py:21: Yasb
+2024-10-15 20:56:55 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-15 20:57:02 INFO weather.py:156: Fetched new weather data at 2024-10-15 20:57:02.739985
+2024-10-15 20:57:02 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-15 20:57:08 INFO event_listener.py:52: Created named pipe yasb-f0e267af-8b09-11ef-8c95-d8c0a6fc4ed4
+2024-10-15 20:57:08 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-f0e267af-8b09-11ef-8c95-d8c0a6fc4ed4
+2024-10-15 20:57:08 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-15 20:57:08 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-15 20:57:08 DEBUG _windows.py:192: Thread started
+2024-10-15 20:57:10 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2024-10-15 20:59:29 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-f0e267af-8b09-11ef-8c95-d8c0a6fc4ed4
+2024-10-15 20:59:30 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-15 20:59:32 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-15 20:59:57 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-15 20:59:58 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-15 20:59:59 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-15 21:00:00 INFO tray.py:205: Exiting Application from tray...
+2024-10-15 21:00:00 DEBUG _windows.py:218: Stopping worker thread...
+2024-10-15 21:00:00 DEBUG _windows.py:201: Exiting thread
+2024-10-15 21:00:00 DEBUG _windows.py:75: Closing
+2024-10-18 12:53:52 INFO log.py:21: Yasb
+2024-10-18 12:53:54 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-18 12:54:04 INFO weather.py:156: Fetched new weather data at 2024-10-18 12:54:04.304042
+2024-10-18 12:54:04 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-18 12:54:14 INFO event_listener.py:52: Created named pipe yasb-f9fecce8-8d21-11ef-8b61-d8c0a6fc4ed4
+2024-10-18 12:54:14 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-f9fecce8-8d21-11ef-8b61-d8c0a6fc4ed4
+2024-10-18 12:54:14 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-18 12:54:14 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-18 12:54:14 DEBUG _windows.py:192: Thread started
+2024-10-18 12:54:14 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-f9fecce8-8d21-11ef-8b61-d8c0a6fc4ed4
+2024-10-18 13:04:04 INFO weather.py:156: Fetched new weather data at 2024-10-18 13:04:04.323703
+2024-10-18 13:14:04 INFO weather.py:156: Fetched new weather data at 2024-10-18 13:14:04.303248
+2024-10-18 13:24:06 INFO weather.py:156: Fetched new weather data at 2024-10-18 13:24:06.780814
+2024-10-18 13:34:04 INFO weather.py:156: Fetched new weather data at 2024-10-18 13:34:04.813071
+2024-10-18 13:44:04 INFO weather.py:156: Fetched new weather data at 2024-10-18 13:44:04.860688
+2024-10-18 13:54:04 INFO weather.py:156: Fetched new weather data at 2024-10-18 13:54:04.323337
+2024-10-18 14:04:04 INFO weather.py:156: Fetched new weather data at 2024-10-18 14:04:04.323325
+2024-10-18 14:21:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 14:21:23.500000
+2024-10-18 14:21:23 ERROR weather.py:197: Error occurred: <urlopen error [Errno 11001] getaddrinfo failed>
+2024-10-18 14:31:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 14:31:23.533632
+2024-10-18 14:41:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 14:41:23.561565
+2024-10-18 14:51:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 14:51:23.550553
+2024-10-18 15:01:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 15:01:23.580718
+2024-10-18 15:11:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 15:11:23.638827
+2024-10-18 15:21:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 15:21:23.743992
+2024-10-18 15:31:25 INFO weather.py:156: Fetched new weather data at 2024-10-18 15:31:25.550215
+2024-10-18 15:41:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 15:41:23.825769
+2024-10-18 15:51:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 15:51:23.593556
+2024-10-18 16:01:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 16:01:23.609575
+2024-10-18 16:11:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 16:11:23.605724
+2024-10-18 16:21:24 INFO weather.py:156: Fetched new weather data at 2024-10-18 16:21:24.062411
+2024-10-18 16:31:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 16:31:23.616195
+2024-10-18 16:41:23 INFO weather.py:156: Fetched new weather data at 2024-10-18 16:41:23.602873
+2024-10-18 16:44:05 INFO log.py:21: Yasb
+2024-10-18 16:44:07 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-18 16:44:20 INFO weather.py:156: Fetched new weather data at 2024-10-18 16:44:20.678280
+2024-10-18 16:44:21 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-18 16:44:32 INFO event_listener.py:52: Created named pipe yasb-269dcf80-8d42-11ef-9dab-d8c0a6fc4ed4
+2024-10-18 16:44:32 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-269dcf80-8d42-11ef-9dab-d8c0a6fc4ed4
+2024-10-18 16:44:33 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-18 16:44:33 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-18 16:44:33 DEBUG _windows.py:192: Thread started
+2024-10-18 16:44:33 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-269dcf80-8d42-11ef-9dab-d8c0a6fc4ed4
