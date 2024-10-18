@@ -65,6 +65,7 @@
     "animation": {
         "enabled": true,
         "duration": 200,
+        "style": "EaseOutBack",
         "fps": 60
     },
     "float_rules": [
