@@ -69,16 +69,12 @@ body,
   margin: 0;
 }
 .logo,
-.binding-mode,
-.tiling-direction,
-.memory,
-.battery {
+.memory {
   margin-right: 20px;
 }
 .network {
   margin-left: 12.5px;
-  margin-right: -14.5px;
-  margin-top: -2px;
+  margin-right: 10px;
 }
 .weather {
   margin-right: 12.5px;
@@ -91,21 +87,34 @@ body,
   font-weight: 100 !important;
   color: rgb(255 255 255 / 90%);
 }
+.battery {
+  position: relative;
+}
+.battery i,
+.memory i,
+.cpu i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+.battery .charging-icon {
+  position: absolute;
+  font-size: 7px;
+}
 .memory, .cpu {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.cpu {
+  margin-right: 16px;
+}
+.cpu .value,
+.memory .value {
+  margin-top: 2px;
 }
 .fixed-container {
   display: flex;
   justify-content: space-between;
-  width: 52px; /* Set a fixed width to avoid shifting */
-}
-.label {
-  width: 40px; /* Fixed width for the label (CPU, MEM) */
-}
-.value {
-  width: 60px; /* Fixed width for the value (percentage) */
-  text-align: right; /* Align the percentage to the right */
 }
 .weather > i {
     margin-right: 6px;
@@ -114,16 +123,7 @@ body,
   display: inline-flex;
   margin-bottom: 1px;
 }
-.icons,
-.memory,
-.cpu,
-i.nf.nf-oct-cpu,
-i.nf.nf-fae-chip,
-.logo,
-.binding-mode,
-.tiling-direction,
-.network,
-.battery {
+.logo {
   display: none !important;
 }
 /* Windows 11 Logo CSS */
@@ -139,7 +139,7 @@ i.nf.nf-fae-chip,
 .window {
   transition: background-color 0.2s ease;
   width: 46%;
-  height: 47%;
+  height: 45%;
   background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
 }
@@ -183,8 +183,8 @@ button.workspace.false.false{
 
   background: rgb(255 255 255 / 0%);
   margin-right: 12px;
-  padding: 3px 7px;
-  color: #535353;
+  padding: 3px 10px;
+  color: rgb(255 255 255 / 60%);
   border: solid 0px;
   border-color: #535353;
 
@@ -206,7 +206,7 @@ button.workspace.false.false{
   &.focused:hover {
     background: #303030; /* Simplified the rgba syntax */
     /*border-color: #B69EFF;*/
-    /*color: rgb(208, 199, 255);*/
+    color: rgb(208, 199, 255);
   }
 
   &:hover {
@@ -226,7 +226,6 @@ button.workspace.false.false {
 }
 *:has([class="disconnected"]) .right{
   transition: color 0.2s ease;
-  color: #838383;
 }
 *:has([class="disconnected"]) i.nf.nf-weather-night_clear{
   transition: color 0.2s ease;
@@ -239,4 +238,7 @@ button.workspace.false.false {
 .right,
 .center {
   transition: color 0.2s ease;
+}
+.network {
+    margin-right: 10px;
 }

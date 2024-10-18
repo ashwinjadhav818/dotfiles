@@ -1,6 +1,6 @@
 {
   "$schema": "TODO",
   "startupConfigs": [
-    "tui\\tui-2.zebar.json"
+    "tui\\tui.zebar.json"
   ]
 }
