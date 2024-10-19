@@ -2248,3 +2248,524 @@ ColorValue has invalid rgba() parameters: NNN (N=Number, P=Percentage)
 2024-10-18 16:44:33 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
 2024-10-18 16:44:33 DEBUG _windows.py:192: Thread started
 2024-10-18 16:44:33 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-269dcf80-8d42-11ef-9dab-d8c0a6fc4ed4
+2024-10-18 16:54:20 INFO weather.py:156: Fetched new weather data at 2024-10-18 16:54:20.676474
+2024-10-18 16:56:37 WARNING event_listener.py:83: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2024-10-18 16:56:37 INFO event_listener.py:93: Attempting to reconnect...
+2024-10-18 16:56:42 INFO event_listener.py:52: Created named pipe yasb-269dcf80-8d42-11ef-9dab-d8c0a6fc4ed4
+2024-10-18 16:56:42 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-269dcf80-8d42-11ef-9dab-d8c0a6fc4ed4
+2024-10-18 16:56:43 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2024-10-18 16:56:53 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-269dcf80-8d42-11ef-9dab-d8c0a6fc4ed4
+2024-10-18 18:01:19 INFO weather.py:156: Fetched new weather data at 2024-10-18 18:01:19.763529
+2024-10-18 18:11:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 18:11:05.168404
+2024-10-18 18:21:12 INFO weather.py:156: Fetched new weather data at 2024-10-18 18:21:12.290225
+2024-10-18 18:31:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 18:31:05.166578
+2024-10-18 18:41:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 18:41:05.152173
+2024-10-18 18:51:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 18:51:05.162136
+2024-10-18 19:01:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 19:01:05.539385
+2024-10-18 19:11:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 19:11:05.182849
+2024-10-18 19:21:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 19:21:05.200916
+2024-10-18 19:31:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 19:31:05.188614
+2024-10-18 19:41:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 19:41:05.190885
+2024-10-18 19:51:05 INFO weather.py:156: Fetched new weather data at 2024-10-18 19:51:05.190858
+2024-10-18 20:08:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 20:08:08.500000
+2024-10-18 20:08:09 ERROR weather.py:197: Error occurred: <urlopen error [Errno 11001] getaddrinfo failed>
+2024-10-18 20:18:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 20:18:08.505422
+2024-10-18 20:28:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 20:28:08.510718
+2024-10-18 20:38:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 20:38:08.532685
+2024-10-18 20:48:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 20:48:08.516286
+2024-10-18 20:58:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 20:58:08.517499
+2024-10-18 21:08:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 21:08:08.515123
+2024-10-18 21:18:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 21:18:08.496669
+2024-10-18 21:28:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 21:28:08.511350
+2024-10-18 21:38:08 INFO weather.py:156: Fetched new weather data at 2024-10-18 21:38:08.506883
+2024-10-18 22:45:36 INFO weather.py:156: Fetched new weather data at 2024-10-18 22:45:36.506074
+2024-10-18 22:45:37 ERROR weather.py:197: Error occurred: <urlopen error [Errno 11001] getaddrinfo failed>
+2024-10-18 22:45:58 WARNING event_listener.py:83: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2024-10-18 22:45:58 INFO event_listener.py:93: Attempting to reconnect...
+2024-10-19 08:48:16 INFO log.py:21: Yasb
+2024-10-19 08:48:17 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 08:48:25 INFO weather.py:156: Fetched new weather data at 2024-10-19 08:48:25.028744
+2024-10-19 08:48:25 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 08:48:30 INFO event_listener.py:52: Created named pipe yasb-d0740c1c-8dc8-11ef-8188-d8c0a6fc4ed4
+2024-10-19 08:48:30 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-d0740c1c-8dc8-11ef-8188-d8c0a6fc4ed4
+2024-10-19 08:48:30 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 08:48:30 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 08:48:30 DEBUG _windows.py:192: Thread started
+2024-10-19 08:48:32 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2024-10-19 08:50:15 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-d0740c1c-8dc8-11ef-8188-d8c0a6fc4ed4
+2024-10-19 08:50:15 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:50:17 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:50:19 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:50:20 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:50:22 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:50:23 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:52:08 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:52:09 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:52:10 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:52:12 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:52:13 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:52:14 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:52:16 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:52:17 WARNING event_listener.py:83: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2024-10-19 08:52:17 INFO event_listener.py:93: Attempting to reconnect...
+2024-10-19 08:52:22 INFO event_listener.py:52: Created named pipe yasb-d0740c1c-8dc8-11ef-8188-d8c0a6fc4ed4
+2024-10-19 08:52:22 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-d0740c1c-8dc8-11ef-8188-d8c0a6fc4ed4
+2024-10-19 08:52:22 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-d0740c1c-8dc8-11ef-8188-d8c0a6fc4ed4
+2024-10-19 08:52:23 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 08:52:25 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 09:01:31 INFO weather.py:156: Fetched new weather data at 2024-10-19 09:01:31.099390
+2024-10-19 09:01:31 ERROR weather.py:197: Error occurred: <urlopen error [Errno 11001] getaddrinfo failed>
+2024-10-19 09:11:33 INFO weather.py:156: Fetched new weather data at 2024-10-19 09:11:33.610415
+2024-10-19 09:21:30 INFO weather.py:156: Fetched new weather data at 2024-10-19 09:21:30.513890
+2024-10-19 09:31:30 INFO weather.py:156: Fetched new weather data at 2024-10-19 09:31:30.538648
+2024-10-19 09:41:30 INFO weather.py:156: Fetched new weather data at 2024-10-19 09:41:30.523883
+2024-10-19 09:51:30 INFO weather.py:156: Fetched new weather data at 2024-10-19 09:51:30.525659
+2024-10-19 10:01:30 INFO weather.py:156: Fetched new weather data at 2024-10-19 10:01:30.535728
+2024-10-19 10:11:31 INFO weather.py:156: Fetched new weather data at 2024-10-19 10:11:31.221608
+2024-10-19 10:21:30 INFO weather.py:156: Fetched new weather data at 2024-10-19 10:21:30.594347
+2024-10-19 11:11:14 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:11:14.616613
+2024-10-19 11:11:14 ERROR weather.py:197: Error occurred: <urlopen error [Errno 11001] getaddrinfo failed>
+2024-10-19 11:21:07 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:21:07.447563
+2024-10-19 11:31:07 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:31:07.452534
+2024-10-19 11:31:18 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 11:32:26 INFO log.py:21: Yasb
+2024-10-19 11:32:28 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:32:28.294024
+2024-10-19 11:32:28 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:32:29 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:32:43 INFO event_listener.py:52: Created named pipe yasb-c1143ab0-8ddf-11ef-9c12-d8c0a6fc4ed4
+2024-10-19 11:32:43 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-c1143ab0-8ddf-11ef-9c12-d8c0a6fc4ed4
+2024-10-19 11:32:43 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:32:43 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:32:43 DEBUG _windows.py:192: Thread started
+2024-10-19 11:32:43 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-c1143ab0-8ddf-11ef-9c12-d8c0a6fc4ed4
+2024-10-19 11:32:44 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 11:34:36 INFO log.py:21: Yasb
+2024-10-19 11:34:37 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:34:37.933786
+2024-10-19 11:34:38 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:34:38 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:34:44 INFO event_listener.py:52: Created named pipe yasb-09775302-8de0-11ef-997a-d8c0a6fc4ed4
+2024-10-19 11:34:44 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-09775302-8de0-11ef-997a-d8c0a6fc4ed4
+2024-10-19 11:34:44 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:34:44 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:34:44 DEBUG _windows.py:192: Thread started
+2024-10-19 11:34:45 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-09775302-8de0-11ef-997a-d8c0a6fc4ed4
+2024-10-19 11:34:53 INFO log.py:21: Yasb
+2024-10-19 11:34:53 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:34:53.738378
+2024-10-19 11:34:54 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:34:54 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:34:58 INFO event_listener.py:52: Created named pipe yasb-1230c8e7-8de0-11ef-93d5-d8c0a6fc4ed4
+2024-10-19 11:34:59 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-1230c8e7-8de0-11ef-93d5-d8c0a6fc4ed4
+2024-10-19 11:34:59 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:34:59 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:34:59 DEBUG _windows.py:192: Thread started
+2024-10-19 11:34:59 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-1230c8e7-8de0-11ef-93d5-d8c0a6fc4ed4
+2024-10-19 11:35:24 INFO log.py:21: Yasb
+2024-10-19 11:35:25 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:35:25.138916
+2024-10-19 11:35:25 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:35:25 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:35:28 INFO event_listener.py:52: Created named pipe yasb-23f2a5df-8de0-11ef-9931-d8c0a6fc4ed4
+2024-10-19 11:35:28 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-23f2a5df-8de0-11ef-9931-d8c0a6fc4ed4
+2024-10-19 11:35:28 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:35:28 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:35:28 DEBUG _windows.py:192: Thread started
+2024-10-19 11:35:29 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-23f2a5df-8de0-11ef-9931-d8c0a6fc4ed4
+2024-10-19 11:36:13 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 11:37:30 INFO log.py:21: Yasb
+2024-10-19 11:37:31 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:37:31.186432
+2024-10-19 11:37:31 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:37:32 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:37:37 INFO event_listener.py:52: Created named pipe yasb-70c097b7-8de0-11ef-8cfb-d8c0a6fc4ed4
+2024-10-19 11:37:37 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-70c097b7-8de0-11ef-8cfb-d8c0a6fc4ed4
+2024-10-19 11:37:37 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:37:37 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:37:37 DEBUG _windows.py:192: Thread started
+2024-10-19 11:37:38 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-70c097b7-8de0-11ef-8cfb-d8c0a6fc4ed4
+2024-10-19 11:38:04 INFO log.py:21: Yasb
+2024-10-19 11:38:04 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:38:05 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:38:05.215825
+2024-10-19 11:38:05 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:38:09 INFO event_listener.py:52: Created named pipe yasb-83ea2fa0-8de0-11ef-995d-d8c0a6fc4ed4
+2024-10-19 11:38:09 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-83ea2fa0-8de0-11ef-995d-d8c0a6fc4ed4
+2024-10-19 11:38:09 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:38:09 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:38:09 DEBUG _windows.py:192: Thread started
+2024-10-19 11:38:10 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-83ea2fa0-8de0-11ef-995d-d8c0a6fc4ed4
+2024-10-19 11:40:28 INFO log.py:21: Yasb
+2024-10-19 11:40:29 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:40:32 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:40:32.065783
+2024-10-19 11:40:32 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:40:36 INFO event_listener.py:52: Created named pipe yasb-db495dac-8de0-11ef-a756-d8c0a6fc4ed4
+2024-10-19 11:40:36 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-db495dac-8de0-11ef-a756-d8c0a6fc4ed4
+2024-10-19 11:40:36 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:40:36 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:40:36 DEBUG _windows.py:192: Thread started
+2024-10-19 11:41:10 INFO log.py:21: Yasb
+2024-10-19 11:41:11 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:41:11 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:41:11.976848
+2024-10-19 11:41:12 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:41:16 INFO event_listener.py:52: Created named pipe yasb-f3107fe2-8de0-11ef-887d-d8c0a6fc4ed4
+2024-10-19 11:41:16 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-f3107fe2-8de0-11ef-887d-d8c0a6fc4ed4
+2024-10-19 11:41:16 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:41:16 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:41:16 DEBUG _windows.py:192: Thread started
+2024-10-19 11:42:40 INFO log.py:21: Yasb
+2024-10-19 11:42:41 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:42:42 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:42:42.717053
+2024-10-19 11:42:43 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:42:46 INFO event_listener.py:52: Created named pipe yasb-28f65fd3-8de1-11ef-a3b4-d8c0a6fc4ed4
+2024-10-19 11:42:46 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-28f65fd3-8de1-11ef-a3b4-d8c0a6fc4ed4
+2024-10-19 11:42:46 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:42:46 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:42:46 DEBUG _windows.py:192: Thread started
+2024-10-19 11:45:22 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 11:45:31 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 11:45:34 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 11:47:06 INFO log.py:21: Yasb
+2024-10-19 11:47:06 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:47:07 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:47:07.896331
+2024-10-19 11:47:08 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:47:13 INFO event_listener.py:52: Created named pipe yasb-c7cd84f2-8de1-11ef-bd22-d8c0a6fc4ed4
+2024-10-19 11:47:13 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-c7cd84f2-8de1-11ef-bd22-d8c0a6fc4ed4
+2024-10-19 11:47:13 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:47:13 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:47:13 DEBUG _windows.py:192: Thread started
+2024-10-19 11:49:46 INFO log.py:21: Yasb
+2024-10-19 11:49:48 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:49:50 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:49:50.587133
+2024-10-19 11:49:51 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:49:57 INFO event_listener.py:52: Created named pipe yasb-29942840-8de2-11ef-bb55-d8c0a6fc4ed4
+2024-10-19 11:49:57 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-29942840-8de2-11ef-bb55-d8c0a6fc4ed4
+2024-10-19 11:49:57 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:49:57 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:49:57 DEBUG _windows.py:192: Thread started
+2024-10-19 11:50:15 INFO tray.py:205: Exiting Application from tray...
+2024-10-19 11:50:15 DEBUG _windows.py:218: Stopping worker thread...
+2024-10-19 11:50:15 DEBUG _windows.py:201: Exiting thread
+2024-10-19 11:50:15 DEBUG _windows.py:75: Closing
+2024-10-19 11:50:15 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL update_event of TaskbarWidget object at 0x00000165B8F95950>. Removing link to WinEvent.EventObjectDestroy.
+2024-10-19 11:57:06 INFO log.py:21: Yasb
+2024-10-19 11:57:08 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:57:17 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:57:17.762983
+2024-10-19 11:57:18 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:57:24 INFO event_listener.py:52: Created named pipe yasb-343b249a-8de3-11ef-be92-d8c0a6fc4ed4
+2024-10-19 11:57:24 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-343b249a-8de3-11ef-be92-d8c0a6fc4ed4
+2024-10-19 11:57:25 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:57:25 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:57:25 DEBUG _windows.py:192: Thread started
+2024-10-19 11:57:28 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2024-10-19 11:58:12 INFO log.py:21: Yasb
+2024-10-19 11:58:13 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:58:14 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:58:14.314769
+2024-10-19 11:58:14 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:58:18 INFO event_listener.py:52: Created named pipe yasb-54753704-8de3-11ef-8dea-d8c0a6fc4ed4
+2024-10-19 11:58:18 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-54753704-8de3-11ef-8dea-d8c0a6fc4ed4
+2024-10-19 11:58:18 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:58:18 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:58:18 DEBUG _windows.py:192: Thread started
+2024-10-19 11:58:19 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2024-10-19 11:58:50 INFO log.py:21: Yasb
+2024-10-19 11:58:50 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 11:58:51 INFO weather.py:156: Fetched new weather data at 2024-10-19 11:58:51.454448
+2024-10-19 11:58:51 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 11:58:55 INFO event_listener.py:52: Created named pipe yasb-6a364978-8de3-11ef-9aca-d8c0a6fc4ed4
+2024-10-19 11:58:55 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-6a364978-8de3-11ef-9aca-d8c0a6fc4ed4
+2024-10-19 11:58:55 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 11:58:55 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 11:58:55 DEBUG _windows.py:192: Thread started
+2024-10-19 11:58:56 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2024-10-19 11:59:18 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-6a364978-8de3-11ef-9aca-d8c0a6fc4ed4
+2024-10-19 12:00:09 INFO log.py:21: Yasb
+2024-10-19 12:00:12 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:00:14 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:00:14.800975
+2024-10-19 12:00:15 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:00:21 INFO event_listener.py:52: Created named pipe yasb-9dc77c21-8de3-11ef-a3ff-d8c0a6fc4ed4
+2024-10-19 12:00:21 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-9dc77c21-8de3-11ef-a3ff-d8c0a6fc4ed4
+2024-10-19 12:00:21 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:00:21 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:00:21 DEBUG _windows.py:192: Thread started
+2024-10-19 12:01:12 INFO log.py:21: Yasb
+2024-10-19 12:01:12 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:01:13 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:01:13.677472
+2024-10-19 12:01:13 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:01:19 INFO event_listener.py:52: Created named pipe yasb-c0470493-8de3-11ef-9d84-d8c0a6fc4ed4
+2024-10-19 12:01:19 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-c0470493-8de3-11ef-9d84-d8c0a6fc4ed4
+2024-10-19 12:01:19 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:01:19 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:01:19 DEBUG _windows.py:192: Thread started
+2024-10-19 12:02:10 INFO tray.py:201: Reloading Application...
+2024-10-19 12:02:12 INFO log.py:21: Yasb
+2024-10-19 12:02:13 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:02:15 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:02:15.184874
+2024-10-19 12:02:15 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:02:21 INFO event_listener.py:52: Created named pipe yasb-e539165b-8de3-11ef-ac4b-d8c0a6fc4ed4
+2024-10-19 12:02:21 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-e539165b-8de3-11ef-ac4b-d8c0a6fc4ed4
+2024-10-19 12:02:21 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:02:21 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:02:21 DEBUG _windows.py:192: Thread started
+2024-10-19 12:03:46 INFO tray.py:201: Reloading Application...
+2024-10-19 12:03:50 INFO log.py:21: Yasb
+2024-10-19 12:03:51 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:03:55 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:03:55.574447
+2024-10-19 12:03:56 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:04:10 INFO event_listener.py:52: Created named pipe yasb-266418fa-8de4-11ef-a063-d8c0a6fc4ed4
+2024-10-19 12:04:10 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-266418fa-8de4-11ef-a063-d8c0a6fc4ed4
+2024-10-19 12:04:11 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:04:11 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:04:11 DEBUG _windows.py:192: Thread started
+2024-10-19 12:09:09 INFO tray.py:205: Exiting Application from tray...
+2024-10-19 12:09:09 DEBUG _windows.py:218: Stopping worker thread...
+2024-10-19 12:09:09 DEBUG _windows.py:201: Exiting thread
+2024-10-19 12:09:09 DEBUG _windows.py:75: Closing
+2024-10-19 12:09:09 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL update_event of TaskbarWidget object at 0x0000027303EB9810>. Removing link to WinEvent.EventObjectDestroy.
+2024-10-19 12:09:48 INFO log.py:21: Yasb
+2024-10-19 12:09:49 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:09:51 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:09:51.179933
+2024-10-19 12:09:51 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:09:59 INFO event_listener.py:52: Created named pipe yasb-f619664e-8de4-11ef-a2ba-d8c0a6fc4ed4
+2024-10-19 12:09:59 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-f619664e-8de4-11ef-a2ba-d8c0a6fc4ed4
+2024-10-19 12:09:59 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:09:59 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:09:59 DEBUG _windows.py:192: Thread started
+2024-10-19 12:10:01 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2024-10-19 12:10:45 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-f619664e-8de4-11ef-a2ba-d8c0a6fc4ed4
+2024-10-19 12:12:34 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:13:15 INFO log.py:21: Yasb
+2024-10-19 12:13:16 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:13:18 ERROR widget_builder.py:70: Failed to import widget 'media'
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 62, in _build_widget
+TypeError: MediaWidget.__init__() missing 1 required positional argument: 'icons'
+2024-10-19 12:13:20 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:13:20.176903
+2024-10-19 12:13:21 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:13:27 INFO event_listener.py:52: Created named pipe yasb-7226626a-8de5-11ef-a157-d8c0a6fc4ed4
+2024-10-19 12:13:27 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-7226626a-8de5-11ef-a157-d8c0a6fc4ed4
+2024-10-19 12:13:27 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:13:27 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:13:27 DEBUG _windows.py:192: Thread started
+2024-10-19 12:13:28 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-7226626a-8de5-11ef-a157-d8c0a6fc4ed4
+2024-10-19 12:13:46 INFO log.py:21: Yasb
+2024-10-19 12:13:49 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:13:52 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:13:52.657747
+2024-10-19 12:13:52 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:13:59 INFO event_listener.py:52: Created named pipe yasb-851e054a-8de5-11ef-a504-d8c0a6fc4ed4
+2024-10-19 12:13:59 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-851e054a-8de5-11ef-a504-d8c0a6fc4ed4
+2024-10-19 12:13:59 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:13:59 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:13:59 DEBUG _windows.py:192: Thread started
+2024-10-19 12:14:00 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-851e054a-8de5-11ef-a504-d8c0a6fc4ed4
+2024-10-19 12:15:51 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:16:14 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:16:40 ERROR config.py:112: The file 'C:\Users\Ashwin\.config\yasb\styles.css' contains Syntax Error(s). Please fix:
+ColorValue has invalid rgba() parameters: NNN (N=Number, P=Percentage)
+2024-10-19 12:16:42 ERROR config.py:112: The file 'C:\Users\Ashwin\.config\yasb\styles.css' contains Syntax Error(s). Please fix:
+ColorValue has invalid rgba() parameters: NNN (N=Number, P=Percentage)
+2024-10-19 12:16:49 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:17:24 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:17:27 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:17:31 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:18:01 INFO log.py:21: Yasb
+2024-10-19 12:18:05 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:18:07 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:18:07.754951
+2024-10-19 12:18:08 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:18:16 INFO event_listener.py:52: Created named pipe yasb-1e6d40c5-8de6-11ef-ae5c-d8c0a6fc4ed4
+2024-10-19 12:18:16 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-1e6d40c5-8de6-11ef-ae5c-d8c0a6fc4ed4
+2024-10-19 12:18:16 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:18:16 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:18:16 DEBUG _windows.py:192: Thread started
+2024-10-19 12:18:18 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-1e6d40c5-8de6-11ef-ae5c-d8c0a6fc4ed4
+2024-10-19 12:18:19 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 12:18:19 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:18:30 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:18:34 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:19:27 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:19:31 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:19:46 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:20:12 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:20:57 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:21:12 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:23:42 INFO log.py:21: Yasb
+2024-10-19 12:23:43 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:23:44 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:23:44.710841
+2024-10-19 12:23:44 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:23:50 INFO event_listener.py:52: Created named pipe yasb-e5c7d913-8de6-11ef-9ce5-d8c0a6fc4ed4
+2024-10-19 12:23:51 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-e5c7d913-8de6-11ef-9ce5-d8c0a6fc4ed4
+2024-10-19 12:23:51 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:23:51 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:23:51 DEBUG _windows.py:192: Thread started
+2024-10-19 12:23:51 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:23:51 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-e5c7d913-8de6-11ef-9ce5-d8c0a6fc4ed4
+2024-10-19 12:24:11 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:24:11 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:24:16 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:24:16 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:24:27 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:24:27 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:24:31 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:24:57 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:25:44 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:25:51 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:26:02 INFO bar_manager.py:48: Successfully loaded updated stylesheet and applied to all bars.
+2024-10-19 12:26:30 INFO log.py:21: Yasb
+2024-10-19 12:26:33 DEBUG win32.py:58: Looking up time zone info from registry
+2024-10-19 12:26:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:26:36.151187
+2024-10-19 12:26:36 DEBUG __init__.py:143: CoInitializeEx(None, 2)
+2024-10-19 12:26:45 INFO event_listener.py:52: Created named pipe yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 12:26:45 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 12:26:45 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2024-10-19 12:26:45 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2024-10-19 12:26:45 DEBUG _windows.py:192: Thread started
+2024-10-19 12:26:46 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:26:47 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 12:26:47 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 12:26:49 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 12:27:26 WARNING event_listener.py:83: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2024-10-19 12:27:26 INFO event_listener.py:93: Attempting to reconnect...
+2024-10-19 12:27:31 INFO event_listener.py:52: Created named pipe yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 12:27:31 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 12:27:33 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2024-10-19 12:27:54 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 12:27:55 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 12:27:56 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 12:27:57 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:27:57 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:36:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:36:36.183325
+2024-10-19 12:40:21 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:40:21 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:40:31 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:40:31 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:46:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:46:36.167600
+2024-10-19 12:46:50 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:46:50 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:46:50 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:46:50 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:46:50 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:48:14 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:48:14 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:52:10 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:52:10 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 12:56:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 12:56:36.164455
+2024-10-19 13:06:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 13:06:36.186717
+2024-10-19 13:16:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 13:16:36.166625
+2024-10-19 13:21:24 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:21:24 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:21:47 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:21:47 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:22:34 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:22:34 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:23:18 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:23:18 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:23:46 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:23:46 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:23:46 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:23:46 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:24:52 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:24:52 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:25:55 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:25:55 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:26:25 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:26:25 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:26:33 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:26:33 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:26:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 13:26:36.172046
+2024-10-19 13:26:43 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:26:43 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:35:36 WARNING event_listener.py:83: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2024-10-19 13:35:36 INFO event_listener.py:93: Attempting to reconnect...
+2024-10-19 13:35:41 INFO event_listener.py:52: Created named pipe yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 13:35:41 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 13:35:44 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2024-10-19 13:36:06 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 13:36:07 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 13:36:09 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 13:36:10 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 13:36:12 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 13:36:14 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 13:36:15 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 13:36:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 13:36:36.193865
+2024-10-19 13:37:45 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:37:45 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:37:45 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:37:45 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:37:45 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:37:45 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:37:50 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:37:50 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:38:03 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:38:03 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:46:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 13:46:36.226923
+2024-10-19 13:51:00 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:51:01 ERROR media.py:189: MediaWidget: Error setting thumbnail: y1 must be greater than or equal to y0
+2024-10-19 13:56:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 13:56:36.220975
+2024-10-19 14:06:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 14:06:36.235917
+2024-10-19 14:16:36 INFO weather.py:156: Fetched new weather data at 2024-10-19 14:16:36.224829
+2024-10-19 14:17:00 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:02 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:04 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:05 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:07 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:09 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:11 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:12 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:14 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:15 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:17 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:18 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:20 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:22 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:24 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:26 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:27 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:29 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:30 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:32 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:34 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:36 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:38 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:39 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:41 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:43 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:45 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:46 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:48 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:50 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:51 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:53 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:54 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:17:56 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:25 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:27 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:28 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:30 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:31 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:33 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:35 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:36 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:38 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:39 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:41 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:42 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:44 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:46 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:47 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:49 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:50 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:52 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:53 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:55 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:56 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:21:58 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:22:00 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:22:02 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:22:03 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:22:05 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2024-10-19 14:22:06 WARNING event_listener.py:83: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2024-10-19 14:22:06 INFO event_listener.py:93: Attempting to reconnect...
+2024-10-19 14:22:11 INFO event_listener.py:52: Created named pipe yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 14:22:12 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 14:22:12 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-4dc930a0-8de7-11ef-b3aa-d8c0a6fc4ed4
+2024-10-19 14:23:33 INFO tray.py:205: Exiting Application from tray...
+2024-10-19 14:23:33 DEBUG _windows.py:218: Stopping worker thread...
+2024-10-19 14:23:33 DEBUG _windows.py:201: Exiting thread
+2024-10-19 14:23:33 DEBUG _windows.py:75: Closing
+2024-10-19 14:23:33 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x0000022AA197AAD0>. Removing link to WinEvent.EventObjectNameChange.
+2024-10-19 14:23:34 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL update_event of TaskbarWidget object at 0x0000022AA214D270>. Removing link to WinEvent.EventObjectDestroy.
