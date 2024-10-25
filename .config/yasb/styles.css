@@ -1,257 +1,251 @@
+:root{
+    --backgroundcol: #120c17;
+    --foregroundcol: #c3c2c5;
+    --cursorcol: #c3c2c5;
+    --colors0: #120c17;
+    --colors1: #702D6D;
+    --colors2: #8E2F73;
+    --colors3: #C02075;
+    --colors4: #484D94;
+    --colors5: #5C5598;
+    --colors6: #B63DA1;
+    --colors7: #c3c2c5;
+    --colors8: #635a6e;
+    --colors9: #702D6D;
+    --colors10: #8E2F73;
+    --colors11: #C02075;
+    --colors12: #484D94;
+    --colors13: #5C5598;
+    --colors14: #B63DA1;
+    --colors15: #c3c2c5;
+}
+
+/* Global Styles */
 * {
-    font-size: 12px;
-    color: #bec8e7;
+    font-size: 13px;
+    color: var(--foregroundcol);
     font-weight: 500;
-    font-family: "JetBrainsMono NFP";
+    font-family: "SegoeUI Nerd Font";
     margin: 0;
     padding: 0;
 }
+
+/* YASB Bar */
 .yasb-bar {
+    background-color: var(--backgroundcol);
     padding: 0;
-    margin: 0;
+    margin: 0 0px;
 }
+
 .widget {
     padding: 0 8px;
-    margin: 0 4px;
-    border-radius: 6px;
+    margin: 0 0px;
 }
-.widget .icon {
-    font-size: 18px;
+
+.widget .label {
+    padding-bottom: 2px;
 }
-.win-btn {
-    background-color: #F3BF7D;
+
+.widget .label:hover {
+    color: var(--colors7);
 }
-.win-btn .icon {
-    color: #142123;
+
+/* Containers */
+.container-left,
+.container-center,
+.container-right {
+    margin: 0;
+    padding: 0;
 }
-.komorebi-workspaces {
-    background-color: #221f2e;
-}
-.komorebi-workspaces .offline-status {
-    color: #627199;
-    font-size: 12px;
-    padding: 0 4px;
-    font-weight: 600;
-}
+
+/* Komorebi Workspace Buttons */
 .komorebi-workspaces .ws-btn {
-    border: none;
-    background-color: #9cd1dd;
-    margin: 0px 4px;
-    padding: 0;
-    color: rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    height: 10px;
-    width: 10px;
+    background-color: transparent;
+    height: 100%;
+    width: 15px;
+    margin: 0 2px 0 4px;
+    color: var(--colors2);
+    border: 0px;
 }
-.komorebi-workspaces .ws-btn:hover {
-    background-color: #91b2e7;
-}
+
 .komorebi-workspaces .ws-btn.populated {
-    background-color: #ea7094;
+    border-bottom: 3px solid var(--colors4);
+    margin-top: 3px;
 }
 
+.komorebi-workspaces .ws-btn:hover {
+    border-bottom: 3px solid var(--colors3);
+    margin-top: 3px;
+}
+
+.komorebi-workspaces .ws-btn.populated:hover,
 .komorebi-workspaces .ws-btn.active {
-    color: rgba(149, 177, 255, 0);
-    background-color: #c0aae8;
-    width: 36px;
-    height: 10px;
-    border-radius: 5px;
-}
-.traffic-widget {
-    background-color: #9ecfd7;
-    padding: 0;
-}
-.traffic-widget .icon {
-    color: #142123;
-    padding-right: 6px;
-    padding-left: 6px;
-}
-.traffic-widget .label {
-    background-color: #221f2e;
-    margin: 1px;
-    border-radius: 6px;
-    padding: 0 6px;
-    color: #9ecfd7;
+    border-bottom: 4px solid var(--colors6);
+    width: 20px;
+    margin-top: 4px;
 }
 
-.clock-widget {
-    background-color: #c2a8e3;
-    padding: 0;
-}
-.clock-widget .icon {
-    color: #142123;
-    padding: 0 6px;
-}
-.clock-widget .label {
-    background-color: #221f2e;
-    color: #c2a8e3;
-    padding: 0 6px;
-    margin: 1px;
-    border-radius: 6px;
-}
-.volume-widget {
-    background-color: #f38ba8;
-    padding: 0;
-}
-.volume-widget .icon {
-    color: #142123;
-    padding: 0 6px;
-}
-.volume-widget .label {
-    background-color: #221f2e;
-    color: #f38ba8;
-    padding: 0 8px;
-    margin: 1px;
-    border-radius: 6px;
-}
-.weather-widget {
-    background-color: #9ecfd7;
-    padding: 0;
-}
-.weather-widget .icon {
-    color: #142123;
-    padding: 0 6px;
-}
-.weather-widget .label {
-    background-color: #221f2e;
-    color: #9ecfd7;
-    padding: 0 6px;
-    margin: 1px;
-    border-radius: 6px;
+/* Search Widget */
+.search-widget {
+    padding: 0 2px;
 }
 
-.power-menu-widget {
-    background-color: #F3BF7D;
-    padding: 0;
+.search-widget .label {
+    padding: 0 7px 0 5px;
 }
 
-.power-menu-widget .label {
-    color: #142123;
-    padding: 0 8px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.battery-widget {
-    background-color: #f5c276;
-    padding: 0;
-}
-.battery-widget .icon {
-    color: #142123;
-    padding: 0 6px;
-}
-.battery-widget .label {
-    background-color: #221f2e;
-    color: #f5c276;
-    padding: 0 8px;
-    margin: 1px;
-    border-radius: 6px;
-}
-.taskbar-widget {
-    background-color: #221f2e;
-    padding: 0;
-}
-.taskbar-widget .app-icon {
-    padding: 0 8px;
-    border: none;
-    margin: 0;
-}
-.active-window-widget {
-    background-color: #c6a7e8;
-    padding: 0;
-}
-.active-window-widget .label {
-    color: #c6a7e8;
-    background-color: #221f2e;
-    padding: 0 8px;
-    margin: 1px;
-    border-radius: 6px;
-}
-.active-window-widget .icon {
-    padding: 0 8px;
-    border: none;
-    margin: 0;
-    background-color: #c6a7e8;
-}
-
-/*POWER MENU POPUP*/
+/* Power Menu Widget */
 .uptime {
     font-size: 14px;
     margin-bottom: 10px;
-    color: rgba(191, 202, 219, 0.726);
+    color: var(--foregroundcol);
     font-weight: 600;
 }
-.power-menu-popup {
-    background-color: rgba(24, 24, 37, 0);
-    border-radius: 12px;
 
+.power-menu-widget .label {
+    font-size: 13px;
+    margin-left: 7px;
+    margin-top: 2px;
 }
+
+.power-menu-popup {
+    background-color: var(--backgroundcol);
+    border-radius: 12px;
+    border: 4px solid var(--colors8);
+}
+
 .power-menu-popup .button {
     padding: 0;
-    width: 180px;
-    height: 230px;
+    width: 240px;
+    height: 120px;
     border-radius: 8px;
-    background-color: #221f2e;
-    color: #c2a7e2;
-    border: 8px solid #1b1925;
-    margin: 0px;
+    background-color: var(--colors8);
+    font-family: "SegoeUI";
+    color: var(--foregroundcol);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 8px;
 }
-.power-menu-popup .button.hover {
-    background-color: #1b1925;
+
+.power-menu-popup .button:hover {
+    background-color: var(--colors9);
 }
+
 .power-menu-popup .button .label {
     margin-bottom: 8px;
     font-size: 16px;
-    font-weight: 500;
-    color: #c5a6e7;
-
+    font-weight: 600;
+    color: var(--foregroundcol);
 }
+
 .power-menu-popup .button .icon {
-    font-size: 64px;
-    padding-top: 32px;
-    color: #c5a6e7;
+    font-size: 48px;
+    padding-top: 20px;
+    color: var(--colors7);
 }
+
 .power-menu-popup .button.cancel .icon {
-    padding: 0;
-    margin: 0;
+    color: var(--colors1);
 }
+
 .power-menu-popup .button.cancel .label {
-    margin: 0;
+    color: var(--colors1);
 }
 
-.power-menu-popup .button.cancel {
-    height: 32px;
-    border-radius: 4px;
-    border: none;
-    background-color: #221f2e;
+.power-menu-popup .button.shutdown .icon {
+    color: var(--colors5);
 }
-.power-menu-popup .button.cancel:hover {
-    background-color: #1b1925;
+
+.power-menu-popup .button.shutdown .label {
+    color: var(--colors5);
 }
-.media-widget {
-    padding: 0;
-    padding-left: 6px;
-    margin: 0;
-    border-radius: 6px;
-    margin-right: 8px;
-    background-color: #ea7094;
+
+/* Icons */
+.icon,
+.media-widget .btn,
+.power-menu-widget .label {
+    font-family: "Segoe Fluent Icons";
+    color: var(--colors12);
+    padding: 3px;
+    font-size: 12px;
 }
-.media-widget .label {
-    background-color: #221f2e;
-    margin: 1px;
-    border-radius: 6px;
-    padding: 0 6px;
-    color: #ea7094;
-}
+
 .media-widget .btn {
-    padding: 0;
-    font-size: 18px;
-    font-family: "JetBrainsMono NFP";
-    color: #142123;
+    font-family: "Segoe Fluent Icons";
 }
-.media-widget .btn.prev {
-    padding: 0 4px 0 4px;
-}
-.media-widget .btn.next {
-    padding: 0 4px 0 4px;
 
+.battery-widget .icon {
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+
+.volume-widget .icon,
+.wifi-widget .icon {
+    font-size: 18px;
+}
+
+.cpu-widget .icon {
+    font-size: 14px;
+    color: var(--colors5);
+    margin: 0 4px 1px 0;
+}
+
+.memory-widget .icon {
+    font-size: 14px;
+    color: var(--colors3);
+    margin: 0 4px 1px 0;
+}
+
+.weather-widget .icon {
+    font-family: "JetBrainsMono NFP";
+}
+
+.search-widget .icon {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.notification-widget .icon {
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+/* Weather Widget */
+.weather-widget .icon.sunnyDay {
+    color: var(--colors11);
+}
+
+.weather-widget .icon.clearNight {
+    color: var(--colors12);
+    font-size: 22px;
+    margin: 1px 2px 0px 0;
+}
+
+/* Media Widget */
+.media-widget {
+    padding-right: 0;
+}
+
+.media-widget .label {
+    color: var(--colors6);
+}
+
+.media-widget .btn {
+    padding: 0 5px;
+    margin: 4px 2px;
+}
+
+.media-widget .btn:hover {
+    color: var(--colors10);
+}
+
+.media-widget .btn.play {
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+    color: var(--colors8);
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0);
+}
