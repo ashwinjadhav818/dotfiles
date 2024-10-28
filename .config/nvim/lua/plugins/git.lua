@@ -227,7 +227,7 @@ return {
             list_changed_files = { lhs = "<LocalLeader>pf", desc = "list PR changed files" },
             show_pr_diff = { lhs = "<LocalLeader>pd", desc = "show PR diff" },
             add_reviewer = { lhs = "<LocalLeader>va", desc = "add reviewer" },
-            remove_reviewer = { lhs = "<LocalLeader>vd", desc = "remove reviewer request" },
+            remove_reviewer = { lhs = "<LocalLkevinhwang91/nvim-bqfeader>vd", desc = "remove reviewer request" },
             close_issue = { lhs = "<LocalLeader>pmc", desc = "close PR" },
             reopen_issue = { lhs = "<LocalLeader>pmo", desc = "reopen PR" },
             list_issues = { lhs = "<LocalLeader>il", desc = "list open issues on same repo" },
