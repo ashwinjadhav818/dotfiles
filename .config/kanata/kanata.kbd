@@ -1,17 +1,20 @@
 ;; defsrc is still necessary
 (defcfg
-  process-unmapped-keys yes
+  process-unmapped-keys true
 )
 
 (defsrc
-  a s d f j k l ;
+  caps w a s d f j k l ; [ lalt
 )
+
 (defvar
-  tap-time 150
+  tap-time 300
   hold-time 300
 )
 
 (defalias
+  cap (tap-hold $tap-time $hold-time esc caps)
+
   a (tap-hold $tap-time $hold-time a lalt)
   s (tap-hold $tap-time $hold-time s lsft)
   d (tap-hold $tap-time $hold-time d lctl)
@@ -20,9 +23,20 @@
   j (tap-hold $tap-time $hold-time j lmet)
   k (tap-hold $tap-time $hold-time k rctl)
   l (tap-hold $tap-time $hold-time l rsft)
-  ; (tap-hold $tap-time $hold-time ; rctl)
+  ; (tap-hold $tap-time $hold-time ; lalt)
+
+  [ (tap-hold $tap-time $hold-time [ bspc)
+
+  arr (layer-switch arrows)
+
+  bse (layer-switch base)
 )
 
 (deflayer base
-  @a @s @d @f @j @k @l @;
+  @cap w @a @s @d @f @j @k @l @; @[ @arr
 )
+
+(deflayer arrows
+  caps up left down right f j k l ; [ @bse
+)
+
