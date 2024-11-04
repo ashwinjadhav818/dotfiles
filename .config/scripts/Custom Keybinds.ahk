@@ -5,6 +5,12 @@ Launch_App2::^!+p ; Launches Notion
 
 #Enter::Run "wezterm-gui"
 
+~LWin::
+{
+    LWinDown := true
+    Send("{Blind}{vkE8}")
+}
+
 Pause::
 {
     Sleep(500) ; Wait for 0.5 second
