@@ -19,7 +19,7 @@
 #+s::Move("down")
 #+d::Move("right")
 #+Enter::Promote()
-    
+
 ; Stack windows
 #!w::Stack("up")
 #!a::Stack("left")
@@ -37,10 +37,8 @@
 
 ; Manipulate windows
 #q::Close()
-#f::ToggleFloat()
-#+f::ToggleMonocle()
-^!f::ToggleFloat()
-^!+f::ToggleMonocle()
+#t::ToggleFloat()
+#+t::ToggleMonocle()
 
 ; Window manager options
 #+r::Retile()

@@ -4,10 +4,17 @@
     "window_hiding_behaviour": "Cloak",
     "cross_monitor_move_behaviour": "Insert",
     "mouse_follows_focus": false,
-    "default_workspace_padding": 5,
-    "default_container_padding": 5, 
+    "default_workspace_padding": 7,
+    "default_container_padding": 7,  
     "border": true,
-    "border_implementation": "Windows",
+    "border_width": 4,
+    "border_offset": -1,
+    "theme": {
+        "palette": "Base16",
+        "name": "TokyoNightDark",
+        "unfocused_border": "Base03",
+        "bar_accent": "Base0D"
+    },
     "border_colours": {
         "single": {
             "r": 22,
@@ -64,7 +71,7 @@
     "transparency_alpha": 215,
     "animation": {
         "enabled": true,
-        "duration": 200,
+        "duration": 400,
         "style": "EaseOutBack",
         "fps": 60
     },
