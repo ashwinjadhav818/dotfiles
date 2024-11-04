@@ -1,11 +1,15 @@
-# Load the generated colors from wal, typically located at $HOME\.cache\wal\colors.json
+# Load the generated colors from wal
 $colorsPath = "$HOME\.cache\wal\colors.json"
-# Convert the JSON colors to a PowerShell object
-$colors = Get-Content -Raw -Path $colorsPath | ConvertFrom-Json
-  
-# Generate the @variables{} section
-$variablesSection = @"
-:root{
+$stylesPath = "$HOME\.config\yasb\styles.css"
+$backupPath = "$stylesPath.bak"
+
+try {
+    # Convert the JSON colors to a PowerShell object
+    $colors = Get-Content -Raw -Path $colorsPath | ConvertFrom-Json
+
+    # Generate the @variables{} section
+    $variablesSection = @"
+:root {
     --backgroundcol: $($colors.special.background);
     --foregroundcol: $($colors.special.foreground);
     --cursorcol: $($colors.special.cursor);
@@ -27,18 +31,43 @@ $variablesSection = @"
     --colors15: $($colors.colors.color15);
 }
 "@
-# Read the existing styles.css file, typically located at $HOME\.config\yasb\styles.css
-$stylesPath = "$HOME\.config\yasb\styles.css"
-$stylesContent = Get-Content -Raw -Path $stylesPath
-# Check if :root{} section exists, if so replace it, otherwise prepend it
-if ($stylesContent -match ":root\{[\s\S]*?\}") {
-    # Replace the existing :root{} section
-    $newStylesContent = $stylesContent -replace ":root\{[\s\S]*?\}", $variablesSection
-} else {
-    # Prepend the new :root{} section
-    $newStylesContent = "$variablesSection`n$stylesContent"
+
+    # Load existing styles content or initialize if file is missing
+    if (-not (Test-Path -Path $stylesPath)) {
+        $stylesContent = ""
+    } else {
+        $stylesContent = Get-Content -Raw -Path $stylesPath
+    }
+
+    # Enhanced regex to match the :root{ } block more accurately
+    if ($stylesContent -match "(:root\s*{[^}]*})") {
+        # Replace the existing :root{} section
+        $newStylesContent = $stylesContent -replace "(:root\s*{[^}]*})", $variablesSection
+    } else {
+        # Prepend the new :root{} section if not found
+        $newStylesContent = "$variablesSection`n$stylesContent"
+    }
+
+    # Trim trailing whitespace from the content
+    $newStylesContent = $newStylesContent.TrimEnd()
+
+    # Backup current styles.css before writing new content
+    Copy-Item -Path $stylesPath -Destination $backupPath -Force
+
+    # Write to a temporary file to ensure content safety
+    $tempPath = "$stylesPath.tmp"
+    $newStylesContent | Set-Content -Path $tempPath
+
+    # Overwrite styles.css with temp file content
+    Move-Item -Path $tempPath -Destination $stylesPath -Force
+
+    Write-Output "Updated styles.css successfully."
+
+} catch {
+    Write-Output "An error occurred: $_"
+    # Restore from backup if something fails
+    if (Test-Path -Path $backupPath) {
+        Copy-Item -Path $backupPath -Destination $stylesPath -Force
+        Write-Output "Restored from backup."
+    }
 }
-# Trim trailing whitespace from the content
-$newStylesContent = $newStylesContent.TrimEnd()
-# Write the updated content back to styles.css
-$newStylesContent | Set-Content -Path $stylesPath   

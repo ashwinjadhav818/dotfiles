@@ -45,6 +45,7 @@ bars:
           "media",
           "weather",
           "wifi",
+          "wallpapers",
           "battery",
           "volume",
         ]
@@ -196,3 +197,26 @@ widgets:
         next_track: "\udb81\udcad"
         play: "\uf04b"
         pause: "\uf04c"
+  wallpapers:
+    type: "yasb.wallpapers.WallpapersWidget"
+    options:
+      label: "<span>\udb83\ude09</span>"
+      image_path: "D:\\Areas\\Wallpapers" # Example path to folder with images
+      change_automatically: false # Automatically change wallpaper
+      update_interval: 60 # If change_automatically is true, update interval in seconds
+      gallery:
+        enabled: false
+        blur: true
+        image_width: 220
+        image_per_page: 8
+        show_buttons: false
+        orientation: "portrait"
+        image_spacing: 8
+        lazy_load: true
+        lazy_load_delay: 80
+        lazy_load_fadein: 400
+        image_corner_radius: 20
+        enable_cache: false
+      run_after:
+        - "wal -s -t -e -q -n -i {image}"
+        - "powershell -ExecutionPolicy Bypass -File %HOME%/.config/yasb/scripts/wallpapers.ps1" 
