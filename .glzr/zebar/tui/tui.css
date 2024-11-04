@@ -74,7 +74,6 @@ body,
 }
 .network {
   margin-left: 12.5px;
-  margin-right: 10px;
 }
 .weather {
   margin-right: 12.5px;
@@ -238,7 +237,4 @@ button.workspace.false.false {
 .right,
 .center {
   transition: color 0.2s ease;
-}
-.network {
-    margin-right: 10px;
 }

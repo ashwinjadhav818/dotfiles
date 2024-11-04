@@ -6,12 +6,13 @@
   "focused": false,
   "resizable": false,
   "transparent": true,
-  "defaultPlacements": [
+  "presets": [
     {
+      "name": "default",
       "anchor": "top_left",
       "offsetX": "7px",
       "offsetY": "7px",
-      "width": "1906",
+      "width": "1906px",
       "height": "39px",
       "monitorSelection": {
         "type": "all"

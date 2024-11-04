@@ -1,12 +1,14 @@
 {
-  "htmlPath": "./index.html",
+  "$schema": "https://github.com/glzr-io/zebar/raw/v2.4.0/resources/widget-schema.json",
+  "htmlPath": "./tokyonight.html",
   "zOrder": "normal",
   "shownInTaskbar": false,
   "focused": false,
   "resizable": false,
   "transparent": true,
-  "defaultPlacements": [
+  "presets": [
     {
+      "name": "tokyonight",
       "anchor": "top_left",
       "offsetX": "0px",
       "offsetY": "0px",

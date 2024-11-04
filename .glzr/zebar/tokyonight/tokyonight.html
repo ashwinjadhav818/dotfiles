@@ -9,13 +9,17 @@
     <link rel="stylesheet" type="text/css" href="../normalize.css" />
 
     <!-- Custom styles. -->
-    <link rel="stylesheet" type="text/css" href="./tui.css" />
+    <link rel="stylesheet" type="text/css" href="./tokyonight.css" />
+
+    <!-- Add empty favicon to suppress not found errors. -->
+    <link rel="icon" href="data:;" />
+
     <!-- Allows React to be run buildless via "text/babel" script below. -->
     <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"
         integrity="sha256-aS0B0wnsaDByLfE16h4MDCP1fQFccysd1YWOcV+gbBo=" crossorigin="anonymous"></script>
 </head>
 
-<body> <!-- oncontextmenu="return false" -->
+<body>
     <div id="root"></div>
 
     <script type="text/babel" data-type="module">
@@ -30,9 +34,10 @@
             network: {type: 'network'},
             glazewm: {type: 'glazewm'},
             cpu: {type: 'cpu'},
-            date: {type: 'date', formatting: 'EEE  MMM d h:mm a'},
-            memory: {type: 'memory'},
+            date: {type: 'date', formatting: 'EEE d MMM'},
+            time: {type: 'date', formatting: 'HH:mm'},
             battery: {type: 'battery'},
+            memory: {type: 'memory'},
             weather: {type: 'weather'},
         });
 
@@ -40,30 +45,10 @@
 
         function App() {
             const [output, setOutput] = useState(providers.outputMap);
-            const [nowPlaying, setNowPlaying] = useState('');
 
             useEffect(() => {
-                // Update output data
                 providers.onOutput(() => setOutput(providers.outputMap));
-
-                // Check if glazewm has workspaces before accessing them
-                if (output.glazewm?.allWorkspaces) {
-                    const workspaces = output.glazewm.allWorkspaces;
-
-                    // Iterate through workspaces and their children to find Spotify
-                    workspaces.forEach((workspace) => {
-                        workspace.children?.forEach((child) => {
-                            if (child?.processName === "Spotify") {
-                                if (child.title === "Spotify Premium") {
-                                    setNowPlaying('');
-                                } else {
-                                    setNowPlaying(`${child.title}  |  `);
-                                }
-                            }
-                        });
-                    });
-                }
-            }, [output]);
+            }, []);
 
             // Get icon to show for current network status.
             function getNetworkIcon(networkOutput) {
@@ -95,25 +80,28 @@
                 }
             }
 
-            // Get the title of the current window.
-            function getTitle() {
-                return output.glazewm?.focusedContainer.type === 'window'
-                    ? output.glazewm?.focusedContainer.title?.substring(0, 50) || ''
-                    : '';
-            }
-
             // Get icon to show for how much of the battery is charged.
             function getBatteryIcon(batteryOutput) {
-                if (batteryOutput.chargePercent > 90)
-                    return <i className="nf nf-fa-battery_4"></i>;
-                if (batteryOutput.chargePercent > 70)
-                    return <i className="nf nf-fa-battery_3"></i>;
-                if (batteryOutput.chargePercent > 40)
-                    return <i className="nf nf-fa-battery_2"></i>;
-                if (batteryOutput.chargePercent > 20)
-                    return <i className="nf nf-fa-battery_1"></i>;
-                return <i className="nf nf-fa-battery_0"></i>;
+                const icons = [
+                    "nf nf-md-battery_alert",
+                    "nf nf-md-battery_20",
+                    "nf nf-md-battery_30",
+                    "nf nf-md-battery_40",
+                    "nf nf-md-battery_50",
+                    "nf nf-md-battery_60",
+                    "nf nf-md-battery_70",
+                    "nf nf-md-battery_80",
+                    "nf nf-md-battery_90",
+                    "nf nf-md-battery"
+                ];
+
+                if (batteryOutput.isCharging) {
+                    return <i className={`nf nf-md-battery_charging_${Math.ceil(batteryOutput.chargePercent / 10) * 10}`}></i>;
+                }
+
+                return <i className={icons[Math.max(0, Math.floor(batteryOutput.chargePercent / 10))]}></i>;
             }
+
 
             // Get icon to show for current weather status.
             function getWeatherIcon(weatherOutput) {
@@ -144,48 +132,10 @@
                         return <i className="nf nf-weather-night_alt_lightning"></i>;
                 }
             }
-            const processIcons = {
-                sublime_text: "nf nf-seti-sublime",
-                chrome: "nf nf-fa-chrome",
-                Spotify: "nf nf-md-spotify",
-                firefox: "nf nf-md-firefox",
-                Discord: "nf nf-fa-discord",
-                explorer: "nf nf-oct-file_directory",
-                Telegram: "nf nf-fa-telegram",
-                wezterm: "nf nf-oct-terminal",
-                cmd: "nf nf-oct-terminal",
-                pwsh: "nf nf-oct-terminal",
-                powershell: "nf nf-oct-terminal",
-                WindowsTerminal: "nf nf-oct-terminal",
-                ConEmu: "nf nf-oct-terminal",
-                ConEmu64: "nf nf-oct-terminal",
-                wezterm: "nf nf-oct-terminal",
-                'wezterm-gui': "nf nf-oct-terminal",
-                alacritty: "nf nf-oct-terminal",
-            };
-            function getWorkspaceIcon(workspace) {
-                // Replace these with your actual Nerd Font icon classes
-                // {getWorkspaceIcon(workspace)} instead of {workspace.displayName ?? workspace.name}
-                // <i className={focusedIconClass}></i> instead of <span>{workspace.displayName ?? workspace.name}</span>
-                const focusedIconClass = "nf nf-oct-dot_fill"; // Change to your focused icon class
-                const unfocusedIconClass = "nf nf-oct-dot"; // Change to your unfocused icon class
-
-                return workspace.hasFocus ? (
-                    <span>{workspace.displayName ?? workspace.name}</span>
-                ) : <span>{workspace.name}</span>;
-            }
 
             return (
                 <div className="app">
                     <div className="left">
-                        {/* Windows 11 Logo */}
-                        <div className="windows-logo">
-                            <div className="window"></div>
-                            <div className="window"></div>
-                            <div className="window"></div>
-                            <div className="window"></div>
-                        </div>
-
                         <i className="logo nf nf-custom-windows"></i>
                         {output.glazewm && (
                             <div className="workspaces">
@@ -199,75 +149,89 @@
                                         }
                                         key={workspace.name}
                                     >
-                                        {getWorkspaceIcon(workspace)}
+                                        {workspace.displayName ?? workspace.name}
                                     </button>
                                 ))}
                             </div>
                         )}
-                        <div className='icons'>
-                            <div
-                                className={`window-icon ${processIcons[output.glazewm?.focusedContainer.processName] ? 'has-icon' : ''
-                                    }`}
-                                style={{
-                                    marginRight: processIcons[output.glazewm?.focusedContainer.processName] ? '6px' : '0'
-                                }}
-                            >
-                                {/* Dynamically render icon based on process name */}
-                                {processIcons[output.glazewm?.focusedContainer.processName] && (
-                                    <i className={processIcons[output.glazewm?.focusedContainer.processName]}></i>
+                        {output.glazewm && (
+                            <>
+                                {output.glazewm.bindingModes.map((bindingMode) => (
+                                    <button className="binding-mode" key={bindingMode.name}>
+                                        {bindingMode.displayName ?? bindingMode.name}
+                                    </button>
+                                ))}
+
+                                <button
+                                    className={`tiling-direction nf ${output.glazewm.tilingDirection === "horizontal" ? "nf-md-swap_horizontal" : "nf-md-swap_vertical"}`}
+                                    onClick={() =>
+                                        output.glazewm.runCommand("toggle-tiling-direction")
+                                    }
+                                ></button>
+                            </>
+                        )}
+                        {output.glazewm && (
+                            <>
+                                {output.glazewm.focusedWorkspace.children.map(
+                                    (window) =>
+                                        window.hasFocus && (
+                                            <div key={window.id}>
+                                                {window.title?.substring(0, 50) ?? 'No title'}
+                                            </div>
+                                        )
                                 )}
-                            </div>
-                        </div>
-                        <div className='window-name'>
-                            {getTitle()}
-                        </div>
+                            </>
+                        )}
+
                     </div>
 
                     <div className="center">
-                        <div id="now-playing">
-                            <i className="ti ti-music"></i> {nowPlaying}
+                        <div className="date">
+                            <i className="nf nf-fa-calendar"></i>
+                            {output.date?.formatted}
                         </div>
-                        {output.date?.formatted}
-                    </div>
+                        <div className="time">
+                            <i className="nf nf-weather-time_10"></i>
+                            {output.time?.formatted}
+                        </div>                    </div>
 
                     <div className="right">
                         {output.weather && (
                             <div className="weather">
                                 {getWeatherIcon(output.weather)}
-                                {Math.round(output.weather.celsiusTemp)}°
+                                {Math.round(output.weather.celsiusTemp)}°C
                             </div>
                         )}
+
+                        {output.network && (
+                            <div className="network">
+                                {getNetworkIcon(output.network)}
+                            </div>
+                        )}
+
                         {output.cpu && (
                             <div className="cpu">
                                 <i className="nf nf-oct-cpu"></i>
-                                <div className="fixed-container">
-                                    <span className={`value ${output.cpu.usage > 85 ? 'high-usage' : ''}`}>
-                                        {Math.round(output.cpu.usage)}%
-                                    </span>
-                                </div>
+
+                                {/* Change the text color if the CPU usage is high. */}
+                                <span
+                                    className={output.cpu.usage > 85 ? 'high-usage' : ''}
+                                >
+                                    {Math.round(output.cpu.usage)}%
+                                </span>
                             </div>
                         )}
                         {output.memory && (
                             <div className="memory">
                                 <i className="nf nf-fae-chip"></i>
-                                <div className="fixed-container">
-                                    <span className="value">{Math.round(output.memory.usage)}%</span>
-                                </div>
+                                {Math.round(output.memory.usage)}%
                             </div>
                         )}
+
                         {output.battery && (
                             <div className="battery">
-                                {/* Show icon for whether battery is charging. */}
-                                {output.battery.isCharging && (
-                                    <i className="nf nf-md-power_plug charging-icon"></i>
-                                )}
                                 {getBatteryIcon(output.battery)}
                                 {Math.round(output.battery.chargePercent)}%
-                            </div>
-                        )}
-                        {output.network && (
-                            <div className="network">
-                                {getNetworkIcon(output.network)}
                             </div>
                         )}
                     </div>
