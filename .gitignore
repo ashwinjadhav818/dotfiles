@@ -5,3 +5,4 @@ thumbs.db
 *.log
 tmp-*/
 lazy-lock.json
+/.config/scoop
