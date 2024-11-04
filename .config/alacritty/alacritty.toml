@@ -1,13 +1,14 @@
+[general]
 import = [
   "C:\\Users\\Ashwin\\AppData\\Local\\npm-cache\\_npx\\808b709e6234a442\\node_modules\\alacritty-themes\\themes\\Tokyonight_Night.toml"
 ]
 
-[shell]
-program = "C:\\Users\\Ashwin\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
-args = ["-wd ~"]
+[terminal]
+shell = { program = "C:\\Users\\Ashwin\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe", args = ["-NoExit", "-WorkingDirectory", "~", "-NoProfileLoadTime", "-NoLogo"] }
 
 [window]
 dynamic_title = false
+decorations = "None"
 opacity = 0.5
   [window.padding]
   x = 7
@@ -16,13 +17,13 @@ opacity = 0.5
 [font]
 size = 12
   [font.normal]
-  family = "Liga SFMono Nerd Font"
+  family = "GeistMono Nerd Font"
   style = "Regular"
 
   [font.bold]
-  family = "Liga SFMono Nerd Font"
+  family = "GeistMono Nerd Font"
   style = "Bold"
 
   [font.italic]
-  family = "Liga SFMono Nerd Font"
+  family = "GeistMono Nerd Font"
   style = "Italic"
