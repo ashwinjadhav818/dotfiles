@@ -42,10 +42,8 @@ for k, v in pairs(options) do
 end
 
 -- Neovide Config
-vim.g.neovide_window_blurred = true
 vim.g.neovide_transparency = 0.4
-vim.g.neovide_floating_blur_amount_x = 2.0
-vim.g.neovide_floating_blur_amount_y = 2.0
+vim.opt.winblend = 70
 
 -- vim.opt.shortmess = "ilmnrx"                        -- flags to shorten vim messages, see :help 'shortmess'
 vim.opt.shortmess:append "c"                           -- don't give |ins-completion-menu| messages
