@@ -1,20 +1,30 @@
 ;; defsrc is still necessary
 (defcfg
-  process-unmapped-keys true
+  process-unmapped-keys false
 )
 
+
 (defsrc
-  caps w a s d f j k l ; [ lalt
+  esc   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12   prtsc   slck  pause
+  grv   1    2    3    4    5    6    7    8    9    0    -    =     bspc    ins home pgup      nlck  kp/  kp*  kp-
+  tab   q    w    e    r    t    y    u    i    o    p    [    ]     \       del end  pgdn      kp7   kp8  kp9  kp+
+  caps  a    s    d    f    g    h    j    k    l    ;    '     ret                             kp4   kp5  kp6
+  lsft  z    x    c    v    b    n    m    ,    .    /     rsft                   up            kp1   kp2  kp3  kprt
+  lctl  lmet lalt           spc               ralt  rmet  rctl             left  down  right    kp0        kp.
 )
 
 (defvar
-  tap-time 300
+  tap-time 200
   hold-time 300
 )
 
 (defalias
+  ;; REMAPS
   cap (tap-hold $tap-time $hold-time esc caps)
+  ent (tap-hold $tap-time $hold-time ' enter)
+  [ (tap-hold $tap-time $hold-time [ bspc)
 
+  ;; HOME ROW MODS
   a (tap-hold $tap-time $hold-time a lalt)
   s (tap-hold $tap-time $hold-time s lsft)
   d (tap-hold $tap-time $hold-time d lctl)
@@ -25,18 +35,54 @@
   l (tap-hold $tap-time $hold-time l rsft)
   ; (tap-hold $tap-time $hold-time ; lalt)
 
-  [ (tap-hold $tap-time $hold-time [ bspc)
-
-  arr (layer-switch arrows)
-
+  ;; LAYERS 
   bse (layer-switch base)
+  arr (layer-toggle arrows)
+  wm (layer-switch windowmanager)
+
+  ;; TOGGLE LAYERS
+  w (tap-hold $tap-time $hold-time w @wm)
+
+  ;; WINDOW MANAGER
+  wk1 (tap-hold $tap-time $hold-time (multi lmet 1 reverse-release-order) 1)
+  wk2 (tap-hold $tap-time $hold-time (multi lmet 2 reverse-release-order) 2)
+  wk3 (tap-hold $tap-time $hold-time (multi lmet 3 reverse-release-order) 3)
+  wk4 (tap-hold $tap-time $hold-time (multi lmet 4 reverse-release-order) 4)
+  wk5 (tap-hold $tap-time $hold-time (multi lmet 5 reverse-release-order) 5)
+  wk6 (tap-hold $tap-time $hold-time (multi lmet 6 reverse-release-order) 6)
+  wk7 (tap-hold $tap-time $hold-time (multi lmet 7 reverse-release-order) 7)
+  wk8 (tap-hold $tap-time $hold-time (multi lmet 8 reverse-release-order) 8)
+  wk9 (tap-hold $tap-time $hold-time (multi lmet 9 reverse-release-order) 9)
+
+  mw (tap-hold $tap-time $hold-time q (multi lmet lsft))
+
+  wfu (tap-hold $tap-time $hold-time (multi lmet w reverse-release-order) w) 
 )
 
 (deflayer base
-  @cap w @a @s @d @f @j @k @l @; @[ @arr
+  _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
+  _     _    _    _    _    _    _    _    _    _    _    -    =     _       _    _    _         _     _    _    _
+  _     _    @w   _    _    _    _    _    _    _    _    @[   _     _       _    _    _         _     _    _    _
+  @cap  @a   @s   @d   @f   _    _    @j   @k   @l   @;   @ent _                                 _     _    _
+  _     _    _    _    _    _    _    _    _    _    _    _                        _             _     _    _    _
+  _     _    @arr           _              _    _    _                        _    _     _       _          _
 )
 
 (deflayer arrows
-  caps up left down right f j k l ; [ @bse
+  _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
+  _     _    _    _    _    _    _    _    _    _    _    -    =     _       _    _    _         _     _    _    _
+  _     pgup up   pgdn C-tab _   _    _    _    _    _    @[   _     _       _    _    _         _     _    _    _
+  @cap  left down right @f   _   _    @j   @k   @l   @;   @ent _                                 _     _    _
+  _     _    @bse   _   _    _   _    _   _    _    _    _                        _              _     _    _    _
+  _     _    _              _             _    _    _                        _    _     _        _          _
 )
 
+
+(deflayer windowmanager
+  _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
+  _     @wk1 @wk2 @wk3 @wk4 @wk5 @wk6 @wk7 @wk8 @wk9 _    -    =     _       _    _    _         _     _    _    _
+  _     @mw  @bse _    _    _    _    _    _    _    _    @[   _     _       _    _    _         _     _    _    _
+  @cap  @a   @s   @d   @f   _    _    @j   @k   @l   @;   @ent _                                 _     _    _
+  _     _    _    _    _    _    _    _    _    _    _    _                        _             _     _    _    _
+  _     _    _              _              _    _    _                        _    _     _       _          _
+)
