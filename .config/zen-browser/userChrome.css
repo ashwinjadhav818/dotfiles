@@ -1,0 +1,285 @@
+@media not (-moz-bool-pref: 'zen.view.compact') {
+  @media not (-moz-bool-pref: 'zen.tabs.vertical.right-side') {
+    /* Set explicit minimum on overall window sizes */
+    :root {
+      min-width: 800px !important;
+      min-height: 460px !important;
+    }
+
+    /* Window Controls Positioning and Styling */
+    .titlebar-buttonbox-container {
+      position: absolute;
+      width: 100vw;
+      left: 0;
+      z-index: 1;
+      display: flex !important;
+      padding: 6px 3px 3px 5px;
+    }
+
+    .titlebar-buttonbox {
+      position: absolute;
+      left: 5px;
+      display: flex;
+      margin-right: 20px;
+    }
+
+    /* Window Control Buttons Styling */
+    .titlebar-button {
+      padding: 0px !important;
+      min-height: 13px !important;
+      min-width: 13px !important;
+      align-self: center;
+      margin-left: 6px !important;
+      border-radius: 50px;
+      transition: all 100ms;
+    }
+
+    .titlebar-min {
+      background-color: hsl(130, 50%, 40%) !important;
+    }
+
+    .titlebar-max, .titlebar-restore {
+      background-color: hsl(60, 50%, 50%) !important;
+    }
+
+    .titlebar-close {
+      background-color: hsl(0, 50%, 50%) !important;
+    }
+
+    .titlebar-button > image {
+      visibility: collapse !important;
+    }
+
+    @media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
+      .titlebar-button:hover {
+        opacity: 0.25 !important;
+      }
+    }
+
+    @media not (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
+      .titlebar-button {
+        background-color: var(--zen-colors-border) !important;
+      }
+      
+      .titlebar-min:hover {
+        background-color: hsl(130, 50%, 40%) !important;
+      }
+      .titlebar-max:hover, .titlebar-restore:hover {
+        background-color: hsl(60, 50%, 50%) !important;
+      }
+      .titlebar-close:hover {
+        background-color: hsl(0, 50%, 50%) !important;
+      }
+      
+      .titlebar-button:hover {
+        min-height: 20px !important;
+      }
+    }
+    
+    /* Make items belonging to the content/nav area visible when positioned outside */
+    #zen-appcontent-wrapper {
+      overflow: visible;
+    }
+    
+    /* Sidebar - Add Space for URL Bar */
+    #TabsToolbar {
+      padding-top: 38px;
+      margin-top: 8px;
+    }
+  
+    /* Content Area Styling - Add Shadow */
+    .browserContainer {
+      box-shadow: 0 0px 5px 2px rgb(0 0 0 / 0.1);
+    }
+    
+    /* Navigation area containers */
+    #zen-appcontent-navbar-container {
+      container-type: inline-size;
+      height: var(--zen-element-separation);
+      z-index: 1;
+    }
+    
+    #nav-bar {
+      --sidebar-width: calc(100vw - 100cqw);
+      width: var(--sidebar-width);
+      container-name: sidebar;
+      container-type: inline-size;
+      overflow: visible !important;
+      position: fixed !important;
+      right: calc(100cqw);
+    }
+
+    /* Hide additional chrome elements */
+    #nav-bar .chromeclass-toolbar-additional:not(#back-button, #forward-button, #stop-reload-button) {
+      display: none;
+    }
+    
+    /* User Setting - Maintain Default Sidebar Width */
+    @media (-moz-bool-pref: "ark-left.maintain-default-sidebar-width") {
+      #navigator-toolbox {
+        min-width: 215px !important;
+        max-width: 215px !important;
+      }
+      
+      #zen-sidebar-splitter {
+        pointer-events: none;
+      }
+    }
+    
+    /* Hide Navbar Buttons */
+    #preferences-button, #zen-expand-sidebar-button, #zen-profile-button {
+      display: none;
+    }
+    
+    /* Hide Three Dots */
+    #PanelUI-button {
+      opacity: 0%;
+      pointer-events: none;
+    }
+    
+    /* Navigation Buttons */
+    #back-button, #forward-button, #stop-reload-button {
+      position: fixed;
+      top: var(--zen-element-separation);
+      z-index: 2;
+      pointer-events: auto !important;
+    }
+    
+    #back-button {
+      right: 90px;
+    }
+    
+    #forward-button {
+      right: 55px;
+    }
+    
+    #stop-reload-button {
+      right: 20px;
+    }
+    
+    /* Hide Bookmarks Bar */
+    #PersonalToolbar {
+      display: none;
+    }
+
+    /* Hide on Resize - Under 185px */
+    @container sidebar (max-width: 185px) {
+      #stop-reload-button {
+        visibility: hidden;
+      }
+      
+      #back-button {
+        right: 65px;
+      }
+    
+      #forward-button {
+        right: 15px;
+      }
+    }
+  
+    /* URL Bar Styling */
+    #urlbar-container {
+      position: fixed !important;
+      top: 42px;
+      left: 6px;
+      width: calc(100% - 15px) !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      z-index: 1;
+    }
+
+    #urlbar-input {
+      padding-left: 10px !important;
+    }
+    
+    #zen-appcontent-wrapper {
+      overflow: visible !important;
+    }
+    
+    #navigator-toolbox {
+      padding-top: 38px !important;
+    }
+    
+    #urlbar {
+      box-shadow: none;
+      height: 35px;
+    }
+    
+    #urlbar:not([focused="true"]):not([breakout-extend="true"]) > #urlbar-background {
+      background: color-mix(in srgb, var(--tab-hover-background-color) 80%, transparent) !important;
+    }
+     
+    .urlbarView-body-outer, .urlbarView-body-inner {
+      box-sizing: border-box;
+    }
+    
+    #urlbar-input {
+      font-weight: 400;
+      font-size: 0.95em;
+      padding-left: 10px;
+      color: color-mix(in srgb, currentColor 65%, transparent);
+    }
+    
+    #urlbar [id$="-box"] {
+      display: none;
+    }
+    
+    @media (-moz-bool-pref: "ark-left.hide-http-warning-icon") {
+      #urlbar [id$="-box"]:has(#identity-icon[tooltiptext="Connection is not secure"]) {
+        display: inherit;
+        margin-right: 0px !important;
+      }
+    }
+    
+    label[value="Not Secure"] {
+      display: none;
+    }
+    
+    #identity-icon[tooltiptext="Connection is not secure"] {
+      color: #D46955;
+    }
+    
+    #urlbar [id$="-button"]:not(#reader-mode-button) {
+      display: none;
+    }
+    
+    #urlbar [id$="-container"] {
+      display: none;
+    }
+    
+    #nav-bar #PanelUI-button {
+      position: absolute;
+      top: var(--zen-element-separation);
+      left: 248px !important;
+    }
+    
+    #unified-extensions-panel {
+      animation: ease-in-out;
+      transition-duration: 0.13s;
+    }
+    
+    #customizationui-widget-panel {
+      border-radius: var(--zen-border-radius);
+      animation: ease-in-out;
+      transition-duration: 0.13s;
+    }
+  
+    #window-modal-dialog {
+      height: 100vh;
+      max-height: 100%;
+    }
+    
+    #window-modal-dialog .dialogTemplate {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    #window-modal-dialog .dialogBox {
+      &:not(.spotlightBox) {
+        box-shadow: 0 0px 35px 35px rgb(0 0 0 / 0.2);
+      }
+    }
+  }
+}

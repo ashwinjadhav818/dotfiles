@@ -95,4 +95,6 @@ sudo New-Item -Path $HOME\.bashrc -ItemType SymbolicLink -Value $HOME\.dotfiles\
 sudo New-Item -Path $HOME\.glzr -ItemType SymbolicLink -Value $HOME\.dotfiles\.glzr
 
 sudo New-Item -Path $Env:AppData\alacritty\alacritty.toml -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\alacritty\alacritty.toml
+
+sudo New-Item -Path $Env:AppData\zen\<Profile_Name>\chrome\userChrome.cs -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\zen-browser\userChrome.css
 ```
