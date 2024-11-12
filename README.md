@@ -2,12 +2,26 @@
 
 ![Cover](./assets/cover.png)
 
+<details>
+  <summary>More Screenshots</summary>
+
+  #### GlazeWM + Zebar
+  ![GlazeWM + Zebar 1](./assets/glazewm+zebar1.png)
+  ![GlazeWM + Zebar 2](./assets/glazewm+zebar2.png)
+
+  #### Zen Browser
+  ![Zen Browser](./assets/zen-browser.png)
+</details>
+
 ## Configurations
 
 -  vim (NeoVim & LunarVim)
    -  Plugins are managed with [Lazy](https://github.com/folke/lazy.nvim.git")
+-  doom emacs
+-  bas
 -  fish
 -  zsh
+-  oh-my-zsh
 -  powerlevel10k
 -  powershell
 -  tmux
@@ -15,9 +29,13 @@
 -  zebar
 -  komorebi
 -  yasb
+-  kanata
+-  tacky-borders
 -  alacritty
 -  wezterm
 -  hyper
+-  winfetch
+-  zen-browser
 
 ### Vim (NeoVim & LunarVim) config
 
@@ -77,7 +95,7 @@ stow .
 
 1. Clone this repository to your home directory.
 
-```bash
+```pwsh
 # Using gh
 gh repo clone ashwinjadhav818/dotfiles $HOME\.dotfiles
 
@@ -87,7 +105,7 @@ git clone https://github.com/ashwinjadhav818/dotfiles.git $HOME\.dotfiles
 
 2. Create symlinks in the Home directory to the real files in the repo.
 
-```bash
+```pwsh
 sudo New-Item -Path $HOME\.config\ -ItemType SymbolicLink -Value $HOME\.dotfiles\.config\
 
 sudo New-Item -Path $HOME\.bashrc -ItemType SymbolicLink -Value $HOME\.dotfiles\.bashrc
