@@ -1,0 +1,5 @@
+border_size: 4
+border_offset: -1
+border_radius: -1.0
+active_color: accent
+inactive_color: accent
