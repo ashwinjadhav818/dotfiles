@@ -1,7 +1,7 @@
 {
   "$schema": "https://github.com/glzr-io/zebar/raw/v2.4.0/resources/widget-schema.json",
   "htmlPath": "./tokyonight.html",
-  "zOrder": "normal",
+  "zOrder": "top_most",
   "shownInTaskbar": false,
   "focused": false,
   "resizable": false,
@@ -9,7 +9,7 @@
   "presets": [
     {
       "name": "tokyonight",
-      "anchor": "top_left",
+      "anchor": "top_center",
       "offsetX": "0px",
       "offsetY": "0px",
       "width": "100%",
