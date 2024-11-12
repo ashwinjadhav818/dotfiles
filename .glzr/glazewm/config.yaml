@@ -27,7 +27,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '57px'
+    top: '50px'
     right: '10px'
     bottom: '10px'
     left: '10px'
@@ -109,13 +109,13 @@ binding_modes:
   - name: 'resize'
     keybindings:
       - commands: ['resize --width -2%']
-        bindings: ['a', 'left']
+        bindings: ['h', 'left']
       - commands: ['resize --width +2%']
-        bindings: ['d', 'right']
+        bindings: ['l', 'right']
       - commands: ['resize --height +2%']
-        bindings: ['w', 'up']
+        bindings: ['k', 'up']
       - commands: ['resize --height -2%']
-        bindings: ['s', 'down']
+        bindings: ['j', 'down']
       # Press enter/escape to return to default keybindings.
       - commands: ['wm-disable-binding-mode --name resize']
         bindings: ['escape', 'enter']
@@ -130,23 +130,23 @@ binding_modes:
 keybindings:
   # Shift focus in a given direction.
   - commands: ['focus --direction left']
-    bindings: ['lwin+a']
+    bindings: ['lwin+h']
   - commands: ['focus --direction right']
-    bindings: ['lwin+d']
+    bindings: ['lwin+l']
   - commands: ['focus --direction up']
-    bindings: ['lwin+w']
+    bindings: ['lwin+k']
   - commands: ['focus --direction down']
-    bindings: ['lwin+s']
+    bindings: ['lwin+j']
 
   # Move focused window in a given direction.
   - commands: ['move --direction left']
-    bindings: ['lwin+shift+a']
+    bindings: ['lwin+shift+h']
   - commands: ['move --direction right']
-    bindings: ['lwin+shift+d']
+    bindings: ['lwin+shift+l']
   - commands: ['move --direction up']
-    bindings: ['lwin+shift+w']
+    bindings: ['lwin+shift+k']
   - commands: ['move --direction down']
-    bindings: ['lwin+shift+s']
+    bindings: ['lwin+shift+j']
 
   # Resize focused window by a percentage or pixel amount.
   # - commands: ['resize --width -2%']
@@ -175,7 +175,7 @@ keybindings:
 
   # Change focus from tiling windows -> floating -> fullscreen.
   - commands: ['wm-cycle-focus']
-    bindings: ['lwin+shift+t']
+    bindings: ['lwin+alt+t']
 
   # Change the focused window to be floating.
   - commands: ['toggle-floating --centered']
@@ -187,19 +187,16 @@ keybindings:
 
   # Change the focused window to be fullscreen.
   - commands: ['toggle-fullscreen']
-    bindings: ['lwin+shift+g']
+    bindings: ['lwin+shift+t']
 
-  # Minimize focused window.
+  # Minimize rocused window.
   - commands: ['toggle-minimized']
     bindings: ['alt+m']
 
-  # Close focused window.
   - commands: ['close']
     bindings: ['lwin+q']
 
-  # Kill GlazeWM process safely.
-  - commands: ['wm-exit']
-    bindings: ['alt+shift+e']
+  # Kill GlazeWM process sat+e']
 
   # Re-evaluate configuration file.
   - commands: ['wm-reload-config']
@@ -242,13 +239,13 @@ keybindings:
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
   - commands: ['move-workspace --direction left']
-    bindings: ['lwin+ctrl+shift+a']
+    bindings: ['lwin+ctrl+shift+h']
   - commands: ['move-workspace --direction right']
-    bindings: ['lwin+ctrl+shift+d']
+    bindings: ['lwin+ctrl+shift+l']
   - commands: ['move-workspace --direction up']
-    bindings: ['lwin+ctrl+shift+w']
+    bindings: ['lwin+ctrl+shift+k']
   - commands: ['move-workspace --direction down']
-    bindings: ['lwin+ctrl+shift+s']
+    bindings: ['lwin+ctrl+shift+j']
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ['move --workspace 1', 'focus --workspace 1']
