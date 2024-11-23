@@ -44,34 +44,12 @@ body,
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   height: 100%;
-  padding: 4px 1.5vw;
+  padding: 4px 20px;
 }
 
-.left,
-.center,
-.right {
+.left {
   display: flex;
   align-items: center;
-}
-
-.center {
-  justify-self: center;
-}
-
-.right {
-  justify-self: end;
-}
-
-.logo,
-.binding-mode,
-.tiling-direction,
-.date,
-.weather,
-.network,
-.memory,
-.cpu,
-.media {
-  margin-right: 20px;
 }
 
 .workspaces {
@@ -118,56 +96,4 @@ body,
 
 .binding-mode {
   margin-right: 4px;
-}
-
-.cpu .high-usage {
-  color: var(--bright-red);
-}
-
-/* ICONS */
-i {
-  margin-right: 7px;
-}
-
-.logo {
-  color: var(--blue);
-}
-
-.date i {
-    margin-bottom: 2px;
-  color: var(--yellow);
-}
-.time i {
-  color: var(--magenta);
-}
-
-.network i {
-  color: var(--yellow);
-}
-.network i {
-  margin: 0;
-}
-
-.media i {
-  color: var(--green);
-}
-
-.weather {
-  margin-bottom: 2px;
-}
-.weather i {
-  color: var(--cyan);
-  font-size: 16px;
-}
-
-.cpu i {
-  color: var(--red);
-}
-
-.memory i {
-  color: var(--blue);
-}
-
-.battery i {
-  color: var(--green);
 }

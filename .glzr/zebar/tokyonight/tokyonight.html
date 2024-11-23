@@ -11,9 +11,6 @@
     <!-- Custom styles. -->
     <link rel="stylesheet" type="text/css" href="./tokyonight.css" />
 
-    <!-- Add empty favicon to suppress not found errors. -->
-    <link rel="icon" href="data:;" />
-
     <!-- Allows React to be run buildless via "text/babel" script below. -->
     <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"
         integrity="sha256-aS0B0wnsaDByLfE16h4MDCP1fQFccysd1YWOcV+gbBo=" crossorigin="anonymous"></script>
@@ -37,6 +34,7 @@
             date: {type: 'date', formatting: 'EEE d MMM'},
             time: {type: 'date', formatting: 'HH:mm'},
             battery: {type: 'battery'},
+            media: {type: 'media'},
             memory: {type: 'memory'},
             weather: {type: 'weather'},
         });
@@ -196,6 +194,13 @@
                         </div>                    </div>
 
                     <div className="right">
+                        {output.media && output.media.session && (
+                            <div className="media">
+                                <i className="nf nf-md-television_play"></i>
+                                {output.media.session.title?.substring(0, 30)} - {output.media.session.artist}
+                            </div>
+                        )}
+
                         {output.weather && (
                             <div className="weather">
                                 {getWeatherIcon(output.weather)}
