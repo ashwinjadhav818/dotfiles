@@ -43,7 +43,7 @@ end
 
 -- Neovide Config
 vim.g.neovide_transparency = 0.4
-vim.opt.winblend = 70
+-- vim.opt.winblend = 70
 
 -- vim.opt.shortmess = "ilmnrx"                        -- flags to shorten vim messages, see :help 'shortmess'
 vim.opt.shortmess:append "c"                           -- don't give |ins-completion-menu| messages

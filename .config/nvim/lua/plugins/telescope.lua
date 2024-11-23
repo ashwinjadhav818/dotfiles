@@ -18,7 +18,7 @@ return {
                 defaults = {
                     -- `hidden = true` is not supported in text grep commands.
                     vimgrep_arguments = vimgrep_arguments,
-                    winblend = 70
+                    -- winblend = 70
                 },
                 pickers = {
                     find_files = {

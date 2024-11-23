@@ -23,18 +23,17 @@ return {
                     functions = {},
                     variables = {},
                     -- Background styles. Can be "dark", "transparent" or "normal"
-                    sidebars = "transparent",     -- style for sidebars, see below
-                    floats = "transparent"        -- style for floating windows
+                    sidebars = "transparent",            -- style for sidebars, see below
+                    floats = "transparent"               -- style for floating windows
                 },
-                sidebars = { "qf", "help", "NvimTree" },      -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
-                day_brightness = 0.3,             -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
-                hide_inactive_statusline = false, -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
-                dim_inactive = false,             -- dims inactive windows
-                lualine_bold = false,             -- When `true`, section headers in the lualine theme will be bold
+                sidebars = { "qf", "help", "NvimTree" }, -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
+                day_brightness = 0.3,                    -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+                hide_inactive_statusline = false,        -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
+                dim_inactive = false,                    -- dims inactive windows
+                lualine_bold = false,                    -- When `true`, section headers in the lualine theme will be bold
             })
-                
-            vim.cmd.colorscheme "tokyonight-night"
 
+            vim.cmd.colorscheme "tokyonight-night"
         end
     },
     {
@@ -53,7 +52,7 @@ return {
                 show_end_of_buffer = false,    -- shows the '~' characters after the end of buffers
                 term_colors = false,           -- sets terminal colors (e.g. `g:terminal_color_0`)
                 dim_inactive = {
-                    enabled = false,            -- dims the background color of inactive window
+                    enabled = false,           -- dims the background color of inactive window
                     shade = "dark",
                     percentage = 0.15,         -- percentage of the shade to apply to the inactive window
                 },
@@ -116,7 +115,7 @@ return {
                 invert_tabline = false,
                 invert_intend_guides = false,
                 inverse = true, -- invert background for search, diffs, statuslines and errors
-                contrast = "", -- can be "hard", "soft" or empty string
+                contrast = "",  -- can be "hard", "soft" or empty string
                 palette_overrides = {},
                 overrides = {},
                 dim_inactive = false,
@@ -124,5 +123,13 @@ return {
             })
             -- vim.cmd.colorscheme "gruvbox"
         end
+    },
+    {
+        "craftzdog/solarized-osaka.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {
+            transparent= true,
+        },
     }
 }
