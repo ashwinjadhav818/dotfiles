@@ -11,6 +11,11 @@ Launch_App2::^!+p ; Launches Notion
     Send("{Blind}{vkE8}")
 }
 
+#D::
+{
+   Send("{Blind}{vkE8}")
+}
+
 Pause::
 {
     Sleep(500) ; Wait for 0.5 second
