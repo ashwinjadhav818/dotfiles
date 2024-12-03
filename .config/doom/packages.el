@@ -48,3 +48,8 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+(use-package lazygit
+  :commands (lazygit)
+  :config
+  (lazygit-global-mode 1)
+  (bind-key "SPC g g" 'lazygit))
