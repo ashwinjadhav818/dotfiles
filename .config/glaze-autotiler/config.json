@@ -1,0 +1,13 @@
+{
+    "layouts": {
+        "dwindle": {
+            "display_name": "Dwindle Layout",
+            "enabled": true
+        },
+        "master_stack": {
+            "display_name": "Master Stack",
+            "enabled": true
+        }
+    },
+    "default_layout": "dwindle"
+}
