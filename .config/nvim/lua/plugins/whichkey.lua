@@ -55,17 +55,6 @@ return { {
             { "<Leader>bse", "<cmd>BufferLineSortByExtension<CR>",                desc = "Sort by extension" },
             { "<Leader>bsr", "<cmd>BufferLineSortByRelativeDirectory<CR>",        desc = "Sort by relative dir" },
 
-            -- CODE
-            { "<leader>c",   group = "Code" },
-            { "<leader>co",  "<cmd>lua vim.lsp.buf.formatting()<CR>",             desc = "Format Code" },
-            { "<leader>cv",  "<cmd>lua vim.lsp.buf.rename()<CR>",                 desc = "Rename Symbol" },
-            { "<leader>ca",  "<cmd>lua vim.lsp.buf.code_action()<CR>",            desc = "Code Action" },
-            { "<leader>cr",  "<cmd>lua vim.lsp.buf.references()<CR>",             desc = "Show References" },
-            { "<leader>ci",  "<cmd>lua vim.lsp.buf.definition()<CR>",             desc = "Go to Definition" },
-            { "<leader>ch",  "<cmd>lua vim.lsp.buf.hover()<CR>",                  desc = "Hover Documentation" },
-            { "<leader>ct",  "<cmd>lua vim.lsp.buf.type_definition()<CR>",        desc = "Type Definition" },
-            { "<leader>cf",  "<cmd>lua vim.lsp.buf.formatting()<CR>",             desc = "Format Document" },
-
             -- GIT
             { "<leader>g",   group = "Git" },
             { "<leader>gg",  "<cmd>lua _Lazygit_toggle()<CR>",                    desc = "Lazygit" },
