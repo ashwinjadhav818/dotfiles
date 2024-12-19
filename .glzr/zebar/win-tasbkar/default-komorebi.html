@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Base styles for better consistency across platforms (aka. CSS reset). -->
+    <link rel="stylesheet" type="text/css" href="../normalize.css" />
+
+    <!-- Custom styles. -->
+    <link rel="stylesheet" type="text/css" href="./default.css" />
+
+    <!-- Allows React to be run buildless via "text/babel" script below. -->
+    <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"
+        integrity="sha256-aS0B0wnsaDByLfE16h4MDCP1fQFccysd1YWOcV+gbBo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel" data-type="module">
+        import React, {
+            useState,
+            useEffect,
+        } from 'https://esm.sh/react@18?dev';
+        import {createRoot} from 'https://esm.sh/react-dom@18/client?dev';
+        import * as zebar from 'https://esm.sh/zebar@2';
+
+        const providers = zebar.createProviderGroup({
+            komorebi: {type: 'komorebi'},
+        });
+
+        createRoot(document.getElementById('root')).render(<App />);
+
+function App() {
+    const [output, setOutput] = useState(providers.outputMap);
+
+    useEffect(() => {
+        const unsubscribe = providers.onOutput(() => setOutput(providers.outputMap));
+        return () => unsubscribe();
+    }, [providers]);
+
+    // Get the focused window for the currently focused workspace
+    const getFocusedWindow = (workspace) => {
+        // Get the focused container for the workspace
+        const focusedContainer = workspace.tilingContainers[workspace.focusedContainerIndex];
+
+        if (focusedContainer && focusedContainer.windows.length > 0) {
+            // Get the focused window from the container
+            const focusedWindow = focusedContainer.windows[0]; // Assuming the first window in the container is focused
+            return focusedWindow ? focusedWindow.title : "No focused window";
+        }
+        return "No focused window";
+    };
+
+    const focusedWorkspace = output.komorebi?.currentWorkspaces?.find(workspace =>
+        workspace.name === output.komorebi.focusedWorkspace.name
+    );
+
+    // Get the focused window from the currently focused workspace
+    const focusedWindow = focusedWorkspace ? getFocusedWindow(focusedWorkspace) : "No focused window";
+
+    return (
+        <div className="app">
+            <div className="left">
+                {output.komorebi?.currentWorkspaces && (
+                    <>
+                    <div className="workspaces">
+                  {output.komorebi.currentWorkspaces.map(workspace => (
+                    <button
+                      className={`workspace ${workspace.name === output.komorebi.focusedWorkspace.name && 'focused'}`}
+                      key={workspace.name}
+                    >
+                      {workspace.name}
+                    </button>
+                  ))}
+                </div>
+
+                <div className="focused-window">
+                    {focusedWindow?.substring(0, 50)}
+                </div>
+            </>
+                )}
+            </div>
+        </div>
+    );
+}
+</script>
+</body>
+
+</html>
