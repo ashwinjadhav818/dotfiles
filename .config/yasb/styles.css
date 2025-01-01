@@ -1,256 +1,285 @@
 :root {
-    --backgroundcol: #14151e;
-    --foregroundcol: #c4c4c6;
-    --cursorcol: #c4c4c6;
-    --colors0: #14151e;
-    --colors1: #837C8F;
-    --colors2: #7B859E;
-    --colors3: #7EA3C1;
-    --colors4: #8896B2;
-    --colors5: #8FB1D6;
-    --colors6: #94C9E5;
-    --colors7: #c4c4c6;
-    --colors8: #5e5e73;
-    --colors9: #837C8F;
-    --colors10: #7B859E;
-    --colors11: #7EA3C1;
-    --colors12: #8896B2;
-    --colors13: #8FB1D6;
-    --colors14: #94C9E5;
-    --colors15: #c4c4c6;
+    --backgroundcol: #101c20;
+    --foregroundcol: #c3c6c7;
+    --cursorcol: #c3c6c7;
+    --colors0: #101c20;
+    --colors1: #657E82;
+    --colors2: #59858E;
+    --colors3: #669198;
+    --colors4: #76A1A7;
+    --colors5: #9AA7A1;
+    --colors6: #8BB3B6;
+    --colors7: #c3c6c7;
+    --colors8: #5e6d72;
+    --colors9: #657E82;
+    --colors10: #59858E;
+    --colors11: #669198;
+    --colors12: #76A1A7;
+    --colors13: #9AA7A1;
+    --colors14: #8BB3B6;
+    --colors15: #c3c6c7;
 }
-
-/* Global Styles */
-* {
-    font-size: 13px;
-    color: var(--foregroundcol);
-    font-weight: 500;
-    font-family: "SegoeUI Nerd Font";
-    margin: 0;
-    padding: 0;
+*{
+	font-size: 12px;
+	color: var(--foregroundcol);
+	font-weight: 600;
+	font-family: "JetBrainsMono NFP";
+	margin: 0;
+	padding: 0;
 }
-
-/* YASB Bar */
 .yasb-bar {
-    background-color: var(--backgroundcol);
-    padding: 0;
-    margin: 0 0px;
+	padding: 0;
+	margin: 0; 
+    background-color: var(--backgroundcol)
 }
-
 .widget {
-    padding: 0 8px;
-    margin: 0 0px;
+	padding: 0 12px;
+	margin: 0;
 }
-
+.icon {
+	font-size: 16px;
+}
 .widget .label {
-    padding-bottom: 2px;
+	padding: 0px 2px; 
 }
 
-.widget .label:hover {
-    color: var(--colors7);
+.apps-widget {
+	padding: 0 4px 0 2px;
 }
-
-/* Containers */
-.container-left,
-.container-center,
-.container-right {
-    margin: 0;
-    padding: 0;
+.komorebi-active-layout {
+	padding: 0 4px 0 0;
 }
-
-/* Komorebi Workspace Buttons */
-.komorebi-workspaces .ws-btn {
-    background-color: transparent;
-    height: 100%;
-    width: 15px;
-    margin: 0 2px 0 4px;
+.komorebi-active-layout .label {
+	font-weight: 600;
+	padding: 2px 0 0 0;
+}
+.apps-widget .widget-container,
+.komorebi-workspaces .widget-container,
+.komorebi-active-layout .widget-container{
+	background-color: var(--backgroundcol);
+	margin: 4px 0 4px 0;
+	border-radius: 12px;
+    border: 0px solid var(--colors1);
+}
+.komorebi-workspaces .widget-container {
+    border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+    margin-left: 4px;
+}
+.komorebi-workspaces {
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 14px;
+	padding: 0 4px 0 0;
+}
+.komorebi-workspaces .offline-status {
     color: var(--colors2);
-    border: 0px;
+    font-size: 12px;
+    padding: 0 0 0 4px;
+    font-weight:600;
 }
-
-.komorebi-workspaces .ws-btn.populated {
-    border-bottom: 3px solid var(--colors4);
+.komorebi-workspaces .ws-btn {
+    border: none;
+    background-color:transparent;
+	margin:0;
+    font-size: 12px;
+	color:  var(--colors3);
+    height: 28px;
+    width: 18px;
 }
-
 .komorebi-workspaces .ws-btn:hover {
-    border-bottom: 3px solid var(--colors3);
-    margin-top: 3px;
+    color: var(--colors4);
 }
-
-.komorebi-workspaces .ws-btn.populated:hover,
+.komorebi-workspaces .ws-btn.populated {
+    color:transparent;
+    width: 10px;
+    height: 10px;
+    background-color: var(--colors5);
+    border-radius: 5px;
+    margin: 0 4px;
+    font-size: 1px;
+}
 .komorebi-workspaces .ws-btn.active {
-    border-bottom: 4px solid var(--colors6);
-    width: 25px;
-    margin-top: 4px;
+	color: transparent;
+    background-color: var(--colors6);
+    width: 36px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 5px; 
 }
-
-/* Search Widget */
-.search-widget {
-    padding: 0 2px;
-}
-
-.search-widget .label {
-    padding: 0 7px 0 5px;
-}
-
-/* Power Menu Widget */
-.uptime {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: var(--foregroundcol);
-    font-weight: 600;
-}
-
-.power-menu-widget .label {
-    font-size: 13px;
-    margin-left: 7px;
-    margin-top: 2px;
-}
-
-.power-menu-popup {
-    background-color: var(--backgroundcol);
-    border-radius: 12px;
-    border: 4px solid var(--colors8);
-}
-
-.power-menu-popup .button {
-    padding: 0;
-    width: 240px;
-    height: 120px;
-    border-radius: 8px;
-    background-color: var(--colors8);
-    font-family: "SegoeUI";
-    color: var(--foregroundcol);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 8px;
-}
-
-.power-menu-popup .button:hover {
-    background-color: var(--colors9);
-}
-
-.power-menu-popup .button .label {
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--foregroundcol);
-}
-
-.power-menu-popup .button .icon {
-    font-size: 48px;
-    padding-top: 20px;
+.apps-widget .label {
+	font-size: 14px;
+	padding: 0 2px;
     color: var(--colors7);
 }
-
-.power-menu-popup .button.cancel .icon {
-    color: var(--colors1);
+.apps-widget .label:hover {
+	color: var(--colors8);
 }
-
-.power-menu-popup .button.cancel .label {
-    color: var(--colors1);
+.uptime {
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: var(--colors2);
+	font-weight: 600;
+ 
 }
-
-.power-menu-popup .button.shutdown .icon {
-    color: var(--colors5);
-}
-
-.power-menu-popup .button.shutdown .label {
-    color: var(--colors5);
-}
-
-/* Icons */
-.icon,
-.media-widget .btn,
 .power-menu-widget .label {
-    font-family: "Segoe Fluent Icons";
-    color: var(--colors12);
-    padding: 3px;
-    font-size: 12px;
+	color: var(--colors9);
+	font-size: 13px;
 }
-
-.media-widget .btn {
-    font-family: "Segoe Fluent Icons";
+.power-menu-popup {
+	background-color: transparent	 
 }
-
-.battery-widget .icon {
-    font-size: 18px;
-    margin-bottom: 1px;
+.power-menu-popup .button {
+	padding: 0;
+	width: 180px;
+	height: 230px;
+	border-radius: 8px;
+	background-color: var(--colors10);
+	color:var(--colors11);
+	border-left: 4px solid rgba(58, 59, 83, 0);
+    border-right: 4px solid rgba(58, 59, 83, 0);
+    border-top: 8px solid rgba(58, 59, 83, 0);
+    border-bottom: 8px solid rgba(58, 59, 83, 0);
+	margin: 0px;
 }
-
-.volume-widget .icon,
+.power-menu-popup .button.hover {
+	background-color:var(--colors12);
+	border-left: 4px solid var(--colors13);
+    border-right: 4px solid var(--colors13);
+    border-top: 8px solid var(--colors13);
+    border-bottom: 8px solid var(--colors13);
+}
+.power-menu-popup .button .label {
+	margin-bottom: 8px;
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--colors14)
+ 
+}
+.power-menu-popup .button .icon {
+	font-size: 64px;
+	padding-top: 32px;
+	color: var(--colors15)
+}
+.power-menu-popup .button.cancel .icon {
+    padding: 0;
+    margin: 0;
+}
+.power-menu-popup .button.cancel .label {
+	color: var(--colors9);
+    margin: 0;
+}
+.power-menu-popup .button.cancel {
+    height: 32px;
+    border-radius: 4px;
+}
+.volume-widget .icon {
+	color: var(--colors5);
+	margin: 1px 2px 0 0;
+}
 .wifi-widget .icon {
-    font-size: 18px;
-}
-
-.cpu-widget .icon {
     font-size: 14px;
-    color: var(--colors5);
-    margin: 0 4px 1px 0;
+	color: var(--colors4)
 }
-
-.memory-widget .icon {
-    font-size: 14px;
-    color: var(--colors3);
-    margin: 0 4px 1px 0;
+.battery-widget .icon {
+    color: var(--colors9);
 }
-
+.weather-widget,
+.battery-widget,
+.wifi-widget,
+.volume-widget {
+    padding:0 6px;
+}
 .weather-widget .icon {
-    font-family: "JetBrainsMono NFP";
-    font-size: 15px;
-    margin-right: 2px;
-}
-
-.search-widget .icon {
-    font-size: 16px;
-    margin-bottom: 2px;
-}
-
-.notification-widget .icon {
-    font-size: 20px;
-    margin-right: 7px;
+	font-size: 18px;
+	margin: 0 2px 1px 0;
+    color: var(--colors12);
 }
 .wallpapers-widget .icon {
-    font-size: 13px;
-    margin-bottom: 1px;
+	color: var(--colors13);
+	padding: 0 5px;
+    font-size: 16px;
+	margin: 0;
+}
+.ai-widget .icon:hover {
+	color: var(--colors8);
+}
+.taskbar-widget{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.taskbar-widget .app-icon{
+    padding:0 6px;
+    border: none;
+    margin: 0;
+}
+.whkd-widget {
+    padding: 0 6px 0 6px;
+}
+.whkd-widget .icon {
+    font-size: 14px;
+}
+.wallpapers-widget {
+    padding: 0 6px 0 6px;
+}
+.wallpapers-gallery-window {
+    background-color: rgba(85, 42, 240, 0.01);
+    border: 0;
+    margin: 0;
+}
+.wallpapers-gallery-buttons {
+    background-color:rgba(255, 255, 255, 0);
+    color:var(--colors4);
+    border: none;
+    font-size: 14px;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin:0 8px 8px 8px;
+    width: 600px;
+}
+.wallpapers-gallery-buttons:hover {
+    background-color:rgba(255, 255, 255, 0.1)
+}
+.wallpapers-gallery-image {
+    border: 4px solid transparent;
+    border-radius: 10px;
+ 
+}
+.wallpapers-gallery-image:hover {
+    border: 4px solid var(--colors6);
+}
+.wallpapers-gallery-image.focused {
+    border: 4px solid var(--colors6);
 }
 
-/* Weather Widget */
-.weather-widget .icon.sunnyDay {
+.update-check-widget {
+    padding: 0 0px 0 0px;
+}
+.update-check-widget .icon {
+    font-size: 14px;
+}
+.update-check-widget .widget-container.winget, 
+.update-check-widget .widget-container.windows {
+    background: var(--colors9);
+    margin: 7px 2px 7px 2px;
+    border-radius: 9px;
+    border: 2px solid var(--colors12);
+}
+.update-check-widget .widget-container.windows {
+    background: var(--colors6);
+    margin: 7px 2px 7px 2px;
+    border-radius: 9px;
+    border: 2px solid var(--colors5);
+}
+.update-check-widget .widget-container.winget .icon, 
+.update-check-widget .widget-container.windows .icon {
     color: var(--colors11);
+    margin: 0 1px 0 6px;
 }
-
-.weather-widget .icon.clearNight {
-    color: var(--colors12);
-    font-size: 22px;
-    margin: 1px 2px 0px 0;
-}
-
-/* Media Widget */
-.media-widget {
-    padding-right: 0;
-}
-
-.media-widget .label {
-    color: var(--colors6);
-}
-
-.media-widget .btn {
-    padding: 0 5px;
-    margin: 4px 2px;
-}
-
-.media-widget .btn:hover {
-    color: var(--colors10);
-}
-
-.media-widget .btn.play {
-    border-radius: 12px;
-    font-size: 12px;
-}
-
-.media-widget .btn.disabled:hover,
-.media-widget .btn.disabled {
-    color: var(--colors8);
-    font-size: 12px;
-    background-color: rgba(0, 0, 0, 0);
+.update-check-widget .widget-container.winget .label, 
+.update-check-widget .widget-container.windows .label {
+    margin: 0 6px 0 1px;
+    color: var(--colors11);
+    font-weight: 900;
+    font-size: 14px;
 }
