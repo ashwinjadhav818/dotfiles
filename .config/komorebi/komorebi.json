@@ -45,7 +45,7 @@
                 },
                 {
                     "name": "3",
-                    "layout": "Columns"
+                    "layout": "Grid"
                 },
                 {
                     "name": "4",

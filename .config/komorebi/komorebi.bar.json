@@ -1,19 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.29/schema.bar.json",
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.31/schema.bar.json",
   "monitor": {
     "index": 0,
     "work_area_offset": {
       "left": 0,
-      "top": 40,
+      "top": 35,
       "right": 0,
-      "bottom": 40
+      "bottom": 35
     }
   },
-  "font_family": "Segoe UI",
+  "font_family": "JetBrains Mono",
   "theme": {
     "palette": "Base16",
     "name": "TokyoNightDark",
     "accent": "Base0D"
+  },
+  "transparency_alpha": 0,
+  "grouping": {
+    "kind": "Widget",
+    "rounding": 4,
+    "style": "CtByteWithShadow",
   },
   "left_widgets": [
     {
@@ -23,17 +29,27 @@
           "hide_empty_workspaces": false
         },
         "layout": {
-          "enable": false
+          "enable": true,
+          "display": "Icon"
         },
         "focused_window": {
           "enable": true,
-          "show_icon": true
+          "display": "IconAndText"
         }
+      }
+    }
+  ],
+  "center_widgets": [
+    {
+      "Date": {
+        "enable": true,
+        "format": "DayDateMonthYear"
       }
     },
     {
-      "Memory": {
-        "enable": false
+      "Time": {
+        "enable": true,
+        "format": "TwentyFourHour"
       }
     }
   ],
@@ -54,28 +70,17 @@
       }
     },
     {
-      "Network": {
-        "enable": true,
-        "show_total_data_transmitted": false,
-        "show_network_activity": false
-      }
-    },
-    {
       "Battery": {
         "enable": true
       }
     },
     {
-      "Date": {
+      "Network": {
         "enable": true,
-        "format": "DateMonthYear"
-      }
-    },
-    {
-      "Time": {
-        "enable": true,
-        "format": "TwentyFourHour"
+        "show_total_data_transmitted": false,
+        "show_network_activity": false
       }
     }
-  ]
+  ],
 }
+
