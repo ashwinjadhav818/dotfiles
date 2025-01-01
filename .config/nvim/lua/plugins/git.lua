@@ -85,16 +85,27 @@ return {
             }
         end,
         keys = {
-            { "<leader>ghd" },
-            { "<leader>ghp" },
-            { "<leader>ghR" },
-            { "<leader>ghr" },
-            { "<leader>ghs" },
-            { "<leader>ghS" },
-            { "<leader>ght" },
-            { "<leader>ghu" },
+            { "<leader>gj",  "<cmd>lua require 'gitsigns'.next_hunk()<cr>",       desc = "Next Hunk" },
+            { "<leader>gk",  "<cmd>lua require 'gitsigns'.prev_hunk()<cr>",       desc = "Prev Hunk" },
+            { "<leader>gl",  "<cmd>lua require 'gitsigns'.blame_line()<cr>",      desc = "Blame" },
+            { "<leader>gp",  "<cmd>lua require 'gitsigns'.preview_hunk()<cr>",    desc = "Preview Hunk" },
+            { "<leader>gr",  "<cmd>lua require 'gitsigns'.reset_hunk()<cr>",      desc = "Reset Hunk" },
+            { "<leader>gR",  "<cmd>lua require 'gitsigns'.reset_buffer()<cr>",    desc = "Reset Buffer" },
+            { "<leader>gs",  "<cmd>lua require 'gitsigns'.stage_hunk()<cr>",      desc = "Stage Hunk" },
+            { "<leader>gu",  "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>", desc = "Undo Stage Hunk" },
+            { "<leader>gd",  "<cmd>Gitsigns diffthis HEAD<cr>",                   desc = "Diff" },
         }
     },
+
+{
+  "NeogitOrg/neogit",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "sindrets/diffview.nvim",
+    "nvim-telescope/telescope.nvim", 
+  },
+  config = true
+},
     {
         "sindrets/diffview.nvim",
         lazy = true,

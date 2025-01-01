@@ -59,6 +59,17 @@ return {
             { "<A-7>", "<cmd>BufferLineGoToBuffer 7<CR>" },
             { "<A-8>", "<cmd>BufferLineGoToBuffer 8<CR>" },
             { "<A-9>", "<cmd>BufferLineGoToBuffer 9<CR>" },
+
+            { "<Leader>bq",  "<cmd>bd<CR>",                                       desc = "Close Buffer" },
+            { "<Leader>bb",  "<cmd>BufferLineMovePrev<CR>",                       desc = "Move back" },
+            { "<Leader>bl",  "<cmd>BufferLineCloseLeft<CR>",                      desc = "Close Left" },
+            { "<Leader>br",  "<cmd>BufferLineCloseRight<CR>",                     desc = "Close Right" },
+            { "<Leader>bn",  "<cmd>BufferLineMoveNext<CR>",                       desc = "Move next" },
+            { "<Leader>bp",  "<cmd>BufferLinePick<CR>",                           desc = "Pick Buffer" },
+            { "<Leader>bP",  "<cmd>BufferLineTogglePin<CR>",                      desc = "Pin/Unpin Buffer" },
+            { "<Leader>bsd", "<cmd>BufferLineSortByDirectory<CR>",                desc = "Sort by directory" },
+            { "<Leader>bse", "<cmd>BufferLineSortByExtension<CR>",                desc = "Sort by extension" },
+            { "<Leader>bsr", "<cmd>BufferLineSortByRelativeDirectory<CR>",        desc = "Sort by relative dir" },
         }
     }
 }
