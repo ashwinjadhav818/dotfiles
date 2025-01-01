@@ -13,12 +13,12 @@
 
 ;; Org Mode Configuration
 (setq org-directory "D:/org")
-(setq org-agenda-files '("D:/org" "D:/org/todo.org"))
+(setq org-agenda-files '("D:/Areas/org" "D:/Areas/org/todo.org"))
 
 (after! org
   (setq org-capture-templates
         '(("j" "Daily Journal"
-           entry (file+datetree+prompt "D:/org/journal/%<%Y-%m-%d>.org")
+           entry (file+datetree+prompt "D:/Areas/org/journal/%<%Y-%m-%d>.org")
            "* %U\n  %?"))))  ;; Each journal entry in its own file
 
 
