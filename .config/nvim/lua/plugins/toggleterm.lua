@@ -3,9 +3,6 @@ return {
         "akinsho/toggleterm.nvim",
         version = "*",
         config = true,
-        opts = {
-            shell = "pwsh.exe"
-        },
         keys = {
             { "<leader>tf", "<cmd>ToggleTerm direction=float<cr>",              desc = "Float" },
             { "<leader>th", "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "Horizontal" },
