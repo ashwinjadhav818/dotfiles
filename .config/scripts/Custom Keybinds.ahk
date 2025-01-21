@@ -5,9 +5,8 @@ Launch_Media::^!+S ; Launches Spotify
 Launch_App2::^!+p ; Launches Notion
 
 ; Keybinds
-#Enter::Run "wezterm-gui"
-~LWin::
-{
+#Enter::Run "alacritty"
+~LWin:: {
     LWinDown := true
     Send("{Blind}{vkE8}")
 }
