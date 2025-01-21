@@ -9,7 +9,7 @@
   "presets": [
     {
       "name": "default",
-      "anchor": "bottom_left",
+      "anchor": "top_center",
       "offsetX": "0px",
       "offsetY": "0px",
       "width": "100%",

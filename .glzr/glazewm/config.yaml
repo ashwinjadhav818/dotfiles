@@ -6,7 +6,7 @@ general:
   shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F', 'shell-exec taskkill /IM glazewm-extra.exe']
 
   # Whether to automatically focus windows underneath the cursor.
-  focus_follows_cursor: false
+  focus_follows_cursor: true
 
   # Whether to switch back and forth between the previously focused
   # workspace when focusing the current workspace.

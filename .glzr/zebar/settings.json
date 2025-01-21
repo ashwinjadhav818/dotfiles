@@ -2,8 +2,8 @@
   "$schema": "TODO",
   "startupConfigs": [
     {
-      "path": "tokyonight\\tokyonight.zebar.json",
-      "preset": "tokyonight"
+      "path": "win-tasbkar\\default-glazewm.zebar.json",
+      "preset": "default"
     }
   ]
 }
