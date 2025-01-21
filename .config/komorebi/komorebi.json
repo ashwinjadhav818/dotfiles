@@ -3,11 +3,10 @@
     "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.yaml",
     "window_hiding_behaviour": "Cloak",
     "cross_monitor_move_behaviour": "Insert",
-    "mouse_follows_focus": false,
     "default_workspace_padding": 7,
-    "default_container_padding": 7,  
+    "default_container_padding": 7,
     "border": true,
-    "border_width": 2,
+    "border_width": 4,
     "border_offset": -1,
     "theme": {
         "palette": "Base16",
@@ -63,7 +62,6 @@
             "focused_text": "#00a542",
             "unfocused_text": "#b3b3b3",
             "background": "#141414",
-            "font_family": "Segoe UI",
             "font_size": 18
         }
     },
