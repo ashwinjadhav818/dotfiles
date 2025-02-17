@@ -1,0 +1,115 @@
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+:root {
+    --background: rgba(30, 30, 30, 0.9);
+    --foreground: rgba(255, 255, 255, 0.9);
+    --black: rgba(0, 0, 0, 0.6);
+    --red: #ff3b30;
+    --green: #4cd964;
+    --yellow: #ffcc00;
+    --blue: #357EC7;
+    --magenta: #ff2d55;
+    --cyan: #5ac8fa;
+    --white: #ffffff;
+    --bright-black: rgba(0, 0, 0, 0.4);
+    --bright-red: #ff453a;
+    --bright-green: #32d74b;
+    --bright-yellow: #ffd60a;
+    --bright-blue: #0a84ff;
+    --bright-magenta: #ff375f;
+    --bright-cyan: #5ac8fa;
+    --bright-white: #ffffff;
+
+    --highlight: rgba(255, 255, 255, 0.2);
+    --highlight-focused: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    color: var(--bright-white);
+    font-family: "Segoe UI", ui-monospace, monospace;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+#root {
+    user-select: none;
+}
+
+.app {
+    display: grid;
+    height: 100%;
+    width: 0;
+    padding: 4px 10px;
+}
+
+.left {
+    background-color: var(--background);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+
+.workspaces {
+    display: flex;
+    align-items: center;
+}
+
+.workspace {
+    background-color: var(--highlight);
+    color: transparent;
+    margin-right: 7px;
+    height: 12px;
+    padding: 1px 3px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &.displayed {
+        background: var(--highlight-focused);
+    }
+
+    &.focused,
+    &:hover {
+        background: var(--blue);
+        color: transparent;
+    }
+}
+
+.binding-mode,
+.tiling-direction {
+    background: var(--bright-black);
+    color: var(--bright-white);
+    border-radius: 2px;
+    line-height: 1;
+    padding: 4px 8px;
+    border: 0;
+    margin: 0 7px;
+    cursor: pointer;
+
+    &:hover {
+        background: var(--black);
+    }
+}
+
+.binding-mode {
+    margin-right: 4px;
+}
+
+.window-title {
+    display: flex;
+    align-items: center;
+    max-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
