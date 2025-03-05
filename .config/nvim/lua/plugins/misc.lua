@@ -8,7 +8,6 @@ return {
         end,
         ft = { "markdown" },
     },
-    { "folke/zen-mode.nvim" },
     -- tailwind-tools.lua
     {
         "luckasRanarison/tailwind-tools.nvim",
@@ -16,7 +15,6 @@ return {
         build = ":UpdateRemotePlugins",
         dependencies = {
             "nvim-treesitter/nvim-treesitter",
-            "nvim-telescope/telescope.nvim", -- optional
             "neovim/nvim-lspconfig", -- optional
         },
         opts = {}                    -- your configuration
