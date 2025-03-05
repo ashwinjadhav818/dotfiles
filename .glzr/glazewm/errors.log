@@ -62,3 +62,49 @@
 [2m2024-11-21T13:32:04.367912Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2024-11-22T09:51:01.670720Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
 [2m2024-11-22T09:51:06.141000Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-23T08:05:24.717776Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m found unknown escape character at line 4 column 60, while parsing a quoted scalar at line 4 column 42
+[2m2025-01-24T17:57:08.834914Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:13.020682Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:14.362345Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:15.200267Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:16.033930Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:24.601767Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:25.636355Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:26.184909Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:26.682524Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:27.336186Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:57:53.180080Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-24T17:58:16.696031Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-25T14:12:53.191946Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No common ancestor between containers.
+[2m2025-01-27T16:31:34.910446Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-28T10:35:07.766977Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T10:35:09.875046Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T10:35:11.349777Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T10:35:13.084235Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T10:35:14.397273Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T10:35:20.896289Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T10:35:26.251962Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T10:35:27.194950Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T10:35:28.757264Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T10:44:39.703646Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 43 column 3, while parsing a block mapping
+[2m2025-01-28T16:19:44.065704Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-28T17:28:51.200544Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T17:31:50.118708Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T17:31:52.868305Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T17:34:18.313979Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-28T17:34:19.484342Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-29T11:03:23.784447Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-01-29T11:03:24.828260Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-02-03T15:20:10.888681Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute '%HOME%\.dotfiles\.glzr\glazewm\glaze-autotiler.exe'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-02-03T15:22:29.079428Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Program path is not valid for command '%HOME%\.dotfiles\.glzr\glazewm\glaze-autotiler.exe'.
+[2m2025-02-11T14:02:09.208407Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-02-11T14:02:13.566710Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-02-11T14:02:14.420840Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-02-11T14:02:20.227738Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-02-15T14:05:52.765191Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-02-15T14:05:58.158744Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-02-15T14:05:59.462827Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-02-15T14:06:00.220999Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-02-25T12:43:36.470876Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
