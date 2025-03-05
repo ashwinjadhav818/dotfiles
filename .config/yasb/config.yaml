@@ -31,9 +31,9 @@ bars:
       bottom: 0
       right: 10
     widgets:
-      left: ["komorebi_workspaces","active_window"]
+      left: ["komorebi_workspaces","glazewm_workspaces","glazewm_tiling_direction","active_window"]
       center: ["clock","apps"]
-      right: ["wallpapers","taskbar","weather","battery","volume","power_menu"]
+      right: ["brightness","wallpapers","taskbar","weather","battery","volume","power_menu"]
 widgets:
   update:
     type: "yasb.update_check.UpdateCheckWidget"
@@ -120,28 +120,52 @@ widgets:
         on_left: "next_layout"
         on_middle: "toggle_monocle"
         on_right: "prev_layout"
+  glazewm_workspaces:
+    type: "glazewm.workspaces.GlazewmWorkspacesWidget"
+    options:
+      offline_label: "GlazeWM Offline"
+      hide_empty_workspaces: true
+      hide_if_offline: true
+  glazewm_tiling_direction:
+    type: "glazewm.tiling_direction.GlazewmTilingDirectionWidget"
+    options:
+      horizontal_label: "\udb81\udce1"
+      vertical_label: "\udb81\udce2"
   weather:
     type: "yasb.weather.WeatherWidget"
     options:
-      label: "<span>{icon}</span> {temp_c}"
-      label_alt: "{location}: Min {min_temp_c}, Max {max_temp_c}, Humidity {humidity}"
-      api_key: "24b6c2cda6d84066b0304531241908"
-      update_interval: 600
+      label: "<span>{icon}</span> {temp}"
+      label_alt: "{location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
+      api_key: "3bf4cf9a7c3f40d6b31174128242807" # Get your free API key from https://www.weatherapi.com/
+      show_alerts: true
+      update_interval: 600 # Update interval in seconds, Min 600 seconds
       hide_decimal: true
-      location: "USA Los Angeles 90006"
+      units: "metric" # Can be 'metric' or 'imperial'
+      location: "India Nashik" # You can use "USA Los Angeles 90006" {COUNTRY CITY ZIP_CODE}, or just city.
       callbacks:
-        on_left: "toggle_label"
-      icons:
-        sunnyDay: "\udb81\udd99"
-        clearNight: "\udb81\udd99"
+        on_left: "toggle_card"
+        on_middle: "do_nothing"
+        on_right: "toggle_label"
+      icons: 
+        sunnyDay: "\ue30d"
+        clearNight: "\ue32b"
         cloudyDay: "\udb81\udd99"
-        cloudyNight: "\udb81\udd99"
-        rainyDay: "\udb81\udd99"
-        rainyNight: "\udb81\udd99"
-        snowyIcyDay: "\udb81\udd99"
-        snowyIcyNight: "\udb81\udd99"
-        blizzard: "\udb81\udd99"
-        default: "\udb81\udd99"
+        cloudyNight: "\ue311"
+        rainyDay: "\udb81\ude7e"
+        rainyNight: "\udb81\ude7e"
+        snowyIcyDay: "\udb81\udd98"
+        snowyIcyNight: "\udb81\udd98"
+        blizzard: "\uebaa"
+        default: "\uebaa"
+      weather_card: 
+        blur: True
+        round_corners: True
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
+        distance: 6
+        icon_size: 64
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
@@ -162,6 +186,31 @@ widgets:
       label_alt: "{icon} {percent}% | time: {time_remaining}"
       charging_options:
         icon_format: "{charging_icon}"
+  brightness:
+    type: "yasb.brightness.BrightnessWidget"
+    options:
+      label: "<span>{icon}</span>"
+      label_alt: "Brightness {percent}%"
+      tooltip: true
+      auto_light: false 
+      auto_light_icon: "\udb80\udce1"
+      auto_light_night_level: 35
+      auto_light_night_start_time: "19:00"
+      auto_light_night_end_time: "06:45"
+      auto_light_day_level: 75
+      brightness_icons: [
+        "\udb80\udcde",  # Icon for 0-25% brightness
+        "\udb80\udcdd",  # Icon for 26-50% brightness
+        "\udb80\udcdf",  # Icon for 51-75% brightness
+        "\udb80\udce0"   # Icon for 76-100% brightness
+      ]
+      callbacks:
+          on_left: "toggle_label"
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
@@ -172,13 +221,6 @@ widgets:
         on_left: "exec cmd.exe /c start ms-settings:network"
         on_middle: "do_nothing"
         on_right: "toggle_label"
-      wifi_icons: [
-        "\udb82\udd2e",  # Icon for 0% strength
-        "\udb82\udd1f",  # Icon for 1-20% strength
-        "\udb82\udd22",  # Icon for 21-40% strength
-        "\udb82\udd25",  # Icon for 41-80% strength
-        "\udb82\udd28"   # Icon for 81-100% strength
-      ]
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:

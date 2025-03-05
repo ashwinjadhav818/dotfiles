@@ -1,29 +1,29 @@
 :root {
-    --backgroundcol: #101c20;
-    --foregroundcol: #c3c6c7;
-    --cursorcol: #c3c6c7;
-    --colors0: #101c20;
-    --colors1: #657E82;
-    --colors2: #59858E;
-    --colors3: #669198;
-    --colors4: #76A1A7;
-    --colors5: #9AA7A1;
-    --colors6: #8BB3B6;
-    --colors7: #c3c6c7;
-    --colors8: #5e6d72;
-    --colors9: #657E82;
-    --colors10: #59858E;
-    --colors11: #669198;
-    --colors12: #76A1A7;
-    --colors13: #9AA7A1;
-    --colors14: #8BB3B6;
-    --colors15: #c3c6c7;
+    --backgroundcol: #090a11;
+    --foregroundcol: #c1c1c3;
+    --cursorcol: #c1c1c3;
+    --colors0: #090a11;
+    --colors1: #525568;
+    --colors2: #616579;
+    --colors3: #5F6880;
+    --colors4: #6F748A;
+    --colors5: #837D92;
+    --colors6: #7B849D;
+    --colors7: #c1c1c3;
+    --colors8: #57576b;
+    --colors9: #525568;
+    --colors10: #616579;
+    --colors11: #5F6880;
+    --colors12: #6F748A;
+    --colors13: #837D92;
+    --colors14: #7B849D;
+    --colors15: #c1c1c3;
 }
 *{
 	font-size: 12px;
 	color: var(--foregroundcol);
 	font-weight: 600;
-	font-family: "JetBrainsMono NFP";
+	font-family: "Maple Mono NF";
 	margin: 0;
 	padding: 0;
 }
@@ -55,7 +55,9 @@
 }
 .apps-widget .widget-container,
 .komorebi-workspaces .widget-container,
-.komorebi-active-layout .widget-container{
+.komorebi-active-layout .widget-container,
+.glazewm-workspaces
+.glazewm-tiling-direction {
 	background-color: var(--backgroundcol);
 	margin: 4px 0 4px 0;
 	border-radius: 12px;
@@ -105,6 +107,48 @@
     height: 10px;
     margin: 0 4px;
     border-radius: 5px; 
+}
+.glazewm-workspaces {
+	padding: 0 4px;
+}
+.glazewm-workspaces .offline-status {
+    color: var(--colors2);
+    font-size: 12px;
+    padding: 0 4px;
+    font-weight:600;
+}
+.glazewm-workspaces .ws-btn {
+    font-size: 12px;
+	color:  var(--foregroundcol);
+    padding: 0 4px;
+}
+.glazewm-workspaces .ws-btn:hover {
+    color: var(--colors4);
+}
+.glazewm-workspaces .ws-btn.populated {
+    background-color: var(--colors0);
+    border-radius: 5px;
+    margin: 0 4px;
+}
+.glazewm-workspaces .ws-btn.active {
+    background-color: var(--colors5);
+    margin: 0 4px;
+    border-radius: 5px; 
+}
+.glazewm-tiling-direction {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.glazewm-tiling-direction .btn {
+    font-size: 14px;
+    width: 14px;
+    padding: 0 4px 0 4px;
+    color: var(--colors6);
+    border: none;
+}
+.glazewm-tiling-direction .btn:hover {
+    background-color: #727272;
 }
 .apps-widget .label {
 	font-size: 14px;
@@ -183,10 +227,14 @@
 .battery-widget .icon {
     color: var(--colors9);
 }
+.brightness-widget .icon {
+    color: var(--colors5);
+}
 .weather-widget,
 .battery-widget,
 .wifi-widget,
-.volume-widget {
+.volume-widget,
+.brightness-widget {
     padding:0 6px;
 }
 .weather-widget .icon {
