@@ -54,7 +54,9 @@
   wk8 (tap-hold $tap-time $hold-time (multi lmet 8 reverse-release-order) 8)
   wk9 (tap-hold $tap-time $hold-time (multi lmet 9 reverse-release-order) 9)
 
-  mw (tap-hold $tap-time $hold-time q (multi lmet lsft))
+  ms (tap-hold $tap-time $hold-time q (multi lmet lsft))
+  mc (tap-hold $tap-time $hold-time e (multi lmet lctrl))
+  ma (tap-hold $tap-time $hold-time r (multi lmet lalt))
 
   wfu (tap-hold $tap-time $hold-time (multi lmet w reverse-release-order) w) 
 )
@@ -81,7 +83,7 @@
 (deflayer windowmanager
   _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
   _     @wk1 @wk2 @wk3 @wk4 @wk5 @wk6 @wk7 @wk8 @wk9 _    -    =     _       _    _    _         _     _    _    _
-  _     @mw  @bse _    _    _    _    _    _    _    _    @[   _     _       _    _    _         _     _    _    _
+  _     @ms  @bse @mc  @ma  _    _    _    _    _    _    @[   _     _       _    _    _         _     _    _    _
   @cap  @a   @s   @d   @f   _    _    @j   @k   @l   @;   @ent _                                 _     _    _
   _     _    _    _    _    _    _    _    _    _    _    _                        _             _     _    _    _
   _     _    _              _              _    _    _                        _    _     _       _          _
