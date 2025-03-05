@@ -1,7 +1,7 @@
 {
   "$schema": "https://github.com/glzr-io/zebar/raw/v2.4.0/resources/widget-schema.json",
   "htmlPath": "./squircle.html",
-  "zOrder": "top_most",
+  "zOrder": "normal",
   "shownInTaskbar": false,
   "focused": false,
   "resizable": false,
@@ -16,16 +16,16 @@
   "presets": [
     {
       "name": "default",
-      "anchor": "bottom_center",
-      "offsetX": "400px",
+      "anchor": "top_center",
+      "offsetX": "0px",
       "offsetY": "0px",
-      "width": "0%",
+      "width": "100%",
       "height": "44px",
       "monitorSelection": {
         "type": "all"
       },
       "dockToEdge": {
-        "enabled": true,
+        "enabled": false,
         "edge": null,
         "windowMargin": "0px"
       }

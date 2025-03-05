@@ -2,7 +2,7 @@
   "$schema": "TODO",
   "startupConfigs": [
     {
-      "path": "win-tasbkar\\default-glazewm.zebar.json",
+      "path": "squircle\\squircle.zebar.json",
       "preset": "default"
     }
   ]
