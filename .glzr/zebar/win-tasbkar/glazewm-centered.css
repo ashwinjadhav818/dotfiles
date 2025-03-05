@@ -1,0 +1,100 @@
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+:root {
+    --background: #16161eb3;
+    --foreground: #a9b1d6;
+    --black: #414868;
+    --red: #f7768e;
+    --green: #9ece6a;
+    --yellow: #e0af68;
+    --blue: #7aa2f7;
+    --magenta: #bb9af7;
+    --cyan: #7dcfff;
+    --white: #a9b1d6;
+    --bright-black: #1a1b26;
+    --bright-red: #db4b4b;
+    --bright-green: #73daca;
+    --bright-yellow: #ff9e64;
+    --bright-blue: #2ac3de;
+    --bright-magenta: #ff007c;
+    --bright-cyan: #89ddff;
+    --bright-white: #c0caf5;
+}
+
+body {
+  color: #fff;
+  font-family: "Segoe UI", ui-monospace, monospace;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  background-color: var(--background);
+  user-select: none;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 4px 20px;
+  padding-left: 80px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.workspaces {
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  background-color: var(--black);
+  color: transparent;
+  margin-right: 7px;
+  height: 12px;
+  padding: 1px 3px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+
+  &.displayed {
+    background: var(--bright-black);
+  }
+
+  &.focused,
+  &:hover {
+    background: var(--blue);
+    color: transparent;
+  }
+}
+
+.binding-mode,
+.tiling-direction {
+  background: var(--bright-black);
+  color: var(--bright-white);
+  border-radius: 2px;
+  line-height: 1;
+  padding: 4px 8px;
+  border: 0;
+  margin: 0 7px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--black);
+  }
+}
+
+.binding-mode {
+  margin-right: 4px;
+}

@@ -18,82 +18,83 @@
     --bright-blue: #2ac3de;
     --bright-magenta: #ff007c;
     --bright-cyan: #89ddff;
-    --bright-white: #c0caf5;
+    /*--bright-white: #c0caf5;*/
+    --bright-white: #fff;
 }
 
 body {
-  color: var(--bright-white);
-  font-family: "Segoe UI", ui-monospace, monospace;
-  font-size: 12px;
-  overflow: hidden;
+    color: var(--bright-white);
+    font-family: "Segoe UI", ui-monospace, monospace;
+    font-size: 12px;
+    overflow: hidden;
 }
 
 html,
 body,
 #root {
-  height: 100%;
+    height: 100%;
 }
 
 #root {
-  background-color: var(--background);
-  user-select: none;
+    background-color: var(--background);
+    user-select: none;
 }
 
 .app {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  height: 100%;
-  padding: 4px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 100%;
+    padding: 4px 20px;
 }
 
 .left {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .workspaces {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .workspace {
-  background-color: var(--black);
-  color: transparent;
-  margin-right: 7px;
-  height: 12px;
-  padding: 1px 3px;
-  border: none;
-  border-radius: 16px;
-  cursor: pointer;
-
-  &.displayed {
-    background: var(--bright-black);
-  }
-
-  &.focused,
-  &:hover {
-    background: var(--blue);
+    background-color: var(--black);
     color: transparent;
-  }
+    margin-right: 7px;
+    height: 12px;
+    padding: 1px 3px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+
+    &.displayed {
+        background: var(--bright-black);
+    }
+
+    &.focused,
+    &:hover {
+        background: var(--blue);
+        color: transparent;
+    }
 }
 
 .binding-mode,
 .tiling-direction {
-  background: var(--bright-black);
-  color: var(--bright-white);
-  border-radius: 2px;
-  line-height: 1;
-  padding: 4px 8px;
-  border: 0;
-  margin: 0 7px;
-  cursor: pointer;
+    background: var(--bright-black);
+    color: var(--bright-white);
+    border-radius: 2px;
+    line-height: 1;
+    padding: 4px 8px;
+    border: 0;
+    margin: 0 7px;
+    cursor: pointer;
 
-  &:hover {
-    background: var(--black);
-  }
+    &:hover {
+        background: var(--black);
+    }
 }
 
 .binding-mode {
-  margin-right: 4px;
+    margin-right: 4px;
 }
