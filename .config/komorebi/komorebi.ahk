@@ -6,25 +6,25 @@
 #Include komorebi.generated.ahk
 
 ; Focus windows
-#w::Focus("up")
-#a::Focus("left")
-#s::Focus("down")
-#d::Focus("right")
+#j::Focus("up")
+#h::Focus("left")
+#k::Focus("down")
+#l::Focus("right")
 #+[::CycleFocus("previous")
 #+]::CycleFocus("next")
 
 ; Move windows
-#+w::Move("up")
-#+a::Move("left")
-#+s::Move("down")
-#+d::Move("right")
+#+j::Move("up")
+#+h::Move("left")
+#+k::Move("down")
+#+l::Move("right")
 #+Enter::Promote()
 
 ; Stack windows
-#!w::Stack("up")
-#!a::Stack("left")
-#!s::Stack("down")
-#!d::Stack("right")
+#!j::Stack("up")
+#!h::Stack("left")
+#!k::Stack("down")
+#!l::Stack("right")
 #;::Unstack()
 #[::CycleStack("previous")
 #]::CycleStack("next")
@@ -37,8 +37,8 @@
 
 ; Manipulate windows
 #q::Close()
-#t::ToggleFloat()
-#+t::ToggleMonocle()
+#+t::ToggleFloat()
+#^t::ToggleMonocle()
 
 ; Window manager options
 #+r::Retile()

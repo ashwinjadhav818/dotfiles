@@ -1,13 +1,14 @@
 {
     "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
-    "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.yaml",
+    "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
     "window_hiding_behaviour": "Cloak",
     "cross_monitor_move_behaviour": "Insert",
-    "default_workspace_padding": 7,
-    "default_container_padding": 7,
-    "border": true,
+    "default_workspace_padding": 4,
+    "default_container_padding": 4,
+    "border": false,
     "border_width": 4,
     "border_offset": -1,
+    "mouse_follows_focus": false,
     "theme": {
         "palette": "Base16",
         "name": "TokyoNightDark",
@@ -55,25 +56,27 @@
     ],
     "stackbar": {
         "label": "Title",
-        "height": 30,
+        "height": 25,
         "mode": "OnStack",
         "tabs": {
-            "width": 300,
             "focused_text": "#00a542",
             "unfocused_text": "#b3b3b3",
             "background": "#141414",
-            "font_size": 18
+            "font_size": 14
         }
     },
     "transparency": true,
     "transparency_alpha": 215,
     "animation": {
-        "enabled": true,
-        "duration": 400,
-        "style": "EaseOutBack",
-        "fps": 60
+      "enabled": true,
+      "duration": 400,
+      "fps": 60,
+        "style": {
+            "movement": "EaseOutBack",
+            "transparency": "Linear"
+        }
     },
-    "float_rules": [
+    "ignore_rules": [
         {
             "kind": "Title",
             "id": "Arc extension popup",
