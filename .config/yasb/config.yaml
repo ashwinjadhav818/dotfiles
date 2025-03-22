@@ -1,6 +1,7 @@
 watch_stylesheet: true
 watch_config: true
 debug: false
+hide_taskbar: true
 komorebi:
   start_command: "komorebic start --whkd"
   stop_command: "komorebic stop --whkd"
@@ -14,7 +15,7 @@ bars:
       position: "top"
       center: false
     blur_effect:
-      enabled: true
+      enabled: false 
       acrylic: false
       dark_mode: true
       round_corners: true
@@ -26,28 +27,15 @@ bars:
       width: "100%"
       height: 32
     padding:
-      top: 10
-      left: 10
+      top: 6
+      left: 8
       bottom: 0
-      right: 10
+      right: 8
     widgets:
-      left: ["komorebi_workspaces","glazewm_workspaces","glazewm_tiling_direction","active_window"]
+      left: ["power_menu","komorebi_workspaces","glazewm_workspaces","glazewm_tiling_direction","active_window"]
       center: ["clock","apps"]
-      right: ["brightness","wallpapers","taskbar","weather","battery","volume","power_menu"]
+      right: ["systray","brightness","wallpapers","taskbar","weather","wifi","battery","volume"]
 widgets:
-  update:
-    type: "yasb.update_check.UpdateCheckWidget"
-    options:
-      winget_update:
-        enabled: true
-        label: "<span>\uf0ab</span>{count}"
-        interval: 30
-        exclude: []
-      windows_update:
-        enabled: true
-        label: "<span>\uf0ab</span>{count}"
-        interval: 240
-        exclude: []
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
     options:
@@ -136,12 +124,12 @@ widgets:
     options:
       label: "<span>{icon}</span> {temp}"
       label_alt: "{location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
-      api_key: "3bf4cf9a7c3f40d6b31174128242807" # Get your free API key from https://www.weatherapi.com/
+      api_key: "3bf4cf9a7c3f40d6b31174128242807"
       show_alerts: true
-      update_interval: 600 # Update interval in seconds, Min 600 seconds
+      update_interval: 600
       hide_decimal: true
-      units: "metric" # Can be 'metric' or 'imperial'
-      location: "India Nashik" # You can use "USA Los Angeles 90006" {COUNTRY CITY ZIP_CODE}, or just city.
+      units: "metric"
+      location: "auto:ip"
       callbacks:
         on_left: "toggle_card"
         on_middle: "do_nothing"
@@ -182,8 +170,8 @@ widgets:
   battery:
     type: "yasb.battery.BatteryWidget"
     options:
-      label: "<span>{icon}</span>{percent}%"
-      label_alt: "{icon} {percent}% | time: {time_remaining}"
+      label: "<span>{icon}</span> {percent}%"
+      label_alt: "<span>{icon}</span> {percent}% | time: {time_remaining}"
       charging_options:
         icon_format: "{charging_icon}"
   brightness:
@@ -199,13 +187,13 @@ widgets:
       auto_light_night_end_time: "06:45"
       auto_light_day_level: 75
       brightness_icons: [
-        "\udb80\udcde",  # Icon for 0-25% brightness
-        "\udb80\udcdd",  # Icon for 26-50% brightness
-        "\udb80\udcdf",  # Icon for 51-75% brightness
-        "\udb80\udce0"   # Icon for 76-100% brightness
-      ]
+        "\udb80\udcde",
+        "\udb80\udcdd",
+        "\udb80\udcdf",
+        "\udb80\udce0"
+      ]       
       callbacks:
-          on_left: "toggle_label"
+        on_left: "toggle_label"
       container_padding:
         top: 0
         left: 8
@@ -214,17 +202,17 @@ widgets:
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
-      label: "<span>{wifi_icon}</span>"
+      label: "<span>{wifi_icon} </span>"
       label_alt: "{wifi_name} {wifi_strength}%"
       update_interval: 5000
       callbacks:
-        on_left: "exec cmd.exe /c start ms-settings:network"
-        on_middle: "do_nothing"
+        on_left: "exec quick_settings"
+        on_middle: "exec cmd.exe /c start ms-settings:network"
         on_right: "toggle_label"
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
-      label: "\uf011"
+      label: "\ue62a"
       uptime: True
       blur: False
       blur_background: True
@@ -237,6 +225,18 @@ widgets:
         hibernate: ["\uf28e", "Hibernate"]
         sleep: ["\u23fe", "Sleep"]
         cancel: ["", "Cancel"]
+  systray:
+    type: "yasb.systray.SystrayWidget"
+    options:
+      class_name: "systray"
+      label_collapsed: "\udb80\udf5e"
+      label_expanded: "\udb80\udf5f"
+      label_position: "right"
+      icon_size: 16
+      pin_click_modifier: "alt"
+      show_unpinned: true
+      show_battery: false
+      show_volume: false
   apps:
     type: "yasb.applications.ApplicationsWidget"
     options:
@@ -248,6 +248,7 @@ widgets:
       label: "{data}"
       app_list:
         - { icon: "\uf0a2", launch: "notification_center" }
+        - { icon: "\uf002", launch: "search" }
         - { icon: "\ueb03", launch: "cmd /c Taskmgr" }
         - { icon: "\uf489", launch: "wezterm-gui" }
   github:
@@ -285,7 +286,7 @@ widgets:
       change_automatically: false # Automatically change wallpaper
       update_interval: 60 # If change_automatically is true, update interval in seconds
       gallery:
-        enabled: false
+        enabled: true 
         blur: true
         image_width: 220
         image_per_page: 8
@@ -299,4 +300,4 @@ widgets:
         enable_cache: false
       run_after:
         - "wal -s -t -e -q -n -i {image}"
-        - "powershell -ExecutionPolicy Bypass -File %HOME%/.config/yasb/scripts/wallpapers.ps1" 
+        - "powershell -ExecutionPolicy Bypass -File %HOME%/.config/yasb/scripts/wallpapers.ps1"

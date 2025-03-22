@@ -46,3 +46,1211 @@
 2025-02-23 19:48:50 DEBUG _windows.py:218: Stopping worker thread...
 2025-02-23 19:48:50 DEBUG _windows.py:201: Exiting thread
 2025-02-23 19:48:50 DEBUG _windows.py:75: Closing
+2025-03-11 16:56:23 INFO log.py:21: Yasb v1.6.4
+2025-03-11 16:56:29 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 16:56:48 INFO weather.py:367: Fetched new weather data at 2025-03-11 16:56:48.498345
+2025-03-11 16:56:49 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 16:56:51 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 42px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 16:57:02 INFO event_listener.py:52: Created named pipe yasb-c0fb0591-fe6b-11ef-b688-3024a93e5e2e
+2025-03-11 16:57:02 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-c0fb0591-fe6b-11ef-b688-3024a93e5e2e
+2025-03-11 16:57:02 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 16:57:03 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 16:57:03 DEBUG _windows.py:192: Thread started
+2025-03-11 16:57:04 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 16:59:43 INFO tray.py:247: Exiting Application...
+2025-03-11 16:59:44 DEBUG _windows.py:218: Stopping worker thread...
+2025-03-11 16:59:44 DEBUG _windows.py:201: Exiting thread
+2025-03-11 16:59:44 DEBUG _windows.py:75: Closing
+2025-03-11 16:59:44 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL update_event of TaskbarWidget object at 0x000002A1CC0D59F0>. Removing link to WinEvent.EventObjectDestroy.
+2025-03-11 16:59:57 INFO log.py:21: Yasb v1.6.4
+2025-03-11 16:59:58 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 17:00:07 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:00:07.851183
+2025-03-11 17:00:08 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 17:00:08 ERROR github.py:410: HTTP Error occurred: 401 - {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-03-11 17:00:09 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 36px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 17:00:36 INFO event_listener.py:52: Created named pipe yasb-40187802-fe6c-11ef-836b-3024a93e5e2e
+2025-03-11 17:00:36 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-40187802-fe6c-11ef-836b-3024a93e5e2e
+2025-03-11 17:00:36 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 17:00:36 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 17:00:37 DEBUG _windows.py:192: Thread started
+2025-03-11 17:00:40 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 17:01:11 ERROR github.py:410: HTTP Error occurred: 401 - {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-03-11 17:02:08 ERROR github.py:410: HTTP Error occurred: 401 - {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-03-11 17:02:45 INFO log.py:21: Yasb v1.6.4
+2025-03-11 17:02:49 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 17:03:04 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:03:04.108667
+2025-03-11 17:03:04 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 17:03:05 ERROR github.py:410: HTTP Error occurred: 401 - {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-03-11 17:03:08 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 17:03:44 INFO event_listener.py:52: Created named pipe yasb-b0671dde-fe6c-11ef-94c3-3024a93e5e2e
+2025-03-11 17:03:44 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-b0671dde-fe6c-11ef-94c3-3024a93e5e2e
+2025-03-11 17:03:45 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 17:03:45 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 17:03:45 DEBUG _windows.py:192: Thread started
+2025-03-11 17:03:48 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 17:04:04 ERROR github.py:410: HTTP Error occurred: 401 - {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-03-11 17:05:05 ERROR github.py:410: HTTP Error occurred: 401 - {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-03-11 17:06:04 INFO log.py:21: Yasb v1.6.4
+2025-03-11 17:06:05 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 17:06:05 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:06:05.958140
+2025-03-11 17:06:06 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 17:06:06 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 17:06:11 INFO event_listener.py:52: Created named pipe yasb-07f8e6af-fe6d-11ef-82cd-3024a93e5e2e
+2025-03-11 17:06:11 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-07f8e6af-fe6d-11ef-82cd-3024a93e5e2e
+2025-03-11 17:06:11 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 17:06:11 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 17:06:11 DEBUG _windows.py:192: Thread started
+2025-03-11 17:06:12 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 17:07:46 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:07:58 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:08:20 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:08:44 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:08:46 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:08:59 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:09:11 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:09:20 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:09:23 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:09:30 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:09:34 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:09:45 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:09:55 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:09:58 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:10:02 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:10:09 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:10:20 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:10:24 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:10:30 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:10:46 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:10:52 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:11:03 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:11:06 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:11:08 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:11:19 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:11:23 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:11:50 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:12:14 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:12:19 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:12:23 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:12:28 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:12:39 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:12:57 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:13:11 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:13:17 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:13:21 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:14:12 INFO log.py:21: Yasb v1.6.4
+2025-03-11 17:14:12 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 17:14:13 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:14:13.250478
+2025-03-11 17:14:13 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 17:14:13 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 17:14:18 INFO event_listener.py:52: Created named pipe yasb-2a5bdbd9-fe6e-11ef-aa2e-3024a93e5e2e
+2025-03-11 17:14:18 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-2a5bdbd9-fe6e-11ef-aa2e-3024a93e5e2e
+2025-03-11 17:14:18 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 17:14:18 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 17:14:18 DEBUG _windows.py:192: Thread started
+2025-03-11 17:14:18 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 17:15:18 INFO log.py:21: Yasb v1.6.4
+2025-03-11 17:15:18 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 17:15:19 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:15:19.363057
+2025-03-11 17:15:19 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 17:15:19 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 17:15:26 INFO event_listener.py:52: Created named pipe yasb-52c1ffc9-fe6e-11ef-ac43-3024a93e5e2e
+2025-03-11 17:15:26 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-52c1ffc9-fe6e-11ef-ac43-3024a93e5e2e
+2025-03-11 17:15:26 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 17:15:26 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 17:15:26 DEBUG _windows.py:192: Thread started
+2025-03-11 17:15:28 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 17:17:29 INFO log.py:21: Yasb v1.6.4
+2025-03-11 17:17:30 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 17:17:31 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:17:31.537471
+2025-03-11 17:17:31 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 17:17:32 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 17:17:37 INFO event_listener.py:52: Created named pipe yasb-a0f3da1c-fe6e-11ef-aceb-3024a93e5e2e
+2025-03-11 17:17:37 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-a0f3da1c-fe6e-11ef-aceb-3024a93e5e2e
+2025-03-11 17:17:37 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 17:17:37 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 17:17:37 DEBUG _windows.py:192: Thread started
+2025-03-11 17:17:38 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 17:17:57 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:18:10 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:18:13 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:18:36 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:18:38 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:18:44 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:19:04 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:19:06 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:19:15 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:19:43 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:19:48 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:19:51 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:19:56 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:20:02 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:20:12 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:20:15 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:20:27 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:20:29 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:20:49 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:20:53 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:21:17 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:21:24 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:22:10 INFO log.py:21: Yasb v1.6.4
+2025-03-11 17:22:10 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 17:22:12 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:22:12.045496
+2025-03-11 17:22:12 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 17:22:12 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 17:22:20 INFO event_listener.py:52: Created named pipe yasb-49c0af00-fe6f-11ef-bee8-3024a93e5e2e
+2025-03-11 17:22:20 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-49c0af00-fe6f-11ef-bee8-3024a93e5e2e
+2025-03-11 17:22:20 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 17:22:20 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 17:22:20 DEBUG _windows.py:192: Thread started
+2025-03-11 17:22:24 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 17:24:18 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:25:35 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:25:46 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:26:06 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:26:08 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:26:20 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:26:40 INFO log.py:21: Yasb v1.6.4
+2025-03-11 17:26:43 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 17:26:45 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:26:45.843478
+2025-03-11 17:26:46 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 17:26:47 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 17:27:04 INFO event_listener.py:52: Created named pipe yasb-f2c11467-fe6f-11ef-8b34-3024a93e5e2e
+2025-03-11 17:27:04 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-f2c11467-fe6f-11ef-8b34-3024a93e5e2e
+2025-03-11 17:27:05 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 17:27:05 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 17:27:05 DEBUG _windows.py:192: Thread started
+2025-03-11 17:27:07 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 17:27:44 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:36:45 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:36:45.805641
+2025-03-11 17:46:45 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:46:45.816671
+2025-03-11 17:53:21 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:54:19 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:54:26 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:54:46 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:55:02 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 17:56:45 INFO weather.py:367: Fetched new weather data at 2025-03-11 17:56:45.798546
+2025-03-11 20:07:31 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:07:31.505513
+2025-03-11 20:13:23 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:13:24 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:13:24 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:13:24.858821
+2025-03-11 20:13:25 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:13:25 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:13:30 INFO event_listener.py:52: Created named pipe yasb-33547ef6-fe87-11ef-8f90-3024a93e5e2e
+2025-03-11 20:13:30 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-33547ef6-fe87-11ef-8f90-3024a93e5e2e
+2025-03-11 20:13:30 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:13:30 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:13:30 DEBUG _windows.py:192: Thread started
+2025-03-11 20:13:31 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:17:59 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:17:59 ERROR main.py:82: Another instance of the YASB is already running.
+2025-03-11 20:18:22 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:18:23 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:18:23 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:18:23.766199
+2025-03-11 20:18:23 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:18:24 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:18:27 INFO event_listener.py:52: Created named pipe yasb-e426f00f-fe87-11ef-b718-3024a93e5e2e
+2025-03-11 20:18:27 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-e426f00f-fe87-11ef-b718-3024a93e5e2e
+2025-03-11 20:18:27 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:18:27 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:18:27 DEBUG _windows.py:192: Thread started
+2025-03-11 20:18:27 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:18:36 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:18:51 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:21:09 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:22:38 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:22:39 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:22:39 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:22:39.579706
+2025-03-11 20:22:43 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:22:43 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:22:47 INFO event_listener.py:52: Created named pipe yasb-7ef09021-fe88-11ef-a88f-3024a93e5e2e
+2025-03-11 20:22:47 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-7ef09021-fe88-11ef-a88f-3024a93e5e2e
+2025-03-11 20:22:47 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:22:47 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:22:47 DEBUG _windows.py:192: Thread started
+2025-03-11 20:22:47 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:23:05 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:23:06 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:23:06 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:23:06.645814
+2025-03-11 20:23:07 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:23:07 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:23:12 INFO event_listener.py:52: Created named pipe yasb-8dfb6a30-fe88-11ef-b978-3024a93e5e2e
+2025-03-11 20:23:12 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-8dfb6a30-fe88-11ef-b978-3024a93e5e2e
+2025-03-11 20:23:12 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:23:12 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:23:12 DEBUG _windows.py:192: Thread started
+2025-03-11 20:23:14 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:23:17 ERROR base.py:89: Failed to execute callback of type 'quick_menu' with args: []
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\widgets\base.py", line 87, in _run_callback
+KeyError: 'quick_menu'
+2025-03-11 20:24:36 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:24:37 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:24:37 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:24:37.580691
+2025-03-11 20:24:38 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:24:38 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:24:41 INFO event_listener.py:52: Created named pipe yasb-c34c478c-fe88-11ef-a184-3024a93e5e2e
+2025-03-11 20:24:41 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-c34c478c-fe88-11ef-a184-3024a93e5e2e
+2025-03-11 20:24:41 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:24:41 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:24:41 DEBUG _windows.py:192: Thread started
+2025-03-11 20:24:42 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:24:43 ERROR base.py:89: Failed to execute callback of type 'quick_settings' with args: []
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\widgets\base.py", line 87, in _run_callback
+KeyError: 'quick_settings'
+2025-03-11 20:24:44 ERROR base.py:89: Failed to execute callback of type 'quick_settings' with args: []
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\widgets\base.py", line 87, in _run_callback
+KeyError: 'quick_settings'
+2025-03-11 20:24:52 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:24:52 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:24:52 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:24:52.758065
+2025-03-11 20:24:53 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:24:53 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:24:55 INFO event_listener.py:52: Created named pipe yasb-cbc326d6-fe88-11ef-bf4e-3024a93e5e2e
+2025-03-11 20:24:55 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-cbc326d6-fe88-11ef-bf4e-3024a93e5e2e
+2025-03-11 20:24:56 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:24:56 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:24:56 DEBUG _windows.py:192: Thread started
+2025-03-11 20:24:56 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:25:36 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:26:27 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:26:41 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:26:45 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:26:57 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:27:00 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:27:16 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:27:24 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:27:30 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:27:41 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:27:45 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:28:02 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:28:06 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:28:16 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:28:18 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:28:21 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:28:24 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:28:28 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:28:31 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:28:54 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:29:01 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:29:06 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:29:20 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:29:21 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:29:21 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:29:21.258355
+2025-03-11 20:29:21 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:29:22 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:29:23 WARNING weather.py:407: An unexpected error occurred while loading icon http://cdn.weatherapi.com/weather/64x64/day/113.png: timed out
+2025-03-11 20:29:24 INFO event_listener.py:52: Created named pipe yasb-6b865f17-fe89-11ef-8bee-3024a93e5e2e
+2025-03-11 20:29:24 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-6b865f17-fe89-11ef-8bee-3024a93e5e2e
+2025-03-11 20:29:24 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:29:24 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:29:24 DEBUG _windows.py:192: Thread started
+2025-03-11 20:29:24 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:29:24 WARNING weather.py:407: An unexpected error occurred while loading icon http://cdn.weatherapi.com/weather/64x64/day/113.png: timed out
+2025-03-11 20:29:41 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:29:42 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:29:42 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:29:42.446542
+2025-03-11 20:29:43 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:29:43 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:29:45 INFO event_listener.py:52: Created named pipe yasb-78414e69-fe89-11ef-8bc4-3024a93e5e2e
+2025-03-11 20:29:45 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-78414e69-fe89-11ef-8bc4-3024a93e5e2e
+2025-03-11 20:29:45 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:29:45 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:29:45 DEBUG _windows.py:192: Thread started
+2025-03-11 20:29:45 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:29:48 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:30:00 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:30:01 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:30:01 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:30:01.765095
+2025-03-11 20:30:02 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:30:02 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:30:04 INFO event_listener.py:52: Created named pipe yasb-83c1b098-fe89-11ef-8ec2-3024a93e5e2e
+2025-03-11 20:30:04 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-83c1b098-fe89-11ef-8ec2-3024a93e5e2e
+2025-03-11 20:30:04 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:30:04 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:30:04 DEBUG _windows.py:192: Thread started
+2025-03-11 20:30:05 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:30:09 INFO log.py:21: Yasb v1.6.4
+2025-03-11 20:30:10 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-11 20:30:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:30:10.804540
+2025-03-11 20:30:11 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-11 20:30:11 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-11 20:30:13 INFO event_listener.py:52: Created named pipe yasb-891ab387-fe89-11ef-8bc5-3024a93e5e2e
+2025-03-11 20:30:13 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-891ab387-fe89-11ef-8bc5-3024a93e5e2e
+2025-03-11 20:30:13 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-11 20:30:13 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-11 20:30:13 DEBUG _windows.py:192: Thread started
+2025-03-11 20:30:14 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-11 20:30:28 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:35:55 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:36:09 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-11 20:40:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:40:10.975272
+2025-03-11 20:50:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 20:50:10.961290
+2025-03-11 21:00:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 21:00:10.823502
+2025-03-11 21:10:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 21:10:10.820889
+2025-03-11 21:20:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 21:20:10.822770
+2025-03-11 21:30:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 21:30:10.820191
+2025-03-11 21:40:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 21:40:10.853086
+2025-03-11 21:50:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 21:50:10.815652
+2025-03-11 22:00:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 22:00:10.808694
+2025-03-11 22:10:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 22:10:10.814132
+2025-03-11 22:20:10 INFO weather.py:367: Fetched new weather data at 2025-03-11 22:20:10.822856
+2025-03-12 09:25:35 INFO log.py:21: Yasb v1.6.4
+2025-03-12 09:25:39 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-12 09:25:45 INFO weather.py:367: Fetched new weather data at 2025-03-12 09:25:45.186845
+2025-03-12 09:25:48 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-12 09:25:48 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-12 09:25:53 INFO event_listener.py:52: Created named pipe yasb-e4b793ea-fef5-11ef-8983-3024a93e5e2e
+2025-03-12 09:25:53 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-e4b793ea-fef5-11ef-8983-3024a93e5e2e
+2025-03-12 09:25:53 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-12 09:25:53 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-12 09:25:53 DEBUG _windows.py:192: Thread started
+2025-03-12 09:25:53 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-12 09:33:45 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-12 09:33:59 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-12 09:34:11 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-12 09:34:14 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-12 09:34:19 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-12 09:35:45 INFO weather.py:367: Fetched new weather data at 2025-03-12 09:35:45.203424
+2025-03-12 09:45:45 INFO weather.py:367: Fetched new weather data at 2025-03-12 09:45:45.186883
+2025-03-12 09:55:45 INFO weather.py:367: Fetched new weather data at 2025-03-12 09:55:45.193868
+2025-03-12 10:05:45 INFO weather.py:367: Fetched new weather data at 2025-03-12 10:05:45.203151
+2025-03-12 10:15:49 INFO weather.py:367: Fetched new weather data at 2025-03-12 10:15:49.601859
+2025-03-12 10:25:45 INFO weather.py:367: Fetched new weather data at 2025-03-12 10:25:45.444520
+2025-03-12 10:35:45 INFO weather.py:367: Fetched new weather data at 2025-03-12 10:35:45.199845
+2025-03-12 11:26:59 INFO weather.py:367: Fetched new weather data at 2025-03-12 11:26:55.904501
+2025-03-12 11:36:52 INFO weather.py:367: Fetched new weather data at 2025-03-12 11:36:52.575077
+2025-03-12 11:43:09 WARNING taskbar.py:249: No widget found under cursor.
+2025-03-12 11:43:09 WARNING taskbar.py:249: No widget found under cursor.
+2025-03-12 11:46:52 INFO weather.py:367: Fetched new weather data at 2025-03-12 11:46:52.502903
+2025-03-12 11:51:26 DEBUG volume.py:321: Attempting PolicyConfig interface with device: {0.0.0.00000000}.{9a844211-318e-4cff-8d4b-bbc69e996281}
+2025-03-12 11:51:27 DEBUG volume.py:321: Attempting PolicyConfig interface with device: {0.0.0.00000000}.{9a844211-318e-4cff-8d4b-bbc69e996281}
+2025-03-12 11:56:52 INFO weather.py:367: Fetched new weather data at 2025-03-12 11:56:52.611472
+2025-03-12 12:05:38 DEBUG _windows.py:218: Stopping worker thread...
+2025-03-12 12:05:38 DEBUG _windows.py:201: Exiting thread
+2025-03-12 12:05:38 DEBUG _windows.py:75: Closing
+2025-03-12 12:09:55 INFO log.py:21: Yasb v1.6.4
+2025-03-12 12:09:57 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-12 12:10:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 12:10:04.760550
+2025-03-12 12:10:07 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-12 12:10:08 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-12 12:10:12 INFO event_listener.py:52: Created named pipe yasb-d97900d6-ff0c-11ef-aaa7-3024a93e5e2e
+2025-03-12 12:10:12 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-d97900d6-ff0c-11ef-aaa7-3024a93e5e2e
+2025-03-12 12:10:12 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-12 12:10:12 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-12 12:10:12 DEBUG _windows.py:192: Thread started
+2025-03-12 12:10:13 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-12 12:20:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 12:20:04.758122
+2025-03-12 12:30:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 12:30:04.764059
+2025-03-12 12:40:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 12:40:04.757926
+2025-03-12 12:50:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 12:50:04.756126
+2025-03-12 13:00:05 INFO weather.py:367: Fetched new weather data at 2025-03-12 13:00:05.430088
+2025-03-12 13:10:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 13:10:04.810370
+2025-03-12 13:20:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 13:20:04.755975
+2025-03-12 13:30:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 13:30:04.752519
+2025-03-12 13:40:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 13:40:04.754207
+2025-03-12 13:50:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 13:50:04.751569
+2025-03-12 14:00:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 14:00:04.768521
+2025-03-12 14:10:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 14:10:04.754704
+2025-03-12 14:20:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 14:20:04.933593
+2025-03-12 14:30:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 14:30:04.767177
+2025-03-12 14:40:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 14:40:04.763511
+2025-03-12 14:50:04 INFO weather.py:367: Fetched new weather data at 2025-03-12 14:50:04.967092
+2025-03-12 15:00:05 INFO weather.py:367: Fetched new weather data at 2025-03-12 15:00:05.092822
+2025-03-12 15:10:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 15:10:26.504403
+2025-03-12 15:14:13 ERROR base.py:89: Failed to execute callback of type 'toggle_window' with args: []
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\widgets\base.py", line 87, in _run_callback
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\taskbar.py", line 265, in _on_toggle_window
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\taskbar.py", line 260, in _perform_action
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\taskbar.py", line 279, in bring_to_foreground
+pywintypes.error: (0, 'SetForegroundWindow', 'No error message is available')
+2025-03-12 15:14:14 ERROR base.py:89: Failed to execute callback of type 'toggle_window' with args: []
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\widgets\base.py", line 87, in _run_callback
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\taskbar.py", line 265, in _on_toggle_window
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\taskbar.py", line 260, in _perform_action
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\taskbar.py", line 279, in bring_to_foreground
+pywintypes.error: (0, 'SetForegroundWindow', 'No error message is available')
+2025-03-12 15:20:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 15:20:26.530635
+2025-03-12 15:30:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 15:30:26.515070
+2025-03-12 15:40:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 15:40:26.529606
+2025-03-12 15:50:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 15:50:26.499119
+2025-03-12 16:00:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 16:00:26.511199
+2025-03-12 16:10:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 16:10:26.515136
+2025-03-12 16:20:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 16:20:26.503731
+2025-03-12 16:30:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 16:30:26.498128
+2025-03-12 16:30:59 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-12 16:40:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 16:40:26.507955
+2025-03-12 16:50:26 INFO weather.py:367: Fetched new weather data at 2025-03-12 16:50:26.510701
+2025-03-12 17:00:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 17:00:27.964974
+2025-03-12 17:10:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 17:10:27.960664
+2025-03-12 17:20:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 17:20:27.971030
+2025-03-12 17:30:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 17:30:27.969038
+2025-03-12 17:30:27 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-12 17:40:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 17:40:27.973885
+2025-03-12 17:50:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 17:50:27.988440
+2025-03-12 18:00:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 18:00:27.980937
+2025-03-12 18:10:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 18:10:27.980102
+2025-03-12 18:20:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 18:20:27.990355
+2025-03-12 18:30:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 18:30:27.982538
+2025-03-12 18:40:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 18:40:27.978283
+2025-03-12 18:50:27 INFO weather.py:367: Fetched new weather data at 2025-03-12 18:50:27.992893
+2025-03-12 19:46:50 INFO log.py:21: Yasb v1.6.4
+2025-03-12 19:46:53 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-12 19:47:00 INFO weather.py:367: Fetched new weather data at 2025-03-12 19:47:00.964787
+2025-03-12 19:47:04 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-12 19:47:05 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-12 19:47:14 INFO event_listener.py:52: Created named pipe yasb-b208279f-ff4c-11ef-aaf2-3024a93e5e2e
+2025-03-12 19:47:14 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-b208279f-ff4c-11ef-aaf2-3024a93e5e2e
+2025-03-12 19:47:14 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-12 19:47:14 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-12 19:47:14 DEBUG _windows.py:192: Thread started
+2025-03-12 19:47:15 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-12 19:57:00 INFO weather.py:367: Fetched new weather data at 2025-03-12 19:57:00.964438
+2025-03-12 20:07:00 INFO weather.py:367: Fetched new weather data at 2025-03-12 20:07:00.967157
+2025-03-12 20:07:19 INFO tray.py:241: Reloading Application...
+2025-03-12 20:07:21 INFO log.py:21: Yasb v1.6.4
+2025-03-12 20:07:22 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-12 20:07:23 INFO weather.py:367: Fetched new weather data at 2025-03-12 20:07:23.048617
+2025-03-12 20:07:24 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-12 20:07:24 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-12 20:07:30 INFO event_listener.py:52: Created named pipe yasb-870ec2e2-ff4f-11ef-8133-3024a93e5e2e
+2025-03-12 20:07:30 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-870ec2e2-ff4f-11ef-8133-3024a93e5e2e
+2025-03-12 20:07:30 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-12 20:07:30 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-12 20:07:30 DEBUG _windows.py:192: Thread started
+2025-03-12 20:07:31 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-12 20:17:23 INFO weather.py:367: Fetched new weather data at 2025-03-12 20:17:23.059527
+2025-03-12 20:17:52 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-12 20:27:23 INFO weather.py:367: Fetched new weather data at 2025-03-12 20:27:23.107575
+2025-03-12 20:37:23 INFO weather.py:367: Fetched new weather data at 2025-03-12 20:37:23.176596
+2025-03-12 20:47:23 INFO weather.py:367: Fetched new weather data at 2025-03-12 20:47:23.198220
+2025-03-12 20:57:23 INFO weather.py:367: Fetched new weather data at 2025-03-12 20:57:23.250824
+2025-03-12 21:07:23 INFO weather.py:367: Fetched new weather data at 2025-03-12 21:07:23.223066
+2025-03-12 21:49:07 INFO weather.py:367: Fetched new weather data at 2025-03-12 21:49:07.513029
+2025-03-12 21:49:14 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-12 21:59:07 INFO weather.py:367: Fetched new weather data at 2025-03-12 21:59:07.510879
+2025-03-12 22:09:07 INFO weather.py:367: Fetched new weather data at 2025-03-12 22:09:07.511173
+2025-03-12 22:19:07 INFO weather.py:367: Fetched new weather data at 2025-03-12 22:19:07.519699
+2025-03-12 22:29:07 INFO weather.py:367: Fetched new weather data at 2025-03-12 22:29:07.520607
+2025-03-12 22:39:07 INFO weather.py:367: Fetched new weather data at 2025-03-12 22:39:07.519798
+2025-03-12 22:49:07 INFO weather.py:367: Fetched new weather data at 2025-03-12 22:49:07.504573
+2025-03-12 22:59:07 INFO weather.py:367: Fetched new weather data at 2025-03-12 22:59:07.501700
+2025-03-12 23:09:07 INFO weather.py:367: Fetched new weather data at 2025-03-12 23:09:07.511527
+2025-03-12 23:09:41 DEBUG _windows.py:218: Stopping worker thread...
+2025-03-12 23:09:41 DEBUG _windows.py:201: Exiting thread
+2025-03-12 23:09:41 DEBUG _windows.py:75: Closing
+2025-03-13 14:05:49 INFO log.py:21: Yasb v1.6.4
+2025-03-13 14:05:54 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-13 14:06:13 INFO weather.py:367: Fetched new weather data at 2025-03-13 14:06:13.840577
+2025-03-13 14:06:20 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-13 14:06:22 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-13 14:06:32 INFO event_listener.py:52: Created named pipe yasb-43d4166e-ffe6-11ef-89f0-3024a93e5e2e
+2025-03-13 14:06:32 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-43d4166e-ffe6-11ef-89f0-3024a93e5e2e
+2025-03-13 14:06:32 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-13 14:06:32 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-13 14:06:32 DEBUG _windows.py:192: Thread started
+2025-03-13 14:06:35 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-13 14:16:13 INFO weather.py:367: Fetched new weather data at 2025-03-13 14:16:13.860146
+2025-03-13 14:26:13 INFO weather.py:367: Fetched new weather data at 2025-03-13 14:26:13.838190
+2025-03-13 14:36:13 INFO weather.py:367: Fetched new weather data at 2025-03-13 14:36:13.831393
+2025-03-13 14:46:13 INFO weather.py:367: Fetched new weather data at 2025-03-13 14:46:13.829700
+2025-03-13 14:56:13 INFO weather.py:367: Fetched new weather data at 2025-03-13 14:56:13.834255
+2025-03-13 17:27:37 INFO weather.py:367: Fetched new weather data at 2025-03-13 17:27:37.209267
+2025-03-13 17:27:37 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-13 17:37:36 INFO weather.py:367: Fetched new weather data at 2025-03-13 17:37:36.815901
+2025-03-13 17:47:36 INFO weather.py:367: Fetched new weather data at 2025-03-13 17:47:36.514494
+2025-03-13 17:47:36 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-13 19:12:46 INFO weather.py:367: Fetched new weather data at 2025-03-13 19:12:46.640868
+2025-03-13 19:12:48 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-13 19:22:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 19:22:42.010307
+2025-03-13 19:32:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 19:32:42.007765
+2025-03-13 19:42:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 19:42:42.006474
+2025-03-13 19:52:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 19:52:41.999712
+2025-03-13 20:02:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 20:02:42.000062
+2025-03-13 20:12:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 20:12:42.019249
+2025-03-13 20:22:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 20:22:42.018744
+2025-03-13 20:32:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 20:32:42.008217
+2025-03-13 20:42:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 20:42:42.015613
+2025-03-13 20:52:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 20:52:42.022056
+2025-03-13 21:02:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 21:02:42.030267
+2025-03-13 21:12:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 21:12:42.551285
+2025-03-13 21:22:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 21:22:42.023131
+2025-03-13 21:32:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 21:32:42.025588
+2025-03-13 21:42:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 21:42:42.030340
+2025-03-13 21:52:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 21:52:42.027362
+2025-03-13 22:02:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 22:02:42.043248
+2025-03-13 22:12:42 INFO weather.py:367: Fetched new weather data at 2025-03-13 22:12:42.044477
+2025-03-13 23:16:53 INFO weather.py:367: Fetched new weather data at 2025-03-13 23:16:53.512514
+2025-03-14 10:40:09 INFO log.py:21: Yasb v1.6.4
+2025-03-14 10:40:14 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-14 10:40:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 10:40:23.955929
+2025-03-14 10:40:24 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-14 10:40:28 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-14 10:40:28 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-14 10:40:37 INFO event_listener.py:52: Created named pipe yasb-aa7fb685-0092-11f0-a937-3024a93e5e2e
+2025-03-14 10:40:37 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-aa7fb685-0092-11f0-a937-3024a93e5e2e
+2025-03-14 10:40:37 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-14 10:40:37 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-14 10:40:37 DEBUG _windows.py:192: Thread started
+2025-03-14 10:40:38 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-14 10:50:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 10:50:23.961576
+2025-03-14 10:50:23 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-14 11:00:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 11:00:23.957689
+2025-03-14 11:00:23 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-14 11:10:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 11:10:23.954619
+2025-03-14 11:10:23 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-14 12:09:16 INFO weather.py:367: Fetched new weather data at 2025-03-14 12:09:16.031594
+2025-03-14 12:09:16 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-14 12:36:10 INFO weather.py:367: Fetched new weather data at 2025-03-14 12:36:10.960558
+2025-03-14 12:36:10 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-14 12:46:09 INFO weather.py:367: Fetched new weather data at 2025-03-14 12:46:09.995879
+2025-03-14 12:56:12 INFO weather.py:367: Fetched new weather data at 2025-03-14 12:56:12.494764
+2025-03-14 13:06:09 INFO weather.py:367: Fetched new weather data at 2025-03-14 13:06:09.988884
+2025-03-14 13:16:09 INFO weather.py:367: Fetched new weather data at 2025-03-14 13:16:09.992291
+2025-03-14 13:26:09 INFO weather.py:367: Fetched new weather data at 2025-03-14 13:26:09.994462
+2025-03-14 13:36:10 INFO weather.py:367: Fetched new weather data at 2025-03-14 13:36:10.000071
+2025-03-14 13:46:09 INFO weather.py:367: Fetched new weather data at 2025-03-14 13:46:09.995471
+2025-03-14 13:56:09 INFO weather.py:367: Fetched new weather data at 2025-03-14 13:56:09.996682
+2025-03-14 14:06:10 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:06:10.030526
+2025-03-14 14:08:13 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-14 14:09:22 INFO log.py:21: Yasb v1.6.4
+2025-03-14 14:09:29 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-14 14:09:41 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:09:41.782024
+2025-03-14 14:09:47 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-14 14:09:47 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-14 14:09:53 INFO event_listener.py:52: Created named pipe yasb-e6531f31-00af-11f0-ab9f-3024a93e5e2e
+2025-03-14 14:09:53 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-e6531f31-00af-11f0-ab9f-3024a93e5e2e
+2025-03-14 14:09:53 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-14 14:09:53 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-14 14:09:53 DEBUG _windows.py:192: Thread started
+2025-03-14 14:09:54 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-14 14:10:03 INFO log.py:21: Yasb v1.6.4
+2025-03-14 14:10:04 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-14 14:10:04 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:10:04.816501
+2025-03-14 14:10:05 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-14 14:10:06 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-14 14:10:09 INFO event_listener.py:52: Created named pipe yasb-f00142f3-00af-11f0-8553-3024a93e5e2e
+2025-03-14 14:10:09 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-f00142f3-00af-11f0-8553-3024a93e5e2e
+2025-03-14 14:10:09 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-14 14:10:09 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-14 14:10:09 DEBUG _windows.py:192: Thread started
+2025-03-14 14:10:10 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-14 14:11:33 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-14 14:20:04 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:20:04.854816
+2025-03-14 14:21:43 INFO log.py:21: Yasb v1.6.4
+2025-03-14 14:21:45 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-14 14:21:46 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:21:46.559448
+2025-03-14 14:21:47 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-14 14:21:47 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-14 14:21:53 INFO event_listener.py:52: Created named pipe yasb-937542cd-00b1-11f0-acb5-3024a93e5e2e
+2025-03-14 14:21:53 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-937542cd-00b1-11f0-acb5-3024a93e5e2e
+2025-03-14 14:21:53 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-14 14:21:53 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-14 14:21:53 DEBUG _windows.py:192: Thread started
+2025-03-14 14:21:54 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-14 14:31:46 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:31:46.661315
+2025-03-14 14:41:46 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:41:46.575864
+2025-03-14 14:51:55 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:51:55.920332
+2025-03-14 14:58:03 INFO log.py:21: Yasb v1.6.4
+2025-03-14 14:58:04 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-14 14:58:04 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:58:04.718561
+2025-03-14 14:58:05 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-14 14:58:05 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-14 14:58:09 INFO event_listener.py:52: Created named pipe yasb-a49f024a-00b6-11f0-b447-3024a93e5e2e
+2025-03-14 14:58:09 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-a49f024a-00b6-11f0-b447-3024a93e5e2e
+2025-03-14 14:58:09 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-14 14:58:09 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-14 14:58:09 DEBUG _windows.py:192: Thread started
+2025-03-14 14:58:10 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-14 14:58:21 INFO tray.py:241: Reloading Application...
+2025-03-14 14:58:22 INFO log.py:21: Yasb v1.6.4
+2025-03-14 14:58:22 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-14 14:58:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 14:58:23.337134
+2025-03-14 14:58:24 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-14 14:58:24 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-14 14:58:27 INFO event_listener.py:52: Created named pipe yasb-af6a9c18-00b6-11f0-9a30-3024a93e5e2e
+2025-03-14 14:58:27 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-af6a9c18-00b6-11f0-9a30-3024a93e5e2e
+2025-03-14 14:58:27 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-14 14:58:27 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-14 14:58:27 DEBUG _windows.py:192: Thread started
+2025-03-14 14:58:28 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-14 15:08:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 15:08:23.485313
+2025-03-14 15:18:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 15:18:23.728824
+2025-03-14 15:28:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 15:28:23.487662
+2025-03-14 15:38:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 15:38:23.661816
+2025-03-14 15:48:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 15:48:23.325934
+2025-03-14 15:58:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 15:58:23.329770
+2025-03-14 16:08:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 16:08:23.329735
+2025-03-14 16:18:23 INFO weather.py:367: Fetched new weather data at 2025-03-14 16:18:23.335452
+2025-03-14 17:46:00 INFO weather.py:367: Fetched new weather data at 2025-03-14 17:46:00.473046
+2025-03-14 17:55:42 INFO weather.py:367: Fetched new weather data at 2025-03-14 17:55:42.790058
+2025-03-14 18:05:42 INFO weather.py:367: Fetched new weather data at 2025-03-14 18:05:42.505780
+2025-03-14 18:15:42 INFO weather.py:367: Fetched new weather data at 2025-03-14 18:15:42.506397
+2025-03-14 18:25:42 INFO weather.py:367: Fetched new weather data at 2025-03-14 18:25:42.525400
+2025-03-14 18:35:42 INFO weather.py:367: Fetched new weather data at 2025-03-14 18:35:42.502846
+2025-03-14 18:59:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 18:59:25.506476
+2025-03-14 18:59:26 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-14 19:09:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 19:09:25.510756
+2025-03-14 19:19:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 19:19:25.523424
+2025-03-14 19:29:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 19:29:25.516087
+2025-03-14 19:34:56 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-14 19:35:49 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-14 19:39:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 19:39:25.511046
+2025-03-14 19:49:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 19:49:25.514500
+2025-03-14 19:59:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 19:59:25.512782
+2025-03-14 20:09:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 20:09:25.496969
+2025-03-14 20:19:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 20:19:25.500564
+2025-03-14 20:29:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 20:29:25.500838
+2025-03-14 20:39:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 20:39:25.500904
+2025-03-14 20:49:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 20:49:25.512522
+2025-03-14 20:59:25 INFO weather.py:367: Fetched new weather data at 2025-03-14 20:59:25.505896
+2025-03-14 21:33:05 INFO weather.py:367: Fetched new weather data at 2025-03-14 21:33:05.210111
+2025-03-14 21:33:11 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-14 21:42:50 INFO weather.py:367: Fetched new weather data at 2025-03-14 21:42:50.500846
+2025-03-14 21:52:50 INFO weather.py:367: Fetched new weather data at 2025-03-14 21:52:50.501738
+2025-03-14 22:02:50 INFO weather.py:367: Fetched new weather data at 2025-03-14 22:02:50.516958
+2025-03-14 22:12:50 INFO weather.py:367: Fetched new weather data at 2025-03-14 22:12:50.511895
+2025-03-14 22:22:50 INFO weather.py:367: Fetched new weather data at 2025-03-14 22:22:50.521578
+2025-03-14 22:32:50 INFO weather.py:367: Fetched new weather data at 2025-03-14 22:32:50.512961
+2025-03-14 22:42:50 INFO weather.py:367: Fetched new weather data at 2025-03-14 22:42:50.504701
+2025-03-14 22:52:50 INFO weather.py:367: Fetched new weather data at 2025-03-14 22:52:50.513720
+2025-03-14 23:02:50 INFO weather.py:367: Fetched new weather data at 2025-03-14 23:02:50.506703
+2025-03-15 12:57:30 INFO log.py:21: Yasb v1.6.4
+2025-03-15 12:57:35 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-15 12:57:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 12:57:47.387848
+2025-03-15 12:57:50 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-15 12:57:51 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-15 12:57:57 INFO event_listener.py:52: Created named pipe yasb-03eaa118-016f-11f0-8e90-3024a93e5e2e
+2025-03-15 12:57:57 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-03eaa118-016f-11f0-8e90-3024a93e5e2e
+2025-03-15 12:57:57 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-15 12:57:57 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-15 12:57:57 DEBUG _windows.py:192: Thread started
+2025-03-15 12:57:58 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-15 13:07:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 13:07:47.398214
+2025-03-15 13:17:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 13:17:47.383368
+2025-03-15 13:27:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 13:27:47.375566
+2025-03-15 13:37:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 13:37:47.410509
+2025-03-15 13:47:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 13:47:47.627690
+2025-03-15 13:57:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 13:57:47.394125
+2025-03-15 14:07:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 14:07:47.381237
+2025-03-15 14:17:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 14:17:47.389897
+2025-03-15 14:27:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 14:27:47.493506
+2025-03-15 14:37:48 INFO weather.py:367: Fetched new weather data at 2025-03-15 14:37:48.439185
+2025-03-15 14:47:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 14:47:47.701583
+2025-03-15 14:57:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 14:57:47.409712
+2025-03-15 15:07:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 15:07:47.386328
+2025-03-15 15:17:49 INFO weather.py:367: Fetched new weather data at 2025-03-15 15:17:49.184087
+2025-03-15 15:27:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 15:27:47.453000
+2025-03-15 15:37:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 15:37:47.662040
+2025-03-15 15:47:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 15:47:47.561570
+2025-03-15 15:57:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 15:57:47.555242
+2025-03-15 16:07:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 16:07:47.373154
+2025-03-15 16:17:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 16:17:47.381182
+2025-03-15 16:27:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 16:27:47.373892
+2025-03-15 16:37:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 16:37:47.382897
+2025-03-15 16:47:56 INFO weather.py:367: Fetched new weather data at 2025-03-15 16:47:56.733596
+2025-03-15 16:57:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 16:57:47.381309
+2025-03-15 17:07:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 17:07:47.388526
+2025-03-15 17:17:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 17:17:47.376321
+2025-03-15 17:27:47 INFO weather.py:367: Fetched new weather data at 2025-03-15 17:27:47.411999
+2025-03-15 18:29:36 INFO weather.py:367: Fetched new weather data at 2025-03-15 18:29:36.100848
+2025-03-15 18:29:38 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-15 18:39:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 18:39:34.511043
+2025-03-15 18:49:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 18:49:34.501098
+2025-03-15 18:59:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 18:59:34.512795
+2025-03-15 19:09:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 19:09:34.520883
+2025-03-15 19:19:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 19:19:34.505925
+2025-03-15 19:29:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 19:29:34.506721
+2025-03-15 19:39:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 19:39:34.506456
+2025-03-15 19:49:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 19:49:34.514165
+2025-03-15 19:59:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 19:59:34.515590
+2025-03-15 20:09:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 20:09:34.515602
+2025-03-15 20:19:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 20:19:34.556993
+2025-03-15 20:29:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 20:29:34.504507
+2025-03-15 20:39:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 20:39:34.513862
+2025-03-15 20:49:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 20:49:34.507401
+2025-03-15 20:59:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 20:59:34.523661
+2025-03-15 21:09:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 21:09:34.498518
+2025-03-15 21:19:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 21:19:34.509869
+2025-03-15 21:29:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 21:29:34.507566
+2025-03-15 21:39:34 INFO weather.py:367: Fetched new weather data at 2025-03-15 21:39:34.502272
+2025-03-16 10:08:58 INFO log.py:21: Yasb v1.6.4
+2025-03-16 10:09:01 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-16 10:09:09 INFO weather.py:367: Fetched new weather data at 2025-03-16 10:09:09.601394
+2025-03-16 10:09:13 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-16 10:09:14 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-16 10:09:19 INFO event_listener.py:52: Created named pipe yasb-9ff4a18c-0220-11f0-ac25-3024a93e5e2e
+2025-03-16 10:09:19 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-9ff4a18c-0220-11f0-ac25-3024a93e5e2e
+2025-03-16 10:09:19 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-16 10:09:19 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-16 10:09:19 DEBUG _windows.py:192: Thread started
+2025-03-16 10:09:20 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-16 10:19:09 INFO weather.py:367: Fetched new weather data at 2025-03-16 10:19:09.610446
+2025-03-16 10:29:09 INFO weather.py:367: Fetched new weather data at 2025-03-16 10:29:09.601201
+2025-03-16 12:02:04 INFO log.py:21: Yasb v1.6.4
+2025-03-16 12:02:08 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-16 12:02:18 INFO weather.py:367: Fetched new weather data at 2025-03-16 12:02:18.205370
+2025-03-16 12:02:22 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-16 12:02:24 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-16 12:02:31 INFO event_listener.py:52: Created named pipe yasb-7040dcaa-0230-11f0-a0bf-3024a93e5e2e
+2025-03-16 12:02:31 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-7040dcaa-0230-11f0-a0bf-3024a93e5e2e
+2025-03-16 12:02:31 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-16 12:02:31 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-16 12:02:32 DEBUG _windows.py:192: Thread started
+2025-03-16 12:02:34 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-16 12:05:16 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-16 12:05:27 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-16 12:05:53 INFO log.py:21: Yasb v1.6.4
+2025-03-16 12:05:54 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-16 12:05:55 INFO weather.py:367: Fetched new weather data at 2025-03-16 12:05:55.232315
+2025-03-16 12:05:56 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-16 12:05:56 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-16 12:06:00 INFO event_listener.py:52: Created named pipe yasb-ed18696e-0230-11f0-b16f-3024a93e5e2e
+2025-03-16 12:06:00 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-ed18696e-0230-11f0-b16f-3024a93e5e2e
+2025-03-16 12:06:01 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-16 12:06:01 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-16 12:06:01 DEBUG _windows.py:192: Thread started
+2025-03-16 12:06:01 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-16 12:06:19 INFO log.py:21: Yasb v1.6.4
+2025-03-16 12:06:20 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-16 12:06:20 INFO weather.py:367: Fetched new weather data at 2025-03-16 12:06:20.455558
+2025-03-16 12:06:21 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-16 12:06:21 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-16 12:06:23 INFO event_listener.py:52: Created named pipe yasb-fadb7c63-0230-11f0-ad17-3024a93e5e2e
+2025-03-16 12:06:23 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-fadb7c63-0230-11f0-ad17-3024a93e5e2e
+2025-03-16 12:06:24 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-16 12:06:24 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-16 12:06:24 DEBUG _windows.py:192: Thread started
+2025-03-16 12:06:24 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-16 12:07:17 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-16 12:07:41 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-16 12:07:43 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-16 12:07:47 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-16 12:07:50 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-16 12:07:53 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-16 12:08:00 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-16 12:16:20 INFO weather.py:367: Fetched new weather data at 2025-03-16 12:16:20.460430
+2025-03-16 12:26:20 INFO weather.py:367: Fetched new weather data at 2025-03-16 12:26:20.460751
+2025-03-16 12:36:20 INFO weather.py:367: Fetched new weather data at 2025-03-16 12:36:20.451399
+2025-03-16 12:46:20 INFO weather.py:367: Fetched new weather data at 2025-03-16 12:46:20.454599
+2025-03-16 13:19:20 INFO weather.py:367: Fetched new weather data at 2025-03-16 13:19:20.593437
+2025-03-16 13:29:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 13:29:11.518787
+2025-03-16 13:39:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 13:39:11.503845
+2025-03-16 13:49:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 13:49:11.659392
+2025-03-16 13:59:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 13:59:11.505781
+2025-03-16 14:09:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 14:09:11.504073
+2025-03-16 14:19:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 14:19:11.515552
+2025-03-16 14:29:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 14:29:11.514658
+2025-03-16 14:39:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 14:39:11.511488
+2025-03-16 14:49:20 INFO weather.py:367: Fetched new weather data at 2025-03-16 14:49:20.876700
+2025-03-16 14:59:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 14:59:11.505063
+2025-03-16 15:09:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 15:09:11.510067
+2025-03-16 15:09:11 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-16 15:19:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 15:19:11.515257
+2025-03-16 15:29:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 15:29:11.522190
+2025-03-16 15:39:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 15:39:11.511114
+2025-03-16 15:49:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 15:49:11.515272
+2025-03-16 15:59:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 15:59:11.499258
+2025-03-16 16:09:11 INFO weather.py:367: Fetched new weather data at 2025-03-16 16:09:11.514779
+2025-03-16 16:29:54 INFO weather.py:367: Fetched new weather data at 2025-03-16 16:29:54.875164
+2025-03-16 16:29:55 ERROR weather.py:463: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-16 16:39:50 INFO weather.py:367: Fetched new weather data at 2025-03-16 16:39:50.256175
+2025-03-16 16:42:41 DEBUG _windows.py:218: Stopping worker thread...
+2025-03-16 16:42:41 DEBUG _windows.py:201: Exiting thread
+2025-03-16 16:42:41 DEBUG _windows.py:75: Closing
+2025-03-21 18:38:48 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:38:51 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:38:57 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:38:57.589133
+2025-03-21 18:39:00 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:39:00 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:39:03 INFO event_listener.py:52: Created named pipe yasb-a99c0f4d-0655-11f0-8166-3024a93e5e2e
+2025-03-21 18:39:03 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-a99c0f4d-0655-11f0-8166-3024a93e5e2e
+2025-03-21 18:39:03 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:39:03 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:39:03 DEBUG _windows.py:192: Thread started
+2025-03-21 18:39:04 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:40:51 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:40:51 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:40:51 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:40:51.925819
+2025-03-21 18:40:52 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:40:52 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:40:56 INFO event_listener.py:52: Created named pipe yasb-eca740b6-0655-11f0-b1de-3024a93e5e2e
+2025-03-21 18:40:56 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-eca740b6-0655-11f0-b1de-3024a93e5e2e
+2025-03-21 18:40:56 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:40:56 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:40:56 DEBUG _windows.py:192: Thread started
+2025-03-21 18:40:56 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:44:17 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:44:17 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:44:18 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:44:18.591898
+2025-03-21 18:44:19 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:44:19 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:44:21 ERROR widget_builder.py:88: Failed to validate widget(s) due to invalid options  - systray
+      show_network:
+      - unknown field
+      show_unpinned_button:
+      - unknown field
+      
+2025-03-21 18:44:21 INFO event_listener.py:52: Created named pipe yasb-66eb978d-0656-11f0-a6e5-3024a93e5e2e
+2025-03-21 18:44:21 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-66eb978d-0656-11f0-a6e5-3024a93e5e2e
+2025-03-21 18:44:21 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:44:45 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:44:45 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:44:45 DEBUG _windows.py:192: Thread started
+2025-03-21 18:44:56 INFO tray.py:240: Reloading Application...
+2025-03-21 18:44:57 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:44:57 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:44:58 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:44:58.209283
+2025-03-21 18:44:58 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:44:59 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:45:00 ERROR widget_builder.py:88: Failed to validate widget(s) due to invalid options  - systray
+      show_network:
+      - unknown field
+      show_unpinned_button:
+      - unknown field
+      
+2025-03-21 18:45:00 INFO event_listener.py:52: Created named pipe yasb-7e85cf42-0656-11f0-a182-3024a93e5e2e
+2025-03-21 18:45:00 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-7e85cf42-0656-11f0-a182-3024a93e5e2e
+2025-03-21 18:45:01 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:46:04 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:46:04 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:46:04 DEBUG _windows.py:192: Thread started
+2025-03-21 18:46:07 INFO tray.py:240: Reloading Application...
+2025-03-21 18:46:08 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:46:08 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:46:09 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:46:09.248114
+2025-03-21 18:46:10 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:46:10 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:46:12 INFO event_listener.py:52: Created named pipe yasb-a8f029fc-0656-11f0-8610-3024a93e5e2e
+2025-03-21 18:46:12 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-a8f029fc-0656-11f0-8610-3024a93e5e2e
+2025-03-21 18:46:12 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:46:12 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:46:12 DEBUG _windows.py:192: Thread started
+2025-03-21 18:46:12 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:50:21 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:51:35 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:51:42 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:51:46 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:52:47 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:53:17 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:53:18 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:53:18 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:53:18.983831
+2025-03-21 18:53:19 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:53:19 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:53:22 INFO event_listener.py:52: Created named pipe yasb-a9c8276b-0657-11f0-afcd-3024a93e5e2e
+2025-03-21 18:53:22 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-a9c8276b-0657-11f0-afcd-3024a93e5e2e
+2025-03-21 18:53:23 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:53:23 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:53:23 DEBUG _windows.py:192: Thread started
+2025-03-21 18:53:23 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:53:23 ERROR utils.py:171: GetDIBits failed
+2025-03-21 18:53:24 WARNING weather.py:416: An unexpected error occurred while loading icon http://cdn.weatherapi.com/weather/64x64/day/113.png: timed out
+2025-03-21 18:53:26 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:53:26 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:53:26 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:53:26.896216
+2025-03-21 18:53:27 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:53:27 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:53:29 INFO event_listener.py:52: Created named pipe yasb-adb9f93d-0657-11f0-9c1e-3024a93e5e2e
+2025-03-21 18:53:29 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-adb9f93d-0657-11f0-9c1e-3024a93e5e2e
+2025-03-21 18:53:29 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:53:29 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:53:29 DEBUG _windows.py:192: Thread started
+2025-03-21 18:53:30 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:53:47 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:53:48 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:53:48 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:53:48.644035
+2025-03-21 18:53:49 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:53:49 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:53:51 ERROR widget_builder.py:88: Failed to validate widget(s) due to invalid options  - systray
+      show_network:
+      - unknown field
+      
+2025-03-21 18:53:51 INFO event_listener.py:52: Created named pipe yasb-babefd12-0657-11f0-9974-3024a93e5e2e
+2025-03-21 18:53:51 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-babefd12-0657-11f0-9974-3024a93e5e2e
+2025-03-21 18:53:51 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:54:12 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:54:12 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:54:12 DEBUG _windows.py:192: Thread started
+2025-03-21 18:54:16 INFO tray.py:240: Reloading Application...
+2025-03-21 18:54:17 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:54:17 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:54:18 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:54:18.169176
+2025-03-21 18:54:19 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:54:19 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:54:21 INFO event_listener.py:52: Created named pipe yasb-cccbb141-0657-11f0-8bfb-3024a93e5e2e
+2025-03-21 18:54:21 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-cccbb141-0657-11f0-8bfb-3024a93e5e2e
+2025-03-21 18:54:21 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:54:21 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:54:21 DEBUG _windows.py:192: Thread started
+2025-03-21 18:54:22 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:55:12 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:55:12 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:55:13 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:55:13.431568
+2025-03-21 18:55:14 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:55:14 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:55:16 INFO event_listener.py:52: Created named pipe yasb-ed91cc46-0657-11f0-8734-3024a93e5e2e
+2025-03-21 18:55:16 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-ed91cc46-0657-11f0-8734-3024a93e5e2e
+2025-03-21 18:55:16 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:55:16 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:55:16 DEBUG _windows.py:192: Thread started
+2025-03-21 18:55:17 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:58:37 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:58:42 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:58:47 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:58:51 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:58:54 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:59:04 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:59:12 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:59:15 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 18:59:33 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:59:33 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:59:34 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:59:34.559491
+2025-03-21 18:59:35 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:59:35 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:59:38 INFO event_listener.py:52: Created named pipe yasb-89b04815-0658-11f0-9957-3024a93e5e2e
+2025-03-21 18:59:38 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-89b04815-0658-11f0-9957-3024a93e5e2e
+2025-03-21 18:59:38 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:59:38 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:59:38 DEBUG _windows.py:192: Thread started
+2025-03-21 18:59:39 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:59:44 INFO log.py:21: Yasb v1.6.6
+2025-03-21 18:59:45 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 18:59:45 INFO weather.py:369: Fetched new weather data at 2025-03-21 18:59:45.817510
+2025-03-21 18:59:46 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 18:59:46 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 18:59:48 INFO event_listener.py:52: Created named pipe yasb-8f98f9e4-0658-11f0-96f0-3024a93e5e2e
+2025-03-21 18:59:48 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-8f98f9e4-0658-11f0-96f0-3024a93e5e2e
+2025-03-21 18:59:48 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 18:59:48 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 18:59:48 DEBUG _windows.py:192: Thread started
+2025-03-21 18:59:48 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 18:59:56 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:00:02 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:03:56 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:03:56 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:03:57 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:03:57.505078
+2025-03-21 19:03:58 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:03:58 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:03:59 INFO event_listener.py:52: Created named pipe yasb-2557a934-0659-11f0-8cfe-3024a93e5e2e
+2025-03-21 19:03:59 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-2557a934-0659-11f0-8cfe-3024a93e5e2e
+2025-03-21 19:03:59 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:03:59 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:03:59 DEBUG _windows.py:192: Thread started
+2025-03-21 19:04:00 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:04:16 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:04:20 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:04:51 INFO tray.py:240: Reloading Application...
+2025-03-21 19:04:52 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:04:53 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:04:53 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:04:53.574996
+2025-03-21 19:04:54 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:04:54 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:04:55 INFO event_listener.py:52: Created named pipe yasb-46e6eb64-0659-11f0-a893-3024a93e5e2e
+2025-03-21 19:04:55 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-46e6eb64-0659-11f0-a893-3024a93e5e2e
+2025-03-21 19:04:56 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:04:56 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:04:56 DEBUG _windows.py:192: Thread started
+2025-03-21 19:04:56 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:05:50 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:05:59 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:06:25 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:06:52 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:06:53 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:06:53 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:06:53.824526
+2025-03-21 19:06:54 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:06:54 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:06:55 INFO event_listener.py:52: Created named pipe yasb-8e60981e-0659-11f0-bb5e-3024a93e5e2e
+2025-03-21 19:06:55 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-8e60981e-0659-11f0-bb5e-3024a93e5e2e
+2025-03-21 19:06:56 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:06:56 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:06:56 DEBUG _windows.py:192: Thread started
+2025-03-21 19:06:56 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:07:03 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:07:34 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:07:35 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:07:35 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:07:35.455739
+2025-03-21 19:07:36 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:07:36 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:07:37 INFO event_listener.py:52: Created named pipe yasb-a75127e0-0659-11f0-bea8-3024a93e5e2e
+2025-03-21 19:07:37 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-a75127e0-0659-11f0-bea8-3024a93e5e2e
+2025-03-21 19:07:37 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:07:37 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:07:37 DEBUG _windows.py:192: Thread started
+2025-03-21 19:07:38 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:08:18 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:10:13 INFO tray.py:240: Reloading Application...
+2025-03-21 19:10:14 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:10:15 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:10:15 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:10:15.759321
+2025-03-21 19:10:16 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:10:16 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:10:19 INFO event_listener.py:52: Created named pipe yasb-07fa79c3-065a-11f0-a79b-3024a93e5e2e
+2025-03-21 19:10:19 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-07fa79c3-065a-11f0-a79b-3024a93e5e2e
+2025-03-21 19:10:20 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:10:20 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:10:20 DEBUG _windows.py:192: Thread started
+2025-03-21 19:10:20 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:10:44 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:11:16 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:11:16 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:11:17 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:11:17.037849
+2025-03-21 19:11:17 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:11:17 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:11:19 INFO event_listener.py:52: Created named pipe yasb-2b84867b-065a-11f0-8ea5-3024a93e5e2e
+2025-03-21 19:11:19 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-2b84867b-065a-11f0-8ea5-3024a93e5e2e
+2025-03-21 19:11:19 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:11:19 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:11:19 DEBUG _windows.py:192: Thread started
+2025-03-21 19:11:20 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:12:35 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:15:19 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:15:20 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:15:20 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:15:20.885463
+2025-03-21 19:15:21 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:15:21 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:15:24 INFO event_listener.py:52: Created named pipe yasb-bdabccb5-065a-11f0-a3c7-3024a93e5e2e
+2025-03-21 19:15:24 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-bdabccb5-065a-11f0-a3c7-3024a93e5e2e
+2025-03-21 19:15:24 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:15:24 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:15:24 DEBUG _windows.py:192: Thread started
+2025-03-21 19:15:25 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:15:49 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:15:55 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:16:00 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:16:03 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:17:19 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:17:20 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:17:21 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:17:21.570430
+2025-03-21 19:17:22 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:17:23 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:17:24 INFO event_listener.py:52: Created named pipe yasb-054e3fad-065b-11f0-b787-3024a93e5e2e
+2025-03-21 19:17:24 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-054e3fad-065b-11f0-b787-3024a93e5e2e
+2025-03-21 19:17:25 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:17:25 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:17:25 DEBUG _windows.py:192: Thread started
+2025-03-21 19:17:25 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:17:57 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:03 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:11 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:15 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:21 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:31 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:36 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:40 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:50 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:56 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:18:59 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:19:00 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:19:19 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:19:43 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:19:44 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:19:44 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:19:44.922620
+2025-03-21 19:19:45 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:19:45 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:19:47 INFO event_listener.py:52: Created named pipe yasb-5a5616bc-065b-11f0-8275-3024a93e5e2e
+2025-03-21 19:19:47 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-5a5616bc-065b-11f0-8275-3024a93e5e2e
+2025-03-21 19:19:47 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:19:47 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:19:47 DEBUG _windows.py:192: Thread started
+2025-03-21 19:19:48 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:19:57 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:20:04 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:20:07 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:20:22 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:20:29 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:20:34 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:20:46 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:20:51 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:20:55 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:21:14 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:21:34 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:23:35 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:26:06 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:26:15 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:26:34 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:26:52 INFO log.py:21: Yasb v1.6.6
+2025-03-21 19:26:53 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-21 19:26:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:26:54.162154
+2025-03-21 19:26:55 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-21 19:26:55 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-21 19:26:58 INFO event_listener.py:52: Created named pipe yasb-5b4ae697-065c-11f0-a75e-3024a93e5e2e
+2025-03-21 19:26:58 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-5b4ae697-065c-11f0-a75e-3024a93e5e2e
+2025-03-21 19:26:58 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-21 19:26:58 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-21 19:26:58 DEBUG _windows.py:192: Thread started
+2025-03-21 19:26:59 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-03-21 19:27:33 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:27:48 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:35:54 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:36:07 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:36:14 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-03-21 19:36:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:36:54.164110
+2025-03-21 19:46:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:46:54.322463
+2025-03-21 19:56:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 19:56:54.481448
+2025-03-21 20:06:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 20:06:54.163024
+2025-03-21 20:16:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 20:16:54.170826
+2025-03-21 20:26:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 20:26:54.170262
+2025-03-21 20:36:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 20:36:54.157431
+2025-03-21 20:46:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 20:46:54.162655
+2025-03-21 20:56:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 20:56:54.171899
+2025-03-21 21:06:54 INFO weather.py:369: Fetched new weather data at 2025-03-21 21:06:54.161241
+2025-03-22 00:12:16 INFO weather.py:369: Fetched new weather data at 2025-03-22 00:12:16.903527
+2025-03-22 00:12:17 ERROR weather.py:472: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-22 12:07:40 DEBUG utils.py:65: Could not open process with PID 0
+2025-03-22 12:08:08 WARNING weather.py:173: Could not load day0 icon
+2025-03-22 12:08:08 WARNING weather.py:194: Could not load day1 icon
+2025-03-22 12:08:08 WARNING weather.py:214: Could not load day2 icon
+2025-03-22 12:08:30 WARNING weather.py:173: Could not load day0 icon
+2025-03-22 12:08:30 WARNING weather.py:194: Could not load day1 icon
+2025-03-22 12:08:30 WARNING weather.py:214: Could not load day2 icon
+2025-03-22 12:17:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 12:17:37.029643
+2025-03-22 12:27:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 12:27:37.035322
+2025-03-22 12:37:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 12:37:37.033171
+2025-03-22 12:47:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 12:47:37.017541
+2025-03-22 12:57:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 12:57:37.030269
+2025-03-22 13:07:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 13:07:37.022980
+2025-03-22 13:17:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 13:17:37.060431
+2025-03-22 13:27:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 13:27:37.018111
+2025-03-22 13:37:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 13:37:37.019178
+2025-03-22 13:47:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 13:47:37.031390
+2025-03-22 13:57:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 13:57:37.028270
+2025-03-22 14:07:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 14:07:37.044038
+2025-03-22 14:17:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 14:17:37.022543
+2025-03-22 14:27:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 14:27:37.094032
+2025-03-22 14:37:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 14:37:37.036778
+2025-03-22 14:47:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 14:47:37.038158
+2025-03-22 14:57:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 14:57:37.024384
+2025-03-22 15:07:40 INFO weather.py:369: Fetched new weather data at 2025-03-22 15:07:40.386846
+2025-03-22 15:17:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 15:17:37.309094
+2025-03-22 15:27:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 15:27:37.027146
+2025-03-22 15:37:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 15:37:37.036817
+2025-03-22 15:47:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 15:47:37.033426
+2025-03-22 15:57:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 15:57:37.323868
+2025-03-22 16:07:38 INFO weather.py:369: Fetched new weather data at 2025-03-22 16:07:38.251488
+2025-03-22 16:17:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 16:17:37.044037
+2025-03-22 16:27:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 16:27:37.026388
+2025-03-22 16:37:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 16:37:37.050814
+2025-03-22 17:42:37 INFO weather.py:369: Fetched new weather data at 2025-03-22 17:42:37.561098
+2025-03-22 17:42:38 ERROR weather.py:472: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-03-22 17:42:59 DEBUG utils.py:65: Could not open process with PID 0
+2025-03-22 17:52:21 INFO weather.py:369: Fetched new weather data at 2025-03-22 17:52:21.684607
+2025-03-22 18:02:21 INFO weather.py:369: Fetched new weather data at 2025-03-22 18:02:21.632594
+2025-03-22 18:12:21 INFO weather.py:369: Fetched new weather data at 2025-03-22 18:12:21.661089
+2025-03-22 18:33:16 INFO weather.py:369: Fetched new weather data at 2025-03-22 18:33:16.532057
+2025-03-22 18:42:57 INFO weather.py:369: Fetched new weather data at 2025-03-22 18:42:57.522215
+2025-03-22 18:52:57 INFO weather.py:369: Fetched new weather data at 2025-03-22 18:52:57.520050
+2025-03-22 19:02:57 INFO weather.py:369: Fetched new weather data at 2025-03-22 19:02:57.510088
+2025-03-22 19:11:07 INFO log.py:21: Yasb v1.6.6
+2025-03-22 19:11:10 DEBUG win32.py:55: Looking up time zone info from registry
+2025-03-22 19:11:20 INFO weather.py:369: Fetched new weather data at 2025-03-22 19:11:20.274713
+2025-03-22 19:11:25 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-03-22 19:11:27 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 38px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-03-22 19:11:34 INFO event_listener.py:52: Created named pipe yasb-5eb468f4-0723-11f0-886b-3024a93e5e2e
+2025-03-22 19:11:34 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-5eb468f4-0723-11f0-886b-3024a93e5e2e
+2025-03-22 19:11:34 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-03-22 19:11:34 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-03-22 19:11:34 DEBUG _windows.py:192: Thread started
+2025-03-22 19:11:35 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
