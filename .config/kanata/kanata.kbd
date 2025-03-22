@@ -22,7 +22,6 @@
   ;; REMAPS
   cap (tap-hold $tap-time $hold-time esc caps)
   ent (tap-hold $tap-time $hold-time ' enter)
-  [ (tap-hold $tap-time $hold-time [ bspc)
 
   ;; HOME ROW MODS
   a (tap-hold $tap-time $hold-time a lalt)
@@ -37,11 +36,8 @@
 
   ;; LAYERS 
   bse (layer-switch base)
-  arr (layer-toggle arrows)
-  wm (layer-switch windowmanager)
-
-  ;; TOGGLE LAYERS
-  w (tap-hold $tap-time $hold-time w @wm)
+  mni (layer-toggle manipulation)
+  wm (layer-toggle windowmanager)
 
   ;; WINDOW MANAGER
   wk1 (tap-hold $tap-time $hold-time (multi lmet 1 reverse-release-order) 1)
@@ -62,29 +58,29 @@
 )
 
 (deflayer base
-  _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
-  _     _    _    _    _    _    _    _    _    _    _    -    =     _       _    _    _         _     _    _    _
-  _     _    @w   _    _    _    _    _    _    _    _    @[   _     _       _    _    _         _     _    _    _
+  XX    _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
+  _     _    _    _    _    _    _    _    _    _    _    -    _     _       _    _    _         _     _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _    _         _     _    _    _
   @cap  @a   @s   @d   @f   _    _    @j   @k   @l   @;   @ent _                                 _     _    _
-  XX     _    _    _    _    _    _    _    _    _    _    _                        _             _     _    _    _
-  XX   XX    @arr           _              XX   XX   XX                        _    _     _       _          _
+  XX     _    _    _    _   _    _    _    _    _    _    _                       _              _     _    _    _
+  XX    @wm   @mni          _              XX   XX   XX                        _  _   _          _          _
 )
 
-(deflayer arrows
-  _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
-  _     _    _    _    _    _    _    _    _    _    _    -    =     _       _    _    _         _     _    _    _
-  _     pgup up   pgdn C-tab _   _    _    _    _    _    @[   _     _       _    _    _         _     _    _    _
+(deflayer manipulation 
+  XX    _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
+  _     _    _    _    _    _    _    _    _    _    _    -    _     _       _    _    _         _     _    _    _
+  _     del up   bspc C-tab _    _    _    _    _    _    _    _     _       _    _    _         _     _    _    _
   @cap  left down right @f   _   _    @j   @k   @l   @;   @ent _                                 _     _    _
   _     _    _      _   _    _   _    _   _    _    _    _                        _              _     _    _    _
-  _     _    _              _             _    _    _                        _    _     _        _          _
+  _     _    _               _            _    _    _                        _    _    _         _          _
 )
 
 
 (deflayer windowmanager
-  _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
-  _     @wk1 @wk2 @wk3 @wk4 @wk5 @wk6 @wk7 @wk8 @wk9 _    -    =     _       _    _    _         _     _    _    _
-  _     @ms  @bse @mc  @ma  _    _    _    _    _    _    @[   _     _       _    _    _         _     _    _    _
+  XX    _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
+  _     @wk1 @wk2 @wk3 @wk4 @wk5 @wk6 @wk7 @wk8 @wk9 _    -    _     _       _    _    _         _     _    _    _
+  _     @ms   _   @mc  @ma  _    _    _    _    _    _    _    _     _       _    _    _         _     _    _    _
   @cap  @a   @s   @d   @f   _    _    @j   @k   @l   @;   @ent _                                 _     _    _
   _     _    _    _    _    _    _    _    _    _    _    _                        _             _     _    _    _
-  _     _    _              _              _    _    _                        _    _     _       _          _
+  _     @bse    _              _              _    _    _                        _    _     _       _          _
 )
