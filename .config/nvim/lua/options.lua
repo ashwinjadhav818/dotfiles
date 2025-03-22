@@ -42,7 +42,7 @@ for k, v in pairs(options) do
 end
 
 -- Neovide Config
-vim.g.neovide_transparency = 0.4
+-- vim.g.neovide_transparency = 0.4
 -- vim.opt.winblend = 70
 
 -- vim.opt.shortmess = "ilmnrx"                        -- flags to shorten vim messages, see :help 'shortmess'
