@@ -37,24 +37,6 @@
   ;; LAYERS 
   bse (layer-switch base)
   mni (layer-toggle manipulation)
-  wm (layer-toggle windowmanager)
-
-  ;; WINDOW MANAGER
-  wk1 (tap-hold $tap-time $hold-time (multi lmet 1 reverse-release-order) 1)
-  wk2 (tap-hold $tap-time $hold-time (multi lmet 2 reverse-release-order) 2)
-  wk3 (tap-hold $tap-time $hold-time (multi lmet 3 reverse-release-order) 3)
-  wk4 (tap-hold $tap-time $hold-time (multi lmet 4 reverse-release-order) 4)
-  wk5 (tap-hold $tap-time $hold-time (multi lmet 5 reverse-release-order) 5)
-  wk6 (tap-hold $tap-time $hold-time (multi lmet 6 reverse-release-order) 6)
-  wk7 (tap-hold $tap-time $hold-time (multi lmet 7 reverse-release-order) 7)
-  wk8 (tap-hold $tap-time $hold-time (multi lmet 8 reverse-release-order) 8)
-  wk9 (tap-hold $tap-time $hold-time (multi lmet 9 reverse-release-order) 9)
-
-  ms (tap-hold $tap-time $hold-time q (multi lmet lsft))
-  mc (tap-hold $tap-time $hold-time e (multi lmet lctrl))
-  ma (tap-hold $tap-time $hold-time r (multi lmet lalt))
-
-  wfu (tap-hold $tap-time $hold-time (multi lmet w reverse-release-order) w) 
 )
 
 (deflayer base
@@ -62,8 +44,8 @@
   _     _    _    _    _    _    _    _    _    _    _    -    _     _       _    _    _         _     _    _    _
   _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _    _         _     _    _    _
   @cap  @a   @s   @d   @f   _    _    @j   @k   @l   @;   @ent _                                 _     _    _
-  XX     _    _    _    _   _    _    _    _    _    _    _                       _              _     _    _    _
-  XX    @wm   @mni          _              XX   XX   XX                        _  _   _          _          _
+  XX    _    _    _    _    _    _    _    _    _    _    XX                     _               _     _    _    _
+  XX    XX   @mni          _              XX   XX   XX                        _  _   _          _          _
 )
 
 (deflayer manipulation 
@@ -71,16 +53,6 @@
   _     _    _    _    _    _    _    _    _    _    _    -    _     _       _    _    _         _     _    _    _
   _     del up   bspc C-tab _    _    _    _    _    _    _    _     _       _    _    _         _     _    _    _
   @cap  left down right @f   _   _    @j   @k   @l   @;   @ent _                                 _     _    _
-  _     _    _      _   _    _   _    _   _    _    _    _                        _              _     _    _    _
-  _     _    _               _            _    _    _                        _    _    _         _          _
-)
-
-
-(deflayer windowmanager
-  XX    _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
-  _     @wk1 @wk2 @wk3 @wk4 @wk5 @wk6 @wk7 @wk8 @wk9 _    -    _     _       _    _    _         _     _    _    _
-  _     @ms   _   @mc  @ma  _    _    _    _    _    _    _    _     _       _    _    _         _     _    _    _
-  @cap  @a   @s   @d   @f   _    _    @j   @k   @l   @;   @ent _                                 _     _    _
-  _     _    _    _    _    _    _    _    _    _    _    _                        _             _     _    _    _
-  _     @bse    _              _              _    _    _                        _    _     _       _          _
+  XX    _    _      _   _    _   _    _   _    _    _    XX                       _              _     _    _    _
+  XX    XX   XX              _            XX   XX   XX                       _    _    _         _          _
 )
