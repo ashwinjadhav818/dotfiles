@@ -1,5 +1,0 @@
-return {
-    {
-        "windwp/nvim-autopairs",
-    },
-}
