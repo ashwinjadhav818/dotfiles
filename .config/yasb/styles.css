@@ -1,209 +1,189 @@
+/* style.css for your yasb bar - Simplified Colors */
+
+/* --- Root Variables (Colors) --- */
 :root {
-    --backgroundcol: #141010;
-    --foregroundcol: #c4c3c3;
-    --cursorcol: #c4c3c3;
-    --colors0: #141010;
-    --colors1: #8D654C;
-    --colors2: #887872;
-    --colors3: #A58E49;
-    --colors4: #93837C;
-    --colors5: #747B84;
-    --colors6: #7A8792;
-    --colors7: #c4c3c3;
-    --colors8: #6e5a5a;
-    --colors9: #8D654C;
-    --colors10: #887872;
-    --colors11: #A58E49;
-    --colors12: #93837C;
-    --colors13: #747B84;
-    --colors14: #7A8792;
-    --colors15: #c4c3c3;
+    /* --- Mica Inspired Color Variables --- */
+    --background-color: rgba(30, 34, 40, 0.7);
+    --foreground-color: rgb(237, 238, 240);
+    --accent-color: #0078d4;
+    --border-color: rgb(53, 59, 69);
+    --icon-color: rgb(169, 174, 184);
+    --icon-hover: rgba(169, 174, 184, 0.8);
+    --hover-color: rgba(93, 114, 135, 0.12);
+    --active-color: rgb(93, 114, 135);
+    --inactive-color: rgba(93, 114, 135, 0.5);
 }
 
+/* --- Base Styles --- */
 * {
     font-size: 12px;
-    color: var(--foregroundcol);
+    color: var(--foreground-color);
     font-weight: 600;
     font-family: "SegoeUI Nerd Font";
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* --- Yasb Bar Itself --- */
 .yasb-bar {
-    background-color: var(--backgroundcol);
-    padding: 0;
-    margin: 0;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
 }
 
-.container-right {
-    padding: 0 8px;
-}
-
+/* --- Individual Widgets --- */
 .widget {
     padding: 0 12px;
     margin: 0;
 }
 
-.icon {
-    font-size: 16px;
+.container-right .widget .icon:hover {
+    color: var(--icon-hover);
 }
 
+/* --- Icons --- */
+.icon {
+    font-size: 14px;
+    color: var(--icon-color);
+}
+
+/* --- Widget Labels --- */
 .widget .label {
     padding: 0px 2px;
 }
 
+/* --- Apps Widget Specific --- */
 .apps-widget {
-    padding: 0 4px 0 2px;
+    padding: 0 4p 0 2px;
 }
 
+.apps-widget .widget-container .label {
+    font-size: 12px;
+}
+
+/* --- Komorebi Active Layout --- */
 .komorebi-active-layout {
-    padding: 0 4px 0 0;
+    padding: 0 4px;
 }
 
 .komorebi-active-layout .label {
     font-weight: 600;
-    padding: 2px 0 0 0;
+    padding-bottom: 2px;
 }
 
+/* --- Workspace and Layout Containers --- */
 .apps-widget .widget-container,
 .komorebi-workspaces .widget-container,
 .komorebi-active-layout .widget-container,
-.glazewm-workspaces .glazewm-tiling-direction {
-    background-color: var(--backgroundcol);
-    margin: 4px 0 4px 0;
+.glazewm-workspaces .widget-container,
+.glazewm-tiling-direction .widget-container {
+    background-color: var(--background-color);
     border-radius: 12px;
-    border: 0px solid var(--colors1);
+    margin: 4px 0;
+    border: 1px solid var(--border-color);
 }
 
-.komorebi-workspaces .widget-container {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    margin-left: 4px;
+/* --- Komorebi & GlazeWM Workspaces --- */
+.komorebi-workspaces,
+.glazewm-workspaces {
+    padding: 0;
 }
 
-.komorebi-workspaces {
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
-    padding: 0 4px 0 0;
-}
-
-.komorebi-workspaces .offline-status {
-    color: var(--colors2);
+.komorebi-workspaces .offline-status,
+.glazewm-workspaces .offline-status {
+    color: var(--foreground-color);
     font-size: 12px;
-    padding: 0 0 0 4px;
+    padding: 0 4px;
     font-weight: 600;
 }
 
-.komorebi-workspaces .ws-btn {
-    border: none;
-    background-color: transparent;
-    margin: 0;
-    font-size: 12px;
-    color: var(--colors3);
-    height: 28px;
-    width: 18px;
-}
-
-.komorebi-workspaces .ws-btn:hover {
-    color: var(--colors4);
-}
-
-.komorebi-workspaces .ws-btn.populated {
+.komorebi-workspaces .ws-btn,
+.glazewm-workspaces .ws-btn {
     color: transparent;
     width: 10px;
     height: 10px;
-    background-color: var(--colors5);
+    background-color: var(--active-color);
     border-radius: 5px;
-    margin: 0 4px;
+    margin: 0 2px;
     font-size: 1px;
 }
 
-.komorebi-workspaces .ws-btn.active {
+.komorebi-workspaces .ws-btn:hover,
+.glazewm-workspaces .ws-btn:hover {
+    color: var(--accent-color);
+    background-color: var(--hover-color);
+}
+
+.komorebi-workspaces .ws-btn.populated,
+.glazewm-workspaces .ws-btn.populated {
+    width: 10px;
+    height: 10px;
+    background-color: var(--active-color);
+    border-radius: 5px;
+    margin: 0 2px;
+    font-size: 1px;
+}
+
+.komorebi-workspaces .ws-btn.active,
+.glazewm-workspaces .ws-btn.active {
     color: transparent;
-    background-color: var(--colors6);
+    background-color: var(--icon-color);
     width: 36px;
     height: 10px;
-    margin: 0 4px;
     border-radius: 5px;
 }
 
-.glazewm-workspaces {
-    padding: 0 4px;
-}
-
-.glazewm-workspaces .offline-status {
-    color: var(--colors2);
-    font-size: 12px;
-    padding: 0 4px;
-    font-weight: 600;
-}
-
-.glazewm-workspaces .ws-btn {
-    font-size: 12px;
-    color: var(--foregroundcol);
-    padding: 0 4px;
-}
-
-.glazewm-workspaces .ws-btn:hover {
-    color: var(--colors4);
-}
-
-.glazewm-workspaces .ws-btn.populated {
-    background-color: var(--colors0);
-    border-radius: 5px;
-    margin: 0 4px;
-}
-
-.glazewm-workspaces .ws-btn.active {
-    background-color: var(--colors5);
-    color: var(--colors0);
-    margin: 0 4px;
-    border-radius: 5px;
-}
-
+/* --- Glazewm Tiling Direction --- */
 .glazewm-tiling-direction {
     background-color: transparent;
     padding: 0;
-    margin: 0;
+    margin: 4px 0;
 }
 
 .glazewm-tiling-direction .btn {
     font-size: 14px;
     width: 14px;
-    padding: 0 4px 0 4px;
-    color: var(--colors6);
+    padding: 0 4px 0 12px;
+    color: var(--foreground-color);
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
 }
 
 .glazewm-tiling-direction .btn:hover {
-    background-color: #727272;
+    background-color: var(--hover-color);
 }
 
+/* --- Apps Widget Label --- */
 .apps-widget .label {
     font-size: 14px;
     padding: 0 2px;
-    color: var(--colors7);
+    color: var(--foreground-color);
 }
 
-.apps-widget .label:hover {
-    color: var(--colors8);
-}
-
+/* --- Uptime Widget --- */
 .uptime {
     font-size: 14px;
     margin-bottom: 10px;
-    color: var(--colors2);
+    color: var(--foreground-color);
     font-weight: 600;
-
 }
 
+/* --- Power Menu Widget --- */
 .power-menu-widget .label {
-    color: var(--colors6);
     font-size: 13px;
 }
 
+/* --- Power Menu Popup --- */
 .power-menu-popup {
-    background-color: transparent
+    background-color: rgba(20, 13, 14, 0.9);
+    border-radius: 6px;
+    padding: 10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 .power-menu-popup .button {
@@ -211,34 +191,37 @@
     width: 180px;
     height: 230px;
     border-radius: 8px;
-    background-color: var(--colors10);
-    color: var(--colors11);
-    border-left: 4px solid rgba(58, 59, 83, 0);
-    border-right: 4px solid rgba(58, 59, 83, 0);
-    border-top: 8px solid rgba(58, 59, 83, 0);
-    border-bottom: 8px solid rgba(58, 59, 83, 0);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--foreground-color);
+    border-left: 4px solid rgba(0, 0, 0, 0.05);
+    border-right: 4px solid rgba(0, 0, 0, 0.05);
+    border-top: 8px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 8px solid rgba(0, 0, 0, 0.05);
     margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.power-menu-popup .button.hover {
-    background-color: var(--colors12);
-    border-left: 4px solid var(--colors13);
-    border-right: 4px solid var(--colors13);
-    border-top: 8px solid var(--colors13);
-    border-bottom: 8px solid var(--colors13);
+.power-menu-popup .button:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-left: 4px solid rgba(0, 0, 0, 0.1);
+    border-right: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 8px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 8px solid rgba(0, 0, 0, 0.1);
 }
 
 .power-menu-popup .button .label {
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: 500;
-    color: var(--colors14)
+    color: var(--accent-color);
 }
 
 .power-menu-popup .button .icon {
     font-size: 64px;
     padding-top: 32px;
-    color: var(--colors15)
+    color: var(--foreground-color);
 }
 
 .power-menu-popup .button.cancel .icon {
@@ -247,7 +230,7 @@
 }
 
 .power-menu-popup .button.cancel .label {
-    color: var(--colors9);
+    color: var(--foreground-color);
     margin: 0;
 }
 
@@ -256,35 +239,28 @@
     border-radius: 4px;
 }
 
+/* --- Volume Widget --- */
 .volume-widget .icon {
-    color: var(--colors5);
+    color: var(--foreground-color);
     margin: 1px 2px 0 0;
 }
 
-.wifi-widget {
-    padding: 30px;
-}
-
-.wifi-widget .icon {
-    font-size: 14px;
-    padding-left: -0px;
-    color: var(--colors4)
-}
-
+/* --- Battery Widget --- */
 .battery-widget .icon {
     margin-right: 6px;
-    color: var(--colors6);
+    color: var(--foreground-color);
 }
 
+/* --- Brightness Widget --- */
 .brightness-widget {
     margin-right: -10px;
-
 }
 
 .brightness-widget .icon {
-    color: var(--colors5);
+    color: var(--foreground-color);
 }
 
+/* --- Common Widget Padding --- */
 .weather-widget,
 .battery-widget,
 .wifi-widget,
@@ -293,19 +269,21 @@
     padding: 0 6px;
 }
 
+/* --- Weather Widget --- */
 .weather-widget .icon {
     font-size: 18px;
     margin: 0 2px 1px 0;
-    color: var(--colors12);
 }
 
+/* --- Wallpapers Widget --- */
 .wallpapers-widget .icon {
-    color: var(--colors13);
+    color: var(--foreground-color);
     padding: 0 5px;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
 }
 
+/* --- Taskbar Widget --- */
 .taskbar-widget {
     padding: 0;
     margin: 0;
@@ -316,29 +294,39 @@
     padding: 0 6px;
     border: none;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.taskbar-widget .app-icon:hover {
+    background-color: var(--hover-color);
+    border-radius: 3px;
+}
+
+/* --- Whkd Widget --- */
 .whkd-widget {
     padding: 0 6px 0 6px;
 }
 
 .whkd-widget .icon {
     font-size: 14px;
+    color: var(--foreground-color);
 }
 
-.wallpapers-widget {
-    padding: 0 6px 0 6px;
-}
-
+/* --- Wallpapers Gallery Window --- */
 .wallpapers-gallery-window {
-    background-color: rgba(85, 42, 240, 0.01);
+    background-color: rgba(20, 13, 14, 0.9);
     border: 0;
     margin: 0;
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 .wallpapers-gallery-buttons {
-    background-color: rgba(255, 255, 255, 0);
-    color: var(--colors4);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--foreground-color);
     border: none;
     font-size: 14px;
     padding: 8px 0;
@@ -348,26 +336,28 @@
 }
 
 .wallpapers-gallery-buttons:hover {
-    background-color: rgba(255, 255, 255, 0.1)
+    background-color: rgba(255, 255, 255, 0.12);
 }
 
 .wallpapers-gallery-image {
     border: 4px solid transparent;
     border-radius: 10px;
-
 }
 
 .wallpapers-gallery-image:hover {
-    border: 4px solid var(--colors6);
+    border: 4px solid var(--accent-color);
 }
 
 .wallpapers-gallery-image.focused {
-    border: 4px solid var(--colors6);
+    border: 4px solid var(--accent-color);
 }
 
+/* --- Systray --- */
 .systray {
     border: none;
     margin-right: -15px;
+    display: flex;
+    align-items: center;
 }
 
 .systray .unpinned-container {
@@ -381,27 +371,26 @@
 }
 
 .systray .button {
-    font-size: 16px;
     margin: 0 2px;
+    color: var(--foreground-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
 }
 
 .systray .button:hover {
-    background: var(--colors4);
+    background: var(--hover-color);
 }
 
 .systray .unpinned-visibility-btn {
     border-radius: 4px;
-    height: 20px;
-    width: 16px;
-    font-size: 26px;
-    color: var(--colors6);
-    padding: 0;
+    font-size: 20px;
 }
 
-.systray .unpinned-visibility-btn:checked {
-    color: var(--foregroundcol);
-}
-
-.systray .unpinned-visibility-btn:hover {
-    border-radius: 4px;
+/* --- Common Styles --- */
+.wifi-widget,
+.brightness-widget,
+.systray {
+    margin-top: 2.4px;
 }

@@ -1,7 +1,6 @@
 watch_stylesheet: true
 watch_config: true
 debug: false
-hide_taskbar: true
 komorebi:
   start_command: "komorebic start --whkd"
   stop_command: "komorebic stop --whkd"
@@ -15,7 +14,7 @@ bars:
       position: "top"
       center: false
     blur_effect:
-      enabled: false 
+      enabled: true 
       acrylic: false
       dark_mode: true
       round_corners: true
@@ -25,16 +24,16 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 32
+      height: 34
     padding:
       top: 6
-      left: 8
+      left: 10
       bottom: 0
-      right: 8
+      right: 10
     widgets:
-      left: ["power_menu","komorebi_workspaces","glazewm_workspaces","glazewm_tiling_direction","active_window"]
+      left: ["power_menu","komorebi_workspaces","komorebi_active_layout","active_window"]
       center: ["clock","apps"]
-      right: ["systray","brightness","wallpapers","taskbar","weather","wifi","battery","volume"]
+      right: ["systray","brightness","wallpapers","weather","wifi","battery","volume"]
 widgets:
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
@@ -57,12 +56,12 @@ widgets:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
       label_offline: "\u23fc Offline"
-      label_workspace_btn: "\udb81\udc3d"
+      label_workspace_btn: ""
       label_workspace_active_btn: ""
-      label_workspace_populated_btn: "\udb81\udc3e"
-      label_default_name: "{index}"
+      label_workspace_populated_btn: ""
+      label_default_name: ""
       label_zero_index: false
-      hide_empty_workspaces: false
+      hide_empty_workspaces: true 
       hide_if_offline: true
       animation: true
       container_padding:
@@ -73,41 +72,30 @@ widgets:
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
-      hide_if_offline: true
+      hide_if_offline: false
       label: "{icon}"
-      layouts:
-        [
-          "bsp",
-          "columns",
-          "rows",
-          "grid",
-          "vertical_stack",
-          "horizontal_stack",
-          "ultrawide_vertical_stack",
-          "right_main_vertical_stack",
-        ]
+      layouts: ['bsp', 'columns', 'rows', 'grid', 'vertical_stack', 'horizontal_stack', 'ultrawide_vertical_stack']
       layout_icons:
-        bsp: "BSP"
-        columns: "COLS"
-        rows: "ROWS"
-        grid: "GRID"
-        vertical_stack: "V-STACK"
-        horizontal_stack: "H-STACK"
-        ultrawide_vertical_stack: "W-STACK"
-        right_main_vertical_stack: "RMV-STACK"
-        monocle: "MONOCLE"
-        maximised: "MAX"
-        floating: "FLOATING"
-        paused: "PAUSED"
-      container_padding:
-        top: 0
-        left: 8
-        bottom: 0
-        right: 8
+        bsp: "[\\\\]"
+        columns: "[||]"
+        rows: "[==]"
+        grid: "[G]"
+        vertical_stack: "[V]="
+        horizontal_stack: "[H]="
+        ultrawide_vertical_stack: "||="
+        monocle: "[M]"
+        maximised: "[X]"
+        floating: "><>"
+        paused: "[P]"
       callbacks:
         on_left: "next_layout"
         on_middle: "toggle_monocle"
-        on_right: "prev_layout"
+        on_right: "prev_layout" 
+      container_padding: 
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8 
   glazewm_workspaces:
     type: "glazewm.workspaces.GlazewmWorkspacesWidget"
     options:
@@ -202,7 +190,7 @@ widgets:
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
-      label: "<span>{wifi_icon} </span>"
+      label: "<span>{wifi_icon}</span>"
       label_alt: "{wifi_name} {wifi_strength}%"
       update_interval: 5000
       callbacks:
@@ -237,6 +225,31 @@ widgets:
       show_unpinned: true
       show_battery: false
       show_volume: false
+  media:
+    type: "yasb.media.MediaWidget"
+    options:
+      label: "{title} - {artist}"
+      label_alt: "{title}"
+      hide_empty: true
+      callbacks:
+        on_left: "toggle_label"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+      max_field_size:
+        label: 20
+        label_alt: 30
+      show_thumbnail: true
+      controls_only: false
+      controls_left: false
+      controls_hide: false
+      thumbnail_alpha: 80
+      thumbnail_padding: 8
+      thumbnail_corner_radius: 16
+      icons:
+        prev_track: "\udb81\udcae"
+        next_track: "\udb81\udcad"
+        play: "\udb81\udc0a"
+        pause: "\udb80\udfe4"
   apps:
     type: "yasb.applications.ApplicationsWidget"
     options:
@@ -249,7 +262,7 @@ widgets:
       app_list:
         - { icon: "\uf0a2", launch: "notification_center" }
         - { icon: "\uf002", launch: "search" }
-        - { icon: "\ueb03", launch: "cmd /c Taskmgr" }
+        - { icon: "\uf437", launch: "cmd /c Taskmgr" }
         - { icon: "\uf489", launch: "wezterm-gui" }
   github:
     type: "yasb.github.GithubWidget"
@@ -281,7 +294,7 @@ widgets:
   wallpapers:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
-      label: "<span>\udb83\ude09</span>"
+      label: "<span>\uf03e</span>"
       image_path: "D:\\Areas\\Wallpapers" # Example path to folder with images
       change_automatically: false # Automatically change wallpaper
       update_interval: 60 # If change_automatically is true, update interval in seconds
@@ -298,6 +311,6 @@ widgets:
         lazy_load_fadein: 400
         image_corner_radius: 20
         enable_cache: false
-      run_after:
-        - "wal -s -t -e -q -n -i {image}"
-        - "powershell -ExecutionPolicy Bypass -File %HOME%/.config/yasb/scripts/wallpapers.ps1"
+      # run_after:
+      #   - "wal -s -t -e -q -n -i {image}"
+      #   - "powershell -ExecutionPolicy Bypass -File %HOME%/.config/yasb/scripts/wallpapers.ps1"
