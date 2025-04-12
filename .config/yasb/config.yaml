@@ -2,9 +2,9 @@ watch_stylesheet: true
 watch_config: true
 debug: false
 komorebi:
-  start_command: "komorebic start --whkd"
-  stop_command: "komorebic stop --whkd"
-  reload_command: "komorebic stop --whkd && komorebic start --whkd"
+  start_command: "komorebic start --masir --ahk"
+  stop_command: "komorebic stop --masir --ahk"
+  reload_command: "komorebic stop --masir --ahk && komorebic start --masir --ahk"
 bars:
   primary-bar:
     enabled: true
@@ -31,9 +31,9 @@ bars:
       bottom: 0
       right: 10
     widgets:
-      left: ["power_menu","komorebi_workspaces","komorebi_active_layout","active_window"]
+      left: ["home","komorebi_workspaces","komorebi_active_layout","glazewm_workspaces","glazewm_tiling_direction","active_window"]
       center: ["clock","apps"]
-      right: ["systray","brightness","wallpapers","weather","wifi","battery","volume"]
+      right: ["systray","pomodoro","weather","wifi","battery","volume"]
 widgets:
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
@@ -72,7 +72,7 @@ widgets:
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
-      hide_if_offline: false
+      hide_if_offline: true 
       label: "{icon}"
       layouts: ['bsp', 'columns', 'rows', 'grid', 'vertical_stack', 'horizontal_stack', 'ultrawide_vertical_stack']
       layout_icons:
@@ -262,42 +262,89 @@ widgets:
       app_list:
         - { icon: "\uf0a2", launch: "notification_center" }
         - { icon: "\uf002", launch: "search" }
-        - { icon: "\uf437", launch: "cmd /c Taskmgr" }
         - { icon: "\uf489", launch: "wezterm-gui" }
-  github:
-    type: "yasb.github.GithubWidget"
+  home:
+    type: "yasb.home.HomeWidget"
     options:
-      label: "<span>\ueba1</span>"
-      label_alt: "Notifications {data}"
-      token: env
-      max_notification: 30
-      only_unread: false
-      max_field_size: 54
-      menu_width: 400
-      menu_height: 400
-      menu_offset: 240
-      update_interval: 60
-  taskbar:
-    type: "yasb.taskbar.TaskbarWidget"
-    options:
-      animation: true
-      icon_size: 16
-      ignore_apps:
-        processes: []
-        titles: []
-        classes: []
-      container_padding:
+      label: "<span>\ue62a</span>"
+      menu_list:
+      - { title: "Home", path: "~" }
+      - { title: "Projects", path: "D:\\Projects" }
+      - { title: "Areas", path: "D:\\Areas" }
+      - { title: "Download", path: "C:\\Users\\Ashwin\\Downloads" }
+      system_menu: true
+      power_menu: true
+      blur: true
+      round_corners: true
+      round_corners_type: "normal"
+      border_color: "System"
+      offset_top: 6
+      offset_left: 0
+      container_padding: 
         top: 0
         left: 0
         bottom: 0
         right: 0
+      alignment: "left"
+      direction: "down"
+      menu_labels:
+        shutdown: "Shutdown"
+        restart: "Restart"
+        logout: "Logout"
+        lock: "Lock"
+        sleep: "Sleep"
+        system: "System Settings"
+        about: "About This PC"
+        task_manager: "Task Manager"
+  pomodoro:
+    type: "yasb.pomodoro.PomodoroWidget"
+    options:
+      label: "<span>\uf252</span> {remaining}"
+      label_alt: "<span>{icon}</span> {session}/{total_sessions} - {status}"
+      work_duration: 50
+      break_duration: 10
+      long_break_duration: 30
+      long_break_interval: 2
+      auto_start_breaks: true
+      auto_start_work: true
+      sound_notification: true
+      show_notification: true
+      hide_on_break: false
+      session_target: 6
+      icons:
+        work: "\uf252"
+        break: "\uf253"
+        paused: "\uf254"
+      container_padding:
+        top: 0
+        left: 4
+        bottom: 0
+        right: 4
+      callbacks: 
+        on_left: "toggle_menu"
+        on_middle: "reset_timer"
+        on_right: "do_nothing"
+      menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+        circle_background_color: "#09ffffff"
+        circle_work_progress_color: "#88c0d0"
+        circle_break_progress_color: "#a3be8c"
+        circle_thickness: 8
+        circle_size: 160
   wallpapers:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
       label: "<span>\uf03e</span>"
-      image_path: "D:\\Areas\\Wallpapers" # Example path to folder with images
-      change_automatically: false # Automatically change wallpaper
-      update_interval: 60 # If change_automatically is true, update interval in seconds
+      image_path: "C:\\Wallpapers"
+      change_automatically: false 
+      update_interval: 60 
       gallery:
         enabled: true 
         blur: true
@@ -311,6 +358,3 @@ widgets:
         lazy_load_fadein: 400
         image_corner_radius: 20
         enable_cache: false
-      # run_after:
-      #   - "wal -s -t -e -q -n -i {image}"
-      #   - "powershell -ExecutionPolicy Bypass -File %HOME%/.config/yasb/scripts/wallpapers.ps1"

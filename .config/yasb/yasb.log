@@ -3914,3 +3914,1191 @@ hide_taskbar:
 2025-04-04 17:13:04 DEBUG utils.py:65: Could not open process with PID 0
 2025-04-04 17:15:08 DEBUG utils.py:65: Could not open process with PID 0
 2025-04-04 17:20:37 INFO weather.py:369: Fetched new weather data at 2025-04-04 17:20:37.175116
+2025-04-04 17:30:37 INFO weather.py:369: Fetched new weather data at 2025-04-04 17:30:37.121119
+2025-04-04 17:34:55 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-04 17:35:05 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-04 17:35:11 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-04 17:38:56 INFO log.py:21: Yasb v1.6.7
+2025-04-04 17:39:00 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-04 17:39:05 INFO weather.py:369: Fetched new weather data at 2025-04-04 17:39:05.696586
+2025-04-04 17:39:09 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-04 17:39:09 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-04 17:39:15 INFO event_listener.py:52: Created named pipe yasb-a0d92df2-114d-11f0-af1a-3024a93e5e2e
+2025-04-04 17:39:15 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-a0d92df2-114d-11f0-af1a-3024a93e5e2e
+2025-04-04 17:39:16 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-04 17:39:16 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-04 17:39:16 DEBUG _windows.py:192: Thread started
+2025-04-04 17:39:16 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-a0d92df2-114d-11f0-af1a-3024a93e5e2e
+2025-04-04 18:07:08 INFO weather.py:369: Fetched new weather data at 2025-04-04 18:07:08.767937
+2025-04-04 18:07:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-04 18:16:53 INFO weather.py:369: Fetched new weather data at 2025-04-04 18:16:53.109278
+2025-04-04 18:26:53 INFO weather.py:369: Fetched new weather data at 2025-04-04 18:26:53.079497
+2025-04-04 18:36:53 INFO weather.py:369: Fetched new weather data at 2025-04-04 18:36:53.097079
+2025-04-04 18:46:53 INFO weather.py:369: Fetched new weather data at 2025-04-04 18:46:53.079624
+2025-04-04 18:56:53 INFO weather.py:369: Fetched new weather data at 2025-04-04 18:56:53.062170
+2025-04-04 19:06:53 INFO weather.py:369: Fetched new weather data at 2025-04-04 19:06:53.111469
+2025-04-04 19:16:53 INFO weather.py:369: Fetched new weather data at 2025-04-04 19:16:53.085348
+2025-04-04 19:26:53 INFO weather.py:369: Fetched new weather data at 2025-04-04 19:26:53.070621
+2025-04-04 19:36:53 INFO weather.py:369: Fetched new weather data at 2025-04-04 19:36:53.086926
+2025-04-04 20:24:24 INFO weather.py:369: Fetched new weather data at 2025-04-04 20:24:24.287933
+2025-04-04 20:24:24 ERROR weather.py:472: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-04-04 20:24:43 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-04 20:34:24 INFO weather.py:369: Fetched new weather data at 2025-04-04 20:34:24.259676
+2025-04-04 20:44:24 INFO weather.py:369: Fetched new weather data at 2025-04-04 20:44:24.223460
+2025-04-04 20:54:24 INFO weather.py:369: Fetched new weather data at 2025-04-04 20:54:24.263901
+2025-04-04 21:04:24 INFO weather.py:369: Fetched new weather data at 2025-04-04 21:04:24.235404
+2025-04-04 21:14:24 INFO weather.py:369: Fetched new weather data at 2025-04-04 21:14:24.255667
+2025-04-04 21:24:24 INFO weather.py:369: Fetched new weather data at 2025-04-04 21:24:24.268120
+2025-04-04 21:56:58 INFO weather.py:369: Fetched new weather data at 2025-04-04 21:56:58.171453
+2025-04-04 21:56:59 ERROR weather.py:472: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-04-04 21:57:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-04 22:00:17 WARNING event_listener.py:83: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2025-04-04 22:00:18 INFO event_listener.py:93: Attempting to reconnect...
+2025-04-04 22:00:23 INFO event_listener.py:52: Created named pipe yasb-a0d92df2-114d-11f0-af1a-3024a93e5e2e
+2025-04-04 22:00:23 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-a0d92df2-114d-11f0-af1a-3024a93e5e2e
+2025-04-04 22:00:26 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-04-04 22:01:01 ERROR wifi.py:118: Error in wifi widget update: [WinError -2147024809] The parameter is incorrect
+2025-04-04 22:01:32 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-04 22:01:32 DEBUG _windows.py:201: Exiting thread
+2025-04-04 22:01:32 DEBUG _windows.py:75: Closing
+2025-04-04 22:11:47 INFO log.py:21: Yasb v1.6.7
+2025-04-04 22:11:55 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-04 22:12:25 INFO weather.py:369: Fetched new weather data at 2025-04-04 22:12:25.974531
+2025-04-04 22:12:46 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-04 22:12:48 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-04 22:12:59 INFO event_listener.py:52: Created named pipe yasb-de342572-1173-11f0-80db-3024a93e5e2e
+2025-04-04 22:12:59 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-de342572-1173-11f0-80db-3024a93e5e2e
+2025-04-04 22:13:00 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-04 22:13:00 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-04 22:13:00 DEBUG _windows.py:192: Thread started
+2025-04-04 22:13:01 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-de342572-1173-11f0-80db-3024a93e5e2e
+2025-04-04 22:13:02 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-04 22:22:25 INFO weather.py:369: Fetched new weather data at 2025-04-04 22:22:25.977257
+2025-04-04 22:32:25 INFO weather.py:369: Fetched new weather data at 2025-04-04 22:32:25.979211
+2025-04-04 22:35:15 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-04 22:35:15 DEBUG _windows.py:201: Exiting thread
+2025-04-04 22:35:15 DEBUG _windows.py:75: Closing
+2025-04-05 14:32:12 INFO log.py:21: Yasb v1.6.7
+2025-04-05 14:32:14 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-05 14:32:23 INFO weather.py:369: Fetched new weather data at 2025-04-05 14:32:23.751608
+2025-04-05 14:32:27 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-05 14:32:28 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-05 14:32:36 INFO event_listener.py:52: Created named pipe yasb-b7c5ee3d-11fc-11f0-b246-3024a93e5e2e
+2025-04-05 14:32:36 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-b7c5ee3d-11fc-11f0-b246-3024a93e5e2e
+2025-04-05 14:32:37 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-05 14:32:37 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-05 14:32:37 DEBUG _windows.py:192: Thread started
+2025-04-05 14:32:37 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-b7c5ee3d-11fc-11f0-b246-3024a93e5e2e
+2025-04-05 14:42:24 INFO weather.py:369: Fetched new weather data at 2025-04-05 14:42:24.005559
+2025-04-05 14:43:32 ERROR utils.py:107: GetIconInfo failed: 1115549
+2025-04-05 14:52:24 INFO weather.py:369: Fetched new weather data at 2025-04-05 14:52:24.655557
+2025-04-05 17:15:23 INFO weather.py:369: Fetched new weather data at 2025-04-05 17:15:23.178854
+2025-04-05 17:15:23 ERROR weather.py:472: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-04-05 17:25:22 INFO weather.py:369: Fetched new weather data at 2025-04-05 17:25:22.510967
+2025-04-05 17:31:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-05 17:35:22 INFO weather.py:369: Fetched new weather data at 2025-04-05 17:35:22.554335
+2025-04-05 17:45:22 INFO weather.py:369: Fetched new weather data at 2025-04-05 17:45:22.684231
+2025-04-05 17:55:22 INFO weather.py:369: Fetched new weather data at 2025-04-05 17:55:22.512775
+2025-04-05 18:05:22 INFO weather.py:369: Fetched new weather data at 2025-04-05 18:05:22.503000
+2025-04-05 18:15:22 INFO weather.py:369: Fetched new weather data at 2025-04-05 18:15:22.576802
+2025-04-05 18:18:11 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:18:16 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:18:20 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:18:30 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:18:35 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:19:25 INFO log.py:21: Yasb v1.6.7
+2025-04-05 18:19:26 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-05 18:19:27 INFO weather.py:369: Fetched new weather data at 2025-04-05 18:19:27.451680
+2025-04-05 18:19:28 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-05 18:19:28 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-05 18:19:32 INFO event_listener.py:52: Created named pipe yasb-6bd4ae3b-121c-11f0-aa59-3024a93e5e2e
+2025-04-05 18:19:32 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-6bd4ae3b-121c-11f0-aa59-3024a93e5e2e
+2025-04-05 18:19:32 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-05 18:19:32 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-05 18:19:32 DEBUG _windows.py:192: Thread started
+2025-04-05 18:19:33 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-6bd4ae3b-121c-11f0-aa59-3024a93e5e2e
+2025-04-05 18:19:54 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:20:00 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:20:03 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:20:09 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:20:10 INFO bar_manager.py:46: Successfully loaded updated stylesheet and applied to all bars.
+2025-04-05 18:20:23 INFO log.py:21: Yasb v1.6.7
+2025-04-05 18:20:24 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-05 18:20:24 INFO weather.py:369: Fetched new weather data at 2025-04-05 18:20:24.902669
+2025-04-05 18:20:25 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-05 18:20:26 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-05 18:20:29 INFO event_listener.py:52: Created named pipe yasb-8dfd8df0-121c-11f0-a543-3024a93e5e2e
+2025-04-05 18:20:29 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-8dfd8df0-121c-11f0-a543-3024a93e5e2e
+2025-04-05 18:20:30 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-05 18:20:30 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-05 18:20:30 DEBUG _windows.py:192: Thread started
+2025-04-05 18:20:30 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-8dfd8df0-121c-11f0-a543-3024a93e5e2e
+2025-04-05 18:30:24 INFO weather.py:369: Fetched new weather data at 2025-04-05 18:30:24.920518
+2025-04-05 18:40:24 INFO weather.py:369: Fetched new weather data at 2025-04-05 18:40:24.911541
+2025-04-05 18:50:24 INFO weather.py:369: Fetched new weather data at 2025-04-05 18:50:24.916439
+2025-04-05 19:00:24 INFO weather.py:369: Fetched new weather data at 2025-04-05 19:00:24.918237
+2025-04-05 19:38:06 INFO weather.py:369: Fetched new weather data at 2025-04-05 19:38:06.330464
+2025-04-05 19:38:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-05 19:48:01 INFO weather.py:369: Fetched new weather data at 2025-04-05 19:48:01.508458
+2025-04-05 19:58:01 INFO weather.py:369: Fetched new weather data at 2025-04-05 19:58:01.530696
+2025-04-05 20:08:01 INFO weather.py:369: Fetched new weather data at 2025-04-05 20:08:01.513949
+2025-04-05 20:18:01 INFO weather.py:369: Fetched new weather data at 2025-04-05 20:18:01.518284
+2025-04-05 20:28:01 INFO weather.py:369: Fetched new weather data at 2025-04-05 20:28:01.517676
+2025-04-05 20:38:01 INFO weather.py:369: Fetched new weather data at 2025-04-05 20:38:01.518432
+2025-04-05 20:48:01 INFO weather.py:369: Fetched new weather data at 2025-04-05 20:48:01.520039
+2025-04-05 20:58:01 INFO weather.py:369: Fetched new weather data at 2025-04-05 20:58:01.534514
+2025-04-05 21:08:01 INFO weather.py:369: Fetched new weather data at 2025-04-05 21:08:01.520572
+2025-04-05 21:40:56 INFO weather.py:369: Fetched new weather data at 2025-04-05 21:40:56.298657
+2025-04-05 21:41:07 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-05 21:50:38 INFO weather.py:369: Fetched new weather data at 2025-04-05 21:50:38.531476
+2025-04-05 22:00:38 INFO weather.py:369: Fetched new weather data at 2025-04-05 22:00:38.516693
+2025-04-05 22:10:39 INFO weather.py:369: Fetched new weather data at 2025-04-05 22:10:39.028941
+2025-04-05 22:20:38 INFO weather.py:369: Fetched new weather data at 2025-04-05 22:20:38.518712
+2025-04-05 22:30:38 INFO weather.py:369: Fetched new weather data at 2025-04-05 22:30:38.629303
+2025-04-05 22:31:39 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-05 22:31:39 DEBUG _windows.py:201: Exiting thread
+2025-04-05 22:31:39 DEBUG _windows.py:75: Closing
+2025-04-06 08:46:53 INFO log.py:21: Yasb v1.6.7
+2025-04-06 08:46:56 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-06 08:47:07 INFO weather.py:369: Fetched new weather data at 2025-04-06 08:47:07.948808
+2025-04-06 08:47:12 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-06 08:47:12 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-06 08:47:17 INFO event_listener.py:52: Created named pipe yasb-a49b81fb-1295-11f0-b8c2-3024a93e5e2e
+2025-04-06 08:47:17 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-a49b81fb-1295-11f0-b8c2-3024a93e5e2e
+2025-04-06 08:47:17 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-06 08:47:17 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-06 08:47:17 DEBUG _windows.py:192: Thread started
+2025-04-06 08:47:17 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-a49b81fb-1295-11f0-b8c2-3024a93e5e2e
+2025-04-06 08:57:08 INFO weather.py:369: Fetched new weather data at 2025-04-06 08:57:08.251450
+2025-04-06 09:07:07 INFO weather.py:369: Fetched new weather data at 2025-04-06 09:07:07.956463
+2025-04-06 09:08:49 INFO tray.py:265: Exiting Application...
+2025-04-06 09:08:49 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-06 09:08:49 DEBUG _windows.py:201: Exiting thread
+2025-04-06 09:08:49 DEBUG _windows.py:75: Closing
+2025-04-06 09:08:50 WARNING event_listener.py:83: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2025-04-06 09:08:50 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL k_signal_disconnect of WorkspaceWidget object at 0x000001DC65A8F250>. Removing link to KomorebiEvent.KomorebiDisconnect.
+2025-04-06 09:08:50 INFO event_listener.py:93: Attempting to reconnect...
+2025-04-06 09:08:51 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001DC6659BF70>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-06 09:08:53 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL foreground_change of ActiveWindowWidget object at 0x000001DC6659BF70>. Removing link to WinEvent.EventSystemMoveSizeEnd.
+2025-04-09 18:48:49 INFO log.py:21: Yasb v1.6.7
+2025-04-09 18:48:53 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-09 18:49:12 INFO weather.py:369: Fetched new weather data at 2025-04-09 18:49:12.802708
+2025-04-09 18:49:27 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-09 18:49:29 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-09 18:49:46 INFO event_listener.py:52: Created named pipe yasb-4e60090e-1545-11f0-bab8-3024a93e5e2e
+2025-04-09 18:49:46 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-4e60090e-1545-11f0-bab8-3024a93e5e2e
+2025-04-09 18:49:46 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-09 18:49:46 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-09 18:49:46 DEBUG _windows.py:192: Thread started
+2025-04-09 18:49:51 WARNING event_listener.py:111: Komorebi failed to subscribe named pipe. Waiting for subscription...
+2025-04-09 18:52:36 INFO tray.py:265: Exiting Application...
+2025-04-09 18:52:36 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-09 18:52:36 DEBUG _windows.py:201: Exiting thread
+2025-04-09 18:52:36 DEBUG _windows.py:75: Closing
+2025-04-09 18:52:36 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001675C277F70>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-09 18:54:27 INFO log.py:21: Yasb v1.6.7
+2025-04-09 18:54:28 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-09 18:54:31 INFO weather.py:369: Fetched new weather data at 2025-04-09 18:54:31.132488
+2025-04-09 18:54:33 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-09 18:54:34 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-09 18:54:46 INFO event_listener.py:52: Created named pipe yasb-01a0dd51-1546-11f0-9069-3024a93e5e2e
+2025-04-09 18:54:46 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-01a0dd51-1546-11f0-9069-3024a93e5e2e
+2025-04-09 18:54:47 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-09 18:54:47 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-09 18:54:47 DEBUG _windows.py:192: Thread started
+2025-04-09 18:54:47 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-01a0dd51-1546-11f0-9069-3024a93e5e2e
+2025-04-09 18:58:44 INFO tray.py:265: Exiting Application...
+2025-04-09 18:58:44 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-09 18:58:44 DEBUG _windows.py:201: Exiting thread
+2025-04-09 18:58:44 DEBUG _windows.py:75: Closing
+2025-04-09 18:58:51 INFO log.py:21: Yasb v1.6.7
+2025-04-09 18:58:51 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-09 18:58:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 18:58:52.666176
+2025-04-09 18:58:53 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-09 18:58:54 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-09 18:59:03 INFO event_listener.py:52: Created named pipe yasb-9a9b206d-1546-11f0-9cab-3024a93e5e2e
+2025-04-09 18:59:03 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-9a9b206d-1546-11f0-9cab-3024a93e5e2e
+2025-04-09 18:59:03 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-09 18:59:03 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-09 18:59:03 DEBUG _windows.py:192: Thread started
+2025-04-09 18:59:04 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-9a9b206d-1546-11f0-9cab-3024a93e5e2e
+2025-04-09 19:08:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 19:08:52.813285
+2025-04-09 19:18:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 19:18:52.666450
+2025-04-09 19:28:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 19:28:52.672380
+2025-04-09 19:38:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 19:38:52.689679
+2025-04-09 19:48:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 19:48:52.670791
+2025-04-09 19:58:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 19:58:52.712729
+2025-04-09 20:08:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 20:08:52.667162
+2025-04-09 20:51:54 INFO weather.py:369: Fetched new weather data at 2025-04-09 20:51:54.210136
+2025-04-09 20:51:54 ERROR weather.py:472: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-04-09 21:01:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 21:01:52.526939
+2025-04-09 21:11:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 21:11:52.521343
+2025-04-09 21:21:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 21:21:52.531947
+2025-04-09 21:31:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 21:31:52.507080
+2025-04-09 21:41:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 21:41:52.521802
+2025-04-09 21:51:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 21:51:52.504346
+2025-04-09 22:01:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 22:01:52.564213
+2025-04-09 22:11:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 22:11:52.517398
+2025-04-09 22:21:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 22:21:52.538967
+2025-04-09 22:31:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 22:31:52.534324
+2025-04-09 22:41:52 INFO weather.py:369: Fetched new weather data at 2025-04-09 22:41:52.519998
+2025-04-09 22:46:30 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-09 22:46:30 DEBUG _windows.py:201: Exiting thread
+2025-04-09 22:46:30 DEBUG _windows.py:75: Closing
+2025-04-09 22:46:30 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000002B6E88A3F70>. Removing link to WinEvent.EventObjectStateChange.
+2025-04-10 15:52:17 INFO log.py:21: Yasb v1.6.7
+2025-04-10 15:52:24 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-10 15:53:02 INFO weather.py:369: Fetched new weather data at 2025-04-10 15:53:02.559397
+2025-04-10 15:53:19 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-10 15:53:22 INFO app_bar.py:103: Bar Created on Screen: \\.\DISPLAY1 [Bar Height: 40px, DPI Scale: 1.0, Scale Screen: True, Screen Geometry: X: 0, Y: 0, Screen Width: 1920, Screen Height: 1080]
+2025-04-10 15:53:35 INFO event_listener.py:52: Created named pipe yasb-dbc0d807-15f5-11f0-beb3-3024a93e5e2e
+2025-04-10 15:53:35 INFO event_listener.py:106: Waiting for Komorebi to subscribe to named pipe yasb-dbc0d807-15f5-11f0-beb3-3024a93e5e2e
+2025-04-10 15:53:35 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-10 15:53:35 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-10 15:53:35 DEBUG _windows.py:192: Thread started
+2025-04-10 15:53:35 INFO event_listener.py:118: Komorebi connected to named pipe: yasb-dbc0d807-15f5-11f0-beb3-3024a93e5e2e
+2025-04-10 15:53:37 ERROR event_listener.py:122: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-10 15:55:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 15:55:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 15:57:51 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 15:57:53 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 15:59:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 15:59:27 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:00:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:00:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:00:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:00:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:03:02 INFO weather.py:369: Fetched new weather data at 2025-04-10 16:03:02.539645
+2025-04-10 16:03:15 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:03:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:04:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:04:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:05:23 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:05:37 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:05:49 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:06:06 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:08:44 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:08:46 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:09:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:09:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:13:02 INFO weather.py:369: Fetched new weather data at 2025-04-10 16:13:02.484182
+2025-04-10 16:21:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:23:02 INFO weather.py:369: Fetched new weather data at 2025-04-10 16:23:02.490049
+2025-04-10 16:23:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:26:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:26:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:28:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:30:11 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:31:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:31:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:32:33 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:32:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:32:40 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:33:02 INFO weather.py:369: Fetched new weather data at 2025-04-10 16:33:02.507776
+2025-04-10 16:33:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:34:29 INFO tray.py:265: Exiting Application...
+2025-04-10 16:34:30 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-10 16:34:30 DEBUG _windows.py:201: Exiting thread
+2025-04-10 16:34:30 DEBUG _windows.py:75: Closing
+2025-04-10 16:38:38 INFO log.py:21: Yasb v1.6.9
+2025-04-10 16:38:42 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-10 16:39:04 INFO weather.py:369: Fetched new weather data at 2025-04-10 16:39:04.566920
+2025-04-10 16:39:12 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-10 16:39:25 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-10 16:39:25 INFO event_listener.py:53: Created named pipe yasb-436da0ff-15fc-11f0-8e62-3024a93e5e2e
+2025-04-10 16:39:26 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-10 16:39:26 DEBUG _windows.py:192: Thread started
+2025-04-10 16:39:27 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-436da0ff-15fc-11f0-8e62-3024a93e5e2e
+2025-04-10 16:39:28 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-10 16:39:28 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-10 16:39:31 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-10 16:39:31 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-10 16:39:34 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-10 16:39:34 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-10 16:39:37 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-10 16:39:37 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-10 16:39:38 INFO controller.py:12: Reloading Application from tray...
+2025-04-10 16:39:39 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-10 16:39:39 DEBUG _windows.py:201: Exiting thread
+2025-04-10 16:39:39 DEBUG _windows.py:75: Closing
+2025-04-10 16:39:39 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001E4C83A31B0>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-10 16:39:39 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-10 16:39:39 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-10 16:39:43 INFO log.py:21: Yasb v1.6.9
+2025-04-10 16:39:43 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-10 16:39:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 16:39:44.840218
+2025-04-10 16:39:46 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-10 16:39:55 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-10 16:39:55 INFO event_listener.py:53: Created named pipe yasb-551507bd-15fc-11f0-ae1b-3024a93e5e2e
+2025-04-10 16:39:55 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-10 16:39:55 DEBUG _windows.py:192: Thread started
+2025-04-10 16:39:55 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-551507bd-15fc-11f0-ae1b-3024a93e5e2e
+2025-04-10 16:39:56 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-10 16:39:56 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-10 16:40:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:40:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:40:22 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:40:22 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:41:25 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:41:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:41:54 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:42:04 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:42:05 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:42:05 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:43:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:43:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:44:18 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:44:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:49:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 16:49:44.842822
+2025-04-10 16:50:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:50:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:50:35 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:50:37 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:50:51 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:51:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:52:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 16:59:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 16:59:44.852847
+2025-04-10 17:03:48 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:06:19 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:09:45 INFO weather.py:369: Fetched new weather data at 2025-04-10 17:09:45.134343
+2025-04-10 17:19:45 INFO weather.py:369: Fetched new weather data at 2025-04-10 17:19:45.052230
+2025-04-10 17:28:18 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:28:19 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:29:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:29:33 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:29:35 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:29:37 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:29:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 17:29:44.856053
+2025-04-10 17:39:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 17:39:44.857511
+2025-04-10 17:44:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:44:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:44:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:45:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:48:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:48:30 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:48:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:48:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:48:59 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:49:29 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:49:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 17:49:44.855796
+2025-04-10 17:50:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:52:07 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:52:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:53:41 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:54:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:54:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:55:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:56:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:56:47 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:56:48 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:57:23 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:57:25 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:59:01 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:59:43 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 17:59:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 17:59:44.850067
+2025-04-10 18:00:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:04:14 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:04:15 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:09:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 18:09:44.851754
+2025-04-10 18:13:42 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:13:43 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:13:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:15:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:19:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 18:19:44.853265
+2025-04-10 18:23:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:23:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:23:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:23:57 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:23:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:24:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:29:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 18:29:44.865926
+2025-04-10 18:32:54 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:32:54 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:32:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:32:57 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:33:33 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:33:37 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:39:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 18:39:44.849194
+2025-04-10 18:41:25 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:41:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:41:54 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:45:04 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:45:05 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:45:48 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:47:59 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:47:59 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:48:06 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:48:12 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 18:49:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 18:49:44.860029
+2025-04-10 19:00:02 INFO weather.py:369: Fetched new weather data at 2025-04-10 19:00:02.169948
+2025-04-10 19:09:45 INFO weather.py:369: Fetched new weather data at 2025-04-10 19:09:45.060442
+2025-04-10 19:11:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 19:18:35 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 19:18:37 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 19:19:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 19:19:44.847932
+2025-04-10 19:29:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 19:29:44.843106
+2025-04-10 19:35:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 19:36:01 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 19:39:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 19:39:44.869642
+2025-04-10 19:49:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 19:49:44.862301
+2025-04-10 19:57:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:00:10 INFO weather.py:369: Fetched new weather data at 2025-04-10 20:00:10.879325
+2025-04-10 20:01:18 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:01:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:04:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:07:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:08:03 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:08:04 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:09:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 20:09:44.856729
+2025-04-10 20:12:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:13:41 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:19:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 20:19:44.855329
+2025-04-10 20:23:33 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:24:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:24:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:24:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:28:33 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:29:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 20:29:44.862252
+2025-04-10 20:33:46 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:34:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:38:19 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:39:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 20:39:44.848224
+2025-04-10 20:39:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:44:18 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:45:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:49:31 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:49:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 20:49:44.859892
+2025-04-10 20:51:21 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 20:59:44 INFO weather.py:369: Fetched new weather data at 2025-04-10 20:59:44.847406
+2025-04-10 21:00:03 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 21:01:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 21:01:57 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 21:01:59 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 21:02:50 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 21:54:06 INFO weather.py:369: Fetched new weather data at 2025-04-10 21:54:06.331982
+2025-04-10 21:54:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:00:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:00:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:03:47 INFO weather.py:369: Fetched new weather data at 2025-04-10 22:03:47.013653
+2025-04-10 22:05:50 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:07:15 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:07:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:13:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:13:42 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:13:47 INFO weather.py:369: Fetched new weather data at 2025-04-10 22:13:47.024873
+2025-04-10 22:14:19 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:14:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:17:08 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:22:51 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-10 22:23:47 INFO weather.py:369: Fetched new weather data at 2025-04-10 22:23:47.008727
+2025-04-11 09:40:33 INFO log.py:21: Yasb v1.6.9
+2025-04-11 09:40:35 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 09:40:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 09:40:43.243933
+2025-04-11 09:40:46 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 09:40:51 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 09:40:51 INFO event_listener.py:53: Created named pipe yasb-f4806eba-168a-11f0-804c-3024a93e5e2e
+2025-04-11 09:40:51 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 09:40:51 DEBUG _windows.py:192: Thread started
+2025-04-11 09:40:51 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-f4806eba-168a-11f0-804c-3024a93e5e2e
+2025-04-11 09:46:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 09:47:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 09:48:18 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 09:50:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 09:50:43.250251
+2025-04-11 09:52:21 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 09:52:48 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 09:55:53 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 09:59:47 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:00:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 10:00:43.231504
+2025-04-11 10:02:21 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:02:29 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:02:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:03:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:06:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:06:28 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:07:42 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:07:51 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:10:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 10:10:43.244644
+2025-04-11 10:15:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:17:54 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:18:23 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:18:43 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:20:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 10:20:43.250206
+2025-04-11 10:22:48 CRITICAL tray_monitor.py:255: Could not find the real systray window
+2025-04-11 10:23:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:23:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:25:23 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:25:29 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:27:23 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:27:57 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 10:28:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:04:06 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:04:06.191517
+2025-04-11 11:04:07 ERROR weather.py:473: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-04-11 11:04:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:09:28 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:09:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:10:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:10:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:14:01 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:14:01.511130
+2025-04-11 11:14:24 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:14:25 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:14:25 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:14:25 DEBUG _windows.py:75: Closing
+2025-04-11 11:14:25 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000002656E4C31B0>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-11 11:14:25 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000002656E4C31B0>. Removing link to WinEvent.EventObjectStateChange.
+2025-04-11 11:14:30 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:14:32 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:14:41 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:14:41.233976
+2025-04-11 11:14:44 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:14:50 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:14:50 INFO event_listener.py:53: Created named pipe yasb-158c14b1-1698-11f0-b180-3024a93e5e2e
+2025-04-11 11:14:50 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:14:50 DEBUG _windows.py:192: Thread started
+2025-04-11 11:14:50 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-158c14b1-1698-11f0-b180-3024a93e5e2e
+2025-04-11 11:16:18 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:16:18 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:16:18 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:16:18 DEBUG _windows.py:75: Closing
+2025-04-11 11:16:20 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:16:21 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:16:22 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:16:22.005637
+2025-04-11 11:16:23 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:16:28 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:16:28 INFO event_listener.py:53: Created named pipe yasb-4fec0f84-1698-11f0-8686-3024a93e5e2e
+2025-04-11 11:16:28 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:16:28 DEBUG _windows.py:192: Thread started
+2025-04-11 11:16:28 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-4fec0f84-1698-11f0-8686-3024a93e5e2e
+2025-04-11 11:16:29 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:16:29 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:17:23 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:17:23 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:17:23 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:17:24 DEBUG _windows.py:75: Closing
+2025-04-11 11:17:24 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000239475E31B0>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-11 11:17:25 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:17:26 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:17:27 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:17:27.579309
+2025-04-11 11:17:29 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:17:34 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:17:34 INFO event_listener.py:53: Created named pipe yasb-778d41c9-1698-11f0-abaf-3024a93e5e2e
+2025-04-11 11:17:34 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:17:34 DEBUG _windows.py:192: Thread started
+2025-04-11 11:17:35 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-778d41c9-1698-11f0-abaf-3024a93e5e2e
+2025-04-11 11:17:35 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:17:35 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:18:15 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:18:16 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:18:16 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:18:16 DEBUG _windows.py:75: Closing
+2025-04-11 11:18:16 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000002B5142531B0>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-11 11:18:17 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:18:18 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:18:19 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:18:19.126547
+2025-04-11 11:18:20 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:18:24 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:18:24 INFO event_listener.py:53: Created named pipe yasb-9551e9f9-1698-11f0-8ca6-3024a93e5e2e
+2025-04-11 11:18:24 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:18:24 DEBUG _windows.py:192: Thread started
+2025-04-11 11:18:25 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-9551e9f9-1698-11f0-8ca6-3024a93e5e2e
+2025-04-11 11:18:25 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:18:25 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:18:51 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:18:51 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:18:51 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:18:51 DEBUG _windows.py:75: Closing
+2025-04-11 11:18:53 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:18:53 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:18:54 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:18:54.120143
+2025-04-11 11:18:55 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:18:58 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:18:58 INFO event_listener.py:53: Created named pipe yasb-a9d71f03-1698-11f0-9c6e-3024a93e5e2e
+2025-04-11 11:18:59 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:18:59 DEBUG _windows.py:192: Thread started
+2025-04-11 11:18:59 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-a9d71f03-1698-11f0-9c6e-3024a93e5e2e
+2025-04-11 11:26:39 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:26:40 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:26:40 DEBUG _windows.py:75: Closing
+2025-04-11 11:26:40 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL k_signal_update of WorkspaceWidget object at 0x0000021CC729B110>. Removing link to KomorebiEvent.KomorebiUpdate.
+2025-04-11 11:28:55 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:28:56 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:28:57 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:28:57.258309
+2025-04-11 11:28:59 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:29:06 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:29:06 INFO event_listener.py:53: Created named pipe yasb-13db1d62-169a-11f0-862f-3024a93e5e2e
+2025-04-11 11:29:06 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:29:06 DEBUG _windows.py:192: Thread started
+2025-04-11 11:29:07 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-13db1d62-169a-11f0-862f-3024a93e5e2e
+2025-04-11 11:29:09 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:10 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:13 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:13 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:16 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:16 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:20 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:20 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:23 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:23 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:26 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:26 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:30 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:30 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:33 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:33 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:37 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:37 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:40 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:29:40 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:29:43 INFO controller.py:12: Reloading Application from CLI...
+2025-04-11 11:29:43 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:29:43 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:29:43 DEBUG _windows.py:75: Closing
+2025-04-11 11:29:44 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:29:45 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:29:45 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:29:45.680144
+2025-04-11 11:29:46 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:29:49 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:29:49 INFO event_listener.py:53: Created named pipe yasb-2d85b486-169a-11f0-ad92-3024a93e5e2e
+2025-04-11 11:29:49 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:29:49 DEBUG _windows.py:192: Thread started
+2025-04-11 11:29:49 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-2d85b486-169a-11f0-ad92-3024a93e5e2e
+2025-04-11 11:33:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:33:21 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:33:22 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:33:23 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:35:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:35:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:39:45 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:39:45.700942
+2025-04-11 11:46:42 ERROR config.py:118: The file 'C:\Users\Ashwin\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\Ashwin\.config\yasb\config.yaml", line 324, column 9
+expected <block end>, but found '<scalar>'
+  in "C:\Users\Ashwin\.config\yasb\config.yaml", line 326, column 31
+2025-04-11 11:46:42 ERROR config.py:118: The file 'C:\Users\Ashwin\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\Ashwin\.config\yasb\config.yaml", line 324, column 9
+expected <block end>, but found '<scalar>'
+  in "C:\Users\Ashwin\.config\yasb\config.yaml", line 326, column 31
+2025-04-11 11:46:43 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:46:44 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:46:44 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:46:44 DEBUG _windows.py:75: Closing
+2025-04-11 11:46:44 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x0000021FE211AA30>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-11 11:46:52 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:46:54 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:47:04 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:47:04.830344
+2025-04-11 11:47:09 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:47:18 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:47:18 INFO event_listener.py:53: Created named pipe yasb-9ebf7de6-169c-11f0-b478-3024a93e5e2e
+2025-04-11 11:47:18 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:47:18 DEBUG _windows.py:192: Thread started
+2025-04-11 11:47:19 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-9ebf7de6-169c-11f0-b478-3024a93e5e2e
+2025-04-11 11:47:19 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:47:19 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:48:34 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:48:34 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:48:34 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:48:34 DEBUG _windows.py:75: Closing
+2025-04-11 11:48:34 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000151FD9EAA30>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-11 11:48:36 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:48:37 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:48:38 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:48:38.092848
+2025-04-11 11:48:39 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:48:48 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:48:48 INFO event_listener.py:53: Created named pipe yasb-d454b2b4-169c-11f0-bc76-3024a93e5e2e
+2025-04-11 11:48:48 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:48:48 DEBUG _windows.py:192: Thread started
+2025-04-11 11:48:49 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-d454b2b4-169c-11f0-bc76-3024a93e5e2e
+2025-04-11 11:48:49 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:48:49 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:49:29 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:49:30 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:49:30 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:49:30 DEBUG _windows.py:75: Closing
+2025-04-11 11:49:32 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:49:33 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:49:34 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:49:34.655075
+2025-04-11 11:49:35 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:49:41 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:49:41 INFO event_listener.py:53: Created named pipe yasb-f410fadb-169c-11f0-989b-3024a93e5e2e
+2025-04-11 11:49:41 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:49:41 DEBUG _windows.py:192: Thread started
+2025-04-11 11:49:42 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-f410fadb-169c-11f0-989b-3024a93e5e2e
+2025-04-11 11:53:07 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:53:07 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 11:55:15 INFO controller.py:12: Reloading Application from tray...
+2025-04-11 11:55:16 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:55:16 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:55:16 DEBUG _windows.py:75: Closing
+2025-04-11 11:55:16 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000266E28FAA30>. Removing link to WinEvent.EventObjectStateChange.
+2025-04-11 11:55:16 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000266E28FAA30>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-11 11:55:18 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:55:19 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:55:20 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:55:20.014628
+2025-04-11 11:55:21 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:55:26 WARNING weather.py:417: An unexpected error occurred while loading icon http://cdn.weatherapi.com/weather/64x64/day/176.png: timed out
+2025-04-11 11:55:26 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:55:26 INFO event_listener.py:53: Created named pipe yasb-c1f54668-169d-11f0-934f-3024a93e5e2e
+2025-04-11 11:55:27 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:55:27 DEBUG _windows.py:192: Thread started
+2025-04-11 11:55:27 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-c1f54668-169d-11f0-934f-3024a93e5e2e
+2025-04-11 11:55:41 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:55:41 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:55:41 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:55:41 DEBUG _windows.py:75: Closing
+2025-04-11 11:55:43 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:55:44 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:55:45 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:55:45.125015
+2025-04-11 11:55:46 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:55:50 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:55:50 INFO event_listener.py:53: Created named pipe yasb-d001f869-169d-11f0-8839-3024a93e5e2e
+2025-04-11 11:55:50 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:55:50 DEBUG _windows.py:192: Thread started
+2025-04-11 11:55:51 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-d001f869-169d-11f0-8839-3024a93e5e2e
+2025-04-11 11:55:51 ERROR client.py:44: Komorebi state query timed out in 0.5 seconds
+2025-04-11 11:55:51 ERROR event_listener.py:129: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 1 second... Is komorebi online and its binaries added to $PATH?
+2025-04-11 11:56:19 INFO controller.py:12: Reloading Application because of config update...
+2025-04-11 11:56:19 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 11:56:19 DEBUG _windows.py:201: Exiting thread
+2025-04-11 11:56:19 DEBUG _windows.py:75: Closing
+2025-04-11 11:56:22 INFO log.py:21: Yasb v1.6.9
+2025-04-11 11:56:23 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 11:56:24 INFO weather.py:369: Fetched new weather data at 2025-04-11 11:56:24.027344
+2025-04-11 11:56:25 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 11:56:30 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 11:56:30 INFO event_listener.py:53: Created named pipe yasb-e7d17870-169d-11f0-98ec-3024a93e5e2e
+2025-04-11 11:56:30 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 11:56:30 DEBUG _windows.py:192: Thread started
+2025-04-11 11:56:30 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-e7d17870-169d-11f0-98ec-3024a93e5e2e
+2025-04-11 11:59:49 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:00:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:00:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:02:46 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:02:47 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:02:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:03:07 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:06:24 INFO weather.py:369: Fetched new weather data at 2025-04-11 12:06:24.067486
+2025-04-11 12:07:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:13:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:16:37 INFO weather.py:369: Fetched new weather data at 2025-04-11 12:16:37.032772
+2025-04-11 12:17:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:33:36 INFO log.py:21: Yasb v1.6.9
+2025-04-11 12:33:37 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 12:33:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 12:33:43.667420
+2025-04-11 12:33:46 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 12:33:52 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 12:33:52 INFO event_listener.py:53: Created named pipe yasb-201d82bb-16a3-11f0-bc8b-3024a93e5e2e
+2025-04-11 12:33:52 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 12:33:52 DEBUG _windows.py:192: Thread started
+2025-04-11 12:33:54 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-201d82bb-16a3-11f0-bc8b-3024a93e5e2e
+2025-04-11 12:43:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 12:43:43.674080
+2025-04-11 12:48:13 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:53:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 12:53:43.667754
+2025-04-11 12:56:15 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:59:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:59:18 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:59:23 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 12:59:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:00:21 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:02:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:02:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:03:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 13:03:43.668488
+2025-04-11 13:04:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:04:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:06:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:08:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:10:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:13:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 13:13:43.663502
+2025-04-11 13:16:57 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:16:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:18:51 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:18:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:22:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:22:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:23:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 13:23:43.930603
+2025-04-11 13:29:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:29:11 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:33:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 13:33:43.653604
+2025-04-11 13:35:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:35:50 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:38:50 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:38:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:43:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 13:43:43.661825
+2025-04-11 13:49:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:49:12 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:51:49 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:51:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:52:57 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:52:59 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 13:53:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 13:53:43.676636
+2025-04-11 14:02:42 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:03:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:03:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:03:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 14:03:43.669360
+2025-04-11 14:04:21 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:04:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:05:06 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:05:46 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:08:25 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:08:35 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:11:14 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:12:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:13:08 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:13:08 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:13:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:13:21 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:13:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 14:13:43.697136
+2025-04-11 14:13:50 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:14:03 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:16:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:16:53 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:20:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:20:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:21:28 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:22:40 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:23:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:23:04 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:23:05 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:23:08 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:23:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:23:11 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:23:14 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:23:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:23:44 INFO weather.py:369: Fetched new weather data at 2025-04-11 14:23:44.083647
+2025-04-11 14:24:23 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:24:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:24:28 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:24:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:29:47 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:33:43 INFO weather.py:369: Fetched new weather data at 2025-04-11 14:33:43.663801
+2025-04-11 14:38:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:38:12 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:39:28 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 14:39:29 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:32:42 INFO weather.py:369: Fetched new weather data at 2025-04-11 15:32:42.364409
+2025-04-11 15:32:48 ERROR weather.py:473: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-04-11 15:36:28 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:38:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:38:54 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:42:41 INFO weather.py:369: Fetched new weather data at 2025-04-11 15:42:41.525727
+2025-04-11 15:45:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:46:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:47:14 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:47:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:47:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:47:28 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:49:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:52:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:52:06 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:52:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:52:41 INFO weather.py:369: Fetched new weather data at 2025-04-11 15:52:41.512108
+2025-04-11 15:57:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:59:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 15:59:46 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 16:02:41 INFO weather.py:369: Fetched new weather data at 2025-04-11 16:02:41.514937
+2025-04-11 16:03:12 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 16:03:13 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 16:04:22 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 16:05:18 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 16:12:41 INFO weather.py:369: Fetched new weather data at 2025-04-11 16:12:41.509294
+2025-04-11 16:16:22 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 16:16:25 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 16:17:58 INFO bar.py:99: Screen geometry changed. Updating position for bar (primary-bar_DISPLAY1_fda708c0)
+2025-04-11 16:19:19 WARNING event_listener.py:84: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2025-04-11 16:19:19 INFO event_listener.py:94: Attempting to reconnect to Komorebi...
+2025-04-11 16:19:22 INFO event_listener.py:53: Created named pipe yasb-201d82bb-16a3-11f0-bc8b-3024a93e5e2e
+2025-04-11 16:19:27 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-201d82bb-16a3-11f0-bc8b-3024a93e5e2e
+2025-04-11 16:20:10 INFO controller.py:12: Reloading Application from tray...
+2025-04-11 16:20:10 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 16:20:11 DEBUG _windows.py:201: Exiting thread
+2025-04-11 16:20:11 DEBUG _windows.py:75: Closing
+2025-04-11 16:20:11 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL k_signal_update of WorkspaceWidget object at 0x000001FB4DC1B110>. Removing link to KomorebiEvent.KomorebiUpdate.
+2025-04-11 16:20:11 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001FB4D02C050>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-11 16:20:14 INFO log.py:21: Yasb v1.6.9
+2025-04-11 16:20:15 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-11 16:20:20 INFO weather.py:369: Fetched new weather data at 2025-04-11 16:20:20.982906
+2025-04-11 16:20:23 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-11 16:20:28 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-11 16:20:28 INFO event_listener.py:53: Created named pipe yasb-c810d233-16c2-11f0-b21b-3024a93e5e2e
+2025-04-11 16:20:28 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-11 16:20:28 DEBUG _windows.py:192: Thread started
+2025-04-11 16:20:29 INFO event_listener.py:125: Komorebi connected to named pipe: yasb-c810d233-16c2-11f0-b21b-3024a93e5e2e
+2025-04-11 16:22:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 16:22:43 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 17:08:28 INFO weather.py:369: Fetched new weather data at 2025-04-11 17:08:28.381789
+2025-04-11 17:08:28 ERROR weather.py:473: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-04-11 17:15:11 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 17:18:28 INFO weather.py:369: Fetched new weather data at 2025-04-11 17:18:28.213748
+2025-04-11 20:21:44 INFO weather.py:369: Fetched new weather data at 2025-04-11 20:21:44.504556
+2025-04-11 20:47:04 INFO weather.py:369: Fetched new weather data at 2025-04-11 20:47:04.135234
+2025-04-11 20:47:09 ERROR weather.py:473: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-04-11 20:47:19 ERROR weather.py:473: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-04-11 20:47:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 20:48:19 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 20:48:22 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 20:50:15 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 20:50:15 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 20:50:29 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 20:50:44 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 20:53:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 20:53:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 20:57:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 20:57:03.571086
+2025-04-11 21:00:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:00:59 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:07:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 21:07:03.574231
+2025-04-11 21:09:15 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:09:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:10:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:11:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:13:59 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:16:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:17:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 21:17:03.576792
+2025-04-11 21:18:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:18:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:19:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:19:03 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:19:05 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:19:06 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:19:50 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:19:51 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:20:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:20:18 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:27:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 21:27:03.690070
+2025-04-11 21:28:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:37:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 21:37:03.583732
+2025-04-11 21:38:45 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:40:52 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:41:06 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:43:11 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:43:30 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:44:04 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:44:05 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:44:12 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:44:37 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:44:50 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:44:57 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:47:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 21:47:03.587034
+2025-04-11 21:49:13 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:50:37 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:50:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:51:05 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:56:15 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:56:35 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:56:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:57:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 21:57:03.580951
+2025-04-11 21:57:13 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:57:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:57:46 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:59:31 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:59:37 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:59:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 21:59:43 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:01:59 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:02:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:06:30 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:06:42 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:07:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 22:07:03.711136
+2025-04-11 22:08:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:08:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:09:01 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:09:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:09:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:10:30 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:12:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:12:41 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:14:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:15:25 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:16:23 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:16:44 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:17:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 22:17:03.577775
+2025-04-11 22:17:09 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:17:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:18:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:18:27 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:23:31 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:24:33 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:27:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 22:27:03.596628
+2025-04-11 22:28:31 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:28:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:29:14 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:29:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:30:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:30:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:31:15 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:31:48 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:32:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:32:04 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:34:13 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:35:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:37:03 INFO weather.py:369: Fetched new weather data at 2025-04-11 22:37:03.583427
+2025-04-11 22:37:16 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:37:35 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:38:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:38:30 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:39:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:39:46 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:39:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:39:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:44:41 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-11 22:46:07 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-11 22:46:07 DEBUG _windows.py:201: Exiting thread
+2025-04-11 22:46:07 DEBUG _windows.py:75: Closing
+2025-04-11 22:46:08 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL k_signal_update of WorkspaceWidget object at 0x0000019B5208B110>. Removing link to KomorebiEvent.KomorebiUpdate.
+2025-04-12 14:04:04 INFO log.py:21: Yasb v1.6.9
+2025-04-12 14:04:06 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-12 14:04:16 INFO weather.py:369: Fetched new weather data at 2025-04-12 14:04:16.497329
+2025-04-12 14:04:20 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-12 14:05:15 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-12 14:05:15 INFO event_listener.py:53: Created named pipe yasb-0eadd310-1779-11f0-8af0-3024a93e5e2e
+2025-04-12 14:05:17 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-12 14:05:18 DEBUG _windows.py:192: Thread started
+2025-04-12 14:06:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:06:43 INFO controller.py:12: Reloading Application from tray...
+2025-04-12 14:06:43 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-12 14:06:43 DEBUG _windows.py:201: Exiting thread
+2025-04-12 14:06:43 DEBUG _windows.py:75: Closing
+2025-04-12 14:06:43 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x0000014E8813C050>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-12 14:06:48 INFO log.py:21: Yasb v1.6.9
+2025-04-12 14:06:50 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-12 14:06:54 INFO weather.py:369: Fetched new weather data at 2025-04-12 14:06:54.227641
+2025-04-12 14:06:55 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-12 14:07:01 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-12 14:07:01 INFO event_listener.py:53: Created named pipe yasb-4e244991-1779-11f0-8291-3024a93e5e2e
+2025-04-12 14:07:02 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-12 14:07:02 DEBUG _windows.py:192: Thread started
+2025-04-12 14:08:12 INFO controller.py:12: Reloading Application from tray...
+2025-04-12 14:08:12 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-12 14:08:12 DEBUG _windows.py:201: Exiting thread
+2025-04-12 14:08:12 DEBUG _windows.py:75: Closing
+2025-04-12 14:08:16 INFO log.py:21: Yasb v1.6.9
+2025-04-12 14:08:17 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-12 14:08:18 INFO weather.py:369: Fetched new weather data at 2025-04-12 14:08:18.212074
+2025-04-12 14:08:20 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-12 14:08:25 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-12 14:08:25 INFO event_listener.py:53: Created named pipe yasb-7fffbb1c-1779-11f0-8a24-3024a93e5e2e
+2025-04-12 14:08:25 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-12 14:08:25 DEBUG _windows.py:192: Thread started
+2025-04-12 14:08:54 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:09:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:09:11 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:11:35 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:11:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:12:03 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:12:56 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:13:36 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:15:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:15:41 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:18:18 INFO weather.py:369: Fetched new weather data at 2025-04-12 14:18:18.211717
+2025-04-12 14:24:46 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:26:01 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:26:49 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:27:19 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:27:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:28:18 INFO weather.py:369: Fetched new weather data at 2025-04-12 14:28:18.203988
+2025-04-12 14:33:37 INFO controller.py:27: Exiting Application from CLI...
+2025-04-12 14:33:37 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-12 14:33:37 DEBUG _windows.py:201: Exiting thread
+2025-04-12 14:33:37 DEBUG _windows.py:75: Closing
+2025-04-12 14:33:37 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000249C066C050>. Removing link to WinEvent.EventObjectStateChange.
+2025-04-12 14:35:11 INFO log.py:21: Yasb v1.6.9
+2025-04-12 14:35:13 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-12 14:35:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 14:35:21.510883
+2025-04-12 14:35:24 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-12 14:35:30 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-12 14:35:30 INFO event_listener.py:53: Created named pipe yasb-48ae8733-177d-11f0-891f-3024a93e5e2e
+2025-04-12 14:35:31 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-12 14:35:31 DEBUG _windows.py:192: Thread started
+2025-04-12 14:40:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:41:25 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:41:28 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:42:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:42:27 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:42:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:43:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:43:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:43:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:43:43 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:44:58 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:45:17 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:45:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 14:45:21.504413
+2025-04-12 14:45:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:46:43 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:47:13 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:48:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:48:40 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:51:29 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:51:30 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:51:41 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:51:41 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:51:46 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:51:47 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:51:48 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:54:01 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:54:34 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:54:35 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:54:38 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:54:40 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 14:55:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 14:55:21.719963
+2025-04-12 14:57:24 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:00:55 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:01:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:05:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 15:05:21.507913
+2025-04-12 15:15:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 15:15:21.512236
+2025-04-12 15:17:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:03 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:07 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:10 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:11 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:28 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:31 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:32 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:33 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:41 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:17:42 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:18:20 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:23:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:23:04 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:24:37 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:25:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 15:25:21.687339
+2025-04-12 15:25:48 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:25:50 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:26:29 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 15:35:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 15:35:21.503795
+2025-04-12 15:45:29 INFO weather.py:369: Fetched new weather data at 2025-04-12 15:45:29.932975
+2025-04-12 15:55:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 15:55:21.503249
+2025-04-12 15:58:39 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 16:05:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 16:05:21.531677
+2025-04-12 16:10:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 16:10:26 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 16:15:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 16:15:21.745612
+2025-04-12 16:25:21 INFO weather.py:369: Fetched new weather data at 2025-04-12 16:25:21.501968
+2025-04-12 16:30:00 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 16:30:02 DEBUG utils.py:65: Could not open process with PID 0
+2025-04-12 16:31:09 ERROR utils.py:107: GetIconInfo failed: 211880135
+2025-04-12 16:31:32 CRITICAL tray_monitor.py:255: Could not find the real systray window
+2025-04-12 16:35:19 INFO controller.py:12: Reloading Application because of config update...
+2025-04-12 16:35:23 INFO weather.py:369: Fetched new weather data at 2025-04-12 16:35:23.454376
+2025-04-12 16:35:24 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-12 16:35:24 DEBUG _windows.py:201: Exiting thread
+2025-04-12 16:35:24 DEBUG _windows.py:75: Closing
+2025-04-12 16:35:24 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001C85477C050>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-12 16:35:24 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001C85477C050>. Removing link to WinEvent.EventObjectStateChange.
+2025-04-12 16:35:37 INFO log.py:21: Yasb v1.6.9
+2025-04-12 16:35:40 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-12 16:35:54 INFO weather.py:369: Fetched new weather data at 2025-04-12 16:35:54.689051
+2025-04-12 16:36:01 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-12 16:36:16 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-12 16:36:16 INFO event_listener.py:53: Created named pipe yasb-279c8c2f-178e-11f0-b691-3024a93e5e2e
+2025-04-12 16:36:17 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-12 16:36:17 DEBUG _windows.py:192: Thread started
+2025-04-12 16:40:09 INFO controller.py:12: Reloading Application from tray...
+2025-04-12 16:40:10 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-12 16:40:10 DEBUG _windows.py:201: Exiting thread
+2025-04-12 16:40:10 DEBUG _windows.py:75: Closing
+2025-04-12 16:40:10 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x0000017528DD31B0>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-12 16:40:18 INFO log.py:21: Yasb v1.6.9
+2025-04-12 16:40:20 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-12 16:40:22 INFO weather.py:369: Fetched new weather data at 2025-04-12 16:40:22.144629
+2025-04-12 16:40:29 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-12 16:40:50 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-12 16:40:50 INFO event_listener.py:53: Created named pipe yasb-caee3aa1-178e-11f0-8225-3024a93e5e2e
+2025-04-12 16:40:50 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-12 16:40:50 DEBUG _windows.py:192: Thread started
