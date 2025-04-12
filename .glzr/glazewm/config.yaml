@@ -1,14 +1,14 @@
 general:
-  startup_commands: ['shell-exec zebar']
+  startup_commands: ['shell-exec yasbc start']
 
-  shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F']
+  shutdown_commands: ['shell-exec yasbc stop']
 
   focus_follows_cursor: true
 
   toggle_workspace_on_refocus: false
 
   cursor_jump:
-    enabled: true
+    enabled: false
 
     trigger: "window_focus"
 
@@ -56,7 +56,7 @@ window_behavior:
     floating:
       centered: true
 
-      shown_on_top: false
+      shown_on_top: true 
 
     fullscreen:
       maximized: true
@@ -183,6 +183,10 @@ keybindings:
     bindings: ["lwin+ctrl+right"]
   - commands: ["focus --prev-workspace"]
     bindings: ["lwin+ctrl+left"]
+  - commands: ["focus --next-workspace"]
+    bindings: ["ctrl+alt+shift+d"]
+  - commands: ["focus --prev-workspace"]
+    bindings: ["ctrl+alt+shift+a"]
 
   # Focus the workspace that last had focus.
   - commands: ["focus --recent-workspace"]

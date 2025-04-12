@@ -108,3 +108,5 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2025-02-15T14:05:59.462827Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
 [2m2025-02-15T14:06:00.220999Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
 [2m2025-02-25T12:43:36.470876Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-12T09:52:55.506173Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-04-12T09:53:00.435213Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
