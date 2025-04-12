@@ -20,7 +20,19 @@
         "kind": "Class",
         "id": "Vst3PlugWindow",
         "matching_strategy": "Legacy"
-      }
+      },
+      [
+        {
+          "kind": "Class",
+          "id": "Ableton Live Window Class",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "Ableton",
+          "matching_strategy": "DoesNotContain"
+        }
+      ]
     ]
   },
   "Adobe Creative Cloud": {
@@ -29,6 +41,15 @@
         "kind": "Class",
         "id": "CreativeCloudDesktopWindowClass",
         "matching_strategy": "Legacy"
+      }
+    ]
+  },
+  "Adobe Photshop": {
+    "ignore": [
+      {
+        "kind": "Class",
+        "id": "PSDialogBox",
+        "matching_strategy": "Equals"
       }
     ]
   },
@@ -257,6 +278,29 @@
       {
         "kind": "Exe",
         "id": "Bitwarden.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "Blender": {
+    "floating": [
+      [
+        {
+          "kind": "Exe",
+          "id": "blender.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "Blender",
+          "matching_strategy": "DoesNotContain"
+        }
+      ]
+    ],
+    "slow_application": [
+      {
+        "kind": "Exe",
+        "id": "blender.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -1242,6 +1286,20 @@
       }
     ]
   },
+  "Microsoft SQL Server Management Studio": {
+    "floating": [
+      {
+        "kind": "Exe",
+        "id": "Ssms.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Class",
+        "id": "WindowsForms10.Window.8.app",
+        "matching_strategy": "StartsWith"
+      }
+    ]
+  },
   "Microsoft Terminal Services Client": {
     "ignore": [
       {
@@ -1592,6 +1650,11 @@
       {
         "kind": "Exe",
         "id": "PowerToys.PowerAccent.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Exe",
+        "id": "PowerToys.AdvancedPaste.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -2174,6 +2237,13 @@
     ]
   },
   "VLC": {
+    "object_name_change": [
+      {
+        "kind": "Exe",
+        "id": "vlc.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
     "ignore": [
       [
         {
@@ -2208,7 +2278,7 @@
         {
           "kind": "Title",
           "id": "Preferences",
-          "matching_strategy": "Equals"
+          "matching_strategy": "Contains"
         }
       ],
       [
