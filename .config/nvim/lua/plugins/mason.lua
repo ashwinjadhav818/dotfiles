@@ -4,11 +4,11 @@ return {
         'williamboman/mason.nvim',
         lazy = false,
         opts = {
-            auto_install = true, -- Automatically install missing servers
+            auto_install = true, 
         },
         config = true,
         keys = {
-            { "<leader>lm",  "<cmd>Mason<cr>",                                    desc = "Mason" },
+            { "<leader>lm", "<cmd>Mason<cr>", desc = "Mason" },
         }
     },
     { 
