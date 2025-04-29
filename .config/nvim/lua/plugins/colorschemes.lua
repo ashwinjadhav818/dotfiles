@@ -5,9 +5,8 @@ return {
         priority = 1000,
         config = function()
             require("tokyonight").setup({
-                style = "night",                         -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-                transparent = true,                      -- Enable this to disable setting the background color
-                sidebars = { "qf", "help", "NvimTree" }, -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
+                style = "night",
+                sidebars = { "qf", "help", "NvimTree" },
             })
             vim.cmd([[colorscheme tokyonight]])
         end,

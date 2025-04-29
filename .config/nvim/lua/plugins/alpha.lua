@@ -12,32 +12,33 @@ return {
 
             local dashboard = require("alpha.themes.dashboard")
             dashboard.section.header.val = {
-                [[                                                                       ]],
-                [[                                                                       ]],
-                [[                                                                       ]],
-                [[                                                                       ]],
-                [[                                                                     ]],
-                [[       ████ ██████           █████      ██                     ]],
-                [[      ███████████             █████                             ]],
-                [[      █████████ ███████████████████ ███   ███████████   ]],
-                [[     █████████  ███    █████████████ █████ ██████████████   ]],
-                [[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
-                [[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
-                [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
-                [[                                                                       ]],
-                [[                                                                       ]],
-                [[                                                                       ]],
+               [[ ⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡄⠀⠀ ]],
+               [[ ⢰⠒⠒⢻⣿⣶⡒⠒⠒⠒⠒⠒⠒⠒⠒⠒⡶⠊⣰⣓⡒⡆ ]],
+               [[ ⢸⢸⢻⣭⡙⢿⣿⣍⡉⠉⡇⣯⠉⠉⣩⠋⢀⣔⠕⢫⡇⡇ ]],
+               [[ ⢸⢸⣈⡻⣿⣶⣽⡸⣿⣦⡇⣧⠠⠊⣸⢶⠋⢁⡤⠧⡧⡇ ]],
+               [[ ⢸⢸⠻⣿⣶⣝⠛⣿⣮⢻⠟⣏⣠⠞⠁⣼⡶⠋⢀⣴⡇⡇ ]],
+               [[ ⢸⢸⣿⣶⣍⠻⠼⣮⡕⢁⡤⢿⢁⡴⠊⣸⣵⠞⠋⢠⡇⡇ ]],
+               [[ ⢸⢘⣛⡻⣿⣧⢳⣿⣧⠎⢀⣾⠋⡠⠞⢱⢇⣠⡴⠟⡇⡇ ]],
+               [[ ⢸⢸⠹⣿⣷⣎⣉⣻⢁⡔⢁⢿⡏⢀⣤⢾⡟⠁⣀⣎⡇⡇ ]],
+               [[ ⢸⢸⠲⣶⣭⡛⠚⢿⢋⡔⢁⣼⠟⢋⣠⣼⠖⠋⢁⠎⡇⡇ ]],
+               [[ ⢸⢸⢤⣬⣛⠿⠞⣿⢋⠔⣉⣾⠖⠋⢁⣯⡴⠞⢃⠂⡇⡇ ]],
+               [[ ⢸⢸⠀⢙⣻⢿⣧⣾⡵⠚⣉⣯⠶⠛⣹⣧⠤⢮⠁⠀⡇⡇ ]],
+               [[ ⠸⣘⠢⣄⠙⠿⢷⡡⠖⣋⣽⠥⠒⣩⣟⣤⣔⣁⡤⠖⣃⠇ ]],
+               [[ ⠀⠀⠙⠢⢍⣻⡿⠒⢉⣴⣗⣚⣽⣋⣀⣤⣊⠥⠒⠉⠀⠀ ]],
+               [[ ⠀⠀⠀⢀⣔⠥⠒⢮⣙⠾⠀⠷⣚⡭⠞⠉⠛⠦⣀⠀⠀⠀ ]],
+               [[ ⠀⠀⠀⠉⠀⠀⠀⠀⠈⠑⠒⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ ]],
             }
-            dashboard.section.buttons.val = {
-                dashboard.button("f", "  Find file", function() Snacks.picker.files() end),
-                dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
-                dashboard.button("p", "  Find project", function() Snacks.picker.projects() end),
-                dashboard.button("r", "󰑓  Recently used files", function() Snacks.picker.recent() end),
-                dashboard.button("t", "󰦨  Find text", function() Snacks.picker.grep() end),
-                dashboard.button("c", "  Configuration",
-                    function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end),
-                dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
-            }
+            
+dashboard.section.buttons.val = {
+    dashboard.button("f", "  Find file", function() require('mini.pick').builtin.files() end),
+    dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+    dashboard.button("p", "  Find project", function() require('mini.pick').builtin.projects() end),
+    dashboard.button("r", "󰑓  Recently used files", function() require('mini.pick').builtin.recent() end),
+    dashboard.button("t", "󰦨  Find text", function() require('mini.pick').builtin.grep() end),
+    dashboard.button("c", "  Configuration",
+        function() require('mini.pick').builtin.files({ cwd = vim.fn.stdpath("config") }) end),
+    dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+}
 
             local function footer()
                 return "Welcome back Ashwin"

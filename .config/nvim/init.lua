@@ -1,4 +1,5 @@
 require("options")
 require("autocommands")
-require("lsp")
+require("keymaps")
 require("lazy_init")
+require("lsp")

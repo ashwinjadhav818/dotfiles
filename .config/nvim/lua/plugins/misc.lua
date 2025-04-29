@@ -1,14 +1,7 @@
 return {
     {
-        "iamcco/markdown-preview.nvim",
-        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-        build = "cd app && yarn install",
-        init = function()
-            vim.g.mkdp_filetypes = { "markdown" }
-        end,
-        ft = { "markdown" },
-    },
-    -- tailwind-tools.lua
+	"xiyaowong/transparent.nvim",
+},
     {
         "luckasRanarison/tailwind-tools.nvim",
         name = "tailwind-tools",
