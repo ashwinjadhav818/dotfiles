@@ -27,7 +27,7 @@ config.inactive_pane_hsb = { -- Dim inactive panes
 }
 
 -- Font
-config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font = wezterm.font("MonoLisa")
 config.font_size = 12
 
 -- Keybindings
@@ -110,7 +110,6 @@ wezterm.on("format-window-title", function()
 end)
 
 -- Tab bar
-config.enable_tab_bar = false
 config.integrated_title_buttons = { "Close" }
 
 return config
