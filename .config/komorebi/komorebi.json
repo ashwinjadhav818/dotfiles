@@ -5,9 +5,9 @@
     "cross_monitor_move_behaviour": "Insert",
     "default_workspace_padding": 4,
     "default_container_padding": 4,
-    "border": false,
-    "border_width": 4,
-    "border_offset": -1,
+    "border": true,
+    "border_width": 2,
+    "border_offset": 0,
     "mouse_follows_focus": false,
     "theme": {
         "palette": "Base16",
@@ -68,15 +68,20 @@
     "transparency": true,
     "transparency_alpha": 215,
     "animation": {
-      "enabled": true,
-      "duration": 400,
-      "fps": 60,
+        "enabled": true,
+        "duration": 400,
+        "fps": 60,
         "style": {
             "movement": "EaseOutBack",
             "transparency": "Linear"
         }
     },
     "ignore_rules": [
+        {
+            "kind": "Exe",
+            "id": "kanata_gui",
+            "matching_strategy": "Equals"
+        },
         {
             "kind": "Title",
             "id": "Arc extension popup",
