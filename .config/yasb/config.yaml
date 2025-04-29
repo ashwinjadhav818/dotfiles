@@ -28,12 +28,12 @@ bars:
     padding:
       top: 6
       left: 10
-      bottom: 0
+      bottom: 6
       right: 10
     widgets:
       left: ["home","komorebi_workspaces","komorebi_active_layout","glazewm_workspaces","glazewm_tiling_direction","active_window"]
       center: ["clock","apps"]
-      right: ["systray","pomodoro","weather","wifi","battery","volume"]
+      right: ["systray","media","weather","wifi","battery","volume"]
 widgets:
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
@@ -222,34 +222,70 @@ widgets:
       label_position: "right"
       icon_size: 16
       pin_click_modifier: "alt"
-      show_unpinned: true
+      show_unpinned: false
       show_battery: false
       show_volume: false
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "{title} - {artist}"
+      label: "<span>\uf001</span> {title}"
       label_alt: "{title}"
-      hide_empty: true
-      callbacks:
-        on_left: "toggle_label"
-        on_middle: "do_nothing"
-        on_right: "do_nothing"
       max_field_size:
         label: 20
-        label_alt: 30
-      show_thumbnail: true
+        label_alt: 15
+      show_thumbnail: true 
       controls_only: false
-      controls_left: false
-      controls_hide: false
-      thumbnail_alpha: 80
-      thumbnail_padding: 8
-      thumbnail_corner_radius: 16
+      controls_left: true
+      controls_hide: true
+      hide_empty: true
+      thumbnail_alpha: 120
+      thumbnail_padding: 10
+      thumbnail_corner_radius: 15
+      thumbnail_edge_fade: true
+      symmetric_corner_radius: true
       icons:
-        prev_track: "\udb81\udcae"
-        next_track: "\udb81\udcad"
-        play: "\udb81\udc0a"
-        pause: "\udb80\udfe4"
+        prev_track: "\ue892"
+        next_track: "\ue893"
+        play: "\ue768"
+        pause: "\ue769"
+      callbacks:
+        on_left: "toggle_media_menu"
+        on_middle: "toggle_label"
+        on_right: "toggle_play_pause"
+      container_padding:
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+      media_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+        thumbnail_corner_radius: 8
+        thumbnail_size: 100
+        max_title_size: 100
+        max_artist_size: 40
+        show_source: true
+      media_menu_icons:
+        play: "\ue768"
+        pause: "\ue769"
+        prev_track: "\ue892"
+        next_track: "\ue893"
+      label_shadow:
+        enabled: true
+        color: "#000000"
+        offset: [1, 1]
+        radius: 2
+      container_shadow:
+        enabled: false
+        color: "#00000099"
+        offset: [0, 2]
+        radius: 4  
   apps:
     type: "yasb.applications.ApplicationsWidget"
     options:
