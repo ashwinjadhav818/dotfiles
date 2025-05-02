@@ -5,37 +5,37 @@
 <details>
   <summary>More Screenshots</summary>
 
-  #### GlazeWM + Zebar
-  ![GlazeWM + Zebar 1](./assets/glazewm+zebar1.png)
-  ![GlazeWM + Zebar 2](./assets/glazewm+zebar2.png)
+  ![GlazeWM + Zebar 1](./assets/more1.png)
+  ![GlazeWM + Zebar 2](./assets/more2.png)
 
-  #### Zen Browser
-  ![Zen Browser](./assets/zen-browser.png)
+  ![GlazeWM + Zebar 3](./assets/more3.png)
+  ![GlazeWM + Zebar 4](./assets/more4.png)
+  ![GlazeWM + Zebar 5](./assets/more5.png)
 </details>
 
 ## Configurations
 
--  vim (NeoVim & LunarVim)
+-  [vim](https://www.vim.org/) ([NeoVim](https://neovim.io/) & [LunarVim](https://www.lunarvim.org/))
    -  Plugins are managed with [Lazy](https://github.com/folke/lazy.nvim.git")
--  doom emacs
--  bas
--  fish
--  zsh
--  oh-my-zsh
--  powerlevel10k
--  powershell
--  tmux
--  glaze-wm
--  zebar
--  komorebi
--  yasb
--  kanata
--  tacky-borders
--  alacritty
--  wezterm
--  hyper
--  winfetch
--  zen-browser
+-  [doom emacs](https://github.com/doomemacs/doomemacs)
+-  [bash](https://www.gnu.org/software/bash/)
+-  [fish](https://fishshell.com/)
+-  [zsh](https://www.zsh.org/)
+-  [oh-my-zsh](https://ohmyz.sh/)
+-  [powerlevel10k](https://github.com/romkatv/powerlevel10k/)
+-  [powershell](https://learn.microsoft.com/en-us/powershell/)
+-  [tmux](https://github.com/tmux/tmux/)
+-  [glaze-wm](https://github.com/glzr-io/glazewm/)
+-  [zebar](https://github.com/glzr-io/zebar/)
+-  [komorebi](https://github.com/LGUG2Z/komorebi/)
+-  [yasb](https://github.com/amnweb/yasb/)
+-  [kanata](https://github.com/jtroo/kanata/)
+-  [tacky-borders](https://github.com/lukeyou05/tacky-borders/)
+-  [alacritty](https://github.com/alacritty/alacritty/)
+-  [wezterm](https://github.com/wezterm/wezterm/)
+-  [hyper](https://github.com/vercel/hyper/)
+-  [winfetch](https://github.com/lptstr/winfetch/)
+-  [zen-browser](https://zen-browser.app/)
 
 ### Vim (NeoVim & LunarVim) config
 
