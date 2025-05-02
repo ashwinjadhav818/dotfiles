@@ -8958,3 +8958,528 @@ TypeError: MediaWidget.__init__() missing 1 required positional argument: 'max_f
 2025-04-29 18:57:06 WARNING weather.py:172: Could not load day0 icon
 2025-04-29 18:57:06 WARNING weather.py:193: Could not load day1 icon
 2025-04-29 18:57:06 WARNING weather.py:213: Could not load day2 icon
+2025-04-29 19:02:22 INFO weather.py:349: Fetched new weather data at 2025-04-29 19:02:22.508098
+2025-04-29 19:02:22 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 19:12:22 INFO weather.py:349: Fetched new weather data at 2025-04-29 19:12:22.528041
+2025-04-29 19:12:23 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 19:14:14 DEBUG media.py:409: Unknown source app in session: 'Chromium.ZHINVMONUO4XZNBAT77W7TNXBM' - consider adding to source_list
+2025-04-29 19:14:17 DEBUG media.py:409: Unknown source app in session: 'Chromium.ZHINVMONUO4XZNBAT77W7TNXBM' - consider adding to source_list
+2025-04-29 19:22:22 INFO weather.py:349: Fetched new weather data at 2025-04-29 19:22:22.512615
+2025-04-29 19:22:23 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 19:29:35 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-29 19:29:35 DEBUG _windows.py:201: Exiting thread
+2025-04-29 19:29:35 DEBUG _windows.py:75: Closing
+2025-04-29 19:29:35 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x0000012CF8B5C370>. Removing link to WinEvent.EventObjectStateChange.
+2025-04-29 19:35:44 INFO log.py:21: Yasb v1.7.0
+2025-04-29 19:35:46 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-29 19:35:53 INFO weather.py:349: Fetched new weather data at 2025-04-29 19:35:53.238657
+2025-04-29 19:35:53 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-29 19:35:54 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 19:35:58 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-29 19:35:58 INFO event_listener.py:53: Created named pipe yasb-12f845f5-2503-11f0-8266-d8c0a6fc4ed4
+2025-04-29 19:35:58 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-29 19:35:58 DEBUG _windows.py:192: Thread started
+2025-04-29 19:40:48 CRITICAL tray_monitor.py:254: Could not find the real systray window
+2025-04-29 19:40:49 CRITICAL tray_monitor.py:254: Could not find the real systray window
+2025-04-29 19:45:36 INFO log.py:21: Yasb v1.7.0
+2025-04-29 19:45:37 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-29 19:45:45 INFO weather.py:349: Fetched new weather data at 2025-04-29 19:45:45.380072
+2025-04-29 19:45:45 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 19:45:45 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-29 19:45:49 INFO watcher.py:39: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-29 19:45:49 INFO event_listener.py:53: Created named pipe yasb-739c5289-2504-11f0-981a-d8c0a6fc4ed4
+2025-04-29 19:45:50 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-29 19:45:50 DEBUG _windows.py:192: Thread started
+2025-04-29 19:55:45 INFO weather.py:349: Fetched new weather data at 2025-04-29 19:55:45.386601
+2025-04-29 19:55:45 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 20:05:45 INFO weather.py:349: Fetched new weather data at 2025-04-29 20:05:45.391649
+2025-04-29 20:05:45 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 20:15:45 INFO weather.py:349: Fetched new weather data at 2025-04-29 20:15:45.406192
+2025-04-29 20:15:48 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 20:25:45 INFO weather.py:349: Fetched new weather data at 2025-04-29 20:25:45.395220
+2025-04-29 20:25:45 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 20:35:42 WARNING weather.py:172: Could not load day0 icon
+2025-04-29 20:35:42 WARNING weather.py:193: Could not load day1 icon
+2025-04-29 20:35:42 WARNING weather.py:213: Could not load day2 icon
+2025-04-29 20:35:45 INFO weather.py:349: Fetched new weather data at 2025-04-29 20:35:45.387917
+2025-04-29 20:35:45 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 20:35:47 INFO controller.py:27: Exiting Application from tray...
+2025-04-29 20:35:47 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-29 20:35:47 DEBUG _windows.py:201: Exiting thread
+2025-04-29 20:35:47 DEBUG _windows.py:75: Closing
+2025-04-29 20:42:11 INFO log.py:21: Yasb v1.7.0
+2025-04-29 20:42:21 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-29 20:42:35 INFO weather.py:349: Fetched new weather data at 2025-04-29 20:42:35.812182
+2025-04-29 20:42:36 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 20:42:36 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-29 20:42:44 ERROR widget_builder.py:88: Failed to validate widget(s) due to invalid options  - glazewm_workspaces
+      container_padding:
+      - unknown field
+      
+2025-04-29 20:42:44 INFO event_listener.py:53: Created named pipe yasb-66a71ec7-250c-11f0-bd53-d8c0a6fc4ed4
+2025-04-29 20:42:57 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-29 20:43:19 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-29 20:43:19 DEBUG _windows.py:192: Thread started
+2025-04-29 20:48:06 INFO controller.py:27: Exiting Application from tray...
+2025-04-29 20:48:07 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-29 20:48:07 DEBUG _windows.py:201: Exiting thread
+2025-04-29 20:48:07 DEBUG _windows.py:75: Closing
+2025-04-29 20:48:07 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000207EC6C14F0>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-29 21:11:45 INFO log.py:21: Yasb v1.7.0
+2025-04-29 21:11:46 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-29 21:11:49 INFO weather.py:349: Fetched new weather data at 2025-04-29 21:11:49.303520
+2025-04-29 21:11:50 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-29 21:11:50 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 21:11:54 ERROR widget_builder.py:88: Failed to validate widget(s) due to invalid options  - glazewm_workspaces
+      container_padding:
+      - unknown field
+      
+2025-04-29 21:11:54 INFO event_listener.py:53: Created named pipe yasb-7a3bde20-2510-11f0-be8e-d8c0a6fc4ed4
+2025-04-29 22:06:50 INFO log.py:21: Yasb v1.7.0
+2025-04-29 22:06:52 ERROR widget_builder.py:64: Failed to import widget with type glazewm.workspaces.GlazewmWorkspacesWidget
+Traceback (most recent call last):
+  File "D:\a\yasb-amn\yasb-amn\src\core\utils\widget_builder.py", line 62, in _build_widget
+  File "D:\a\yasb-amn\yasb-amn\src\core\widgets\glazewm\workspaces.py", line 136, in __init__
+AttributeError: 'GlazewmWorkspacesWidget' object has no attribute '_workspace_container_layout'. Did you mean: 'workspace_container_layout'?
+2025-04-29 22:06:53 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-29 22:07:00 INFO weather.py:349: Fetched new weather data at 2025-04-29 22:07:00.533785
+2025-04-29 22:07:01 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 22:07:01 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-29 22:07:08 ERROR widget_builder.py:101: Failed to build widget(s) due to unknown widget type(s)  - glazewm_workspaces has unknown type "glazewm.workspaces.GlazewmWorkspacesWidget"
+2025-04-29 22:07:08 INFO event_listener.py:53: Created named pipe yasb-31353b34-2518-11f0-b4ab-d8c0a6fc4ed4
+2025-04-29 22:08:27 INFO log.py:21: Yasb v1.7.0
+2025-04-29 22:08:28 ERROR widget_builder.py:64: Failed to import widget with type glazewm.workspaces.GlazewmWorkspacesWidget
+Traceback (most recent call last):
+  File "D:\a\yasb-amn\yasb-amn\src\core\utils\widget_builder.py", line 62, in _build_widget
+  File "D:\a\yasb-amn\yasb-amn\src\core\widgets\glazewm\workspaces.py", line 136, in __init__
+AttributeError: 'GlazewmWorkspacesWidget' object has no attribute '_workspace_container_layout'. Did you mean: 'workspace_container_layout'?
+2025-04-29 22:08:28 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-29 22:08:30 INFO weather.py:349: Fetched new weather data at 2025-04-29 22:08:30.024994
+2025-04-29 22:08:30 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-29 22:08:30 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 22:08:36 ERROR widget_builder.py:101: Failed to build widget(s) due to unknown widget type(s)  - glazewm_workspaces has unknown type "glazewm.workspaces.GlazewmWorkspacesWidget"
+2025-04-29 22:08:36 INFO event_listener.py:53: Created named pipe yasb-6577a82d-2518-11f0-8587-d8c0a6fc4ed4
+2025-04-29 22:12:27 INFO log.py:21: Yasb v1.7.0
+2025-04-29 22:12:27 ERROR widget_builder.py:64: Failed to import widget with type glazewm.workspaces.GlazewmWorkspacesWidget
+Traceback (most recent call last):
+  File "D:\a\yasb-amn\yasb-amn\src\core\utils\widget_builder.py", line 62, in _build_widget
+  File "D:\a\yasb-amn\yasb-amn\src\core\widgets\glazewm\workspaces.py", line 136, in __init__
+AttributeError: 'GlazewmWorkspacesWidget' object has no attribute '_workspace_container_layout'. Did you mean: 'workspace_container_layout'?
+2025-04-29 22:12:28 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-29 22:12:29 INFO weather.py:349: Fetched new weather data at 2025-04-29 22:12:29.433807
+2025-04-29 22:12:30 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-29 22:12:31 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-29 22:12:37 ERROR widget_builder.py:101: Failed to build widget(s) due to unknown widget type(s)  - glazewm_workspaces has unknown type "glazewm.workspaces.GlazewmWorkspacesWidget"
+2025-04-29 22:12:38 INFO event_listener.py:53: Created named pipe yasb-f5b120f9-2518-11f0-b8f4-d8c0a6fc4ed4
+2025-04-30 19:11:48 INFO log.py:21: Yasb v1.7.0
+2025-04-30 19:11:48 ERROR widget_builder.py:64: Failed to import widget with type glazewm.workspaces.GlazewmWorkspacesWidget
+Traceback (most recent call last):
+  File "D:\a\yasb-amn\yasb-amn\src\core\utils\widget_builder.py", line 62, in _build_widget
+  File "D:\a\yasb-amn\yasb-amn\src\core\widgets\glazewm\workspaces.py", line 136, in __init__
+AttributeError: 'GlazewmWorkspacesWidget' object has no attribute '_workspace_container_layout'. Did you mean: 'workspace_container_layout'?
+2025-04-30 19:11:50 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-30 19:12:08 INFO weather.py:349: Fetched new weather data at 2025-04-30 19:12:08.046999
+2025-04-30 19:12:10 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-30 19:12:10 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 19:12:29 ERROR widget_builder.py:101: Failed to build widget(s) due to unknown widget type(s)  - glazewm_workspaces has unknown type "glazewm.workspaces.GlazewmWorkspacesWidget"
+2025-04-30 19:12:30 INFO event_listener.py:53: Created named pipe yasb-f5fd9a64-25c8-11f0-9131-d8c0a6fc4ed4
+2025-04-30 19:12:43 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-30 19:13:05 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-30 19:13:05 DEBUG _windows.py:192: Thread started
+2025-04-30 19:22:08 INFO weather.py:349: Fetched new weather data at 2025-04-30 19:22:08.056124
+2025-04-30 19:22:09 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 21:41:29 INFO weather.py:349: Fetched new weather data at 2025-04-30 21:41:29.130574
+2025-04-30 21:41:31 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 21:51:08 INFO weather.py:349: Fetched new weather data at 2025-04-30 21:51:08.507316
+2025-04-30 21:51:09 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 22:01:08 INFO weather.py:349: Fetched new weather data at 2025-04-30 22:01:08.511089
+2025-04-30 22:01:10 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 22:11:08 INFO weather.py:349: Fetched new weather data at 2025-04-30 22:11:08.517449
+2025-04-30 22:11:09 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 23:02:14 INFO weather.py:349: Fetched new weather data at 2025-04-30 23:02:13.976594
+2025-04-30 23:02:47 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 23:12:12 INFO weather.py:349: Fetched new weather data at 2025-04-30 23:12:12.294235
+2025-04-30 23:12:13 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 23:16:32 INFO controller.py:27: Exiting Application from tray...
+2025-04-30 23:16:32 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-30 23:16:32 DEBUG _windows.py:201: Exiting thread
+2025-04-30 23:16:32 DEBUG _windows.py:75: Closing
+2025-04-30 23:16:32 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL foreground_change of ActiveWindowWidget object at 0x000001A34DAB9DB0>. Removing link to WinEvent.EventSystemForeground.
+2025-04-30 23:16:32 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001A34DAB9DB0>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-30 23:22:42 INFO log.py:21: Yasb v1.7.0
+2025-04-30 23:22:45 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-30 23:22:47 INFO weather.py:349: Fetched new weather data at 2025-04-30 23:22:47.824209
+2025-04-30 23:22:49 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-30 23:22:49 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 23:23:07 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-30 23:23:07 INFO event_listener.py:53: Created named pipe yasb-f92b651e-25eb-11f0-80f4-d8c0a6fc4ed4
+2025-04-30 23:23:08 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-30 23:23:08 DEBUG _windows.py:192: Thread started
+2025-04-30 23:32:47 INFO weather.py:349: Fetched new weather data at 2025-04-30 23:32:47.836821
+2025-04-30 23:32:48 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 23:42:47 INFO weather.py:349: Fetched new weather data at 2025-04-30 23:42:47.837671
+2025-04-30 23:42:48 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 23:44:16 CRITICAL tray_monitor.py:255: Could not find the real systray window
+2025-04-30 23:44:17 CRITICAL tray_monitor.py:255: Could not find the real systray window
+2025-04-30 23:44:19 CRITICAL tray_monitor.py:255: Could not find the real systray window
+2025-04-30 23:46:00 INFO controller.py:12: Reloading Application from tray...
+2025-04-30 23:46:00 DEBUG _windows.py:218: Stopping worker thread...
+2025-04-30 23:46:00 DEBUG _windows.py:201: Exiting thread
+2025-04-30 23:46:00 DEBUG _windows.py:75: Closing
+2025-04-30 23:46:00 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL foreground_change of ActiveWindowWidget object at 0x00000185F44DE490>. Removing link to WinEvent.EventSystemForeground.
+2025-04-30 23:46:00 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000185F44DE490>. Removing link to WinEvent.EventObjectNameChange.
+2025-04-30 23:46:01 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000185F44DE490>. Removing link to WinEvent.EventObjectStateChange.
+2025-04-30 23:46:02 INFO log.py:21: Yasb v1.7.0
+2025-04-30 23:46:04 DEBUG win32.py:55: Looking up time zone info from registry
+2025-04-30 23:46:05 INFO weather.py:349: Fetched new weather data at 2025-04-30 23:46:05.791127
+2025-04-30 23:46:06 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-04-30 23:46:06 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-04-30 23:46:12 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-04-30 23:46:12 INFO event_listener.py:53: Created named pipe yasb-3286aa2f-25ef-11f0-80f8-d8c0a6fc4ed4
+2025-04-30 23:46:12 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-04-30 23:46:12 DEBUG _windows.py:192: Thread started
+2025-04-30 23:46:55 INFO log.py:21: Yasb v1.7.0
+2025-04-30 23:46:55 ERROR main.py:34: Another instance of the YASB is already running.
+2025-04-30 23:56:05 INFO weather.py:349: Fetched new weather data at 2025-04-30 23:56:05.800036
+2025-04-30 23:56:08 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 00:00:42 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 00:00:42 DEBUG _windows.py:201: Exiting thread
+2025-05-01 00:00:42 DEBUG _windows.py:75: Closing
+2025-05-01 00:00:42 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000002522B02E490>. Removing link to WinEvent.EventObjectStateChange.
+2025-05-01 09:23:22 INFO log.py:21: Yasb v1.7.0
+2025-05-01 09:23:24 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 09:23:25 INFO weather.py:349: Fetched new weather data at 2025-05-01 09:23:25.681047
+2025-05-01 09:23:26 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 09:23:26 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 09:23:30 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 09:23:30 INFO event_listener.py:53: Created named pipe yasb-d8bc0e2b-263f-11f0-a959-d8c0a6fc4ed4
+2025-05-01 09:23:31 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 09:23:31 DEBUG _windows.py:192: Thread started
+2025-05-01 09:33:25 INFO weather.py:349: Fetched new weather data at 2025-05-01 09:33:25.684717
+2025-05-01 09:33:27 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 09:43:25 INFO weather.py:349: Fetched new weather data at 2025-05-01 09:43:25.859172
+2025-05-01 09:43:26 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 09:53:25 INFO weather.py:349: Fetched new weather data at 2025-05-01 09:53:25.823561
+2025-05-01 09:53:26 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 10:03:27 INFO weather.py:349: Fetched new weather data at 2025-05-01 10:03:27.959426
+2025-05-01 10:03:28 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 10:13:26 INFO weather.py:349: Fetched new weather data at 2025-05-01 10:13:26.301823
+2025-05-01 10:13:26 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 10:16:54 DEBUG media.py:409: Unknown source app in session: 'Chromium.ZHINVMONUO4XZNBAT77W7TNXBM' - consider adding to source_list
+2025-05-01 10:17:16 CRITICAL tray_monitor.py:255: Could not find the real systray window
+2025-05-01 10:17:16 CRITICAL tray_monitor.py:255: Could not find the real systray window
+2025-05-01 10:17:17 CRITICAL tray_monitor.py:255: Could not find the real systray window
+2025-05-01 10:20:08 INFO controller.py:27: Exiting Application from CLI...
+2025-05-01 10:20:08 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 10:20:08 DEBUG _windows.py:201: Exiting thread
+2025-05-01 10:20:08 DEBUG _windows.py:75: Closing
+2025-05-01 10:20:08 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000002C9B444E490>. Removing link to WinEvent.EventObjectStateChange.
+2025-05-01 10:20:08 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL foreground_change of ActiveWindowWidget object at 0x000002C9B444E490>. Removing link to WinEvent.EventSystemForeground.
+2025-05-01 10:20:17 INFO log.py:21: Yasb v1.7.0
+2025-05-01 10:20:18 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 10:20:26 INFO weather.py:349: Fetched new weather data at 2025-05-01 10:20:26.953806
+2025-05-01 10:20:28 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 10:20:28 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 10:20:32 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 10:20:32 INFO event_listener.py:53: Created named pipe yasb-d038f56d-2647-11f0-861b-d8c0a6fc4ed4
+2025-05-01 10:20:32 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 10:20:32 DEBUG _windows.py:192: Thread started
+2025-05-01 10:20:36 DEBUG media.py:409: Unknown source app in session: 'Chromium.ZHINVMONUO4XZNBAT77W7TNXBM' - consider adding to source_list
+2025-05-01 10:30:26 INFO weather.py:349: Fetched new weather data at 2025-05-01 10:30:26.960436
+2025-05-01 10:30:27 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 10:51:08 INFO weather.py:349: Fetched new weather data at 2025-05-01 10:51:08.171683
+2025-05-01 10:51:10 ERROR weather.py:453: Error fetching weather data: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-05-01 11:00:46 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:00:46 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:00:46 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:00:46 DEBUG _windows.py:75: Closing
+2025-05-01 11:00:46 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001C7070AE490>. Removing link to WinEvent.EventObjectNameChange.
+2025-05-01 11:00:49 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:00:51 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:00:51 INFO weather.py:349: Fetched new weather data at 2025-05-01 11:00:51.830811
+2025-05-01 11:00:53 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 11:00:53 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:00:58 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:00:58 INFO event_listener.py:53: Created named pipe yasb-76494cda-264d-11f0-98ab-d8c0a6fc4ed4
+2025-05-01 11:00:59 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:00:59 DEBUG _windows.py:192: Thread started
+2025-05-01 11:01:25 WARNING weather.py:172: Could not load day0 icon
+2025-05-01 11:01:25 WARNING weather.py:193: Could not load day1 icon
+2025-05-01 11:01:25 WARNING weather.py:213: Could not load day2 icon
+2025-05-01 11:01:30 INFO controller.py:12: Reloading Application from tray...
+2025-05-01 11:01:30 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:01:30 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:01:30 DEBUG _windows.py:75: Closing
+2025-05-01 11:01:30 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001E300FDE490>. Removing link to WinEvent.EventObjectNameChange.
+2025-05-01 11:01:33 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:01:34 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:01:35 INFO weather.py:349: Fetched new weather data at 2025-05-01 11:01:35.557319
+2025-05-01 11:01:37 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:01:37 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 11:01:43 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:01:43 INFO event_listener.py:53: Created named pipe yasb-90c79760-264d-11f0-bef5-d8c0a6fc4ed4
+2025-05-01 11:01:43 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:01:43 DEBUG _windows.py:192: Thread started
+2025-05-01 11:11:35 INFO weather.py:349: Fetched new weather data at 2025-05-01 11:11:35.561872
+2025-05-01 11:11:36 ERROR weather.py:453: Error fetching weather data: HTTP Error 403: Forbidden
+2025-05-01 11:12:20 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:12:20 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:12:20 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:12:20 DEBUG _windows.py:75: Closing
+2025-05-01 11:12:20 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000276DE1FE490>. Removing link to WinEvent.EventObjectNameChange.
+2025-05-01 11:12:23 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:12:24 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:12:26 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:12:30 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:12:30 INFO event_listener.py:53: Created named pipe yasb-12c273dd-264f-11f0-b161-d8c0a6fc4ed4
+2025-05-01 11:12:31 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:12:31 DEBUG _windows.py:192: Thread started
+2025-05-01 11:12:57 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:12:57 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:12:57 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:12:57 DEBUG _windows.py:75: Closing
+2025-05-01 11:12:59 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:13:00 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:13:01 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:13:05 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:13:05 INFO event_listener.py:53: Created named pipe yasb-2753745e-264f-11f0-8855-d8c0a6fc4ed4
+2025-05-01 11:13:05 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:13:05 DEBUG _windows.py:192: Thread started
+2025-05-01 11:14:11 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:14:12 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:14:12 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:14:12 DEBUG _windows.py:75: Closing
+2025-05-01 11:14:13 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:14:14 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:14:15 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:14:18 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:14:18 INFO event_listener.py:53: Created named pipe yasb-53161031-264f-11f0-b40a-d8c0a6fc4ed4
+2025-05-01 11:14:18 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:14:18 DEBUG _windows.py:192: Thread started
+2025-05-01 11:16:01 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:16:01 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:16:01 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:16:01 DEBUG _windows.py:75: Closing
+2025-05-01 11:16:02 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:16:03 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:16:04 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:16:07 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:16:07 INFO event_listener.py:53: Created named pipe yasb-943a5964-264f-11f0-bd8f-d8c0a6fc4ed4
+2025-05-01 11:16:08 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:16:08 DEBUG _windows.py:192: Thread started
+2025-05-01 11:17:01 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:17:01 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:17:01 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:17:01 DEBUG _windows.py:75: Closing
+2025-05-01 11:17:02 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:17:03 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:17:04 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:17:06 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:17:06 INFO event_listener.py:53: Created named pipe yasb-b74f6278-264f-11f0-8536-d8c0a6fc4ed4
+2025-05-01 11:17:07 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:17:07 DEBUG _windows.py:192: Thread started
+2025-05-01 11:17:15 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:17:15 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:17:15 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:17:15 DEBUG _windows.py:75: Closing
+2025-05-01 11:17:17 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:17:17 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:17:18 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:17:21 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:17:21 INFO event_listener.py:53: Created named pipe yasb-bffd0f11-264f-11f0-839d-d8c0a6fc4ed4
+2025-05-01 11:17:21 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:17:21 DEBUG _windows.py:192: Thread started
+2025-05-01 11:17:23 ERROR base.py:89: Failed to execute callback of type 'toggle_menu' with args: []
+Traceback (most recent call last):
+  File "D:\a\yasb-amn\yasb-amn\src\core\widgets\base.py", line 87, in _run_callback
+KeyError: 'toggle_menu'
+2025-05-01 11:17:25 ERROR base.py:89: Failed to execute callback of type 'toggle_menu' with args: []
+Traceback (most recent call last):
+  File "D:\a\yasb-amn\yasb-amn\src\core\widgets\base.py", line 87, in _run_callback
+KeyError: 'toggle_menu'
+2025-05-01 11:17:26 ERROR base.py:89: Failed to execute callback of type 'toggle_menu' with args: []
+Traceback (most recent call last):
+  File "D:\a\yasb-amn\yasb-amn\src\core\widgets\base.py", line 87, in _run_callback
+KeyError: 'toggle_menu'
+2025-05-01 11:17:55 ERROR base.py:89: Failed to execute callback of type 'toggle_menu' with args: []
+Traceback (most recent call last):
+  File "D:\a\yasb-amn\yasb-amn\src\core\widgets\base.py", line 87, in _run_callback
+KeyError: 'toggle_menu'
+2025-05-01 11:19:35 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:19:35 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:19:35 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:19:35 DEBUG _windows.py:75: Closing
+2025-05-01 11:19:35 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x0000020C4683E490>. Removing link to WinEvent.EventObjectNameChange.
+2025-05-01 11:19:37 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:19:37 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:19:38 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:19:42 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:19:42 INFO event_listener.py:53: Created named pipe yasb-14458e38-2650-11f0-b441-d8c0a6fc4ed4
+2025-05-01 11:19:43 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:19:43 DEBUG _windows.py:192: Thread started
+2025-05-01 11:20:26 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:20:26 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:20:26 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:20:26 DEBUG _windows.py:75: Closing
+2025-05-01 11:20:27 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:20:28 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:20:29 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:20:33 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:20:33 INFO event_listener.py:53: Created named pipe yasb-325d7050-2650-11f0-be47-d8c0a6fc4ed4
+2025-05-01 11:20:33 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:20:33 DEBUG _windows.py:192: Thread started
+2025-05-01 11:22:21 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:22:21 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:22:21 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:22:21 DEBUG _windows.py:75: Closing
+2025-05-01 11:22:22 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:22:22 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:22:24 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:22:27 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:22:27 INFO event_listener.py:53: Created named pipe yasb-768b98bd-2650-11f0-bfb3-d8c0a6fc4ed4
+2025-05-01 11:22:27 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:22:27 DEBUG _windows.py:192: Thread started
+2025-05-01 11:22:33 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:22:33 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:22:33 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:22:33 DEBUG _windows.py:75: Closing
+2025-05-01 11:22:34 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:22:35 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:22:36 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:22:39 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:22:40 INFO event_listener.py:53: Created named pipe yasb-7de68219-2650-11f0-8ac5-d8c0a6fc4ed4
+2025-05-01 11:22:40 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:22:40 DEBUG _windows.py:192: Thread started
+2025-05-01 11:23:28 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:23:28 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:23:28 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:23:28 DEBUG _windows.py:75: Closing
+2025-05-01 11:23:31 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:23:31 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:23:33 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:23:37 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:23:37 INFO event_listener.py:53: Created named pipe yasb-9fe5880d-2650-11f0-b7ac-d8c0a6fc4ed4
+2025-05-01 11:23:37 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:23:37 DEBUG _windows.py:192: Thread started
+2025-05-01 11:24:49 INFO controller.py:12: Reloading Application from CLI...
+2025-05-01 11:24:49 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:24:49 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:24:49 DEBUG _windows.py:75: Closing
+2025-05-01 11:24:49 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x000001BACBC5E490>. Removing link to WinEvent.EventObjectNameChange.
+2025-05-01 11:24:51 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:24:52 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:24:54 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:25:00 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:25:00 INFO event_listener.py:53: Created named pipe yasb-d1641a31-2650-11f0-8120-d8c0a6fc4ed4
+2025-05-01 11:25:00 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:25:00 DEBUG _windows.py:192: Thread started
+2025-05-01 11:26:21 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:26:21 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:26:21 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:26:21 DEBUG _windows.py:75: Closing
+2025-05-01 11:26:23 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:26:24 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:26:25 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:26:33 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:26:33 INFO event_listener.py:53: Created named pipe yasb-08f41b87-2651-11f0-be2f-d8c0a6fc4ed4
+2025-05-01 11:26:33 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:26:33 DEBUG _windows.py:192: Thread started
+2025-05-01 11:26:36 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:26:36 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:26:36 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:26:37 DEBUG _windows.py:75: Closing
+2025-05-01 11:26:38 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:26:39 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:26:40 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:26:45 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:26:45 INFO event_listener.py:53: Created named pipe yasb-1049fb39-2651-11f0-a921-d8c0a6fc4ed4
+2025-05-01 11:26:46 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:26:46 DEBUG _windows.py:192: Thread started
+2025-05-01 11:28:21 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:28:21 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:28:21 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:28:21 DEBUG _windows.py:75: Closing
+2025-05-01 11:28:21 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000137C299E490>. Removing link to WinEvent.EventObjectNameChange.
+2025-05-01 11:28:22 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:28:23 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:28:24 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:28:30 INFO event_listener.py:53: Created named pipe yasb-4eac79b1-2651-11f0-96e6-d8c0a6fc4ed4
+2025-05-01 11:28:30 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:28:30 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:28:30 DEBUG _windows.py:192: Thread started
+2025-05-01 11:32:33 DEBUG volume.py:330: Attempting PolicyConfig interface with device: {0.0.0.00000000}.{e8adc11a-5fa1-4c97-8fe2-71eaa2e2988d}
+2025-05-01 11:32:37 DEBUG volume.py:330: Attempting PolicyConfig interface with device: {0.0.0.00000000}.{1e7dfb76-81fc-45e9-a016-7183e3970093}
+2025-05-01 11:33:40 INFO controller.py:12: Reloading Application because of config update...
+2025-05-01 11:33:40 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:33:40 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:33:40 DEBUG _windows.py:75: Closing
+2025-05-01 11:33:40 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x00000168426B1630>. Removing link to WinEvent.EventObjectNameChange.
+2025-05-01 11:33:42 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:33:42 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:33:44 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:33:51 INFO event_listener.py:53: Created named pipe yasb-0e4db0dc-2652-11f0-b3d8-d8c0a6fc4ed4
+2025-05-01 11:33:51 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:33:52 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:33:52 DEBUG _windows.py:192: Thread started
+2025-05-01 11:42:33 INFO controller.py:12: Reloading Application from CLI...
+2025-05-01 11:42:33 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:42:33 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:42:33 DEBUG _windows.py:75: Closing
+2025-05-01 11:42:35 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:42:36 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:42:37 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:42:48 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:42:48 INFO event_listener.py:53: Created named pipe yasb-4e3aa2a1-2653-11f0-8efe-d8c0a6fc4ed4
+2025-05-01 11:42:48 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:42:48 DEBUG _windows.py:192: Thread started
+2025-05-01 11:43:01 INFO controller.py:27: Exiting Application from CLI...
+2025-05-01 11:43:01 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:43:01 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:43:01 DEBUG _windows.py:75: Closing
+2025-05-01 11:43:12 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:43:13 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:43:14 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:43:21 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:43:22 INFO event_listener.py:53: Created named pipe yasb-622a0c65-2653-11f0-a9f3-d8c0a6fc4ed4
+2025-05-01 11:43:22 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:43:22 DEBUG _windows.py:192: Thread started
+2025-05-01 11:48:28 INFO controller.py:27: Exiting Application from CLI...
+2025-05-01 11:48:29 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 11:48:29 DEBUG _windows.py:201: Exiting thread
+2025-05-01 11:48:29 DEBUG _windows.py:75: Closing
+2025-05-01 11:48:35 INFO log.py:21: Yasb v1.7.0
+2025-05-01 11:48:36 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 11:48:37 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 11:48:52 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 11:48:52 INFO event_listener.py:53: Created named pipe yasb-27118c57-2654-11f0-b4ce-d8c0a6fc4ed4
+2025-05-01 11:48:52 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 11:48:52 DEBUG _windows.py:192: Thread started
+2025-05-01 12:04:51 INFO log.py:21: Yasb v1.7.0
+2025-05-01 12:04:53 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-01 12:05:04 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-01 12:05:14 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-01 12:05:14 INFO event_listener.py:53: Created named pipe yasb-705e74f8-2656-11f0-ac02-d8c0a6fc4ed4
+2025-05-01 12:05:14 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-01 12:05:14 DEBUG _windows.py:192: Thread started
+2025-05-01 23:10:27 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-01 23:10:27 DEBUG _windows.py:201: Exiting thread
+2025-05-01 23:10:27 DEBUG _windows.py:75: Closing
+2025-05-01 23:10:27 ERROR event_service.py:30: Failed to emit signal <bound PYQT_SIGNAL window_name_change of ActiveWindowWidget object at 0x0000023B1B391630>. Removing link to WinEvent.EventObjectStateChange.
+2025-05-02 11:33:07 INFO log.py:21: Yasb v1.7.0
+2025-05-02 11:33:09 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-02 11:33:24 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-02 11:33:34 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-02 11:33:34 INFO event_listener.py:53: Created named pipe yasb-2e92dcba-271b-11f0-b1ee-d8c0a6fc4ed4
+2025-05-02 11:33:36 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-02 11:33:36 DEBUG _windows.py:192: Thread started
+2025-05-02 11:34:10 INFO controller.py:27: Exiting Application from CLI...
+2025-05-02 11:34:12 DEBUG _windows.py:218: Stopping worker thread...
+2025-05-02 11:34:12 DEBUG _windows.py:201: Exiting thread
+2025-05-02 11:34:12 DEBUG _windows.py:75: Closing
+2025-05-02 11:34:36 INFO log.py:21: Yasb v1.7.0
+2025-05-02 11:34:37 DEBUG win32.py:55: Looking up time zone info from registry
+2025-05-02 11:34:40 DEBUG __init__.py:149: CoInitializeEx(None, 2)
+2025-05-02 11:34:48 INFO watcher.py:55: Created file watcher for path C:\Users\Ashwin\.config\yasb
+2025-05-02 11:34:48 INFO event_listener.py:53: Created named pipe yasb-5aa20a52-271b-11f0-b42a-d8c0a6fc4ed4
+2025-05-02 11:34:49 DEBUG _windows.py:213: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2025-05-02 11:34:49 DEBUG _windows.py:192: Thread started

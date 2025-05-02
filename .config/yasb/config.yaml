@@ -28,12 +28,12 @@ bars:
     padding:
       top: 6
       left: 10
-      bottom: 6
+      bottom: 0
       right: 10
     widgets:
       left: ["home","komorebi_workspaces","komorebi_active_layout","glazewm_workspaces","glazewm_tiling_direction","active_window"]
       center: ["clock","apps"]
-      right: ["systray","media","weather","wifi","battery","volume"]
+      right: ["systray","brightness","wifi","battery","volume","notifications"]
 widgets:
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
@@ -102,46 +102,16 @@ widgets:
       offline_label: "GlazeWM Offline"
       hide_empty_workspaces: true
       hide_if_offline: true
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
   glazewm_tiling_direction:
     type: "glazewm.tiling_direction.GlazewmTilingDirectionWidget"
     options:
       horizontal_label: "\udb81\udce1"
       vertical_label: "\udb81\udce2"
-  weather:
-    type: "yasb.weather.WeatherWidget"
-    options:
-      label: "<span>{icon}</span> {temp}"
-      label_alt: "{location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
-      api_key: "3bf4cf9a7c3f40d6b31174128242807"
-      show_alerts: true
-      update_interval: 600
-      hide_decimal: true
-      units: "metric"
-      location: "auto:ip"
-      callbacks:
-        on_left: "toggle_card"
-        on_middle: "do_nothing"
-        on_right: "toggle_label"
-      icons: 
-        sunnyDay: "\ue30d"
-        clearNight: "\ue32b"
-        cloudyDay: "\udb81\udd99"
-        cloudyNight: "\ue311"
-        rainyDay: "\udb81\ude7e"
-        rainyNight: "\udb81\ude7e"
-        snowyIcyDay: "\udb81\udd98"
-        snowyIcyNight: "\udb81\udd98"
-        blizzard: "\uebaa"
-        default: "\uebaa"
-      weather_card: 
-        blur: True
-        round_corners: True
-        round_corners_type: "normal"
-        border_color: "System"
-        alignment: "right"
-        direction: "down"
-        distance: 6
-        icon_size: 64
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
@@ -168,12 +138,13 @@ widgets:
       label: "<span>{icon}</span>"
       label_alt: "Brightness {percent}%"
       tooltip: true
-      auto_light: false 
-      auto_light_icon: "\udb80\udce1"
-      auto_light_night_level: 35
-      auto_light_night_start_time: "19:00"
-      auto_light_night_end_time: "06:45"
-      auto_light_day_level: 75
+      brightness_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
       brightness_icons: [
         "\udb80\udcde",
         "\udb80\udcdd",
@@ -181,12 +152,12 @@ widgets:
         "\udb80\udce0"
       ]       
       callbacks:
-        on_left: "toggle_label"
+        on_left: "toggle_brightness_menu"
       container_padding:
         top: 0
-        left: 8
+        left: 0
         bottom: 0
-        right: 8
+        right: 0
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
@@ -197,22 +168,6 @@ widgets:
         on_left: "exec quick_settings"
         on_middle: "exec cmd.exe /c start ms-settings:network"
         on_right: "toggle_label"
-  power_menu:
-    type: "yasb.power_menu.PowerMenuWidget"
-    options:
-      label: "\ue62a"
-      uptime: True
-      blur: False
-      blur_background: True
-      animation_duration: 200
-      button_row: 5
-      buttons:
-        shutdown: ["\uf011", "Shut Down"]
-        restart: ["\uead2", "Restart"]
-        signout: ["\udb80\udf43", "Sign out"]
-        hibernate: ["\uf28e", "Hibernate"]
-        sleep: ["\u23fe", "Sleep"]
-        cancel: ["", "Cancel"]
   systray:
     type: "yasb.systray.SystrayWidget"
     options:
@@ -225,67 +180,21 @@ widgets:
       show_unpinned: false
       show_battery: false
       show_volume: false
-  media:
-    type: "yasb.media.MediaWidget"
+  notifications:
+    type: "yasb.notifications.NotificationsWidget"
     options:
-      label: "<span>\uf001</span> {title}"
-      label_alt: "{title}"
-      max_field_size:
-        label: 20
-        label_alt: 15
-      show_thumbnail: true 
-      controls_only: false
-      controls_left: true
-      controls_hide: true
-      hide_empty: true
-      thumbnail_alpha: 120
-      thumbnail_padding: 10
-      thumbnail_corner_radius: 15
-      thumbnail_edge_fade: true
-      symmetric_corner_radius: true
-      icons:
-        prev_track: "\ue892"
-        next_track: "\ue893"
-        play: "\ue768"
-        pause: "\ue769"
+      label: "<span>\uf476</span>"
+      label_alt: "{count} notifications"
+      tooltip: false
       callbacks:
-        on_left: "toggle_media_menu"
+        on_left: "toggle_notification"
+        on_right: "do_nothing"
         on_middle: "toggle_label"
-        on_right: "toggle_play_pause"
       container_padding:
         top: 0
         left: 0
         bottom: 0
         right: 0
-      media_menu:
-        blur: true
-        round_corners: true
-        round_corners_type: "normal"
-        border_color: "system"
-        alignment: "right"
-        direction: "down"
-        offset_top: 6
-        offset_left: 0
-        thumbnail_corner_radius: 8
-        thumbnail_size: 100
-        max_title_size: 100
-        max_artist_size: 40
-        show_source: true
-      media_menu_icons:
-        play: "\ue768"
-        pause: "\ue769"
-        prev_track: "\ue892"
-        next_track: "\ue893"
-      label_shadow:
-        enabled: true
-        color: "#000000"
-        offset: [1, 1]
-        radius: 2
-      container_shadow:
-        enabled: false
-        color: "#00000099"
-        offset: [0, 2]
-        radius: 4  
   apps:
     type: "yasb.applications.ApplicationsWidget"
     options:
@@ -332,65 +241,3 @@ widgets:
         system: "System Settings"
         about: "About This PC"
         task_manager: "Task Manager"
-  pomodoro:
-    type: "yasb.pomodoro.PomodoroWidget"
-    options:
-      label: "<span>\uf252</span> {remaining}"
-      label_alt: "<span>{icon}</span> {session}/{total_sessions} - {status}"
-      work_duration: 50
-      break_duration: 10
-      long_break_duration: 30
-      long_break_interval: 2
-      auto_start_breaks: true
-      auto_start_work: true
-      sound_notification: true
-      show_notification: true
-      hide_on_break: false
-      session_target: 6
-      icons:
-        work: "\uf252"
-        break: "\uf253"
-        paused: "\uf254"
-      container_padding:
-        top: 0
-        left: 4
-        bottom: 0
-        right: 4
-      callbacks: 
-        on_left: "toggle_menu"
-        on_middle: "reset_timer"
-        on_right: "do_nothing"
-      menu:
-        blur: true
-        round_corners: true
-        round_corners_type: "normal"
-        border_color: "System"
-        alignment: "right"
-        direction: "down"
-        offset_top: 6
-        offset_left: 0
-        circle_background_color: "#09ffffff"
-        circle_work_progress_color: "#88c0d0"
-        circle_break_progress_color: "#a3be8c"
-        circle_thickness: 8
-        circle_size: 160
-  wallpapers:
-    type: "yasb.wallpapers.WallpapersWidget"
-    options:
-      label: "<span>\uf03e</span>"
-      image_path: "C:\\Wallpapers"
-      change_automatically: false 
-      update_interval: 60 
-      gallery:
-        enabled: true 
-        blur: true
-        image_width: 220
-        image_per_page: 8
-        show_buttons: false
-        orientation: "portrait"
-        image_spacing: 8
-        lazy_load: true
-        lazy_load_delay: 80
-        lazy_load_fadein: 400
-        image_corner_radius: 20
-        enable_cache: false
