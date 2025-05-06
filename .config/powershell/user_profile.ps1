@@ -15,6 +15,7 @@ Set-Alias vi nvim
 Set-Alias vim nvim 
 Set-Alias cmake make
 Set-Alias lg lazygit
+Set-Alias archlinux wsl -d archlinux
 
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
