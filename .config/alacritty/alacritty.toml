@@ -9,7 +9,7 @@ shell = { program = "C:\\Users\\Ashwin\\AppData\\Local\\Microsoft\\WindowsApps\\
 [window]
 dynamic_title = false
 # decorations = "None"
-opacity = 0.5
+opacity = 0.7
   [window.padding]
   x = 7
   y = 7
