@@ -78,6 +78,10 @@ window_rules:
       # Ignores any Zebar windows.
       - window_process: { equals: "zebar" }
 
+      # Ignores the Command Palette
+      - window_class: { equals: "WinUIDesktopWin32WindowClass" }
+        window_title: { equals: "Command Palette" }
+
       # Ignore the RoundedTB window
       - window_process: {  equals: "RoundedTB" }
 
