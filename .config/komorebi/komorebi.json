@@ -89,7 +89,7 @@
         },
         {
             "kind": "Title",
-            "id": "Arc picture in picture",
+            "id": "Picture in picture",
             "matching_strategy": "Equals"
         },
         {
