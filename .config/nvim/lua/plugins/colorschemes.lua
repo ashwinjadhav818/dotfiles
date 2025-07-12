@@ -8,15 +8,15 @@ return {
                 style = "night",
                 sidebars = { "qf", "help", "NvimTree" },
             })
-            -- vim.cmd([[colorscheme tokyonight]])
+            vim.cmd([[colorscheme tokyonight]])
         end,
     },
-  {
+    {
         "drewxs/ash.nvim",
         lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd([[colorscheme ash]])
+            -- vim.cmd([[colorscheme ash]])
         end,
     },
     {
