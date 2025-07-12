@@ -17,13 +17,13 @@ opacity = 0.7
 [font]
 size = 12
   [font.normal]
-  family = "GeistMono Nerd Font"
+  family = "MonoLisa, Cascadia Code NF"
   style = "Regular"
 
   [font.bold]
-  family = "GeistMono Nerd Font"
+  family = "MonoLisa, Cascadia Code NF"
   style = "Bold"
 
   [font.italic]
-  family = "GeistMono Nerd Font"
+  family = "MonoLisa, Cascadia Code NF"
   style = "Italic"
