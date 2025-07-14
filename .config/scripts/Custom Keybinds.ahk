@@ -3,8 +3,8 @@
 Term := EnvGet("DEFAULT_TERM")
 
 ; Keybinds
-#Enter::Run "alacritty"
-!Space:: #s
+#Enter::Run "wezterm-gui"
+!Space::#s
 
 ; Disable Useless Windows Keybinds
 ~LWin:: {
@@ -23,14 +23,14 @@ Pause:: {
     Sleep(500) ; Wait for 0.5 second
     SendMessage(0x112, 0xF170, 2,, "Program Manager")
 }
-Volume_Up:: {
-    currentVolume := SoundGetVolume()
-    SoundSetVolume(currentVolume + 1)  ; Increase volume by 1%
-}
-Volume_Down:: {
-    currentVolume := SoundGetVolume()
-    SoundSetVolume(currentVolume - 1)  ; Decrease volume by 1%
-}
+;Volume_Up:: {
+;    currentVolume := SoundGetVolume()
+;    SoundSetVolume(currentVolume + 1)  ; Increase volume by 1%
+;}
+;Volume_Down:: {
+;    currentVolume := SoundGetVolume()
+;    SoundSetVolume(currentVolume - 1)  ; Decrease volume by 1%
+;}
 
 ; Always on Top
 #+p:: WinSetAlwaysOnTop(-1, "A")
