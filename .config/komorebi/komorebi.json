@@ -69,7 +69,7 @@
     "transparency_alpha": 215,
     "animation": {
         "enabled": true,
-        "duration": 400,
+        "duration": 100,
         "fps": 60,
         "style": {
             "movement": "EaseOutBack",
