@@ -5,7 +5,7 @@
     "cross_monitor_move_behaviour": "Insert",
     "default_workspace_padding": 4,
     "default_container_padding": 4,
-    "border": true,
+    "border": false,
     "border_width": 2,
     "border_offset": 0,
     "mouse_follows_focus": false,
@@ -68,8 +68,8 @@
     "transparency": true,
     "transparency_alpha": 215,
     "animation": {
-        "enabled": true,
-        "duration": 100,
+        "enabled": false,
+        "duration": 300,
         "fps": 60,
         "style": {
             "movement": "EaseOutBack",
@@ -103,8 +103,18 @@
             "matching_strategy": "Equals"
         },
         {
+            "kind": "Title",
+            "id": "ShareX",
+            "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Title",
+            "id": "Command Pallet",
+            "matching_strategy": "Equals"
+        },
+        {
             "kind": "Exe",
-            "id": "zebar.exe",
+            "id": "Obsidian",
             "matching_strategy": "Equals"
         }
     ]

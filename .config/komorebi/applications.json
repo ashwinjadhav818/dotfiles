@@ -44,7 +44,7 @@
       }
     ]
   },
-  "Adobe Photshop": {
+  "Adobe Photoshop": {
     "ignore": [
       {
         "kind": "Class",
@@ -58,20 +58,6 @@
       {
         "kind": "Class",
         "id": "DroverLord - Window Class",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "Arc Browser": {
-    "ignore": [
-      {
-        "kind": "Title",
-        "id": "Arc picture in picture",
-        "matching_strategy": "Equals"
-      },
-      {
-        "kind": "Title",
-        "id": "Arc extension popup",
         "matching_strategy": "Equals"
       }
     ]
@@ -169,6 +155,20 @@
       }
     ]
   },
+  "Arc Browser": {
+    "ignore": [
+      {
+        "kind": "Title",
+        "id": "Arc picture in picture",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Title",
+        "id": "Arc extension popup",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "ArmCord": {
     "tray_and_multi_window": [
       {
@@ -235,6 +235,15 @@
       {
         "kind": "Exe",
         "id": "AutoHotkeyU64.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "Ayugram": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "ayugram.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -332,25 +341,11 @@
       }
     ]
   },
-  "CLion": {
+  "Browser Tamer": {
     "ignore": [
       {
-        "kind": "Class",
-        "id": "SunAwtDialog",
-        "matching_strategy": "Equals"
-      }
-    ],
-    "tray_and_multi_window": [
-      {
         "kind": "Exe",
-        "id": "clion64.exe",
-        "matching_strategy": "Equals"
-      }
-    ],
-    "object_name_change": [
-      {
-        "kind": "Exe",
-        "id": "clion64.exe",
+        "id": "bt.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -398,6 +393,29 @@
       }
     ]
   },
+  "CLion": {
+    "ignore": [
+      {
+        "kind": "Class",
+        "id": "SunAwtDialog",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "clion64.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "object_name_change": [
+      {
+        "kind": "Exe",
+        "id": "clion64.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "Clumsy": {
     "floating": [
       {
@@ -439,15 +457,6 @@
       {
         "kind": "Exe",
         "id": "Cron.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "DS4Windows": {
-    "tray_and_multi_window": [
-      {
-        "kind": "Exe",
-        "id": "DS4Windows.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -514,10 +523,24 @@
         "id": "DiscordCanary.exe",
         "matching_strategy": "Equals"
       }
+    ],
+    "layered": [
+      {
+        "kind": "Exe",
+        "id": "DiscordCanary.exe",
+        "matching_strategy": "Equals"
+      }
     ]
   },
   "DiscordDevelopment": {
     "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "DiscordDevelopment.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "layered": [
       {
         "kind": "Exe",
         "id": "DiscordDevelopment.exe",
@@ -532,6 +555,13 @@
         "id": "DiscordPTB.exe",
         "matching_strategy": "Equals"
       }
+    ],
+    "layered": [
+      {
+        "kind": "Exe",
+        "id": "DiscordPTB.exe",
+        "matching_strategy": "Equals"
+      }
     ]
   },
   "Dropbox": {
@@ -539,6 +569,15 @@
       {
         "kind": "Exe",
         "id": "Dropbox.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "DS4Windows": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "DS4Windows.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -676,6 +715,22 @@
       }
     ]
   },
+  "f.lux": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "flux.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "flux.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "FFMetrics": {
     "tray_and_multi_window": [
       {
@@ -726,6 +781,29 @@
       ]
     ]
   },
+  "FreeTube": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "FreeTube.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "ignore": [
+      [
+        {
+          "kind": "Exe",
+          "id": "FreeTube.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "Picture in picture",
+          "matching_strategy": "Equals"
+        }
+      ]
+    ]
+  },
   "GIMP": {
     "floating": [
       [
@@ -759,44 +837,12 @@
       ]
     ]
   },
-  "GOG Galaxy": {
-    "ignore": [
-      {
-        "kind": "Class",
-        "id": "Chrome_RenderWidgetHostHWND",
-        "matching_strategy": "Legacy"
-      }
-    ],
-    "manage": [
-      {
-        "kind": "Exe",
-        "id": "GalaxyClient.exe",
-        "matching_strategy": "Equals"
-      }
-    ],
-    "tray_and_multi_window": [
-      {
-        "kind": "Exe",
-        "id": "GalaxyClient.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
   "GitHub Credential Manager": {
     "ignore": [
       {
         "kind": "Exe",
         "id": "git-credential-manager.exe",
         "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "GoPro Webcam": {
-    "tray_and_multi_window": [
-      {
-        "kind": "Class",
-        "id": "GoPro Webcam",
-        "matching_strategy": "Legacy"
       }
     ]
   },
@@ -821,6 +867,29 @@
       {
         "kind": "Exe",
         "id": "GodotManager.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "GOG Galaxy": {
+    "ignore": [
+      {
+        "kind": "Class",
+        "id": "Chrome_RenderWidgetHostHWND",
+        "matching_strategy": "Legacy"
+      }
+    ],
+    "manage": [
+      {
+        "kind": "Exe",
+        "id": "GalaxyClient.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "GalaxyClient.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -915,6 +984,43 @@
       ]
     ]
   },
+  "GoPro Webcam": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Class",
+        "id": "GoPro Webcam",
+        "matching_strategy": "Legacy"
+      }
+    ]
+  },
+  "Grayjay": {
+    "manage": [
+      [
+        {
+          "kind": "Exe",
+          "id": "dotcefnative.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "Grayjay",
+          "matching_strategy": "Equals"
+        }
+      ],
+      [
+        {
+          "kind": "Exe",
+          "id": "dotcefnative.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "Grayjay (Sub)",
+          "matching_strategy": "Equals"
+        }
+      ]
+    ]
+  },
   "Guitar Rig 7": {
     "ignore": [
       {
@@ -922,6 +1028,127 @@
         "id": "Guitar Rig 7.exe",
         "matching_strategy": "Equals"
       }
+    ]
+  },
+  "Hammer": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "hammer.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "ignore": [
+      [
+        {
+          "kind": "Exe",
+          "id": "hammer.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Class",
+          "id": "Afx:",
+          "matching_strategy": "StartsWith"
+        }
+      ]
+    ],
+    "slow_application": [
+      {
+        "kind": "Exe",
+        "id": "hammer.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "Honkai Star Rail": {
+    "manage": [
+      {
+        "kind": "Exe",
+        "id": "StarRail.Exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "HWiNFO64": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "HWiNFO64.EXE",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "HxD": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "HxD.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "ignore": [
+      [
+        {
+          "kind": "Exe",
+          "id": "HxD.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Class",
+          "id": "TFormHexView",
+          "matching_strategy": "Equals"
+        }
+      ]
+    ]
+  },
+  "IDA": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "ida.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Exe",
+        "id": "ida64.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "floating": [
+      [
+        {
+          "kind": "Exe",
+          "id": "ida.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "IDA -",
+          "matching_strategy": "DoesNotStartWith"
+        },
+        {
+          "kind": "Title",
+          "id": "IDA v",
+          "matching_strategy": "DoesNotStartWith"
+        }
+      ],
+      [
+        {
+          "kind": "Exe",
+          "id": "ida64.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "IDA -",
+          "matching_strategy": "DoesNotStartWith"
+        },
+        {
+          "kind": "Title",
+          "id": "IDA v",
+          "matching_strategy": "DoesNotStartWith"
+        }
+      ]
     ]
   },
   "IntelliJ IDEA": {
@@ -988,15 +1215,6 @@
       }
     ]
   },
-  "KOOK": {
-    "tray_and_multi_window": [
-      {
-        "kind": "Exe",
-        "id": "KOOK.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
   "Keyviz": {
     "ignore": [
       {
@@ -1011,6 +1229,33 @@
       {
         "kind": "Exe",
         "id": "kleopatra.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "komorebi-bar": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "komorebi-bar.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "komorebi-gui": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "komorebi-gui.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "KOOK": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "KOOK.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -1038,6 +1283,15 @@
           "matching_strategy": "Equals"
         }
       ]
+    ]
+  },
+  "Libre Hardware Monitor": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "LibreHardwareMonitor.exe",
+        "matching_strategy": "Equals"
+      }
     ]
   },
   "LibreCAD": {
@@ -1092,6 +1346,24 @@
       }
     ]
   },
+  "Logitech G HUB": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "lghub.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "Logitech Options": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "LogiOptionsUI.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "LogiTune": {
     "ignore": [
       {
@@ -1108,20 +1380,11 @@
       }
     ]
   },
-  "Logitech G HUB": {
+  "MacType": {
     "tray_and_multi_window": [
       {
         "kind": "Exe",
-        "id": "lghub.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "Logitech Options": {
-    "ignore": [
-      {
-        "kind": "Exe",
-        "id": "LogiOptionsUI.exe",
+        "id": "MacTray.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -1288,31 +1551,19 @@
   },
   "Microsoft SQL Server Management Studio": {
     "floating": [
-      {
-        "kind": "Exe",
-        "id": "Ssms.exe",
-        "matching_strategy": "Equals"
-      },
-      {
-        "kind": "Class",
-        "id": "WindowsForms10.Window.8.app",
-        "matching_strategy": "StartsWith"
-      }
-    ]
-  },
-  "Microsoft Terminal Services Client": {
-    "ignore": [
-      {
-        "kind": "Class",
-        "id": "OPContainerClass",
-        "matching_strategy": "Equals"
-      },
-      {
-        "kind": "Class",
-        "id": "IHWindowClass",
-        "matching_strategy": "Equals"
-      }
-    ]
+      [
+        {
+          "kind": "Exe",
+          "id": "Ssms.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Class",
+          "id": "WindowsForms10.Window.8.app",
+          "matching_strategy": "StartsWith"
+        }
+      ]
+     ]
   },
   "Microsoft Teams": {
     "tray_and_multi_window": [
@@ -1341,6 +1592,20 @@
         "kind": "Title",
         "id": "Microsoft Teams Call",
         "matching_strategy": "Legacy"
+      }
+    ]
+  },
+  "Microsoft Terminal Services Client": {
+    "ignore": [
+      {
+        "kind": "Class",
+        "id": "OPContainerClass",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Class",
+        "id": "IHWindowClass",
+        "matching_strategy": "Equals"
       }
     ]
   },
@@ -1378,6 +1643,22 @@
         {
           "kind": "Class",
           "id": "TMobaXtermForm",
+          "matching_strategy": "Equals"
+        }
+      ]
+    ]
+  },
+  "Mod Organizer 2": {
+    "ignore": [
+      [
+        {
+          "kind": "Exe",
+          "id": "ModOrganizer.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "Extracting files",
           "matching_strategy": "Equals"
         }
       ]
@@ -1448,11 +1729,20 @@
       }
     ]
   },
-  "NZXT CAM": {
-    "tray_and_multi_window": [
+  "mpv": {
+    "object_name_change": [
+      {
+        "kind": "Class",
+        "id": "mpv",
+        "matching_strategy": "Legacy"
+      }
+    ]
+  },
+  "mpv.net": {
+    "object_name_change": [
       {
         "kind": "Exe",
-        "id": "NZXT CAM.exe",
+        "id": "mpvnet.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -1518,6 +1808,15 @@
       }
     ]
   },
+  "NZXT CAM": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "NZXT CAM.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "OBS Studio (32-bit)": {
     "tray_and_multi_window": [
       {
@@ -1533,15 +1832,6 @@
         "kind": "Exe",
         "id": "obs64.exe",
         "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "ONLYOFFICE Editors": {
-    "tray_and_multi_window": [
-      {
-        "kind": "Class",
-        "id": "DocEditorsWindowClass",
-        "matching_strategy": "Legacy"
       }
     ]
   },
@@ -1563,6 +1853,15 @@
       }
     ]
   },
+  "ONLYOFFICE Editors": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Class",
+        "id": "DocEditorsWindowClass",
+        "matching_strategy": "Legacy"
+      }
+    ]
+  },
   "OpenRGB": {
     "tray_and_multi_window": [
       {
@@ -1572,11 +1871,29 @@
       }
     ]
   },
+  "paint.net": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "paintdotnet.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "Paradox Launcher": {
     "ignore": [
       {
         "kind": "Exe",
         "id": "Paradox Launcher.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "PAYDAY 2": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "payday2_win32_release.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -1600,6 +1917,15 @@
       {
         "kind": "Exe",
         "id": "phpstorm64.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "pinentry": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "pinentry.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -1655,6 +1981,16 @@
       {
         "kind": "Exe",
         "id": "PowerToys.AdvancedPaste.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Exe",
+        "id": "PowerToys.FileLocksmithUI.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Exe",
+        "id": "Microsoft.CmdPal.UI.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -1739,6 +2075,57 @@
         "id": "pycharm64.exe",
         "matching_strategy": "Equals"
       }
+    ]
+  },
+  "qBittorrent": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "qbittorrent.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "ignore": [
+      [
+        {
+          "kind": "Exe",
+          "id": "qbittorrent.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "Exiting qBittorrent",
+          "matching_strategy": "Equals"
+        }
+      ]
+    ]
+  },
+  "QGIS": {
+    "floating": [
+      [
+        {
+          "kind": "Exe",
+          "id": "qgis-bin.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "QGIS",
+          "matching_strategy": "DoesNotContain"
+        }
+      ],
+      [
+        {
+          "kind": "Exe",
+          "id": "qgis-ltr-bin.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "QGIS",
+          "matching_strategy": "DoesNotContain"
+        }
+      ]
     ]
   },
   "QQ": {
@@ -2034,6 +2421,15 @@
       }
     ]
   },
+  "Stremio Desktop Community": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "stremio-shell-ng.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "System Informer": {
     "ignore": [
       {
@@ -2073,6 +2469,15 @@
           "matching_strategy": "Equals"
         }
       ]
+    ]
+  },
+  "TablePlus": {
+    "object_name_change": [
+      {
+        "kind": "Exe",
+        "id": "TablePlus.exe",
+        "matching_strategy": "Equals"
+      }
     ]
   },
   "Task Manager": {
@@ -2179,11 +2584,36 @@
       }
     ]
   },
+  "ueli": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "ueli.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "ueli.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "UniGetUI": {
     "tray_and_multi_window": [
       {
         "kind": "Exe",
         "id": "UniGetUI.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "Unity": {
+    "ignore": [
+      {
+        "kind": "Class",
+        "id": "UnityWndClass",
         "matching_strategy": "Equals"
       }
     ]
@@ -2234,6 +2664,117 @@
           "matching_strategy": "DoesNotEndWith"
         }
       ]
+    ]
+  },
+  "Unreal Engine": {
+    "ignore": [
+      {
+        "kind": "Class",
+        "id": "UnrealWindow",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Title",
+        "id": "SplashScreenGuard",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "visio": {
+    "ignore": [
+      {
+        "kind": "Class",
+        "id": "VISIOS",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Class",
+        "id": "VISIOQ",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "manage": [
+      {
+        "kind": "Class",
+        "id": "VISIOA",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "Visual Studio": {
+    "object_name_change": [
+      {
+        "kind": "Exe",
+        "id": "devenv.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
+    "floating": [
+      [
+        {
+          "kind": "Exe",
+          "id": "devenv.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "QuickWatch",
+          "matching_strategy": "Equals"
+        }
+      ],
+      [
+        {
+          "kind": "Exe",
+          "id": "devenv.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": " - Microsoft Visual Studio",
+          "matching_strategy": "DoesNotEndWith"
+        }
+      ]
+    ],
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "VsDebugConsole.exe",
+        "matching_strategy": "Equals"
+      },
+      [
+        {
+          "kind": "Exe",
+          "id": "iisexpresstray.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Class",
+          "id": "WindowsForms10.Window",
+          "matching_strategy": "StartsWith"
+        }
+      ],
+      {
+        "kind": "Title",
+        "id": "WindowsFormsParkingWindow",
+        "matching_strategy": "Equals"
+      },
+      [
+        {
+          "kind": "Exe",
+          "id": "devenv.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "Move files to a new location?",
+          "matching_strategy": "Equals"
+        }
+      ],
+      {
+        "kind": "Exe",
+        "id": "ServiceHub.ThreadedWaitDialog.exe",
+        "matching_strategy": "Equals"
+      }
     ]
   },
   "VLC": {
@@ -2388,6 +2929,15 @@
       }
     ]
   },
+  "Voice.ai": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "VoiceAI.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "VRCX": {
     "tray_and_multi_window": [
       {
@@ -2397,87 +2947,34 @@
       }
     ]
   },
-  "Visual Studio": {
-    "object_name_change": [
+  "WebStorm": {
+    "ignore": [
       {
-        "kind": "Exe",
-        "id": "devenv.exe",
+        "kind": "Class",
+        "id": "SunAwtDialog",
         "matching_strategy": "Equals"
       }
     ],
-    "floating": [
-      [
-        {
-          "kind": "Exe",
-          "id": "devenv.exe",
-          "matching_strategy": "Equals"
-        },
-        {
-          "kind": "Title",
-          "id": "QuickWatch",
-          "matching_strategy": "Equals"
-        }
-      ],
-      [
-        {
-          "kind": "Exe",
-          "id": "devenv.exe",
-          "matching_strategy": "Equals"
-        },
-        {
-          "kind": "Title",
-          "id": " - Microsoft Visual Studio",
-          "matching_strategy": "DoesNotEndWith"
-        }
-      ]
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "webstorm64.exe",
+        "matching_strategy": "Equals"
+      }
     ],
-    "ignore": [
+    "object_name_change": [
       {
         "kind": "Exe",
-        "id": "VsDebugConsole.exe",
-        "matching_strategy": "Equals"
-      },
-      [
-        {
-          "kind": "Exe",
-          "id": "iisexpresstray.exe",
-          "matching_strategy": "Equals"
-        },
-        {
-          "kind": "Class",
-          "id": "WindowsForms10.Window",
-          "matching_strategy": "StartsWith"
-        }
-      ],
-      {
-        "kind": "Title",
-        "id": "WindowsFormsParkingWindow",
-        "matching_strategy": "Equals"
-      },
-      [
-        {
-          "kind": "Exe",
-          "id": "devenv.exe",
-          "matching_strategy": "Equals"
-        },
-        {
-          "kind": "Title",
-          "id": "Move files to a new location?",
-          "matching_strategy": "Equals"
-        }
-      ],
-      {
-        "kind": "Exe",
-        "id": "ServiceHub.ThreadedWaitDialog.exe",
+        "id": "webstorm64.exe",
         "matching_strategy": "Equals"
       }
     ]
   },
-  "Voice.ai": {
+  "WebTorrent Desktop": {
     "tray_and_multi_window": [
       {
         "kind": "Exe",
-        "id": "VoiceAI.exe",
+        "id": "WebTorrent.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -2535,52 +3032,11 @@
       }
     ]
   },
-  "WebStorm": {
-    "ignore": [
-      {
-        "kind": "Class",
-        "id": "SunAwtDialog",
-        "matching_strategy": "Equals"
-      }
-    ],
+  "WinCompose": {
     "tray_and_multi_window": [
       {
         "kind": "Exe",
-        "id": "webstorm64.exe",
-        "matching_strategy": "Equals"
-      }
-    ],
-    "object_name_change": [
-      {
-        "kind": "Exe",
-        "id": "webstorm64.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "WebTorrent Desktop": {
-    "tray_and_multi_window": [
-      {
-        "kind": "Exe",
-        "id": "WebTorrent.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "WinZip (32-bit)": {
-    "ignore": [
-      {
-        "kind": "Exe",
-        "id": "winzip32.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "WinZip (64-bit)": {
-    "ignore": [
-      {
-        "kind": "Exe",
-        "id": "winzip64.exe",
+        "id": "wincompose.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -2665,6 +3121,24 @@
       }
     ]
   },
+  "WinZip (32-bit)": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "winzip32.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "WinZip (64-bit)": {
+    "ignore": [
+      {
+        "kind": "Exe",
+        "id": "winzip64.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
   "Wox": {
     "ignore": [
       {
@@ -2688,6 +3162,15 @@
       {
         "kind": "Exe",
         "id": "zebar.exe",
+        "matching_strategy": "Equals"
+      }
+    ]
+  },
+  "Zed": {
+    "layered": [
+      {
+        "kind": "Exe",
+        "id": "zed.exe",
         "matching_strategy": "Equals"
       }
     ]
@@ -2746,145 +3229,6 @@
         "id": "Zoom.exe",
         "matching_strategy": "Equals"
       }
-    ]
-  },
-  "komorebi-bar": {
-    "ignore": [
-      {
-        "kind": "Exe",
-        "id": "komorebi-bar.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "komorebi-gui": {
-    "ignore": [
-      {
-        "kind": "Exe",
-        "id": "komorebi-gui.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "mpv": {
-    "object_name_change": [
-      {
-        "kind": "Class",
-        "id": "mpv",
-        "matching_strategy": "Legacy"
-      }
-    ]
-  },
-  "mpv.net": {
-    "object_name_change": [
-      {
-        "kind": "Exe",
-        "id": "mpvnet.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "paint.net": {
-    "ignore": [
-      {
-        "kind": "Exe",
-        "id": "paintdotnet.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "pinentry": {
-    "ignore": [
-      {
-        "kind": "Exe",
-        "id": "pinentry.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "qBittorrent": {
-    "tray_and_multi_window": [
-      {
-        "kind": "Exe",
-        "id": "qbittorrent.exe",
-        "matching_strategy": "Equals"
-      }
-    ],
-    "ignore": [
-      [
-        {
-          "kind": "Exe",
-          "id": "qbittorrent.exe",
-          "matching_strategy": "Equals"
-        },
-        {
-          "kind": "Title",
-          "id": "Exiting qBittorrent",
-          "matching_strategy": "Equals"
-        }
-      ]
-    ]
-  },
-  "ueli": {
-    "ignore": [
-      {
-        "kind": "Exe",
-        "id": "ueli.exe",
-        "matching_strategy": "Equals"
-      }
-    ],
-    "tray_and_multi_window": [
-      {
-        "kind": "Exe",
-        "id": "ueli.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "visio": {
-    "ignore": [
-      {
-        "kind": "Class",
-        "id": "VISIOS",
-        "matching_strategy": "Equals"
-      },
-      {
-        "kind": "Class",
-        "id": "VISIOQ",
-        "matching_strategy": "Equals"
-      }
-    ],
-    "manage": [
-      {
-        "kind": "Class",
-        "id": "VISIOA",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "Stremio Desktop Community": {
-    "tray_and_multi_window": [
-      {
-        "kind": "Exe",
-        "id": "stremio-shell-ng.exe",
-        "matching_strategy": "Equals"
-      }
-    ]
-  },
-  "Mod Organizer 2": {
-    "ignore": [
-      [
-        {
-          "kind": "Exe",
-          "id": "ModOrganizer.exe",
-          "matching_strategy": "Equals"
-        },
-        {
-          "kind": "Title",
-          "id": "Extracting files",
-          "matching_strategy": "Equals"
-        }
-      ]
     ]
   }
 }

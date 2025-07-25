@@ -37,8 +37,8 @@
 
 ; Manipulate windows
 #q::Close()
-#+t::ToggleFloat()
-#^t::ToggleMonocle()
+#+y::ToggleFloat()
+#^y::ToggleMonocle()
 
 ; Window manager options
 #+r::Retile()
