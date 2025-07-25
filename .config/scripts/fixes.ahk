@@ -1,11 +1,3 @@
-#Requires AutoHotkey v2.0
-
-Term := EnvGet("DEFAULT_TERM")
-
-; Keybinds
-#Enter::Run "wezterm-gui"
-!Space::#s
-
 ; Disable Useless Windows Keybinds
 ~LWin:: {
     LWinDown := true
@@ -31,9 +23,3 @@ Pause:: {
 ;    currentVolume := SoundGetVolume()
 ;    SoundSetVolume(currentVolume - 1)  ; Decrease volume by 1%
 ;}
-
-; Always on Top
-#+p:: WinSetAlwaysOnTop(-1, "A")
-
-; Touchpad
-+^#F22:: #a ; Detects three-finger tap (Ctrl+Shift+Win+F22)
