@@ -149,3 +149,4 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2025-05-02T06:04:56.041212Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
 [2m2025-05-02T06:04:59.819206Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
 [2m2025-05-02T06:05:11.351654Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Invalid window handle. (0x80070578)
+[2m2025-07-24T12:29:59.475173Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.

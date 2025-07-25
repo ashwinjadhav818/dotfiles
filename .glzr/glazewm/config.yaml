@@ -1,8 +1,4 @@
 general:
-  startup_commands: ['shell-exec yasbc start']
-
-  shutdown_commands: ['shell-exec yasbc stop']
-
   focus_follows_cursor: true
 
   toggle_workspace_on_refocus: false
