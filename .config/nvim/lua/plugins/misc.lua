@@ -1,7 +1,6 @@
 return {
-    {
-	"xiyaowong/transparent.nvim",
-},
+    { "xiyaowong/transparent.nvim" },
+    { "sitiom/nvim-numbertoggle" },
     {
         "luckasRanarison/tailwind-tools.nvim",
         name = "tailwind-tools",
