@@ -132,6 +132,13 @@ widgets:
       label_alt: "<span>{icon}</span> {percent}% | time: {time_remaining}"
       charging_options:
         icon_format: "{charging_icon}"
+      status_icons:
+        icon_charging: "\ue945"
+        icon_critical: "\ue851"
+        icon_low: "\ue853"
+        icon_medium: "\ue855"
+        icon_high: "\ue857"
+        icon_full: "\ue83f"
   brightness:
     type: "yasb.brightness.BrightnessWidget"
     options:
@@ -178,12 +185,10 @@ widgets:
       icon_size: 16
       pin_click_modifier: "alt"
       show_unpinned: false
-      show_battery: false
-      show_volume: false
   notifications:
     type: "yasb.notifications.NotificationsWidget"
     options:
-      label: "<span>\uf476</span>"
+      label: "<span>\ue7e7</span>"
       label_alt: "{count} notifications"
       tooltip: false
       callbacks:

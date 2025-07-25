@@ -18,7 +18,7 @@
     font-size: 12px;
     color: var(--foreground-color);
     font-weight: 600;
-    font-family: "Segoe UI", "JetBrainsMono NFP";
+    font-family: "Segoe UI", "Segoe Fluent Icons", "JetBrainsMono NFP";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -210,10 +210,15 @@
     background-color: var(--hover-color);
 }
 
-/* --- Battery Widget --- */
 .battery-widget .icon {
-    margin-right: 6px;
+    padding-top: 2px;
+    font-size: 16px;
     color: var(--foreground-color);
+}
+
+.battery-widget .widget-container .icon.status-charging {
+    padding-top: 4px;
+    font-size: 12px;
 }
 
 /* --- Brightness Widget --- */
