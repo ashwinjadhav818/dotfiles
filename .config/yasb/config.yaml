@@ -212,7 +212,7 @@ widgets:
       app_list:
         - { icon: "\uf0a2", launch: "notification_center" }
         - { icon: "\uf002", launch: "search" }
-        - { icon: "\uf489", launch: "wezterm-gui" }
+        - { icon: "\uf489", launch: "%DEFAULT_TERM%" }
   home:
     type: "yasb.home.HomeWidget"
     options:
