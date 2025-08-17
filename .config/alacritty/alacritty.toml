@@ -17,13 +17,13 @@ opacity = 0.7
 [font]
 size = 12
   [font.normal]
-  family = "Cascadia Code NF"
+  family = "MonoLisa"
   style = "Regular"
 
   [font.bold]
-  family = "Cascadia Code NF"
+  family = "MonoLisa"
   style = "Bold"
 
   [font.italic]
-  family = "Cascadia Code NF"
+  family = "MonoLisa"
   style = "Italic"
