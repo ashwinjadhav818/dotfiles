@@ -149,19 +149,19 @@ keybindings:
 
   # Change focus from tiling windows -> floating -> fullscreen.
   - commands: ["wm-cycle-focus"]
-    bindings: ["lwin+t"]
+    bindings: ["lwin+alt+y"]
 
   # Change the focused window to be floating.
   - commands: ["toggle-floating --centered"]
-    bindings: ["lwin+shift+t"]
+    bindings: ["lwin+shift+y"]
 
   # Change the focused window to be tiling.
   - commands: ["toggle-tiling"]
-    bindings: ["lwin+alt+t"]
+    bindings: ["lwin+y"]
 
   # Change the focused window to be fullscreen.
   - commands: ["toggle-fullscreen"]
-    bindings: ["lwin+ctrl+t"]
+    bindings: ["lwin+ctrl+y"]
 
   # Minimize rocused window.
   - commands: ["toggle-minimized"]
