@@ -16,9 +16,16 @@ start "Fixes" autohotkey "%ConfigPath%\.config\scripts\fixes.ahk"
 REM Start kanata in background
 start "Kanata" conhost --headless %ConfigPath%\.config\kanata\kanata_gui.exe -c "%ConfigPath%\.config\kanata\kanata.kbd"
 
-echo Kanata: %ConfigPath%\.config\kanata\kanata_gui.exe
+REM Start yasb
+start "YASB"/b yasbc start
+
+REM Start kanata in background
+start "Emacs Deamon" conhost --headless sh -c "emacs --daemon"
+
 echo Scripts: started scripts
+echo Kanata: %ConfigPath%\.config\kanata\kanata_gui.exe
 echo YASB: yasbc
+echo Emacs: daemon
 
 REM Set komorebi config environment variable
 set "KOMOREBI_CONFIG_HOME=%USERPROFILE%\.dotfiles\.config\komorebi"
@@ -39,16 +46,10 @@ GOTO WM_SELECTION
 :KOMOREBI
 echo Starting Komorebi WM...
 
-REM Start yasb
-start "YASB"/b yasbc start
-
 REM Start komorebi
 start "Komorebi" /b komorebic start --ahk --masir
 
 echo All Komorebi components started!
-echo Kanata: %ConfigPath%\.config\kanata\kanata_gui.exe
-echo Komorebi: komorebic with config at %KOMOREBI_CONFIG_HOME%
-echo YASB: yasbc
 GOTO END
 
 :GLAZEWM
@@ -56,10 +57,7 @@ echo Starting GlazeWM...
 REM Start GlazeWM
 start "GlazeWM" /b glazewm start 
 
-
 echo All GlazeWM components started!
-echo Kanata: %ConfigPath%\.config\kanata\kanata_gui.exe
-echo GlazeWM: path\to\GlazeWM.exe (Please verify this path)
 GOTO END
 
 :END

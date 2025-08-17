@@ -6,6 +6,7 @@ DEFAULT_TERM := EnvGet("DEFAULT_TERM")
 ; Keybinds
 #Enter::Run DEFAULT_TERM
 !Space::#s
+#b::Run "emacsclientw -c"
 
 ; Always on Top
 #+p:: WinSetAlwaysOnTop(-1, "A")
