@@ -15,8 +15,8 @@ config.default_prog = { pwsh_path, "-NoProfileLoadTime", "-NoLogo" }
 -- UI
 config.window_decorations = "RESIZE"
 config.color_scheme = "tokyonight"
-config.window_background_opacity = 0.8
-config.win32_system_backdrop = "Acrylic"
+-- config.window_background_opacity = 0.8
+-- config.win32_system_backdrop = "Acrylic"
 -- config.front_end = "WebGpu"
 -- config.colors = {
 -- 	background = "#000",
