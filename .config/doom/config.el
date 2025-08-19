@@ -44,26 +44,28 @@
   )
 
 ;; Capture templates
-(setq org-capture-templates
-      '(("t" "Todo" entry
-         (file+headline "D:/Areas/org/inbox.org" "Inbox")
-         "* TODO %^{Task}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
-        ("e" "Event" entry
-         (file+headline "D:/Areas/org/calendar.org" "Events")
-         "* %^{Event}\n%^{SCHEDULED}T\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
-        ("d" "Deadline" entry
-         (file+headline "D:/Areas/org/calendar.org" "Deadlines")
-         "* TODO %^{Task}\nDEADLINE: %^{Deadline}T\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
-        ("p" "Project" entry
-         (file+headline "D:/Areas/org/projects.org" "Projects")
-         "* PROJ %^{Project name}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n** TODO %?")
-        ("i" "Idea" entry
-         (file+headline "D:/Areas/org/ideas.org" "Ideas")
-         "** IDEA %^{Idea}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
-        ("n" "Note" entry
-         (file+headline "D:/Areas/org/notes.org" "Inbox")
-         "* [%<%Y-%m-%d %a>] %^{Title}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?"
-         :prepend t)))
+(after! org
+  (setq org-capture-templates
+        '(("t" "Todo" entry
+           (file+headline "D:/Areas/org/inbox.org" "Inbox")
+           "* TODO %^{Task}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
+          ("e" "Event" entry
+           (file+headline "D:/Areas/org/calendar.org" "Events")
+           "* %^{Event}\n%^{SCHEDULED}T\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
+          ("d" "Deadline" entry
+           (file+headline "D:/Areas/org/calendar.org" "Deadlines")
+           "* TODO %^{Task}\nDEADLINE: %^{Deadline}T\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
+          ("p" "Project" entry
+           (file+headline "D:/Areas/org/projects.org" "Projects")
+           "* PROJ %^{Project name}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n** TODO %?")
+          ("i" "Idea" entry
+           (file+headline "D:/Areas/org/ideas.org" "Ideas")
+           "** IDEA %^{Idea}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
+          ("n" "Note" entry
+           (file+headline "D:/Areas/org/notes.org" "Inbox")
+           "* [%<%Y-%m-%d %a>] %^{Title}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?"
+           :prepend t)))
+  )
 
 ;; Org Roam
 (use-package org-roam
