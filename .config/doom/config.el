@@ -37,7 +37,7 @@
 (add-hook 'org-mode-hook #'org-modern-mode)
 ;; ---- Editor ---
 ;; Org Mode Configuration
-(setq org-directory "D:/Areas/org/")
+(setq org-directory "~/org/")
 (after! org
   (setq org-todo-keywords
         '((sequence "TODO(t)" "WORKING(w!)" "WAIT(W@)" "|" "DONE(d!)" "CANC(c@)")))
@@ -47,22 +47,22 @@
 (after! org
   (setq org-capture-templates
         '(("t" "Todo" entry
-           (file+headline "D:/Areas/org/inbox.org" "Inbox")
+           (file+headline "~/org/inbox.org" "Inbox")
            "* TODO %^{Task}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
           ("e" "Event" entry
-           (file+headline "D:/Areas/org/calendar.org" "Events")
+           (file+headline "~/org/calendar.org" "Events")
            "* %^{Event}\n%^{SCHEDULED}T\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
           ("d" "Deadline" entry
-           (file+headline "D:/Areas/org/calendar.org" "Deadlines")
+           (file+headline "~/org/calendar.org" "Deadlines")
            "* TODO %^{Task}\nDEADLINE: %^{Deadline}T\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
           ("p" "Project" entry
-           (file+headline "D:/Areas/org/projects.org" "Projects")
+           (file+headline "~/org/projects.org" "Projects")
            "* PROJ %^{Project name}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n** TODO %?")
           ("i" "Idea" entry
-           (file+headline "D:/Areas/org/ideas.org" "Ideas")
+           (file+headline "~/org/ideas.org" "Ideas")
            "** IDEA %^{Idea}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?")
           ("n" "Note" entry
-           (file+headline "D:/Areas/org/notes.org" "Inbox")
+           (file+headline "~/org/notes.org" "Inbox")
            "* [%<%Y-%m-%d %a>] %^{Title}\n:PROPERTIES:\n:CREATED: %U\n:CAPTURED: %a\n:END:\n%?"
            :prepend t)))
   )
@@ -71,7 +71,7 @@
 (use-package org-roam
   :ensure t
   :custom
-  (org-roam-directory (file-truename "D:/Areas/org/notes/"))
+  (org-roam-directory (file-truename "~/org/notes/"))
   :config
   ;; Set up the key bindings
   (map! :leader
