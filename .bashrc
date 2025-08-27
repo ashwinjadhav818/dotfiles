@@ -93,10 +93,9 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cls="clear"
 alias bat="batcat"
-# alias l="exa --long --header --git --icons -a"
-# alias ls="exa --icons"
 alias vi=nvim
 alias vim=nvim
+alias em='emacsclient -a -c "emacs"'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -122,7 +121,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Adding Doom command in pathname
-export PATH=”$HOME/.emacs.d/bin:$PATH”
 # StarShip prompt
 eval "$(starship init bash)"
