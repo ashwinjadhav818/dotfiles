@@ -95,7 +95,8 @@ alias cls="clear"
 alias bat="batcat"
 alias vi=nvim
 alias vim=nvim
-alias em='emacsclient -a -c "emacs"'
+alias lg=lazygit
+alias em='emacsclient -c -a "emacs"'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -125,7 +126,7 @@ fi
 eval "$(starship init bash)"
 
 # Start syncthing on android
-f [ "$(uname -o)" == "Android"  ]; then
+if [ "$(uname -o)" == "Android"  ]; then
     echo "Termux environment detected."
 
     # Check if the Syncthing process is already running
@@ -134,7 +135,7 @@ f [ "$(uname -o)" == "Android"  ]; then
     if ! pgrep -x "syncthing" > /dev/null; then
         echo "Syncthing is not running. Starting it now..."
         # Start Syncthing in the background and redirect output to a log file
-        syncthing > /dev/null 2>&1 &
+        syncthing --no-browser > /dev/null 2>&1 &
         echo "Syncthing started in the background."
     else
         echo "Syncthing is already running. No action needed."
