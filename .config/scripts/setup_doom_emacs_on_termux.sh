@@ -3,14 +3,20 @@
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
-echo "Updating Termux repositories and packages..."
+# --- Initial Setup and Package Management ---
+
+echo "--- Updating Termux repositories and packages... ---"
+termux-change-repo
 pkg update -y && pkg upgrade -y
 
-echo "Installing required packages..."
-pkg install -y git emacs
+echo "--- Installing essential and recommended packages... ---"
+# 'git' and 'emacs' are required for Doom Emacs.
+# 'ripgrep' and 'fd' are highly recommended for better performance.
+pkg install -y git emacs ripgrep fd
 
-echo "Cloning Doom Emacs repository..."
-# Check if the Doom Emacs directory already exists to prevent errors.
+# --- Cloning Repositories ---
+
+echo "--- Cloning Doom Emacs repository... ---"
 if [ -d "$HOME/.config/emacs" ]; then
     echo "Doom Emacs directory already exists. Skipping clone."
 else
@@ -18,24 +24,25 @@ else
     git clone --depth 1 https://github.com/doomemacs/doomemacs "$HOME/.config/emacs"
 fi
 
-echo "Cloning dotfiles repository..."
-# Check if the dotfiles directory already exists.
+echo "--- Cloning user dotfiles repository... ---"
 if [ -d "$HOME/.dotfiles" ]; then
     echo "Dotfiles directory already exists. Skipping clone."
 else
     git clone https://github.com/ashwinjadhav818/dotfiles.git "$HOME/.dotfiles"
 fi
 
-echo "Creating symbolic link for Doom configuration..."
-# Check if the symlink already exists.
+# --- Configuring Doom Emacs ---
+
+echo "--- Creating symbolic link for Doom configuration... ---"
 if [ -L "$HOME/.config/doom" ]; then
     echo "Symlink for Doom config already exists. Skipping."
 else
     ln -s "$HOME/.dotfiles/.config/doom" "$HOME/.config/doom"
 fi
 
-echo "Installing Doom Emacs modules and dependencies..."
-# Check if Doom Emacs is installed before running the install command.
+# --- Installing and Syncing Doom Emacs ---
+
+echo "--- Installing Doom Emacs modules and dependencies... ---"
 if [ -x "$HOME/.config/emacs/bin/doom" ]; then
     "$HOME/.config/emacs/bin/doom" install
 else
@@ -43,5 +50,17 @@ else
     exit 1
 fi
 
-echo "Doom Emacs installation complete!"
-echo "To start Emacs, run: emacs"
+echo "--- Syncing Doom Emacs configuration... ---"
+echo "This step installs packages and regenerates autoloads."
+"$HOME/.config/emacs/bin/doom" sync
+
+echo "--- Doom Emacs installation complete! ---"
+echo "You can now run 'emacs' to start the application."
+
+# --- Final Health Check ---
+
+echo "--- IMPORTANT: Run the Doom Doctor check. ---"
+echo "To ensure everything is working correctly and find any missing dependencies, please run:"
+echo ""
+echo "$HOME/.config/emacs/bin/doom doctor"
+echo ""
