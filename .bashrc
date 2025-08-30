@@ -131,6 +131,7 @@ if [ "$(uname -o)" == "Android"  ]; then
     echo "Termux environment detected."
 
     alias doom="~/.config/emacs/bin/doom"
+    sv-enable emacsd
     # Check if the Syncthing process is already running
     # `pgrep -x syncthing` looks for an exact process name match
     # If it returns an empty string, the process is not running
