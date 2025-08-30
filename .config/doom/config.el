@@ -11,30 +11,6 @@
       doom-variable-pitch-font (font-spec :family "MonoLisa" :size 16)
       doom-big-font (font-spec :family "MonoLisa" :size 22))
 
-(setq
- ;; Edit settings
- org-auto-align-tags nil
- org-tags-column 0
- org-fold-catch-invisible-edits 'show-and-error
- org-special-ctrl-a/e t
- org-insert-heading-respect-content t
-
- ;; Org styling, hide markup etc.
- org-hide-emphasis-markers t
- org-pretty-entities t
- org-agenda-tags-column 0
- org-ellipsis "…"
- )
-
-;; Org Modern
-(after! org-modern
-  (setq org-modern-star "◉"
-        org-modern-stars '("◉" "○" "✸" "✿" "✜" "◆" "▶"))
-  (global-org-modern-mode))
-
-;; You can also place the global mode inside the org module hook
-;; to be even more specific.
-(add-hook 'org-mode-hook #'org-modern-mode)
 ;; ---- Editor ---
 ;; Org Mode Configuration
 (setq org-directory "~/org/")
