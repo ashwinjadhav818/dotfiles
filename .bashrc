@@ -97,6 +97,7 @@ alias vi=nvim
 alias vim=nvim
 alias lg=lazygit
 alias em='emacsclient -c -a "emacs"'
+alias g='git'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -129,6 +130,7 @@ eval "$(starship init bash)"
 if [ "$(uname -o)" == "Android"  ]; then
     echo "Termux environment detected."
 
+    alias doom="~/.config/emacs/bin/doom"
     # Check if the Syncthing process is already running
     # `pgrep -x syncthing` looks for an exact process name match
     # If it returns an empty string, the process is not running
