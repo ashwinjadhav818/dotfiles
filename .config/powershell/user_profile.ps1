@@ -18,7 +18,7 @@ Set-Alias lg lazygit
 Set-Alias bash sh
 
 # PSReadLine
-# Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionSource History
 # Set-PsReadLineOption -PredictionViewStyle ListView
 
 # Komorebi
