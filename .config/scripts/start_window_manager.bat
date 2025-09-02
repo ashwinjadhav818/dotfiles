@@ -1,66 +1,64 @@
 @echo off
-REM Kanata Launcher Batch File
-REM This can be double-clicked to run
-echo Starting Window Manager Selection...
+REM Usage: [glazewm|komorebi|windows-workspaces]
+
+echo Starting common background services...
 echo.
 
-REM Define the paths for the executable and configuration file
+REM Define the paths for the configuration files
 set "ConfigPath=%USERPROFILE%\.dotfiles"
 
-REM Start keymaps script
-start "Keymaps" autohotkey "%ConfigPath%\.config\scripts\keymaps.ahk"
+REM Start common background scripts
+start "Keymaps" /b autohotkey "%ConfigPath%\.config\scripts\keymaps.ahk"
+start "Fixes" /b autohotkey "%ConfigPath%\.config\scripts\fixes.ahk"
+start "Emacs Deamon" conhost --headless sh -c "emacs --daemon" 
 
-REM Start fixes script
-start "Fixes" autohotkey "%ConfigPath%\.config\scripts\fixes.ahk"
+echo Background services started.
+echo ---
 
-REM Start kanata in background
-start "Kanata" conhost --headless %ConfigPath%\.config\kanata\kanata_gui.exe -c "%ConfigPath%\.config\kanata\kanata.kbd"
+REM --- Window Manager/Workspace Selection ---
 
-REM Start yasb
-start "YASB"/b yasbc start
+REM Check for a command-line argument
+IF /I "%1"=="glazewm" GOTO GLAZEWM
+IF /I "%1"=="komorebi" GOTO KOMOREBI
+IF /I "%1"=="windows-workspaces" GOTO WINDOWS_WORKSPACES
+IF NOT "%1"=="" (
+echo Unknown workspace type: '%1'.
+echo Supported types are: glazewm, komorebi, windows-workspaces.
+GOTO END
+)
 
-REM Start kanata in background
-start "Emacs Deamon" conhost --headless sh -c "emacs --daemon"
-
-echo Scripts: started scripts
-echo Kanata: %ConfigPath%\.config\kanata\kanata_gui.exe
-echo YASB: yasbc
-echo Emacs: daemon
-
-REM Set komorebi config environment variable
-set "KOMOREBI_CONFIG_HOME=%USERPROFILE%\.dotfiles\.config\komorebi"
-
-REM Prompt user to select a window manager
 :WM_SELECTION
-echo Please choose your preferred Window Manager:
+echo Please choose your preferred Workspace:
 echo [1] Komorebi WM
 echo [2] GlazeWM
-set /p WM_CHOICE="Enter 1 or 2: "
+echo [3] Windows Workspaces
+set /p WM_CHOICE="Enter 1, 2, or 3: "
 
 IF /I "%WM_CHOICE%"=="1" GOTO KOMOREBI
 IF /I "%WM_CHOICE%"=="2" GOTO GLAZEWM
-echo Invalid choice. Please enter 1 or 2.
+IF /I "%WM_CHOICE%"=="3" GOTO WINDOWS_WORKSPACES
+echo Invalid choice. Please enter 1, 2, or 3.
 echo.
 GOTO WM_SELECTION
 
-:KOMOREBI
-echo Starting Komorebi WM...
-
-REM Start komorebi
-start "Komorebi" /b komorebic start --ahk --masir
-
-echo All Komorebi components started!
+:GLAZEWM
+echo Starting GlazeWM environment...
+start "yasb" /b yasb
+start "GlazeWM" /b glazewm start
 GOTO END
 
-:GLAZEWM
-echo Starting GlazeWM...
-REM Start GlazeWM
-start "GlazeWM" /b glazewm start 
+:KOMOREBI
+echo Starting Komorebi environment...
+set "KOMOREBI_CONFIG_HOME=%ConfigPath%\.config\komorebi"
+start "yasb" /b yasb
+start "Komorebi" /b komorebic start --ahk --masir
+GOTO END
 
-echo All GlazeWM components started!
+:WINDOWS_WORKSPACES
+echo Starting Windows Workspaces desktop switcher...
+start "Windows Workspaces" /b "%ConfigPath%\.config\scripts\windows-workspaces\desktop_switcher.ahk"
 GOTO END
 
 :END
 echo.
-echo Press any key to exit...
-pause
+echo Setup completed.

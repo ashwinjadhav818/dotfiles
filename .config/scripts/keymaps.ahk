@@ -1,3 +1,4 @@
+
 #Requires AutoHotkey v2.0
 
 ; Get the value of the DEFAULT_TERM environment variable
@@ -7,7 +8,8 @@ DEFAULT_TERM := EnvGet("DEFAULT_TERM")
 #Enter::Run DEFAULT_TERM
 #s::!Space
 ;!Space::#s
-#b::Run "emacsclientw -c"
+#w::Run "emacsclientw -c -a 'emacs'"
+#b::Run "C:\tools\cromite\chrome.exe"
 
 ; Always on Top
 #+p:: WinSetAlwaysOnTop(-1, "A")
