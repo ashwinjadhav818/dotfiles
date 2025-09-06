@@ -5,12 +5,13 @@ echo Starting common background services...
 echo.
 
 REM Define the paths for the configuration files
-set "ConfigPath=%USERPROFILE%\.dotfiles"
+set "ConfigPath=%USERPROFILE%\.config"
 
 REM Start common background scripts
-start "Keymaps" /b autohotkey "%ConfigPath%\.config\scripts\keymaps.ahk"
-start "Fixes" /b autohotkey "%ConfigPath%\.config\scripts\fixes.ahk"
+start "Keymaps" /b autohotkey "%ConfigPath%\scripts\keymaps.ahk"
+start "Fixes" /b autohotkey "%ConfigPath%\scripts\fixes.ahk"
 start "Emacs Deamon" conhost --headless sh -c "emacs --daemon" 
+start "Kanata" conhost --headless %ConfigPath%\kanata\kanata_gui.exe -c "%ConfigPath%\kanata\kanata.kbd"
 
 echo Background services started.
 echo ---
@@ -49,14 +50,14 @@ GOTO END
 
 :KOMOREBI
 echo Starting Komorebi environment...
-set "KOMOREBI_CONFIG_HOME=%ConfigPath%\.config\komorebi"
+set "KOMOREBI_CONFIG_HOME=%ConfigPath%\komorebi"
 start "yasb" /b yasb
 start "Komorebi" /b komorebic start --ahk --masir
 GOTO END
 
 :WINDOWS_WORKSPACES
 echo Starting Windows Workspaces desktop switcher...
-start "Windows Workspaces" /b "%ConfigPath%\.config\scripts\windows-workspaces\desktop_switcher.ahk"
+start "Windows Workspaces" /b "%ConfigPath%\scripts\windows-workspaces\desktop_switcher.ahk"
 GOTO END
 
 :END
