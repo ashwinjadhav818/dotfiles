@@ -21,6 +21,7 @@
 (require 'keymaps)
 (require 'misc)
 (require 'org-config)
+(require 'org-appearance)
 (require 'programming)
 (require 'themes)
 (require 'ui)
