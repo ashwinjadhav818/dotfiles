@@ -75,6 +75,7 @@
 
 
 (with-eval-after-load 'evil
+  (evil-define-key 'normal 'global (kbd "<leader> q") 'save-buffers-kill-terminal)
   ;; -------------------------------
   ;; FILES
   ;; -------------------------------
@@ -170,6 +171,7 @@
   ;; -------------------------------
   (with-eval-after-load 'which-key
     (which-key-add-key-based-replacements
+      "SPC q" "quit"
       "SPC w" "save file"
 
       "SPC f" "files"
