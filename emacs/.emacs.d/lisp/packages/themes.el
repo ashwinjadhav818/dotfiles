@@ -1,25 +1,40 @@
-;;; CATPCCIN THEME
-;; The `catppuccin-theme' package provides a visually pleasing color theme
-;; for Emacs that is inspired by the popular Catppuccin color palette.
-;; This theme aims to create a comfortable and aesthetic coding environment
-;; with soft colors that are easy on the eyes.
+;;; themes.el --- Theme configuration -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;; Theme setup for Emacs, including Catppuccin and Tokyo theme.
+
+;;; Code:
+
+;; -------------------------------
+;; Catppuccin Theme
+;; -------------------------------
 (use-package catppuccin-theme
   :ensure t
   :straight t
   :config
   (custom-set-faces
-   ;; Set the color for changes in the diff highlighting to blue.
-   `(diff-hl-change ((t (:background unspecified :foreground ,(catppuccin-get-color 'blue))))))
-
-  (custom-set-faces
-   ;; Set the color for deletions in the diff highlighting to red.
-   `(diff-hl-delete ((t (:background unspecified :foreground ,(catppuccin-get-color 'red))))))
-
-  (custom-set-faces
-   ;; Set the color for insertions in the diff highlighting to green.
+   ;; Diff-hl colors
+   `(diff-hl-change ((t (:background unspecified :foreground ,(catppuccin-get-color 'blue)))))
+   `(diff-hl-delete ((t (:background unspecified :foreground ,(catppuccin-get-color 'red)))))
    `(diff-hl-insert ((t (:background unspecified :foreground ,(catppuccin-get-color 'green))))))
 
-  ;; Load the Catppuccin theme without prompting for confirmation.
+  ;; Load Catppuccin theme by default
   (load-theme 'catppuccin :no-confirm))
 
+;; -------------------------------
+;; Tokyo Theme (extra theme option)
+;; -------------------------------
+(use-package tokyo-theme
+  :straight (tokyo-theme
+             :type git
+             :host github
+             :repo "rawleyfowler/tokyo-theme.el"
+             :branch "main")
+  :config
+  ;; Uncomment this if you want Tokyo as default instead:
+  ;; (load-theme 'tokyo t)
+  )
+
 (provide 'themes)
+;;; themes.el ends here
+
