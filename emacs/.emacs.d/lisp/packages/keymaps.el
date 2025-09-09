@@ -90,6 +90,8 @@
   (evil-define-key 'normal 'global (kbd "<leader> b b") 'consult-buffer)
   (evil-define-key 'normal 'global (kbd "<leader> b d") 'kill-current-buffer)
   (evil-define-key 'normal 'global (kbd "<leader> b s") 'save-buffer)
+  (evil-define-key 'normal 'global (kbd "<leader> b c") 'outline-hide-sublevels)
+  (evil-define-key 'normal 'global (kbd "<leader> b e") 'outline-show-all)
   (evil-define-key 'normal 'global (kbd "] b") 'switch-to-next-buffer)
   (evil-define-key 'normal 'global (kbd "[ b") 'switch-to-prev-buffer)
 
@@ -180,6 +182,8 @@
       "SPC b b" "list buffers"
       "SPC b d" "kill buffer"
       "SPC b s" "save buffer"
+      "SPC b c" "collapse outline"
+      "SPC b e" "expand outline"
 
       "SPC p" "projects"
       "SPC p p" "switch project"
