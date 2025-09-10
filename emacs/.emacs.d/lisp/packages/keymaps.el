@@ -62,9 +62,11 @@
 ;; DOOM-STYLE LEADER KEYBINDINGS
 ;; -------------------------------
 (defun open-personal-config ()
-  "Open the personal Emacs config folder."
+  "Fuzzy search and open a file in `~/.emacs.d`."
   (interactive)
-  (dired "~/.emacs.d"))
+  (find-file
+   (completing-read "Find config file: "
+                    (directory-files-recursively "~/.emacs.d" "\\.el$"))))
 
 (defun org-find-file ()
   "Fuzzy search and open a file in `org-directory`."
@@ -75,7 +77,8 @@
 
 
 (with-eval-after-load 'evil
-  (evil-define-key 'normal 'global (kbd "<leader> q") 'save-buffers-kill-terminal)
+  (evil-define-key 'normal 'global (kbd "<leader>  q") 'save-buffers-kill-terminal)
+  (evil-define-key 'normal 'global (kbd "<leader>  e") 'neotree-toggle)
   ;; -------------------------------
   ;; FILES
   ;; -------------------------------
