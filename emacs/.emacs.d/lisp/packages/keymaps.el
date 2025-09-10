@@ -227,7 +227,15 @@
       "SPC o r f" "find node"
       "SPC o r i" "insert node"
       "SPC o r g" "graph"
-      "SPC o r c" "capture node")))
+      "SPC o r c" "capture node"
+
+	  "SPC m" "local-leader"
+	  "SPC m t" "Todo"
+	  "SPC m p" "Priority"
+	  "SPC m r" "Refile"
+	  "SPC m c" "Capture/Clock"
+	  "SPC m s" "Subtree"
+	  "SPC m l" "Links")))
 
 (provide 'keymaps)
 ;;; keymaps.el ends here

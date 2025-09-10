@@ -18,7 +18,7 @@
 
 ;; Per-package configs
 (require 'editing)
-(require 'git)
+(require 'terminal)
 (require 'keymaps)
 (require 'misc)
 (require 'org-config)

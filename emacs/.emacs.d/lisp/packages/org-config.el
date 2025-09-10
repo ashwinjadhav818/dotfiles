@@ -49,6 +49,7 @@
 
 ;; Ensure general is available
 (use-package general
+  :ensure t
   :config
   ;; Define SPC m as "localleader"
   (general-create-definer org-local-leader
