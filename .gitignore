@@ -1,8 +1,60 @@
-*.ini
-.DS_Store
-*.local
-thumbs.db
+# ----------------------------------------
+# Emacs generated files (compiled, backups)
+# ----------------------------------------
+*~
+*#
+.#*
+*.elc
+*.eln
 *.log
-tmp-*/
+*.ini
+*.local
+*.DS_Store
+thumbs.db
 lazy-lock.json
+tmp-*/
+
+# ----------------------------------------
+# Emacs state/cache/history
+# ----------------------------------------
+emacs/.emacs.d/.cache/
+emacs/.emacs.d/auto-save-list/
+emacs/.emacs.d/bookmarks
+emacs/.emacs.d/history
+emacs/.emacs.d/places
+emacs/.emacs.d/recentf
+emacs/.emacs.d/savehist
+emacs/.emacs.d/org-roam.db
+
+# ----------------------------------------
+# Emacs package managers
+# ----------------------------------------
+emacs/.emacs.d/elpa/
+emacs/.emacs.d/straight/
+emacs/.emacs.d/server/
+
+# ----------------------------------------
+# Miscellaneous Emacs files
+# ----------------------------------------
+emacs/.emacs.d/.emacs.desktop
+emacs/.emacs.d/.emacs.desktop.lock
+emacs/.emacs.d/.mc-lists.el
+emacs/.emacs.d/ac-comphist.dat
+emacs/.emacs.d/ido.last
+emacs/.emacs.d/network-security.data
+emacs/.emacs.d/projectile.cache
+emacs/.emacs.d/projectile-bookmarks.eld
+emacs/.emacs.d/url/
+emacs/.emacs.d/transient/
+emacs/.emacs.d/image-dired/
+emacs/.emacs.d/eshell/
+emacs/.emacs.d/tramp/
+emacs/.emacs.d/gnus.el
+emacs/.emacs.d/custom-vars.el
+emacs/.emacs.d/secrets.el
+emacs/.emacs.d/ielm-history.eld
+
+# ----------------------------------------
+# Ignore Scoop config if synced
+# ----------------------------------------
 /.config/scoop
