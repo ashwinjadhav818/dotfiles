@@ -11,7 +11,7 @@
       doom-variable-pitch-font (font-spec :family "MonoLisa" :size 16)
       doom-big-font (font-spec :family "MonoLisa" :size 22))
 
-;; ---- Editor ---
+;; ---- ORG ----
 ;; Org Mode Configuration
 (setq org-directory "~/org/")
 (after! org
@@ -65,6 +65,7 @@
   ;; If using org-roam-protocol
   (require 'org-roam-protocol))
 
+;; ---- KEYBINDS ----
 ;; Collapes Headings
 (map! :leader
       :desc "Collapse all headings" "o c" #'outline-hide-sublevels
