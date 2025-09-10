@@ -74,20 +74,6 @@
                                   (unknown . "┆")
                                   (ignored . "i"))))
 
-;;; INDENT-GUIDE
-;; The `indent-guide' package provides visual indicators for indentation levels
-;; in programming modes, making it easier to see code structure at a glance.
-;; It draws vertical lines (by default, a character of your choice) at each
-;; level of indentation, helping to improve readability and navigation within
-;; the code.
-(use-package indent-guide
-  :defer t
-  :straight t
-  :ensure t
-  :hook
-  (prog-mode . indent-guide-mode)  ;; Activate indent-guide in programming modes.
-  :config
-  (setq indent-guide-char "│"))    ;; Set the character used for the indent guide.
 ;;; RAINBOW DELIMITERS
 ;; The `rainbow-delimiters' package provides colorful parentheses, brackets, and braces
 ;; to enhance readability in programming modes. Each level of nested delimiter is assigned
@@ -167,6 +153,62 @@
       (setq neo-theme 'nerd-icons)         ;; Set the theme to 'nerd-icons' if nerd fonts are available.
     (setq neo-theme 'nerd)))               ;; Otherwise, fall back to the 'nerd' theme.
 
+;;; CENTUAR TABS
+;; The `centuar-tabs` package provides a sleek and modern tab bar
+(use-package centaur-tabs
+  :straight t
+  :defer nil
+  :config
+  ;; Enable the tab bar
+  (centaur-tabs-mode t)
+
+  ;; Style and markers
+  (setq centaur-tabs-style "wave")
+  (setq centaur-tabs-set-bar 'over)
+  (setq centaur-tabs-modified-marker "*")
+
+  ;; Enable icons
+  (setq centaur-tabs-set-icons t)
+  (setq centaur-tabs-icon-type 'nerd-icons)
+
+  ;; Grouping behavior
+  (setq centaur-tabs-group-by-projectile-project t)
+  (setq centaur-tabs-headline-match t)
+
+  "Hide centaur-tabs in the *dashboard* buffer."
+  (defun my/dashboard-hide-tabs ()
+  (when (string= (buffer-name) "*dashboard*")
+    (centaur-tabs-local-mode t)))
+
+  (add-hook 'dashboard-mode-hook #'my/dashboard-hide-tabs)
+
+
+  :bind
+  ("C-<tab>"   . centaur-tabs-forward)
+  ("C-S-<tab>" . centaur-tabs-backward))
+
+;;; DASHBOARD
+;; An extensible emacs startup screen showing you what’s most important.
+(use-package dashboard
+  :straight t
+  :config
+  ;; Initialize
+  (add-hook 'after-init-hook #'dashboard-insert-startupify-lists)
+  (add-hook 'after-init-hook #'dashboard-initialize)
+
+  ;; Set dashboard as startup screen
+  (setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
+  (dashboard-setup-startup-hook))
+
+;; Config
+(setq dashboard-startup-banner "~/.emacs.d/icons/emacs.svg")    ; custom emacs icon
+(setq dashboard-image-banner-max-height 200)
+(setq dashboard-display-icons-p t)     ; display icons on both GUI and terminal
+(setq dashboard-icon-type 'nerd-icons) ; use `nerd-icons' package
+(setq dashboard-center-content t)
+(setq dashboard-items '((recents   . 5)
+                        (projects  . 5)
+                        (agenda    . 5)))
 
 ;;; NERD ICONS
 ;; The `nerd-icons' package provides a set of icons for use in Emacs. These icons can
