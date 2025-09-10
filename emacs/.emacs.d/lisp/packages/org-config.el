@@ -68,7 +68,15 @@
     "pd" '(org-priority-down :which-key "decrease")
 
     "r" '(:ignore t :which-key "refile")
-    "rr" '(org-refile :which-key "refile")
+    "r." '(+org/refile-to-current-file    :which-key "to current file")
+    "rc" '(+org/refile-to-running-clock   :which-key "to running clock")
+    "rl" '(+org/refile-to-last-location   :which-key "to last location")
+    "rf" '(+org/refile-to-file            :which-key "to file")
+    "ro" '(+org/refile-to-other-window    :which-key "to other window")
+    "rO" '(+org/refile-to-other-buffer    :which-key "to other buffer")
+    "rv" '(+org/refile-to-visible         :which-key "to visible")
+    "rr" '(org-refile                     :which-key "refile")
+    "rR" '(org-refile-reverse             :which-key "reverse"))
 
     "c" '(:ignore t :which-key "capture/clock")
     "cc" '(org-capture :which-key "capture")
@@ -81,7 +89,7 @@
 
     "l" '(:ignore t :which-key "links")
     "li" '(org-insert-link :which-key "insert")
-    "lo" '(org-open-at-point :which-key "open")))
+    "lo" '(org-open-at-point :which-key "open"))
 
 
 ;; -------------------------------

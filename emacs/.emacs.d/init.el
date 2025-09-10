@@ -14,6 +14,7 @@
 
 (require 'packages)
 (require 'config)
+(require 'functions)
 
 ;; Per-package configs
 (require 'editing)
