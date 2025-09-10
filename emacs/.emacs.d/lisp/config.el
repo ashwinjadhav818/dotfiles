@@ -41,20 +41,7 @@
   (setq switch-to-prev-buffer-skip 'skip-these-buffers)
 
 
-  ;; Configure font settings based on the operating system.
-  ;; Ok, this kickstart is meant to be used on the terminal, not on GUI.
-  ;; But without this, I fear you could start Graphical Emacs and be sad :(
-  (set-face-attribute 'default nil :family "JetBrainsMono Nerd Font"  :height 100)
-  (when (eq system-type 'darwin)       ;; Check if the system is macOS.
-    (setq mac-command-modifier 'meta)  ;; Set the Command key to act as the Meta key.
-    (set-face-attribute 'default nil :family "JetBrainsMono Nerd Font" :height 130))
-
-  ;; Save manual customizations to a separate file instead of cluttering `init.el'.
-  ;; You can M-x customize, M-x customize-group, or M-x customize-themes, etc.
-  ;; The saves you do manually using the Emacs interface would overwrite this file.
-  ;; The following makes sure those customizations are in a separate file.
-  (setq custom-file (locate-user-emacs-file "custom-vars.el")) ;; Specify the custom file path.
-  (load custom-file 'noerror 'nomessage)                       ;; Load the custom file quietly, ignoring errors.
+  (set-face-attribute 'default nil :family "Source Code Pro"  :height 100))
 
   ;; Makes Emacs vertical divisor the symbol │ instead of |.
   (set-display-table-slot standard-display-table 'vertical-border (make-glyph-code ?│))
@@ -78,23 +65,6 @@
 
   ;; Set the default coding system for files to UTF-8.
   (modify-coding-system-alist 'file "" 'utf-8)
-
-  ;; Add a hook to run code after Emacs has fully initialized.
-  (add-hook 'after-init-hook
-            (lambda ()
-              (message "Emacs has fully loaded. This code runs after startup.")
-
-              ;; Insert a welcome message in the *scratch* buffer displaying loading time and activated packages.
-              (with-current-buffer (get-buffer-create "*scratch*")
-                (insert (format
-                         ";;    Welcome to Emacs!
-;;
-;;    Loading time : %s
-;;    Packages     : %s
-"
-                         (emacs-init-time)
-                         (number-to-string (length package-activated-list))))))))
-
 
 ;;; WINDOW
 ;; This section configures window management in Emacs, enhancing the way buffers
@@ -207,42 +177,6 @@
   (setq search-whitespace-regexp ".*?")        ;; Allow searching across whitespace.
   :bind (("C-s" . isearch-forward)             ;; Bind C-s to forward isearch.
          ("C-r" . isearch-backward)))          ;; Bind C-r to backward isearch.
-
-
-;;; VC
-;; The VC (Version Control) package is included here for awareness and completeness.
-;; While its support for Git is limited and generally considered subpar, it is good to know
-;; that it exists and can be used for other version control systems like Mercurial,
-;; Subversion, and Bazaar.
-;; Magit, which is often regarded as the "father" of Neogit, will be configured later
-;; for an enhanced Git experience.
-;; The keybindings below serve as a reminder of some common VC commands.
-;; But don't worry, you can always use `M-x command' :)
-(use-package vc
-  :ensure nil                        ;; This is built-in, no need to fetch it.
-  :defer t
-  :bind
-  (("C-x v d" . vc-dir)              ;; Open VC directory for version control status.
-   ("C-x v =" . vc-diff)             ;; Show differences for the current file.
-   ("C-x v D" . vc-root-diff)        ;; Show differences for the entire repository.
-   ("C-x v v" . vc-next-action))     ;; Perform the next version control action.
-  :config
-  ;; Better colors for <leader> g b  (blame file)
-  (setq vc-annotate-color-map
-        '((20 . "#f5e0dc")
-          (40 . "#f2cdcd")
-          (60 . "#f5c2e7")
-          (80 . "#cba6f7")
-          (100 . "#f38ba8")
-          (120 . "#eba0ac")
-          (140 . "#fab387")
-          (160 . "#f9e2af")
-          (180 . "#a6e3a1")
-          (200 . "#94e2d5")
-          (220 . "#89dceb")
-          (240 . "#74c7ec")
-          (260 . "#89b4fa")
-          (280 . "#b4befe"))))
 
 
 ;;; SMERGE
