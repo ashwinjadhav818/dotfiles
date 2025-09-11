@@ -77,8 +77,10 @@
 
 
 (with-eval-after-load 'evil
-  (evil-define-key 'normal 'global (kbd "<leader>  q") 'save-buffers-kill-terminal)
-  (evil-define-key 'normal 'global (kbd "<leader>  e") 'neotree-toggle)
+  ;; Quit / neotree
+  (evil-define-key 'normal 'global (kbd "<leader> q") 'save-buffers-kill-terminal)
+  (evil-define-key 'normal 'global (kbd "<leader> e") 'neotree-toggle)
+
   ;; -------------------------------
   ;; FILES
   ;; -------------------------------
@@ -92,12 +94,13 @@
   ;; BUFFERS
   ;; -------------------------------
   (evil-define-key 'normal 'global (kbd "<leader> b b") 'consult-buffer)
-  (evil-define-key 'normal 'global (kbd "<leader> b d") 'kill-current-buffer)
+  (evil-define-key 'normal 'global (kbd "<leader> b q") 'kill-current-buffer)
   (evil-define-key 'normal 'global (kbd "<leader> b s") 'save-buffer)
   (evil-define-key 'normal 'global (kbd "<leader> b c") 'outline-hide-sublevels)
   (evil-define-key 'normal 'global (kbd "<leader> b e") 'outline-show-all)
-  (evil-define-key 'normal 'global (kbd "] b") 'switch-to-next-buffer)
-  (evil-define-key 'normal 'global (kbd "[ b") 'switch-to-prev-buffer)
+  (evil-define-key 'normal 'global (kbd "<leader> <tab>") 'switch-to-next-buffer)
+  (evil-define-key 'normal 'global (kbd "<leader> S-<tab>") 'switch-to-prev-buffer)
+
 
   ;; -------------------------------
   ;; PROJECTS
@@ -111,18 +114,8 @@
   ;; SEARCH
   ;; -------------------------------
   (evil-define-key 'normal 'global (kbd "<leader> s f") 'consult-find)
-  (evil-define-key 'normal 'global (kbd "<leader> s g") 'consult-grep)
-  (evil-define-key 'normal 'global (kbd "<leader> s r") 'consult-ripgrep)
+  (evil-define-key 'normal 'global (kbd "<leader> s g") 'consult-ripgrep)
   (evil-define-key 'normal 'global (kbd "<leader> /") 'consult-line)
-
-  ;; -------------------------------
-  ;; GIT
-  ;; -------------------------------
-  (evil-define-key 'normal 'global (kbd "<leader> g g") 'magit-status)
-  (evil-define-key 'normal 'global (kbd "<leader> g l") 'magit-log-current)
-  (evil-define-key 'normal 'global (kbd "<leader> g d") 'magit-diff-buffer-file)
-  (evil-define-key 'normal 'global (kbd "] c") 'diff-hl-next-hunk)
-  (evil-define-key 'normal 'global (kbd "[ c") 'diff-hl-previous-hunk)
 
   ;; -------------------------------
   ;; HELP
@@ -143,13 +136,10 @@
   ;; -------------------------------
   (evil-define-key 'normal 'global (kbd "] d") 'flymake-goto-next-error)
   (evil-define-key 'normal 'global (kbd "[ d") 'flymake-goto-prev-error)
-  (evil-define-key 'normal 'global (kbd "<leader> x x") 'consult-flymake)
 
   ;; -------------------------------
   ;; YANK / EMBARK
   ;; -------------------------------
-  (evil-define-key 'normal 'global (kbd "P") 'consult-yank-from-kill-ring)
-  (evil-define-key 'normal 'global (kbd "<leader> P") 'consult-yank-from-kill-ring)
   (evil-define-key 'normal 'global (kbd "<leader> .") 'embark-act)
 
   ;; -------------------------------
@@ -170,72 +160,106 @@
   (evil-define-key 'normal 'global (kbd "<leader> o r c") 'org-roam-capture)
 
   ;; -------------------------------
-  ;; WHICH-KEY DESCRIPTIONS
+  ;; ORG LOCAL LEADER (SPC m)
   ;; -------------------------------
-  (with-eval-after-load 'which-key
-    (which-key-add-key-based-replacements
-      "SPC q" "quit"
-      "SPC w" "save file"
+  (with-eval-after-load 'org
+    (evil-define-key '(normal visual) org-mode-map
+      (kbd "<leader> m t t") 'org-todo
+      (kbd "<leader> m t s") 'org-schedule
+      (kbd "<leader> m t d") 'org-deadline
 
-      "SPC f" "files"
-      "SPC f f" "find file"
-      "SPC f r" "recent files"
-      "SPC f d" "dired"
-      "SPC f p" "personal config"
+      (kbd "<leader> m p a") 'org-priority-up
+      (kbd "<leader> m p d") 'org-priority-down
 
-      "SPC b" "buffers"
-      "SPC b b" "list buffers"
-      "SPC b d" "kill buffer"
-      "SPC b s" "save buffer"
-      "SPC b c" "collapse outline"
-      "SPC b e" "expand outline"
+      (kbd "<leader> m r .") '+org/refile-to-current-file
+      (kbd "<leader> m r c") '+org/refile-to-running-clock
+      (kbd "<leader> m r l") '+org/refile-to-last-location
+      (kbd "<leader> m r f") '+org/refile-to-file
+      (kbd "<leader> m r o") '+org/refile-to-other-window
+      (kbd "<leader> m r O") '+org/refile-to-other-buffer
+      (kbd "<leader> m r v") '+org/refile-to-visible
+      (kbd "<leader> m r r") 'org-refile
+      (kbd "<leader> m r R") 'org-refile-reverse
 
-      "SPC p" "projects"
-      "SPC p p" "switch project"
-      "SPC p f" "find file in project"
-      "SPC p b" "project buffers"
-      "SPC p k" "kill project buffers"
+      (kbd "<leader> m c c") 'org-clock-cancel
+      (kbd "<leader> m c i") 'org-clock-in
+      (kbd "<leader> m c o") 'org-clock-out
 
-      "SPC s" "search"
-      "SPC s f" "find file"
-      "SPC s g" "grep"
-      "SPC s r" "ripgrep"
-      "SPC /" "search line"
+      (kbd "<leader> m s n") 'org-narrow-to-subtree
+      (kbd "<leader> m s w") 'widen
 
-      "SPC g" "git"
-      "SPC g g" "magit status"
-      "SPC g l" "magit log"
-      "SPC g d" "magit diff"
+      (kbd "<leader> m l i") 'org-insert-link
+      (kbd "<leader> m l o") 'org-open-at-point)))
 
-      "SPC h" "help"
-      "SPC h f" "describe function"
-      "SPC h v" "describe variable"
-      "SPC h m" "describe mode"
-      "SPC h k" "describe key"
+;; -------------------------------
+;; WHICH-KEY DESCRIPTIONS
+;; -------------------------------
+(with-eval-after-load 'which-key
+  (which-key-add-key-based-replacements
+    "SPC q" "quit"
+    "SPC w" "save file"
 
-      "SPC u" "undo tree"
+    "SPC f" "files"
+    "SPC f f" "find file"
+    "SPC f r" "recent files"
+    "SPC f d" "dired"
+    "SPC f p" "personal config"
 
-      "SPC x" "misc commands"
-      "SPC x x" "flymake"
+    "SPC b" "buffers"
+    "SPC b b" "list buffers"
+    "SPC b d" "kill buffer"
+    "SPC b s" "save buffer"
+    "SPC b c" "collapse outline"
+    "SPC b e" "expand outline"
 
-      "SPC o" "org"
-      "SPC o a" "agenda"
-      "SPC o c" "capture"
-      "SPC o l" "store link"
-      "SPC o f" "open file"
-      "SPC o r" "org-roam"
-      "SPC o r f" "find node"
-      "SPC o r i" "insert node"
-      "SPC o r g" "graph"
-      "SPC o r c" "capture node"
+    "SPC p" "projects"
+    "SPC p p" "switch project"
+    "SPC p f" "find file in project"
+    "SPC p b" "project buffers"
+    "SPC p k" "kill project buffers"
 
-	  "SPC m" "local-leader"
-	  "SPC m t" "Todo"
-	  "SPC m p" "Priority"
-	  "SPC m r" "Refile"
-	  "SPC m c" "Capture/Clock"
-	  "SPC m s" "Subtree"
-	  "SPC m l" "Links")))
+    "SPC s" "search"
+    "SPC s f" "find file"
+    "SPC s g" "grep"
+    "SPC s r" "ripgrep"
+    "SPC /" "search line"
+
+    "SPC g" "git"
+    "SPC g g" "magit status"
+    "SPC g l" "magit log"
+    "SPC g d" "magit diff"
+
+    "SPC h" "help"
+    "SPC h f" "describe function"
+    "SPC h v" "describe variable"
+    "SPC h m" "describe mode"
+    "SPC h k" "describe key"
+
+    "SPC u" "undo tree"
+
+    "SPC x" "misc commands"
+    "SPC x x" "flymake"
+
+    "SPC o" "org"
+    "SPC o a" "agenda"
+    "SPC o c" "capture"
+    "SPC o l" "store link"
+    "SPC o f" "open file"
+    "SPC o r" "org-roam"
+    "SPC o r f" "find node"
+    "SPC o r i" "insert node"
+    "SPC o r g" "graph"
+    "SPC o r c" "capture node"
+
+    ;; Local leader (SPC m)
+    "SPC m" "local-leader"
+    "SPC m t" "todo"
+    "SPC m p" "priority"
+    "SPC m r" "refile"
+    "SPC m c" "capture/clock"
+    "SPC m s" "subtree"
+    "SPC m l" "links"))
 
 (provide 'keymaps)
 ;;; keymaps.el ends here
+

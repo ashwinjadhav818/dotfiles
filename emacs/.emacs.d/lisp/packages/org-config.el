@@ -47,52 +47,6 @@
            :prepend t))))
 
 
-;; Ensure general is available
-(use-package general
-  :ensure t
-  :config
-  ;; Define SPC m as "localleader"
-  (general-create-definer org-local-leader
-    :prefix "SPC m"
-    :states '(normal visual)
-    :keymaps 'org-mode-map)
-
-  ;; Org keybinds (similar to Doom)
-  (org-local-leader
-    "t" '(:ignore t :which-key "todo")
-    "tt" '(org-todo :which-key "cycle todo")
-    "ts" '(org-schedule :which-key "schedule")
-    "td" '(org-deadline :which-key "deadline")
-
-    "p" '(:ignore t :which-key "priority")
-    "pa" '(org-priority-up :which-key "increase")
-    "pd" '(org-priority-down :which-key "decrease")
-
-    "r" '(:ignore t :which-key "refile")
-    "r." '(+org/refile-to-current-file    :which-key "to current file")
-    "rc" '(+org/refile-to-running-clock   :which-key "to running clock")
-    "rl" '(+org/refile-to-last-location   :which-key "to last location")
-    "rf" '(+org/refile-to-file            :which-key "to file")
-    "ro" '(+org/refile-to-other-window    :which-key "to other window")
-    "rO" '(+org/refile-to-other-buffer    :which-key "to other buffer")
-    "rv" '(+org/refile-to-visible         :which-key "to visible")
-    "rr" '(org-refile                     :which-key "refile")
-    "rR" '(org-refile-reverse             :which-key "reverse"))
-
-    "c" '(:ignore t :which-key "capture/clock")
-    "cc" '(org-capture :which-key "capture")
-    "ci" '(org-clock-in :which-key "clock in")
-    "co" '(org-clock-out :which-key "clock out")
-
-    "s" '(:ignore t :which-key "subtree")
-    "sn" '(org-narrow-to-subtree :which-key "narrow")
-    "sw" '(widen :which-key "widen")
-
-    "l" '(:ignore t :which-key "links")
-    "li" '(org-insert-link :which-key "insert")
-    "lo" '(org-open-at-point :which-key "open"))
-
-
 ;; -------------------------------
 ;; ORG-ROAM
 ;; -------------------------------
