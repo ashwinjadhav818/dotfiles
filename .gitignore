@@ -20,6 +20,7 @@ tmp-*/
 emacs/.emacs.d/.cache/
 emacs/.emacs.d/auto-save-list/
 emacs/.emacs.d/bookmarks
+emacs/.emacs.d/projects
 emacs/.emacs.d/history
 emacs/.emacs.d/places
 emacs/.emacs.d/recentf
