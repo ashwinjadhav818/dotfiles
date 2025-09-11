@@ -15,11 +15,11 @@
 (require 'packages)
 (require 'config)
 (require 'functions)
+(require 'keymaps)
 
 ;; Per-package configs
 (require 'editing)
 (require 'terminal)
-(require 'keymaps)
 (require 'misc)
 (require 'org-config)
 (require 'org-appearance)
