@@ -17,6 +17,7 @@
 
 -  [vim](https://github.com/vim/vim/) ([NeoVim](https://github.com/neovim/neovim/) & [LunarVim](https://github.com/LunarVim/LunarVim/))
    -  Plugins are managed with [Lazy](https://github.com/folke/lazy.nvim.git")
+-  [emacs](https://www.gnu.org/software/emacs/)
 -  [doom emacs](https://github.com/doomemacs/doomemacs)
 -  [helix](https://github.com/helix-editor/helix/)
 -  [bash](https://www.gnu.org/software/bash/)
