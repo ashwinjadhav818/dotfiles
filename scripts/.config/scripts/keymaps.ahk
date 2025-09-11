@@ -8,7 +8,7 @@ DEFAULT_TERM := EnvGet("DEFAULT_TERM")
 #Enter::Run DEFAULT_TERM
 #s::!Space
 ;!Space::#s
-#w::Run "emacsclientw -c -a 'emacs'"
+#w::Run "conhost --headless start_emacs_client.bat"
 #b::Run "C:\tools\cromite\chrome.exe"
 
 ; Always on Top
