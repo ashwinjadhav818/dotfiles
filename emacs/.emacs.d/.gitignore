@@ -1,0 +1,41 @@
+# ----------------------------------------
+# Emacs state/cache/history
+# ----------------------------------------
+.cache/
+auto-save-list/
+bookmarks
+projects
+history
+places
+recentf
+savehist
+org-roam.db
+
+# ----------------------------------------
+# Emacs package managers
+# ----------------------------------------
+elpa/
+straight/
+server/
+
+# ----------------------------------------
+# Miscellaneous Emacs files
+# ----------------------------------------
+.emacs.desktop
+.emacs.desktop.lock
+.mc-lists.el
+ac-comphist.dat
+ido.last
+network-security.data
+projectile.cache
+projectile-bookmarks.eld
+url/
+transient/
+image-dired/
+eshell/
+tramp/
+gnus.el
+custom-vars.el
+secrets.el
+ielm-history.eld
+

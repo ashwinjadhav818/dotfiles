@@ -1,0 +1,61 @@
+#+TITLE: ashwin's emacs config
+#+OPTIONS: toc:2 num:nil
+
+* Overview
+This repository contains my personal Emacs configuration.  
+It is mainly focused on Org-mode and Org-roam functionality. It is structured for readability and modularity, and it is managed as a subdirectory of my larger =dotfiles= repo.
+
+The repo lives at:
+#+begin_src shell
+~/.emacs.d
+#+end_src
+
+* Features
+- Modular configuration (split across =lisp/= and =lisp/packages/=).
+- Package management with [[https://github.com/jwiegley/use-package][use-package]].
+- Custom evil keybindings, Org-mode setup.
+- Optimized for performance (GC tweaks, lazy loading).
+- Theming and UI tweaks for a clean editing experience.
+
+* Installation
+Clone the repo into your home directory:
+#+begin_src shell
+git clone https://github.com/ashwinjadhav818/.emacs.d.git ~/.emacs.d
+#+end_src
+
+* File Structure
+#+begin_src text
+.emacs.d/
+├── init.el          ;; Entry point
+└── lisp/            ;; Modular config
+    ├── config.el
+    ├── packages.el
+    └── packages/
+        ├── editing.el
+        ├── git.el
+        ├── keymaps.el
+        ├── misc.el
+        ├── org.el
+        ├── programming.el
+        ├── themes.el
+        └── ui.el
+#+end_src
+
+* Usage
+Start Emacs normally:
+#+begin_src shell
+emacs
+#+end_src
+
+Or use the daemon + client setup:
+#+begin_src shell
+emacs --daemon
+emacsclient -c
+#+end_src
+
+* Acknowledgements
+- [[https://github.com/LionyxML/emacs-kick][Emacs Kick]]
+  - Emacs Kick is the backbone of this config: a lightweight starter kit that provided the initial structure and package setup on which I built my own config.
+- [[https://github.com/doomemacs/doomemacs][Doom Emacs]]
+  - Source of inspiration for modular organization, performance tweaks, and keybinding ideas.
+
