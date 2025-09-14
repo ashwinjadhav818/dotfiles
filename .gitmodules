@@ -1,3 +1,4 @@
 [submodule "emacs/.emacs.d"]
-	path = emacs/.emacs.d
-	url = https://github.com/ashwinjadhav818/.emacs.d
+    path = emacs/.emacs.d
+    url = https://github.com/ashwinjadhav818/emacs
+    branch = main
