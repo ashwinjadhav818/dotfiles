@@ -126,6 +126,9 @@ fi
 # StarShip prompt
 eval "$(starship init bash)"
 
+# Zoxide Setup
+eval "$(zoxide init bash)"
+
 # Start syncthing on android
 if [ "$(uname -o)" == "Android"  ]; then
     echo "Termux environment detected."
