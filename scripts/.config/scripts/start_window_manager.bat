@@ -11,7 +11,6 @@ REM Start common background scripts
 start "Keymaps" /b autohotkey "%ConfigPath%\scripts\keymaps.ahk"
 start "Fixes" /b autohotkey "%ConfigPath%\scripts\fixes.ahk"
 start "Emacs Deamon" conhost --headless sh -c "emacs --daemon" 
-start "Kanata" conhost --headless %ConfigPath%\kanata\kanata_gui.exe -c "%ConfigPath%\kanata\kanata.kbd"
 
 echo Background services started.
 echo ---
