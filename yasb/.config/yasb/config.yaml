@@ -11,29 +11,28 @@ bars:
     screens: ["*"]
     class_name: "yasb-bar"
     alignment:
-      position: "top"
+      position: "bottom"
       center: false
     blur_effect:
       enabled: true 
-      acrylic: false
       dark_mode: true
-      round_corners: true
+      round_corners: false 
       border_color: None
     window_flags:
-      always_on_top: false
+      always_on_top: false 
       windows_app_bar: true
     dimensions:
       width: "100%"
       height: 34
     padding:
-      top: 6
-      left: 10
+      top: 0
+      left: 0
       bottom: 0
-      right: 10
+      right: 0
     widgets:
       left: ["home","komorebi_workspaces","komorebi_active_layout","glazewm_workspaces","glazewm_tiling_direction","active_window"]
-      center: ["clock","apps"]
-      right: ["systray","brightness","wifi","battery","volume","notifications"]
+      center: ["taskbar"]
+      right: ["systray","brightness","wifi","battery","volume","clock"]
 widgets:
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
@@ -52,6 +51,8 @@ widgets:
       label: "{%a, %d %b %H:%M}"
       label_alt: "{%A, %d %B %Y %H:%M:%S}"
       timezones: []
+      callbacks:
+        on_left: "toggle_notification"
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
@@ -213,6 +214,31 @@ widgets:
         - { icon: "\uf0a2", launch: "notification_center" }
         - { icon: "\uf002", launch: "search" }
         - { icon: "\uf489", launch: "%DEFAULT_TERM%" }
+  taskbar:
+    type: "yasb.taskbar.TaskbarWidget"
+    options:
+      icon_size: 16
+      tooltip: true
+      show_only_visible: false
+      strict_filtering: true
+      monitor_exclusive: false
+      animation:
+        enabled: true
+      preview:
+        enabled: false
+        width: 240
+        delay: 400
+        padding: 8
+        margin: 8
+      title_label:
+        enabled: false
+        show: "always"
+        min_length: 10
+        max_length: 30
+      ignore_apps:
+        processes: []
+        titles: []
+        classes: []
   home:
     type: "yasb.home.HomeWidget"
     options:

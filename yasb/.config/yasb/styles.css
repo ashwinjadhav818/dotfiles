@@ -1,75 +1,74 @@
 /* --- Root Variables (Colors) --- */
 :root {
-    /* --- Mica Inspired Color Variables --- */
-    --background-color: rgba(49, 49, 49, 0.6);
-    --foreground-color: rgb(237, 238, 240);
-    --accent-color: #0078d4;
-    --border-color: rgb(53, 59, 69);
-    --icon-color: rgb(169, 174, 184);
-    --icon-hover: rgba(169, 174, 184, 0.8);
-    --hover-color: rgba(93, 114, 135, 0.12);
-    --highlight-color: rgba(61, 61, 61, 0.8);
-    --active-color: rgb(93, 114, 135);
-    --inactive-color: rgba(93, 114, 135, 0.5);
+  /* --- Mica Inspired Color Variables --- */
+  --background-color: rgba(49, 49, 49, 0.3);
+  --foreground-color: rgb(237, 238, 240);
+  --accent-color: #0078d4;
+  --border-color: rgb(53, 59, 69);
+  --icon-color: rgb(169, 174, 184);
+  --icon-hover: rgba(169, 174, 184, 0.8);
+  --hover-color: rgba(93, 114, 135, 0.12);
+  --highlight-color: rgba(61, 61, 61, 0.8);
+  --active-color: rgb(93, 114, 135);
+  --inactive-color: rgba(93, 114, 135, 0.5);
 }
 
 /* --- Base Styles --- */
 * {
-    font-size: 12px;
-    color: var(--foreground-color);
-    font-weight: 600;
-    font-family: "Segoe UI", "Segoe Fluent Icons", "JetBrainsMono NFP";
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-size: 12px;
+  color: var(--foreground-color);
+  font-weight: 600;
+  font-family: "Segoe UI", "Segoe Fluent Icons", "JetBrainsMono NFP";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* --- Yasb Bar Itself --- */
 .yasb-bar {
-    background-color: var(--background-color);
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    padding: 0 6px;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  padding: 0 6px;
 }
 
 /* --- Individual Widgets --- */
 .widget {
-    padding: 0 12px;
-    margin: 0;
+  padding: 0 12px;
+  margin: 0;
 }
 
 .container-right .widget .icon:hover {
-    color: var(--icon-hover);
+  color: var(--icon-hover);
 }
 
 /* --- Icons --- */
 .icon {
-    font-size: 14px;
-    color: var(--icon-color);
+  font-size: 14px;
+  color: var(--icon-color);
 }
 
 /* --- Widget Labels --- */
 .widget .label {
-    padding: 0px 2px;
+  padding: 0px 2px;
 }
 
 /* --- Apps Widget Specific --- */
 .apps-widget {
-    padding: 0 4p 0 2px;
+  padding: 0 4p 0 2px;
 }
 
 .apps-widget .widget-container .label {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 /* --- Komorebi Active Layout --- */
 .komorebi-active-layout {
-    padding: 0 4px;
+  padding: 0 4px;
 }
 
 .komorebi-active-layout .label {
-    font-weight: 600;
-    padding-bottom: 2px;
+  font-weight: 600;
+  padding-bottom: 2px;
 }
 
 /* --- Workspace and Layout Containers --- */
@@ -78,88 +77,88 @@
 .komorebi-active-layout .widget-container,
 .glazewm-workspaces .widget-container,
 .glazewm-tiling-direction .widget-container {
-    background-color: var(--highlight-color);
-    border-radius: 12px;
-    margin: 4px 0;
-    border: 1px solid var(--border-color);
+  background-color: var(--highlight-color);
+  border-radius: 12px;
+  margin: 4px 0;
+  border: 1px solid var(--border-color);
 }
 
 /* --- Komorebi & GlazeWM Workspaces --- */
 .komorebi-workspaces,
 .glazewm-workspaces {
-    padding: 0;
+  padding: 0;
 }
 
 .komorebi-workspaces .offline-status,
 .glazewm-workspaces .offline-status {
-    color: var(--foreground-color);
-    font-size: 12px;
-    padding: 0 4px;
-    font-weight: 600;
+  color: var(--foreground-color);
+  font-size: 12px;
+  padding: 0 4px;
+  font-weight: 600;
 }
 
 .glazewm-workspaces .widget-container {
-    padding: 0 30px;
+  padding: 0 30px;
 }
 
 .komorebi-workspaces .ws-btn,
 .glazewm-workspaces .ws-btn {
-    color: transparent;
-    width: 10px;
-    height: 10px;
-    background-color: var(--active-color);
-    border-radius: 5px;
-    margin: 0 2px;
-    font-size: 1px;
+  color: transparent;
+  width: 10px;
+  height: 10px;
+  background-color: var(--active-color);
+  border-radius: 5px;
+  margin: 0 2px;
+  font-size: 1px;
 }
 
 .komorebi-workspaces .ws-btn:hover,
 .glazewm-workspaces .ws-btn:hover {
-    color: var(--accent-color);
-    background-color: var(--hover-color);
+  color: var(--accent-color);
+  background-color: var(--hover-color);
 }
 
 .komorebi-workspaces .ws-btn.populated,
 .glazewm-workspaces .ws-btn.populated {
-    width: 10px;
-    height: 10px;
-    background-color: var(--active-color);
-    border-radius: 5px;
-    margin: 0 2px;
-    font-size: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--active-color);
+  border-radius: 5px;
+  margin: 0 2px;
+  font-size: 1px;
 }
 
 .komorebi-workspaces .ws-btn.active,
 .glazewm-workspaces .ws-btn.active_populated,
 .glazewm-workspaces .ws-btn.active_empty {
-    color: transparent;
-    background-color: var(--icon-color);
-    width: 36px;
-    height: 10px;
-    border-radius: 5px;
+  color: transparent;
+  background-color: var(--icon-color);
+  width: 36px;
+  height: 10px;
+  border-radius: 5px;
 }
 
 /* --- Glazewm Tiling Direction --- */
 .glazewm-tiling-direction {
-    background-color: transparent;
-    padding: 0;
-    margin: 4px 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 4px 0;
 }
 
 .glazewm-tiling-direction .btn {
-    font-size: 14px;
-    width: 14px;
-    padding: 0 4px 0 12px;
-    color: var(--foreground-color);
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2px;
+  font-size: 14px;
+  width: 14px;
+  padding: 0 4px 0 12px;
+  color: var(--foreground-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px;
 }
 
 .glazewm-tiling-direction .btn:hover {
-    background-color: var(--hover-color);
+  background-color: var(--hover-color);
 }
 
 /* --- Common Widget Padding --- */
@@ -168,137 +167,168 @@
 .wifi-widget,
 .volume-widget,
 .brightness-widget,
-.notification-widget {
-    padding: 0 6px;
+.clock-widget {
+  padding: 0 6px;
 }
 
 /* --- Apps Widget Label --- */
 .apps-widget .label {
-    font-size: 14px;
-    padding: 0 2px;
-    color: var(--foreground-color);
+  font-size: 14px;
+  padding: 0 2px;
+  color: var(--foreground-color);
 }
 
 /* --- Volume Widget --- */
 .volume-widget .icon {
-    color: var(--foreground-color);
-    margin: 1px 2px 0 0;
+  color: var(--foreground-color);
+  margin: 1px 2px 0 0;
 }
 
 .volume-slider {
-    border: none;
+  border: none;
 }
 
 .audio-menu {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 .audio-container .device {
-    background-color: transparent;
-    border: none;
-    padding: 6px 8px 6px 4px;
-    margin: 2px 0;
-    font-size: 12px;
-    border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  padding: 6px 8px 6px 4px;
+  margin: 2px 0;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 .audio-container .device.selected {
-    background-color: var(--highlight-color);
+  background-color: var(--highlight-color);
 }
 
 .audio-container .device:hover {
-    background-color: var(--hover-color);
+  background-color: var(--hover-color);
 }
 
 .battery-widget .icon {
-    padding-top: 2px;
-    font-size: 16px;
-    color: var(--foreground-color);
+  padding-top: 2px;
+  font-size: 16px;
+  color: var(--foreground-color);
 }
 
 .battery-widget .widget-container .icon.status-charging {
-    padding-top: 4px;
-    font-size: 12px;
+  padding-top: 4px;
+  font-size: 12px;
 }
 
 /* --- Brightness Widget --- */
 .brightness-widget .icon {
-    color: var(--foreground-color);
+  color: var(--foreground-color);
 }
 
 /* --- Weather Widget --- */
 .weather-widget .icon {
-    font-size: 18px;
-    margin: 0 2px 1px 0;
+  font-size: 18px;
+  margin: 0 2px 1px 0;
 }
 
 /* --- Wallpapers Widget --- */
 .wallpapers-widget .icon {
-    color: var(--foreground-color);
-    font-size: 14px;
-    margin: 0;
+  color: var(--foreground-color);
+  font-size: 14px;
+  margin: 0;
 }
 
 /* --- Systray --- */
 .systray {
-    border: none;
-    margin-right: -12px;
-    display: flex;
-    align-items: center;
+  border: none;
+  margin-right: -12px;
+  display: flex;
+  align-items: center;
 }
 
 .systray .unpinned-container {
-    border-radius: 8px;
-    padding: 2px;
+  border-radius: 8px;
+  padding: 2px;
 }
 
 .systray .pinned-container {
-    background: transparent;
-    padding: 2px;
+  background: transparent;
+  padding: 2px;
 }
 
 .systray .button {
-    margin: 0 2px;
-    color: var(--foreground-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
+  margin: 0 2px;
+  color: var(--foreground-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
 }
 
 .systray .button:hover {
-    background: var(--hover-color);
+  background: var(--hover-color);
 }
 
 .systray .unpinned-visibility-btn {
-    border-radius: 4px;
-    font-size: 25px;
-    margin: 0 4px;
+  border-radius: 4px;
+  font-size: 25px;
+  margin: 0 4px;
 }
 
 /* --- Home --- */
 .home-widget .icon {
-    color: #b4befe;
+  color: #b4befe;
 }
 
 .home-widget .icon:hover {
-    color: #cdd6f4;
+  color: #cdd6f4;
 }
 
 .home-menu {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 .home-menu .menu-item {
-    padding: 6px 48px 7px 16px;
-    font-size: 12px;
+  padding: 6px 48px 7px 16px;
+  font-size: 12px;
 }
 
 .home-menu .menu-item:hover {
-    background-color: var(--hover-color);
+  background-color: var(--hover-color);
 }
 
 .home-menu .separator {
-    max-height: 1px;
-    background-color: var(--border-color);
+  max-height: 1px;
+  background-color: var(--border-color);
+}
+
+/* --- Taskbar --- */
+.taskbar-widget .app-container {
+  margin: 4px 2px;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+.taskbar-widget .app-container.foreground {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.taskbar-widget .app-container.flashing {
+  background-color: rgba(255, 106, 106, 0.63);
+}
+.taskbar-widget .app-container .app-title {
+  padding-left: 4px;
+}
+/* Taskbar preview popup is very limited in styling options, do not use margins/paddings here */
+.taskbar-preview {
+  border-radius: 8px;
+  background-color: #2b2c2d;
+}
+.taskbar-preview .header {
+  padding-bottom: 12px;
+  padding-top: 4px;
+}
+.taskbar-preview .header .title {
+  color: #d6d6d6;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 13px;
 }
