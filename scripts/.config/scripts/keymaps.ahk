@@ -16,3 +16,28 @@ DEFAULT_TERM := EnvGet("DEFAULT_TERM")
 
 ; Touchpad
 +^#F22:: #a ; Detects three-finger tap (Ctrl+Shift+Win+F22)
+
+; Toggle Windows Taskbar visibility with Ctrl+Alt+T
+
+hidden := false  ; global toggle state
+
+^!t:: {
+    global hidden
+
+    if hidden {
+        ; Show taskbars if they exist
+        if WinExist("ahk_class Shell_TrayWnd")
+            WinShow("ahk_class Shell_TrayWnd")
+        if WinExist("ahk_class Shell_SecondaryTrayWnd")
+            WinShow("ahk_class Shell_SecondaryTrayWnd")
+        hidden := false
+    } else {
+        ; Hide taskbars if they exist
+        if WinExist("ahk_class Shell_TrayWnd")
+            WinHide("ahk_class Shell_TrayWnd")
+        if WinExist("ahk_class Shell_SecondaryTrayWnd")
+            WinHide("ahk_class Shell_SecondaryTrayWnd")
+        hidden := true
+    }
+}
+
