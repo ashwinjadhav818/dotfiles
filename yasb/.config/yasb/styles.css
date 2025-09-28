@@ -15,7 +15,7 @@
 
 /* --- Base Styles --- */
 * {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--foreground-color);
   font-weight: 600;
   font-family: "Segoe UI", "Segoe Fluent Icons", "JetBrainsMono NFP";
@@ -33,12 +33,10 @@
 
 /* --- Individual Widgets --- */
 .widget {
-  padding: 0 12px;
-  margin: 0;
-}
-
-.container-right .widget .icon:hover {
-  color: var(--icon-hover);
+  padding: 2px 12px;
+  margin: 6px 2px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* --- Icons --- */
@@ -47,14 +45,9 @@
   color: var(--icon-color);
 }
 
-/* --- Widget Labels --- */
-.widget .label {
-  padding: 0px 2px;
-}
-
 /* --- Apps Widget Specific --- */
 .apps-widget {
-  padding: 0 4p 0 2px;
+  padding: 0 4px 0 2px;
 }
 
 .apps-widget .widget-container .label {
@@ -63,12 +56,12 @@
 
 /* --- Komorebi Active Layout --- */
 .komorebi-active-layout {
-  padding: 0 4px;
+  padding: 0 4px 3px 4px;
 }
 
 .komorebi-active-layout .label {
   font-weight: 600;
-  padding-bottom: 2px;
+  font-size: 12px;
 }
 
 /* --- Workspace and Layout Containers --- */
@@ -123,7 +116,6 @@
   width: 10px;
   height: 10px;
   background-color: var(--active-color);
-  border-radius: 5px;
   margin: 0 2px;
   font-size: 1px;
 }
@@ -135,7 +127,6 @@
   background-color: var(--icon-color);
   width: 36px;
   height: 10px;
-  border-radius: 5px;
 }
 
 /* --- Glazewm Tiling Direction --- */
@@ -241,7 +232,6 @@
 /* --- Systray --- */
 .systray {
   border: none;
-  margin-right: -12px;
   display: flex;
   align-items: center;
 }
@@ -258,6 +248,7 @@
 
 .systray .button {
   margin: 0 2px;
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--foreground-color);
   display: flex;
   align-items: center;
@@ -270,14 +261,15 @@
 }
 
 .systray .unpinned-visibility-btn {
+  font-size: 28px;
+  margin-bottom: 2px;
   border-radius: 4px;
-  font-size: 25px;
-  margin: 0 4px;
 }
 
 /* --- Home --- */
 .home-widget .icon {
   color: #b4befe;
+  margin-bottom: 2px;
 }
 
 .home-widget .icon:hover {
@@ -304,12 +296,9 @@
 
 /* --- Taskbar --- */
 .taskbar-widget .app-container {
-  margin: 4px 2px;
+  margin: 0 2px;
   border-radius: 4px;
   padding: 0 4px;
-}
-.taskbar-widget .app-container.foreground {
-  background-color: rgba(255, 255, 255, 0.1);
 }
 .taskbar-widget .app-container.flashing {
   background-color: rgba(255, 106, 106, 0.63);

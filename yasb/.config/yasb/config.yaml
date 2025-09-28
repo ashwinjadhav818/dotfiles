@@ -23,7 +23,7 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 34
+      height: 40 
     padding:
       top: 0
       left: 0
@@ -124,7 +124,17 @@ widgets:
         - "\uf027"
         - "\uf027"
         - "\uf028"
+      audio_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "up"
+        offset_top: 10
+        offset_left: 100 
       callbacks:
+        on_middle: "toggle_mute"
         on_right: "exec cmd.exe /c start ms-settings:sound"
   battery:
     type: "yasb.battery.BatteryWidget"
@@ -146,13 +156,16 @@ widgets:
       label: "<span>{icon}</span>"
       label_alt: "Brightness {percent}%"
       tooltip: true
+      scroll_step: 5
       brightness_menu:
         blur: true
         round_corners: true
         round_corners_type: "normal"
         border_color: "System"
         alignment: "right"
-        direction: "down"
+        direction: "up"
+        offset_top: 10
+        offset_left: 100 
       brightness_icons: [
         "\udb80\udcde",
         "\udb80\udcdd",
@@ -225,7 +238,7 @@ widgets:
       animation:
         enabled: true
       preview:
-        enabled: false
+        enabled: true 
         width: 240
         delay: 400
         padding: 8
@@ -254,7 +267,7 @@ widgets:
       round_corners: true
       round_corners_type: "normal"
       border_color: "System"
-      offset_top: 6
+      offset_top: 10
       offset_left: 0
       container_padding: 
         top: 0
@@ -262,7 +275,7 @@ widgets:
         bottom: 0
         right: 0
       alignment: "left"
-      direction: "down"
+      direction: "up"
       menu_labels:
         shutdown: "Shutdown"
         restart: "Restart"
