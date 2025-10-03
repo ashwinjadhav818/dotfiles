@@ -52,7 +52,7 @@ widgets:
       label_alt: "{%A, %d %B %Y %H:%M:%S}"
       timezones: []
       callbacks:
-        on_left: "toggle_notification"
+        on_left: "exec notification_center"
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
@@ -141,15 +141,28 @@ widgets:
     options:
       label: "<span>{icon}</span> {percent}%"
       label_alt: "<span>{icon}</span> {percent}% | time: {time_remaining}"
+      update_interval: 5000
+      time_remaining_natural: False
+      hide_unsupported: True
       charging_options:
         icon_format: "{charging_icon}"
+        blink_charging_icon: true
+        blink_interval: 500
+      status_thresholds:
+        critical: 10
+        low: 25
+        medium: 75
+        high: 95
+        full: 100
       status_icons:
-        icon_charging: "\ue945"
-        icon_critical: "\ue851"
-        icon_low: "\ue853"
-        icon_medium: "\ue855"
-        icon_high: "\ue857"
-        icon_full: "\ue83f"
+        icon_charging: "\uf0e7"
+        icon_critical: "\uf244"
+        icon_low: "\uf243"
+        icon_medium: "\uf242"
+        icon_high: "\uf241"
+        icon_full: "\uf240"
+      callbacks:
+        on_left: "exec quick_settings"
   brightness:
     type: "yasb.brightness.BrightnessWidget"
     options:
@@ -186,9 +199,41 @@ widgets:
       label_alt: "{wifi_name} {wifi_strength}%"
       update_interval: 5000
       callbacks:
-        on_left: "exec quick_settings"
+        on_left: "toggle_menu"
         on_middle: "exec cmd.exe /c start ms-settings:network"
-        on_right: "toggle_label"
+        on_right: "exec quick_settings"
+      ethernet_label: "<span>{wifi_icon}</span>"
+      ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
+      ethernet_icon: "\ueba9"
+      get_exact_wifi_strength: false  # Optional. Will require location access permission if true.
+      wifi_icons: [
+        "\udb82\udd2e",  # Icon for 0% strength
+        "\udb82\udd1f",  # Icon for 1-24% strength
+        "\udb82\udd22",  # Icon for 25-49% strength
+        "\udb82\udd25",  # Icon for 50-74% strength
+        "\udb82\udd28"   # Icon for 75-100% strength
+      ]
+      menu_config:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
+        offset_top: 100
+        offset_left: 200
+        wifi_icons_secured: [
+          "\ue670",
+          "\ue671",
+          "\ue672",
+          "\ue673",
+        ]
+        wifi_icons_unsecured: [
+          "\uec3c",
+          "\uec3d",
+          "\uec3e",
+          "\uec3f",
+        ]
   systray:
     type: "yasb.systray.SystrayWidget"
     options:

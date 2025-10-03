@@ -1,121 +1,121 @@
 {
-    "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
-    "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
-    "window_hiding_behaviour": "Cloak",
-    "cross_monitor_move_behaviour": "Insert",
-    "default_workspace_padding": 4,
-    "default_container_padding": 4,
-    "border": false,
-    "border_width": 2,
-    "border_offset": 0,
-    "mouse_follows_focus": false,
-    "theme": {
-        "palette": "Base16",
-        "name": "TokyoNightDark",
-        "unfocused_border": "Base03",
-        "bar_accent": "Base0D"
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 4,
+  "default_container_padding": 4,
+  "border": true,
+  "border_width": 2,
+  "border_offset": 0,
+  "mouse_follows_focus": false,
+  "theme": {
+    "palette": "Base16",
+    "name": "TokyoNightDark",
+    "unfocused_border": "Base03",
+    "bar_accent": "Base0D"
+  },
+  "border_colours": {
+    "single": {
+      "r": 22,
+      "g": 23,
+      "b": 25
     },
-    "border_colours": {
-        "single": {
-            "r": 22,
-            "g": 23,
-            "b": 25
-        },
-        "stack": {
-            "r": 32,
-            "g": 57,
-            "b": 123
-        },
-        "monocle": {
-            "r": 255,
-            "g": 51,
-            "b": 153
-        }
+    "stack": {
+      "r": 32,
+      "g": 57,
+      "b": 123
     },
-    "monitors": [
+    "monocle": {
+      "r": 255,
+      "g": 51,
+      "b": 153
+    }
+  },
+  "monitors": [
+    {
+      "workspaces": [
         {
-            "workspaces": [
-                {
-                    "name": "1",
-                    "layout": "BSP"
-                },
-                {
-                    "name": "2",
-                    "layout": "UltrawideVerticalStack"
-                },
-                {
-                    "name": "3",
-                    "layout": "Grid"
-                },
-                {
-                    "name": "4",
-                    "layout": "VerticalStack"
-                }
-            ]
+          "name": "1",
+          "layout": "BSP"
+        },
+        {
+          "name": "2",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "3",
+          "layout": "Grid"
+        },
+        {
+          "name": "4",
+          "layout": "VerticalStack"
         }
-    ],
-    "stackbar": {
-        "label": "Title",
-        "height": 25,
-        "mode": "OnStack",
-        "tabs": {
-            "focused_text": "#00a542",
-            "unfocused_text": "#b3b3b3",
-            "background": "#141414",
-            "font_size": 14
-        }
+      ]
+    }
+  ],
+  "stackbar": {
+    "label": "Title",
+    "height": 25,
+    "mode": "OnStack",
+    "tabs": {
+      "focused_text": "#00a542",
+      "unfocused_text": "#b3b3b3",
+      "background": "#141414",
+      "font_size": 14
+    }
+  },
+  "transparency": true,
+  "transparency_alpha": 215,
+  "animation": {
+    "enabled": false,
+    "duration": 300,
+    "fps": 60,
+    "style": {
+      "movement": "EaseOutBack",
+      "transparency": "Linear"
+    }
+  },
+  "ignore_rules": [
+    {
+      "kind": "Exe",
+      "id": "kanata_gui",
+      "matching_strategy": "Equals"
     },
-    "transparency": true,
-    "transparency_alpha": 215,
-    "animation": {
-        "enabled": false,
-        "duration": 300,
-        "fps": 60,
-        "style": {
-            "movement": "EaseOutBack",
-            "transparency": "Linear"
-        }
+    {
+      "kind": "Title",
+      "id": "Arc extension popup",
+      "matching_strategy": "Equals"
     },
-    "ignore_rules": [
-        {
-            "kind": "Exe",
-            "id": "kanata_gui",
-            "matching_strategy": "Equals"
-        },
-        {
-            "kind": "Title",
-            "id": "Arc extension popup",
-            "matching_strategy": "Equals"
-        },
-        {
-            "kind": "Title",
-            "id": "Picture in picture",
-            "matching_strategy": "Equals"
-        },
-        {
-            "kind": "Title",
-            "id": "Picture-in-Picture",
-            "matching_strategy": "Equals"
-        },
-        {
-            "kind": "Title",
-            "id": "ShareX",
-            "matching_strategy": "Equals"
-        },
-        {
-            "kind": "Title",
-            "id": "ShareX",
-            "matching_strategy": "Equals"
-        },
-        {
-            "kind": "Title",
-            "id": "Command Pallet",
-            "matching_strategy": "Equals"
-        },
-        {
-            "kind": "Exe",
-            "id": "Obsidian",
-            "matching_strategy": "Equals"
-        }
-    ]
+    {
+      "kind": "Title",
+      "id": "Picture in picture",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Picture-in-Picture",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "ShareX",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "ShareX",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Command Pallet",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Obsidian",
+      "matching_strategy": "Equals"
+    }
+  ]
 }
