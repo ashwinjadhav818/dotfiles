@@ -9,7 +9,7 @@ DEFAULT_TERM := EnvGet("DEFAULT_TERM")
 ;#s::!Space
 !Space::#s
 #w::Run "conhost --headless start_emacs_client.bat"
-#b::Run "C:\tools\cromite\chrome.exe"
+#b::Run "C:\Program Files\Zen Browser\zen.exe"
 
 ; Always on Top
 #+p:: WinSetAlwaysOnTop(-1, "A")

@@ -10,6 +10,7 @@ set "ConfigPath=%USERPROFILE%\.config"
 REM Start common background scripts
 start "Keymaps" /b autohotkey "%ConfigPath%\scripts\keymaps.ahk"
 start "Fixes" /b autohotkey "%ConfigPath%\scripts\fixes.ahk"
+start "Scripts Menu" /b autohotkey "%ConfigPath%\scripts\scripts_menu.ahk"
 start "Emacs Deamon" conhost --headless sh -c "emacs --daemon" 
 
 echo Background services started.
