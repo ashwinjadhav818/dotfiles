@@ -202,7 +202,46 @@ setupWorkspace(10)
 
 #^c::createVirtualDesktop()
 #^d::deleteVirtualDesktop()
-#q::!F4
+#q::Send !{F4}
 #d::Send ^{Esc}
 #y::minMaxActiveWindow()
 #+m::swapAll()
+
+; ==============================
+; === AUTO-PIN PICTURE WINDOW ===
+; ==============================
+
+; check every 2 seconds
+SetTimer, PinPiP, 500
+Return
+
+PinPiP:
+    ; Load the VirtualDesktopAccessor DLL if not yet loaded
+    if !hDll {
+        hDll := DllCall("GetModuleHandle", "str", "VirtualDesktopAccessor.dll", "ptr")
+        if !hDll
+            hDll := DllCall("LoadLibrary", "str", A_ScriptDir "\VirtualDesktopAccessor.dll", "ptr")
+        if !hDll
+            Return
+        fnPin      := DllCall("GetProcAddress", "ptr", hDll, "astr", "PinWindow", "ptr")
+        fnIsPinned := DllCall("GetProcAddress", "ptr", hDll, "astr", "IsPinnedWindow", "ptr")
+    }
+
+    ; loop through all windows
+    WinGet, idList, List
+    Loop, %idList%
+    {
+        hwnd := idList%A_Index%
+        WinGetTitle, title, ahk_id %hwnd%
+        if InStr(title, "Picture-in-Picture")
+        {
+            isPinned := DllCall(fnIsPinned, "ptr", hwnd, "int")
+            if (isPinned = 0)
+            {
+                DllCall(fnPin, "ptr", hwnd)
+                WinSet, AlwaysOnTop, On, ahk_id %hwnd%
+            }
+        }
+    }
+Return
+
