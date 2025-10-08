@@ -14,25 +14,38 @@ bars:
       position: "bottom"
       center: false
     blur_effect:
-      enabled: true 
+      enabled: true
       dark_mode: true
-      round_corners: false 
+      round_corners: true
       border_color: None
     window_flags:
-      always_on_top: false 
+      always_on_top: false
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 40 
+      height: 40
     padding:
-      top: 0
-      left: 0
-      bottom: 0
-      right: 0
+      top: 8
+      left: 8
+      bottom: 8
+      right: 8
     widgets:
-      left: ["home","komorebi_workspaces","komorebi_active_layout","glazewm_workspaces","glazewm_tiling_direction","active_window"]
-      center: ["taskbar"]
-      right: ["systray","brightness","wifi","battery","volume","clock"]
+      left:
+        - "home"
+        - "komorebi_workspaces"
+        - "komorebi_active_layout"
+        - "glazewm_workspaces"
+        - "glazewm_tiling_direction"
+        - "media"
+      center: 
+        - "taskbar"
+      right: 
+        - "systray"
+        - "brightness"
+        - "wifi"
+        - "battery"
+        - "volume"
+        - "clock"
 widgets:
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
@@ -62,7 +75,7 @@ widgets:
       label_workspace_populated_btn: ""
       label_default_name: ""
       label_zero_index: false
-      hide_empty_workspaces: true 
+      hide_empty_workspaces: true
       hide_if_offline: true
       animation: true
       container_padding:
@@ -73,9 +86,18 @@ widgets:
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
-      hide_if_offline: true 
+      hide_if_offline: true
       label: "{icon}"
-      layouts: ['bsp', 'columns', 'rows', 'grid', 'vertical_stack', 'horizontal_stack', 'ultrawide_vertical_stack']
+      layouts:
+        [
+          "bsp",
+          "columns",
+          "rows",
+          "grid",
+          "vertical_stack",
+          "horizontal_stack",
+          "ultrawide_vertical_stack",
+        ]
       layout_icons:
         bsp: "[\\\\]"
         columns: "[||]"
@@ -91,12 +113,12 @@ widgets:
       callbacks:
         on_left: "next_layout"
         on_middle: "toggle_monocle"
-        on_right: "prev_layout" 
-      container_padding: 
+        on_right: "prev_layout"
+      container_padding:
         top: 0
         left: 8
         bottom: 0
-        right: 8 
+        right: 8
   glazewm_workspaces:
     type: "glazewm.workspaces.GlazewmWorkspacesWidget"
     options:
@@ -132,7 +154,7 @@ widgets:
         alignment: "right"
         direction: "up"
         offset_top: 10
-        offset_left: 100 
+        offset_left: 100
       callbacks:
         on_middle: "toggle_mute"
         on_right: "exec cmd.exe /c start ms-settings:sound"
@@ -178,13 +200,9 @@ widgets:
         alignment: "right"
         direction: "up"
         offset_top: 10
-        offset_left: 100 
-      brightness_icons: [
-        "\udb80\udcde",
-        "\udb80\udcdd",
-        "\udb80\udcdf",
-        "\udb80\udce0"
-      ]       
+        offset_left: 100
+      brightness_icons:
+        ["\udb80\udcde", "\udb80\udcdd", "\udb80\udcdf", "\udb80\udce0"]
       callbacks:
         on_left: "toggle_brightness_menu"
       container_padding:
@@ -205,14 +223,14 @@ widgets:
       ethernet_label: "<span>{wifi_icon}</span>"
       ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
       ethernet_icon: "\ueba9"
-      get_exact_wifi_strength: false  # Optional. Will require location access permission if true.
+      get_exact_wifi_strength: false # Optional. Will require location access permission if true.
       wifi_icons: [
-        "\udb82\udd2e",  # Icon for 0% strength
-        "\udb82\udd1f",  # Icon for 1-24% strength
-        "\udb82\udd22",  # Icon for 25-49% strength
-        "\udb82\udd25",  # Icon for 50-74% strength
-        "\udb82\udd28"   # Icon for 75-100% strength
-      ]
+          "\udb82\udd2e", # Icon for 0% strength
+          "\udb82\udd1f", # Icon for 1-24% strength
+          "\udb82\udd22", # Icon for 25-49% strength
+          "\udb82\udd25", # Icon for 50-74% strength
+          "\udb82\udd28", # Icon for 75-100% strength
+        ]
       menu_config:
         blur: true
         round_corners: true
@@ -222,18 +240,8 @@ widgets:
         direction: "down"
         offset_top: 100
         offset_left: 200
-        wifi_icons_secured: [
-          "\ue670",
-          "\ue671",
-          "\ue672",
-          "\ue673",
-        ]
-        wifi_icons_unsecured: [
-          "\uec3c",
-          "\uec3d",
-          "\uec3e",
-          "\uec3f",
-        ]
+        wifi_icons_secured: ["\ue670", "\ue671", "\ue672", "\ue673"]
+        wifi_icons_unsecured: ["\uec3c", "\uec3d", "\uec3e", "\uec3f"]
   systray:
     type: "yasb.systray.SystrayWidget"
     options:
@@ -283,14 +291,14 @@ widgets:
       animation:
         enabled: true
       preview:
-        enabled: true 
+        enabled: true
         width: 240
         delay: 400
         padding: 8
         margin: 8
       title_label:
-        enabled: false
-        show: "always"
+        enabled: true
+        show: "focused"
         min_length: 10
         max_length: 30
       ignore_apps:
@@ -302,10 +310,10 @@ widgets:
     options:
       label: "<span>\ue62a</span>"
       menu_list:
-      - { title: "Home", path: "~" }
-      - { title: "Projects", path: "D:\\Projects" }
-      - { title: "Areas", path: "D:\\Areas" }
-      - { title: "Download", path: "C:\\Users\\Ashwin\\Downloads" }
+        - { title: "Home", path: "~" }
+        - { title: "Projects", path: "D:\\Projects" }
+        - { title: "Areas", path: "D:\\Areas" }
+        - { title: "Download", path: "C:\\Users\\Ashwin\\Downloads" }
       system_menu: true
       power_menu: true
       blur: true
@@ -314,7 +322,7 @@ widgets:
       border_color: "System"
       offset_top: 10
       offset_left: 0
-      container_padding: 
+      container_padding:
         top: 0
         left: 0
         bottom: 0
@@ -330,3 +338,58 @@ widgets:
         system: "System Settings"
         about: "About This PC"
         task_manager: "Task Manager"
+  media:
+    type: "yasb.media.MediaWidget"
+    options:
+      label: "{title} - {artist}"
+      label_alt: "{title}"
+      hide_empty: true
+      callbacks:
+        on_left: "toggle_media_menu"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+      max_field_size:
+        label: 40
+        label_alt: 50
+      show_thumbnail: true
+      controls_only: false
+      controls_left: false 
+      controls_hide: false
+      thumbnail_alpha: 80
+      thumbnail_padding: 16
+      thumbnail_corner_radius: 16
+      icons:
+        prev_track: "\ue892"
+        next_track: "\ue893"
+        play: "\ue768"
+        pause: "\ue769"
+      media_menu:
+        blur: true 
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "up"
+        offset_top: 10
+        offset_left: 100
+        thumbnail_corner_radius: 8
+        thumbnail_size: 120
+        max_title_size: 60
+        max_artist_size: 20
+        show_source: true
+        show_volume_slider: true
+      media_menu_icons:
+        play: "\ue768"
+        pause: "\ue769"
+        prev_track: "\ue892"
+        next_track: "\ue893"
+      scrolling_label:
+        enabled: false 
+        update_interval_ms: 33
+        style: "bounce" # can be "left", "right", "bounce", "bounce-ease"
+        separator: " | "
+        label_padding: 1
+        # Easing curve params: https://www.desmos.com/calculator/j7eamemxzi
+        ease_slope: 20
+        ease_pos: 0.8
+        ease_min: 0.5

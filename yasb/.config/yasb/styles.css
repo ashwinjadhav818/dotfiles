@@ -2,7 +2,7 @@
 :root {
   /* --- Mica Inspired Color Variables --- */
   --background-color: rgba(20, 20, 20, 0.6);
-  --content-color: rgba(60, 60, 60, 0.6);
+  --content-color: rgba(255, 255, 255, 0.1);
   --foreground-color: rgb(237, 238, 240);
   --accent-color: #0078d4;
   --border-color: rgb(53, 59, 69);
@@ -35,7 +35,7 @@
 .widget {
   padding: 2px 12px;
   margin: 6px 2px;
-  border-radius: 8px;
+  border-radius: 7px;
   background-color: var(--content-color);
 }
 
@@ -76,10 +76,6 @@
   font-size: 12px;
   padding: 0 4px;
   font-weight: 600;
-}
-
-.glazewm-workspaces .widget-container {
-  padding: 0 30px;
 }
 
 .komorebi-workspaces .ws-btn,
@@ -434,4 +430,158 @@
 .wifi-menu .footer .refresh-icon:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
+}
+
+/* --- Media Widget --- */
+.media-widget {
+  padding: 0;
+  margin: 5px 2px;
+}
+.media-widget .label {
+  color: var(--foreground-color);
+  font-size: 12px;
+}
+.media-widget .btn {
+  color: var(--icon-color);
+  padding: 0 6px;
+  margin: 0;
+  font-family: "Segoe Fluent Icons";
+  font-weight: 400;
+}
+.media-widget .btn:hover {
+  color: var(--icon-hover);
+}
+.media-widget .btn.play {
+  font-size: 16px;
+}
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+  color: var(--inactive-color);
+  font-size: 12px;
+  background-color: transparent;
+}
+
+/* --- Media Menu --- */
+.media-menu {
+  min-width: 440px;
+  max-width: 440px;
+  background-color: var(--background-color);
+}
+.media-menu .title,
+.media-menu .artist,
+.media-menu .source {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+  font-family: "Segoe UI";
+}
+.media-menu .artist {
+  font-size: 13px;
+  color: var(--icon-color);
+  margin-top: 0px;
+}
+.media-menu .source {
+  font-size: 11px;
+  color: var(--foreground-color);
+  border-radius: 3px;
+  background-color: var(--accent-color);
+  padding: 2px 4px;
+  font-weight: 600;
+  font-family: "Segoe UI";
+  margin-top: 10px;
+}
+.media-menu .btn {
+  font-family: "Segoe Fluent Icons";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 2px 0px 2px;
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  border-radius: 20px;
+}
+.media-menu .btn.prev {
+  margin-left: 10px;
+}
+.media-menu .btn:hover {
+  color: var(--foreground-color);
+  background-color: var(--hover-color);
+}
+.media-menu .btn.play {
+  background-color: var(--hover-color);
+  font-size: 20px;
+}
+.media-menu .btn.disabled:hover,
+.media-menu .btn.disabled {
+  color: var(--inactive-color);
+  background-color: transparent;
+}
+
+.media-menu .playback-time {
+  font-size: 13px;
+  font-family: "Segoe UI";
+  color: var(--icon-color);
+  margin-top: 20px;
+  min-width: 100px;
+}
+.media-menu .progress-slider {
+  height: 10px;
+  margin: 5px 4px;
+  border-radius: 3px;
+}
+.media-menu .progress-slider::groove {
+  background: var(--content-color);
+  height: 2px;
+  border-radius: 3px;
+}
+.media-menu .progress-slider::groove:hover {
+  background: var(--hover-color);
+  height: 6px;
+  border-radius: 3px;
+}
+.media-menu .progress-slider::sub-page {
+  background: var(--foreground-color);
+  border-radius: 3px;
+  height: 4px;
+}
+
+.media-menu .app-volume-container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* optional: replace with var(--content-color) if desired */
+  padding: 8px 6px;
+  border-radius: 16px;
+  margin-left: 10px;
+}
+.media-menu .app-volume-container .volume-slider::groove {
+  background: var(--content-color);
+  width: 2px;
+  border-radius: 3px;
+}
+.media-menu .app-volume-container .volume-slider::add-page {
+  background: var(--foreground-color);
+  border-radius: 3px;
+}
+.media-menu .app-volume-container .volume-slider::groove:hover {
+  background: var(--hover-color);
+  width: 6px;
+  border-radius: 3px;
+}
+.media-menu .app-volume-container .volume-slider::sub-page {
+  background: var(--content-color);
+  border-radius: 3px;
+}
+.media-menu .app-volume-container .mute-button,
+.media-menu .app-volume-container .unmute-button {
+  font-size: 16px;
+  color: var(--foreground-color);
+  font-family: "Segoe Fluent Icons";
+  margin-top: 4px;
+}
+.media-menu .app-volume-container .unmute-button {
+  color: var(--icon-color);
 }
