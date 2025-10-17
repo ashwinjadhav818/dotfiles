@@ -16,8 +16,8 @@ global scriptsDir := EnvGet("USERPROFILE") . "\.config\scripts"
 ; Extensions to include in the menu
 global scriptExtensions := [".ps1", ".bat"]
 
-; Hotkey (Win + H)
-#h::OpenScriptsMenu()
+; Hotkey (Win + T)
+#t::OpenScriptsMenu()
 ; --------------------------------
 
 ; Open the dynamic scripts menu
