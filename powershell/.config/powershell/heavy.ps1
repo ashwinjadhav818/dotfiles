@@ -22,14 +22,12 @@ if (-not (Test-Path $themeCache) -or
 
 
 # ---------- 2. zoxide lazy cd ----------
-function cd {
-    if (-not $script:ZoxideInitialized) {
-        $zInit = & zoxide init powershell --cmd cd 2>$null
-        if ($zInit) { Invoke-Expression ($zInit -join "`n") }
-        $script:ZoxideInitialized = $true
-    }
-    Set-Location @args
+if (-not $script:ZoxideInitialized) {
+    $zInit = & zoxide init powershell --cmd cd 2>$null
+    if ($zInit) { Invoke-Expression ($zInit -join "`n") }
+    $script:ZoxideInitialized = $true
 }
+Set-Location @args
 
 
 # ---------- 3. PSReadLine (load immediately) ----------
