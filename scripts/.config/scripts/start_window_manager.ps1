@@ -1,5 +1,4 @@
 $ConfigPath = "$env:USERPROFILE\.config"
-Start-Process autohotkey "$ConfigPath\scripts\fixes.ahk"
 
 Write-Host "Select workspace:"
 Write-Host "[1] GlazeWM"
@@ -11,11 +10,11 @@ $ConfigPath = "$env:USERPROFILE\.config"
 switch ($choice) {
     "1" {
         Write-Host "Starting GlazeWM environment..."
-        Start-Process glazewm "start"
+        glazewm start
     }
     "2" {
         Write-Host "Starting Windows Workspaces desktop switcher..."
-        Start-Process autohotkey "$ConfigPath\scripts\windows-workspaces\desktop_switcher.ahk"
+        autohotkey "$ConfigPath\scripts\windows-workspaces\desktop_switcher.ahk"
     }
     default {
         Write-Host "Invalid choice."

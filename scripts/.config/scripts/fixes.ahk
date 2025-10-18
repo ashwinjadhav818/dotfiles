@@ -1,21 +1,20 @@
 ; Disable Useless Windows Keybinds
 
 ; --- Disable Start menu when Win pressed alone, keep Win+ combos ---
-
-; Pressing LWin/RWin alone won't open Start
 ~LWin::
-~RWin::
-{
-    ; wait briefly to see if another key joins (combo)
-    KeyWait("LWin", "T0.300")
-    KeyWait("RWin", "T0.300")
-
-    if (GetKeyState("LWin", "P") || GetKeyState("RWin", "P"))
-        return  ; a combo started, don't block
-
-    ; Win was pressed alone  block Start
+~RWin:: {
+    ; When Win is pressed down, immediately send a dummy key
+    ; to pre-empt Windows from queuing the Start menu
     Send("{Blind}{vkE8}")
 }
+
+~LWin Up::
+~RWin Up:: {
+    ; Block Start menu on release too, in case Windows queued it late
+    Send("{Blind}{vkE8}")
+    return
+}
+
 #D:: {
     Send("{Blind}{vkE8}")
 }
@@ -46,23 +45,22 @@ Pause:: {
             WinShow("ahk_class Shell_TrayWnd")
     }
 }
-; --- Hide Taskbar once and when Explorer restarts ---
-HideTaskbar()
-
-OnMessage(0x0001, OnShellRestart) ; WM_CREATE (used when explorer restarts)
-OnMessage(0x0018, OnShellRestart) ; WM_SHOWWINDOW (safety net)
+; --- Hide Taskbar ---
+SetTimer(HideTaskbar, 5000)
 
 HideTaskbar() {
-    if WinExist("ahk_class Shell_TrayWnd")
-        WinHide("ahk_class Shell_TrayWnd")
-    if WinExist("ahk_class Shell_SecondaryTrayWnd")
-        WinHide("ahk_class Shell_SecondaryTrayWnd")
+    tray := WinExist("ahk_class Shell_TrayWnd")
+    if (tray) {
+        style := WinGetStyle("ahk_id " tray)
+        if (style & 0x10000000) ; WS_VISIBLE flag
+            WinHide("ahk_id " tray)
+    }
+
+    secTray := WinExist("ahk_class Shell_SecondaryTrayWnd")
+    if (secTray) {
+        style := WinGetStyle("ahk_id " secTray)
+        if (style & 0x10000000)
+            WinHide("ahk_id " secTray)
+    }
 }
 
-OnShellRestart(*) {
-    SetTimer(Rehide, -500)  ; wait 0.5 s, then rehide once
-}
-
-Rehide() {
-    HideTaskbar()
-}
