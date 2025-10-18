@@ -135,6 +135,12 @@ widgets:
     options:
       horizontal_label: "\udb81\udce1"
       vertical_label: "\udb81\udce2"
+  windows_workspaces:
+    type: "yasb.windows_desktops.WorkspaceWidget"
+    options:
+      label_workspace_btn: "\udb81\udc3d"
+      label_workspace_active_btn: "\udb81\udc3e"
+      animation: true
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
@@ -217,9 +223,9 @@ widgets:
       label_alt: "{wifi_name} {wifi_strength}%"
       update_interval: 5000
       callbacks:
-        on_left: "toggle_menu"
+        on_left: "exec quick_settings"
         on_middle: "exec cmd.exe /c start ms-settings:network"
-        on_right: "exec quick_settings"
+        on_right: "toggle_label"
       ethernet_label: "<span>{wifi_icon}</span>"
       ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
       ethernet_icon: "\ueba9"
