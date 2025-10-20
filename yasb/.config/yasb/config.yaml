@@ -14,10 +14,10 @@ bars:
       position: "bottom"
       center: false
     blur_effect:
-      enabled: true
+      enabled: false 
       dark_mode: true
       round_corners: true
-      border_color: None
+      border_color: Black 
     window_flags:
       always_on_top: false
       windows_app_bar: true
@@ -25,7 +25,7 @@ bars:
       width: "100%"
       height: 40
     padding:
-      top: 8
+      top: 0
       left: 8
       bottom: 8
       right: 8
