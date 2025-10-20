@@ -8,13 +8,6 @@
     Send("{Blind}{vkE8}")
 }
 
-~LWin Up::
-~RWin Up:: {
-    ; Block Start menu on release too, in case Windows queued it late
-    Send("{Blind}{vkE8}")
-    return
-}
-
 #D:: {
     Send("{Blind}{vkE8}")
 }
@@ -37,7 +30,7 @@ Pause:: {
 ;}
 
 ; Hide Taskbar
-^+f:: {  ; alt+shift+f toggles taskbar visibility
+!+f:: {  ; alt+shift+f toggles taskbar visibility
     if WinExist("ahk_class Shell_TrayWnd") {
         if WinGetStyle("ahk_class Shell_TrayWnd") & 0x10000000
             WinHide("ahk_class Shell_TrayWnd")
