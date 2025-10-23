@@ -26,16 +26,14 @@ bars:
       height: 40
     padding:
       top: 0
-      left: 8
-      bottom: 8
-      right: 8
+      left: 0
+      bottom: 0
+      right: 0
     widgets:
       left:
         - "home"
         - "komorebi_workspaces"
         - "komorebi_active_layout"
-        - "glazewm_workspaces"
-        - "glazewm_tiling_direction"
         - "media"
       center: 
         - "taskbar"

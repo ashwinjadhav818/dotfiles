@@ -3,12 +3,12 @@
   "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
-  "default_workspace_padding": 4,
-  "default_container_padding": 4,
+  "default_workspace_padding": 0,
+  "default_container_padding": 0,
   "border": true,
   "border_width": 2,
   "border_offset": 0,
-  "mouse_follows_focus": false,
+  "border_style": "Square",
   "theme": {
     "palette": "Base16",
     "name": "TokyoNightDark",
@@ -84,11 +84,6 @@
     },
     {
       "kind": "Title",
-      "id": "Arc extension popup",
-      "matching_strategy": "Equals"
-    },
-    {
-      "kind": "Title",
       "id": "Picture in picture",
       "matching_strategy": "Equals"
     },
@@ -99,22 +94,7 @@
     },
     {
       "kind": "Title",
-      "id": "ShareX",
-      "matching_strategy": "Equals"
-    },
-    {
-      "kind": "Title",
-      "id": "ShareX",
-      "matching_strategy": "Equals"
-    },
-    {
-      "kind": "Title",
       "id": "Command Pallet",
-      "matching_strategy": "Equals"
-    },
-    {
-      "kind": "Exe",
-      "id": "Obsidian",
       "matching_strategy": "Equals"
     }
   ]

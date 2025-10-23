@@ -1,17 +1,16 @@
 /* --- Root Variables (Colors) --- */
 :root {
-  /* --- Mica Inspired Color Variables --- */
-  --background-color: rgba(20, 20, 20, 0.6);
-  --content-color: rgba(255, 255, 255, 0.1);
-  --foreground-color: rgb(237, 238, 240);
-  --accent-color: #0078d4;
-  --border-color: rgb(53, 59, 69);
-  --icon-color: rgb(169, 174, 184);
-  --icon-hover: rgba(169, 174, 184, 0.8);
-  --hover-color: rgba(93, 114, 135, 0.12);
-  --highlight-color: rgba(61, 61, 61, 0.8);
-  --active-color: rgb(93, 114, 135);
-  --inactive-color: rgba(93, 114, 135, 0.5);
+  --background-color: rgba(22, 22, 30, 0.6);
+  --content-color: rgb(47, 53, 73);
+  --foreground-color: rgb(169, 177, 214);
+  --accent-color: rgb(42, 195, 222);
+  --border-color: rgb(21, 108, 132);
+  --icon-color: rgb(169, 177, 214);
+  --icon-hover: rgba(169, 177, 214, 0.8);
+  --hover-color: rgba(120, 124, 153, 0.12);
+  --highlight-color: rgba(22, 22, 30, 0.8);
+  --active-color: rgb(158, 206, 106);
+  --inactive-color: rgba(192, 202, 245, 0.5);
 }
 
 /* --- Base Styles --- */
@@ -28,14 +27,15 @@
 /* --- Yasb Bar Itself --- */
 .yasb-bar {
   padding: 0 6px;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
 }
 
 /* --- Individual Widgets --- */
 .widget {
   padding: 2px 12px;
-  margin: 6px 2px;
-  border-radius: 7px;
-  background-color: var(--background-color);
+  margin: 4px 2px;
+  border: 2px solid var(--border-color);
 }
 
 /* --- Icons --- */
@@ -115,26 +115,9 @@
 }
 
 /* --- Glazewm Tiling Direction --- */
-.glazewm-tiling-direction {
-  background-color: transparent;
-  padding: 0;
-  margin: 4px 0;
-}
-
 .glazewm-tiling-direction .btn {
-  font-size: 14px;
-  width: 14px;
-  padding: 0 4px 0 12px;
-  color: var(--foreground-color);
+  font-size: 18px;
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 2px;
-}
-
-.glazewm-tiling-direction .btn:hover {
-  background-color: var(--hover-color);
 }
 
 /* --- Windows Workspaces --- */
@@ -264,7 +247,6 @@
 
 /* --- Systray --- */
 .systray {
-  border: none;
   padding: 0 4px;
 }
 .systray .button {
