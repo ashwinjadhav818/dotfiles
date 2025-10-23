@@ -6,22 +6,25 @@
   <summary>More Screenshots</summary>
   <details>
     <summary>Example 1</summary>
-    ![GlazeWM/Komorebi + YASB 8](./assets/img8.png)
-    ![GlazeWM/Komorebi + YASB 9](./assets/img9.png)
+    
+![GlazeWM/Komorebi + YASB 8](./assets/img8.png)
+![GlazeWM/Komorebi + YASB 9](./assets/img9.png)
   </details>
 
   <details>
     <summary>Example 2</summary>
-    ![GlazeWM + Zebar 6](./assets/img6.png)
-    ![GlazeWM + Zebar 1](./assets/img1.png)
-    ![GlazeWM + Zebar 2](./assets/img2.png)
+    
+![GlazeWM + Zebar 6](./assets/img6.png)
+![GlazeWM + Zebar 1](./assets/img1.png)
+![GlazeWM + Zebar 2](./assets/img2.png)
   </details>
 
   <details>
     <summary>Example 3</summary>
-    ![GlazeWM + Zebar 3](./assets/img3.png)
-    ![GlazeWM + Zebar 4](./assets/img4.png)
-    ![GlazeWM + Zebar 5](./assets/img5.png)
+    
+![GlazeWM + Zebar 3](./assets/img3.png)
+![GlazeWM + Zebar 4](./assets/img4.png)
+![GlazeWM + Zebar 5](./assets/img5.png)
   </details>
 </details>
 
