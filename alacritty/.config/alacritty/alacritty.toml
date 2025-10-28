@@ -2,6 +2,7 @@
 import = [
   "C:\\Users\\Ashwin\\AppData\\Local\\npm-cache\\_npx\\808b709e6234a442\\node_modules\\alacritty-themes\\themes\\Tokyonight_Night.toml"
 ]
+working_directory="C:\\Users\\Ashwin"
 
 [terminal]
 shell = { program = "C:\\Users\\Ashwin\\scoop\\apps\\msys2\\current\\msys2_shell.cmd", args = ["-defterm", "-here", "-no-start", "-msys", "-use-full-path", "-shell", "zsh" ] }
