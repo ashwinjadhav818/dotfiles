@@ -1,0 +1,2 @@
+zsh-users/zsh-autosuggestions kind:defer
+romkatv/powerlevel10k kind:zsh 
