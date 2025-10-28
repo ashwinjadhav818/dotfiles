@@ -16,19 +16,19 @@
 
 (defalias
   ;; REMAPS
-  cap (tap-hold 150 esc caps)
-  ent (tap-hold 150 ' enter)
+  cap (tap-hold-next-release 150 esc caps)
+  ent (tap-hold-next-release 150 ' enter)
 
   ;; HOME ROW MODS
-  a (tap-hold 150 a lalt)
-  s (tap-hold 150 s lsft)
-  d (tap-hold 150 d lctl)
-  f (tap-hold 150 f lmet)
+  a (tap-hold-next-release 250 a lalt)
+  s (tap-hold-next-release 250 s rsft)
+  d (tap-hold-next-release 250 d rctl)
+  f (tap-hold-next-release 250 f rmet)
 
-  j (tap-hold 150 j lmet)
-  k (tap-hold 150 k rctl)
-  l (tap-hold 150 l rsft)
-  ; (tap-hold 150 ; lalt)
+  j (tap-hold-next-release 250 j rmet)
+  k (tap-hold-next-release 250 k rctl)
+  l (tap-hold-next-release 250 l rsft)
+  ; (tap-hold-next-release 250 ; lalt)
 
   ;; LAYERS 
   bse (layer-switch base)
