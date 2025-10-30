@@ -7,12 +7,6 @@ fi
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Oh My Zsh
-# export ZSH="$HOME/.oh-my-zsh"
-# ZSH_THEME="half-life"
-# plugins=(zsh-autosuggestions themes)
-# source $ZSH/oh-my-zsh.sh
-
 # Terminal
 export LANG=en_US.UTF-8
 
@@ -58,9 +52,6 @@ fi
 
 # Antidote
 source ~/.zsh_plugins.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/powerlevel10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/powerlevel10k/.p10k.zsh ]] || source ~/.dotfiles/powerlevel10k/.p10k.zsh
