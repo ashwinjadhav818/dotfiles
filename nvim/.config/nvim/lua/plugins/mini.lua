@@ -22,31 +22,6 @@ return {
 			})
 			require("mini.animate").setup({ scroll = { enable = false } })
 
-			-- Completion
-			local process_items = function(items, base)
-				-- Don't show 'Text' suggestions
-				items = vim.tbl_filter(function(x)
-					return x.kind ~= 1
-				end, items)
-				return MiniCompletion.default_process_items(items, base)
-			end
-			require("mini.completion").setup({
-				lsp_completion = { source_func = "omnifunc", auto_setup = false, process_items = process_items },
-			})
-			local on_attach = function(args)
-				vim.bo[args.buf].omnifunc = "v:lua.MiniCompletion.completefunc_lsp"
-			end
-			vim.api.nvim_create_autocmd("LspAttach", { callback = on_attach })
-			if vim.fn.has("nvim-0.11") == 1 then
-				vim.lsp.config("*", { capabilities = MiniCompletion.get_lsp_capabilities() })
-			end
-
-			local imap_expr = function(lhs, rhs)
-				vim.keymap.set("i", lhs, rhs, { expr = true })
-			end
-			imap_expr("<Tab>", [[pumvisible() ? "\<C-n>" : "\<Tab>"]])
-			imap_expr("<S-Tab>", [[pumvisible() ? "\<C-p>" : "\<S-Tab>"]])
-
 			require("mini.snippets").setup()
 			require("mini.comment").setup()
 			require("mini.pairs").setup()
