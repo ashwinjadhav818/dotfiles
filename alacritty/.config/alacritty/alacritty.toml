@@ -1,6 +1,6 @@
 [general]
 import = [
-  "C:\\Users\\Ashwin\\AppData\\Local\\npm-cache\\_npx\\808b709e6234a442\\node_modules\\alacritty-themes\\themes\\Tokyonight_Night.toml"
+  "C:\\Users\\Ashwin\\.config\\alacritty\\tokyo-night.toml"
 ]
 working_directory="C:\\Users\\Ashwin"
 
