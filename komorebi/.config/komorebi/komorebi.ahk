@@ -10,8 +10,8 @@
 #h::Focus("left")
 #k::Focus("down")
 #l::Focus("right")
-#+[::CycleFocus("previous")
-#+]::CycleFocus("next")
+#m::CycleFocus("next")
+#+m::CycleFocus("previous")
 
 ; Move windows
 #+j::Move("up")
@@ -26,8 +26,8 @@
 #!k::Stack("down")
 #!l::Stack("right")
 #;::Unstack()
-#[::CycleStack("previous")
-#]::CycleStack("next")
+#Tab::CycleStack("previous")
+#+Tab::CycleStack("next")
 
 ; Resize
 #=::ResizeAxis("horizontal", "increase")

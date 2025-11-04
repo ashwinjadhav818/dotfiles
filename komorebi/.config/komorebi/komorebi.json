@@ -3,17 +3,29 @@
   "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
+  "mouse_follows_focus": false,
   "default_workspace_padding": 0,
   "default_container_padding": 0,
   "border": true,
   "border_width": 2,
-  "border_offset": 0,
+  "border_offset": -1,
   "border_style": "Square",
   "theme": {
     "palette": "Base16",
     "name": "TokyoNightDark",
     "unfocused_border": "Base03",
     "bar_accent": "Base0D"
+  },
+  "transparency": true,
+  "transparency_alpha": 215,
+  "animation": {
+    "enabled": false,
+    "duration": 300,
+    "fps": 60,
+    "style": {
+      "movement": "EaseOutBack",
+      "transparency": "Linear"
+    }
   },
   "border_colours": {
     "single": {
@@ -63,17 +75,6 @@
       "unfocused_text": "#b3b3b3",
       "background": "#141414",
       "font_size": 14
-    }
-  },
-  "transparency": true,
-  "transparency_alpha": 215,
-  "animation": {
-    "enabled": false,
-    "duration": 300,
-    "fps": 60,
-    "style": {
-      "movement": "EaseOutBack",
-      "transparency": "Linear"
     }
   },
   "ignore_rules": [
