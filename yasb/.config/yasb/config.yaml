@@ -11,12 +11,12 @@ bars:
     screens: ["*"]
     class_name: "yasb-bar"
     alignment:
-      position: "bottom"
+      position: "top"
       center: false
     blur_effect:
       enabled: false 
       dark_mode: true
-      round_corners: true
+      round_corners: false 
       border_color: Black 
     window_flags:
       always_on_top: false
@@ -34,6 +34,8 @@ bars:
         - "home"
         - "komorebi_workspaces"
         - "komorebi_active_layout"
+        - "glazewm_workspaces"
+        - "glazewm_tiling_direction"
         - "media"
       center: 
         - "taskbar"
@@ -136,8 +138,8 @@ widgets:
   windows_workspaces:
     type: "yasb.windows_desktops.WorkspaceWidget"
     options:
-      label_workspace_btn: "\udb81\udc3d"
-      label_workspace_active_btn: "\udb81\udc3e"
+      label_workspace_btn: "{index}"
+      label_workspace_active_btn: "{index}"
       animation: true
   volume:
     type: "yasb.volume.VolumeWidget"
@@ -156,7 +158,7 @@ widgets:
         round_corners_type: "normal"
         border_color: "system"
         alignment: "right"
-        direction: "up"
+        direction: "down"
         offset_top: 10
         offset_left: 100
       callbacks:
@@ -202,7 +204,7 @@ widgets:
         round_corners_type: "normal"
         border_color: "System"
         alignment: "right"
-        direction: "up"
+        direction: "down"
         offset_top: 10
         offset_left: 100
       brightness_icons:
@@ -332,7 +334,7 @@ widgets:
         bottom: 0
         right: 0
       alignment: "left"
-      direction: "up"
+      direction: "down"
       menu_labels:
         shutdown: "Shutdown"
         restart: "Restart"
@@ -373,7 +375,7 @@ widgets:
         round_corners_type: "normal"
         border_color: "system"
         alignment: "right"
-        direction: "up"
+        direction: "down"
         offset_top: 10
         offset_left: 100
         thumbnail_corner_radius: 8
