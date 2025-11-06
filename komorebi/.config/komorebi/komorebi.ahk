@@ -45,8 +45,8 @@
 #^p::TogglePause()
 
 ; Layouts
-!x::FlipLayout("horizontal")
-!y::FlipLayout("vertical")
+^!x::FlipLayout("horizontal")
+^!y::FlipLayout("vertical")
 
 ; Workspaces
 #1::FocusWorkspace(0)
