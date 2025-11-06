@@ -23,12 +23,13 @@ alias zshconf="vi ~/.zshrc"
 alias zshref="source ~/.zshrc"
 alias antidote="~/.antidote/antidote"
 alias regenanti="antidote bundle <~/.zsh_plugins.txt >~/.zsh_plugins.zsh"
-alias ls='ls -l'
-alias ll='ls -la'
+alias ls='eza'
+alias ll='exa -la'
 alias g="git"
 alias cls="clear"
 alias lg="lazygit"
 alias em='emacsclient -c -a "emacs"'
+alias tk="taskkill -F -IM"
 
 eval "$(zoxide init zsh --cmd cd)"
 
