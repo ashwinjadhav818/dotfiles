@@ -15,6 +15,11 @@
     Send("{Blind}{vkE8}")
 }
 
+; Disable Ctrl+S in browsers
+if WinActive("ahk_exe helium.exe") {
+    ^s::return ; Disable Ctrl + S only in Helium Browser
+}
+
 ; Sound
 Pause:: {
     Sleep(500) ; Wait for 0.5 second

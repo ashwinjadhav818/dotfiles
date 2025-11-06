@@ -20,7 +20,7 @@
 ; ===========================
 
 ; Set up 10 workspaces on startup
-setupWorkspace(10)
+setupWorkspace(5)
 
 ; === INSTRUCTIONS ===
 ; Below is the alternate key configuration. Delete symbol ; in the beginning of the line to enable.
@@ -203,7 +203,6 @@ setupWorkspace(10)
 #^c::createVirtualDesktop()
 #^d::deleteVirtualDesktop()
 #q::Send !{F4}
-#d::Send ^{Esc}
 #y::minMaxActiveWindow()
 #+m::swapAll()
 
