@@ -14,7 +14,7 @@ bars:
       position: "top"
       center: false
     blur_effect:
-      enabled: false 
+      enabled: true 
       dark_mode: true
       round_corners: false 
       border_color: Black 
@@ -34,8 +34,6 @@ bars:
         - "home"
         - "komorebi_workspaces"
         - "komorebi_active_layout"
-        - "glazewm_workspaces"
-        - "glazewm_tiling_direction"
         - "media"
       center: 
         - "taskbar"

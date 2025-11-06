@@ -3,14 +3,24 @@
   --background-color: rgba(22, 22, 30, 0.6);
   --content-color: rgb(47, 53, 73);
   --foreground-color: rgb(169, 177, 214);
-  --accent-color: rgb(42, 195, 222);
-  --border-color: rgb(21, 108, 132);
   --icon-color: rgb(169, 177, 214);
   --icon-hover: rgba(169, 177, 214, 0.8);
   --hover-color: rgba(120, 124, 153, 0.12);
   --highlight-color: rgba(22, 22, 30, 0.8);
-  --active-color: rgb(158, 206, 106);
   --inactive-color: rgba(192, 202, 245, 0.5);
+
+  --color-black: "#15161e";
+  --color-red: "#f7768e";
+  --color-green: "#9ece6a";
+  --color-yellow: "#e0af68";
+  --color-blue: "#7aa2f7";
+  --color-magenta: "#bb9af7";
+  --color-cyan: "#7dcfff";
+  --color-white: "#a9b1d6";
+
+  --accent-color: var(--color-blue);
+  --border-color: var(--color-blue);
+  --active-color: var(--color-green);
 }
 
 /* --- Base Styles --- */
@@ -33,15 +43,31 @@
 
 /* --- Individual Widgets --- */
 .widget {
-  padding: 2px 12px;
+  padding: 0 12px;
   margin: 4px 2px;
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color);
 }
 
 /* --- Icons --- */
 .icon {
   font-size: 14px;
   color: var(--icon-color);
+}
+.home-widget .icon,
+.wifi-widget .widget-container .icon {
+  color: var(--color-blue);
+}
+.systray .unpinned-visibility-btn {
+  color: var(--color-red);
+}
+.battery-widget .widget-container .icon {
+  color: var(--color-green);
+}
+.brightness-widget .widget-container .icon {
+  color: var(--color-magenta);
+}
+.volume-widget .widget-container .icon {
+  color: var(--color-yellow);
 }
 
 /* --- Apps Widget Specific --- */
