@@ -75,10 +75,6 @@
   padding: 0 4px 0 2px;
 }
 
-.apps-widget .widget-container .label {
-  font-size: 12px;
-}
-
 /* --- Komorebi Active Layout --- */
 .komorebi-active-layout {
   padding: 0 4px 3px 4px;
@@ -146,54 +142,6 @@
   border: none;
 }
 
-/* --- Windows Workspaces --- */
-.windows-desktops .context-menu {
-  background-color: rgba(17, 17, 27, 0.75);
-  border: none;
-  border-radius: 2px;
-  padding: 8px 0;
-}
-.windows-desktops .context-menu .menu-item {
-  padding: 6px 16px;
-}
-.windows-desktops .context-menu .menu-item:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #ffffff;
-}
-.windows-desktops .context-menu .separator {
-  margin: 2px 0px 2px 0px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.windows-desktops .rename-dialog {
-  background-color: rgba(17, 17, 27, 0.75);
-}
-.windows-desktops .rename-dialog QPushButton {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  border: none;
-  padding: 4px 12px;
-  border-radius: 4px;
-}
-.windows-desktops .rename-dialog QPushButton:hover {
-  background-color: #585858;
-  color: #ffffff;
-  border: none;
-  padding: 4px 12px;
-  border-radius: 4px;
-}
-
-.windows-desktops .rename-dialog QLabel {
-  color: #ffffff;
-}
-.windows-desktops .rename-dialog QLineEdit {
-  background-color: transparent;
-  border: 1px solid #89b4fa;
-  padding: 4px;
-  color: #ffffff;
-}
-
 /* --- Common Widget Padding --- */
 .weather-widget,
 .battery-widget,
@@ -202,13 +150,6 @@
 .brightness-widget,
 .clock-widget {
   padding: 0 6px;
-}
-
-/* --- Apps Widget Label --- */
-.apps-widget .label {
-  font-size: 14px;
-  padding: 0 2px;
-  color: var(--foreground-color);
 }
 
 /* --- Volume Widget --- */
@@ -256,19 +197,6 @@
 /* --- Brightness Widget --- */
 .brightness-widget .icon {
   color: var(--foreground-color);
-}
-
-/* --- Weather Widget --- */
-.weather-widget .icon {
-  font-size: 18px;
-  margin: 0 2px 1px 0;
-}
-
-/* --- Wallpapers Widget --- */
-.wallpapers-widget .icon {
-  color: var(--foreground-color);
-  font-size: 14px;
-  margin: 0;
 }
 
 /* --- Systray --- */
@@ -343,150 +271,6 @@
   font-family: "Segoe UI";
   font-weight: 600;
   font-size: 13px;
-}
-
-/* --- WiFi --- */
-.wifi-menu {
-  font-family: "Segoe UI";
-  background-color: rgba(17, 17, 27, 0.4);
-  max-height: 350px;
-  min-height: 375px;
-  min-width: 375px;
-}
-
-.wifi-menu .progress-bar {
-  max-height: 2px;
-}
-
-.wifi-menu .progress-bar::chunk {
-  background-color: #4cc2ff;
-}
-
-.wifi-menu .header {
-  font-family: "Segoe UI";
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 2px;
-  padding: 12px;
-  background-color: var(--background-color);
-  color: white;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.wifi-menu .error-message {
-  font-family: "Segoe UI";
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 2px;
-  padding: 12px;
-  background-color: red;
-  color: white;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.wifi-menu .wifi-list {
-  background-color: var(--background-color);
-  margin-right: 3px;
-}
-
-.wifi-menu .wifi-item {
-  min-height: 35px;
-  padding: 2px 12px;
-  margin: 2px 4px;
-}
-
-.wifi-menu .wifi-item:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 6px;
-}
-
-.wifi-menu .wifi-item[active="true"] {
-  background-color: rgba(255, 255, 255, 0.15);
-  font-size: 14px;
-  border-radius: 6px;
-  min-height: 80px;
-}
-
-.wifi-menu .wifi-item .icon {
-  font-family: "Segoe Fluent Icons";
-  font-size: 26px;
-  margin-right: 10px;
-}
-
-.wifi-menu .wifi-item .name {
-  font-family: "Segoe UI";
-  font-size: 14px;
-  margin-right: 10px;
-}
-
-.wifi-menu .wifi-item .password {
-  font-family: "Segoe UI";
-  background-color: transparent;
-  font-size: 14px;
-}
-
-.wifi-menu .wifi-item .status {
-  font-family: "Segoe UI";
-  font-size: 14px;
-}
-
-.wifi-menu .wifi-item .strength {
-  font-family: "Segoe UI";
-  font-size: 14px;
-}
-
-.wifi-menu .wifi-item .controls-container {
-  padding-top: 8px;
-}
-
-.wifi-menu .wifi-item .connect {
-  background-color: rgba(255, 255, 255, 0.15);
-  padding: 4px 30px;
-  border-radius: 4px;
-  border: none;
-  font-size: 14px;
-}
-
-.wifi-menu .wifi-item .connect:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.wifi-menu .wifi-item .connect:pressed {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.wifi-menu .footer {
-  font-size: 12px;
-  font-weight: 600;
-  padding: 12px;
-  margin-top: 2px;
-  color: #9399b2;
-  background-color: var(--background-color);
-  border-top: 1px solid var(--border-color);
-}
-
-.wifi-menu .footer .settings-button {
-  font-family: "Segoe UI";
-  background-color: transparent;
-  border: none;
-  padding: 0 2px;
-  min-width: 26px;
-  min-height: 26px;
-  color: #fff;
-}
-
-.wifi-menu .footer .refresh-icon {
-  font-family: "Segoe Fluent Icons";
-  background-color: transparent;
-  border: none;
-  min-width: 26px;
-  min-height: 26px;
-  color: #fff;
-}
-
-.wifi-menu .footer .refresh-icon:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
 }
 
 /* --- Media Widget --- */
