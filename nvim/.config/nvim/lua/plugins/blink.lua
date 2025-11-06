@@ -9,7 +9,7 @@ return {
 		---@module 'blink.cmp'
 		---@type blink.cmp.Config
 		opts = {
-			keymap = { preset = "default" },
+			keymap = { preset = "enter" },
 
 			appearance = {
 				nerd_font_variant = "mono",
