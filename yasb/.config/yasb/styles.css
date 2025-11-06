@@ -70,11 +70,6 @@
   color: var(--color-yellow);
 }
 
-/* --- Apps Widget Specific --- */
-.apps-widget {
-  padding: 0 4px 0 2px;
-}
-
 /* --- Komorebi Active Layout --- */
 .komorebi-active-layout {
   padding: 0 4px 3px 4px;

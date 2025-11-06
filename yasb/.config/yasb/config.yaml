@@ -256,34 +256,6 @@ widgets:
       icon_size: 16
       pin_click_modifier: "alt"
       show_unpinned: false
-  notifications:
-    type: "yasb.notifications.NotificationsWidget"
-    options:
-      label: "<span>\ue7e7</span>"
-      label_alt: "{count} notifications"
-      tooltip: false
-      callbacks:
-        on_left: "toggle_notification"
-        on_right: "do_nothing"
-        on_middle: "toggle_label"
-      container_padding:
-        top: 0
-        left: 0
-        bottom: 0
-        right: 0
-  apps:
-    type: "yasb.applications.ApplicationsWidget"
-    options:
-      container_padding:
-        top: 0
-        left: 8
-        bottom: 0
-        right: 8
-      label: "{data}"
-      app_list:
-        - { icon: "\uf0a2", launch: "notification_center" }
-        - { icon: "\uf002", launch: "search" }
-        - { icon: "\uf489", launch: "%DEFAULT_TERM%" }
   taskbar:
     type: "yasb.taskbar.TaskbarWidget"
     options:
