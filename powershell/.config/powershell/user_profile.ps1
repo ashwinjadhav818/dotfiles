@@ -1,6 +1,8 @@
 # $PROFILE.CurrentUserAllHosts  (fast core)
 Set-Alias np C:\Windows\notepad.exe
-Set-Alias ll ls
+Set-Alias ls 'eza'
+function eza-list {eza -la}
+Set-Alias ll eza-list
 Set-Alias g git
 Set-Alias vi nvim
 Set-Alias vim vi

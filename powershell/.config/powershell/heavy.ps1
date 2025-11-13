@@ -5,21 +5,9 @@
 
 # ---------- 1. Theme (cached) ----------
 $themeSource = "$HOME\.config\powershell\Themes\aura.omp.json"
-$themeCache  = "$env:LOCALAPPDATA\ohmyposh\cached_aura.ps1"
 
-# Ensure cache folder exists (once)
-$cacheDir = Split-Path $themeCache -Parent
-if (-not (Test-Path $cacheDir)) {
-    New-Item -ItemType Directory -Path $cacheDir -Force | Out-Null
-}
-
-# Use the pre-generated cache; regenerate only if source JSON changed
-if (-not (Test-Path $themeCache) -or
-    (Get-Item $themeCache).LastWriteTime -lt (Get-Item $themeSource).LastWriteTime) {
-    oh-my-posh --init --shell pwsh --config $themeSource > $themeCache
-}
-. $themeCache   # dot-source cached script
-
+# oh-my-posh 
+oh-my-posh init pwsh --config $themeSource | Invoke-Expression
 
 # ---------- 2. zoxide lazy cd ----------
 if (-not $script:ZoxideInitialized) {
