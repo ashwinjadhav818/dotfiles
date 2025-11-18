@@ -24,7 +24,7 @@ alias zshref="source ~/.zshrc"
 alias antidote="~/.antidote/antidote"
 alias regenanti="antidote bundle <~/.zsh_plugins.txt >~/.zsh_plugins.zsh"
 alias ls='eza'
-alias ll='exa -la'
+alias ll='eza -la'
 alias g="git"
 alias cls="clear"
 alias lg="lazygit"
@@ -38,6 +38,7 @@ if [[ "$(uname -o)" == "Android" ]]; then
 	echo "Termux environment detected."
 
 	alias doom="$HOME/.config/emacs/bin/doom"
+	alias emg='termux-x11 :1 -xstartup "emacsclient -c -a emacs" &'
 	sv-enable emacsd
 
 	# Check if the Syncthing process is already running
