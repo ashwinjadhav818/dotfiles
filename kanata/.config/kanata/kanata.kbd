@@ -25,11 +25,11 @@
 
   ;; HOME ROW MODS
   a (tap-hold $tap-time $hold-time a lalt)
-  s (tap-hold $tap-time $hold-time s lsft)
-  d (tap-hold $tap-time $hold-time d lctl)
-  f (tap-hold $tap-time $hold-time f lmet)
+  s (tap-hold $tap-time $hold-time s rsft)
+  d (tap-hold $tap-time $hold-time d rctl)
+  f (tap-hold $tap-time $hold-time f rmet)
 
-  j (tap-hold $tap-time $hold-time j lmet)
+  j (tap-hold $tap-time $hold-time j rmet)
   k (tap-hold $tap-time $hold-time k rctl)
   l (tap-hold $tap-time $hold-time l rsft)
   ; (tap-hold $tap-time $hold-time ; lalt)
@@ -39,19 +39,15 @@
   mni (layer-toggle manipulation)
   med (layer-toggle media)
   sys (layer-toggle system)
+    
 
   ;; MEDIA SHORT ALIASES
-  mvu (cmd "C:\\Users\\Ashwin\\scoop\\apps\\nircmd\\current\\nircmd.exe" "sendkeypress" "0xAF") ;; Volume Up
-  mvd (cmd "C:\\Users\\Ashwin\\scoop\\apps\\nircmd\\current\\nircmd.exe" "sendkeypress" "0xAE") ;; Volume Down
-  mmt (cmd "C:\\Users\\Ashwin\\scoop\\apps\\nircmd\\current\\nircmd.exe" "mutesysvolume" "2")   ;; Mute
-  mnx (cmd "C:\\Users\\Ashwin\\scoop\\apps\\nircmd\\current\\nircmd.exe" "sendkeypress" "0xB0") ;; Next
-  mpr (cmd "C:\\Users\\Ashwin\\scoop\\apps\\nircmd\\current\\nircmd.exe" "sendkeypress" "0xB1") ;; Prev
-  mps (cmd "C:\\Users\\Ashwin\\scoop\\apps\\nircmd\\current\\nircmd.exe" "sendkeypress" "0xB2") ;; Stop
-  mpp (cmd "C:\\Users\\Ashwin\\scoop\\apps\\nircmd\\current\\nircmd.exe" "sendkeypress" "0xB3") ;; Play/Pause
-    
+  mps (cmd "nircmd" "sendkeypress" "0xB2") ;; Stop
+  mpp (cmd "nircmd" "sendkeypress" "0xB3") ;; Play/Pause
+
   ;; BRIGHTNESS ALIASES 
-  bru (cmd "C:\\Users\\Ashwin\\scoop\\apps\\nircmd\\current\\nircmd.exe" "changebrightness" "10") ;; Brightness Up 
-  brd (cmd "C:\\Users\\Ashwin\\scoop\\apps\\nircmd\\current\\nircmd.exe" "changebrightness" "-10") ;; Brightness Down
+  bru (cmd "nircmd" "changebrightness" "10") ;; Brightness Up 
+  brd (cmd "nircmd" "changebrightness" "-10") ;; Brightness Down
 )
 
 (deflayer base
@@ -67,7 +63,7 @@
   XX    _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
   _     _    _    _    _    _    _    _    _    _    _    -    _     _       _    _    _ 
   _     del up   bspc C-tab _    _    _    _    _    _    _    _     _       _    _    _ 
-  @cap  left down right @f   _   _    @j   @k   @l   @;   @ent _                         
+  @cap  left down right @f   _   _  left  up  down right @ent  _                         
   XX    _    _      _   _    _   _    _   _    _    _    XX                       _      
   XX    XX   XX              _            XX   XX   XX                       _    _    _ 
 )
@@ -75,8 +71,8 @@
 (deflayer media
   XX    _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
   _     -    _    _    _    _    _    _    _    _    _    _    _     _       _    _    _ 
-  _     @mmt @mvu @mps _    _    _    _    _    _    _    _    _     _       _    _    _ 
-  _     @mpr @mvd @mnx _    _    _    _    _    _    _    _    _                         
+  _     mute volu @mps _    _    _    _    _    _    _    _    _     _       _    _    _ 
+  _     prev vold next _    _    _    _    _    _    _    _    _                         
   XX    _    _    _    _    _    _    _    _    _    _    XX                     _       
   @bse  XX   XX           @mpp             XX   XX   XX                        _  _   _   
 )
@@ -84,7 +80,7 @@
 (deflayer system 
   XX    _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
   _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _    _ 
-  _     -   @bru  -    _    _    _    _    _    _    _    _    _     _       _    _    _ 
+  _     _   @bru  _    _    _    _    _    _    _    _    _    _     _       _    _    _ 
   _     _   @brd  _    _    _    _    _    _    _    _    _    _                         
   XX    _    _    _    _    _    _    _    _    _    _    XX                     _       
   XX   @bse  XX           -               XX   XX   XX                        _  _   _   
