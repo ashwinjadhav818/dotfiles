@@ -11,7 +11,7 @@
 ; --------- CONFIGURATION ---------
 global scriptsDir := EnvGet("USERPROFILE") . "\.config\scripts"
 global scriptExtensions := [".ps1", ".bat", ".ahk"]  ; add .ahk for convenience
-#t::OpenScriptsMenu()
+#d::OpenScriptsMenu()
 ; --------------------------------
 
 OpenScriptsMenu() {

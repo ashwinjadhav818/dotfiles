@@ -1,20 +1,5 @@
 ; Disable Useless Windows Keybinds
 
-; --- Disable Start menu when Win pressed alone, keep Win+ combos ---
-~LWin::
-~RWin:: {
-    ; When Win is pressed down, immediately send a dummy key
-    ; to pre-empt Windows from queuing the Start menu
-    Send("{Blind}{vkE8}")
-}
-
-#D:: {
-    Send("{Blind}{vkE8}")
-}
-#P:: {
-    Send("{Blind}{vkE8}")
-}
-
 ; Disable Ctrl+S in browsers
 if WinActive("ahk_exe helium.exe") {
     ^s::return ; Disable Ctrl + S only in Helium Browser

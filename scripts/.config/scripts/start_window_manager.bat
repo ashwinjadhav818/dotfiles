@@ -26,7 +26,7 @@ if "%choice%"=="2" (
 :: Windows Workspaces
 if "%choice%"=="3" (
     echo Starting Windows Workspaces desktop switcher...
-    start "" autohotkey "%ConfigPath%\scripts\windows-workspaces\desktop_switcher.ahk"
+    start "" "%ConfigPath%\scripts\windows-workspaces\desktop_switcher.ahk"
     goto end
 )
 

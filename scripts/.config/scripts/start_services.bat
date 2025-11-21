@@ -5,8 +5,7 @@ echo Starting common background services...
 set "ConfigPath=%USERPROFILE%\.config"
 
 :: Launch AHK scripts
-start "" autohotkey "%ConfigPath%\scripts\keymaps.ahk"
-start "" autohotkey "%ConfigPath%\scripts\scripts_menu.ahk"
+start "" autohotkey "%ConfigPath%\scripts\ahk\keymaps.ahk"
 
 :: Start yasbc
 start "" conhost --headless yasbc start
