@@ -34,6 +34,8 @@ bars:
         - "home"
         - "komorebi_workspaces"
         - "komorebi_active_layout"
+        - "glazewm_workspaces"
+        - "glazewm_tiling_direction"
         - "media"
       center: 
         - "taskbar"
