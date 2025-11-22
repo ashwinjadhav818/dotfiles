@@ -15,3 +15,6 @@
     Send("{Blind}{vkE8}")
 }
 
+#E:: {
+    Send("{Blind}{vkE8}")
+}

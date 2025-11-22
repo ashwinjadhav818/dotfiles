@@ -9,8 +9,9 @@ DEFAULT_BROWSER := EnvGet("DEFAULT_BROWSER")
 #s::!Space
 ; !Space::#s
 #w::Run "conhost --headless start_emacs_client.bat"
-#b::Run DEFAULT_BROWSER 
-#d::Run "C:/Users/Ashwin/.config/scripts/menu.bat" 
+#b::Run DEFAULT_BROWSER
+#d::Run "C:/Users/Ashwin/.config/scripts/menu.bat"
+#f::Run "explorer.exe"
 
 ; Always on Top
 #+p:: WinSetAlwaysOnTop(-1, "A")
@@ -38,11 +39,10 @@ global guiHint
 A  R  S  T  D     H  N  E  I  O
 Z  X  C  V  B     K  M  ,  .  /
 
-(Colemak-DH)"
+(Colemak)"
     )
 
     guiHint.Add("Text",, text)
     guiHint.Show("AutoSize Center")
     hintVisible := true
 }
-
