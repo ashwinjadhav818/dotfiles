@@ -375,12 +375,12 @@ widgets:
   org_task:
     type: "yasb.custom.CustomWidget"
     options:   
-      label: "<span>\uf017</span>  {data}"
-      label_alt: "<span>\uf017</span>  {data}"
+      label: "<span>\uf017 </span> {data}"
+      label_alt: "<span>\uf017 </span> {data}"
       class_name: "custom-widget"
       exec_options:
         run_cmd: "%USERPROFILE%\\.config\\scripts\\org-task-time.bat"
-        run_interval: 1000
+        run_interval: 10000
         return_format: "string"
         hide_empty: true 
   

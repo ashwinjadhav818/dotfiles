@@ -421,3 +421,8 @@
 .media-menu .app-volume-container .unmute-button {
   color: var(--icon-color);
 }
+
+/* --- Custom Widget --- */
+.custom-widget .widget-container .icon {
+  padding-right: 6px;
+}
