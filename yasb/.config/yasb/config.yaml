@@ -23,7 +23,7 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 40
+      height: 30
     padding:
       top: 0
       left: 0
@@ -36,16 +36,20 @@ bars:
         - "komorebi_active_layout"
         - "glazewm_workspaces"
         - "glazewm_tiling_direction"
-        - "media"
+        - "active_window"
       center: 
-        - "taskbar"
+        - "org_task"
       right: 
         - "systray"
-        - "org_task"
+        - "separator"
         - "brightness"
+        - "separator"
         - "wifi"
+        - "separator"
         - "battery"
+        - "separator"
         - "volume"
+        - "separator"
         - "clock"
 widgets:
   active_window:
@@ -54,7 +58,7 @@ widgets:
       label: "{win[title]}"
       label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
       label_no_window: ""
-      label_icon: true
+      label_icon: false 
       label_icon_size: 14
       max_length: 56
       max_length_ellipsis: "..."
@@ -62,8 +66,7 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%a, %d %b %H:%M}"
-      label_alt: "{%A, %d %B %Y %H:%M:%S}"
+      label: "time {%Y-%m-%d %H:%M:%S}"
       timezones: []
       callbacks:
         on_left: "exec notification_center"
@@ -136,23 +139,11 @@ widgets:
     options:
       horizontal_label: "\udb81\udce1"
       vertical_label: "\udb81\udce2"
-  windows_workspaces:
-    type: "yasb.windows_desktops.WorkspaceWidget"
-    options:
-      label_workspace_btn: "{index}"
-      label_workspace_active_btn: "{index}"
-      animation: true
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
-      label: "<span>{icon}</span> {level}"
-      label_alt: "{volume}"
-      volume_icons:
-        - "\ueee8"
-        - "\uf026"
-        - "\uf027"
-        - "\uf027"
-        - "\uf028"
+      label: "vol {level}"
+      label_alt: "volume {volume}"
       audio_menu:
         blur: true
         round_corners: true
@@ -168,35 +159,24 @@ widgets:
   battery:
     type: "yasb.battery.BatteryWidget"
     options:
-      label: "<span>{icon}</span> {percent}%"
-      label_alt: "<span>{icon}</span> {percent}% | time: {time_remaining}"
+      label: "bat {percent}%"
+      label_alt: "battery {percent}% | time: {time_remaining}"
       update_interval: 5000
       time_remaining_natural: False
       hide_unsupported: True
-      charging_options:
-        icon_format: "{charging_icon}"
-        blink_charging_icon: true
-        blink_interval: 500
       status_thresholds:
         critical: 10
         low: 25
         medium: 75
         high: 95
         full: 100
-      status_icons:
-        icon_charging: "\uf0e7"
-        icon_critical: "\uf244"
-        icon_low: "\uf243"
-        icon_medium: "\uf242"
-        icon_high: "\uf241"
-        icon_full: "\uf240"
       callbacks:
         on_left: "exec quick_settings"
   brightness:
     type: "yasb.brightness.BrightnessWidget"
     options:
-      label: "<span>{icon}</span>"
-      label_alt: "Brightness {percent}%"
+      label: "bri {percent}%"
+      label_alt: "brightness {percent}%"
       tooltip: true
       scroll_step: 5
       brightness_menu:
@@ -220,7 +200,7 @@ widgets:
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
-      label: "<span>{wifi_icon}</span>"
+      label: "wifi {wifi_strength}%"
       label_alt: "{wifi_name} {wifi_strength}%"
       update_interval: 5000
       callbacks:
@@ -229,15 +209,7 @@ widgets:
         on_right: "toggle_label"
       ethernet_label: "<span>{wifi_icon}</span>"
       ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
-      ethernet_icon: "\ueba9"
       get_exact_wifi_strength: false # Optional. Will require location access permission if true.
-      wifi_icons: [
-          "\udb82\udd2e", # Icon for 0% strength
-          "\udb82\udd1f", # Icon for 1-24% strength
-          "\udb82\udd22", # Icon for 25-49% strength
-          "\udb82\udd25", # Icon for 50-74% strength
-          "\udb82\udd28", # Icon for 75-100% strength
-        ]
       menu_config:
         blur: true
         round_corners: true
@@ -247,8 +219,6 @@ widgets:
         direction: "up"
         offset_top: 100
         offset_left: 200
-        wifi_icons_secured: ["\ue670", "\ue671", "\ue672", "\ue673"]
-        wifi_icons_unsecured: ["\uec3c", "\uec3d", "\uec3e", "\uec3f"]
   systray:
     type: "yasb.systray.SystrayWidget"
     options:
@@ -259,31 +229,6 @@ widgets:
       icon_size: 16
       pin_click_modifier: "alt"
       show_unpinned: false
-  taskbar:
-    type: "yasb.taskbar.TaskbarWidget"
-    options:
-      icon_size: 16
-      tooltip: true
-      show_only_visible: false
-      strict_filtering: true
-      monitor_exclusive: false
-      animation:
-        enabled: true
-      preview:
-        enabled: true
-        width: 240
-        delay: 400
-        padding: 8
-        margin: 8
-      title_label:
-        enabled: true
-        show: "focused"
-        min_length: 10
-        max_length: 30
-      ignore_apps:
-        processes: []
-        titles: []
-        classes: []
   home:
     type: "yasb.home.HomeWidget"
     options:
@@ -317,70 +262,22 @@ widgets:
         system: "System Settings"
         about: "About This PC"
         task_manager: "Task Manager"
-  media:
-    type: "yasb.media.MediaWidget"
-    options:
-      label: "{title} - {artist}"
-      label_alt: "{title}"
-      hide_empty: true
-      callbacks:
-        on_left: "toggle_media_menu"
-        on_middle: "do_nothing"
-        on_right: "do_nothing"
-      max_field_size:
-        label: 40
-        label_alt: 50
-      show_thumbnail: true
-      controls_only: false
-      controls_left: false 
-      controls_hide: false
-      thumbnail_alpha: 80
-      thumbnail_padding: 16
-      thumbnail_corner_radius: 16
-      icons:
-        prev_track: "\ue892"
-        next_track: "\ue893"
-        play: "\ue768"
-        pause: "\ue769"
-      media_menu:
-        blur: true 
-        round_corners: true
-        round_corners_type: "normal"
-        border_color: "system"
-        alignment: "right"
-        direction: "up"
-        offset_top: 10
-        offset_left: 100
-        thumbnail_corner_radius: 8
-        thumbnail_size: 120
-        max_title_size: 60
-        max_artist_size: 20
-        show_source: true
-        show_volume_slider: true
-      media_menu_icons:
-        play: "\ue768"
-        pause: "\ue769"
-        prev_track: "\ue892"
-        next_track: "\ue893"
-      scrolling_label:
-        enabled: false 
-        update_interval_ms: 33
-        style: "bounce" # can be "left", "right", "bounce", "bounce-ease"
-        separator: " | "
-        label_padding: 1
-        # Easing curve params: https://www.desmos.com/calculator/j7eamemxzi
-        ease_slope: 20
-        ease_pos: 0.8
-        ease_min: 0.5
   org_task:
     type: "yasb.custom.CustomWidget"
     options:   
-      label: "<span>\uf017 </span> {data}"
-      label_alt: "<span>\uf017 </span> {data}"
+      label: "{data}"
+      label_alt: "task {data}"
       class_name: "custom-widget"
       exec_options:
         run_cmd: "%USERPROFILE%\\.config\\scripts\\org-task-time.bat"
         run_interval: 10000
         return_format: "string"
         hide_empty: true 
-  
+  separator:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "|"
+      label_alt: "|"
+      class_name: "separator-widget"
+      callbacks:
+        on_left: "do_nothing"
