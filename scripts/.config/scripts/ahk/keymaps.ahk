@@ -35,11 +35,11 @@ global guiHint
 
     text :=
     (
-"Q  W  F  P  G     J  L  U  Y  ;
-A  R  S  T  D     H  N  E  I  O
-Z  X  C  V  B     K  M  ,  .  /
+"Q  W  F  P  B     J  L  U  Y  ;
+A  R  S  T  G     M  N  E  I  O
+X  C  D  V  Z     K  H  ,  .  /
 
-(Colemak)"
+(Colemak-DH)"
     )
 
     guiHint.Add("Text",, text)
