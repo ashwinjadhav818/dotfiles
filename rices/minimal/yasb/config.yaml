@@ -1,0 +1,283 @@
+watch_stylesheet: true
+watch_config: true
+debug: false
+komorebi:
+  start_command: "komorebic start --masir --ahk"
+  stop_command: "komorebic stop --masir --ahk"
+  reload_command: "komorebic stop --masir --ahk && komorebic start --masir --ahk"
+bars:
+  primary-bar:
+    enabled: true
+    screens: ["*"]
+    class_name: "yasb-bar"
+    alignment:
+      position: "bottom"
+      center: false
+    blur_effect:
+      enabled: true 
+      dark_mode: true
+      round_corners: false 
+      border_color: Black 
+    window_flags:
+      always_on_top: false
+      windows_app_bar: true
+    dimensions:
+      width: "100%"
+      height: 30
+    padding:
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+    widgets:
+      left:
+        - "home"
+        - "komorebi_workspaces"
+        - "komorebi_active_layout"
+        - "glazewm_workspaces"
+        - "glazewm_tiling_direction"
+        - "active_window"
+      center: 
+        - "org_task"
+      right: 
+        - "systray"
+        - "separator"
+        - "brightness"
+        - "separator"
+        - "wifi"
+        - "separator"
+        - "battery"
+        - "separator"
+        - "volume"
+        - "separator"
+        - "clock"
+widgets:
+  active_window:
+    type: "yasb.active_window.ActiveWindowWidget"
+    options:
+      label: "{win[title]}"
+      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
+      label_no_window: ""
+      label_icon: false 
+      label_icon_size: 14
+      max_length: 56
+      max_length_ellipsis: "..."
+      monitor_exclusive: false
+  clock:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "time {%Y-%m-%d %H:%M:%S}"
+      timezones: []
+      callbacks:
+        on_left: "exec notification_center"
+  komorebi_workspaces:
+    type: "komorebi.workspaces.WorkspaceWidget"
+    options:
+      label_offline: "\u23fc Offline"
+      label_workspace_btn: ""
+      label_workspace_active_btn: ""
+      label_workspace_populated_btn: ""
+      label_default_name: ""
+      label_zero_index: false
+      hide_empty_workspaces: true
+      hide_if_offline: true
+      animation: true
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
+  komorebi_active_layout:
+    type: "komorebi.active_layout.ActiveLayoutWidget"
+    options:
+      hide_if_offline: true
+      label: "{icon}"
+      layouts:
+        [
+          "bsp",
+          "columns",
+          "rows",
+          "grid",
+          "vertical_stack",
+          "horizontal_stack",
+          "ultrawide_vertical_stack",
+        ]
+      layout_icons:
+        bsp: "[\\\\]"
+        columns: "[||]"
+        rows: "[==]"
+        grid: "[G]"
+        vertical_stack: "[V]="
+        horizontal_stack: "[H]="
+        ultrawide_vertical_stack: "||="
+        monocle: "[M]"
+        maximised: "[X]"
+        floating: "><>"
+        paused: "[P]"
+      callbacks:
+        on_left: "next_layout"
+        on_middle: "toggle_monocle"
+        on_right: "prev_layout"
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
+  glazewm_workspaces:
+    type: "glazewm.workspaces.GlazewmWorkspacesWidget"
+    options:
+      offline_label: "GlazeWM Offline"
+      hide_empty_workspaces: true
+      hide_if_offline: true
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
+  glazewm_tiling_direction:
+    type: "glazewm.tiling_direction.GlazewmTilingDirectionWidget"
+    options:
+      horizontal_label: "\udb81\udce1"
+      vertical_label: "\udb81\udce2"
+  volume:
+    type: "yasb.volume.VolumeWidget"
+    options:
+      label: "vol {level}"
+      label_alt: "volume {volume}"
+      audio_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "up"
+        offset_top: 10
+        offset_left: 100
+      callbacks:
+        on_middle: "toggle_mute"
+        on_right: "exec cmd.exe /c start ms-settings:sound"
+  battery:
+    type: "yasb.battery.BatteryWidget"
+    options:
+      label: "bat {percent}%"
+      label_alt: "battery {percent}% | time: {time_remaining}"
+      update_interval: 5000
+      time_remaining_natural: False
+      hide_unsupported: True
+      status_thresholds:
+        critical: 10
+        low: 25
+        medium: 75
+        high: 95
+        full: 100
+      callbacks:
+        on_left: "exec quick_settings"
+  brightness:
+    type: "yasb.brightness.BrightnessWidget"
+    options:
+      label: "bri {percent}%"
+      label_alt: "brightness {percent}%"
+      tooltip: true
+      scroll_step: 5
+      brightness_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "up"
+        offset_top: 10
+        offset_left: 100
+      brightness_icons:
+        ["\udb80\udcde", "\udb80\udcdd", "\udb80\udcdf", "\udb80\udce0"]
+      callbacks:
+        on_left: "toggle_brightness_menu"
+      container_padding:
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+  wifi:
+    type: "yasb.wifi.WifiWidget"
+    options:
+      label: "wifi {wifi_strength}%"
+      label_alt: "{wifi_name} {wifi_strength}%"
+      update_interval: 5000
+      callbacks:
+        on_left: "exec quick_settings"
+        on_middle: "exec cmd.exe /c start ms-settings:network"
+        on_right: "toggle_label"
+      ethernet_label: "<span>{wifi_icon}</span>"
+      ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
+      get_exact_wifi_strength: false # Optional. Will require location access permission if true.
+      menu_config:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "up"
+        offset_top: 100
+        offset_left: 200
+  systray:
+    type: "yasb.systray.SystrayWidget"
+    options:
+      class_name: "systray"
+      label_collapsed: "\udb80\udf5e"
+      label_expanded: "\udb80\udf5f"
+      label_position: "right"
+      icon_size: 16
+      pin_click_modifier: "alt"
+      show_unpinned: false
+  home:
+    type: "yasb.home.HomeWidget"
+    options:
+      label: "<span>\ue62a</span>"
+      menu_list:
+        - { title: "Home", path: "~" }
+        - { title: "Projects", path: "D:\\Projects" }
+        - { title: "Areas", path: "D:\\Areas" }
+        - { title: "Download", path: "C:\\Users\\Ashwin\\Downloads" }
+      system_menu: true
+      power_menu: true
+      blur: true
+      round_corners: true
+      round_corners_type: "normal"
+      border_color: "System"
+      offset_top: 10
+      offset_left: 0
+      container_padding:
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+      alignment: "left"
+      direction: "up"
+      menu_labels:
+        shutdown: "Shutdown"
+        restart: "Restart"
+        logout: "Logout"
+        lock: "Lock"
+        sleep: "Sleep"
+        system: "System Settings"
+        about: "About This PC"
+        task_manager: "Task Manager"
+  org_task:
+    type: "yasb.custom.CustomWidget"
+    options:   
+      label: "{data}"
+      label_alt: "task {data}"
+      class_name: "custom-widget"
+      exec_options:
+        run_cmd: "%USERPROFILE%\\.config\\scripts\\org-task-time.bat"
+        run_interval: 10000
+        return_format: "string"
+        hide_empty: true 
+  separator:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "|"
+      label_alt: "|"
+      class_name: "separator-widget"
+      callbacks:
+        on_left: "do_nothing"

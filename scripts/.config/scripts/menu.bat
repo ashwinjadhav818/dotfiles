@@ -91,7 +91,7 @@ if /i "%FILE:~-4%"==".ahk" (
 
 :: .ps1
 if /i "%FILE:~-4%"==".ps1" (
-    powershell -ExecutionPolicy Bypass -File "%FILE%" >nul 2>&1
+    start "" powershell -ExecutionPolicy Bypass -File "%FILE%" >nul 2>&1
     exit /b
 )
 

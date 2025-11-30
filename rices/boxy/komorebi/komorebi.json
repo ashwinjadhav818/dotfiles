@@ -1,0 +1,102 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "mouse_follows_focus": false,
+  "default_workspace_padding": 0,
+  "default_container_padding": 0,
+  "border": true,
+  "border_width": 2,
+  "border_offset": -1,
+  "border_style": "Square",
+  "theme": {
+    "palette": "Base16",
+    "name": "TokyoNightDark",
+    "unfocused_border": "Base03",
+    "bar_accent": "Base0D"
+  },
+  "transparency": true,
+  "transparency_alpha": 215,
+  "animation": {
+    "enabled": false,
+    "duration": 300,
+    "fps": 60,
+    "style": {
+      "movement": "EaseOutBack",
+      "transparency": "Linear"
+    }
+  },
+  "border_colours": {
+    "single": {
+      "r": 22,
+      "g": 23,
+      "b": 25
+    },
+    "stack": {
+      "r": 32,
+      "g": 57,
+      "b": 123
+    },
+    "monocle": {
+      "r": 255,
+      "g": 51,
+      "b": 153
+    }
+  },
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "1",
+          "layout": "BSP"
+        },
+        {
+          "name": "2",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "3",
+          "layout": "Grid"
+        },
+        {
+          "name": "4",
+          "layout": "VerticalStack"
+        }
+      ]
+    }
+  ],
+  "stackbar": {
+    "label": "Title",
+    "height": 25,
+    "mode": "OnStack",
+    "tabs": {
+      "focused_text": "#00a542",
+      "unfocused_text": "#b3b3b3",
+      "background": "#141414",
+      "font_size": 14
+    }
+  },
+  "ignore_rules": [
+    {
+      "kind": "Exe",
+      "id": "kanata_gui",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Picture in picture",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Picture-in-Picture",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Command Pallet",
+      "matching_strategy": "Equals"
+    }
+  ]
+}
