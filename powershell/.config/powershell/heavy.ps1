@@ -4,7 +4,7 @@
 # -------------------------------------------------
 
 # ---------- 1. Theme (cached) ----------
-$themeSource = "$HOME\.config\powershell\Themes\aura.omp.json"
+$themeSource = "$HOME\.config\powershell\Themes\tokyo.omp.json"
 
 # oh-my-posh 
 oh-my-posh init pwsh --config $themeSource | Invoke-Expression
