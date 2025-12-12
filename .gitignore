@@ -19,3 +19,9 @@ tmp-*/
 # Ignore Scoop config if synced
 # ----------------------------------------
 /.config/scoop
+
+
+# ----------------------------------------
+# Ignore rice manager files if synced
+# ----------------------------------------
+komorebi/.config/komorebi/komorebi.json

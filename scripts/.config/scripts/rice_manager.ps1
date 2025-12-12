@@ -31,7 +31,7 @@ $ConfigSets = @{
         "Files" = @("komorebi.json")
     };
     "glazewm" = @{
-        "ActiveDir" = Join-Path $HomeDir ".config\glazewm"; 
+        "ActiveDir" = Join-Path $HomeDir ".glzr\glazewm"; 
         "Files" = @("config.yaml")
     }
 }
@@ -104,7 +104,7 @@ function Reload-WindowManagers {
     # Reload Komorebi 
     Write-Host "Attempting to reload Komorebi..."
     try {
-        Start-Process -FilePath "komorebic.exe" -ArgumentList "reload-config" -Wait -NoNewWindow
+        Start-Process -FilePath "komorebic.exe" -ArgumentList "reload-configuration" -Wait -NoNewWindow
         Write-Host "✅ Komorebi configuration reloaded." -ForegroundColor Green
     } catch {
         Write-Warning "Could not run 'komorebic.exe reload-config'. Komorebi may need manual restart."
