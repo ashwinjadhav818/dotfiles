@@ -16,8 +16,8 @@
 )
 
 (defvar
-  tap-time 150 
-  hold-time 200
+  tap-time 300 
+  hold-time 250
 )
 
 (defalias
@@ -58,7 +58,7 @@
   _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _    _ 
   @cap  @a   @s   @d   @f   _    _    @j   @k   @l   @;   @ent _                         
   XX    _    _    _    _    _    _    _    _    _    _    XX                     _       
-  @med @sys  @mni          _              XX   XX   XX                        _  _   _   
+  @med @sys  @mni          _             @mni  XX  @med                      _   _   _   
 )
 
 (deflayer manipulation 
@@ -72,11 +72,11 @@
 
 (deflayer media
   XX    _    _    _    _    _    _    _    _    _    _    _    _     _       _    _
-  _     -    _    _    _    _    _    _    _    _    _    _    _     _       _    _    _ 
+  _     _    _    _    _    _    _    _    _    _    _    _    _     _       _    _    _ 
   _     mute volu @mps _    _    _    _    _    _    _    _    _     _       _    _    _ 
-  _     prev vold next _    _    _    _    _    _    _    _    _                         
-  XX    _    _    _    _    _    _    _    _    _    _    XX                     _       
-  @bse  XX   XX           @mpp             XX   XX   XX                        _  _   _   
+  _     prev vold next _    _    _    _   vold volu  _    _    _                         
+  XX    _    _    _    _    _    _    _    _    _    _    XX                    volu       
+  @bse  XX   XX           @mpp             XX   XX  @bse                      _ vold _   
 )
 
 (deflayer system 
