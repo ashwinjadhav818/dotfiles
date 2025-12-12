@@ -25,3 +25,5 @@ tmp-*/
 # Ignore rice manager files if synced
 # ----------------------------------------
 komorebi/.config/komorebi/komorebi.json
+glzr/.glzr/glazewm/config.yaml
+backups/
