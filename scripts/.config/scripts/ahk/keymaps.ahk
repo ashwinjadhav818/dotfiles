@@ -37,9 +37,9 @@ global guiHint
     (
 "Q  W  F  P  B     J  L  U  Y  ;
 A  R  S  T  G     M  N  E  I  O
-X  C  D  V  Z     K  H  ,  .  /
+Z  X  D  C  V     K  H  ,  .  /
 
-(Colemak-DH)"
+(Colemak-DHC)"
     )
 
     guiHint.Add("Text",, text)

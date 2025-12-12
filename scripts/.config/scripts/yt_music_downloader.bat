@@ -28,8 +28,8 @@ IF NOT "%URL:music.youtube.com=%"=="%URL%" (
 
 REM --- Get output folder ---
 IF "%~2"=="" (
-    SET /P "OUTPUT_DIR=Enter output folder (leave empty for %CD%\yt_playlist): "
-    IF "%OUTPUT_DIR%"=="" SET "OUTPUT_DIR=%CD%\yt_playlist"
+    SET /P "OUTPUT_DIR=Enter output folder (leave empty for %USERPROFILE%/Music): "
+    IF "%OUTPUT_DIR%"=="" SET "OUTPUT_DIR=%USERPROFILE%/Music"
 ) ELSE (
     SET "OUTPUT_DIR=%~2"
 )
@@ -39,20 +39,8 @@ IF NOT EXIST "%OUTPUT_DIR%" (
     MKDIR "%OUTPUT_DIR%"
 )
 
-ECHO.
-ECHO Fetching song/album info...
-yt-dlp --flat-playlist --print "%%(title)s - %%(uploader)s - %%(id)s" "%URL%" > "%OUTPUT_DIR%\playlist.txt" 2>nul
-
-IF %ERRORLEVEL% NEQ 0 (
-    ECHO Failed to fetch info. Check the URL.
-    EXIT /B 1
-)
-
-ECHO Info saved to "%OUTPUT_DIR%\playlist.txt"
-ECHO.
-
-REM --- Download audio only (Opus preferred) ---
-ECHO Downloading audio in Opus format...
+REM --- Download audio only ---
+ECHO Downloading audio...
 yt-dlp -o "%OUTPUT_DIR%\%%(title)s.%%(ext)s" -f "bestaudio[ext=opus]/bestaudio" --extract-audio --audio-format opus --audio-quality 0 "%URL%"
 
 IF %ERRORLEVEL% EQU 0 (

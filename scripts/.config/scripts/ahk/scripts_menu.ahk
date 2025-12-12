@@ -3,14 +3,14 @@
 
 ; ================================
 ; Script Launcher Menu
-; Hotkey: Win + T
+; Hotkey: Win + D
 ; Lists all .ps1 and .bat scripts from a chosen directory
 ; and runs them in their default application asynchronously.
 ; ================================
 
 ; --------- CONFIGURATION ---------
 global scriptsDir := EnvGet("USERPROFILE") . "\.config\scripts"
-global scriptExtensions := [".ps1", ".bat", ".ahk"]  ; add .ahk for convenience
+global scriptExtensions := [".ps1", ".bat", ".ahk"] 
 #d::OpenScriptsMenu()
 ; --------------------------------
 
