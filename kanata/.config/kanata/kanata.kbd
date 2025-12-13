@@ -44,12 +44,12 @@
     
 
   ;; MEDIA SHORT ALIASES
-  mps (cmd "nircmd" "sendkeypress" "0xB2") ;; Stop
-  mpp (cmd "nircmd" "sendkeypress" "0xB3") ;; Play/Pause
+  mps (cmd "xdotool" "key" "XF86Stop")     ;; Stop
+  mpp (cmd "xdotool" "key" "XF86Play")     ;; Play/Pause
 
   ;; BRIGHTNESS ALIASES 
-  bru (cmd "nircmd" "changebrightness" "10") ;; Brightness Up 
-  brd (cmd "nircmd" "changebrightness" "-10") ;; Brightness Down
+  bru (cmd "brightnessctl" "set" "+10%") ;; Brightness Up
+  brd (cmd "brightnessctl" "set" "10%-") ;; Brightness Down
 )
 
 (deflayer base
@@ -76,7 +76,7 @@
   _     mute volu @mps _    _    _    _    _    _    _    _    _     _       _    _    _ 
   _     prev vold next _    _    _    _   vold volu  _    _    _                         
   XX    _    _    _    _    _    _    _    _    _    _    XX                    volu       
-  @bse  XX   XX           @mpp             XX   XX  @bse                      _ vold _   
+  @bse  XX   XX          @mpp             XX   XX  @bse                      _ vold _   
 )
 
 (deflayer system 
