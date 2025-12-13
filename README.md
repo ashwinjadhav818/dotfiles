@@ -1,33 +1,5 @@
 # Ashwin's dotfiles
 
-![Cover](./assets/img7.png)
-
-<details>
-  <summary>More Screenshots</summary>
-  <details>
-    <summary>Example 1</summary>
-    
-![GlazeWM/Komorebi + YASB 8](./assets/img8.png)
-![GlazeWM/Komorebi + YASB 9](./assets/img9.png)
-  </details>
-
-  <details>
-    <summary>Example 2</summary>
-    
-![GlazeWM + Zebar 6](./assets/img6.png)
-![GlazeWM + Zebar 1](./assets/img1.png)
-![GlazeWM + Zebar 2](./assets/img2.png)
-  </details>
-
-  <details>
-    <summary>Example 3</summary>
-    
-![GlazeWM + Zebar 3](./assets/img3.png)
-![GlazeWM + Zebar 4](./assets/img4.png)
-![GlazeWM + Zebar 5](./assets/img5.png)
-  </details>
-</details>
-
 ## Configurations
 
 - [vim](https://github.com/vim/vim/) ([NeoVim](https://github.com/neovim/neovim/) & [LunarVim](https://github.com/LunarVim/LunarVim/))
@@ -40,12 +12,7 @@
 - [zsh](https://www.zsh.org/)
 - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/)
 - [powerlevel10k](https://github.com/romkatv/powerlevel10k/)
-- [powershell](https://learn.microsoft.com/en-us/powershell/)
 - [tmux](https://github.com/tmux/tmux/)
-- [glaze-wm](https://github.com/glzr-io/glazewm/)
-- [zebar](https://github.com/glzr-io/zebar/)
-- [komorebi](https://github.com/LGUG2Z/komorebi/)
-- [yasb](https://github.com/amnweb/yasb/)
 - [hypr](https://github.com/hyprwm/)
   - [hyprland](https://github.com/hyprwm/hyprland/)
   - [hyprlock](https://github.com/hyprwm/hyprlock/)
@@ -61,7 +28,6 @@
 - [alacritty](https://github.com/alacritty/alacritty/)
 - [wezterm](https://github.com/wezterm/wezterm/)
 - [hyper](https://github.com/vercel/hyper/)
-- [winfetch](https://github.com/lptstr/winfetch/)
 - [zen-browser](https://zen-browser.app/)
 
 ### Vim (NeoVim & LunarVim) config
@@ -87,15 +53,6 @@ Requires Neovim (>= 0.9)
 - [exa](https://the.exa.website/) - `ls` replacement
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Fish-like fast/unobtrusive autosuggestions for zsh.
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Fish shell-like syntax highlighting for zsh.
-
-### PowerShell config
-
-- [scoop](https://scoop.sh/) - A command-line installer
-- [git for windows](https://gitforwindows.org/)
-- [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
-- [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
-- [PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/) - Cmdlets for customizing the editing environment, used for autocompletion
-- [zoxide](https://github.com/ajeetdsouza/zoxide) - directory jumper
 
 ## Steps to install
 
