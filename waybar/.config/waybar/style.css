@@ -1,15 +1,16 @@
 /* General Styling */
 * {
-    font-family: "GeistMono Nerd Font";
+    font-family: "Adwiata Sans";
 }
 
 /* Bar Styling */
 window#waybar {
-    background-color: rgba(26, 27, 38, 0.5); /* background */
-    color: #c0caf5; /* foreground */
+    background-color: rgba(26, 27, 38, 0.5);
+    color: #c0caf5;
     transition-property: background-color;
     transition-duration: 0.5s;
-    padding: 0 50px;
+    border-radius: 8px;
+    padding: 0 5px;
 }
 
 window#waybar.hidden {
@@ -18,8 +19,10 @@ window#waybar.hidden {
 
 /* Tooltip Styling */
 tooltip {
-    background: #292e42; /* inactive_tab_background */
-    color: #c0caf5; /* foreground */
+    background: #292e42;
+    /* inactive_tab_background */
+    color: #c0caf5;
+    /* foreground */
     border-radius: 5px;
     padding: 5px;
 }
@@ -40,26 +43,30 @@ tooltip {
 #custom-expand,
 #custom-notification,
 #tray,
-#mpd {
-    padding: 0 5px;
+#mpd,
+#custom-power,
+#power-profiles-daemon {
+    padding: 0 7px;
 }
 
 /* Hover Effects */
-#clock:hover, 
+#clock:hover,
 #custom-notification:hover,
 #bluetooth:hover,
 #network:hover,
-#battery:hover, 
+#battery:hover,
 #cpu:hover,
 #memory:hover,
-#temperature:hover {
+#temperature:hover,
+#custom-power:hover,
+#pulseaudio:hover,
+#power-profiles-daemon:hover {
     transition: all 0.3s ease;
     color: rgba(150, 150, 150, 0.5);
 }
 
 /* Notifications */
 #custom-notification {
-    margin-right: 15px;
     transition: all 0.3s ease;
 }
 
@@ -81,7 +88,8 @@ tooltip {
 }
 
 #workspaces button.active {
-    color: #c0caf5; /* foreground */
+    color: #c0caf5;
+    /* foreground */
     border: none;
     transition: all 0.5s ease;
 }
@@ -97,7 +105,8 @@ tooltip {
 }
 
 #workspaces button.empty.active {
-    color: #c0caf5; /* foreground */
+    color: #c0caf5;
+    /* foreground */
     border: none;
     transition: all 0.5s ease;
 }
@@ -118,15 +127,18 @@ tooltip {
 }
 
 #battery.charging {
-    color: #9ece6a; /* color2 */
+    color: #9ece6a;
+    /* color2 */
 }
 
 #battery.warning:not(.charging) {
-    color: #e0af68; /* color3 */
+    color: #e0af68;
+    /* color3 */
 }
 
 #battery.critical:not(.charging) {
-    color: #f7768e; /* color1 */
+    color: #f7768e;
+    /* color1 */
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -160,30 +172,36 @@ tooltip {
 
 /* Specific Icon Colors for Modules */
 #hyprland-workspaces {
-    color: #f7768e; /* color1 */
+    color: #f7768e;
+    /* color1 */
 }
 
 #hyprland-window {
-    color: #7aa2f7; /* color4 */
+    color: #7aa2f7;
+    /* color4 */
 }
 
 #custom-notification {
-    color: #bb9af7; /* color5 */
+    color: #bb9af7;
+    /* color5 */
 }
 
 #clock {
-    color: #7dcfff; /* color6 */
+    color: #7dcfff;
+    /* color6 */
 }
 
 #network {
-    color: #a9b1d6; /* color7 */
+    color: #a9b1d6;
+    /* color7 */
 }
 
 #bluetooth {
-    color: #9ece6a; /* color2 */
+    color: #9ece6a;
+    /* color2 */
 }
 
 #battery {
-    color: #e0af68; /* color3 */
+    color: #e0af68;
+    /* color3 */
 }
-

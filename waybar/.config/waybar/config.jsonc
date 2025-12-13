@@ -2,32 +2,52 @@
     "layer": "top",
     "position": "top",
     "height": 35,
+    "margin-top": 8,
+    "margin-left": 8,
+    "margin-right": 8,
+    "margin-bottom": 0,
     "reload_style_on_change": true,
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["group/expand","tray","battery","clock","custom/notification"],
-
-
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "group/expand",
+        "power-profiles-daemon",
+        "network",
+        "battery",
+        "pulseaudio",
+        "clock",
+        "custom/notification",
+        "custom/power"
+    ],
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "active": "",
-            "default": "",
-            "empty": ""
+            "active": "\uf192",
+            "default": "\udb83\ude95",
+            "empty": "\uebb5"
         },
         "persistent-workspaces": {
-            "*": [ 1,2,3,4 ]
+            "*": [
+                1,
+                2,
+                3,
+                4
+            ]
         }
     },
     "hyprland/window": {},
     "custom/notification": {
         "tooltip": false,
-        "format": "",
+        "format": "\uf0f3",
         "on-click": "swaync-client -t -sw",
         "escape": true
     },
     "clock": {
-        "format": "{:%I:%M:%S %p} ",
+        "format": "{:%I:%M %p} ",
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
         "actions": {
@@ -37,7 +57,7 @@
     },
     "network": {
         "format-wifi": " ",
-        "format-ethernet":"",
+        "format-ethernet": "",
         "format-disconnected": "",
         "tooltip-format-disconnected": "Error",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
@@ -55,9 +75,9 @@
         "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
         "on-click-right": "blueman-manager"
-    }, 
+    },
     "battery": {
-        "interval":1,
+        "interval": 1,
         "states": {
             "good": 95,
             "warning": 30,
@@ -66,7 +86,7 @@
         "format": "{icon} {capacity}%",
         "format-charging": "󰂄 {capacity}%",
         "format-plugged": "󰂄  {capacity}%",
-        "format-alt": "{icon} {time}", 
+        "format-alt": "{icon} {time}",
         "format-icons": [
             "󰁻",
             "󰁼",
@@ -76,11 +96,57 @@
             "󰁹"
         ]
     },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/power": {
+        "format": "\udb81\udc25 ",
+        "tooltip": false,
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/res/power_menu.xml",
+        "menu-actions": {
+            "shutdown": "shutdown",
+            "reboot": "reboot",
+            "suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate"
+        }
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
     "custom/expand": {
         "format": "",
         "tooltip": false
     },
-    "custom/endpoint":{
+    "custom/endpoint": {
         "format": "|",
         "tooltip": false
     },
@@ -91,14 +157,11 @@
             "transition-to-left": true,
             "click-to-reveal": true
         },
-        "modules": ["custom/expand","cpu","memory","temperature","custom/endpoint"]
-    },
-    "cpu": {
-        "format": "󰻠",
-        "tooltip": true
-    },
-    "memory": {
-        "format": ""
+        "modules": [
+            "custom/expand",
+            "tray",
+            "custom/endpoint"
+        ]
     },
     "tray": {
         "icon-size": 14,
