@@ -1,105 +1,63 @@
 {
     "$schema": "/etc/xdg/swaync/configSchema.json",
-    "layer": "overlay",
-    "control-center-layer": "top",
+    "positionX": "right",
+    "positionY": "top",
+    "control-center-positionX": "none",
+    "control-center-positionY": "none",
+    "control-center-margin-top": 8,
+    "control-center-margin-bottom": 8,
+    "control-center-margin-right": 8,
+    "control-center-margin-left": 8,
+    "control-center-width": 500,
+    "control-center-height": -1,
+    "fit-to-screen": false,
+    "layer-shell-cover-screen": true,
     "layer-shell": true,
-    "cssPriority": "application",
-    "control-center-width": 350,
-    "control-center-margin-top": 10,
-    "control-center-margin-bottom": 10,
-    "control-center-margin-right": 0,
-    "control-center-margin-left": 0,
-    "notification-2fa-action": true,
+    "layer": "overlay",
+    "control-center-layer": "overlay",
+    "cssPriority": "user",
+    "notification-body-image-height": 100,
+    "notification-body-image-width": 200,
     "notification-inline-replies": true,
-    "notification-window-width": 350,
-    "notification-icon-size": 60,
-    "notification-body-image-height":  180,
-    "notification-body-image-width": 180,
-    "timeout": 12,
-    "timeout-low": 6,
-    "timeout-critical": 1,
-    "fit-to-screen": true,
+    "timeout": 10,
+    "timeout-low": 5,
+    "timeout-critical": 0,
+    "notification-window-width": 500,
     "keyboard-shortcuts": true,
-    "image-visibility": "when available",
+    "image-visibility": "always",
     "transition-time": 200,
-    "hide-on-clear": false,
+    "hide-on-clear": true,
     "hide-on-action": true,
     "script-fail-notify": true,
     "widgets": [
+        "inhibitors",
+        "dnd",
         "mpris",
-        "title",
-        "notifications",
-        "volume",
-        "backlight",
-        "buttons-grid"
+        "notifications"
     ],
     "widget-config": {
+        "notifications": {
+            "vexpand": false
+        },
+        "inhibitors": {
+            "text": "Inhibitors",
+            "button-text": "Clear All",
+            "clear-all-button": true
+        },
         "title": {
-            "text": "Notification Center",
-            "clear-all-button": true,
-            "button-text": "󰆴"
+            "text": "Notifications",
+            "clear-all-button": false,
+            "button-text": "Clear All"
+        },
+        "dnd": {
+            "text": "Do Not Disturb"
         },
         "label": {
-            "max-lines":1,
-            "text": "Notification Center!"
+            "max-lines": 5,
+            "text": "Label Text"
         },
-
         "mpris": {
-            "image-size": 80,
-            "image-radius": 0
-        },
-        "volume": {
-            "label": "󰕾 "
-        },
-        "backlight": {
-            "label": "󰃟 "
-        },
-        "buttons-grid": {
-            "actions": [
-                {
-                    "label": "󰝟",
-                    "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-                    "type": "toggle"
-                },
-                {
-                    "label": "󰍭",
-                    "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-                    "type": "toggle"
-                },
-
-                {
-                    "label": "",
-                    "command": "kitty nmtui"
-                },
-                {
-                    "label": "",
-                    "command": "blueman-manager"
-                },
-                {
-                    "label":"󰤄",
-                    "command": "swaync-client -d",
-                    "type":"toggle"
-                },
-                {
-                    "label": "",
-                    "command": "kitty btop"
-
-                },
-                {
-                    "label": "",
-                    "command": "hyprlock"
-                },
-                {
-                    "label":"",
-                    "command": "reboot"
-                },
-                {
-                    "label":"",
-                    "command": "shutdown now"
-                }
-
-            ]
+            "autohide": true
         }
     }
 }
-
