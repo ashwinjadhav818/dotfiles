@@ -1,10 +1,9 @@
 /**
  *
  * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
+ * Editor : A S H
  * 
- * Rofi Theme File
- * Rofi Version: 1.7.3
+ * Ashwin's Rofi Theme File
  **/
 
 /*****----- Configuration -----*****/
@@ -21,12 +20,13 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    background:     #1E2127FF;
-    background-alt: #282B31FF;
-    foreground:     #FFFFFFFF;
+    background:     rgba(26, 27, 38, 0.7);
+    background-alt: rgba(26, 27, 38, 1);
+    foreground:     #c0caf5;
     selected:       #61AFEFFF;
     active:         #98C379FF;
     urgent:         #E06C75FF;
+    font: "Adwaita Sans 11";
 }
 
 * {
@@ -62,7 +62,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       800px;
+    width:                       700px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -71,19 +71,10 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               20px;
+    border-radius:               8px;
     border-color:                @border-colour;
     cursor:                      "default";
-    /* Backgroud Colors */
     background-color:            @background-colour;
-    /* Backgroud Image */
-    //background-image:          url("/path/to/image.png", none);
-    /* Simple Linear Gradient */
-    //background-image:          linear-gradient(red, orange, pink, purple);
-    /* Directional Linear Gradient */
-    //background-image:          linear-gradient(to bottom, pink, yellow, magenta);
-    /* Angle Linear Gradient */
-    //background-image:          linear-gradient(45, cyan, purple, indigo);
 }
 
 /*****----- Main Box -----*****/
@@ -91,7 +82,7 @@ mainbox {
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     40px;
+    padding:                     20px;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
     border-color:                @border-colour;
@@ -161,7 +152,7 @@ case-indicator {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     2;
+    columns:                     1;
     lines:                       10;
     cycle:                       true;
     dynamic:                     true;
@@ -182,9 +173,9 @@ listview {
     cursor:                      "default";
 }
 scrollbar {
-    handle-width:                10px ;
+    handle-width:                5px ;
     handle-color:                @handle-colour;
-    border-radius:               10px;
+    border-radius:               8px;
     background-color:            @alternate-background;
 }
 
@@ -195,7 +186,7 @@ element {
     margin:                      0px;
     padding:                     5px 10px;
     border:                      0px solid;
-    border-radius:               20px;
+    border-radius:               8px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -256,7 +247,7 @@ element-text {
 mode-switcher{
     enabled:                     true;
     spacing:                     10px;
-    margin:                      0px;
+    margin:                      0;
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px;
@@ -265,9 +256,10 @@ mode-switcher{
     text-color:                  @foreground-colour;
 }
 button {
+    margin:                      0 0 1px 0;
     padding:                     5px 10px;
-    border:                      0px solid;
-    border-radius:               20px;
+    border:                      1px solid;
+    border-radius:               8px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  inherit;
@@ -292,7 +284,7 @@ message {
 textbox {
     padding:                     5px 10px;
     border:                      0px solid;
-    border-radius:               20px;
+    border-radius:               8px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;
@@ -306,7 +298,7 @@ textbox {
 error-message {
     padding:                     10px;
     border:                      2px solid;
-    border-radius:               20px;
+    border-radius:               8px;
     border-color:                @border-colour;
     background-color:            @background-colour;
     text-color:                  @foreground-colour;
