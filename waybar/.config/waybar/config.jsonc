@@ -147,7 +147,7 @@
         "tooltip": false
     },
     "custom/endpoint": {
-        "format": "|",
+        "format": " ",
         "tooltip": false
     },
     "group/expand": {
