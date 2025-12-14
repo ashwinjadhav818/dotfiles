@@ -1,5 +1,15 @@
 # Ashwin's dotfiles
 
+![hyprland](./assets/hyprland.png)
+<details>
+  <summary>more screenshots</summary>
+
+![zen-browser](./assets/zen-browser.png)
+![rofi](./assets/rofi.png)
+![terminal](./assets/terminal.png)
+![nvim](./assets/nvim.png)
+</details>
+
 ## Configurations
 
 - [vim](https://github.com/vim/vim/) ([NeoVim](https://github.com/neovim/neovim/) & [LunarVim](https://github.com/LunarVim/LunarVim/))
@@ -20,6 +30,8 @@
   - [hyprpaper](https://github.com/hyprwm/hyprpaper/)
   - [hyprshade](https://github.com/loqusion/hyprshade/)
 - [swaync](https://github.com/ErikReider/SwayNotificationCenter/)
+- [rofi](https://github.com/davatorium/rofi)
+- [ghostty](https://ghostty.org/)
 - [waybar](https://github.com/Alexays/Waybar/)
 - [kanata](https://github.com/jtroo/kanata/)
 - [kmonad](https://github.com/kmonad/kmonad)
