@@ -1,33 +1,58 @@
-/* General Styling */
+/* =========================
+   THEME VARIABLES (GTK)
+   ========================= */
+@define-color fg_main #c0caf5;
+@define-color fg_muted rgba(150, 150, 150, 0.5);
+@define-color fg_muted_strong rgba(150, 150, 150, 0.9);
+
+@define-color bg_main rgba(26, 27, 38, 0.5);
+@define-color bg_solid rgba(26, 27, 38, 0.9);
+@define-color bg_tooltip #292e42;
+
+/* Accent palette */
+@define-color color1 #f7768e;
+@define-color color2 #9ece6a;
+@define-color color3 #e0af68;
+@define-color color4 #7aa2f7;
+@define-color color5 #bb9af7;
+@define-color color6 #7dcfff;
+@define-color color7 #a9b1d6;
+
+/* =========================
+   GENERAL
+   ========================= */
 * {
     font-family: "Adwiata Sans";
 }
 
-/* Bar Styling */
+/* =========================
+   WAYBAR WINDOW
+   ========================= */
 window#waybar {
-    background-color: rgba(26, 27, 38, 0.5);
-    color: #c0caf5;
-    transition-property: background-color;
-    transition-duration: 0.5s;
+    background-color: @bg_main;
+    color: @fg_main;
     border-radius: 8px;
     padding: 0 5px;
+    transition: background-color 0.5s;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
 }
 
-/* Tooltip Styling */
+/* =========================
+   TOOLTIP
+   ========================= */
 tooltip {
-    background: #292e42;
-    /* inactive_tab_background */
-    color: #c0caf5;
-    /* foreground */
+    background: @bg_tooltip;
+    color: @fg_main;
     border-radius: 5px;
     padding: 5px;
 }
 
-/* Module Containers */
+/* =========================
+   MODULE CONTAINERS
+   ========================= */
 #workspaces,
 #clock,
 #battery,
@@ -45,11 +70,14 @@ tooltip {
 #tray,
 #mpd,
 #custom-power,
-#power-profiles-daemon {
+#power-profiles-daemon,
+#custom-org-clock {
     padding: 0 7px;
 }
 
-/* Hover Effects */
+/* =========================
+   HOVER EFFECTS
+   ========================= */
 #clock:hover,
 #custom-notification:hover,
 #bluetooth:hover,
@@ -61,92 +89,78 @@ tooltip {
 #custom-power:hover,
 #pulseaudio:hover,
 #power-profiles-daemon:hover {
-    transition: all 0.3s ease;
-    color: rgba(150, 150, 150, 0.5);
-}
-
-/* Notifications */
-#custom-notification {
+    color: @fg_muted;
     transition: all 0.3s ease;
 }
 
-#clock {
-    transition: all 0.3s ease;
-}
-
-/* Workspaces */
+/* =========================
+   WORKSPACES
+   ========================= */
 #workspaces button {
     all: unset;
-    color: rgba(150, 150, 150, 0.9);
+    color: @fg_muted_strong;
     margin: 0 5px;
     transition: all 0.5s ease;
 }
 
 #workspaces button:hover {
-    transition: all 0.5s ease;
     color: transparent;
 }
 
 #workspaces button.active {
-    color: #c0caf5;
-    /* foreground */
-    border: none;
-    transition: all 0.5s ease;
+    color: @fg_main;
 }
 
 #workspaces button.empty {
-    color: rgba(150, 150, 150, 0.5);
-    border: none;
+    color: @fg_muted;
 }
 
 #workspaces button.empty:hover {
     color: transparent;
-    border: none;
 }
 
 #workspaces button.empty.active {
-    color: #c0caf5;
-    /* foreground */
-    border: none;
-    transition: all 0.5s ease;
+    color: @fg_main;
 }
 
-/* Modules */
+/* =========================
+   MODULE TRANSITIONS
+   ========================= */
 #bluetooth,
 #network,
 #battery,
 #cpu,
 #memory,
-#temperature {
+#temperature,
+#clock,
+#custom-notification,
+#custom-org-clock {
     transition: all 0.3s ease;
 }
 
-/* Battery States */
+/* =========================
+   BATTERY STATES
+   ========================= */
 #battery {
     background: transparent;
 }
 
 #battery.charging {
-    color: #9ece6a;
-    /* color2 */
+    color: @color2;
 }
 
 #battery.warning:not(.charging) {
-    color: #e0af68;
-    /* color3 */
+    color: @color3;
 }
 
 #battery.critical:not(.charging) {
-    color: #f7768e;
-    /* color1 */
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    color: @color1;
+    animation: blink 0.5s linear infinite alternate;
 }
 
-/* Expand Modules */
+/* =========================
+   EXPAND / GROUP
+   ========================= */
 #group-expand,
 #custom-expand {
     transition: all 0.3s ease;
@@ -154,54 +168,83 @@ tooltip {
 
 #custom-expand:hover {
     color: rgba(255, 255, 255, 0.2);
-    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
-/* Tray */
+/* =========================
+   TRAY
+   ========================= */
 #tray {
     transition: all 0.3s ease;
 }
 
-#tray menu * {
-    transition: all 0.3s ease;
-}
-
+#tray menu *,
 #tray menu separator {
     transition: all 0.3s ease;
 }
 
-/* Specific Icon Colors for Modules */
+/* =========================
+   MODULE COLORS
+   ========================= */
 #hyprland-workspaces {
-    color: #f7768e;
-    /* color1 */
+    color: @color1;
 }
 
 #hyprland-window {
-    color: #7aa2f7;
-    /* color4 */
+    color: @color4;
 }
 
 #custom-notification {
-    color: #bb9af7;
-    /* color5 */
+    color: @color5;
 }
 
 #clock {
-    color: #7dcfff;
-    /* color6 */
+    color: @color6;
 }
 
 #network {
-    color: #a9b1d6;
-    /* color7 */
+    color: @color4;
 }
 
 #bluetooth {
-    color: #9ece6a;
-    /* color2 */
+    color: @color2;
 }
 
 #battery {
-    color: #e0af68;
-    /* color3 */
+    color: @color3;
+}
+
+#custom-org-clock {
+    color: @color7;
+}
+
+#pulseaudio {
+    color: @color2;
+}
+
+/* =========================
+   MENU
+   ========================= */
+menu {
+    border-radius: 8px;
+    background: @bg_solid;
+    color: @fg_main;
+}
+
+menuitem {
+    border-radius: 8px;
+    margin: 0 4px;
+}
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.4;
+    }
 }

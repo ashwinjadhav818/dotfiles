@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+ICON="󰔟"
+
+# --- read raw emacsclient output ---
+out="$(emacsclient -e "(my/org-clock-task-and-time)" 2>&1)"
+
+# --- strip ALL quotes ---
+out="${out//\"/}"
+
+# --- trim leading & trailing whitespace ---
+out="$(echo "$out" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')"
+
+# --- treat '=', empty, or whitespace-only as empty ---
+if [[ "$out" == "=" ]] || [[ -z "$out" ]]; then
+    echo "$ICON No clocks running."
+    exit 0
+fi
+
+echo "$ICON $out"
+

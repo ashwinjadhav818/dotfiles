@@ -8,7 +8,8 @@
     "margin-bottom": 0,
     "reload_style_on_change": true,
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/org-clock"
     ],
     "modules-center": [
         "hyprland/window"
@@ -97,11 +98,10 @@
         ]
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -166,5 +166,11 @@
     "tray": {
         "icon-size": 14,
         "spacing": 10
+    },
+    "custom/org-clock": {
+        "exec": "~/.config/scripts/org-clock-task.sh",
+        "interval": 5,
+        "return-type": "text",
+        "tooltip": false
     }
 }
