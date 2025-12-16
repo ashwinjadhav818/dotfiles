@@ -32,7 +32,7 @@ alias g="git"
 alias cls="clear"
 alias lg="lazygit"
 alias em='emacsclient -c -a "emacs"'
-alias tk="taskkill -F -IM"
+alias nmrestart="sudo systemctl restart NetworkManager"
 
 eval "$(zoxide init zsh --cmd cd)"
 
@@ -57,6 +57,7 @@ fi
 
 # Antidote
 source ~/.zsh_plugins.zsh
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/powerlevel10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/powerlevel10k/.p10k.zsh ]] || source ~/.dotfiles/powerlevel10k/.p10k.zsh
