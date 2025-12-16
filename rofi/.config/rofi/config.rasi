@@ -20,7 +20,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    background:     rgba(26, 27, 38, 0.7);
+    background:     rgba(26, 27, 38, 0.5);
     background-alt: rgba(26, 27, 38, 1);
     foreground:     #c0caf5;
     selected:       #61AFEFFF;
