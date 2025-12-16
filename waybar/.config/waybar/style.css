@@ -34,6 +34,7 @@ window#waybar {
     border-radius: 8px;
     padding: 0 5px;
     transition: background-color 0.5s;
+    border: 1px solid @color4;
 }
 
 window#waybar.hidden {

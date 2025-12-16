@@ -20,6 +20,7 @@
         "network",
         "battery",
         "pulseaudio",
+        "backlight",
         "clock",
         "custom/notification",
         "custom/power"
@@ -118,6 +119,22 @@
             ]
         },
         "on-click": "pavucontrol"
+    },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "",
+            "󱩎",
+            "󱩏",
+            "󱩐",
+            "󱩑",
+            "󱩒",
+            "󱩓",
+            "󱩔",
+            "󱩕",
+            "󱩖",
+            "󰛨"
+        ]
     },
     "custom/power": {
         "format": "\udb81\udc25 ",
