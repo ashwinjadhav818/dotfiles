@@ -41,7 +41,9 @@
             ]
         }
     },
-    "hyprland/window": {},
+    "hyprland/window": {
+        "max-length": 80
+    },
     "custom/notification": {
         "tooltip": false,
         "format": "\uf0f3",
