@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+HOSTS="/etc/hosts"
+
+sudo sed -i '/youtube\.com/d;/youtu\.be/d;/discord\.com/d' "$HOSTS"
+sudo systemctl restart NetworkManager
+
+echo "Focus Mode Off."
