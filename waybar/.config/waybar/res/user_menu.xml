@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+
+    <!-- User -->
+    <child>
+      <object class="GtkMenuItem" id="user">
+        <property name="label">User (fastfetch)</property>
+      </object>
+    </child>
+
+    <!-- Divider -->
+    <child>
+      <object class="GtkSeparatorMenuItem" id="divider1"/>
+    </child>
+
+    <!-- Folders -->
+    <child>
+      <object class="GtkMenuItem" id="home">
+        <property name="label">Home</property>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkMenuItem" id="desktop">
+        <property name="label">Desktop</property>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkMenuItem" id="documents">
+        <property name="label">Documents</property>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkMenuItem" id="pictures">
+        <property name="label">Pictures</property>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkMenuItem" id="videos">
+        <property name="label">Videos</property>
+      </object>
+    </child>
+
+    <!-- Divider -->
+    <child>
+      <object class="GtkSeparatorMenuItem" id="divider2"/>
+    </child>
+
+    <!-- Some new options -->
+    <child>
+      <object class="GtkMenuItem" id="downloads">
+        <property name="label">Downloads</property>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkMenuItem" id="music">
+        <property name="label">Music</property>
+      </object>
+    </child>
+
+  </object>
+</interface>

@@ -6,7 +6,8 @@
 @define-color fg_muted_strong rgba(150, 150, 150, 0.9);
 
 @define-color bg_main rgba(26, 27, 38, 0.5);
-@define-color bg_solid rgba(26, 27, 38, 0.9);
+@define-color bg_solid rgba(26, 27, 38, 0.7);
+@define-color bg_menu rgb(26, 27, 38);
 @define-color bg_tooltip #292e42;
 
 /* Accent palette */
@@ -32,7 +33,6 @@ window#waybar {
     background-color: @bg_main;
     color: @fg_main;
     border-radius: 8px;
-    padding: 0 5px;
     transition: background-color 0.5s;
     border: 1px solid @color4;
 }
@@ -72,7 +72,12 @@ tooltip {
 #mpd,
 #custom-power,
 #power-profiles-daemon,
-#custom-org-clock {
+#custom-org-clock,
+#custom-user-menu,
+#window {
+    background-color: @bg_solid;
+    border-radius: 8px;
+    margin: 6px 4px;
     padding: 0 7px;
 }
 
@@ -84,6 +89,7 @@ tooltip {
 #bluetooth:hover,
 #network:hover,
 #battery:hover,
+#backlight:hover,
 #cpu:hover,
 #memory:hover,
 #temperature:hover,
@@ -97,10 +103,20 @@ tooltip {
 /* =========================
    WORKSPACES
    ========================= */
+#workspaces {
+    background-color: @bg_solid;
+    border-radius: 8px;
+    margin: 6px 2px;
+    padding: 6px;
+}
+
 #workspaces button {
     all: unset;
-    color: @fg_muted_strong;
-    margin: 0 5px;
+    background-color: @fg_muted_strong;
+    font-size: 0px;
+    margin: 0 2px;
+    padding: 0 6px;
+    border-radius: 8px;
     transition: all 0.5s ease;
 }
 
@@ -109,7 +125,8 @@ tooltip {
 }
 
 #workspaces button.active {
-    color: @fg_main;
+    background-color: @fg_main;
+    padding: 0 16px;
 }
 
 #workspaces button.empty {
@@ -122,6 +139,10 @@ tooltip {
 
 #workspaces button.empty.active {
     color: @fg_main;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
 }
 
 /* =========================
@@ -142,10 +163,6 @@ tooltip {
 /* =========================
    BATTERY STATES
    ========================= */
-#battery {
-    background: transparent;
-}
-
 #battery.charging {
     color: @color2;
 }
@@ -211,6 +228,10 @@ tooltip {
     color: @color2;
 }
 
+#backlight {
+    color: @color5;
+}
+
 #battery {
     color: @color3;
 }
@@ -223,18 +244,33 @@ tooltip {
     color: @color2;
 }
 
+#power-profiles-daemon {
+    color: @color2;
+}
+
 /* =========================
    MENU
    ========================= */
 menu {
     border-radius: 8px;
-    background: @bg_solid;
+    background: @bg_menu;
     color: @fg_main;
 }
 
 menuitem {
     border-radius: 8px;
-    margin: 0 4px;
+    margin: 0 8px;
+}
+
+/* =========================
+   OUTER
+   ========================= */
+#custom-user-menu {
+    margin-left: 8px;
+}
+
+#custom-power {
+    margin-right: 8px;
 }
 
 /* =========================

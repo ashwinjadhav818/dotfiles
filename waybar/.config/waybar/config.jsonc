@@ -8,29 +8,46 @@
     "margin-bottom": 0,
     "reload_style_on_change": true,
     "modules-left": [
+        "custom/user-menu",
         "hyprland/workspaces",
-        "custom/org-clock"
+        "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/window"
+        "custom/org-clock"
     ],
     "modules-right": [
         "group/expand",
         "power-profiles-daemon",
-        "network",
+        "backlight",
         "battery",
         "pulseaudio",
-        "backlight",
+        "network",
         "clock",
         "custom/notification",
         "custom/power"
     ],
+    "custom/user-menu": {
+        "format": "",
+        "tooltip": false,
+        "menu": "on-click",
+        "menu-file": "~/.config/waybar/res/user_menu.xml",
+        "menu-actions": {
+            "user": "fastfetch",
+            "home": "xdg-open $HOME",
+            "desktop": "xdg-open $HOME/Desktop",
+            "documents": "xdg-open $HOME/Documents",
+            "pictures": "xdg-open $HOME/Pictures",
+            "videos": "xdg-open $HOME/Videos",
+            "downloads": "xdg-open $HOME/Downloads",
+            "music": "xdg-open $HOME/Music"
+        }
+    },
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "active": "\uf192",
-            "default": "\udb83\ude95",
-            "empty": "\uebb5"
+            "active": " ",
+            "default": " ",
+            "empty": " "
         },
         "persistent-workspaces": {
             "*": [
@@ -42,7 +59,9 @@
         }
     },
     "hyprland/window": {
-        "max-length": 80
+        "max-length": 80,
+        "icon": true,
+        "icon-size": 16
     },
     "custom/notification": {
         "tooltip": false,
@@ -66,7 +85,7 @@
         "tooltip-format-disconnected": "Error",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} 🖧 ",
-        "on-click": "nm-connection-editor"
+        "on-click": "~/.config/scripts/nm-rofi"
     },
     "bluetooth": {
         "format-on": "󰂯 ",
@@ -144,10 +163,10 @@
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/res/power_menu.xml",
         "menu-actions": {
-            "shutdown": "shutdown",
-            "reboot": "reboot",
-            "suspend": "systemctl suspend",
-            "hibernate": "systemctl hibernate"
+            "shutdown": "systemctl poweroff",
+            "reboot": "systemctl reboot",
+            "lock": "hyprlock",
+            "suspend": "systemctl suspend"
         }
     },
     "power-profiles-daemon": {
