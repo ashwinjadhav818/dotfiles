@@ -34,6 +34,11 @@ alias lg="lazygit"
 alias em='emacsclient -c -a "emacs"'
 alias nmrestart="sudo systemctl restart NetworkManager"
 
+alias dn="sudo dnf"
+alias dni="sudo dnf in"
+alias dnr="sudo dnf rm"
+alias dns="sudo dnf search"
+
 eval "$(zoxide init zsh --cmd cd)"
 
 # Start Syncthing on Android
@@ -58,6 +63,16 @@ fi
 # Antidote
 source ~/.zsh_plugins.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_REDUCE_BLANKS
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/powerlevel10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/powerlevel10k/.p10k.zsh ]] || source ~/.dotfiles/powerlevel10k/.p10k.zsh
