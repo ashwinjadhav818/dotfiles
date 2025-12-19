@@ -17,7 +17,6 @@
     ],
     "modules-right": [
         "group/expand",
-        "power-profiles-daemon",
         "backlight",
         "battery",
         "pulseaudio",
@@ -207,7 +206,7 @@
     },
     "custom/org-clock": {
         "exec": "~/.config/scripts/org-clock-task.sh",
-        "interval": 5,
+        "interval": 60,
         "return-type": "text",
         "tooltip": false
     }
