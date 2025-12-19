@@ -19,11 +19,6 @@ tmp-*/
 # Ignore Scoop config if synced
 # ----------------------------------------
 /.config/scoop
-
-
-# ----------------------------------------
-# Ignore rice manager files if synced
-# ----------------------------------------
-komorebi/.config/komorebi/komorebi.json
-glzr/.glzr/glazewm/config.yaml
-backups/
+qutebrowser/.config/qutebrowser/quickmarks
+qutebrowser/.config/qutebrowser/bookmarks
+qutebrowser/.config/qutebrowser/autoconfig.yml
