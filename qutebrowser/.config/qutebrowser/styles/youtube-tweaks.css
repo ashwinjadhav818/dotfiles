@@ -51,8 +51,3 @@ a[href="/shorts/"] {
 #related {
     display: none !important;
 }
-
-#player,
-#full-bleed-container {
-    display: none !important;
-}
