@@ -1,16 +1,6 @@
 /* cosmetic and focus tweaks for yt */
 /* credit to various userstyles makers for some pieces of this */
 
-/* grid view */
-#items.ytd-grid-renderer>ytd-grid-video-renderer:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]) {
-    display: none;
-}
-
-/* list view */
-ytd-item-section-renderer:not(:has(ytd-grid-renderer)):has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]) {
-    display: none;
-}
-
 /* hide recs */
 #secondary {
     display: none !important;
@@ -34,15 +24,35 @@ html:not(.ytd-watch-flexy) ytd-watch-flexy[flexy] #player {
     display: none !important;
 }
 
-/* reshape some elements */
-.chip-container {
-    border-radius: 0% !important;
+/* hide ads */
+ytd-ad-slot-renderer {
+    display: none !important;
 }
 
-.ytd-thumbnail {
-    border-radius: 10% !important;
+ytd-statement-banner-renderer,
+ytd-engagement-panel-section-list-renderer {
+    display: none !important;
 }
 
-.yt-spec-avatar-shape__image {
-    border-radius: 10% !important;
+/* hide shorts */
+ytd-rich-shelf-renderer {
+    display: none !important;
+}
+
+a[title="Shorts"] {
+    display: none !important;
+}
+
+a[href="/shorts/"] {
+    display: none !important;
+}
+
+/* extra stuff */
+#related {
+    display: none !important;
+}
+
+#player,
+#full-bleed-container {
+    display: none !important;
 }
