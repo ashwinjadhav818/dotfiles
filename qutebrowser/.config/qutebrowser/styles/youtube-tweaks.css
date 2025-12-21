@@ -19,11 +19,6 @@ html:not(.ytd-watch-flexy) ytd-watch-flexy[flexy] #player {
     margin: 0 auto !important;
 }
 
-/* remove that annoying thing yt adds in dark mode */
-.ytp-gradient-bottom {
-    display: none !important;
-}
-
 /* hide ads */
 ytd-ad-slot-renderer {
     display: none !important;
@@ -47,7 +42,21 @@ a[href="/shorts/"] {
     display: none !important;
 }
 
+grid-shelf-view-model.ytGridShelfViewModelHost {
+    display: none !important;
+}
+
 /* extra stuff */
 #related {
+    display: none !important;
+}
+
+ytd-two-column-browse-results-renderer[page-subtype="home"] {
+    display: none !important;
+}
+
+#player,
+#ytd-player,
+#full-bleed-container {
     display: none !important;
 }

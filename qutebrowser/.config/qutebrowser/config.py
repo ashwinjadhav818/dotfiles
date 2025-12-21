@@ -54,6 +54,7 @@ config.set('colors.webpage.darkmode.enabled', False, 'file://*')
 config.source('themes/tokyonight.py')
 c.content.user_stylesheets = ["~/.config/qutebrowser/styles/youtube-tweaks.css"]
 c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
+c.scrolling.smooth = True
 
 # fonts
 c.fonts.default_family = []
