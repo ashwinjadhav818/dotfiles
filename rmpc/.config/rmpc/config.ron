@@ -37,20 +37,18 @@
             "<Tab>":   NextTab,
             "<S-Tab>": PreviousTab,
             "1":       SwitchToTab("Queue"),
-            "2":       SwitchToTab("Directories"),
+            "2":       SwitchToTab("Albums"),
             "3":       SwitchToTab("Artists"),
-            "4":       SwitchToTab("Album Artists"),
-            "5":       SwitchToTab("Albums"),
-            "6":       SwitchToTab("Playlists"),
-            "7":       SwitchToTab("Search"),
+            "4":       SwitchToTab("Playlists"),
+            "5":       SwitchToTab("Search"),
             "q":       Quit,
             ">":       NextTrack,
             "p":       TogglePause,
             "<":       PreviousTrack,
             "f":       SeekForward,
-            "z":       ToggleRepeat,
-            "x":       ToggleRandom,
-            "c":       ToggleConsume,
+            "x":       ToggleRepeat,
+            "c":       ToggleRandom,
+            "d":       ToggleConsume,
             "v":       ToggleSingle,
             "b":       SeekBack,
             "~":       ShowHelp,
@@ -70,11 +68,6 @@
             "<Down>":    Down,
             "<Left>":    Left,
             "<Right>":   Right,
-            "<C-k>":     PaneUp,
-            "<C-j>":     PaneDown,
-            "<C-h>":     PaneLeft,
-            "<C-l>":     PaneRight,
-            "<C-u>":     UpHalf,
             "N":         PreviousResult,
             "a":         Add,
             "A":         AddAll,
@@ -86,15 +79,13 @@
             "G":         Bottom,
             "<CR>":      Confirm,
             "i":         FocusInput,
-            "J":         MoveDown,
             "<C-d>":     DownHalf,
             "/":         EnterSearch,
             "<C-c>":     Close,
             "<Esc>":     Close,
-            "K":         MoveUp,
             "D":         Delete,
             "B":         ShowInfo,
-            "<C-z>":     ContextMenu(),
+            "K":     ContextMenu(),
             "<C-s>":     Save(kind: Modal(all: false, duplicates_strategy: Ask)),
         },
         queue: {
@@ -123,51 +114,52 @@
         album_sort_by: Date,
         album_date_tags: [Date],
     ),
-    tabs: [
-        (
-            name: "Queue",
-            pane: Split(
-                direction: Horizontal,
-                panes: [
-                    (
-                        size: "40%",
-                        pane: Split(
-                            direction: Vertical,
-                            panes: [
-                                (
-                                    size: "3",
-                                    pane: Pane(Lyrics)
-                                ),
-                                (
-                                    size: "100%",
-                                    pane: Pane(AlbumArt)
-                                ),
-                            ],
-                        ),
-                    ), 
-                    (
-                        size: "60%",
-                        pane: Pane(Queue)
+
+tabs: [
+    (
+        name: "Queue",
+        pane: Split(
+            direction: Vertical,
+            panes: [
+                (
+                    size: "70%",
+                    pane: Split(
+                        direction: Horizontal,
+                        panes: [
+                            (
+                                size: "40%",
+                                pane: Pane(AlbumArt),
+                            ),
+                            (
+                                size: "60%",
+                                pane: Pane(Queue),
+                            ),
+                        ],
                     ),
-                ],
-            ),
+                ),
+                (
+                    size: "30%",
+                    pane: Pane(Cava),
+                ),
+            ],
         ),
-        (
-            name: "Albums",
-            pane: Pane(Albums),
-        ),
-        (
-            name: "Artists",
-            pane: Pane(AlbumArtists),
-        ),
-        (
-            name: "Playlists",
-            pane: Pane(Playlists),
-        ),
-        (
-            name: "Search",
-            pane: Pane(Search),
-        ),
-    ],
+    ),
+    (
+        name: "Albums",
+        pane: Pane(Albums),
+    ),
+    (
+        name: "Artists",
+        pane: Pane(AlbumArtists),
+    ),
+    (
+        name: "Playlists",
+        pane: Pane(Playlists),
+    ),
+    (
+        name: "Search",
+        pane: Pane(Search),
+    ),
+]
 )
 
