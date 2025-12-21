@@ -23,7 +23,7 @@
    GENERAL
    ========================= */
 * {
-    font-family: "Adwiata Sans";
+    font-family: "Adwaita Sans";
 }
 
 /* =========================
@@ -33,6 +33,7 @@ window#waybar {
     background-color: @bg_main;
     color: @fg_main;
     border-radius: 8px;
+    font-size: 14px;
     transition: background-color 0.5s;
     border: 1px solid @color4;
 }
@@ -78,7 +79,7 @@ tooltip {
     background-color: @bg_solid;
     border-radius: 8px;
     margin: 6px 4px;
-    padding: 0 7px;
+    padding: 0 10px;
 }
 
 /* =========================
@@ -113,7 +114,7 @@ tooltip {
 #workspaces button {
     all: unset;
     background-color: @fg_muted_strong;
-    font-size: 0px;
+    font-size: 0;
     margin: 0 2px;
     padding: 0 6px;
     border-radius: 8px;
