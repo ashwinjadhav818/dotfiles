@@ -1,195 +1,140 @@
-:root {
-    /* Core colors */
-    --bg: rgba(26, 27, 38, 0.55);
-    --bg-strong: rgba(26, 27, 38, 0.75);
-    --bg-hover: rgba(40, 42, 60, 0.9);
+@define-color fg_main #c0caf5;
+@define-color fg_muted rgba(150, 150, 150, 0.6);
 
-    --accent: #7aa2f7;
-    --accent-soft: rgba(122, 162, 247, 0.4);
+@define-color bg_main rgba(26, 27, 38, 0.55);
+@define-color bg_strong rgba(26, 27, 38, 0.75);
+@define-color bg_hover rgba(40, 42, 60, 0.9);
 
-    --text: #c0caf5;
-    --text-dim: #9aa5ce;
+@define-color accent #7aa2f7;
+@define-color accent_soft rgba(122, 162, 247, 0.4);
 
-    /* Geometry */
-    --radius: 8px;
-    --radius-small: 8px;
-    --border: 1px solid rgba(122, 162, 247, 0.35);
+@define-color red #f7768e;
+@define-color orange #e0af68;
+@define-color green #9ece6a;
+@define-color blue #7aa2f7;
+@define-color purple #bb9af7;
+@define-color cyan #7dcfff;
 
-    /* Typography */
-    --fs-title: 16px;
-    --fs-body: 14px;
-
-    /* Motion */
-    --ease: cubic-bezier(0.4, 0, 0.2, 1);
-    --transition: 0.2s var(--ease);
+* {
+    font-family: "San Francisco Text Regular";
+    color: @fg_main;
 }
 
-/* ===================== */
-/* Base Transparency     */
-/* ===================== */
-
+/* Base windows */
 notificationwindow,
 .blank-window,
 .floating-notifications {
     background: transparent;
 }
 
-/* ===================== */
-/* Notifications         */
-/* ===================== */
-
+/* Notifications */
 .notification-row {
-    background: none;
+    background: transparent;
 }
 
 .notification {
-    background: var(--bg);
-    border-radius: var(--radius);
-    border: var(--border);
-    color: var(--text);
+    background: @bg_main;
+    border-radius: 8px;
+    border: 1px solid @accent;
     padding: 10px 12px;
-    transition: background var(--transition), transform var(--transition);
+    color: @fg_main;
+    transition: background 200ms ease;
 }
 
 .notification:hover {
-    background: var(--bg-hover);
-    transform: translateY(-1px);
+    background: @bg_hover;
 }
 
 .summary {
-    font-size: var(--fs-title);
+    font-size: 16px;
     font-weight: 600;
 }
 
-.time {
-    font-size: var(--fs-body);
-    color: var(--text-dim);
-}
-
 .body {
-    font-size: var(--fs-body);
-    line-height: 1.35;
-    color: var(--text);
+    font-size: 14px;
+    color: @fg_main;
 }
 
-/* ===================== */
-/* Close Button          */
-/* ===================== */
+.time {
+    font-size: 13px;
+    color: @fg_muted;
+}
 
+button {
+    background: @bg_strong;
+    border: 1px solid @accent
+}
+
+/* Close button */
 .close-button {
     background: rgba(255, 255, 255, 0.08);
     border-radius: 999px;
     min-width: 26px;
     min-height: 26px;
-    transition: background var(--transition), transform var(--transition);
 }
 
 .close-button:hover {
-    background: var(--accent-soft);
-    transform: scale(1.1);
+    background: @accent_soft;
 }
 
-/* ===================== */
-/* Control Center        */
-/* ===================== */
-
+/* Control center */
 .control-center {
-    background: var(--bg-strong);
-    border-radius: var(--radius);
-    border: var(--border);
+    background: @bg_strong;
+    border-radius: 8px;
+    border: 1px solid @accent;
     padding: 6px;
 }
 
-.control-center .notification {
-    box-shadow: none;
-    margin-bottom: 6px;
-}
-
-/* ===================== */
-/* Widgets               */
-/* ===================== */
-
+/* Widgets */
 .widget {
     background: rgba(255, 255, 255, 0.04);
-    border-radius: var(--radius);
+    border-radius: 8px;
     padding: 10px 12px;
     margin: 8px;
 }
 
-.widget-title label {
-    font-size: 1.4rem;
-    font-weight: 600;
+/* Volume / brightness */
+.widget-volume,
+.widget-backlight {
+    color: @blue;
+    background: @bg_main;
 }
 
-/* ===================== */
-/* Volume / Brightness   */
-/* ===================== */
-
-.widget-volume label:first-child,
-.widget-backlight label:first-child {
-    font-size: 1.6rem;
-    margin-right: 10px;
-    color: var(--accent);
+/* Buttons grid */
+.widget-buttons-grid {
+    background: @bg_main;
 }
-
-/* ===================== */
-/* Buttons Grid          */
-/* ===================== */
 
 .widget-buttons-grid button {
-    border-radius: 999px;
+    background: @bg_strong;
     padding: 10px;
-    transition: background var(--transition), transform var(--transition);
 }
 
 .widget-buttons-grid button:hover {
     background: rgba(255, 255, 255, 0.08);
-    transform: translateY(-1px);
 }
 
 .widget-buttons-grid button.toggle:checked {
-    background: var(--accent-soft);
-    border: 1px solid var(--accent);
+    background: @accent_soft;
+    border: 1px solid @accent;
 }
 
-.widget-buttons-grid button label {
-    font-size: 1.35rem;
-    color: var(--text);
+/* DND */
+.widget-dnd>switch,
+.widget-backlight>switch slider {
+    background: @bg_main;
 }
-
-/* ===================== */
-/* DND Toggle            */
-/* ===================== */
 
 .widget-dnd label {
-    font-size: 1.1rem;
-    color: var(--text);
+    color: @fg_main;
 }
 
-/* ===================== */
-/* MPRIS Blur Card       */
-/* ===================== */
-
+/* MPRIS */
 .widget-mpris-player {
-    border-radius: var(--radius);
-    overflow: hidden;
-}
-
-.widget-mpris-player .mpris-background {
-    filter: blur(18px) brightness(0.75);
+    border-radius: 8px;
 }
 
 .widget-mpris-player .mpris-overlay {
     background: rgba(0, 0, 0, 0.45);
     padding: 14px;
-}
-
-.widget-mpris-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.widget-mpris-subtitle {
-    font-size: 1rem;
-    color: var(--text-dim);
 }

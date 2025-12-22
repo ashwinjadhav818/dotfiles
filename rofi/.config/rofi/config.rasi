@@ -26,7 +26,7 @@ configuration {
     selected:       #61AFEFFF;
     active:         #98C379FF;
     urgent:         #E06C75FF;
-    font: "Adwaita Sans 11";
+    font: "San Francisco Regular 12";
 }
 
 * {
