@@ -4,10 +4,11 @@
 <details>
   <summary>more screenshots</summary>
 
-![zen-browser](./assets/zen-browser.png)
+![emacs](./assets/emacs.png)
 ![rofi](./assets/rofi.png)
+![rmpc](./assets/rmpc.png)
 ![terminal](./assets/terminal.png)
-![nvim](./assets/nvim.png)
+![qutebrowser](./assets/qutebrowser.png)
 </details>
 
 ## Configurations
