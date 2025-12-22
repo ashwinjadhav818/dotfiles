@@ -3,27 +3,22 @@ c = c  # noqa: F821 pylint: disable=E0602,C0103
 config = config  # noqa: F821 pylint: disable=E0602,C0103
 # pylint settings included to disable linting errors
 
+# tabs
 c.tabs.show = "multiple"
-
 c.tabs.title.format = "{audio}{current_title}"
-c.fonts.web.size.default = 16
 
+# url
 c.url.searchengines = {
-# note - if you use duckduckgo, you can make use of its built in bangs, of which there are many! https://duckduckgo.com/bangs
         'DEFAULT': 'https://duckduckgo.com/?q={}',
         '!aw': 'https://wiki.archlinux.org/?search={}',
         '!apkg': 'https://archlinux.org/packages/?sort=&q={}&maintainer=&flagged=',
         '!gh': 'https://github.com/search?o=desc&q={}&s=stars',
         '!yt': 'https://www.youtube.com/results?search_query={}',
         }
-
 c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
 
-config.load_autoconfig() 
-
-c.auto_save.session = True # save tabs on quit/restart
-
 # keybinding changes
+config.bind('<alt-x>', 'set-cmd-text :')
 config.bind('=', 'cmd-set-text -s :open')
 config.bind('h', 'history')
 config.bind('q', 'tab-close')
@@ -47,7 +42,7 @@ config.bind('gm', 'tab-move')
 # dark mode setup
 c.colors.webpage.darkmode.enabled = True
 c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
-c.colors.webpage.darkmode.policy.images = 'never'
+c.colors.webpage.darkmode.policy.images = 'smart'
 config.set('colors.webpage.darkmode.enabled', False, 'file://*')
 
 # styles, cosmetics
@@ -57,7 +52,18 @@ c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
 c.scrolling.smooth = True
 
 # fonts
-c.fonts.default_family = []
+c.fonts.default_family = 'San Francisco Text Regular'
+c.fonts.default_size = '11pt'
+c.fonts.web.size.default = 16
+
+# hints
+c.hints.chars = 'arstneio'
+
+# misc
+config.load_autoconfig() 
+c.auto_save.session = True 
+c.content.pdfjs = True
+c.editor.command =["nvim", "-f", "{file}", "-c", "normal {line}G{column0}l"]
 
 # privacy - adjust these settings based on your preference
 config.set("content.webgl", False, "*")
@@ -71,6 +77,7 @@ config.set("content.headers.user_agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x
 
 # Adblocking
 c.content.blocking.enabled = True
+c.content.blocking.method = 'both'
 c.content.blocking.adblock.lists = [
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/legacy.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt",
@@ -90,7 +97,6 @@ c.content.blocking.adblock.lists = [
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances-cookies.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances-others.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badlists.txt",
-        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/Ian-block.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/quick-fixes.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt",

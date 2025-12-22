@@ -1,15 +1,21 @@
 // ==UserScript==
-// @name         YouTube Kill Playback Only (Fixed)
-// @version      7.1.0
-// @author       A S H
+// @name         YouTube Kill Playback Only (Strict Scoped)
+// @version      7.3.0
+// @author       A S H (Modified)
 // @match        *://*.youtube.com/*
 // @run-at       document-start
+// @grant        none
 // ==/UserScript==
 
 (() => {
     'use strict';
 
-    /* 1️⃣ HARD BLOCK play() */
+    // 🛑 GLOBAL CHECK: If not on YouTube, stop everything immediately
+    if (!window.location.hostname.includes("youtube.com")) {
+        return;
+    }
+
+    /* 1️⃣ HARD BLOCK play() - Only runs on YouTube due to check above */
     const realPlay = HTMLMediaElement.prototype.play;
     HTMLMediaElement.prototype.play = function() {
         this.pause();
@@ -29,7 +35,7 @@
         v.load();
     };
 
-    /* 3️⃣ OBSERVER SETUP (SAFE) */
+    /* 3️⃣ OBSERVER SETUP */
     const startObserver = () => {
         const root = document.documentElement || document.body;
         if (!root) return false;
