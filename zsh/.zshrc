@@ -8,7 +8,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH=$HOME/bin:$HOME/.cargo/bin:/usr/local/bin:$HOME/.config/scripts:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin:$HOME/.config/scripts:$PATH
 
 # Terminal
 export LANG=en_US.UTF-8
@@ -31,6 +31,7 @@ alias ll='eza -la'
 alias g="git"
 alias cls="clear"
 alias lg="lazygit"
+alias lj="lazyjournal"
 alias em='emacsclient -c -a "emacs"'
 alias nmrestart="sudo systemctl restart NetworkManager"
 
