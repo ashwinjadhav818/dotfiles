@@ -5,7 +5,7 @@
     <!-- User -->
     <child>
       <object class="GtkMenuItem" id="user">
-        <property name="label">User (fastfetch)</property>
+        <property name="label">Info</property>
       </object>
     </child>
 

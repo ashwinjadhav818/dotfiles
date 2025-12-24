@@ -17,6 +17,7 @@
     ],
     "modules-right": [
         "group/expand",
+        "power-profiles-daemon",
         "backlight",
         "battery",
         "pulseaudio",
@@ -31,7 +32,7 @@
         "menu": "on-click",
         "menu-file": "~/.config/waybar/res/user_menu.xml",
         "menu-actions": {
-            "user": "fastfetch",
+            "user": "foot -H fastfetch",
             "home": "xdg-open $HOME",
             "desktop": "xdg-open $HOME/Desktop",
             "documents": "xdg-open $HOME/Documents",
@@ -78,11 +79,18 @@
         }
     },
     "network": {
-        "format-wifi": " ",
+        "format-wifi": "󰤨",
         "format-ethernet": "",
         "format-disconnected": "",
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ],
         "tooltip-format-disconnected": "Error",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) 󰤨",
         "tooltip-format-ethernet": "{ifname} 🖧 ",
         "on-click": "~/.config/scripts/nm-rofi"
     },
@@ -157,7 +165,7 @@
         ]
     },
     "custom/power": {
-        "format": "\udb81\udc25 ",
+        "format": "󰐥",
         "tooltip": false,
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/res/power_menu.xml",
