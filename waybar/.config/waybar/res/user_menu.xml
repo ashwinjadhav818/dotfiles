@@ -44,13 +44,6 @@
         <property name="label">Videos</property>
       </object>
     </child>
-
-    <!-- Divider -->
-    <child>
-      <object class="GtkSeparatorMenuItem" id="divider2"/>
-    </child>
-
-    <!-- Some new options -->
     <child>
       <object class="GtkMenuItem" id="downloads">
         <property name="label">Downloads</property>
@@ -62,6 +55,36 @@
         <property name="label">Music</property>
       </object>
     </child>
+
+    <!-- Divider -->
+    <child>
+		<object class="GtkMenuItem">
+			<property name="label"></property>
+        </object>
+	</child>
+
+    <!-- Power options -->
+    <child>
+		<object class="GtkMenuItem" id="suspend">
+			<property name="label">Suspend</property>
+        </object>
+	</child>
+	<child>
+        <object class="GtkMenuItem" id="lock">
+			<property name="label">Lock</property>
+        </object>
+	</child>
+    <child>
+        <object class="GtkMenuItem" id="shutdown">
+			<property name="label">Shutdown</property>
+        </object>
+    </child>
+    <child>
+		<object class="GtkMenuItem" id="reboot">
+			<property name="label">Reboot</property>
+		</object>
+    </child>
+
 
   </object>
 </interface>

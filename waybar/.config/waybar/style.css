@@ -30,12 +30,11 @@
    WAYBAR WINDOW
    ========================= */
 window#waybar {
-    background-color: @bg_main;
+    background-color: transparent;
     color: @fg_main;
     border-radius: 8px;
     font-size: 14px;
     transition: background-color 0.5s;
-    border: 1px solid @color4;
 }
 
 window#waybar.hidden {
@@ -71,15 +70,14 @@ tooltip {
 #custom-notification,
 #tray,
 #mpd,
-#custom-power,
 #power-profiles-daemon,
 #custom-org-clock,
 #custom-user-menu,
 #window {
     background-color: @bg_solid;
-    border-radius: 8px;
-    margin: 6px 4px;
-    padding: 0 10px;
+    border-radius: 999px;
+    margin: 0 4px;
+    padding: 0 12px;
 }
 
 /* =========================
@@ -94,9 +92,9 @@ tooltip {
 #cpu:hover,
 #memory:hover,
 #temperature:hover,
-#custom-power:hover,
 #pulseaudio:hover,
-#power-profiles-daemon:hover {
+#power-profiles-daemon:hover,
+#custom-user-menu:hover {
     color: @fg_muted;
     transition: all 0.3s ease;
 }
@@ -106,8 +104,6 @@ tooltip {
    ========================= */
 #workspaces {
     background-color: @bg_solid;
-    border-radius: 8px;
-    margin: 6px 2px;
     padding: 6px;
 }
 
@@ -116,8 +112,8 @@ tooltip {
     background-color: @fg_muted_strong;
     font-size: 0;
     margin: 0 2px;
-    padding: 0 6px;
-    border-radius: 8px;
+    padding: 0 10px;
+    border-radius: 999px;
     transition: all 0.5s ease;
 }
 
@@ -127,7 +123,7 @@ tooltip {
 
 #workspaces button.active {
     background-color: @fg_main;
-    padding: 0 16px;
+    padding: 0 20px;
 }
 
 #workspaces button.empty {
@@ -159,22 +155,6 @@ window#waybar.empty #window {
 #custom-notification,
 #custom-org-clock {
     transition: all 0.3s ease;
-}
-
-/* =========================
-   BATTERY STATES
-   ========================= */
-#battery.charging {
-    color: @color2;
-}
-
-#battery.warning:not(.charging) {
-    color: @color3;
-}
-
-#battery.critical:not(.charging) {
-    color: @color1;
-    animation: blink 0.5s linear infinite alternate;
 }
 
 /* =========================
@@ -268,10 +248,6 @@ menuitem {
    ========================= */
 #custom-user-menu {
     margin-left: 8px;
-}
-
-#custom-power {
-    margin-right: 8px;
 }
 
 /* =========================

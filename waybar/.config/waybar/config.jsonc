@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 35,
+    "height": 30,
     "margin-top": 8,
     "margin-left": 8,
     "margin-right": 8,
@@ -23,8 +23,7 @@
         "pulseaudio",
         "network",
         "clock",
-        "custom/notification",
-        "custom/power"
+        "custom/notification"
     ],
     "custom/user-menu": {
         "format": "",
@@ -39,7 +38,11 @@
             "pictures": "xdg-open $HOME/Pictures",
             "videos": "xdg-open $HOME/Videos",
             "downloads": "xdg-open $HOME/Downloads",
-            "music": "xdg-open $HOME/Music"
+            "music": "xdg-open $HOME/Music",
+            "shutdown": "systemctl poweroff",
+            "reboot": "systemctl reboot",
+            "lock": "hyprlock",
+            "suspend": "systemctl suspend"
         }
     },
     "hyprland/workspaces": {
@@ -163,18 +166,6 @@
             "󱩖",
             "󰛨"
         ]
-    },
-    "custom/power": {
-        "format": "󰐥",
-        "tooltip": false,
-        "menu": "on-click",
-        "menu-file": "$HOME/.config/waybar/res/power_menu.xml",
-        "menu-actions": {
-            "shutdown": "systemctl poweroff",
-            "reboot": "systemctl reboot",
-            "lock": "hyprlock",
-            "suspend": "systemctl suspend"
-        }
     },
     "power-profiles-daemon": {
         "format": "{icon}",
