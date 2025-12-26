@@ -26,7 +26,7 @@ configuration {
     selected:       #61AFEFFF;
     active:         #98C379FF;
     urgent:         #E06C75FF;
-    font: "SF Pro Display, FiraCode Nerd Font Propo 12";
+    font: "Iosevka Extended, FiraCode Nerd Font Propo 12";
 }
 
 * {

@@ -23,7 +23,7 @@
    GENERAL
    ========================= */
 * {
-    font-family: "SF Pro Display", "FiraCode Nerd Font Propo";
+    font-family: "Iosevka Extended", "FiraCode Nerd Font Propo";
 }
 
 /* =========================
@@ -33,7 +33,7 @@ window#waybar {
     background-color: transparent;
     color: @fg_main;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 11pt;
     transition: background-color 0.5s;
 }
 
@@ -104,7 +104,7 @@ tooltip {
    ========================= */
 #workspaces {
     background-color: @bg_solid;
-    padding: 6px;
+    padding: 8px;
 }
 
 #workspaces button {
@@ -112,7 +112,7 @@ tooltip {
     background-color: @fg_muted_strong;
     font-size: 0;
     margin: 0 2px;
-    padding: 0 10px;
+    padding: 0 8px;
     border-radius: 999px;
     transition: all 0.5s ease;
 }
@@ -123,7 +123,7 @@ tooltip {
 
 #workspaces button.active {
     background-color: @fg_main;
-    padding: 0 20px;
+    padding: 0 18px;
 }
 
 #workspaces button.empty {

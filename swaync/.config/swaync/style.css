@@ -16,7 +16,7 @@
 @define-color cyan #7dcfff;
 
 * {
-    font-family: "San Francisco Text Regular";
+    font-family: "Iosevka Extended";
     color: @fg_main;
 }
 
