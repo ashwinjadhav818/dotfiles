@@ -365,7 +365,7 @@ class QutebrowserProfiles:
     help="Allow --load to create a new profile if it does not exist",
 )
 @click.option(
-    "--dmenu",
+    "--menu",
     required=False,
     help="Override the location of dmenu/rofi when using --choose",
 )
@@ -407,7 +407,7 @@ def main(
     load: Optional[str],
     remove: Optional[str],
     new: bool,
-    dmenu: Optional[str],
+    menu: Optional[str],
     only_existing: bool,
     list_profiles: bool,
     qutebrowser: str,
@@ -480,14 +480,14 @@ def main(
 
         profiles = qp.profiles()
 
-        if not dmenu:
+        if not menu:
             rofi = shutil.which("rofi")
-            if rofi:
-                dmenu = f"{rofi} -dmenu"
+            if menu:
+                menu = shutil.which("dmenu")
 
-            dmenu = shutil.which("dmenu")
+            menu = f"{rofi} -dmenu"
 
-        if not dmenu:
+        if not menu:
             # use terminal selection
             for idx, profile in enumerate(profiles):
                 print(f'{idx+1}. {profile.profile_name}')
@@ -505,12 +505,12 @@ def main(
 
         else:
 
-            dmenuArgs = shlex.split(dmenu) + ["-p", "qutebrowser"]
+            menuArgs = shlex.split(menu) + ["-p", "qutebrowser"]
 
             if only_existing:
-                dmenuArgs.append("-no-custom")
+                menuArgs.append("-no-custom")
 
-            p = subprocess.Popen(dmenuArgs,
+            p = subprocess.Popen(menuArgs,
                                      stdin=subprocess.PIPE,
                                      stderr=subprocess.PIPE,
                                      stdout=subprocess.PIPE)
@@ -521,7 +521,7 @@ def main(
             if p.returncode not in [0, 1] or (p.returncode == 1 and len(errors) != 0):
                 raise ValueError(
                     "{} returned {} and error:\n{}"
-                    .format(dmenuArgs, p.returncode, errors.decode('utf-8'))
+                    .format(menuArgs, p.returncode, errors.decode('utf-8'))
                 )
 
             profile_name = choice.decode('utf-8').rstrip()
