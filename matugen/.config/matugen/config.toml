@@ -41,6 +41,8 @@ post_hook = "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark
 [templates.qutebrowser]
 input_path = '~/.config/matugen/qutebrowser.py'
 output_path = '~/.config/colors/qutebrowser.py'
+# Use --load to target profiles directly, bypassing the interactive menu
+post_hook = "~/.config/scripts/qute-reload"
 
 [templates.swaync]
 input_path = '~/.config/matugen/swaync.css'
