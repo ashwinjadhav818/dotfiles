@@ -6,9 +6,9 @@ SCRIPT_DIR="$HOME/.config/scripts/hyprland"
 # Define the menu options (Display Name|Script Filename)
 declare -A menu
 menu=(
-    ["Animations"]="hypranim.sh"
-    ["Wallpaper"]="wallpaper.sh" # Example for future use
-    ["Keybinds"]="keybinds_hint.sh" # Example for future use
+    ["Animations"]="hypranim"
+    ["Wallpaper"]="wallpaper"
+    ["Keybinds"]="keybinds_hint"
 )
 
 # Pipe the keys (Display Names) to rofi
