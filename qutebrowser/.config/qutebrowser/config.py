@@ -1,6 +1,7 @@
 # pylint: disable=C0111
 c = c  # noqa: F821 pylint: disable=E0602,C0103
 config = config  # noqa: F821 pylint: disable=E0602,C0103
+import os
 # pylint settings included to disable linting errors
 
 # tabs
@@ -47,7 +48,12 @@ c.colors.webpage.darkmode.policy.images = 'smart'
 config.set('colors.webpage.darkmode.enabled', False, 'file://*')
 
 # styles, cosmetics
-config.source('themes/tokyonight.py')
+# Define the path and expand the ~ to /home/yourusername
+colors_path = os.path.expanduser('~/.config/colors/qutebrowser.py')
+
+# Check if the file exists before sourcing to avoid errors on startup
+if os.path.exists(colors_path):
+    config.source(colors_path)
 c.content.user_stylesheets = ["~/.config/qutebrowser/styles/youtube-tweaks.css"]
 c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
 c.scrolling.smooth = True

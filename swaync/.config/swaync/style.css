@@ -1,19 +1,4 @@
-@define-color fg_main #c0caf5;
-@define-color fg_muted rgba(150, 150, 150, 0.6);
-
-@define-color bg_main rgba(26, 27, 38, 0.55);
-@define-color bg_strong rgba(26, 27, 38, 0.75);
-@define-color bg_hover rgba(40, 42, 60, 0.9);
-
-@define-color accent #7aa2f7;
-@define-color accent_soft rgba(122, 162, 247, 0.4);
-
-@define-color red #f7768e;
-@define-color orange #e0af68;
-@define-color green #9ece6a;
-@define-color blue #7aa2f7;
-@define-color purple #bb9af7;
-@define-color cyan #7dcfff;
+@import "../colors/swaync.css";
 
 * {
     font-family: "Iosevka Extended";

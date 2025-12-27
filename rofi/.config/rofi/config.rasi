@@ -19,13 +19,8 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
+@import "~/.config/colors/rofi.rasi"
 * {
-    background:     rgba(26, 27, 38, 0.5);
-    background-alt: rgba(26, 27, 38, 1);
-    foreground:     #c0caf5;
-    selected:       #61AFEFFF;
-    active:         #98C379FF;
-    urgent:         #E06C75FF;
     font: "Iosevka Extended, FiraCode Nerd Font Propo 12";
 }
 
