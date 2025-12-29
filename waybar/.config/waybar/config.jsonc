@@ -204,7 +204,7 @@
         "spacing": 10
     },
     "custom/org-clock": {
-        "exec": "~/.config/scripts/org-clock-task.sh",
+        "exec": "~/.config/scripts/org-clock-task",
         "interval": 60,
         "return-type": "text",
         "tooltip": false

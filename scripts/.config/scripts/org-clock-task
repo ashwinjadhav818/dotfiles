@@ -13,9 +13,9 @@ out="$(echo "$out" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')"
 
 # --- treat '=', empty, or whitespace-only as empty ---
 if [[ "$out" == "=" ]] || [[ -z "$out" ]]; then
-    echo "$ICON No clocks running."
+    echo "No clocks running."
     exit 0
 fi
 
-echo "$ICON $out"
+echo "$out"
 
