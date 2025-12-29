@@ -20,7 +20,7 @@ c.url.searchengines = {
 c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
 
 # keybinding changes
-config.bind('<alt-x>', 'set-cmd-text :')
+config.bind('<alt-x>', 'cmd-set-text :')
 config.bind('=', 'cmd-set-text -s :open')
 config.bind('h', 'history')
 config.bind('q', 'tab-close')
@@ -48,12 +48,12 @@ c.colors.webpage.darkmode.policy.images = 'smart'
 config.set('colors.webpage.darkmode.enabled', False, 'file://*')
 
 # styles, cosmetics
-# Define the path and expand the ~ to /home/yourusername
 colors_path = os.path.expanduser('~/.config/colors/qutebrowser.py')
 
 # Check if the file exists before sourcing to avoid errors on startup
-if os.path.exists(colors_path):
-    config.source(colors_path)
+#if os.path.exists(colors_path):
+#    config.source(colors_path)
+config.source("./themes/monochrome.py")
 c.content.user_stylesheets = ["~/.config/qutebrowser/styles/youtube-tweaks.css"]
 c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
 c.scrolling.smooth = True
