@@ -8,7 +8,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin:$HOME/.config/scripts:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin:$HOME/.config/scripts:/var/lib/flatpak/exports/bin:$HOME/.ashdwm/scripts:$PATH
 
 # Terminal
 export LANG=en_US.UTF-8
@@ -39,6 +39,8 @@ alias dn="sudo dnf"
 alias dni="sudo dnf in"
 alias dnr="sudo dnf rm"
 alias dns="sudo dnf search"
+
+alias dwmgen="cd ~/.ashdwm/dwm/ && sudo make clean install"
 
 eval "$(zoxide init zsh --cmd cd)"
 
