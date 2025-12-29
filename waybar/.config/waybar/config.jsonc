@@ -63,7 +63,7 @@
         }
     },
     "hyprland/window": {
-        "max-length": 80,
+        "max-length": 60,
         "icon": true,
         "icon-size": 16
     },
@@ -96,7 +96,7 @@
         "tooltip-format-disconnected": "Error",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) 󰤨",
         "tooltip-format-ethernet": "{ifname} 🖧 ",
-        "on-click": "~/.config/scripts/nm-rofi"
+        "on-click": "~/.config/scripts/nm-dmenu"
     },
     "bluetooth": {
         "format-on": "󰂯",

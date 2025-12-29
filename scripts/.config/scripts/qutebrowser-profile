@@ -483,8 +483,8 @@ def main(
         if not menu:
             rofi = shutil.which("rofi")
             if menu:
-                menu = f"{rofi} -dmenu"
-            menu = shutil.which("dmenu")
+                menu = shutil.which("dmenu")
+            menu = f"{rofi} -dmenu"
 
         if not menu:
             # use terminal selection
