@@ -1,3 +1,0 @@
-zsh-users/zsh-autosuggestions kind:defer
-zsh-users/zsh-syntax-highlighting kind:defer
-romkatv/powerlevel10k kind:zsh 

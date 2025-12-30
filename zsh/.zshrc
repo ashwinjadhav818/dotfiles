@@ -1,31 +1,45 @@
 # Welcome
 source $HOME/.config/scripts/greet
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin:$HOME/.config/scripts:/var/lib/flatpak/exports/bin:$HOME/.ashdwm/scripts:$PATH
+# Set the directory we want to store zinit and plugins
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+
+# Download Zinit, if it's not there yet
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+
+# Source/Load zinit
+source "${ZINIT_HOME}/zinit.zsh"
+
+# Add in Powerlevel10k
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
+# Add in zsh plugins
+zinit light zsh-users/zsh-syntax-highlighting
+#zinit light zsh-users/zsh-completions
+#zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# Load completions
+autoload -Uz compinit && compinit
+
 
 # Terminal
 export LANG=en_US.UTF-8
 
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR="nvim"
-else
-  export EDITOR="nvim"
-fi
+export EDITOR="nvim"
  
 # Alias
 alias vi="nvim"
 alias vim="nvim"
 alias zshconf="vi ~/.zshrc"
 alias zshref="source ~/.zshrc"
-alias antidote="~/.antidote/antidote"
-alias regenanti="antidote bundle <~/.zsh_plugins.txt >~/.zsh_plugins.zsh"
 alias ls='eza'
 alias ll='eza -la'
 alias g="git"
@@ -33,6 +47,7 @@ alias cls="clear"
 alias lg="lazygit"
 alias lj="lazyjournal"
 alias em='emacsclient -c -a "emacs"'
+alias get="curl -O"
 alias nmrestart="sudo systemctl restart NetworkManager"
 
 alias dn="sudo dnf"
@@ -42,9 +57,35 @@ alias dns="sudo dnf search"
 
 alias dwmgen="cd ~/.ashdwm/dwm/ && sudo make clean install"
 
+# Shell integrations
 eval "$(zoxide init zsh --cmd cd)"
+eval "$(fzf --zsh)"
 
-# Start Syncthing on Android
+# History
+HISTSIZE=5000
+HISTFILE=~/.local/share/zsh/history
+SAVEHIST=$HISTSIZE
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza $realpath'
+
+# Edit command buffer
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^X^E' edit-command-line
+
+# Android Config 
 if [[ "$(uname -o)" == "Android" ]]; then
 	echo "Termux environment detected."
 
@@ -63,19 +104,5 @@ if [[ "$(uname -o)" == "Android" ]]; then
 	fi
 fi
 
-# Antidote
-source ~/.zsh_plugins.zsh
-export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
-# History
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt APPEND_HISTORY
-setopt SHARE_HISTORY
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_REDUCE_BLANKS
-
-# To customize prompt, run `p10k configure` or edit ~/.dotfiles/powerlevel10k/.p10k.zsh.
-[[ ! -f ~/.dotfiles/powerlevel10k/.p10k.zsh ]] || source ~/.dotfiles/powerlevel10k/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
