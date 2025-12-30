@@ -1,11 +1,7 @@
 [general]
 import = [
-  "C:\\Users\\Ashwin\\.config\\alacritty\\tokyo-night.toml"
+  "./tokyo-night.toml"
 ]
-working_directory="C:\\Users\\Ashwin"
-
-[terminal]
-shell = { program = "C:\\Users\\Ashwin\\scoop\\apps\\msys2\\current\\msys2_shell.cmd", args = ["-defterm", "-here", "-no-start", "-msys", "-use-full-path", "-shell", "zsh" ] }
 
 [window]
 dynamic_title = false
@@ -16,15 +12,4 @@ opacity = 0.7
   y = 7
 
 [font]
-size = 16
-  [font.normal]
-  family = "SauceCodePro Nerd Font"
-  style = "Regular"
-
-  [font.bold]
-  family = "SauceCodePro Nerd Font"
-  style = "Bold"
-
-  [font.italic]
-  family = "SauceCodePro Nerd Font"
-  style = "Italic"
+size = 7
