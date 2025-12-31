@@ -534,8 +534,18 @@ def main(
 
                 profile = qp.new(profile_name, qb_args=list(qb_args))
 
-        profile.config = _update_config_profile_with_qbargs(profile_name=profile.profile_name)
-        qp.run_qb(qutebrowser=qutebrowser, profile=profile, args=list(qb_args), show_stdio=show_stdio,)
+        current_profile_config = config_loader.get_or_create_profile(profile.profile_name)
+        
+        # If we passed a URL (qb_args), we want to use it for this session 
+        # but NOT necessarily overwrite the permanent config.args forever.
+        launch_args = list(qb_args) if qb_args else current_profile_config.args
+        
+        qp.run_qb(
+            qutebrowser=qutebrowser, 
+            profile=profile, 
+            args=launch_args, 
+            show_stdio=show_stdio
+        )
 
     if load:
         mutually_exclusive.raise_if_any_mutually_exclusive(except_keys=['--load'])
