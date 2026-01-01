@@ -22,8 +22,8 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
-#zinit light zsh-users/zsh-completions
-#zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 # Load completions
@@ -56,6 +56,8 @@ alias dnr="sudo dnf rm"
 alias dns="sudo dnf search"
 
 alias dwmgen="cd ~/.ashdwm/dwm/ && sudo make clean install"
+alias pdry="patch --dry-run -p1 <"
+alias prun="patch -p1 <"
 
 # Shell integrations
 eval "$(zoxide init zsh --cmd cd)"
