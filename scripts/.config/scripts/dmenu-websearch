@@ -1,0 +1,51 @@
+#!/bin/sh
+
+# title: dmenu_websearch 
+# original: Sunur Efe Vural <efe@efe.kim>
+# maintainer: A S H
+# version: 01-01-2025
+
+browser='qutebrowser-profile --menu=dmenu'
+engine='https://duckduckgo.com/?q=%s'
+bookmarks="$HOME/.bookmarks"
+
+gotourl() {
+	$browser "$choice"
+}
+
+searchweb() {
+	#convert search query to percent encoding and insert it into url
+	choice=$(echo "$choice" | hexdump -v -e '/1 " %02x"')
+	choice=$(echo "$engine" | sed "s/%s/${choice% 0a}/;s/[[:space:]]/%/g")
+	gotourl
+}
+
+
+tmpfile=$(mktemp /tmp/dmenu_websearch.XXXXXX)
+trap 'rm "$tmpfile"' 0 1 15
+printf '%s\n%s\n' "$uricur" "$1" > "$tmpfile"
+cat "$bookmarks" >> "$tmpfile"
+sed -i -E '/^(#|$)/d' "$tmpfile"
+choice=$(dmenu -s -p "Go:" -w "$winid" < "$tmpfile") || exit 1
+
+# Detect links without protocol (This is WIP)
+protocol='^(https?|ftps?|mailto|about|file):///?'
+checkurl() {
+	grep -Fx "$choice" "$tmpfile" &&
+		choice=$(echo "$choice" | awk '{ print $1 }') && return 0
+	[ ${#choice} -lt 4 ] && return 1
+	echo "$choice" | grep -Z ' ' && return 1
+	echo "$choice" | grep -EiZ "$protocol" && return 0
+	echo "$choice" | grep -FZ '..' && return 1
+	prepath=$(echo "$choice" | sed 's/(\/|#|\?).*//')
+	echo "$prepath" |  grep -FvZ '.' && return 1
+	echo "$prepath" |  grep -EZ '^([[:alnum:]~_:-]+\.?){1,3}' && return 0
+}
+
+if checkurl
+then
+	echo "$choice" | grep -EivZ "$protocol" &&
+		choice="http://$choice"
+	gotourl
+else searchweb
+fi
